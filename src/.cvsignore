@@ -1,0 +1,10 @@
+Makefile
+Makefile.in
+*~
+*.bak
+.deps
+*.o
+paths.h
+minicom
+runscript
+ascii-xfr
