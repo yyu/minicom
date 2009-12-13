@@ -425,6 +425,8 @@ void kermit(void)
       werror(_("Out of memory: could not fork()"));
       return;
     case 0: /* Child */
+      close(portfd);
+
       /* Remove lockfile */
       lockfile_remove();
 
