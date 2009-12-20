@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-11-16 22:05+0100\n"
+"POT-Creation-Date: 2009-12-20 12:53+0100\n"
 "PO-Revision-Date: 2008-01-15 20:10+0100\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
@@ -42,7 +42,7 @@ msgid " C - Log file transfers        :"
 msgstr " C - Loguj transfery plików         :"
 
 #: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1130
+#: src/config.c:1145 src/dial.c:1131
 msgid "Change which setting?"
 msgstr "Które ustawienie zmieniæ?"
 
@@ -779,113 +779,113 @@ msgstr "Timeout"
 msgid "Manually entered number"
 msgstr "Rêcznie wpisany numer"
 
-#: src/dial.c:855
+#: src/dial.c:856
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Nie mogê otworzyæ ~/.dialdir: brak dostêpu"
 
-#: src/dial.c:907
+#: src/dial.c:908
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Lista telefonów przechwycona (nieznana wersja?)"
 
-#: src/dial.c:914
+#: src/dial.c:915
 msgid "Phonelist corrupted"
 msgstr "Lista telefonów uszkodzona"
 
-#: src/dial.c:919
+#: src/dial.c:920
 msgid "Unknown dialing directory version"
 msgstr "Nieznana wersja katalogu dzwonienia"
 
-#: src/dial.c:926
+#: src/dial.c:927
 msgid "Phonelist garbled (?)"
 msgstr "Lista telefonów przechwycona (?)"
 
-#: src/dial.c:948
+#: src/dial.c:949
 msgid "Out of memory while reading dialing directory"
 msgstr "Zabrak³o pamiêci podczas odczytu katalogu dzwonienia"
 
-#: src/dial.c:991
+#: src/dial.c:992
 #, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "Stary katalog dzwonienia skopiowany jako %s.%hd"
 
-#: src/dial.c:1025
+#: src/dial.c:1026
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Nie mo¿na otworzyæ ~/.dialdir do zapisu!"
 
-#: src/dial.c:1041 src/dial.c:1053
+#: src/dial.c:1042 src/dial.c:1054
 msgid "Error writing to ~/.dialdir!"
 msgstr "B³±d podczas zapisu w ~/.dialdir!"
 
-#: src/dial.c:1118
+#: src/dial.c:1119
 msgid " A -  Name                :"
 msgstr " A - Nazwa                      :"
 
-#: src/dial.c:1119
+#: src/dial.c:1120
 msgid " B -  Number              :"
 msgstr " B - Numer                      :"
 
-#: src/dial.c:1120
+#: src/dial.c:1121
 msgid " C -  Dial string #       :"
 msgstr " C - Ci±g dzwonienia #          :"
 
-#: src/dial.c:1121
+#: src/dial.c:1122
 msgid " D -  Local echo          :"
 msgstr " D - Lokalne echo               :"
 
-#: src/dial.c:1122
+#: src/dial.c:1123
 msgid " E -  Script              :"
 msgstr " E - Skrypt                     :"
 
-#: src/dial.c:1123
+#: src/dial.c:1124
 msgid " F -  Username            :"
 msgstr " F - U¿ytkownik                 :"
 
-#: src/dial.c:1124
+#: src/dial.c:1125
 msgid " G -  Password            :"
 msgstr " G - Has³o                      :"
 
-#: src/dial.c:1125
+#: src/dial.c:1126
 msgid " H -  Terminal Emulation  :"
 msgstr " H - Emulacja terminala         :"
 
-#: src/dial.c:1126
+#: src/dial.c:1127
 msgid " I -  Backspace key sends :"
 msgstr " I - Klawisz backspace wysy³a   :"
 
-#: src/dial.c:1127
+#: src/dial.c:1128
 msgid " J -  Linewrap            :"
 msgstr " J - Zawijanie linii            :"
 
-#: src/dial.c:1128
+#: src/dial.c:1129
 msgid " K -  Line Settings       :"
 msgstr " K - Ustawienia linii           :"
 
-#: src/dial.c:1129
+#: src/dial.c:1130
 msgid " L -  Conversion table    :"
 msgstr " L - Tabela konwersji           :"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Delete"
 msgstr "Delete"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "On"
 msgstr "Tak"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "Off"
 msgstr "Nie"
 
-#: src/dial.c:1148
+#: src/dial.c:1149
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Ostatnio dzwoniono        : %s %s\n"
 
-#: src/dial.c:1149
+#: src/dial.c:1150
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Czas                      : %d"
@@ -893,72 +893,72 @@ msgstr "      Czas                      : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Dial"
 msgstr "Dzwoñ"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Find"
 msgstr "Szukaj"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Add"
 msgstr "dodAj"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Edit"
 msgstr "Zmieñ"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Remove"
 msgstr "Usuñ"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "moVe"
 msgstr "Przesuñ"
 
-#: src/dial.c:1251
+#: src/dial.c:1252
 msgid "Manual"
 msgstr "Rêcznie"
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
 msgstr "  Tak   "
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
 msgstr "   Nie  "
 
-#: src/dial.c:1490
+#: src/dial.c:1491
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Wpis \"%s\" nie znaleziony. Podaj katalog dzwonienia?"
 
-#: src/dial.c:1520 src/file.c:428
+#: src/dial.c:1521 src/file.c:428
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Esc by wyj¶æ, Spacja by zaznaczyæ )"
 
-#: src/dial.c:1521
+#: src/dial.c:1522
 msgid " Move entry up/down, Escape to exit"
 msgstr " Przesuwanie góra/dó³. Esc by wyj¶æ"
 
-#: src/dial.c:1541
+#: src/dial.c:1542
 msgid "Dialing Directory"
 msgstr "Katalog Dzwonienia"
 
-#: src/dial.c:1543
+#: src/dial.c:1544
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     Nazwa           Numer           Ostatnio by³   Skrypt czasów\n"
 
-#: src/dial.c:1717
+#: src/dial.c:1718
 msgid "Find an entry"
 msgstr "Znajd¼ wpis"
 
-#: src/dial.c:1778
+#: src/dial.c:1779
 msgid "Remove entry?"
 msgstr "Usun±æ wpis?"
 
-#: src/dial.c:1822
+#: src/dial.c:1823
 msgid "Enter number"
 msgstr "Podaj numer"
 
@@ -1255,7 +1255,7 @@ msgstr "Wstrzymany. Wpisz \"fg\" by przywróciæ.\n"
 msgid "SHELL variable not set"
 msgstr "Zmienna SHELL nie ustawiona"
 
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:616
+#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
 msgid "Out of memory: could not fork()"
 msgstr "Brak pamiêci: nie mo¿na wykonaæ fork()"
 
@@ -1709,27 +1709,27 @@ msgstr ""
 msgid "Cannot create lockfile!"
 msgstr "Nie mo¿na ponownie stworzyæ pliku blokuj±cego (lockfile)!"
 
-#: src/updown.c:535
+#: src/updown.c:537
 msgid "Same as last"
 msgstr "Taki sam jak ostatnio"
 
-#: src/updown.c:536
+#: src/updown.c:538
 msgid " A -   Username        :"
 msgstr " A - U¿ytkownik        :"
 
-#: src/updown.c:537
+#: src/updown.c:539
 msgid " B -   Password        :"
 msgstr " B - Has³o             :"
 
-#: src/updown.c:538
+#: src/updown.c:540
 msgid " C -   Name of script  :"
 msgstr " C - Nazwa skryptu     :"
 
-#: src/updown.c:539
+#: src/updown.c:541
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Które ustawienie zmieniæ? (ENTER powrót, ESC zatrzymanie)"
 
-#: src/updown.c:544
+#: src/updown.c:546
 msgid "Run a script"
 msgstr "Uruchom skrypt"
 

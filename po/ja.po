@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom-1.83\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-11-16 22:05+0100\n"
+"POT-Creation-Date: 2009-12-20 12:53+0100\n"
 "PO-Revision-Date: 2001-01-04 18:21+09:00\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.or.jp>\n"
 "Language-Team:\tJapanese\n"
@@ -46,7 +46,7 @@ msgstr " C - ファイル転送を記録する         :"
 
 # wputs
 #: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1130
+#: src/config.c:1145 src/dial.c:1131
 msgid "Change which setting?"
 msgstr "どの設定を変更しますか?"
 
@@ -869,126 +869,126 @@ msgid "Manually entered number"
 msgstr "手動で入力した場号"
 
 # c-format(werror)
-#: src/dial.c:855
+#: src/dial.c:856
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "~/.dialdir をオープンできません: 許可されません"
 
 # c-format(werror)
-#: src/dial.c:907
+#: src/dial.c:908
 msgid "Phonelist garbled (unknown version?)"
 msgstr "電話帳が書き直されている (不明なバージョン?)"
 
 # c-format(werror)
-#: src/dial.c:914
+#: src/dial.c:915
 #, fuzzy
 msgid "Phonelist corrupted"
 msgstr "電話帳が書き直されている (?)"
 
 # c-format(werror)
-#: src/dial.c:919
+#: src/dial.c:920
 msgid "Unknown dialing directory version"
 msgstr "電話帳のバージョンが不明です"
 
 # c-format(werror)
-#: src/dial.c:926
+#: src/dial.c:927
 msgid "Phonelist garbled (?)"
 msgstr "電話帳が書き直されている (?)"
 
 # c-format(werror)
-#: src/dial.c:948
+#: src/dial.c:949
 msgid "Out of memory while reading dialing directory"
 msgstr "電話帳読み込み中にメモリが足りなくなりました"
 
 # c-format(have percent)
-#: src/dial.c:991
+#: src/dial.c:992
 #, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "古い電話帳を %s.%hd にコピーしました"
 
 # c-format(werror)
-#: src/dial.c:1025
+#: src/dial.c:1026
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "~/.dialdir をオープンできません: 許可されません"
 
 # c-format(werror)
-#: src/dial.c:1041 src/dial.c:1053
+#: src/dial.c:1042 src/dial.c:1054
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "~/.dialdir 書き込み中にエラー発生"
 
-#: src/dial.c:1118
+#: src/dial.c:1119
 msgid " A -  Name                :"
 msgstr " A -  名前                :"
 
-#: src/dial.c:1119
+#: src/dial.c:1120
 msgid " B -  Number              :"
 msgstr " B -  電話番号            :"
 
-#: src/dial.c:1120
+#: src/dial.c:1121
 msgid " C -  Dial string #       :"
 msgstr " C -  ダイヤル文字列番号  :"
 
-#: src/dial.c:1121
+#: src/dial.c:1122
 msgid " D -  Local echo          :"
 msgstr " D -  ローカルエコー      :"
 
-#: src/dial.c:1122
+#: src/dial.c:1123
 msgid " E -  Script              :"
 msgstr " E -  スクリプト          :"
 
-#: src/dial.c:1123
+#: src/dial.c:1124
 msgid " F -  Username            :"
 msgstr " F -  ユーザー名          :"
 
-#: src/dial.c:1124
+#: src/dial.c:1125
 msgid " G -  Password            :"
 msgstr " G -  パスワード          :"
 
-#: src/dial.c:1125
+#: src/dial.c:1126
 msgid " H -  Terminal Emulation  :"
 msgstr " H -  ターミナルの種類    :"
 
-#: src/dial.c:1126
+#: src/dial.c:1127
 msgid " I -  Backspace key sends :"
 msgstr " I -  BSキーが送る文字    :"
 
-#: src/dial.c:1127
+#: src/dial.c:1128
 msgid " J -  Linewrap            :"
 msgstr " J -  行末折り返し        :"
 
-#: src/dial.c:1128
+#: src/dial.c:1129
 msgid " K -  Line Settings       :"
 msgstr " K -  回線の設定          :"
 
-#: src/dial.c:1129
+#: src/dial.c:1130
 msgid " L -  Conversion table    :"
 msgstr " L -  文字変換表          :"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Delete"
 msgstr "Delete"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "On"
 msgstr "オン"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "Off"
 msgstr "オフ"
 
 # c-format(have percent)
-#: src/dial.c:1148
+#: src/dial.c:1149
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      前回の接続          : %s %s\n"
 
 # c-format(have percent)
-#: src/dial.c:1149
+#: src/dial.c:1150
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Times on            : %d"
@@ -996,82 +996,82 @@ msgstr "      Times on            : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Dial"
 msgstr "接続先 "
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Add"
 msgstr ""
 
 # wselect
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Edit"
 msgstr "終了"
 
 # ask
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Remove"
 msgstr "削除しますか?"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1252
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
 msgstr "  はい  "
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
 msgstr " いいえ "
 
 # c-format(have percent)
-#: src/dial.c:1490
+#: src/dial.c:1491
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "\"%s\" がありません。dialdir に行きますか?"
 
 # wputs
-#: src/dial.c:1520 src/file.c:428
+#: src/dial.c:1521 src/file.c:428
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Escape で終了、 Space でタグ )"
 
-#: src/dial.c:1521
+#: src/dial.c:1522
 msgid " Move entry up/down, Escape to exit"
 msgstr "上下で選んでください。Escape で終了"
 
 # wtitle
-#: src/dial.c:1541
+#: src/dial.c:1542
 msgid "Dialing Directory"
 msgstr "電話帳"
 
 # wputs
-#: src/dial.c:1543
+#: src/dial.c:1544
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     名前           電話番号         前回の接続     Times Script\n"
 
-#: src/dial.c:1717
+#: src/dial.c:1718
 msgid "Find an entry"
 msgstr "検索"
 
 # ask
-#: src/dial.c:1778
+#: src/dial.c:1779
 msgid "Remove entry?"
 msgstr "削除しますか?"
 
-#: src/dial.c:1822
+#: src/dial.c:1823
 msgid "Enter number"
 msgstr "電話番号"
 
@@ -1409,7 +1409,7 @@ msgid "SHELL variable not set"
 msgstr "シェル変数が設定されていません"
 
 # c-format(werror)
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:616
+#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
 msgid "Out of memory: could not fork()"
 msgstr "メモリ不足です。fork() できません。"
 
@@ -1870,29 +1870,29 @@ msgid "Cannot create lockfile!"
 msgstr "ロックファイルを再作成できません。"
 
 # c-format(have percent)
-#: src/updown.c:535
+#: src/updown.c:537
 msgid "Same as last"
 msgstr "Same as last"
 
-#: src/updown.c:536
+#: src/updown.c:538
 msgid " A -   Username        :"
 msgstr " A -   ユーザー名      :"
 
-#: src/updown.c:537
+#: src/updown.c:539
 msgid " B -   Password        :"
 msgstr " B -   パスワード      :"
 
-#: src/updown.c:538
+#: src/updown.c:540
 msgid " C -   Name of script  :"
 msgstr " C -   スクリプト名    :"
 
 # wputs
-#: src/updown.c:539
+#: src/updown.c:541
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "どの設定を変更しますか?   (Return で実行、ESC で中止)"
 
 # wtitle
-#: src/updown.c:544
+#: src/updown.c:546
 msgid "Run a script"
 msgstr "スクリプトの実行"
 

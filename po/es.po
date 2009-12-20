@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 1.83.0\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-11-16 22:05+0100\n"
+"POT-Creation-Date: 2009-12-20 12:53+0100\n"
 "PO-Revision-Date: 1999-12-17 14:00-0200\n"
 "Last-Translator: Andrea Mara Pimenta Alonso<pimenta@conectiva.com.br>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -43,7 +43,7 @@ msgid " C - Log file transfers        :"
 msgstr " C - Registra transferencia de archivos        :"
 
 #: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1130
+#: src/config.c:1145 src/dial.c:1131
 msgid "Change which setting?"
 msgstr "¿Qué configuración alterar?"
 
@@ -793,118 +793,118 @@ msgstr "Tiempo agotado"
 msgid "Manually entered number"
 msgstr "Número informado manualmente"
 
-#: src/dial.c:855
+#: src/dial.c:856
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr ""
 "No fue posible abrir ~/.directorio de llamadas telefónicas: permiso negado"
 
-#: src/dial.c:907
+#: src/dial.c:908
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Guía telefónica confusa (¿versión desconocida?)"
 
-#: src/dial.c:914
+#: src/dial.c:915
 #, fuzzy
 msgid "Phonelist corrupted"
 msgstr "Guía telefónica confusa (¿?)"
 
-#: src/dial.c:919
+#: src/dial.c:920
 msgid "Unknown dialing directory version"
 msgstr "Versión desconocida de directorio de llamada telefónica"
 
-#: src/dial.c:926
+#: src/dial.c:927
 msgid "Phonelist garbled (?)"
 msgstr "Guía telefónica confusa (¿?)"
 
-#: src/dial.c:948
+#: src/dial.c:949
 msgid "Out of memory while reading dialing directory"
 msgstr "Sin memoria durante la lectura del directorio de llamada telefónica"
 
-#: src/dial.c:991
+#: src/dial.c:992
 #, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "directorio de llamada telefónica anterior copiado como %s.%hd"
 
-#: src/dial.c:1025
+#: src/dial.c:1026
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr ""
 "No fue posible abrir ~/.directorio de llamadas telefónicas: permiso negado"
 
-#: src/dial.c:1041 src/dial.c:1053
+#: src/dial.c:1042 src/dial.c:1054
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Error grabando ~/.¡directorio de llamadas telefónicas!"
 
-#: src/dial.c:1118
+#: src/dial.c:1119
 msgid " A -  Name                :"
 msgstr " A - Nombre                         :"
 
-#: src/dial.c:1119
+#: src/dial.c:1120
 msgid " B -  Number              :"
 msgstr " B - Número                       :"
 
-#: src/dial.c:1120
+#: src/dial.c:1121
 msgid " C -  Dial string #       :"
 msgstr " C - Número de la cadena de caracteres de llamada telefónica :"
 
-#: src/dial.c:1121
+#: src/dial.c:1122
 msgid " D -  Local echo          :"
 msgstr " D - Indicación visual local                    :"
 
-#: src/dial.c:1122
+#: src/dial.c:1123
 msgid " E -  Script              :"
 msgstr " E - Script                       :"
 
-#: src/dial.c:1123
+#: src/dial.c:1124
 msgid " F -  Username            :"
 msgstr " F - Nombre del usuario              :"
 
-#: src/dial.c:1124
+#: src/dial.c:1125
 msgid " G -  Password            :"
 msgstr " G - Contraseña                        :"
 
-#: src/dial.c:1125
+#: src/dial.c:1126
 msgid " H -  Terminal Emulation  :"
 msgstr " H - Emulación de Terminal         :"
 
-#: src/dial.c:1126
+#: src/dial.c:1127
 msgid " I -  Backspace key sends :"
 msgstr " I - Tecla retroceso envía        :"
 
-#: src/dial.c:1127
+#: src/dial.c:1128
 msgid " J -  Linewrap            :"
 msgstr " J - Salto de línea              :"
 
-#: src/dial.c:1128
+#: src/dial.c:1129
 msgid " K -  Line Settings       :"
 msgstr " K - Configuraciones de la línea        :"
 
-#: src/dial.c:1129
+#: src/dial.c:1130
 msgid " L -  Conversion table    :"
 msgstr " L - Tabla de conversión          :"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Delete"
 msgstr "Suprimir"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Backspace"
 msgstr "Retroceso"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "On"
 msgstr "Activado   "
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "Off"
 msgstr "Desactivado"
 
-#: src/dial.c:1148
+#: src/dial.c:1149
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Última llamada     : %s %s\n"
 
-#: src/dial.c:1149
+#: src/dial.c:1150
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Número de veces que fue marcado el número : %d"
@@ -912,77 +912,77 @@ msgstr "      Número de veces que fue marcado el número : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Dial"
 msgstr "Marcando"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Edit"
 msgstr "Salir"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Remove"
 msgstr "¿Borrar acceso?"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1252
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
 msgstr "   Sí  "
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
 msgstr "   No  "
 
-#: src/dial.c:1490
+#: src/dial.c:1491
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr ""
 "Entrada \"%s\" no encontrada. ¿Entrar en el directorio de llamadas "
 "telefónicas?"
 
-#: src/dial.c:1520 src/file.c:428
+#: src/dial.c:1521 src/file.c:428
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Esc para salir, Espacio para marcar )"
 
-#: src/dial.c:1521
+#: src/dial.c:1522
 msgid " Move entry up/down, Escape to exit"
 msgstr "Desplaza entrada para arriba/abajo, ESC para salir"
 
-#: src/dial.c:1541
+#: src/dial.c:1542
 msgid "Dialing Directory"
 msgstr "Directorio de Llamadas Telefónicas"
 
-#: src/dial.c:1543
+#: src/dial.c:1544
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     Nombre            Número            Última en    Veces Script\n"
 
-#: src/dial.c:1717
+#: src/dial.c:1718
 msgid "Find an entry"
 msgstr "Buscar acceso"
 
-#: src/dial.c:1778
+#: src/dial.c:1779
 msgid "Remove entry?"
 msgstr "¿Borrar acceso?"
 
-#: src/dial.c:1822
+#: src/dial.c:1823
 msgid "Enter number"
 msgstr "Informar número"
 
@@ -1299,7 +1299,7 @@ msgstr "Suspendido. Teclee \"fg\" para volver.\n"
 msgid "SHELL variable not set"
 msgstr "Variable SHELL no configurada"
 
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:616
+#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
 msgid "Out of memory: could not fork()"
 msgstr "Sin memoria: no fue posible ejecutar bifurcación()"
 
@@ -1729,28 +1729,28 @@ msgstr ""
 msgid "Cannot create lockfile!"
 msgstr "¡No fue posible recrear el archivo de bloqueo!"
 
-#: src/updown.c:535
+#: src/updown.c:537
 #, fuzzy
 msgid "Same as last"
 msgstr "Salvar como: %s"
 
-#: src/updown.c:536
+#: src/updown.c:538
 msgid " A -   Username        :"
 msgstr " A - Nombre del usuario   :"
 
-#: src/updown.c:537
+#: src/updown.c:539
 msgid " B -   Password        :"
 msgstr " B - Contraseña             :"
 
-#: src/updown.c:538
+#: src/updown.c:540
 msgid " C -   Name of script  :"
 msgstr " C - Nombre del script    :"
 
-#: src/updown.c:539
+#: src/updown.c:541
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Elija la opción: (Enter para ejecutar,  ESC para parar)"
 
-#: src/updown.c:544
+#: src/updown.c:546
 msgid "Run a script"
 msgstr "Ejecutar un script"
 

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom-1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-11-16 22:05+0100\n"
+"POT-Creation-Date: 2009-12-20 12:53+0100\n"
 "PO-Revision-Date: 2001-02-26 11:00+0100\n"
 "Last-Translator: Jiøí Pavlovský  <pavlovsk@ff.cuni.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -42,7 +42,7 @@ msgid " C - Log file transfers        :"
 msgstr " C - Zaznamenávat pøenosy souborù :"
 
 #: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1130
+#: src/config.c:1145 src/dial.c:1131
 msgid "Change which setting?"
 msgstr "Vyberte písmeno:"
 
@@ -787,116 +787,116 @@ msgstr "Vypr¹el èas"
 msgid "Manually entered number"
 msgstr "Ruènì zadané èíslo"
 
-#: src/dial.c:855
+#: src/dial.c:856
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "~/.dialdir nelze otevøít: pøístup odmítnut"
 
-#: src/dial.c:907
+#: src/dial.c:908
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Telefonní seznam je poru¹en (neznámá verze?)"
 
-#: src/dial.c:914
+#: src/dial.c:915
 #, fuzzy
 msgid "Phonelist corrupted"
 msgstr "Telefonní seznam je poru¹en (?)"
 
-#: src/dial.c:919
+#: src/dial.c:920
 msgid "Unknown dialing directory version"
 msgstr "Neznámá verze telefonního seznamu"
 
-#: src/dial.c:926
+#: src/dial.c:927
 msgid "Phonelist garbled (?)"
 msgstr "Telefonní seznam je poru¹en (?)"
 
-#: src/dial.c:948
+#: src/dial.c:949
 msgid "Out of memory while reading dialing directory"
 msgstr "Pøi ètení telefonního seznamu do¹la pamì»"
 
-#: src/dial.c:991
+#: src/dial.c:992
 #, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "Starý telefonní seznam zkopírován jako %s.%hd"
 
-#: src/dial.c:1025
+#: src/dial.c:1026
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "~/.dialdir nelze otevøít: pøístup odmítnut"
 
-#: src/dial.c:1041 src/dial.c:1053
+#: src/dial.c:1042 src/dial.c:1054
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Pøi ukládání do ~./.dialdir nastala chyba!"
 
-#: src/dial.c:1118
+#: src/dial.c:1119
 msgid " A -  Name                :"
 msgstr " A - Jméno               :"
 
-#: src/dial.c:1119
+#: src/dial.c:1120
 msgid " B -  Number              :"
 msgstr " B - Èíslo               :"
 
-#: src/dial.c:1120
+#: src/dial.c:1121
 msgid " C -  Dial string #       :"
 msgstr " C - Pøíkaz pro vytáèení :"
 
-#: src/dial.c:1121
+#: src/dial.c:1122
 msgid " D -  Local echo          :"
 msgstr " D - Místní echo         :"
 
-#: src/dial.c:1122
+#: src/dial.c:1123
 msgid " E -  Script              :"
 msgstr " E - Skript              :"
 
-#: src/dial.c:1123
+#: src/dial.c:1124
 msgid " F -  Username            :"
 msgstr " F - U¾ivatelské jméno   :"
 
-#: src/dial.c:1124
+#: src/dial.c:1125
 msgid " G -  Password            :"
 msgstr " G - Heslo               :"
 
-#: src/dial.c:1125
+#: src/dial.c:1126
 msgid " H -  Terminal Emulation  :"
 msgstr " H - Emulace terminálu   :"
 
-#: src/dial.c:1126
+#: src/dial.c:1127
 msgid " I -  Backspace key sends :"
 msgstr " I - Backspace posílá    :"
 
-#: src/dial.c:1127
+#: src/dial.c:1128
 msgid " J -  Linewrap            :"
 msgstr " J - Zalamování øádkù    :"
 
-#: src/dial.c:1128
+#: src/dial.c:1129
 msgid " K -  Line Settings       :"
 msgstr " K - Nastavení linky     :"
 
-#: src/dial.c:1129
+#: src/dial.c:1130
 msgid " L -  Conversion table    :"
 msgstr " L - Pøevodní tabulky    :"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Delete"
 msgstr "Smazat"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "On"
 msgstr "Zapnuto"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "Off"
 msgstr "Vypnuto"
 
-#: src/dial.c:1148
+#: src/dial.c:1149
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Naposledy vytoèeno : %s %s\n"
 
-#: src/dial.c:1149
+#: src/dial.c:1150
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Poèet spojení      : %d"
@@ -904,75 +904,75 @@ msgstr "      Poèet spojení      : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Dial"
 msgstr "Vytáèím"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Edit"
 msgstr "Konec"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Remove"
 msgstr "Smazat polo¾ku?"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1252
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
 msgstr "   Ano  "
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
 msgstr "   Ne   "
 
-#: src/dial.c:1490
+#: src/dial.c:1491
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Polo¾ka \"%s\" nenalezena. Otevøít telefonní seznam?"
 
-#: src/dial.c:1520 src/file.c:428
+#: src/dial.c:1521 src/file.c:428
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Escape pro ukonèení, mezerník pro oznaèení )"
 
-#: src/dial.c:1521
+#: src/dial.c:1522
 msgid " Move entry up/down, Escape to exit"
 msgstr " Pøesuòte polo¾ku nahoru/dolù, Escape pro ukonèení"
 
-#: src/dial.c:1541
+#: src/dial.c:1542
 msgid "Dialing Directory"
 msgstr "Telefonní seznam"
 
-#: src/dial.c:1543
+#: src/dial.c:1544
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     Jméno           Èíslo             Naposledy    Poèet Skript\n"
 
-#: src/dial.c:1717
+#: src/dial.c:1718
 msgid "Find an entry"
 msgstr "Hledat polo¾ku"
 
-#: src/dial.c:1778
+#: src/dial.c:1779
 msgid "Remove entry?"
 msgstr "Smazat polo¾ku?"
 
-#: src/dial.c:1822
+#: src/dial.c:1823
 msgid "Enter number"
 msgstr "Zadejte èíslo"
 
@@ -1275,7 +1275,7 @@ msgstr "Minicom pøeru¹en. Napi¹te \"fg\" pro pokraèování.\n"
 msgid "SHELL variable not set"
 msgstr "Promìnná SHELL není nastavena"
 
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:616
+#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
 msgid "Out of memory: could not fork()"
 msgstr "Volání fork selhalo: do¹la pamì»"
 
@@ -1705,27 +1705,27 @@ msgstr ""
 msgid "Cannot create lockfile!"
 msgstr "Nelze znovu vytvoøit zámek!"
 
-#: src/updown.c:535
+#: src/updown.c:537
 msgid "Same as last"
 msgstr "stejnì jako poslednì"
 
-#: src/updown.c:536
+#: src/updown.c:538
 msgid " A -   Username        :"
 msgstr " A - U¾ivatelské jméno:"
 
-#: src/updown.c:537
+#: src/updown.c:539
 msgid " B -   Password        :"
 msgstr " B - Heslo            :"
 
-#: src/updown.c:538
+#: src/updown.c:540
 msgid " C -   Name of script  :"
 msgstr " C - Název skriptu    :"
 
-#: src/updown.c:539
+#: src/updown.c:541
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Vyberte písmeno: (Return pro spu¹tìní, ESC pro ukonèení)"
 
-#: src/updown.c:544
+#: src/updown.c:546
 msgid "Run a script"
 msgstr "Spustit skript"
 

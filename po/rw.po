@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-11-16 22:05+0100\n"
+"POT-Creation-Date: 2009-12-20 12:53+0100\n"
 "PO-Revision-Date: 2005-04-04 10:55-0700\n"
 "Last-Translator: Steven Michael Murphy <murf@e-tools.com>\n"
 "Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
@@ -54,7 +54,7 @@ msgid " C - Log file transfers        :"
 msgstr "C IDOSIYE"
 
 #: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1130
+#: src/config.c:1145 src/dial.c:1131
 #, fuzzy
 msgid "Change which setting?"
 msgstr "Igenamiterere"
@@ -885,125 +885,125 @@ msgstr "Igihe cyarenze"
 msgid "Manually entered number"
 msgstr "Umubare"
 
-#: src/dial.c:855
+#: src/dial.c:856
 #, fuzzy
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Gufungura"
 
-#: src/dial.c:907
+#: src/dial.c:908
 #, fuzzy
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Kitazwi Verisiyo"
 
-#: src/dial.c:914
+#: src/dial.c:915
 msgid "Phonelist corrupted"
 msgstr ""
 
-#: src/dial.c:919
+#: src/dial.c:920
 #, fuzzy
 msgid "Unknown dialing directory version"
 msgstr "bushyinguro Verisiyo"
 
-#: src/dial.c:926
+#: src/dial.c:927
 msgid "Phonelist garbled (?)"
 msgstr ""
 
-#: src/dial.c:948
+#: src/dial.c:949
 #, fuzzy
 msgid "Out of memory while reading dialing directory"
 msgstr "Bya Ububiko bushyinguro"
 
-#: src/dial.c:991
+#: src/dial.c:992
 #, fuzzy, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "Nka"
 
-#: src/dial.c:1025
+#: src/dial.c:1026
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Gufungura"
 
-#: src/dial.c:1041 src/dial.c:1053
+#: src/dial.c:1042 src/dial.c:1054
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Kwandika Kuri"
 
-#: src/dial.c:1118
+#: src/dial.c:1119
 #, fuzzy
 msgid " A -  Name                :"
 msgstr "A"
 
-#: src/dial.c:1119
+#: src/dial.c:1120
 msgid " B -  Number              :"
 msgstr ""
 
-#: src/dial.c:1120
+#: src/dial.c:1121
 #, fuzzy
 msgid " C -  Dial string #       :"
 msgstr "C Ikurikiranyanyuguti"
 
-#: src/dial.c:1121
+#: src/dial.c:1122
 msgid " D -  Local echo          :"
 msgstr ""
 
-#: src/dial.c:1122
+#: src/dial.c:1123
 #, fuzzy
 msgid " E -  Script              :"
 msgstr "E"
 
-#: src/dial.c:1123
+#: src/dial.c:1124
 msgid " F -  Username            :"
 msgstr ""
 
-#: src/dial.c:1124
+#: src/dial.c:1125
 msgid " G -  Password            :"
 msgstr ""
 
-#: src/dial.c:1125
+#: src/dial.c:1126
 #, fuzzy
 msgid " H -  Terminal Emulation  :"
 msgstr "H"
 
-#: src/dial.c:1126
+#: src/dial.c:1127
 #, fuzzy
 msgid " I -  Backspace key sends :"
 msgstr "Urufunguzo"
 
-#: src/dial.c:1127
+#: src/dial.c:1128
 msgid " J -  Linewrap            :"
 msgstr ""
 
-#: src/dial.c:1128
+#: src/dial.c:1129
 msgid " K -  Line Settings       :"
 msgstr ""
 
-#: src/dial.c:1129
+#: src/dial.c:1130
 #, fuzzy
 msgid " L -  Conversion table    :"
 msgstr "imbonerahamwe#"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Delete"
 msgstr "Gusiba"
 
-#: src/dial.c:1142 src/dial.c:1214 src/dial.c:1221
+#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
 msgid "Backspace"
 msgstr "Gusiba usubira inyuma"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "On"
 msgstr "Kuri"
 
-#: src/dial.c:1144 src/dial.c:1216 src/dial.c:1226
+#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
 msgid "Off"
 msgstr "ki/birafunze"
 
-#: src/dial.c:1148
+#: src/dial.c:1149
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr ""
 
-#: src/dial.c:1149
+#: src/dial.c:1150
 #, fuzzy, c-format
 msgid "      Times on            : %d"
 msgstr "ku"
@@ -1011,83 +1011,83 @@ msgstr "ku"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Dial"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Edit"
 msgstr "Gusohoka"
 
 # 5063
-#: src/dial.c:1250
+#: src/dial.c:1251
 #, fuzzy
 msgid "Remove"
 msgstr "Vanaho Umwinjizo"
 
-#: src/dial.c:1250
+#: src/dial.c:1251
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1252
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 #, fuzzy
 msgid "   Yes  "
 msgstr "Yego"
 
-#: src/dial.c:1397 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 #, fuzzy
 msgid "   No   "
 msgstr "Oya"
 
-#: src/dial.c:1490
+#: src/dial.c:1491
 #, fuzzy, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "OYA Byabonetse"
 
-#: src/dial.c:1520 src/file.c:428
+#: src/dial.c:1521 src/file.c:428
 #, fuzzy
 msgid "( Escape to exit, Space to tag )"
 msgstr "(Kuri Gusohoka Kuri Itagi:"
 
-#: src/dial.c:1521
+#: src/dial.c:1522
 #, fuzzy
 msgid " Move entry up/down, Escape to exit"
 msgstr "Icyinjijwe Hejuru Hasi Kuri Gusohoka"
 
-#: src/dial.c:1541
+#: src/dial.c:1542
 msgid "Dialing Directory"
 msgstr ""
 
-#: src/dial.c:1543
+#: src/dial.c:1544
 #, fuzzy
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "ku"
 
-#: src/dial.c:1717
+#: src/dial.c:1718
 #, fuzzy
 msgid "Find an entry"
 msgstr "Icyinjijwe"
 
 # 5063
-#: src/dial.c:1778
+#: src/dial.c:1779
 #, fuzzy
 msgid "Remove entry?"
 msgstr "Vanaho Umwinjizo"
 
-#: src/dial.c:1822
+#: src/dial.c:1823
 #, fuzzy
 msgid "Enter number"
 msgstr "Umubare"
@@ -1456,7 +1456,7 @@ msgstr "Kuri Gusubiramo"
 msgid "SHELL variable not set"
 msgstr "IMPINDURAGACIRO OYA Gushyiraho"
 
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:616
+#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
 #, fuzzy
 msgid "Out of memory: could not fork()"
 msgstr "Bya Ububiko OYA"
@@ -1911,31 +1911,31 @@ msgstr "Kanda Urufunguzo Kuri urifuzagukomeza"
 msgid "Cannot create lockfile!"
 msgstr "Kurema"
 
-#: src/updown.c:535
+#: src/updown.c:537
 #, fuzzy
 msgid "Same as last"
 msgstr "Nka Iheruka"
 
-#: src/updown.c:536
+#: src/updown.c:538
 #, fuzzy
 msgid " A -   Username        :"
 msgstr "A"
 
-#: src/updown.c:537
+#: src/updown.c:539
 msgid " B -   Password        :"
 msgstr ""
 
-#: src/updown.c:538
+#: src/updown.c:540
 #, fuzzy
 msgid " C -   Name of script  :"
 msgstr "C Bya IYANDIKA"
 
-#: src/updown.c:539
+#: src/updown.c:541
 #, fuzzy
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Igenamiterere Kuri Gukoresha Kuri Guhagarara"
 
-#: src/updown.c:544
+#: src/updown.c:546
 #, fuzzy
 msgid "Run a script"
 msgstr "a IYANDIKA"
