@@ -67,6 +67,7 @@ static int mcd(char *dir)
     /* This may look safe but you might I8N change the string! so
        snprintf it */
     snprintf(err, sizeof(err),  _("Cannot chdir to %.30s"), dir);
+    err[sizeof(err) - 1] = 0;
     werror("%s", err);
     return -1;
   }

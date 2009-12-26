@@ -1,13 +1,17 @@
-2009-12-20  Adam Lackorzynski  <adam@blackbox>
+2009-12-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/updown.c: Fix possible snprintf overrun.
+
+2009-12-20  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* configure.in: change version number to 2.4
 
-2009-11-17  Adam Lackorzynski  <adam@blackbox>
+2009-11-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/dial.c: Overflow fix because of too long translated message,
 	              by Vladimir V. Kamarzin, #312083
 
-2009-11-16  Adam Lackorzynski  <adam@blackbox>
+2009-11-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* INSTALL: delete, comes with automake
 
@@ -17,11 +21,11 @@
 
 	* NEWS: update to 2.4
 
-2009-11-15  Adam Lackorzynski  <adam@blackbox>
+2009-11-15  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* autogen.sh: Use automake-1.11
 
-2009-07-25  Adam Lackorzynski  <adam@blackbox>
+2009-07-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* man/minicom.1: Add options -b, -D and -R.
 
