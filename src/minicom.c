@@ -1382,14 +1382,14 @@ int main(int argc, char **argv)
 dirty_goto:
     switch (c + 32 *(c >= 'A' && c <= 'Z')) {
       case 'a': /* Add line feed */
-	toggle_addlf();
+        toggle_addlf();
         s = addlf ?  _("Add linefeed ON") : _("Add linefeed OFF");
-        werror("%s", s);
+        status_set_display(s, 0);
         break;
       case 'e': /* Local echo on/off. */
-	toggle_local_echo();
+        toggle_local_echo();
         s = local_echo ?  _("Local echo ON") : _("Local echo OFF");
-        werror("%s", s);
+        status_set_display(s, 0);
         break;
       case 'z': /* Help */
         c = help();
@@ -1501,7 +1501,7 @@ dirty_goto:
         c = (!us->wrap);
         vt_set(addlf, c, docap, -1, -1, -1, -1);
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
-        werror("%s", s);
+	status_set_display(s, 0);
         break;
       case 'o': /* Configure Minicom */
         (void) config(0);

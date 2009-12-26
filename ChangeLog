@@ -1,5 +1,9 @@
 2009-12-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/main.c, src/minicom.h, src/minicom.c: Do not use the error
+	  message display for informational messages but instead display
+	  them in the status line without blocking the whole program.
+
 	* src/updown.c: Fix possible snprintf overrun.
 
 2009-12-20  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>

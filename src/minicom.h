@@ -225,6 +225,7 @@ void curs_status(void);
 void show_status(void);
 void scriptname(const char *s);
 int  do_terminal(void);
+void status_set_display(const char *text, int duration_s);
 
 /* Prototypes from file: minicom.c */
 void port_init(void);

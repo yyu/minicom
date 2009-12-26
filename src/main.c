@@ -438,7 +438,7 @@ void time_status(void)
     mc_wprintf(st, " %12.12s ", P_HASDCD[0] == 'Y' ? _("Offline") : _("OFFLINE"));
   else
     mc_wprintf(st, " %s %02ld:%02ld", P_HASDCD[0] == 'Y' ? _("Online") : _("ONLINE"),
-            online / 3600, (online / 60) % 60);
+               online / 3600, (online / 60) % 60);
 
   ret_csr();
 }
@@ -453,25 +453,67 @@ void curs_status(void)
   ret_csr();
 }
 
+
+static char status_message[80];
+static int  status_display_msg_until;
+static int  status_message_showing;
+
+void status_set_display(const char *text, int duration_s)
+{
+  time_t t;
+  unsigned l;
+  strncpy(status_message, text, sizeof(status_message));
+  status_message[sizeof(status_message) - 1] = 0;
+  l = strlen(status_message);
+  for (; l < sizeof(status_message) - 1; ++l)
+    status_message[l] = ' ';
+
+  if (duration_s == 0)
+    duration_s = 2;
+
+  time(&t);
+  status_display_msg_until = duration_s + t;
+  status_message_showing = 1;
+}
+
+static void status_display_message(void)
+{
+  if (!st)
+    return;
+  mc_wlocate(st, 0, 0);
+  mc_wprintf(st, " %s", status_message);
+  ret_csr();
+}
+
 time_t old_online = -1;
 
 /*
  * Update the online time.
  */
-static void updtime(void)
+static void update_status_time(void)
 {
+  time_t now;
+  time(&now);
+
+  if (now > status_display_msg_until) {
+    /* time over for status message, restore standard status line */
+    status_message_showing = 0;
+    show_status();
+  }
+
+  if (status_message_showing)
+    status_display_message();
 
   if (old_online == online)
     return;
-  if ((P_LOGCONN[0] == 'Y') && (old_online >= 0) && (online < 0)) {
+  if (P_LOGCONN[0] == 'Y' && old_online >= 0 && online < 0)
     do_log(_("Gone offline (%ld:%02ld:%02ld)"),
            old_online / 3600, (old_online / 60) % 60, old_online % 60);
-  }
+
   old_online = online;
-  if (st) {
+
+  if (!status_message_showing)
     time_status();
-    ret_csr();
-  }
   mc_wflush();
 }
 
@@ -506,7 +548,7 @@ void timer_update(void)
       time(&start);
       t1 = start;
       online = 0;
-      updtime();
+      update_status_time();
 #ifdef _DCDFLOW
       /* DCD has gotten high, we can turn on hw flow control */
       if (P_HASRTS[0] == 'Y')
@@ -525,11 +567,11 @@ void timer_update(void)
       /* First update the timer for call duration.. */
       time(&t1);
       online = t1 - start;
-      updtime();
+      update_status_time();
     }
     /* ..and THEN notify that we are now offline */
     online = -1;
-    updtime();
+    update_status_time();
   }
 
   /* Update online time */
@@ -537,7 +579,7 @@ void timer_update(void)
     time(&t1);
     online = t1 - start;
     if (online > (old_online + 59))
-      updtime();
+      update_status_time();
   }
 }
 
@@ -618,7 +660,7 @@ int do_terminal(void)
 
 dirty_goto:
   /* Show off or online time */
-  updtime();
+  update_status_time();
 
   /* If the status line was shown temporarily, delete it again. */
   if (tempst) {
