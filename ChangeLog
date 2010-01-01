@@ -1,4 +1,7 @@
 2010-01-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Initialize 'local-echo' and 'add-LF' properly.
+
 	* src/main.c, src/config.c: Fix error when compiling with
 	   -Wformat -Werror=format-security, thanks Guillaume Rousse.
 

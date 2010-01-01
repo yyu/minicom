@@ -847,6 +847,11 @@ void toggle_addlf(void)
   vt_set(addlf, -1, -1, -1, -1, -1, -1);
 }
 
+static void set_addlf(int val)
+{
+  vt_set(val, -1, -1, -1, -1, -1, -1);
+}
+
 /* Toggle local echo.  Can be called through the menu, or by a macro. */
 void toggle_local_echo(void)
 {
@@ -854,6 +859,10 @@ void toggle_local_echo(void)
   vt_set(-1, -1, -1, -1, local_echo, -1 ,-1);
 }
 
+static void set_local_echo(int val)
+{
+  vt_set(-1, -1, -1, -1, val, -1 ,-1);
+}
 
 /* -------------------------------------------- */
 
@@ -1375,6 +1384,9 @@ int main(int argc, char **argv)
 
   if (cmd_dial)
     dialone(cmd_dial);
+
+  set_local_echo(local_echo);
+  set_addlf(addlf);
 
   /* The main loop calls do_terminal and gets a function key back. */
   while (!quit) {
