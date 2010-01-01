@@ -461,7 +461,7 @@ static void scrollback(void)
   if (b_st->xs < 127)
     hline0[b_st->xs] = 0;
   hline = hline0;
-  mc_wprintf(b_st, hline);
+  mc_wprintf(b_st, "%s", hline);
   mc_wredraw(b_st, 1);
   mc_wflush();
 
@@ -514,7 +514,7 @@ static void scrollback(void)
         searchhist(b_us, look_for);
         /* must redraw status line... */
         mc_wlocate(b_st, 0, 0); /* move back to column 0! */
-        mc_wprintf(b_st, hline); /* and show the above-defined hline */
+        mc_wprintf(b_st, "%s", hline); /* and show the above-defined hline */
         mc_wredraw(b_st, 1); /* again... */
         /* highlight any matches */
         if (wcslen(look_for) > 1) {
@@ -723,7 +723,7 @@ static void scrollback(void)
           hline = hline0;
         }
         mc_wlocate(b_st, 0, 0);
-        mc_wprintf(b_st, hline);
+        mc_wprintf(b_st, "%s", hline);
         mc_wredraw(b_st, 1);
         if (citemode)
           mc_wlocate(b_us, 0, cite_y);
@@ -743,7 +743,7 @@ static void scrollback(void)
           break;
         }
         mc_wlocate(b_st, 0, 0);
-        mc_wprintf(b_st, hline);
+        mc_wprintf(b_st, "%s", hline);
         mc_wredraw(b_st, 1);
         mc_wdrawelm_inverse(b_us, cite_y, mc_getline(b_us, cite_ystart));
         mc_wlocate(b_us, 0, cite_y);
@@ -762,7 +762,7 @@ static void scrollback(void)
         }
         drawcite_whole(b_us, y, cite_ystart, cite_yend);
         mc_wlocate(b_st, 0, 0);
-        mc_wprintf(b_st, hline);
+        mc_wprintf(b_st, "%s", hline);
         mc_wredraw(b_st, 1);
         if (citemode)
           mc_wlocate(b_us, 0, cite_y);

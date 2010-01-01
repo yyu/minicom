@@ -1,4 +1,6 @@
 2010-01-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+	* src/main.c, src/config.c: Fix error when compiling with
+	   -Wformat -Werror=format-security, thanks Guillaume Rousse.
 
 	* src/main.c: Fix: Do not all update_status if 'st' is not set.
 

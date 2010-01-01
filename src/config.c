@@ -1741,7 +1741,7 @@ void doconv(void)
         break;
       case 'C':
         prompt = _("Character to be edited: ");
-        mc_wprintf(w, prompt);
+        mc_wprintf(w, "%s", prompt);
         buf[0] = 0;
         i = -1;
         mc_wlocate(w, mbslen(prompt), ymax - 1);
