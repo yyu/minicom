@@ -498,7 +498,8 @@ static void update_status_time(void)
   if (now > status_display_msg_until) {
     /* time over for status message, restore standard status line */
     status_message_showing = 0;
-    show_status();
+    if (st)
+      show_status();
   }
 
   if (status_message_showing)
