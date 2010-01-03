@@ -1,3 +1,7 @@
+2010-01-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in: Change version to 2.4+dev
+
 2010-01-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.c: Initialize 'local-echo' and 'add-LF' properly.
