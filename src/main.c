@@ -495,15 +495,15 @@ static void update_status_time(void)
   time_t now;
   time(&now);
 
-  if (now > status_display_msg_until) {
-    /* time over for status message, restore standard status line */
-    status_message_showing = 0;
-    if (st)
-      show_status();
+  if (status_message_showing) {
+    if (now > status_display_msg_until) {
+      /* time over for status message, restore standard status line */
+      status_message_showing = 0;
+      if (st)
+	show_status();
+    } else
+      status_display_message();
   }
-
-  if (status_message_showing)
-    status_display_message();
 
   if (old_online == online)
     return;
