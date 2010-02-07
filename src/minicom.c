@@ -1539,6 +1539,9 @@ dirty_goto:
       case 'y': /* Paste file */
 	paste_file();
 	break;
+      case EOF: /* Cannot read from stdin anymore, exit silently */
+        quit = NORESET;
+        break;
       default:
         break;
     }

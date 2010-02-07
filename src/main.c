@@ -774,6 +774,9 @@ dirty_goto:
     if ((x & 2) == 2) {
       /* See which key was pressed. */
       c = keyboard(KGETKEY, 0);
+      if (c == EOF)
+        return EOF;
+
       if (c < 0) /* XXX - shouldn't happen */
         c += 256;
 

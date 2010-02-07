@@ -162,7 +162,7 @@ int wxgetch(void)
   }
 
   /* Some sequence still in memory ? */
-  if (leftmem) {
+  if (leftmem > 0) {
     leftmem--;
     if (leftmem == 0)
       pendingkeys = 0;
@@ -189,7 +189,7 @@ int wxgetch(void)
     }
 
 #if KEY_KLUDGE
-    while((nfound = cread(&c)) < 0 && (errno == EINTR && !gotalrm))
+    while ((nfound = cread(&c)) < 0 && (errno == EINTR && !gotalrm))
       ;
 #else
     while ((nfound = read(0, &c, 1)) < 0 && (errno == EINTR && !gotalrm))
@@ -197,7 +197,7 @@ int wxgetch(void)
 #endif
 
     if (nfound < 1)
-      break;
+      return EOF;
 
     if (len == 1) {
       /* Enter and erase have precedence over anything else */
