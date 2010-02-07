@@ -44,7 +44,11 @@ static int gotalrm;
 int pendingkeys = 0;
 int io_pending = 0;
 
-static const char *func_key[] = {
+#ifndef NCURSES_CONST
+#define NCURSES_CONST
+#endif
+
+static NCURSES_CONST char *func_key[] = {
   "", "k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8", "k9", "k0",
   "kh", "kP", "ku", "kl", "kr", "kd", "kH", "kN", "kI", "kD",
   "F1", "F2", NULL };
