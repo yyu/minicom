@@ -1,5 +1,8 @@
 2010-02-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/script.c: Make variables seq and toact volatile to fix
+	  setjmp warning. By Pavel Roskin.
+
 	* src/main.c: Fix aliasing warning. By Pavel Roskin.
 
 	* src/dial.c, src/file.c: Define what_lens as int, not as size_t.

@@ -511,10 +511,10 @@ struct line **buildexpect(void)
 int expect(char *text)
 {
   char *s, *w;
-  struct line **seq;
+  struct line **volatile seq;
   struct line oneline;
   struct line *dflseq[2];
-  char *toact = "exit 1";
+  char *volatile toact = "exit 1";
   volatile int found = 0;
   int f, val, c;
   char *action = NULL;
