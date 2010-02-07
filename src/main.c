@@ -154,7 +154,10 @@ void term_socket_close(void)
 int open_term(int doinit, int show_win_on_error)
 {
   struct stat stt;
-  char buf[128];
+  union {
+	char bytes[128];
+	int kermit;
+  } buf;
   int fd, n = 0;
   int pid;
 #ifdef HAVE_ERRNO_H
@@ -173,7 +176,7 @@ int open_term(int doinit, int show_win_on_error)
 #else /* SVR4_LOCKS */
     snprintf(lockfile, sizeof(lockfile),
                        "%s/LCK..%s",
-                       P_LOCK, mbasename(dial_tty, buf, sizeof(buf)));
+                       P_LOCK, mbasename(dial_tty, buf.bytes, sizeof(buf)));
 #endif /* SVR4_LOCKS */
 
   }
@@ -181,17 +184,17 @@ int open_term(int doinit, int show_win_on_error)
     lockfile[0] = 0;
 
   if (doinit > 0 && lockfile[0] && (fd = open(lockfile, O_RDONLY)) >= 0) {
-    n = read(fd, buf, 127);
+    n = read(fd, buf.bytes, 127);
     close(fd);
     if (n > 0) {
       pid = -1;
       if (n == 4)
         /* Kermit-style lockfile. */
-        pid = *(int *)buf;
+        pid = buf.kermit;
       else {
         /* Ascii lockfile. */
-        buf[n] = 0;
-        sscanf(buf, "%d", &pid);
+        buf.bytes[n] = 0;
+        sscanf(buf.bytes, "%d", &pid);
       }
       if (pid > 0 && kill((pid_t)pid, 0) < 0 &&
           errno == ESRCH) {
