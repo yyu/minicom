@@ -1,5 +1,8 @@
 2010-02-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/dial.c, src/file.c: Define what_lens as int, not as size_t.
+	  By Pavel Roskin.
+
 	* src/main.c: Better handling of ncurses const'ness. By Pavel Roskin.
 
 	* src/main.c, src/wkeys.c, src/minicom.c: Fix crash when terminal

@@ -67,7 +67,7 @@ static const char *const what[] =
 #define WHAT_NR_OPTIONS (sizeof (what) / sizeof (*what))
 #define WHAT_WIDTH 8 /* Width of one entry */
 /* Number of bytes for <= 7 characters */
-static size_t what_lens[WHAT_NR_OPTIONS];
+static int what_lens[WHAT_NR_OPTIONS];
 /* Number of ' ' padding entries at left and right, left is >= 1 */
 static int what_padding[WHAT_NR_OPTIONS][2];
 static int dprev;

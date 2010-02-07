@@ -1254,7 +1254,7 @@ static const char *const what[] =
 /* Offsets of what[] entries from position_dialing_directory */
 #define DIALOPTS (sizeof(what) / sizeof(*what))
 #define DIAL_WIDTH 8 /* Width of one entry */
-static size_t what_lens[DIALOPTS]; /* Number of bytes for <= 7 characters */
+static int what_lens[DIALOPTS]; /* Number of bytes for <= 7 characters */
 /* Number of ' ' padding entries at left and right, left is >= 1 */
 static int what_padding[DIALOPTS][2];
 
