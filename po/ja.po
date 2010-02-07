@@ -1584,7 +1584,7 @@ msgstr "コンパイルされた日時は: "
 # wtitle
 #: src/minicom.c:1368
 #, fuzzy
-msgid "Using character set conversion\r\n"
+msgid "Using character set conversion"
 msgstr "文字変換"
 
 # c-format(have percent)

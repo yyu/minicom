@@ -1741,7 +1741,7 @@ msgstr "Compilado em"
 # ../config.c:1631
 #: src/minicom.c:1368
 #, fuzzy
-msgid "Using character set conversion\r\n"
+msgid "Using character set conversion"
 msgstr "Conversão de Caracteres"
 
 # ../minicom.c:1293

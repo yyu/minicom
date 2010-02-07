@@ -1444,7 +1444,7 @@ msgstr "Fordítás ideje: "
 
 #: src/minicom.c:1368
 #, fuzzy
-msgid "Using character set conversion\r\n"
+msgid "Using character set conversion"
 msgstr "Karater átalakítások"
 
 #: src/minicom.c:1369

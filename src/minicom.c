@@ -1374,7 +1374,7 @@ int main(int argc, char **argv)
 #endif
   mc_wprintf(us, "Port %s\r\n", P_PORT);
   if (using_iconv())
-    mc_wprintf(us, _("Using character set conversion\r\n"));
+    mc_wprintf(us, "%s\r\n", _("Using character set conversion"));
   mc_wprintf(us, _("\nPress %sZ for help on special keys%c\n\n"),esc_key(),'\r');
 
   readdialdir();

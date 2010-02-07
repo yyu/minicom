@@ -1,5 +1,8 @@
 2010-02-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/minicom.c, po/*.po: Don't use carriage return
+	  in internationalized strings
+
 	* src/script.c: Make variables seq and toact volatile to fix
 	  setjmp warning. By Pavel Roskin.
 

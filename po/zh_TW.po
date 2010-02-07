@@ -1410,7 +1410,7 @@ msgstr "編譯於"
 
 #: src/minicom.c:1368
 #, fuzzy
-msgid "Using character set conversion\r\n"
+msgid "Using character set conversion"
 msgstr "字元轉換"
 
 #: src/minicom.c:1369

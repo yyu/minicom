@@ -1443,7 +1443,7 @@ msgstr "Compilé le"
 
 #: src/minicom.c:1368
 #, fuzzy
-msgid "Using character set conversion\r\n"
+msgid "Using character set conversion"
 msgstr "Conversion de caractères"
 
 #: src/minicom.c:1369
