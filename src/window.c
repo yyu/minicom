@@ -25,7 +25,6 @@
 #include <limits.h>
 #include <stdarg.h>
 #include <wchar.h>
-#include <termcap.h>
 
 #include "port.h"
 #include "minicom.h"

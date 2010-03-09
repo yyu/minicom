@@ -1,3 +1,8 @@
+2010-03-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/window.c: remove include of termcap.h because it's already
+	  done in a better way from port.h
+
 2010-02-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.c, po/*.po: Don't use carriage return
