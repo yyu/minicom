@@ -1,3 +1,9 @@
+2010-03-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in: change check for termcap.h to only check for
+	  termcap.h if ncurses/termcap.h was not found, so that not
+	  both are enabled.
+
 2010-03-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/window.c: remove include of termcap.h because it's already

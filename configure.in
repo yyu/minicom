@@ -145,7 +145,10 @@ dnl Checks for header files.
 dnl Do not use <ncurses/termcap.h> unless we're linking with ncurses.
 if test "x$termlib" = xncurses; then
   dnl Use AC_CHECK_HEADERS so the HAVE_*_H symbol gets defined.
-  AC_CHECK_HEADERS(ncurses/termcap.h)
+  AC_CHECK_HEADERS(ncurses/termcap.h, [found_termcap_h=1])
+fi
+if test "x$found_termcap_h" != "x1"; then
+  AC_CHECK_HEADERS(termcap.h)
 fi
 
 AC_CHECK_LIB(socket, socket)
@@ -163,7 +166,7 @@ if test $ac_cv_sys_posix_termios = yes; then
   AC_DEFINE(POSIX_TERMIOS, [1], [Define if your system supports POSIX termios])
 fi
 
-AC_CHECK_HEADERS(stdarg.h varargs.h termcap.h termio.h termios.h \
+AC_CHECK_HEADERS(stdarg.h varargs.h termio.h termios.h \
 	setjmp.h errno.h pwd.h signal.h fcntl.h sgtty.h locale.h \
 	sys/stat.h sys/file.h sys/ioctl.h sys/time.h \
 	sys/ttold.h sys/param.h unistd.h posix1_lim.h sgtty.h features.h)
