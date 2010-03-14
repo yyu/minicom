@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/file.c: Fix error handling for the case when you attempt
+	  to "goto" a dir that doesn't exist. (Fedora #103902)
+	
 	* src/file.c, src/util.c: Consider files names with spaces,
 	  Fedora Patch 98655 and Debian Patch #199924.
 

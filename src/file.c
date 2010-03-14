@@ -281,6 +281,8 @@ static int new_filedir(GETSDIR_ENTRY *o_dirdat, int flushit)
   int initial_y = (76 - (WHAT_NR_OPTIONS * WHAT_WIDTH >= 76
                    ? 74 : WHAT_NR_OPTIONS * WHAT_WIDTH)) / 2;
   size_t i;
+  int rval;
+  char * new_prev_dir;
 
   cur      =  0;
   ocur     =  0;
@@ -293,11 +295,6 @@ static int new_filedir(GETSDIR_ENTRY *o_dirdat, int flushit)
   min_len  =  1;
   dprev    = -1;
   tag_cnt  =  0;
-
-  /* got to do some error-checking here!!!  Maybe use mcd(), too! */
-  if (prev_dir != NULL)
-    free(prev_dir);
-  prev_dir = getcwd(NULL, BUFSIZ);
 
   /*
    * get last directory
@@ -328,7 +325,30 @@ static int new_filedir(GETSDIR_ENTRY *o_dirdat, int flushit)
   if (strlen(work_dir) > 1 && work_dir[strlen(work_dir) - 1] == '/')
     work_dir[strlen(work_dir) - 1] = (char)0;
 
-  chdir(work_dir);
+  /* get the current working directory, which will become the prev_dir, on success */
+  new_prev_dir = getcwd(NULL, BUFSIZ);
+  if (new_prev_dir == NULL) {
+    return -1;
+  } 
+
+  rval = chdir(work_dir);
+  if (rval == 0) {
+    /* was able to change to new working directory */
+    free(prev_dir);
+    prev_dir = new_prev_dir;
+  }
+  else {
+    /* Could not change to the new working directory */
+    mc_wbell();
+    werror(
+        _("Could not change to directory %s (%s)"), 
+        work_dir,
+        strerror(errno));
+
+    /* restore the previous working directory */
+    free(work_dir);
+    work_dir = set_work_dir(new_prev_dir, strlen(new_prev_dir));
+  }
 
   /* All right, draw the file directory! */
 
@@ -434,7 +454,7 @@ static int new_filedir(GETSDIR_ENTRY *o_dirdat, int flushit)
     mc_wredraw(dsub, 1);
   }
 
-  return 0;
+  return rval;
 }
 
 
