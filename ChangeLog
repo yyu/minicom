@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/updown.c: Removed static buffers that limit multi-file
+	  zmodem functionality. (Redhat #98654)
+	
 	* src/vt100.c: Check vttrans to prevent segfaults with certain
 	  ESC sequences. (Fedora #84129)
 
