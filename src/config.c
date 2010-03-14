@@ -51,14 +51,11 @@ void read_parms(void)
   char *p;
 
   /* Read global parameters */
-  if ((fp = fopen(parfile, "r")) == NULL) {
-    fprintf(stderr,
-            _("minicom: there is no global configuration file %s\n"), parfile);
-    fputs(_("Ask your sysadmin to create one (with minicom -s).\n"), stderr);
-    exit(1);
+  if ((fp = fopen(parfile, "r"))) {
+    readpars(fp, CONFIG_GLOBAL);
+    fclose(fp);
   }
-  readpars(fp, CONFIG_GLOBAL);
-  fclose(fp);
+
   /* Read personal parameters */
   if ((fp = fopen(pparfile, "r")) != NULL) {
     readpars(fp, CONFIG_PERSONAL);

@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/config.c: Do not exit if no global config file is there,
+	  we do not require it.
+	
 	* po/fi.po: Update from translation team.
 
 2010-03-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
