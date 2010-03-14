@@ -1372,7 +1372,7 @@ int main(int argc, char **argv)
 #if defined (__DATE__) && defined (__TIME__)
   mc_wprintf(us, "%s %s, %s.\r\n",_("Compiled on"), __DATE__,__TIME__);
 #endif
-  mc_wprintf(us, "Port %s\r\n", P_PORT);
+  mc_wprintf(us, "%s %s\r\n", _("Port"), P_PORT);
   if (using_iconv())
     mc_wprintf(us, "%s\r\n", _("Using character set conversion"));
   mc_wprintf(us, _("\nPress %sZ for help on special keys%c\n\n"),esc_key(),'\r');

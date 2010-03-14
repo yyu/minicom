@@ -1,5 +1,7 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/minicom.c: Put 'Port %s' under gettext. By Jorma Karvonen.
+
 	* src/config.c: Make sure the global config file is world readable,
 	  Redhat patch.
 	
