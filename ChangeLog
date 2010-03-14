@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/config.c: Make sure the global config file is world readable,
+	  Redhat patch.
+	
 	* src/updown.c: Removed static buffers that limit multi-file
 	  zmodem functionality. (Redhat #98654)
 	

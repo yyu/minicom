@@ -1242,6 +1242,8 @@ int dodflsave(void)
   }
   writepars(fp, dosetup);
   fclose(fp);
+  if (dosetup)
+    chmod(fname, (mode_t) 0644);
   werror(_("Configuration saved"));
 
   return domacsave() < 0 ? -1 : 0;
