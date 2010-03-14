@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/vt100.c: Check vttrans to prevent segfaults with certain
+	  ESC sequences. (Fedora #84129)
+
 	* src/file.c: Fix error handling for the case when you attempt
 	  to "goto" a dir that doesn't exist. (Fedora #103902)
 	

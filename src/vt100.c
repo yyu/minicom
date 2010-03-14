@@ -1012,7 +1012,7 @@ void vt_out(int ch)
       if (!using_iconv()) {
       c = vt_inmap[c];    /* conversion 04.09.97 / jl */
 #if TRANSLATE
-      if (vt_type == VT100 && vt_asis == 0)
+      if (vt_type == VT100 && vt_trans[vt_charset] && vt_asis == 0)
         c = vt_trans[vt_charset][c];
 #endif
       }
