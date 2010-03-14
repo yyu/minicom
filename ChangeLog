@@ -1,3 +1,7 @@
+2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/fi.po: Update from translation team.
+
 2010-03-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* configure.in: change check for termcap.h to only check for
