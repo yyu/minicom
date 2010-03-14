@@ -115,7 +115,7 @@ int fastexec(char *cmd)
 
   /* Delete escape-characters ment for the shell */
   p = cmd;
-  while ((p = strchr(p, '\\')))
+  while ((p = strchr(p, '\\')) && *(p+1) != ' ')
     memmove(p, p + 1, strlen(p+1));
 
   /* Split line into words */

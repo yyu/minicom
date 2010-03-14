@@ -534,6 +534,8 @@ static char *concat_list(GETSDIR_ENTRY *d)
 {
   GETSDIR_ENTRY *my_d;
   int indxr, len;
+  int i;
+  char *j;
 
   my_d = d;
   for (indxr = nrents, len = 0; indxr; --indxr, ++my_d)
@@ -553,8 +555,18 @@ static char *concat_list(GETSDIR_ENTRY *d)
     for (indxr = nrents; indxr; --indxr, ++my_d)
       if (my_d->cflags & FL_TAG) {
         /* this could be *much* more efficient */
-        strcat(ret_buf, my_d->fname);
-        strcat(ret_buf, " ");
+        for (i = strlen(ret_buf), j = my_d->fname; *j; j++) {
+          if (*j == ' ') {
+            if ((ret_buf = (char*)realloc(ret_buf, ++len)) == NULL) {
+              file_tell(_("Too many files tagged - buffer would overflow"));
+              return(NULL);
+            }
+            ret_buf[i++] = '\\';
+          }
+          ret_buf[i++] = *j;
+        }
+        ret_buf[i++] = ' ';
+        ret_buf[i]   = '\0';
       }
 
     ret_buf[strlen(ret_buf) - 1] = (char)0;

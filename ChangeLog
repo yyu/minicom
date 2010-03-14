@@ -1,5 +1,8 @@
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/file.c, src/util.c: Consider files names with spaces,
+	  Fedora Patch 98655 and Debian Patch #199924.
+
 	* src/config.c: Do not exit if no global config file is there,
 	  we do not require it.
 	
