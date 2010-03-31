@@ -1,3 +1,8 @@
+2010-04-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in, src/Makefile.am: Add -std=gnu99 -W -Wall if using
+	  gcc, fix CFLAGS usage.
+
 2010-03-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.c: Put 'Port %s' under gettext. By Jorma Karvonen.

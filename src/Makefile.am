@@ -24,8 +24,6 @@ MINICOM_LIBPORT = $(top_builddir)/lib/libport.a
 
 LDADD = $(MINICOM_LIBPORT)
 
-AM_CFLAGS = @CFLAGS@ -Wall -W
-
 confdir = @MINICOM_CONFDIR@
 
 AM_CPPFLAGS = @CPPFLAGS@ -I$(top_srcdir)/lib -DCONFDIR=\"$(confdir)\" \

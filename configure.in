@@ -290,6 +290,11 @@ then
 	CFLAGS="$CFLAGS -I\$(top_srcdir)/lib"
 fi
 
+if test "x$ac_cv_prog_gcc" = xyes
+then
+	CFLAGS="$CFLAGS -W -Wall -Wextra -std=gnu99"
+fi
+
 # this is a hack, if we need getopt_long we also need getopt
 # but I don't know how to express that dependency in lib/Makefile.am
 AC_SUBST(LIBPORT_GETOPT_LONG_DEP)
