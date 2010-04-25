@@ -448,7 +448,6 @@ void lockfile_remove(void)
 void lockfile_create(void)
 {
   int fd, n;
-  char buf[81];
 
   if (!lockfile[0])
     return;
@@ -458,7 +457,13 @@ void lockfile_create(void)
   if ((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0) {
     werror(_("Cannot create lockfile!"));
   } else {
-    snprintf(buf, sizeof(buf),  "%05d minicom %.20s\n", (int)getpid(), username);
+    // previously used lockfile format:
+    // char buf[81];
+    //snprintf(buf, sizeof(buf),  "%05d minicom %.20s\n", (int)getpid(), username);
+    // FHS format:
+    char buf[12];
+    snprintf(buf, sizeof(buf),  "%10d\n", getpid());
+    buf[sizeof(buf) - 1] = 0;
     write(fd, buf, strlen(buf));
     close(fd);
   }

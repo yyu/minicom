@@ -1,3 +1,7 @@
+2010-04-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/updown.c: Use FHS compliant lock-file format.
+
 2010-04-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* configure.in, src/Makefile.am: Add -std=gnu99 -W -Wall if using
