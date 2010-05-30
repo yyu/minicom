@@ -1,3 +1,8 @@
+2010-05-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/updown.c: Check for error conditions on fd of running script.
+	  for minicom bug-tracker #312517, by Chris Simmonds
+
 2010-04-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/updown.c: Use FHS compliant lock-file format.

@@ -730,9 +730,11 @@ void runscript(int ask, const char *s, const char *l, const char *p)
   fds[1].events = POLLIN;
   script_running = 1;
   while (script_running && poll(fds, 2, -1) > 0)
-    for (i = 0; i < 2; i++)
-      if ((fds[i].revents & POLLIN)
-          && (n = read(fds[i].fd, buf, sizeof(buf)-1)) > 0) {
+    for (i = 0; i < 2; i++) {
+      if (fds[i].revents & (POLLERR | POLLHUP | POLLNVAL))
+        script_running = 0;
+      else if ((fds[i].revents & POLLIN)
+               && (n = read(fds[i].fd, buf, sizeof(buf)-1)) > 0) {
         ptr = buf;
         while (n--)
           if (i)
@@ -742,6 +744,7 @@ void runscript(int ask, const char *s, const char *l, const char *p)
         timer_update();
         mc_wflush();
       }
+    }
 
   /* Collect status, and clean up. */
   m_wait(&status);
