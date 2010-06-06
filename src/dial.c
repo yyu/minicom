@@ -1119,7 +1119,7 @@ static void dedit(struct dialent *d)
   char *name		    = _(" A -  Name                :"),
        *number		    = _(" B -  Number              :"),
        *dial_string	    = _(" C -  Dial string #       :"),
-       *local_echo	    = _(" D -  Local echo          :"),
+       *local_echo_str	    = _(" D -  Local echo          :"),
        *script		    = _(" E -  Script              :"),
        *username	    = _(" F -  Username            :"),
        *password	    = _(" G -  Password            :"),
@@ -1134,7 +1134,7 @@ static void dedit(struct dialent *d)
   mc_wprintf(w, "%s %s\n", name, d->name);
   mc_wprintf(w, "%s %s\n", number, d->number);
   mc_wprintf(w, "%s %d\n", dial_string, d->dialtype + 1);
-  mc_wprintf(w, "%s %s\n", local_echo, _(yesno(d->flags & FL_ECHO)));
+  mc_wprintf(w, "%s %s\n", local_echo_str, _(yesno(d->flags & FL_ECHO)));
   mc_wprintf(w, "%s %s\n", script, d->script);
   mc_wprintf(w, "%s %s\n", username, d->username);
   mc_wprintf(w, "%s %s\n", password, d->password);
@@ -1179,7 +1179,7 @@ static void dedit(struct dialent *d)
         break;
       case 'D':
         d->flags ^= FL_ECHO;
-        mc_wlocate(w, mbslen (local_echo) + 1, 3);
+        mc_wlocate(w, mbslen (local_echo_str) + 1, 3);
         mc_wprintf(w, "%s", _(yesno(d->flags & FL_ECHO)));
         mc_wflush();
         break;

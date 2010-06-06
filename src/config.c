@@ -814,7 +814,7 @@ static void doscrkeyb(void)
   char *macros_enabled        = _(" N - Macros enabled         :");
   char *character_conversion  = _(" O - Character conversion   :");
   char *add_linefeed          = _(" P - Add linefeed           :");
-  char *local_echo            = _(" Q - Local echo             :");
+  char *local_echo_str        = _(" Q - Local echo             :");
   char *question              = _("Change which setting?  (Esc to exit)");
 
   w = mc_wopen(15, miny, 69, maxy, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
@@ -843,7 +843,7 @@ static void doscrkeyb(void)
   mc_wprintf(w, "%s %s\n", character_conversion, P_CONVF);
 
   mc_wprintf(w, "%s %s\n", add_linefeed, _(P_ADDLINEFEED));
-  mc_wprintf(w, "%s %s\n", local_echo, _(P_LOCALECHO));
+  mc_wprintf(w, "%s %s\n", local_echo_str, _(P_LOCALECHO));
 
   mc_wredraw(w, 1);
 
@@ -1115,7 +1115,7 @@ static void doscrkeyb(void)
         break;
       case 'Q':
         psets(P_LOCALECHO, yesno(P_LOCALECHO[0] == 'N'));
-        mc_wlocate(w, mbslen (local_echo) + 1, 17);
+        mc_wlocate(w, mbslen (local_echo_str) + 1, 17);
         mc_wprintf(w, "%s", _(P_LOCALECHO));
         break;
      }
