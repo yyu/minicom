@@ -1,5 +1,7 @@
 2010-06-06  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/vt100.c: Use local_echo in vt_init.
+
 	* src/dial.c, src/config.c: Rename local variable local_echo to
 	  local_echo_str as there's also a global variable local_echo.
 

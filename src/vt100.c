@@ -219,7 +219,7 @@ void vt_init(int type, int fg, int bg, int wrap, int add)
   mc_wresetregion(vt_win);
   vt_keypad = NORMAL;
   vt_cursor = NORMAL;
-  vt_echo = 0;
+  vt_echo = local_echo;
   vt_tabs[0] = 0x01010100;
   vt_tabs[1] =
   vt_tabs[2] =
