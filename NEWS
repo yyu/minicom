@@ -3,6 +3,9 @@ This file lists the most important changes to
 the previous released version. For a full list of changes
 please refer to the ChangeLog file.
 
+New for version 2.5:
+ - Handle device reconnected more smoothly (USB-serial dongles)
+
 New for version 2.4:
  - Add -D and -b options to specify device and baud rate on the command
    line.
