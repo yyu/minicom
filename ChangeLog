@@ -1,3 +1,9 @@
+2010-07-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/main.c, src/minicom.c, src/minicom.h: Handle device
+	  reconnects more smoothly by reopening a closed device
+	  (USB-serial dongles).
+
 2010-06-06  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/vt100.c: Use local_echo in vt_init.
