@@ -1281,14 +1281,14 @@ int main(int argc, char **argv)
 
   if (dial_tty == NULL) {
     if (!dosetup) {
-      while ((dial_tty = get_port(P_PORT)) != NULL && open_term(doinit, 1) < 0)
+      while ((dial_tty = get_port(P_PORT)) != NULL && open_term(doinit, 1, 0) < 0)
         ;
       if (dial_tty == NULL)
         exit(1);
     }
   }
   else {
-    if (!dosetup && open_term(doinit, 1) < 0)
+    if (!dosetup && open_term(doinit, 1, 0) < 0)
       exit(1);
   }
 
@@ -1305,7 +1305,7 @@ int main(int argc, char **argv)
       mc_wclose(stdwin, 1);
       exit(0);
     }
-    while ((dial_tty = get_port(P_PORT)) != NULL && open_term(doinit, 1) < 0)
+    while ((dial_tty = get_port(P_PORT)) != NULL && open_term(doinit, 1, 0) < 0)
       ;
     if (dial_tty == NULL)
       exit(1);

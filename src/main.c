@@ -151,7 +151,7 @@ void term_socket_close(void)
  *
  * \return -1 on error, 0 on success
  */
-int open_term(int doinit, int show_win_on_error)
+int open_term(int doinit, int show_win_on_error, int no_msgs)
 {
   struct stat stt;
   union {
@@ -270,21 +270,25 @@ int open_term(int doinit, int show_win_on_error)
   alarm(0);
   signal(SIGALRM, SIG_IGN);
   if (portfd < 0 && !portfd_is_socket) {
-    if (doinit > 0) {
-      if (stdwin)
-	mc_wclose(stdwin, 1);
+    if (!no_msgs) {
+      if (doinit > 0) {
+	if (stdwin)
+	  mc_wclose(stdwin, 1);
 #ifdef HAVE_ERRNO_H
-      fprintf(stderr, _("minicom: cannot open %s: %s\n"),
-                      dial_tty, strerror(s_errno));
+	fprintf(stderr, _("minicom: cannot open %s: %s\n"),
+			dial_tty, strerror(s_errno));
 #else
-      fprintf(stderr, _("minicom: cannot open %s. Sorry.\n"), dial_tty);
+	fprintf(stderr, _("minicom: cannot open %s. Sorry.\n"), dial_tty);
 #endif
-      lockfile_remove();
-      return -1;
+        lockfile_remove();
+        return -1;
+      }
+
+      if (show_win_on_error)
+	werror(_("Cannot open %s!"), dial_tty);
     }
+
     lockfile_remove();
-    if (show_win_on_error)
-      werror(_("Cannot open %s!"), dial_tty);
     return -1;
   }
 
@@ -709,7 +713,14 @@ dirty_goto:
 
     /* check if device is ok, if not, try to open it */
     if (!get_device_status(portfd_connected)) {
-      if (open_term(0, 0) < 0) {
+      /* Ok, it's gone, most probably someone unplugged the USB-serial, we
+       * need to free the FD so that a replug can get the same device
+       * filename, open it again and be back */
+      int reopen = portfd == -1;
+      close(portfd);
+      lockfile_remove();
+      portfd = -1;
+      if (open_term(reopen, reopen, 1) < 0) {
         if (!error_on_open_window)
           error_on_open_window = mc_tell(_("Cannot open %s!"), dial_tty);
       } else {

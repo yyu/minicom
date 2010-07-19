@@ -216,7 +216,7 @@ void leave(const char *s) __attribute__((noreturn));
 char *esc_key(void);
 void term_socket_connect(void);
 void term_socket_close(void);
-int  open_term(int doinit, int show_win_on_error);
+int  open_term(int doinit, int show_win_on_error, int no_msgs);
 void init_emul(int type, int do_init);
 void timer_update(void);
 void mode_status(void);
