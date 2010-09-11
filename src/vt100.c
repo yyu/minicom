@@ -565,7 +565,6 @@ static void state2(int c)
       vt_trans[0] = savetrans[0];
       vt_trans[1] = savetrans[1];
 #endif
-      break;
       vt_win->color = savecol; /* HACK should use mc_wsetfgcol etc */
       mc_wsetattr(vt_win, saveattr);
       mc_wlocate(vt_win, savex, savey);

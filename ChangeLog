@@ -1,3 +1,8 @@
+2010-09-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/vt100.c: remove 'break' in ESC[u handling which should
+	  not have been there. 
+
 2010-07-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/main.c, src/minicom.c, src/minicom.h: Handle device
