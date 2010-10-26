@@ -60,13 +60,11 @@ void ms_delay(int ms)
 /*
  *	Output a line and delay if needed.
  */
-void lineout(char const *line)
+static void lineout(char const *line, int len)
 {
   int ret;
 
   if (!cdelay) {
-    int len = strlen(line);
-
     do {
       ret = write(STDOUT_FILENO, line, len);
       if (ret < 0) {
@@ -146,26 +144,36 @@ int asend(char *file)
   char line[1024];
   char *s;
   int first = 1;
+  long cur, len;
 
   if ((fp = fopen(file, "r")) == NULL) {
     perror(file);
     return -1;
   }
 
-  while (fgets(line, sizeof(line) - 1, fp) != NULL) {
+  cur = 0;
+
+  while (fgets(line, sizeof(line) - 2, fp) != NULL) {
+    long c = ftell(fp);
+    len = c - cur;
+    cur = c;
     if (dotrans && (s = strrchr(line, '\n')) != NULL) {
       /* s now points to \n */
       /* if there's a \r before, go there */
       if (s > line && *(s - 1) == '\r')
-        s--;
+        {
+          s--;
+	  len--;
+	}
       /* end of line */
       *s++ = '\r';
       *s++ = '\n';
       /* terminate string */
       *s = 0;
+      len++;
     }
-    lineout(line);
-    bdone += strlen(line);
+    lineout(line, len);
+    bdone += len;
     if (ldelay)
       ms_delay(ldelay);
     stats(first);
