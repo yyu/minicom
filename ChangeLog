@@ -1,5 +1,8 @@
 2010-10-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/ascii-xfr.c: check_answer: Cleanup.
+	  Thanks Kjell M. Myksvoll.
+
 	* src/ascii-xfr.c: lineout: change to use explicit length info
 	  instead of strlen, makes storing data with included '\0' work.
 	  Thanks Kjell M. Myksvoll.

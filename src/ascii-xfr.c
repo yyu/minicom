@@ -19,7 +19,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <strings.h>
 #include <time.h>
 #include <unistd.h>
 #include <sys/time.h>
@@ -127,9 +126,9 @@ void check_answer(void)
   tv.tv_usec = 0;
   while (select (STDIN_FILENO + 1, &rfds, NULL, NULL, &tv) > 0) {
     n = read (STDIN_FILENO, line, sizeof(line));
-    write(STDERR_FILENO, line, n);
-    FD_ZERO (&rfds);
-    FD_SET (STDIN_FILENO, &rfds);
+    (void)write(STDERR_FILENO, line, n);
+    FD_ZERO(&rfds);
+    FD_SET(STDIN_FILENO, &rfds);
     tv.tv_sec = 0;
     tv.tv_usec = 0;
   }
