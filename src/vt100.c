@@ -614,17 +614,17 @@ static void state2(int c)
             mc_wsetfgcol(vt_win, vt_fg);
             mc_wsetbgcol(vt_win, vt_bg);
             break;
-          case 4:
-            attr |= XA_UNDERLINE;
-            break;
-          case 7:
-            attr |= XA_REVERSE;
-            break;
           case 1:
             attr |= XA_BOLD;
             break;
+          case 4:
+            attr |= XA_UNDERLINE;
+            break;
           case 5:
             attr |= XA_BLINK;
+            break;
+          case 7:
+            attr |= XA_REVERSE;
             break;
           case 22: /* Bold off */
             attr &= ~XA_BOLD;
