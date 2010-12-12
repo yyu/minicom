@@ -202,15 +202,15 @@ static void outstr(const char *s)
  */
 static void _attroff(void)
 {
-  if (ME != NULL)
+  if (ME)
     outstr(ME);
   else {
-    if (SE != NULL)
+    if (SE)
       outstr(SE);
-    if (UE != NULL)
+    if (UE)
       outstr(UE);
   }
-  if (AE != NULL)
+  if (AE)
     outstr(AE);
 }
 
@@ -219,20 +219,17 @@ static void _attroff(void)
  */
 static void _attron(char attr)
 {
-  if (!usecolor || (attr & XA_REVERSE) == 0) {
-    /* Reverse standout does not look too good.. */
-    if (attr & XA_BOLD	&& MD != NULL)
-      outstr(MD);
-    if (attr & XA_STANDOUT && SO != NULL)
-      outstr(SO);
-    if (attr & XA_UNDERLINE && US != NULL)
-      outstr(US);
-  }
-  if (attr & XA_REVERSE	&& MR != NULL)
+  if (attr & XA_REVERSE	&& MR)
     outstr(MR);
-  if (attr & XA_BLINK && MB != NULL)
+  if (attr & XA_BOLD && MD)
+    outstr(MD);
+  if (attr & XA_STANDOUT && SO)
+    outstr(SO);
+  if (attr & XA_UNDERLINE && US)
+    outstr(US);
+  if (attr & XA_BLINK && MB)
     outstr(MB);
-  if (attr & XA_ALTCHARSET && AS != NULL)
+  if (attr & XA_ALTCHARSET && AS)
     outstr(AS);
 }
 
