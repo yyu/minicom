@@ -1566,9 +1566,9 @@ void domacros(void)
     mc_wlocate(w, 1, 15);
     mc_wputs(w, _("  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "));
     mc_wlocate(w, 1, 16);
-    mc_wputs(w, _("  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\bfq \""));
+    mc_wputs(w, _("  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""));
     mc_wlocate(w, 1, 17);
-    mc_wputs(w, _("  = 19200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"));
+    mc_wputs(w, _("  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"));
     if (clr) {
       mc_wlocate(w, 1, 12);
       mc_wprintf(w, "%s ", question);

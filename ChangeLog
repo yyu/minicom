@@ -1,3 +1,12 @@
+2010-12-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/dial.c: For macros, add \g<script> to launch runscript.
+
+	* src/window.c: _attron(): fix bold with inverse mode, do not handle
+	  prettiness
+
+	* src/vt100.c: state2(): order list in switch for readability.
+
 2010-10-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/ascii-xfr.c: check_answer: Cleanup.

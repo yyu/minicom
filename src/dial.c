@@ -180,7 +180,7 @@ void mputs(const char *s, int how)
 {
   char c;
 
-  while(*s) {
+  while (*s) {
     if (*s == '^' && (*(s + 1))) {
       s++;
       if (*s == '^')
@@ -218,6 +218,9 @@ void mputs(const char *s, int how)
           toggle_local_echo();
           s++; /* again, move along. */
           continue;
+	case 'G': /* run a script */
+	  runscript(0, s + 1, "", "");
+	  return;
         default:
           s++;
           continue;
