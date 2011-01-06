@@ -6,101 +6,91 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.00.0\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2009-12-20 12:53+0100\n"
+"POT-Creation-Date: 2011-01-06 09:53+0100\n"
 "PO-Revision-Date: 2003-09-08 00:41-0400\n"
 "Last-Translator: Márton Németh <nm127@hszk.bme.hu>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8-bit\n"
 
-#: src/config.c:56
-#, c-format
-msgid "minicom: there is no global configuration file %s\n"
-msgstr "minicom: nincs %s globális konfigurációs fájl.\n"
-
-#: src/config.c:57
-#, fuzzy
-msgid "Ask your sysadmin to create one (with minicom -s).\n"
-msgstr ""
-"Kérd meg a rendszergazdát, hozzon létre egyet (a 'minicom -s' paranccsal).\n"
-
-#: src/config.c:78
+#: src/config.c:75
 #, c-format
 msgid "minicom: cannot open macro file %s\n"
 msgstr "minicom: nem tudom megnyitni a(z) %s makró fájlt.\n"
 
-#: src/config.c:246
+#: src/config.c:243
 msgid " A - File name (empty=disable) :"
 msgstr " A - Fájlnév (üresen hagyva = letiltás)            :"
 
-#: src/config.c:247
+#: src/config.c:244
 msgid " B - Log connects and hangups  :"
 msgstr " B - Naplózzuk a kapcsolatokat és a vonalbontásokat:"
 
-#: src/config.c:248
+#: src/config.c:245
 msgid " C - Log file transfers        :"
 msgstr " C - Naplózzuk a fájlátviteleket                   :"
 
-#: src/config.c:249 src/config.c:303 src/config.c:545 src/config.c:647
-#: src/config.c:1145 src/dial.c:1131
+#: src/config.c:246 src/config.c:300 src/config.c:542 src/config.c:644
+#: src/config.c:1142 src/dial.c:1134
 msgid "Change which setting?"
 msgstr "Melyik beállítást módosítsuk?"
 
-#: src/config.c:253
+#: src/config.c:250
 msgid "Logging options"
 msgstr "Naplózási lehetõségek"
 
-#: src/config.c:295
+#: src/config.c:292
 msgid " A - Download directory :"
 msgstr " A - Letöltési mappa       :"
 
-#: src/config.c:296
+#: src/config.c:293
 msgid " B - Upload directory   :"
 msgstr " B - Feltöltési mappa      :"
 
-#: src/config.c:297
+#: src/config.c:294
 msgid " C - Script directory   :"
 msgstr " C - Parancsfájl mappa     :"
 
-#: src/config.c:298
+#: src/config.c:295
 msgid " D - Script program     :"
 msgstr " D - Parancsfájl           :"
 
-#: src/config.c:299
+#: src/config.c:296
 msgid " E - Kermit program     :"
 msgstr " E - A kermit program      :"
 
-#: src/config.c:301
+#: src/config.c:298
 msgid " F - Logging options"
 msgstr " F - Naplózási lehetõségek"
 
-#: src/config.c:356 src/rwconf.c:114 src/rwconf.c:147 src/rwconf.c:148
+#: src/config.c:353 src/rwconf.c:114 src/rwconf.c:147 src/rwconf.c:148
 msgid "Yes"
 msgstr "Igen"
 
-#: src/config.c:356
+#: src/config.c:353
 msgid "No "
 msgstr "Nem "
 
-#: src/config.c:431
+#: src/config.c:428
 #, fuzzy
 msgid "M  Zmodem download string activates..."
 msgstr "M Zmodem letöltõ karakterlánc XXXaktiválás."
 
-#: src/config.c:432
+#: src/config.c:429
 msgid "N  Use filename selection window......"
 msgstr "N  Használjuk a fájlkiválasztási ablakot..."
 
-#: src/config.c:433
+#: src/config.c:430
 msgid "O  Prompt for download directory......"
 msgstr "O  Kérdezzünk rá a letöltési könyvtárra...."
 
-#: src/config.c:434
+#: src/config.c:431
 msgid "Change which setting? (SPACE to delete)"
 msgstr "Melyik beállítást módosítsam? (<SZÓKÖZ> a törléshez)"
 
-#: src/config.c:437
+#: src/config.c:434
 msgid "     Name             Program"
 msgstr "     Név              Program"
 
@@ -110,234 +100,234 @@ msgstr "     Név              Program"
 #. * FullScr: Command runs fullscreen
 #. * IO-Red: Redirect output of commands to logfile
 #. * Multi: Protocol can transfer multiple files at once
-#: src/config.c:446
+#: src/config.c:443
 msgid "Name U/D FullScr IO-Red. Multi"
 msgstr "Név  U/D TeljKép IO-Átal. Multi"
 
-#: src/config.c:477
+#: src/config.c:474
 msgid "Delete which protocol? "
 msgstr "Melyik protokollt töröljem?"
 
-#: src/config.c:538
+#: src/config.c:535
 msgid " A -    Serial Device      :"
 msgstr " A - Soros port                  :"
 
-#: src/config.c:539
+#: src/config.c:536
 msgid " B - Lockfile Location     :"
 msgstr " B - Zárolási fájl helye         :"
 
-#: src/config.c:540
+#: src/config.c:537
 msgid " C -   Callin Program      :"
 msgstr " C - Bejövõ hívás programja      :"
 
-#: src/config.c:541
+#: src/config.c:538
 msgid " D -  Callout Program      :"
 msgstr " D - Kimenõ hívás programja      :"
 
-#: src/config.c:542
+#: src/config.c:539
 msgid " E -    Bps/Par/Bits       :"
 msgstr " E - sebesség/paritás/bitszám    :"
 
-#: src/config.c:543
+#: src/config.c:540
 msgid " F - Hardware Flow Control :"
 msgstr " F - Hardveres folyamszabályzás  :"
 
-#: src/config.c:544
+#: src/config.c:541
 msgid " G - Software Flow Control :"
 msgstr " G - Szoftveres folyamszabályzás :"
 
-#: src/config.c:617
+#: src/config.c:614
 msgid "DTE speed "
 msgstr "DTE sebesség"
 
-#: src/config.c:619
+#: src/config.c:616
 msgid "line speed"
 msgstr "vonali seb. "
 
-#: src/config.c:627
+#: src/config.c:624
 msgid " A - Init string ........."
 msgstr " A -Inicializáló kar.lánc "
 
-#: src/config.c:628
+#: src/config.c:625
 msgid " B - Reset string ........"
 msgstr " B - Alaphelyzetbe hozó karakterlánc ."
 
-#: src/config.c:629
+#: src/config.c:626
 msgid " C - Dialing prefix #1...."
 msgstr " C - 1. tárcsázási elõtag ............"
 
-#: src/config.c:630
+#: src/config.c:627
 msgid " D - Dialing suffix #1...."
 msgstr " D - 1. tárcsázási utótag ............"
 
-#: src/config.c:631
+#: src/config.c:628
 msgid " E - Dialing prefix #2...."
 msgstr " E - 2. tárcsázási elõtag ............"
 
-#: src/config.c:632
+#: src/config.c:629
 msgid " F - Dialing suffix #2...."
 msgstr " F - 2. tárcsázási utótag ............"
 
-#: src/config.c:633
+#: src/config.c:630
 msgid " G - Dialing prefix #3...."
 msgstr " G - 3. tárcsázási elõtag ............"
 
-#: src/config.c:634
+#: src/config.c:631
 msgid " H - Dialing suffix #3...."
 msgstr " H - 3. tárcsázási utótag ............"
 
-#: src/config.c:635
+#: src/config.c:632
 msgid " I - Connect string ......"
 msgstr " I - Kapcsolódás karakterlánca ......."
 
-#: src/config.c:636
+#: src/config.c:633
 msgid " J - No connect strings .."
 msgstr " J - Sikertelen kapcsolódás karakterlánca ."
 
-#: src/config.c:637
+#: src/config.c:634
 msgid " K - Hang-up string ......"
 msgstr " K - Vonalbontás karakterlánca ............"
 
-#: src/config.c:638
+#: src/config.c:635
 msgid " L - Dial cancel string .."
 msgstr " L - Tárcsázásmegszakítás karakterlánca ..."
 
-#: src/config.c:639
+#: src/config.c:636
 msgid " M - Dial time ..........."
 msgstr " M - Tárcsázási idõ ......."
 
-#: src/config.c:640
+#: src/config.c:637
 msgid " N - Delay before redial ."
 msgstr " N - Vár. újratárcs. elõtt."
 
-#: src/config.c:641
+#: src/config.c:638
 msgid " O - Number of tries ....."
 msgstr " O - Próbálkozások száma .."
 
-#: src/config.c:642
+#: src/config.c:639
 msgid " P - DTR drop time (0=no)."
 msgstr " P - DTR LO szint ideje ..."
 
-#: src/config.c:643
+#: src/config.c:640
 msgid " Q - Auto bps detect ....."
 msgstr " Q -Autom. sebesség felism."
 
-#: src/config.c:644
+#: src/config.c:641
 msgid " R - Modem has DCD line .."
 msgstr " R - A modemnek van DCD-je."
 
-#: src/config.c:645
+#: src/config.c:642
 msgid " S - Status line shows ..."
 msgstr " S - A státusz sorban a ..."
 
-#: src/config.c:646
+#: src/config.c:643
 #, fuzzy
 msgid " T - Multi-line untag ...."
 msgstr " T - Többsoros untag???...."
 
-#: src/config.c:652
+#: src/config.c:649
 msgid "Modem and dialing parameter setup"
 msgstr "Modem és tárcsázási paraméterek beállítása"
 
-#: src/config.c:685
+#: src/config.c:682
 msgid "      (Return or Esc to exit)"
 msgstr "      (Return vagy Esc a kilépéshez)"
 
-#: src/config.c:805
+#: src/config.c:802
 msgid " A - Command key is         :"
 msgstr " A - Parancsgomb               :"
 
-#: src/config.c:806
+#: src/config.c:803
 msgid " B - Backspace key sends    :"
 msgstr " B - A <Backspace> gomb küldjön:"
 
-#: src/config.c:807
+#: src/config.c:804
 msgid " C - Status line is         :"
 msgstr " C - A státuszsor              :"
 
-#: src/config.c:808
+#: src/config.c:805
 msgid " D - Alarm sound            :"
 msgstr " D - Figyelmeztetõ hang        :"
 
-#: src/config.c:809
+#: src/config.c:806
 msgid " E - Foreground Color (menu):"
 msgstr " E - Menü elõtér színe         :"
 
-#: src/config.c:810
+#: src/config.c:807
 msgid " F - Background Color (menu):"
 msgstr " F - Menü háttér színe         :"
 
-#: src/config.c:811
+#: src/config.c:808
 msgid " G - Foreground Color (term):"
 msgstr " E - Terminál elõtér színe     :"
 
-#: src/config.c:812
+#: src/config.c:809
 msgid " H - Background Color (term):"
 msgstr " H - Terminál háttér színe     :"
 
-#: src/config.c:813
+#: src/config.c:810
 msgid " I - Foreground Color (stat):"
 msgstr " I - Státuszsor elõtér színe   :"
 
-#: src/config.c:814
+#: src/config.c:811
 msgid " J - Background Color (stat):"
 msgstr " J - Státuszsor háttér színe   :"
 
-#: src/config.c:815
+#: src/config.c:812
 msgid " K - History Buffer Size    :"
 msgstr " K - Elõzmények puffer mérete  :"
 
-#: src/config.c:816
+#: src/config.c:813
 msgid " L - Macros file            :"
 msgstr " L - Makró fájl                :"
 
-#: src/config.c:817
+#: src/config.c:814
 msgid " N - Macros enabled         :"
 msgstr " N - Makrók engedélyezése      :"
 
-#: src/config.c:818
+#: src/config.c:815
 msgid " O - Character conversion   :"
 msgstr " O - Karakterek átalakítása    :"
 
-#: src/config.c:819
+#: src/config.c:816
 #, fuzzy
 msgid " P - Add linefeed           :"
 msgstr " J -  Sortörés            :"
 
-#: src/config.c:820
+#: src/config.c:817
 #, fuzzy
 msgid " Q - Local echo             :"
 msgstr " D -  Helyi visszhang      :"
 
-#: src/config.c:821 src/config.c:1544
+#: src/config.c:818 src/config.c:1543
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Melyik beállítást módosítsam? (<ESC> a kilépéshez)"
 
-#: src/config.c:825 src/config.c:1316
+#: src/config.c:822 src/config.c:1315
 msgid "Screen and keyboard"
 msgstr "Képernyõ és billentyûzet"
 
-#: src/config.c:844
+#: src/config.c:841
 msgid " M - Edit Macros\n"
 msgstr " M - Makrók szerkesztése\n"
 
-#: src/config.c:869
+#: src/config.c:866
 msgid "You can't change colors in black and white mode"
 msgstr "Nem változtathatod meg a szineket fekete-fehér módban."
 
-#: src/config.c:881
+#: src/config.c:878
 msgid "Menu foreground == background color, change!"
 msgstr "A menü elõtér- és háttérszíne megegyezik. Változtass ezen!"
 
-#: src/config.c:890
+#: src/config.c:887
 msgid "Terminal foreground == background color, change!"
 msgstr "A terminál elõtér- és háttérszíne megegyezik. Változtass ezen!"
 
-#: src/config.c:902
+#: src/config.c:899
 msgid "History Buffer Size"
 msgstr "Elõzmények puffer mérete"
 
-#: src/config.c:903
+#: src/config.c:900
 #, fuzzy
 msgid ""
 "\n"
@@ -354,11 +344,11 @@ msgstr ""
 "\n"
 "  Üss le egy billentyût a folytatáshoz... "
 
-#: src/config.c:920
+#: src/config.c:917
 msgid "Program new command key"
 msgstr "Új parancsgomb programozása"
 
-#: src/config.c:922
+#: src/config.c:919
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -371,209 +361,209 @@ msgid ""
 " Press new command key: "
 msgstr ""
 
-#: src/config.c:931
+#: src/config.c:928
 msgid "Meta-8th bit "
 msgstr "Meta 8-ik bit "
 
-#: src/config.c:933
+#: src/config.c:930
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
-#: src/config.c:967 src/config.c:1197
+#: src/config.c:964 src/config.c:1194
 msgid "disabled"
 msgstr "letiltva    "
 
-#: src/config.c:970 src/config.c:1200 src/rwconf.c:146
+#: src/config.c:967 src/config.c:1197 src/rwconf.c:146
 msgid "enabled"
 msgstr "engedélyezve"
 
-#: src/config.c:1085
+#: src/config.c:1082
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "HIBA: ott nincs jogod fájlt létrehozni."
 
-#: src/config.c:1091
+#: src/config.c:1088
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "HIBA: nem tudom megnyitni a(z) %s fájlt."
 
-#: src/config.c:1097
+#: src/config.c:1094
 msgid "Reading macros"
 msgstr "Makrók betöltése"
 
-#: src/config.c:1140
+#: src/config.c:1137
 msgid " A - Terminal emulation  :"
 msgstr " A - Terminál emuláció   :"
 
-#: src/config.c:1141
+#: src/config.c:1138
 msgid " B - Backspace key sends :"
 msgstr " B - <Backspace> küldjön :"
 
-#: src/config.c:1142
+#: src/config.c:1139
 msgid " C -      Status line is :"
 msgstr " C - A státuszsor        :"
 
-#: src/config.c:1143
+#: src/config.c:1140
 msgid " D -  Newline delay (ms) :"
 msgstr " D - Újsor késleltetése [ms] :"
 
-#: src/config.c:1144
+#: src/config.c:1141
 msgid " E -      ENQ answerback :"
 msgstr ""
 
-#: src/config.c:1148
+#: src/config.c:1145
 msgid "Terminal settings"
 msgstr "Terminál beállítások"
 
-#: src/config.c:1243
+#: src/config.c:1240
 #, c-format
 msgid "Cannot write to %s"
 msgstr "Nem tudok írni a következõbe: %s"
 
-#: src/config.c:1248
+#: src/config.c:1247
 msgid "Configuration saved"
 msgstr "A konfigurációt mentettem."
 
-#: src/config.c:1263
+#: src/config.c:1262
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr "HIBA: Makrók megváltoztak, de nincs megadva fájlnév!"
 
-#: src/config.c:1267
+#: src/config.c:1266
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "Nem tudok írni a(z) %s makró fájlba."
 
-#: src/config.c:1273
+#: src/config.c:1272
 msgid "Macros saved"
 msgstr "A makrókat mentettem."
 
-#: src/config.c:1290
+#: src/config.c:1289
 msgid "Give name to save this configuration?"
 msgstr "Adj nevet ennek a konfigurációnak:"
 
-#: src/config.c:1312
+#: src/config.c:1311
 msgid "Filenames and paths"
 msgstr "Fájlnevek és mappák"
 
-#: src/config.c:1313
+#: src/config.c:1312
 msgid "File transfer protocols"
 msgstr "Fájlátviteli protokollok"
 
-#: src/config.c:1314
+#: src/config.c:1313
 msgid "Serial port setup"
 msgstr "Sorosport beállításai"
 
-#: src/config.c:1315
+#: src/config.c:1314
 msgid "Modem and dialing"
 msgstr "Modem és tárcsázás"
 
-#: src/config.c:1318
+#: src/config.c:1317
 msgid "Save setup as.."
 msgstr "A konfiguráció mentése mint..."
 
-#: src/config.c:1319
+#: src/config.c:1318
 msgid "Exit"
 msgstr "Kilépés"
 
-#: src/config.c:1320
+#: src/config.c:1319
 msgid "Exit from Minicom"
 msgstr "Kilépés a minicom-ból"
 
-#: src/config.c:1332
+#: src/config.c:1331
 #, c-format
 msgid "Save setup as %s"
 msgstr "A beállítások mentése mint %s"
 
-#: src/config.c:1338
+#: src/config.c:1337
 msgid "configuration"
 msgstr "beállítás"
 
-#: src/config.c:1347
+#: src/config.c:1346
 msgid "BLACK"
 msgstr "FEKETE"
 
-#: src/config.c:1347
+#: src/config.c:1346
 msgid "RED"
 msgstr "PIROS"
 
-#: src/config.c:1347
+#: src/config.c:1346
 msgid "GREEN"
 msgstr "ZÖLD"
 
-#: src/config.c:1347
+#: src/config.c:1346
 msgid "YELLOW"
 msgstr "SÁRGA"
 
-#: src/config.c:1348
+#: src/config.c:1347
 msgid "BLUE"
 msgstr "KÉK"
 
-#: src/config.c:1348
+#: src/config.c:1347
 msgid "MAGENTA"
 msgstr "BÍBOR"
 
-#: src/config.c:1348
+#: src/config.c:1347
 msgid "CYAN"
 msgstr "CIÁN"
 
-#: src/config.c:1348
+#: src/config.c:1347
 msgid "WHITE"
 msgstr "FEHÉR"
 
-#: src/config.c:1378
+#: src/config.c:1377
 msgid "Comm Parameters"
 msgstr "Kommunikációs paraméterek"
 
-#: src/config.c:1383
+#: src/config.c:1382
 #, fuzzy
 msgid " Speed            Parity      Data\n"
 msgstr ""
 "   Sebesség   Paritás             Adat\n"
 "\n"
 
-#: src/config.c:1384
+#: src/config.c:1383
 #, fuzzy
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: 300       L: Nincs (None)     S: 5\n"
 
-#: src/config.c:1385
+#: src/config.c:1384
 #, fuzzy
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: 1200      M: Páros (Even)     T: 6\n"
 
-#: src/config.c:1386
+#: src/config.c:1385
 #, fuzzy
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C: 2400      N: Páratlan (Odd)   U: 7\n"
 
-#: src/config.c:1387
+#: src/config.c:1386
 #, fuzzy
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D: 4800      O: Jelölés (Mark)   V: 8\n"
 
-#: src/config.c:1388
+#: src/config.c:1387
 #, fuzzy
 msgid " E: 115200        P: Space\n"
 msgstr " E: 9600      P: Szünet (Space)\n"
 
-#: src/config.c:1390
+#: src/config.c:1389
 msgid " Stopbits\n"
 msgstr ""
 
-#: src/config.c:1391
+#: src/config.c:1390
 #, fuzzy
 msgid " W: 1             Q: 8-N-1\n"
 msgstr "              Q: 8-N-1\n"
 
-#: src/config.c:1392
+#: src/config.c:1391
 #, fuzzy
 msgid " X: 2             R: 7-E-1\n"
 msgstr "              R: 7-E-1\n"
 
-#: src/config.c:1394
+#: src/config.c:1393
 msgid " K: Current\n"
 msgstr " K: Jelenlegi (Current)\n"
 
-#: src/config.c:1397
+#: src/config.c:1396
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -581,47 +571,47 @@ msgstr ""
 "\n"
 " Válassz, vagy üss <Enter>-t a kilépéshez! "
 
-#: src/config.c:1405
+#: src/config.c:1404
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Jelenlegi: %5s %s%s%s  "
 
-#: src/config.c:1547
+#: src/config.c:1546
 msgid "F1 to F10 Macros"
 msgstr "Makrók F1-tõl F10-ig"
 
-#: src/config.c:1566
+#: src/config.c:1565
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr " (Jelmagyarázat: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R,"
 
-#: src/config.c:1568
+#: src/config.c:1567
 #, fuzzy
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr " ^~ = 1 mp-es szünet, \\u = felhasználói név, \\p = jelszó, \\\\ = \\)"
 
-#: src/config.c:1570
+#: src/config.c:1569
 msgid ""
-"  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\bfq \""
+"  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 
-#: src/config.c:1572
+#: src/config.c:1571
 msgid ""
-"  = 19200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
+"  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 
-#: src/config.c:1587
+#: src/config.c:1586
 msgid "CHANGED"
 msgstr "MEGVÁLTOZOTT"
 
-#: src/config.c:1674
+#: src/config.c:1673
 msgid "Character conversion"
 msgstr "Karater átalakítások"
 
-#: src/config.c:1679
+#: src/config.c:1678
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr " karakt. be ki     karakt. be ki     karakt. be ki     karat.  be ki\n"
 
-#: src/config.c:1701
+#: src/config.c:1700
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -629,12 +619,12 @@ msgstr ""
 "\n"
 " A - táblázat betöltése\tB - táblázat mentése."
 
-#: src/config.c:1703
+#: src/config.c:1702
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tfájl:%s"
 
-#: src/config.c:1704
+#: src/config.c:1703
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -642,125 +632,125 @@ msgstr ""
 "\n"
 " C - karakt. szerkesztése\tD - köv. képernyõ\tE - elõzõ képernyõ\n"
 
-#: src/config.c:1705
+#: src/config.c:1704
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - forgalom (capture) átalakítása: %s\n"
 
-#: src/config.c:1720
+#: src/config.c:1719
 #, c-format
 msgid "Load file: %s"
 msgstr "Fájl betöltése: %s"
 
-#: src/config.c:1732
+#: src/config.c:1731
 #, c-format
 msgid "Save as file: %s"
 msgstr "Mentés mint: %s"
 
-#: src/config.c:1743
+#: src/config.c:1742
 msgid "Character to be edited: "
 msgstr "Szerkesztendõ karakter: "
 
-#: src/config.c:1751 src/config.c:1763 src/config.c:1775
+#: src/config.c:1750 src/config.c:1762 src/config.c:1774
 msgid "Input character ascii value 0-255"
 msgstr "Adj meg egy ascii karakter értéket 0 és 255 között"
 
-#: src/config.c:1757
+#: src/config.c:1756
 #, fuzzy, c-format
 msgid "Change input to: %s"
 msgstr "A bemenet megváltoztatása erre: %s"
 
-#: src/config.c:1769
+#: src/config.c:1768
 #, c-format
 msgid "Change output to: %s"
 msgstr "A kimenet megváltoztatása erre: %s"
 
-#: src/config.c:1807
+#: src/config.c:1806
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Nem tudom megnyitni a(z) %s átalakítási táblázatot."
 
-#: src/config.c:1821
+#: src/config.c:1820
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Nem tudom menteni a(z) %s átalakítási táblázatot."
 
-#: src/dial.c:245
+#: src/dial.c:248
 msgid "Initializing Modem"
 msgstr "Modem inicializálása"
 
-#: src/dial.c:261
+#: src/dial.c:264
 msgid "Resetting Modem"
 msgstr "Modem reset-elése"
 
-#: src/dial.c:275
+#: src/dial.c:278
 msgid "Hanging up"
 msgstr "Vonal bontása"
 
-#: src/dial.c:279
+#: src/dial.c:282
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
 msgstr "Vonalbontás (%ld:%02ld:%02ld)"
 
-#: src/dial.c:312
+#: src/dial.c:315
 msgid "Sending BREAK"
 msgstr "SZÜNET (BREAK) küldése"
 
-#: src/dial.c:378
+#: src/dial.c:381
 #, c-format
 msgid "    No connection: %s.      \n"
 msgstr "  Nincs kapcsolat: %s.      \n"
 
-#: src/dial.c:380
+#: src/dial.c:383
 msgid "   Press any key to continue..    "
 msgstr " Üss egy gombot a folytatáshoz... "
 
-#: src/dial.c:385 src/dial.c:397
+#: src/dial.c:388 src/dial.c:400
 #, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "  Újra próbálom %2d mp múlva          "
 
-#: src/dial.c:423
+#: src/dial.c:426
 msgid "Max retries"
 msgstr "Maximális próbálkozások"
 
-#: src/dial.c:433
+#: src/dial.c:436
 msgid "You are already online! Hang up first."
 msgstr "Már vonalban vagyunk! Elõbb bontsd a kapcsolatot."
 
-#: src/dial.c:438
+#: src/dial.c:441
 msgid "Autodial"
 msgstr "Automatikus tárcsázás"
 
-#: src/dial.c:442 src/dial.c:472
+#: src/dial.c:445 src/dial.c:475
 msgid "Dialing"
 msgstr "Tárcsázás"
 
-#: src/dial.c:443 src/dial.c:475
+#: src/dial.c:446 src/dial.c:478
 #, fuzzy, c-format
 msgid "      At : %s"
 msgstr ""
 "\n"
 " Idõpont : %s"
 
-#: src/dial.c:446 src/dial.c:479
+#: src/dial.c:449 src/dial.c:482
 #, fuzzy, c-format
 msgid " Last on : %s at %s"
 msgstr ""
 "\n"
 " Utoljára: %s %s-kor"
 
-#: src/dial.c:494
+#: src/dial.c:497
 #, c-format
 msgid "    Time : %-3d"
 msgstr "     Idõ : %-3d"
 
-#: src/dial.c:496
+#: src/dial.c:499
 #, c-format
 msgid "     Attempt #%d"
 msgstr "       %d. próba"
 
-#: src/dial.c:497
+#: src/dial.c:500
 msgid ""
 "\n"
 "\n"
@@ -772,132 +762,132 @@ msgstr ""
 "\n"
 " <ESC> a megszakításhoz, <SZÓKÖZ> az újrapróbálkozáshoz."
 
-#: src/dial.c:538
+#: src/dial.c:541
 msgid "Cancelled"
 msgstr "Megszakítva"
 
-#: src/dial.c:594
+#: src/dial.c:597
 msgid "Connected. Press any key to continue"
 msgstr "Kapcsolódva. Üss egy gombot a folytatáshoz"
 
-#: src/dial.c:674
+#: src/dial.c:677
 msgid "Timeout"
 msgstr "Idõtúllépés"
 
-#: src/dial.c:847
+#: src/dial.c:850
 msgid "Manually entered number"
 msgstr "Kézzel beadott szám"
 
-#: src/dial.c:856
+#: src/dial.c:859
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Nem tudom megnyitni a ~/.dialdir fájlt: hozzáférés megtagadva."
 
-#: src/dial.c:908
+#: src/dial.c:911
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Hamis telefonszámlista (ismeretlen verzió?)."
 
-#: src/dial.c:915
+#: src/dial.c:918
 #, fuzzy
 msgid "Phonelist corrupted"
 msgstr "Hamis telefonszámlista (?)"
 
-#: src/dial.c:920
+#: src/dial.c:923
 msgid "Unknown dialing directory version"
 msgstr "Ismeretlen tárcsázási mappa verzió."
 
-#: src/dial.c:927
+#: src/dial.c:930
 msgid "Phonelist garbled (?)"
 msgstr "Hamis telefonszámlista (?)"
 
-#: src/dial.c:949
+#: src/dial.c:952
 msgid "Out of memory while reading dialing directory"
 msgstr "Elfogyott a memória a tárcsázási mappa olvasása közben."
 
-#: src/dial.c:992
+#: src/dial.c:995
 #, c-format
 msgid "Old dialdir copied as %s.%hd"
 msgstr "A régi dialdir-t lemásoltam %s.%hd-ként."
 
-#: src/dial.c:1026
+#: src/dial.c:1029
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Nem tudom megnyitni a ~/.dialdir fájlt: hozzáférés megtagadva."
 
-#: src/dial.c:1042 src/dial.c:1054
+#: src/dial.c:1045 src/dial.c:1057
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Hiba a ~/.dialdir írásakor."
 
-#: src/dial.c:1119
+#: src/dial.c:1122
 msgid " A -  Name                :"
 msgstr " A -  Név                 :"
 
-#: src/dial.c:1120
+#: src/dial.c:1123
 msgid " B -  Number              :"
 msgstr " B -  Szám                :"
 
-#: src/dial.c:1121
+#: src/dial.c:1124
 msgid " C -  Dial string #       :"
 msgstr " C -  Tárcsázandó karakterlánc :"
 
-#: src/dial.c:1122
+#: src/dial.c:1125
 msgid " D -  Local echo          :"
 msgstr " D -  Helyi visszhang      :"
 
-#: src/dial.c:1123
+#: src/dial.c:1126
 msgid " E -  Script              :"
 msgstr " E -  Parancsfájl         :"
 
-#: src/dial.c:1124
+#: src/dial.c:1127
 msgid " F -  Username            :"
 msgstr " F -  Felhasználói név    :"
 
-#: src/dial.c:1125
+#: src/dial.c:1128
 msgid " G -  Password            :"
 msgstr " G -  Jelszó              :"
 
-#: src/dial.c:1126
+#: src/dial.c:1129
 msgid " H -  Terminal Emulation  :"
 msgstr " H -  Terminál Emuláció   :"
 
-#: src/dial.c:1127
+#: src/dial.c:1130
 msgid " I -  Backspace key sends :"
 msgstr " I -  <Backspace> küldjön :"
 
-#: src/dial.c:1128
+#: src/dial.c:1131
 msgid " J -  Linewrap            :"
 msgstr " J -  Sortörés            :"
 
-#: src/dial.c:1129
+#: src/dial.c:1132
 msgid " K -  Line Settings       :"
 msgstr " K -  Vonal beállítások   :"
 
-#: src/dial.c:1130
+#: src/dial.c:1133
 msgid " L -  Conversion table    :"
 msgstr " L -  Átalakítási táblázat:"
 
-#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
+#: src/dial.c:1146 src/dial.c:1218 src/dial.c:1225
 msgid "Delete"
 msgstr "<Delete>"
 
-#: src/dial.c:1143 src/dial.c:1215 src/dial.c:1222
+#: src/dial.c:1146 src/dial.c:1218 src/dial.c:1225
 msgid "Backspace"
 msgstr "<Backspace>"
 
-#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
+#: src/dial.c:1148 src/dial.c:1220 src/dial.c:1230
 msgid "On"
 msgstr "Be"
 
-#: src/dial.c:1145 src/dial.c:1217 src/dial.c:1227
+#: src/dial.c:1148 src/dial.c:1220 src/dial.c:1230
 msgid "Off"
 msgstr "Ki"
 
-#: src/dial.c:1149
+#: src/dial.c:1152
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Utoljára tárcsázott : %s %s\n"
 
-#: src/dial.c:1150
+#: src/dial.c:1153
 #, fuzzy, c-format
 msgid "      Times on            : %d"
 msgstr "      XXXFent lévõ idõk   : %d"
@@ -905,76 +895,76 @@ msgstr "      XXXFent lévõ idõk   : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1251
+#: src/dial.c:1254
 #, fuzzy
 msgid "Dial"
 msgstr "Tárcsázás"
 
-#: src/dial.c:1251
+#: src/dial.c:1254
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1254
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1251
+#: src/dial.c:1254
 #, fuzzy
 msgid "Edit"
 msgstr "Kilépés"
 
-#: src/dial.c:1251
+#: src/dial.c:1254
 #, fuzzy
 msgid "Remove"
 msgstr "Eltávolítsam a bejegyzést?"
 
-#: src/dial.c:1251
+#: src/dial.c:1254
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1252
+#: src/dial.c:1255
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1401 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
 msgstr "  Igen  "
 
-#: src/dial.c:1398 src/file.c:76 src/minicom.c:65 src/minicom.c:68
+#: src/dial.c:1401 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
 msgstr "  Nem   "
 
-#: src/dial.c:1491
+#: src/dial.c:1494
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Nem található a \"%s\" bejegyzés. Belépjek a dialdir-be?"
 
-#: src/dial.c:1521 src/file.c:428
+#: src/dial.c:1524 src/file.c:448
 msgid "( Escape to exit, Space to tag )"
 msgstr "( <ESC> a kilépéshez, <SZÓKÖZ> a választáshoz )"
 
-#: src/dial.c:1522
+#: src/dial.c:1525
 msgid " Move entry up/down, Escape to exit"
 msgstr " Mozoghatsz a bejegyzéseken fel/le, <ESC> a kilépéshez"
 
-#: src/dial.c:1542
+#: src/dial.c:1545
 msgid "Dialing Directory"
 msgstr "Tárcsázási mappa"
 
-#: src/dial.c:1544
+#: src/dial.c:1547
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr ""
 "     Név             Szám              Utoljára     Idõk  Parancsfájl\n"
 
-#: src/dial.c:1718
+#: src/dial.c:1721
 msgid "Find an entry"
 msgstr "Keress meg egy bejegyzést"
 
-#: src/dial.c:1779
+#: src/dial.c:1782
 msgid "Remove entry?"
 msgstr "Eltávolítsam a bejegyzést?"
 
-#: src/dial.c:1823
+#: src/dial.c:1826
 msgid "Enter number"
 msgstr "Írj be egy számot"
 
@@ -1005,87 +995,92 @@ msgstr ""
 msgid "[Okay]"
 msgstr ""
 
-#: src/file.c:348
+#: src/file.c:344
+#, c-format
+msgid "Could not change to directory %s (%s)"
+msgstr ""
+
+#: src/file.c:368
 #, fuzzy
 msgid "Select one or more files for download"
 msgstr "egy vagy több fájlt"
 
-#: src/file.c:350
+#: src/file.c:370
 #, fuzzy
 msgid "Select a file for download"
 msgstr "Válaszd a ki a feltöltendõ fájl(oka)t!"
 
-#: src/file.c:352
+#: src/file.c:372
 msgid "Select a directory for download"
 msgstr ""
 
-#: src/file.c:355
+#: src/file.c:375
 #, fuzzy
 msgid "Select one or more files for upload"
 msgstr "egy vagy több fájlt"
 
-#: src/file.c:357
+#: src/file.c:377
 #, fuzzy
 msgid "Select a file for upload"
 msgstr "Válaszd a ki a feltöltendõ fájl(oka)t!"
 
-#: src/file.c:359
+#: src/file.c:379
 #, fuzzy
 msgid "Select a directory for upload"
 msgstr "Válaszd a ki a feltöltendõ fájl(oka)t!"
 
-#: src/file.c:368
+#: src/file.c:388
 #, c-format
 msgid "Directory: %%-%ds"
 msgstr "Mappa: %%-%ds"
 
-#: src/file.c:453
+#: src/file.c:473
 #, fuzzy
 msgid "Can't back up!"
 msgstr "Nem tudok visszatérni!"
 
-#: src/file.c:546
+#: src/file.c:568 src/file.c:581
 msgid "Too many files tagged - buffer would overflow"
 msgstr "Túl sok fájlt választottál; a puffer túl fog csordulni."
 
-#: src/file.c:653 src/file.c:779
+#: src/file.c:685 src/file.c:811
 msgid "Can select only one!"
 msgstr "Csak egyet választhatsz."
 
-#: src/file.c:754
+#: src/file.c:786
 msgid "Goto directory:"
 msgstr "Könyvtárra ugrás:"
 
-#: src/file.c:768
+#: src/file.c:800
 msgid "Filename pattern:"
 msgstr "Fájlnév kifejezés:"
 
-#: src/file.c:785
+#: src/file.c:817
 msgid "Tag pattern:"
 msgstr "Kiválasztási kifejezés:"
 
-#: src/file.c:789
+#: src/file.c:821
 msgid "No file(s) tagged"
 msgstr "Egy fájlt sem választottunk ki"
 
-#: src/file.c:806
+#: src/file.c:838
 msgid "Untag pattern:"
 msgstr "Kiválasztás törlése kifejezés:"
 
-#: src/file.c:810
+#: src/file.c:842
 msgid "No file(s) untagged"
 msgstr "A kiválasztásból egy fájlt sem töröltünk"
 
-#: src/file.c:826
+#: src/file.c:858
 msgid "No file selected - enter filename:"
 msgstr "Nem választottunk fájlt. Írj be egy fájlnevet:"
 
-#: src/file.c:836
+#: src/file.c:868
 #, fuzzy, c-format
 msgid "File: \"%s\" exists! Overwrite?"
 msgstr "A \"%s\" fájl már létezik! Mégis felülírjuk?"
 
-#: src/file.c:847
+#: src/file.c:879
 msgid "no such file!"
 msgstr "nincs ilyen fájl!"
 
@@ -1176,67 +1171,67 @@ msgstr "Az i18n támogatást Arnaldo Carvalho de Melo írta, 1998"
 msgid "Select function or press Enter for none."
 msgstr "Válassz funkciót vagy üss <Enter>-t, ha semmi."
 
-#: src/main.c:198
+#: src/main.c:201
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "A zárolási fájl érvénytelen, felülbírálom.\n"
 
-#: src/main.c:207
+#: src/main.c:210
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "A %s zárolva van.\n"
 
-#: src/main.c:220
+#: src/main.c:223
 #, fuzzy, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "Nem tudok beállni kitárcsázáshoz.\n"
 
-#: src/main.c:274
+#: src/main.c:278
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "minicom: nem tudom megnyitni a(z) %s fájlt: %s\n"
 
-#: src/main.c:277
+#: src/main.c:281
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "minicom: nem tudom megnyitni a(z) %s-t, bocs.\n"
 
-#: src/main.c:284 src/main.c:668
+#: src/main.c:288 src/main.c:725
 #, c-format
 msgid "Cannot open %s!"
 msgstr "Nem tudom megnyitni a(z) %s-t!"
 
-#: src/main.c:438
+#: src/main.c:445
 msgid "Offline"
 msgstr ""
 
-#: src/main.c:438
+#: src/main.c:445
 msgid "OFFLINE"
 msgstr ""
 
-#: src/main.c:440
+#: src/main.c:447
 msgid "Online"
 msgstr ""
 
-#: src/main.c:440
+#: src/main.c:447
 msgid "ONLINE"
 msgstr ""
 
-#: src/main.c:467
+#: src/main.c:518
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "Kapcsolat nélküli üzemmódba váltottam (%ld:%02ld:%02ld)"
 
-#: src/main.c:552
+#: src/main.c:602
 #, c-format
 msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
 msgstr " %7.7sZ a súgóhóz|           |     | Minicom %-6.6s |       | "
 
-#: src/main.c:653
+#: src/main.c:703
 msgid "Could not re-initialize window system."
 msgstr "Nem tudom újrainicializálni az ablakozó rendszert."
 
-#: src/main.c:658
+#: src/main.c:708
 msgid "Resize not supported, screen may be messed up!"
 msgstr "Az átméretezés nem támogatott, a képernyõ összekuszálódhat!"
 
@@ -1278,7 +1273,7 @@ msgstr "Háttérbe kerültem. Add ki az \"fg\" parancsot a visszatéréshez.\n"
 msgid "SHELL variable not set"
 msgstr "A SHELL környezeti változó nincs beállítva"
 
-#: src/minicom.c:140 src/updown.c:255 src/updown.c:425 src/updown.c:618
+#: src/minicom.c:140 src/updown.c:307 src/updown.c:495 src/updown.c:693
 msgid "Out of memory: could not fork()"
 msgstr "Nincs több memória: nem tudok fork()-kolni"
 
@@ -1394,17 +1389,17 @@ msgstr ""
 "  konfiguráció           : a használandó konfigurációs fájl\n"
 "\n"
 
-#: src/minicom.c:1078
+#: src/minicom.c:1087
 #, c-format
 msgid "%s version %s"
 msgstr "%s, verziószám: %s"
 
-#: src/minicom.c:1080
+#: src/minicom.c:1089
 #, c-format
 msgid " (compiled %s)"
 msgstr " (fordítási dátum: %s)"
 
-#: src/minicom.c:1083
+#: src/minicom.c:1092
 #, fuzzy, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1413,41 +1408,45 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1106
+#: src/minicom.c:1115
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: a -p argumentuma pty kell legyen.\n"
 
-#: src/minicom.c:1170 src/minicom.c:1454
+#: src/minicom.c:1179 src/minicom.c:1466
 msgid "Cannot open capture file"
 msgstr "Nem tudom megnyitni a forgalmi (capture) fájlt."
 
-#: src/minicom.c:1226
+#: src/minicom.c:1235
 msgid "You don't exist. Go away.\n"
 msgstr "Nem létezel. Távozz tõlem.\n"
 
-#: src/minicom.c:1292
+#: src/minicom.c:1301
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Elnézésedet kérem, de a képernyõd túl kicsi.\n"
 
-#: src/minicom.c:1361
+#: src/minicom.c:1370
 msgid "Welcome to minicom"
 msgstr "Üdvözöllek a minicom-ban, verziószám:"
 
-#: src/minicom.c:1362
+#: src/minicom.c:1371
 msgid "OPTIONS"
 msgstr "OPCIÓK"
 
-#: src/minicom.c:1364
+#: src/minicom.c:1373
 msgid "Compiled on"
 msgstr "Fordítás ideje: "
 
-#: src/minicom.c:1368
+#: src/minicom.c:1375
+msgid "Port"
+msgstr ""
+
+#: src/minicom.c:1377
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "Karater átalakítások"
 
-#: src/minicom.c:1369
+#: src/minicom.c:1378
 #, c-format
 msgid ""
 "\n"
@@ -1458,55 +1457,55 @@ msgstr ""
 "Üsd le a(z) %sZ billentyût a speciális gombok súgójához%c\n"
 "\n"
 
-#: src/minicom.c:1386
+#: src/minicom.c:1398
 msgid "Add linefeed ON"
 msgstr "Soremelés hozzáadása BEKAPCSOLVA"
 
-#: src/minicom.c:1386
+#: src/minicom.c:1398
 msgid "Add linefeed OFF"
 msgstr "Soremelés hozzáadása KIKAPCSOLVA"
 
-#: src/minicom.c:1391
+#: src/minicom.c:1403
 msgid "Local echo ON"
 msgstr "Helyi visszhang BEKAPCSOLVA"
 
-#: src/minicom.c:1391
+#: src/minicom.c:1403
 msgid "Local echo OFF"
 msgstr "Helyi visszhang KIKAPCSOLVA"
 
-#: src/minicom.c:1410
+#: src/minicom.c:1422
 msgid "You are online. Really initialize?"
 msgstr "Vonalban vagyunk. Tényleg inicializáljak?"
 
-#: src/minicom.c:1417
+#: src/minicom.c:1429
 msgid "Leave without reset?"
 msgstr "Kilépés reset nélkül?"
 
-#: src/minicom.c:1421 src/minicom.c:1439
+#: src/minicom.c:1433 src/minicom.c:1451
 msgid "Save macros?"
 msgstr "Mentsem a makrókat?"
 
-#: src/minicom.c:1431
+#: src/minicom.c:1443
 msgid "Leave Minicom?"
 msgstr "Kilépjünk a minicomból?"
 
-#: src/minicom.c:1450
+#: src/minicom.c:1462
 msgid "Capture to which file? "
 msgstr "Melyik fájlba mentsük a forgalmat? (capture file)"
 
-#: src/minicom.c:1459 src/minicom.c:1468
+#: src/minicom.c:1471 src/minicom.c:1480
 msgid "Capture file"
 msgstr "Forgalmi (capture) fájl"
 
-#: src/minicom.c:1503
+#: src/minicom.c:1515
 msgid "Linewrap ON"
 msgstr "Sortörés BEKAPCSOLVA"
 
-#: src/minicom.c:1503
+#: src/minicom.c:1515
 msgid "Linewrap OFF"
 msgstr "Sortörés KIKAPCSOLVA"
 
-#: src/minicom.c:1540
+#: src/minicom.c:1555
 msgid "Quit without reset while online."
 msgstr "Kilépés reset nélkül miközben vonalban vagyunk."
 
@@ -1673,32 +1672,37 @@ msgstr "Használat: runscript <parancsfájl> [naplófálj [homedir]]%s\n"
 msgid "Cannot chdir to %.30s"
 msgstr "Nem tudtam a(z) %.30s könyvtárba lépni"
 
-#: src/updown.c:177
+#: src/updown.c:221
 msgid "Upload"
 msgstr "Feltöltés"
 
-#: src/updown.c:177
+#: src/updown.c:221
 msgid "Download"
 msgstr "Letöltés"
 
-#: src/updown.c:231
+#: src/updown.c:277
 msgid "Please enter file names"
 msgstr "Kérem, add meg a fájlneveket"
 
-#: src/updown.c:246
+#: src/updown.c:286
+#, fuzzy
+msgid "Out of memory: could allocate buffer for command line"
+msgstr "Nincs több memória: nem tudok fork()-kolni"
+
+#: src/updown.c:298
 #, c-format
 msgid "%.30s %s - Press CTRL-C to quit"
 msgstr "%.30s %s - Üss <CTRL-C>-t kilépéshez"
 
-#: src/updown.c:247
+#: src/updown.c:299
 msgid "upload"
 msgstr "feltöltés"
 
-#: src/updown.c:247
+#: src/updown.c:299
 msgid "download"
 msgstr "letöltés"
 
-#: src/updown.c:362
+#: src/updown.c:426
 msgid ""
 "\n"
 " READY: press any key to continue..."
@@ -1706,66 +1710,75 @@ msgstr ""
 "\n"
 " KÉSZ: üss egy gombot a folytatáshoz..."
 
-#: src/updown.c:395
+#: src/updown.c:458
 #, fuzzy
 msgid "Cannot create lockfile!"
 msgstr "Nem tudtdtam újra létrehozni a zárolási fájlt!"
 
-#: src/updown.c:537
+#: src/updown.c:612
 msgid "Same as last"
 msgstr "Ugyanaz, mint elõbb"
 
-#: src/updown.c:538
+#: src/updown.c:613
 msgid " A -   Username        :"
 msgstr " A - Felhasználói név  :"
 
-#: src/updown.c:539
+#: src/updown.c:614
 msgid " B -   Password        :"
 msgstr " B - Jelszó            :"
 
-#: src/updown.c:540
+#: src/updown.c:615
 msgid " C -   Name of script  :"
 msgstr " C - A parancsfájl neve:"
 
-#: src/updown.c:541
+#: src/updown.c:616
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr ""
 "Melyik beállítást módosítsam?\n"
 "    (<Return> a futtatáshoz, <ESC> állj)"
 
-#: src/updown.c:546
+#: src/updown.c:621
 msgid "Run a script"
 msgstr "Parancsfájl futtatása"
 
-#: src/window.c:1942
+#: src/window.c:1938
 #, c-format
 msgid "Environment variable TERM not set\n"
 msgstr "A TERM környezeti változó nincs megadva.\n"
 
-#: src/window.c:1948
+#: src/window.c:1944
 #, c-format
 msgid "No termcap entry for %s\n"
 msgstr "Nincs termcap bejegyzés a \"%s\"-hez.\n"
 
-#: src/window.c:1951
+#: src/window.c:1947
 #, c-format
 msgid "No termcap database present!\n"
 msgstr "Nincs termcap adatbázis.\n"
 
-#: src/window.c:1959
+#: src/window.c:1955
 #, c-format
 msgid "No cursor motion capability (cm)\n"
 msgstr "Nincs kurzormozgatási képesség (cm).\n"
 
-#: src/window.c:1968
+#: src/window.c:1964
 #, c-format
 msgid "Number of terminal lines unknown\n"
 msgstr "A terminál sorainak száma ismeretlen.\n"
 
-#: src/window.c:1972
+#: src/window.c:1968
 #, c-format
 msgid "Number of terminal columns unknown\n"
 msgstr "A terminál oszlopainak száma ismeretlen.\n"
+
+#~ msgid "minicom: there is no global configuration file %s\n"
+#~ msgstr "minicom: nincs %s globális konfigurációs fájl.\n"
+
+#, fuzzy
+#~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
+#~ msgstr ""
+#~ "Kérd meg a rendszergazdát, hozzon létre egyet (a 'minicom -s' "
+#~ "paranccsal).\n"
 
 #~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
 #~ msgstr ""
