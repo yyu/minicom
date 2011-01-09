@@ -3,12 +3,19 @@
 # This file is distributed under the same license as the minicom package.
 # Morten Bo Johansen <mbj@spamcop.net>, 2005-2011.
 #
+# **** Bemærkninger til oversættelsen ****
+#
+# Udfyldning af tekststrenge med punktummer/mellemrum er afstemt således
+# at menuer ser pæne ud.
+#
+# path -> søgesti
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2011-01-06 09:53+0100\n"
-"PO-Revision-Date: 2011-01-05 18:43+0100\n"
+"PO-Revision-Date: 2011-01-08 13:31+0100\n"
 "Last-Translator: Morten Bo Johansen <mbj@spamcop.net>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -28,11 +35,11 @@ msgstr " A - Filnavn (tom=ingen logning)    :"
 
 #: src/config.c:244
 msgid " B - Log connects and hangups  :"
-msgstr " B - Log over opkald og afbrydelser :"
+msgstr " B - Log opkald og afbrydelser :"
 
 #: src/config.c:245
 msgid " C - Log file transfers        :"
-msgstr " C - Logfil over filoverførsler     :"
+msgstr " C - Log filoverførsler     :"
 
 #: src/config.c:246 src/config.c:300 src/config.c:542 src/config.c:644
 #: src/config.c:1142 src/dial.c:1134
@@ -49,7 +56,7 @@ msgstr " A - Download-katalog   :"
 
 #: src/config.c:293
 msgid " B - Upload directory   :"
-msgstr " B - Upload-katalog     :"
+msgstr " B - Send-katalog       :"
 
 #: src/config.c:294
 msgid " C - Script directory   :"
@@ -65,7 +72,7 @@ msgstr " E - Kermit-program     :"
 
 #: src/config.c:298
 msgid " F - Logging options"
-msgstr " F - Logningstilvalg"
+msgstr " F - Logningstilvalg    :"
 
 #: src/config.c:353 src/rwconf.c:114 src/rwconf.c:147 src/rwconf.c:148
 msgid "Yes"
@@ -77,7 +84,7 @@ msgstr "Nej "
 
 #: src/config.c:428
 msgid "M  Zmodem download string activates..."
-msgstr "M  Aktiverer zmodem downloadkommando.."
+msgstr "M  Aktiverer Zmodem hentningskommando."
 
 #: src/config.c:429
 msgid "N  Use filename selection window......"
@@ -115,7 +122,7 @@ msgstr " A - Seriel enhed            :"
 
 #: src/config.c:536
 msgid " B - Lockfile Location     :"
-msgstr " B - Placering af fillås     :"
+msgstr " B - Placering af låsefil    :"
 
 #: src/config.c:537
 msgid " C -   Callin Program      :"
@@ -147,11 +154,11 @@ msgstr "linjehastighed"
 
 #: src/config.c:624
 msgid " A - Init string ........."
-msgstr " A - Init-streng........."
+msgstr " A - Initiering ........."
 
 #: src/config.c:625
 msgid " B - Reset string ........"
-msgstr " B - Nulstilnings-streng."
+msgstr " B - Nulstilling ........"
 
 #: src/config.c:626
 msgid " C - Dialing prefix #1...."
@@ -207,7 +214,7 @@ msgstr " O - Antal forsøg........"
 
 #: src/config.c:639
 msgid " P - DTR drop time (0=no)."
-msgstr " P - DTR drop tid (0=no).."
+msgstr " P - DTR droptid (0=no).."
 
 #: src/config.c:640
 msgid " Q - Auto bps detect ....."
@@ -219,11 +226,11 @@ msgstr " R - Modem har DCD-linje."
 
 #: src/config.c:642
 msgid " S - Status line shows ..."
-msgstr " S - Status viser........"
+msgstr " S - Statuslinje viser...."
 
 #: src/config.c:643
 msgid " T - Multi-line untag ...."
-msgstr " T - Multilinje afmark. ."
+msgstr " T - Flerlinjes-afmark.."
 
 #: src/config.c:649
 msgid "Modem and dialing parameter setup"
@@ -235,7 +242,7 @@ msgstr "(Retur eller escape afslutter)"
 
 #: src/config.c:802
 msgid " A - Command key is         :"
-msgstr " A - Kommandotaste er         :"
+msgstr " A - Kommandotast er          :"
 
 #: src/config.c:803
 msgid " B - Backspace key sends    :"
@@ -255,15 +262,15 @@ msgstr " E - Forgrundsfarve (menu)    :"
 
 #: src/config.c:807
 msgid " F - Background Color (menu):"
-msgstr " F - Bagrundsfarve (menu)     :"
+msgstr " F - Baggrundsfarve (menu)    :"
 
 #: src/config.c:808
 msgid " G - Foreground Color (term):"
-msgstr " G - Forgrundsfarve (skærm)   :"
+msgstr " G - Forgrundsfarve (terminal):"
 
 #: src/config.c:809
 msgid " H - Background Color (term):"
-msgstr " H - Bagrundsfarve (skærm)    :"
+msgstr " H - Baggrundsfarve (terminal):"
 
 #: src/config.c:810
 msgid " I - Foreground Color (stat):"
@@ -271,7 +278,7 @@ msgstr " I - Forgrundsfarve (status)  :"
 
 #: src/config.c:811
 msgid " J - Background Color (stat):"
-msgstr " J - Bagrundsfarve (status)   :"
+msgstr " J - Baggrundsfarve (status)  :"
 
 #: src/config.c:812
 msgid " K - History Buffer Size    :"
@@ -291,11 +298,11 @@ msgstr " O - Tegnkonvertering         :"
 
 #: src/config.c:816
 msgid " P - Add linefeed           :"
-msgstr " P -  Linjeombrydning      :"
+msgstr " P - Linjeombrydning          :"
 
 #: src/config.c:817
 msgid " Q - Local echo             :"
-msgstr " Q -  Lokalt ekko          :"
+msgstr " Q - Lokalt ekko              :"
 
 #: src/config.c:818 src/config.c:1543
 msgid "Change which setting?  (Esc to exit)"
@@ -315,11 +322,11 @@ msgstr "Du kan ikke ændre farver i sort/hvid tilstand"
 
 #: src/config.c:878
 msgid "Menu foreground == background color, change!"
-msgstr "Menu forgrund == baggrundsfarve, ret!"
+msgstr "Menuens forgrundsfarve == baggrundsfarve, ret!"
 
 #: src/config.c:887
 msgid "Terminal foreground == background color, change!"
-msgstr "Skærm forgrundsfarve == baggrundsfarve, ret!"
+msgstr "Terminalens forgrundsfarve == baggrundsfarve, ret!"
 
 #: src/config.c:899
 msgid "History Buffer Size"
@@ -343,7 +350,7 @@ msgstr ""
 
 #: src/config.c:917
 msgid "Program new command key"
-msgstr "Ny kommandotaste for program"
+msgstr "Ny kommandotast for program"
 
 #: src/config.c:919
 msgid ""
@@ -460,7 +467,7 @@ msgstr "Opsætning af seriel port"
 
 #: src/config.c:1314
 msgid "Modem and dialing"
-msgstr "Modem og opringning"
+msgstr "Modem og opkald"
 
 #: src/config.c:1317
 msgid "Save setup as.."
@@ -579,12 +586,12 @@ msgstr "Makroer knyttet til F1-F10"
 #: src/config.c:1565
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
-" (UDLÆGNING: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 sekund,"
+" (UDLÆGNING: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = 1 sekunds pause,"
 
 #: src/config.c:1567
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr ""
-"  \\u = brugername, \\p = adgangskode, \\\\ = \\, \\e = slå ekko til/fra, "
+"  \\u = brugernavn, \\p = adgangskode, \\\\ = \\, \\e = slå ekko til/fra, "
 
 #: src/config.c:1569
 #, fuzzy
@@ -620,7 +627,7 @@ msgid ""
 " A - load table\tB - save table"
 msgstr ""
 "\n"
-" A - Indlæs tabel\tB - Gem tabel"
+" A - indlæs tabel\tB - gem tabel"
 
 #: src/config.c:1702
 #, c-format
@@ -633,12 +640,12 @@ msgid ""
 " C - edit char\tD - next screen\tE - prev screen\n"
 msgstr ""
 "\n"
-" C - Redigér tegn\tD - Næste skærm\tE - Forrige skærm\n"
+" C - redigér tegn\tD - næste skærm\tE - forrige skærm\n"
 
 #: src/config.c:1704
 #, c-format
 msgid " F - convert capture: %s\n"
-msgstr " F - Omdan tegn: %s\n"
+msgstr " F - omdan tegn: %s\n"
 
 #: src/config.c:1719
 #, c-format
@@ -661,12 +668,12 @@ msgstr "Tegn skal have ascii-værdi 0-255"
 #: src/config.c:1756
 #, c-format
 msgid "Change input to: %s"
-msgstr "Ret tegn/ind til: %s"
+msgstr "Ret inddata til: %s"
 
 #: src/config.c:1768
 #, c-format
 msgid "Change output to: %s"
-msgstr "Ret tegn/ud til: %s"
+msgstr "Ret uddata til: %s"
 
 #: src/config.c:1806
 #, c-format
@@ -693,7 +700,7 @@ msgstr "Lægger på"
 #: src/dial.c:282
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
-msgstr "Læg på (%ld:%02ld:%02ld)"
+msgstr "Opkald afslutet (%ld:%02ld:%02ld)"
 
 #: src/dial.c:315
 msgid "Sending BREAK"
@@ -727,7 +734,7 @@ msgstr "Auto-opkald"
 
 #: src/dial.c:445 src/dial.c:475
 msgid "Dialing"
-msgstr "Kontakter"
+msgstr "Kalder op"
 
 #: src/dial.c:446 src/dial.c:478
 #, c-format
@@ -737,12 +744,12 @@ msgstr "      På : %s"
 #: src/dial.c:449 src/dial.c:482
 #, c-format
 msgid " Last on : %s at %s"
-msgstr " Sidst på : %s på %s"
+msgstr " Sidst på : %s kl. %s"
 
 #: src/dial.c:497
 #, c-format
 msgid "    Time : %-3d"
-msgstr "    Frist: %-3d"
+msgstr "    Tidspunkt: %-3d"
 
 #: src/dial.c:499
 #, c-format
@@ -767,7 +774,7 @@ msgstr "Afbrudt"
 
 #: src/dial.c:597
 msgid "Connected. Press any key to continue"
-msgstr "Tilslutte. Tryk på en taste for at fortsætte"
+msgstr "Tilsluttet. Tryk på en tast for at fortsætte"
 
 #: src/dial.c:677
 msgid "Timeout"
@@ -787,7 +794,7 @@ msgstr "Telefonliste ulæselig (ukendt version?)"
 
 #: src/dial.c:918
 msgid "Phonelist corrupted"
-msgstr "Telefonliste ulæselig"
+msgstr "Telefonliste beskadiget"
 
 #: src/dial.c:923
 msgid "Unknown dialing directory version"
@@ -852,7 +859,7 @@ msgstr " I -  Tilbagetast sender   :"
 
 #: src/dial.c:1131
 msgid " J -  Linewrap            :"
-msgstr " J -  Linjeombrydning      :"
+msgstr " J - Linjeombrydning       :"
 
 #: src/dial.c:1132
 msgid " K -  Line Settings       :"
@@ -905,7 +912,7 @@ msgstr "Tilføj"
 
 #: src/dial.c:1254
 msgid "Edit"
-msgstr "Redigér"
+msgstr "rediGér"
 
 #: src/dial.c:1254
 msgid "Remove"
@@ -994,23 +1001,23 @@ msgstr ""
 
 #: src/file.c:368
 msgid "Select one or more files for download"
-msgstr "Vælg en eller flere filer til download"
+msgstr "Vælg en eller flere filer der skal hentes"
 
 #: src/file.c:370
 msgid "Select a file for download"
-msgstr "Vælg en fil til download"
+msgstr "Vælg en fil der skal hentes"
 
 #: src/file.c:372
 msgid "Select a directory for download"
-msgstr "Vælg et katalog til download"
+msgstr "Vælg et katalog der skal hentes"
 
 #: src/file.c:375
 msgid "Select one or more files for upload"
-msgstr "Vælg en eller flere filer til upload"
+msgstr "Vælg en eller flere filer der skal sendes"
 
 #: src/file.c:377
 msgid "Select a file for upload"
-msgstr "Vælg en fil til upload"
+msgstr "Vælg en fil der skal sendes"
 
 #: src/file.c:379
 msgid "Select a directory for upload"
@@ -1023,7 +1030,7 @@ msgstr "Katalog: %%-%ds"
 
 #: src/file.c:473
 msgid "Can't back up!"
-msgstr "Kan ikke sikkerhedkopiere!"
+msgstr "Kan ikke sikkerhedskopiere!"
 
 #: src/file.c:568 src/file.c:581
 msgid "Too many files tagged - buffer would overflow"
@@ -1039,7 +1046,7 @@ msgstr "Gå til katalog:"
 
 #: src/file.c:800
 msgid "Filename pattern:"
-msgstr "Filnavnemønster:"
+msgstr "Filnavnsmønster:"
 
 #: src/file.c:817
 msgid "Tag pattern:"
@@ -1064,7 +1071,7 @@ msgstr "Ingen fil valgt- indtast et filnavn:"
 #: src/file.c:868
 #, c-format
 msgid "File: \"%s\" exists! Overwrite?"
-msgstr "Filen \"%s\" eksisterer! Overskriv?"
+msgstr "Filen \"%s\" findes! Overskriv?"
 
 #: src/file.c:879
 msgid "no such file!"
@@ -1073,7 +1080,7 @@ msgstr "ingen sådan fil!"
 #: src/getsdir.c:391
 #, c-format
 msgid "%d files:\n"
-msgstr "%d filer\n"
+msgstr "%d filer:\n"
 
 #: src/help.c:40
 msgid "Minicom Command Summary"
@@ -1082,7 +1089,7 @@ msgstr "Oversigt over kommandoer i Minicom"
 #: src/help.c:43
 #, c-format
 msgid "Commands can be called by %s<key>"
-msgstr "Kommandoer kan kaldes med %s<taste>"
+msgstr "Kommandoer kan kaldes med %s<tast>"
 
 #: src/help.c:46
 msgid "Main Functions"
@@ -1094,7 +1101,7 @@ msgstr "Andre funktioner"
 
 #: src/help.c:50
 msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
-msgstr " Telefonbog.........D  Kør script (Go)....G | Ryd Skærm..........C\n"
+msgstr " Telefonbog.........D  Kør script.........G | Ryd skærm..........C\n"
 
 #: src/help.c:51
 msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
@@ -1102,7 +1109,7 @@ msgstr " Send filer.........S  Modtag filer.......R | Opsætning/Minicom..O\n"
 
 #: src/help.c:52
 msgid " comm Parameters....P  Add linefeed.......A | "
-msgstr " Komm.-parametre....P  Tilføj slutlinje...A | "
+msgstr " Komm.-parametre....P  Tilføj linjeskift...A | "
 
 #: src/help.c:54
 msgid "Suspend minicom....J\n"
@@ -1159,7 +1166,7 @@ msgstr "Vælg en funktion eller tast Retur for ingen."
 #: src/main.c:201
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
-msgstr "Fillås er gammel. Tilsidesætter den ...\n"
+msgstr "Låsefil er gammel. Tilsidesætter den ...\n"
 
 #: src/main.c:210
 #, c-format
@@ -1210,7 +1217,7 @@ msgstr "Nu afkoblet (%ld:%02ld:%02ld)"
 #: src/main.c:602
 #, c-format
 msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
-msgstr " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
+msgstr " %7.7sZ for hjælp |          |     | Minicom %-6.6s |       | "
 
 #: src/main.c:703
 msgid "Could not re-initialize window system."
@@ -1278,8 +1285,8 @@ msgstr "Fortsætter søgning fra start!"
 msgid ""
 "HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
 msgstr ""
-"HISTORIK: U=Op D=Ned F=PgDn B=PgUp s=Søg S=Versalufølsom N=Næste C=Citér "
-"ESC=Afslut "
+"HIST: U=Op D=Ned F=PgDn B=PgUp s=Søg S=Versalufølsom N=Næste C=Citér "
+"ESC=Afslut"
 
 #: src/minicom.c:498
 msgid "History buffer Disabled!"
@@ -1355,26 +1362,26 @@ msgstr ""
 "Et terminalprogram til Linux og andre unix-lignende systemer.\n"
 "\n"
 "  -s, --setup            : opsætningstilstand (kun som root)\n"
-"  -o, --noinit           : undlad at initialisere moden & låsfiler ved "
+"  -o, --noinit           : undlad at initialisere moden & låsefiler ved "
 "opstart\n"
 "  -m, --metakey          : brug meta- eller alt-tasten til kommandoer\n"
-"  -M, --metakey8         : brug 8bit meta-taste til kommandoer\n"
-"  -l, --ansi             : bogstavelig; antag at skærm bruger ikke-IBM-PC-"
+"  -M, --metakey8         : brug 8-bit meta-tasten til kommandoer\n"
+"  -l, --ansi             : bogstavelig; antag at skærm bruger ikke-IBM-pc-"
 "tegnsæt\n"
 "  -L, --iso              : antag ikke at skærm bruger ISO8859\n"
 "  -w, --wrap             : Linjeombrydning slået til\n"
 "  -z, --statline         : prøv at bruge terminalens statuslinje\n"
-"  -7, --7bit             : gennemtving 7bit-tilstand\n"
-"  -8, --8bit             : gennemtving 8bit-tilstand\n"
-"  -c, --color=on/off     : ANSI-stil brug af farver til eller fra\n"
-"  -a, --attrib=on/off    : brug omvendt eller fremæv-attributter til eller "
+"  -7, --7bit             : gennemtving 7-bit-tilstand\n"
+"  -8, --8bit             : gennemtving 8-bit-tilstand\n"
+"  -c, --color=on/off     : ANSI-farver til eller fra\n"
+"  -a, --attrib=on/off    : slå omvend- eller fremmæv-attributter til eller "
 "fra\n"
 "  -t, --term=TERM        : tilsidesæt TERM-miljøvariablen\n"
-"  -S, --script=SCRIPT    : kør SKRIPT ved opstart\n"
+"  -S, --script=SKRIPT    : kør SKRIPT ved opstart\n"
 "  -d, --dial=ENTRY       : ring til kontaktperson fra telefonbog\n"
 "  -p, --ptty=TTYP        : tilslut pseudoterminal\n"
-"  -C, --capturefile=FILE : begynd opfangning til FIL\n"
-"  -T, --disabletime      : undlad at vise online-tid\n"
+"  -C, --capturefile=FIL  : begynd opfangning til FIL\n"
+"  -T, --disabletime      : undlad at vise opkaldstid\n"
 "  -v, --version          : udskriv versions-information og afslut\n"
 "  configuration          : opsætningsfil der bruges\n"
 "\n"
@@ -1398,7 +1405,7 @@ msgid ""
 "\n"
 "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
 msgstr ""
-"Opsætningskatalog til opsætninger og fil med adgangsrettigheder er\n"
+"Kataloget til opsætningfiler og fil med adgangsrettigheder er\n"
 "kompileret til %s.\n"
 "\n"
 "Send fejlrapporter til <minicom-devel@lists.alioth.debian.org>.\n"
@@ -1450,7 +1457,7 @@ msgstr "TILVALG"
 
 #: src/minicom.c:1373
 msgid "Compiled on"
-msgstr "Oversat den"
+msgstr "Oversat"
 
 #: src/minicom.c:1375
 msgid "Port"
@@ -1469,16 +1476,16 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Tast %sZ for hjælp til specialtaster%c\n"
+"Tast %sZ for at få hjælp til specialtaster%c\n"
 "\n"
 
 #: src/minicom.c:1398
 msgid "Add linefeed ON"
-msgstr "Tilføj slutlinje TIL"
+msgstr "Tilføj linjeskift TIL"
 
 #: src/minicom.c:1398
 msgid "Add linefeed OFF"
-msgstr "Tilføj slutlinje FRA"
+msgstr "Tilføj linjeskift FRA"
 
 #: src/minicom.c:1403
 msgid "Local echo ON"
@@ -1549,7 +1556,7 @@ msgstr "Tildeling af hukommelse mislykkedes.\n"
 #: src/rwconf.c:319
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
-msgstr "** Linje %d af opsætningsfilen %s kan ikke fortolkes..\n"
+msgstr "** Linje %d af opsætningsfilen %s kan ikke fortolkes.\n"
 
 #: src/rwconf.c:320
 msgid "global"
@@ -1646,7 +1653,7 @@ msgstr "(forventede kommando efter if)"
 
 #: src/script.c:804
 msgid "(unknown operator)"
-msgstr "(ukendt operand)"
+msgstr "(ukendt operaor)"
 
 #: src/script.c:843
 msgid "(unexpected argument)"
@@ -1655,7 +1662,7 @@ msgstr "(uventet argument)"
 #: src/script.c:870
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
-msgstr "script \"%s\" linje %d: break udenfor en expect%s\n"
+msgstr "script \"%s\" linje %d: break uden for en expect%s\n"
 
 #: src/script.c:890
 #, c-format
@@ -1684,15 +1691,15 @@ msgstr "Kan ikke chdir til %.30s"
 
 #: src/updown.c:221
 msgid "Upload"
-msgstr "Upload"
+msgstr "Send"
 
 #: src/updown.c:221
 msgid "Download"
-msgstr "Download"
+msgstr "Hent"
 
 #: src/updown.c:277
 msgid "Please enter file names"
-msgstr "Indtast et filnavn"
+msgstr "Indtast filnavne"
 
 #: src/updown.c:286
 #, fuzzy
@@ -1706,11 +1713,11 @@ msgstr "%.30s %s - Tast CTRL-C for at afslutte"
 
 #: src/updown.c:299
 msgid "upload"
-msgstr "upload"
+msgstr "send"
 
 #: src/updown.c:299
 msgid "download"
-msgstr "download"
+msgstr "hent"
 
 #: src/updown.c:426
 msgid ""
@@ -1718,12 +1725,12 @@ msgid ""
 " READY: press any key to continue..."
 msgstr ""
 "\n"
-" KLAR: Tryk en taste for at fortsætte ..."
+" KLAR: Tryk en tast for at fortsætte ..."
 
 #: src/updown.c:458
 #, fuzzy
 msgid "Cannot create lockfile!"
-msgstr "Kan ikke gendanne fillås!"
+msgstr "Kan ikke gendanne låsefil!"
 
 #: src/updown.c:612
 msgid "Same as last"
@@ -1731,7 +1738,7 @@ msgstr "Samme som sidst"
 
 #: src/updown.c:613
 msgid " A -   Username        :"
-msgstr " A - Brugername        :"
+msgstr " A - Brugernavn        :"
 
 #: src/updown.c:614
 msgid " B -   Password        :"
@@ -1743,7 +1750,7 @@ msgstr " C - Navn på script    :"
 
 #: src/updown.c:616
 msgid "Change which setting?     (Return to run, ESC to stop)"
-msgstr "Ændre hvilken indstilling? (Retur kører, ESC afbryder)"
+msgstr "Ændr hvilken indstilling? (Retur kører, ESC afbryder)"
 
 #: src/updown.c:621
 msgid "Run a script"
@@ -1781,7 +1788,7 @@ msgstr "Antal kolonner i terminal ukendt\n"
 
 #~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
 #~ msgstr ""
-#~ "minicom: ADVARSEL opsætningsfil ikke fundet, bruger standardværdier\n"
+#~ "minicom: ADVARSEL: opsætningsfil ikke fundet, bruger standardværdier\n"
 
 #~ msgid "minicom: there is no global configuration file %s\n"
 #~ msgstr "minicom: der er ingen global opsætningsfil %s\n"
@@ -1793,7 +1800,7 @@ msgstr "Antal kolonner i terminal ukendt\n"
 #~ msgstr "Du har ikke lov til at lave en opsætning"
 
 #~ msgid "Cannot create lockfile. Sorry.\n"
-#~ msgstr "Kan ikke danne fillås, beklager.\n"
+#~ msgstr "Kan ikke danne låsefil, beklager.\n"
 
 #~ msgid "Minicom: Device disappeared, aborting!\n"
 #~ msgstr "Minicom: Enhed forsvandt, afbryder!\n"
@@ -1811,7 +1818,7 @@ msgstr "Antal kolonner i terminal ukendt\n"
 #~ "                   alle ændringer i opsætningsfilen vil blive GLOBALE !.\n"
 
 #~ msgid "Sorry %s. You are not allowed to use configuration %s.\n"
-#~ msgstr "Beklager %s. Du har ikke tilladelse til at bruge opsætning %s.\n"
+#~ msgstr "Beklager, %s. Du har ikke tilladelse til at bruge opsætningen %s.\n"
 
 #~ msgid "Ask your sysadmin to add your name to %s\n"
 #~ msgstr "Bed din systemadministrator om at føje dit navn til %s\n"
