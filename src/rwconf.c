@@ -269,7 +269,7 @@ int readpars(FILE *fp, enum config_type conftype)
     while (isspace(*s))
       s++;
 
-    if (!s || *s == '#')
+    if (!*s || *s == '#')
       continue;
 
     /* Skip old 'pr' and 'pu' marks at the beginning of the line */

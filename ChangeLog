@@ -1,3 +1,8 @@
+2011-01-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/rwconf.c: Fix config file parsing bug, Thanks Jan Görig,
+	  https://bugzilla.redhat.com/show_bug.cgi?id=669406
+
 2011-01-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/da.po: Update from translation team.
