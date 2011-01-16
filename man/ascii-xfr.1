@@ -20,7 +20,7 @@ The ASCII protocol transfers files line-by-line. The EOL
 (End-Of-Line) character is transmitted as CRLF. When
 receiving, the CR character is stripped from the incoming file.
 The Control-Z (ASCII 26) character signals End-Of-File, if option \-e
-is specified (unless you change it to Cotrol-D (ASCII 4) with \-d).
+is specified (unless you change it to Control-D (ASCII 4) with \-d).
 .PP
 \fBAscii-xfr\fP reads from \fIstdin\fP when receiving, and
 sends data on \fIstdout\fP when sending. Some form of
@@ -40,7 +40,7 @@ Use the Control-D (ASCII 4) as End-Of-File character.
 .IP \fB\-n\fP
 Do not translate CR to CRLF and vice versa.
 .IP \fB\-v\fP
-Verbose: show tranfer statistics on the stderr output.
+Verbose: show transfer statistics on the stderr output.
 .IP "\fB\-l\fP \fImilliseconds\fP"
 When transmitting, pause for this delay after each line.
 .IP "\fB\-c\fP \fImilliseconds\fP"
