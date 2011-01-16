@@ -1,5 +1,7 @@
 2011-01-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* NEWS: Update.
+
 	* ChangeLog: Convert to UTF8 encoding.
 
 	* man/ascii-xfr.1: Fix typos, Thanks Jan Görig,
