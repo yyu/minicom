@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2011-01-06 09:53+0100\n"
-"PO-Revision-Date: 2011-01-08 13:31+0100\n"
+"PO-Revision-Date: 2011-01-14 16:13+0100\n"
 "Last-Translator: Morten Bo Johansen <mbj@spamcop.net>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -80,7 +80,7 @@ msgstr "Ja"
 
 #: src/config.c:353
 msgid "No "
-msgstr "Nej "
+msgstr "Nej"
 
 #: src/config.c:428
 msgid "M  Zmodem download string activates..."
@@ -322,11 +322,11 @@ msgstr "Du kan ikke ændre farver i sort/hvid tilstand"
 
 #: src/config.c:878
 msgid "Menu foreground == background color, change!"
-msgstr "Menuens forgrundsfarve == baggrundsfarve, ret!"
+msgstr "Menuens forgrundsfarve == baggrundsfarve, ret det!"
 
 #: src/config.c:887
 msgid "Terminal foreground == background color, change!"
-msgstr "Terminalens forgrundsfarve == baggrundsfarve, ret!"
+msgstr "Terminalens forgrundsfarve == baggrundsfarve, ret det!"
 
 #: src/config.c:899
 msgid "History Buffer Size"
@@ -668,12 +668,12 @@ msgstr "Tegn skal have ascii-værdi 0-255"
 #: src/config.c:1756
 #, c-format
 msgid "Change input to: %s"
-msgstr "Ret inddata til: %s"
+msgstr "Ændr inddata til: %s"
 
 #: src/config.c:1768
 #, c-format
 msgid "Change output to: %s"
-msgstr "Ret uddata til: %s"
+msgstr "Ændr uddata til: %s"
 
 #: src/config.c:1806
 #, c-format
@@ -928,11 +928,11 @@ msgstr "Manuel"
 
 #: src/dial.c:1401 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   Yes  "
-msgstr "   Ja  "
+msgstr "   Ja   "
 
 #: src/dial.c:1401 src/file.c:76 src/minicom.c:65 src/minicom.c:68
 msgid "   No   "
-msgstr "   Nej   "
+msgstr "   Nej  "
 
 #: src/dial.c:1494
 #, c-format
@@ -941,7 +941,7 @@ msgstr "Posten \"%s\" ikke fundet. Åbn telefonbog?"
 
 #: src/dial.c:1524 src/file.c:448
 msgid "( Escape to exit, Space to tag )"
-msgstr "( Escape for at afslutte, mellemrum markerer )"
+msgstr "(Escape for at afslutte, mellemrum markerer)"
 
 #: src/dial.c:1525
 msgid " Move entry up/down, Escape to exit"
@@ -1054,7 +1054,7 @@ msgstr "Markeringsmønster:"
 
 #: src/file.c:821
 msgid "No file(s) tagged"
-msgstr "Ingen fil(er) er markeret"
+msgstr "Ingen filer er markeret"
 
 #: src/file.c:838
 msgid "Untag pattern:"
@@ -1062,11 +1062,11 @@ msgstr "Afmarkeringsmønster:"
 
 #: src/file.c:842
 msgid "No file(s) untagged"
-msgstr "Ingen fil(er) er afmarkeret"
+msgstr "Ingen filer er afmarkeret"
 
 #: src/file.c:858
 msgid "No file selected - enter filename:"
-msgstr "Ingen fil valgt- indtast et filnavn:"
+msgstr "Ingen fil valgt - indtast et filnavn:"
 
 #: src/file.c:868
 #, c-format
@@ -1133,7 +1133,7 @@ msgstr " Terminalopsætning..T  Kør Kermit.........K | Piletaste-tilstand.I\n"
 
 #: src/help.c:61
 msgid " lineWrap on/off....W"
-msgstr " linjeOmbrydning til/fra.W"
+msgstr " linjeombrydn. til/fra...W"
 
 #: src/help.c:62
 msgid "  local Echo on/off..E | Help screen........Z\n"
@@ -1141,11 +1141,11 @@ msgstr "  lokal ekko til/fra..E | Hjælpeskærm........Z\n"
 
 #: src/help.c:63
 msgid " Paste file.........Y"
-msgstr " Indsæt file.........Y"
+msgstr " Indsæt fil..........Y"
 
 #: src/help.c:65
 msgid "| scroll Back........B"
-msgstr "| Bladr tilbage......B"
+msgstr "| Rul tilbage........B"
 
 #: src/help.c:68
 msgid "Written by Miquel van Smoorenburg 1991-1995"
@@ -1153,7 +1153,7 @@ msgstr "Skrevet af Miquel van Smoorenburg 1991-1995"
 
 #: src/help.c:70
 msgid "Some additions by Jukka Lahtinen 1997-2000"
-msgstr "Nogle tilføjelser af Jukka Lahtinen 1997-2000"
+msgstr "Visse tilføjelser af Jukka Lahtinen 1997-2000"
 
 #: src/help.c:72
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
@@ -1234,7 +1234,7 @@ msgstr "Modtog signal %d"
 
 #: src/minicom.c:66 src/minicom.c:67
 msgid "  Close "
-msgstr "  Luk "
+msgstr "  Luk   "
 
 #: src/minicom.c:66
 msgid " Pause  "
@@ -1242,11 +1242,11 @@ msgstr " Pause  "
 
 #: src/minicom.c:66 src/minicom.c:67
 msgid "  Exit  "
-msgstr "  Afslut  "
+msgstr "  Afslut"
 
 #: src/minicom.c:67
 msgid " Unpause"
-msgstr " Afbryd pause"
+msgstr "Genoptag"
 
 #: src/minicom.c:82
 msgid "Hang-up line?"
@@ -1271,7 +1271,7 @@ msgstr "Hukommelse opbrugt: kunne ikke udføre fork()"
 
 #: src/minicom.c:150
 msgid "Shelled out. Type \"exit\" to return.\n"
-msgstr "Kommandoskal aktiv. Tast \"exit\" for at returnere.\n"
+msgstr "Kommandoskal aktiv. Tast \"exit\" for at vende tilbage.\n"
 
 #: src/minicom.c:263
 msgid "SEARCH FOR (ESC=Exit)"
@@ -1362,7 +1362,7 @@ msgstr ""
 "Et terminalprogram til Linux og andre unix-lignende systemer.\n"
 "\n"
 "  -s, --setup            : opsætningstilstand (kun som root)\n"
-"  -o, --noinit           : undlad at initialisere moden & låsefiler ved "
+"  -o, --noinit           : undlad at initialisere modem og låsefiler ved "
 "opstart\n"
 "  -m, --metakey          : brug meta- eller alt-tasten til kommandoer\n"
 "  -M, --metakey8         : brug 8-bit meta-tasten til kommandoer\n"
@@ -1371,14 +1371,14 @@ msgstr ""
 "  -L, --iso              : antag ikke at skærm bruger ISO8859\n"
 "  -w, --wrap             : Linjeombrydning slået til\n"
 "  -z, --statline         : prøv at bruge terminalens statuslinje\n"
-"  -7, --7bit             : gennemtving 7-bit-tilstand\n"
-"  -8, --8bit             : gennemtving 8-bit-tilstand\n"
+"  -7, --7bit             : gennemtving 7 bit-tilstand\n"
+"  -8, --8bit             : gennemtving 8 bit-tilstand\n"
 "  -c, --color=on/off     : ANSI-farver til eller fra\n"
 "  -a, --attrib=on/off    : slå omvend- eller fremmæv-attributter til eller "
 "fra\n"
 "  -t, --term=TERM        : tilsidesæt TERM-miljøvariablen\n"
 "  -S, --script=SKRIPT    : kør SKRIPT ved opstart\n"
-"  -d, --dial=ENTRY       : ring til kontaktperson fra telefonbog\n"
+"  -d, --dial=NAVN        : ring til kontaktperson fra telefonbog\n"
 "  -p, --ptty=TTYP        : tilslut pseudoterminal\n"
 "  -C, --capturefile=FIL  : begynd opfangning til FIL\n"
 "  -T, --disabletime      : undlad at vise opkaldstid\n"
@@ -1750,7 +1750,7 @@ msgstr " C - Navn på script    :"
 
 #: src/updown.c:616
 msgid "Change which setting?     (Return to run, ESC to stop)"
-msgstr "Ændr hvilken indstilling? (Retur kører, ESC afbryder)"
+msgstr "Ændr hvilken indstilling? (Retur udfører, ESC afbryder)"
 
 #: src/updown.c:621
 msgid "Run a script"
@@ -1794,7 +1794,7 @@ msgstr "Antal kolonner i terminal ukendt\n"
 #~ msgstr "minicom: der er ingen global opsætningsfil %s\n"
 
 #~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
-#~ msgstr "Bed din systemadministrator om at oprette en (med minicom -s).\n"
+#~ msgstr "Bed din systemadministrator om at oprette én (med minicom -s).\n"
 
 #~ msgid "You are not allowed to create a configuration"
 #~ msgstr "Du har ikke lov til at lave en opsætning"
