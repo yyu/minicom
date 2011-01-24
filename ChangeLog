@@ -1,5 +1,8 @@
 2011-01-24  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/script.c: Make word handling more dynamic, and thus allowing
+	  words > 89 chars. Reported via Debian BTS #610511.
+
 	* po/da.po: Update from translation team.
 
 2011-01-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>

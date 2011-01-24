@@ -162,7 +162,8 @@ void myclock(int dummy)
  */
 char *getword(char **s)
 {
-  static char buf[90];
+  static unsigned bufsize;
+  static char *buf; /* The buffer is only growing and never freed... */
   unsigned int len;
   int f;
   int idx = 0;
@@ -175,12 +176,18 @@ char *getword(char **s)
   if (**s == 0)
     return NULL;
 
-  for (len = 0; len < sizeof(buf); len++) {
+  for (len = 0; ; len++) {
+    if (idx + 3 > (int)bufsize)
+      {
+        bufsize += 50;
+	fprintf(stderr, "bigger %d\n", bufsize);
+	buf = realloc(buf, bufsize);
+      }
     if (sawesc && t[len]) {
       sawesc = 0;
       if (t[len] <= '7' && t[len] >= '0') {
         buf[idx] = 0;
-        for (f = 0; f < 4 && len < sizeof(buf) && t[len] <= '7' &&
+        for (f = 0; f < 4 && len < bufsize && t[len] <= '7' &&
              t[len] >= '0'; f++)
           buf[idx] = 8 * buf[idx] + t[len++] - '0';
         if (buf[idx] == 0)
