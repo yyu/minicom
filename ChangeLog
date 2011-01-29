@@ -1,3 +1,7 @@
+2011-01-29  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in: Change version to 2.5.
+
 2011-01-24  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/script.c: Make word handling more dynamic, and thus allowing
