@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2011-01-06 09:53+0100\n"
+"POT-Creation-Date: 2011-01-29 12:47+0100\n"
 "PO-Revision-Date: 2001-09-28 05:50+02:00\n"
 "Last-Translator: Gaël Quéri <gael@lautre.net>\n"
 "Language-Team: French <traduc@traduc.org>\n"
@@ -1555,110 +1555,110 @@ msgstr "script « %s » : erreur de syntaxe à la ligne %d %s%s\n"
 msgid "script \"%s\": global timeout%s\n"
 msgstr "script « %s » : délai global dépassé%s\n"
 
-#: src/script.c:263
+#: src/script.c:270
 msgid "(word contains ESC or quote)"
 msgstr "(le mot contient ÉCHAP ou un guillemet)"
 
-#: src/script.c:316
+#: src/script.c:323
 #, fuzzy, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
 msgstr "runscript : ne peut ouvrir %s%s\n"
 
-#: src/script.c:337 src/script.c:449
+#: src/script.c:344 src/script.c:456
 #, c-format
 msgid "script \"%s\": out of memory%s\n"
 msgstr "script « %s » : plus de mémoire%s\n"
 
-#: src/script.c:443
+#: src/script.c:450
 #, c-format
 msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
 msgstr "script « %s » ligne %d : variable « %s » inconnue%s\n"
 
-#: src/script.c:488
+#: src/script.c:495
 #, c-format
 msgid "script \"%s\": unexpected end of file%s\n"
 msgstr "script « %s » : fin de fichier inattendue%s\n"
 
-#: src/script.c:496
+#: src/script.c:503
 msgid "(garbage after })"
 msgstr "(désordre après })"
 
-#: src/script.c:504
+#: src/script.c:511
 msgid "(too many arguments)"
 msgstr "(trop d'arguments)"
 
-#: src/script.c:523
+#: src/script.c:530
 #, c-format
 msgid "script \"%s\" line %d: nested expect%s\n"
 msgstr "script « %s » ligne %d : « expect » imbriqués%s\n"
 
-#: src/script.c:533
+#: src/script.c:540
 msgid "(garbage after {)"
 msgstr "(désordre après {)"
 
-#: src/script.c:554 src/script.c:819 src/script.c:887
+#: src/script.c:561 src/script.c:826 src/script.c:894
 msgid "(argument expected)"
 msgstr "(argument attendu)"
 
-#: src/script.c:557 src/script.c:821
+#: src/script.c:564 src/script.c:828
 msgid "(invalid argument)"
 msgstr "(argument invalide)"
 
-#: src/script.c:652
+#: src/script.c:659
 msgid "(in goto/gosub label)"
 msgstr "(dans une étiquette goto/gosub)"
 
-#: src/script.c:659
+#: src/script.c:666
 #, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
 msgstr "script « %s » ligne %d : étiquette « %s » absente%s\n"
 
-#: src/script.c:681
+#: src/script.c:688
 #, c-format
 msgid "script \"%s\": no return from gosub%s\n"
 msgstr "script « %s » : pas de « return » après « gosub »%s\n"
 
-#: src/script.c:724
+#: src/script.c:731
 msgid "(missing var name)"
 msgstr "(nom de variable manquant)"
 
-#: src/script.c:741 src/script.c:757
+#: src/script.c:748 src/script.c:764
 msgid "(expected variable)"
 msgstr "(variable attendue)"
 
-#: src/script.c:789
+#: src/script.c:796
 msgid "(expected command after if)"
 msgstr "(commande attendue après « if »)"
 
-#: src/script.c:804
+#: src/script.c:811
 msgid "(unknown operator)"
 msgstr "(opérateur inconnu)"
 
-#: src/script.c:843
+#: src/script.c:850
 msgid "(unexpected argument)"
 msgstr "(argument inattendu)"
 
-#: src/script.c:870
+#: src/script.c:877
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
 msgstr "script « %s » ligne %d : « break » à l'extérieur d'« expect »%s\n"
 
-#: src/script.c:890
+#: src/script.c:897
 #, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
 msgstr "script « %s » ligne %d : « call » à l'intérieur d'« expect »%s\n"
 
-#: src/script.c:958
+#: src/script.c:965
 #, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
 msgstr "script « %s » ligne %d : commande « %s » inconnue%s\n"
 
-#: src/script.c:999
+#: src/script.c:1006
 #, c-format
 msgid "runscript, part of minicom version %s\n"
 msgstr ""
 
-#: src/script.c:1004
+#: src/script.c:1011
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr "Utilisation : runscript <script> [fichier journal [répertoire]]%s\n"

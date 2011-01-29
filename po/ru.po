@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2011-01-06 09:53+0100\n"
+"POT-Creation-Date: 2011-01-29 12:47+0100\n"
 "PO-Revision-Date: 2008-01-21 21:26+0200\n"
 "Last-Translator: Pavel Maryanov <acid_jack@ukr.net>\n"
 "Language-Team: Russian <gnu@mx.ru>\n"
@@ -1569,110 +1569,110 @@ msgstr "скрипт \"%s\": синтаксическая ошибка в стр
 msgid "script \"%s\": global timeout%s\n"
 msgstr "скрипт \"%s\": глобальный таймаут%s\n"
 
-#: src/script.c:263
+#: src/script.c:270
 msgid "(word contains ESC or quote)"
 msgstr "(слово содержит ESC или кавычку)"
 
-#: src/script.c:316
+#: src/script.c:323
 #, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
 msgstr "runscript: невозможно открыть \"%s\"%s\n"
 
-#: src/script.c:337 src/script.c:449
+#: src/script.c:344 src/script.c:456
 #, c-format
 msgid "script \"%s\": out of memory%s\n"
 msgstr "скрипт \"%s\": не хватает памяти%s\n"
 
-#: src/script.c:443
+#: src/script.c:450
 #, c-format
 msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
 msgstr "скрипт \"%s\" строка %d: неизвестная переменная \"%s\"%s\n"
 
-#: src/script.c:488
+#: src/script.c:495
 #, c-format
 msgid "script \"%s\": unexpected end of file%s\n"
 msgstr "скрипт \"%s\": неожиданный конец файла%s\n"
 
-#: src/script.c:496
+#: src/script.c:503
 msgid "(garbage after })"
 msgstr "(мусор после })"
 
-#: src/script.c:504
+#: src/script.c:511
 msgid "(too many arguments)"
 msgstr "(слишком много аргументов)"
 
-#: src/script.c:523
+#: src/script.c:530
 #, c-format
 msgid "script \"%s\" line %d: nested expect%s\n"
 msgstr "скрипт \"%s\" строка %d: nested expect%s\n"
 
-#: src/script.c:533
+#: src/script.c:540
 msgid "(garbage after {)"
 msgstr "(мусор после {)"
 
-#: src/script.c:554 src/script.c:819 src/script.c:887
+#: src/script.c:561 src/script.c:826 src/script.c:894
 msgid "(argument expected)"
 msgstr "(ожидается аргумент)"
 
-#: src/script.c:557 src/script.c:821
+#: src/script.c:564 src/script.c:828
 msgid "(invalid argument)"
 msgstr "(неверный аргумент)"
 
-#: src/script.c:652
+#: src/script.c:659
 msgid "(in goto/gosub label)"
 msgstr "(метка в goto/gosub)"
 
-#: src/script.c:659
+#: src/script.c:666
 #, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
 msgstr "script \"%s\" строка %d: метка \"%s\" не найдена%s\n"
 
-#: src/script.c:681
+#: src/script.c:688
 #, c-format
 msgid "script \"%s\": no return from gosub%s\n"
 msgstr "скрипт \"%s\": нет return-а из gosub%s\n"
 
-#: src/script.c:724
+#: src/script.c:731
 msgid "(missing var name)"
 msgstr "(пропущено имя переменной)"
 
-#: src/script.c:741 src/script.c:757
+#: src/script.c:748 src/script.c:764
 msgid "(expected variable)"
 msgstr "(ожидается переменная)"
 
-#: src/script.c:789
+#: src/script.c:796
 msgid "(expected command after if)"
 msgstr "(ожидается команда после if)"
 
-#: src/script.c:804
+#: src/script.c:811
 msgid "(unknown operator)"
 msgstr "(неизвестный оператор)"
 
-#: src/script.c:843
+#: src/script.c:850
 msgid "(unexpected argument)"
 msgstr "(неожиданный аргумент)"
 
-#: src/script.c:870
+#: src/script.c:877
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
 msgstr "скрипт \"%s\" строка %d: break снаружи expect%s\n"
 
-#: src/script.c:890
+#: src/script.c:897
 #, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
 msgstr "скрипт \"%s\" строка %d: call внутри expect%s\n"
 
-#: src/script.c:958
+#: src/script.c:965
 #, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
 msgstr "скрипт \"%s\" строка %d: неизвестная команда \"%s\"%s\n"
 
-#: src/script.c:999
+#: src/script.c:1006
 #, c-format
 msgid "runscript, part of minicom version %s\n"
 msgstr "runscript, часть minicom, версия %s\n"
 
-#: src/script.c:1004
+#: src/script.c:1011
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr "Использование: runscript <файл_скрипта> [логфайл [дом_дир]]%s\n"

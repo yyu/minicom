@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2011-01-06 09:53+0100\n"
+"POT-Creation-Date: 2011-01-29 12:47+0100\n"
 "PO-Revision-Date: 2005-12-28 08:16+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
@@ -1554,113 +1554,113 @@ msgstr "skript \"%s\": syntaxfel på rad %d %s%s\n"
 msgid "script \"%s\": global timeout%s\n"
 msgstr "skript \"%s\": global tidsgräns överstigen%s\n"
 
-#: src/script.c:263
+#: src/script.c:270
 msgid "(word contains ESC or quote)"
 msgstr "(ord innehåller ESC eller citattecken)"
 
-#: src/script.c:316
+#: src/script.c:323
 #, fuzzy, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
 msgstr "runscript: kunde inte öppna %s%s\n"
 
-#: src/script.c:337 src/script.c:449
+#: src/script.c:344 src/script.c:456
 #, c-format
 msgid "script \"%s\": out of memory%s\n"
 msgstr "skript \"%s\": slut på minne%s\n"
 
-#: src/script.c:443
+#: src/script.c:450
 #, c-format
 msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
 msgstr "skript \"%s\" rad %d: okänd variabel \"%s\"%s\n"
 
-#: src/script.c:488
+#: src/script.c:495
 #, c-format
 msgid "script \"%s\": unexpected end of file%s\n"
 msgstr "skript \"%s\": oväntat slut på fil%s\n"
 
-#: src/script.c:496
+#: src/script.c:503
 msgid "(garbage after })"
 msgstr "(skräp efter })"
 
-#: src/script.c:504
+#: src/script.c:511
 msgid "(too many arguments)"
 msgstr "(för många argument)"
 
 # Nested expect? Förslag?
-#: src/script.c:523
+#: src/script.c:530
 #, c-format
 msgid "script \"%s\" line %d: nested expect%s\n"
 msgstr "skript \"%s\" rad %d: nested expect%s\n"
 
-#: src/script.c:533
+#: src/script.c:540
 msgid "(garbage after {)"
 msgstr "(skräp efter {)"
 
-#: src/script.c:554 src/script.c:819 src/script.c:887
+#: src/script.c:561 src/script.c:826 src/script.c:894
 msgid "(argument expected)"
 msgstr "(argument förväntades)"
 
-#: src/script.c:557 src/script.c:821
+#: src/script.c:564 src/script.c:828
 msgid "(invalid argument)"
 msgstr "(ogiltigt argument)"
 
-#: src/script.c:652
+#: src/script.c:659
 msgid "(in goto/gosub label)"
 msgstr "(i goto/gosub-etikett)"
 
-#: src/script.c:659
+#: src/script.c:666
 #, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
 msgstr "skript \"%s\" rad %d: etikett \"%s\" hittades inte%s\n"
 
-#: src/script.c:681
+#: src/script.c:688
 #, c-format
 msgid "script \"%s\": no return from gosub%s\n"
 msgstr "skript \"%s\": ingen återvänding från gosub%s\n"
 
-#: src/script.c:724
+#: src/script.c:731
 msgid "(missing var name)"
 msgstr "(variabelnamn saknas)"
 
-#: src/script.c:741 src/script.c:757
+#: src/script.c:748 src/script.c:764
 msgid "(expected variable)"
 msgstr "(förväntade variabel)"
 
-#: src/script.c:789
+#: src/script.c:796
 msgid "(expected command after if)"
 msgstr "(förväntade kommando efter if)"
 
-#: src/script.c:804
+#: src/script.c:811
 msgid "(unknown operator)"
 msgstr "(okänd operator)"
 
-#: src/script.c:843
+#: src/script.c:850
 msgid "(unexpected argument)"
 msgstr "(oväntat argument)"
 
 # Förslag?
-#: src/script.c:870
+#: src/script.c:877
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
 msgstr "skript \"%s\" rad %d: break outside of expect%s\n"
 
 # Förslag? Anrop inne i...
-#: src/script.c:890
+#: src/script.c:897
 #, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
 msgstr "skript \"%s\" rad %d: call inside expect%s\n"
 
-#: src/script.c:958
+#: src/script.c:965
 #, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
 msgstr "skript \"%s\" rad %d: okänt kommando \"%s\"%s\n"
 
-#: src/script.c:999
+#: src/script.c:1006
 #, c-format
 msgid "runscript, part of minicom version %s\n"
 msgstr ""
 
-#: src/script.c:1004
+#: src/script.c:1011
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr "Användning: runscript <skriptfil> [loggfil [hemkatalog]]%s\n"
