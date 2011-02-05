@@ -1,3 +1,9 @@
+2011-02-05  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/main.c: Simplify status line update, also makes status
+	  messages display the amount of time they are actually supposed
+	  to display.
+
 2011-01-29  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* configure.in: Change version to 2.5.

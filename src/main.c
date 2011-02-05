@@ -512,8 +512,9 @@ static void update_status_time(void)
       status_display_message();
   }
 
-  if (old_online == online)
+  if (old_online != -1 && online <= (old_online + 59))
     return;
+
   if (P_LOGCONN[0] == 'Y' && old_online >= 0 && online < 0)
     do_log(_("Gone offline (%ld:%02ld:%02ld)"),
            old_online / 3600, (old_online / 60) % 60, old_online % 60);
@@ -556,7 +557,6 @@ void timer_update(void)
       time(&start);
       t1 = start;
       online = 0;
-      update_status_time();
 #ifdef _DCDFLOW
       /* DCD has gotten high, we can turn on hw flow control */
       if (P_HASRTS[0] == 'Y')
@@ -575,20 +575,18 @@ void timer_update(void)
       /* First update the timer for call duration.. */
       time(&t1);
       online = t1 - start;
-      update_status_time();
     }
     /* ..and THEN notify that we are now offline */
     online = -1;
-    update_status_time();
   }
 
   /* Update online time */
   if (online >= 0) {
     time(&t1);
     online = t1 - start;
-    if (online > (old_online + 59))
-      update_status_time();
   }
+
+  update_status_time();
 }
 
 /*
