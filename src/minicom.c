@@ -1510,7 +1510,7 @@ dirty_goto:
           init_emul(c, 1);
         break;
       case 'w': /* Line wrap on-off */
-        c = (!us->wrap);
+        c = !us->wrap;
         vt_set(addlf, c, docap, -1, -1, -1, -1);
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
 	status_set_display(s, 0);
