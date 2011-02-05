@@ -689,7 +689,6 @@ dirty_goto:
     /* See if window size changed */
     if (size_changed) {
       size_changed = 0;
-#if 1
       wrapln = us->wrap;
       /* I got the resize code going again! Yeah! */
       mc_wclose(us, 0);
@@ -703,9 +702,6 @@ dirty_goto:
       /* Set the terminal modes */
       setcbreak(2); /* Raw, no echo */
       init_emul(terminal, 0);
-#else
-      werror(_("Resize not supported, screen may be messed up!"));
-#endif
     }
     /* Update the timer. */
     timer_update();

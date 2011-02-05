@@ -1,5 +1,7 @@
 2011-02-05  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/minicom.c: Do not lose line wrap setting over terminal resizes.
+
 	* src/main.c: Simplify status line update, also makes status
 	  messages display the amount of time they are actually supposed
 	  to display.
