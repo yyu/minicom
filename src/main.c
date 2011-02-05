@@ -690,6 +690,7 @@ dirty_goto:
     if (size_changed) {
       size_changed = 0;
 #if 1
+      wrapln = us->wrap;
       /* I got the resize code going again! Yeah! */
       mc_wclose(us, 0);
       us = NULL;
