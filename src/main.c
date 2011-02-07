@@ -492,7 +492,7 @@ static void status_display_message(void)
   ret_csr();
 }
 
-time_t old_online = -1;
+time_t old_online = -2;
 
 /*
  * Update the online time.
@@ -512,7 +512,7 @@ static void update_status_time(void)
       status_display_message();
   }
 
-  if (old_online != -1 && online <= (old_online + 59))
+  if (old_online == online || online <= (old_online + 59))
     return;
 
   if (P_LOGCONN[0] == 'Y' && old_online >= 0 && online < 0)
