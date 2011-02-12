@@ -12,8 +12,8 @@ runscript \- script interpreter for minicom
 .SH DESCRIPTION
 .B runscript
 is a simple script interpreter that can be called from within the minicom
-communications program to automate tasks like logging in to a unix system
-or your favorite bbs.
+communications program to automate tasks like logging in to a Unix system
+or your favorite BBS.
 .SH INVOCATION
 The program expects a script name and optionally a filename and the 
 user's home directory as arguments, and it expects that it's input and 
@@ -155,7 +155,7 @@ finishes without errors, the original script will continue.
 Write text to the logfile.
 .SH NOTES
 If you want to make your script to exit minicom (for example when
-you use minicom to dial up your ISP, and then start a ppp or slip 
+you use minicom to dial up your ISP, and then start a PPP or SLIP 
 session from a script), try the command "! killall \-9 minicom" as
 the last script command. The \-9 option should prevent minicom from
 hanging up the line and resetting the modem before exiting.
