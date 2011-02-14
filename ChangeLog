@@ -1,7 +1,7 @@
 2011-02-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/file.c: Only enter directory if we have read permissions to
-	  get directory listings.
+	  get directory listings, by Jan Görig.
 
 	* src/file.c, src/getsdir.c: Cleanup and simplify.
 
