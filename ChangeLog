@@ -1,5 +1,8 @@
 2011-02-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/file.c: Only enter directory if we have read permissions to
+	  get directory listings.
+
 	* src/file.c, src/getsdir.c: Cleanup and simplify.
 
 2011-02-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>

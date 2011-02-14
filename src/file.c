@@ -49,7 +49,6 @@ static int  new_filedir(GETSDIR_ENTRY *dirdat, int flushit);
 static void goto_filedir(char *new_dir, int absolut);
 static int  tag_untag(char *pat, int tag);
 static char *concat_list(GETSDIR_ENTRY *d);
-static int  init_filedir(void);
 
 static WIN *dsub;
 static const char *const what[] =
@@ -263,7 +262,6 @@ static int new_filedir(GETSDIR_ENTRY *dirdat, int flushit)
   int initial_y = (76 - (WHAT_NR_OPTIONS * WHAT_WIDTH >= 76
                    ? 74 : WHAT_NR_OPTIONS * WHAT_WIDTH)) / 2;
   size_t i;
-  int rval;
   char * new_prev_dir;
 
   cur      =  0;
@@ -312,8 +310,7 @@ static int new_filedir(GETSDIR_ENTRY *dirdat, int flushit)
   if (!new_prev_dir)
     return -1;
 
-  rval = chdir(work_dir);
-  if (rval == 0) {
+  if (!access(work_dir, R_OK | X_OK) && !chdir(work_dir)) {
     /* was able to change to new working directory */
     free(prev_dir);
     prev_dir = new_prev_dir;
@@ -438,7 +435,7 @@ static int new_filedir(GETSDIR_ENTRY *dirdat, int flushit)
     mc_wredraw(dsub, 1);
   }
 
-  return rval;
+  return 0;
 }
 
 
@@ -503,7 +500,7 @@ static int init_filedir(void)
 
   if (ret_buf != NULL ||
       (retstat = ((ret_buf = (char *)malloc(BUFSIZ)) == NULL)? -1 : 0) == 0) {
-    retstat = new_filedir((GETSDIR_ENTRY *) NULL, 0);
+    retstat = new_filedir(NULL, 0);
     dirflush = 1;
     mc_wredraw(dsub, 1);
   }
