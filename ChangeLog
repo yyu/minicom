@@ -1,3 +1,7 @@
+2011-02-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/file.c, src/getsdir.c: Cleanup and simplify.
+
 2011-02-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* man/runscript.1, man/minicom.1: Fixes by John Bradshaw
