@@ -23,6 +23,7 @@
  * jl  05.10.97 changed return value of dial() to long
  * jseymour@jimsun.LinxNet.com (Jim Seymour) 03/26/98 - Added prototype
  *    for new "get_port()" function in util.c.
+ * mark.einon@gmail.com 16/02/11 - Added option to timestamp terminal output
  */
 
 /* First include all other application-dependant include files. */
@@ -77,6 +78,7 @@ EXTERN int cursormode;	/* Mode of cursor (arrow) keys */
 EXTERN int docap;	/* Capture data to capture file */
 EXTERN FILE *capfp;	/* File to capture to */
 EXTERN int addlf;	/* Add LF after CR */
+EXTERN int timestamp;	/* timestamp each line */
 EXTERN int wrapln;	/* Linewrap default */
 EXTERN int tempst;	/* Status line is temporary */
 EXTERN int escape;	/* Escape code. */

@@ -33,7 +33,7 @@ extern int vt_nl_delay;		/* Delay after CR key */
 void vt_install(void(*)(const char *, int), void (*)(int, int), WIN *);
 void vt_init(int, int, int, int, int);
 void vt_pinit(WIN *, int, int);
-void vt_set(int, int, int, int, int, int, int);
+void vt_set(int, int, int, int, int, int, int, int);
 void vt_out(int);
 void vt_send(int ch);
 

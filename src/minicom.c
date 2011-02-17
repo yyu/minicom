@@ -22,6 +22,7 @@
  * kubota@debian.or.jp 07/98  - Added option -C to start capturing from the
  *				command line
  * jl  09.07.98 added option -S to start a script at startup
+ * mark.einon@gmail.com 16/02/11 - Added option to timestamp terminal output
  */
 #ifdef HAVE_CONFIG_H
 #include <config.h>
@@ -844,26 +845,37 @@ static void helpthem(void)
 void toggle_addlf(void)
 {
   addlf = !addlf;
-  vt_set(addlf, -1, -1, -1, -1, -1, -1);
+  vt_set(addlf, -1, -1, -1, -1, -1, -1, -1);
 }
 
 static void set_addlf(int val)
 {
-  vt_set(val, -1, -1, -1, -1, -1, -1);
+  vt_set(val, -1, -1, -1, -1, -1, -1, -1);
 }
 
 /* Toggle local echo.  Can be called through the menu, or by a macro. */
 void toggle_local_echo(void)
 {
   local_echo = !local_echo;
-  vt_set(-1, -1, -1, -1, local_echo, -1 ,-1);
+  vt_set(-1, -1, -1, -1, local_echo, -1, -1 ,-1);
 }
 
 static void set_local_echo(int val)
 {
-  vt_set(-1, -1, -1, -1, val, -1 ,-1);
+  vt_set(-1, -1, -1, -1, val, -1 ,-1, -1);
 }
 
+/* Toggle host timestamping on/off */
+void toggle_timestamp(void)
+{
+  timestamp = !timestamp;
+  vt_set(-1, -1, -1, -1, -1, -1, -1, timestamp);
+}
+
+static void set_timestamp(int val)
+{
+  vt_set(-1, -1, -1, -1 ,-1, -1, -1, val);
+}
 /* -------------------------------------------- */
 
 static iconv_t iconv_rem2local;
@@ -999,6 +1011,7 @@ int main(int argc, char **argv)
   stdattr = XA_NORMAL;
   us = NULL;
   addlf = 0;
+  timestamp = 0;
   wrapln = 0;
   disable_online_time = 0;
   local_echo = 0;
@@ -1180,7 +1193,7 @@ int main(int argc, char **argv)
             exit(1);
           }
           docap = 1;
-          vt_set(addlf, -1, docap, -1, -1, -1, -1);
+          vt_set(addlf, -1, docap, -1, -1, -1, -1, -1);
           break;
         case 'S': /* start Script */
           strncpy(scr_name, optarg, 33);
@@ -1222,7 +1235,7 @@ int main(int argc, char **argv)
 
   if (screen_iso && screen_ibmpc)
     /* init VT */
-    vt_set(-1, -1, -1, -1, -1, -1, 1);
+    vt_set(-1, -1, -1, -1, -1, -1, 1, -1);
 
   /* Avoid fraude ! */	
   for (s = use_port; *s; s++)
@@ -1387,6 +1400,7 @@ int main(int argc, char **argv)
 
   set_local_echo(local_echo);
   set_addlf(addlf);
+  set_timestamp(timestamp);
 
   /* The main loop calls do_terminal and gets a function key back. */
   while (!quit) {
@@ -1486,7 +1500,7 @@ dirty_goto:
           if (c == 1)
             docap = 0;
         }
-        vt_set(addlf, -1, docap, -1, -1, -1, -1);
+        vt_set(addlf, -1, docap, -1, -1, -1, -1, -1);
         break;
       case 'p': /* Set parameters */
         get_bbp(P_BAUDRATE, P_BITS, P_PARITY, P_STOPB, 0);
@@ -1511,9 +1525,14 @@ dirty_goto:
         break;
       case 'w': /* Line wrap on-off */
         c = !us->wrap;
-        vt_set(addlf, c, docap, -1, -1, -1, -1);
+        vt_set(addlf, c, docap, -1, -1, -1, -1, -1);
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
 	status_set_display(s, 0);
+        break;
+      case 'n': /*  Timestamp on-off*/
+	toggle_timestamp();
+        s = timestamp ? _("Timestamp ON") : _("Timestamp OFF");
+        status_set_display(s, 0);
         break;
       case 'o': /* Configure Minicom */
         (void) config(0);

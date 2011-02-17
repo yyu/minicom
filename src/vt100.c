@@ -21,11 +21,13 @@
  *
  * // jl 04.09.97 character map conversions in and out
  *    jl 06.07.98 use conversion tables with the capture file
+ *    mark.einon@gmail.com 16/02/11 - Added option to timestamp terminal output
  */
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
 
+#include <time.h>
 #include "port.h"
 #include "minicom.h"
 #include "vt100.h"
@@ -142,6 +144,7 @@ static int vt_bg;		/* Standard background color. */
 static int vt_keypad;		/* Keypad mode. */
 static int vt_cursor;		/* cursor key mode. */
 static int vt_asis = 0;		/* 8bit clean mode. */
+static int vt_timestamp = 0;	/* Timestamp each line. */
 static int vt_bs = 8;		/* Code that backspace key sends. */
 static int vt_insert = 0;	/* Insert mode */
 static int vt_crlf = 0;		/* Return sends CR/LF */
@@ -169,6 +172,12 @@ static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;
 static short savecharset;
 static char *savetrans[2];
 #endif
+
+/* timestamp string and time */
+static struct tm tmstmp_tm;
+static time_t    tmstmp_prev;
+static time_t    tmstmp_now;
+static char      tmstmp_str[36];
 
 /*
  * Initialize the emulator once.
@@ -246,7 +255,7 @@ void vt_init(int type, int fg, int bg, int wrap, int add)
 
 /* Change some things on the fly. */
 void vt_set(int addlf, int wrap, int docap, int bscode,
-            int echo, int cursor, int asis)
+            int echo, int cursor, int asis, int timestamp)
 {
   if (addlf >= 0)
     vt_addlf = addlf;
@@ -262,6 +271,8 @@ void vt_set(int addlf, int wrap, int docap, int bscode,
     vt_cursor = cursor;
   if (asis >=0)
     vt_asis = asis;
+  if (timestamp >= 0)
+    vt_timestamp = timestamp;
 }
 
 /* Output a string to the modem. */
@@ -947,6 +958,19 @@ void vt_out(int ch)
         mc_wputc(vt_win, '\n');
         if (vt_docap == 1)
           fputc('\n', capfp);
+      }
+      if (vt_timestamp) {
+        time(&tmstmp_now);
+	if(tmstmp_now != tmstmp_prev) {
+	  tmstmp_prev = tmstmp_now;
+          tmstmp_tm = *localtime(&tmstmp_now);
+          strftime(tmstmp_str, sizeof(tmstmp_str), "\n<Timestamp [%F %T]>", &tmstmp_tm);
+          mc_wputs(vt_win, tmstmp_str);
+          mc_wputc(vt_win, '\r');
+          if (vt_docap == 1) {
+            fputs(tmstmp_str, capfp);
+	  }
+        }
       }
       break;
     case '\t': /* Non - destructive TAB */

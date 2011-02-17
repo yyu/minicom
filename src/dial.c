@@ -1416,7 +1416,7 @@ static void dial_entry(struct dialent *d)
     mode_status();
   }
   newtype = d->term;
-  vt_set(-1, d->flags & FL_WRAP, -1, -1, d->flags & FL_ECHO, -1, -1);
+  vt_set(-1, d->flags & FL_WRAP, -1, -1, d->flags & FL_ECHO, -1, -1, -1);
   local_echo = d->flags & FL_ECHO;
   if (newtype != terminal)
     init_emul(newtype, 1);
