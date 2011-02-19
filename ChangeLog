@@ -1,5 +1,8 @@
 2011-02-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/vt100.c: Cleanups: Delete everything that was in OLD blocks.
+	  Do not explicitly set global variables to 0.
+
 	* src/vt100.c, man/minicom.1: Change timestamp style, prepend every
 	  line. Add in manpage.
 

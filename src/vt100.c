@@ -33,8 +33,6 @@
 #include "vt100.h"
 #include "config.h"
 
-#define OLD 0
-
 /*
  * The global variable esc_s holds the escape sequence status:
  * 0 - normal
@@ -131,42 +129,38 @@ static char * vt_map[] = {
   "\376\244\225\242\223\376\224\366\376\227\243\226\201\376\376\230"
 };
 static char *vt_trans[2];
-static int vt_charset = 0;	/* Character set. */
+static int vt_charset;          /* Character set. */
 #endif
 
 static int vt_echo;		/* Local echo on/off. */
 int vt_nl_delay;		/* Delay after CR key */
-static int vt_type   = ANSI;	/* Terminal type. */
-static int vt_wrap   = 0;	/* Line wrap on/off */
-static int vt_addlf  = 0;	/* Add linefeed on/off */
+static int vt_type = ANSI;	/* Terminal type. */
+static int vt_wrap;             /* Line wrap on/off */
+static int vt_addlf;            /* Add linefeed on/off */
 static int vt_fg;		/* Standard foreground color. */
 static int vt_bg;		/* Standard background color. */
 static int vt_keypad;		/* Keypad mode. */
 static int vt_cursor;		/* cursor key mode. */
-static int vt_asis = 0;		/* 8bit clean mode. */
-static int vt_timestamp = 0;	/* Timestamp each line. */
+static int vt_asis;		/* 8bit clean mode. */
+static int vt_timestamp;	/* Timestamp each line. */
 static int vt_bs = 8;		/* Code that backspace key sends. */
-static int vt_insert = 0;	/* Insert mode */
-static int vt_crlf = 0;		/* Return sends CR/LF */
+static int vt_insert;           /* Insert mode */
+static int vt_crlf;		/* Return sends CR/LF */
 static int vt_om;		/* Origin mode. */
-WIN *vt_win          = NULL;	/* Output window. */
+WIN *vt_win;                    /* Output window. */
 static int vt_docap;		/* Capture on/off. */
 static void (*vt_keyb)(int, int);/* Gets called for NORMAL/APPL switch. */
 static void (*termout)(const char *, int);/* Gets called to output a string. */
 
 static int escparms[8];		/* Cumulated escape sequence. */
-#if OLD
-static int ptr = -2;		/* Index into escparms array. */
-#else
-static int ptr = 0;		/* Index into escparms array. */
-#endif
+static int ptr;                 /* Index into escparms array. */
 static long vt_tabs[5];		/* Tab stops for max. 32*5 = 160 columns. */
 
-short newy1 = 0;		/* Current size of scrolling region. */
-short newy2 = 23;
+static short newy1 = 0;		/* Current size of scrolling region. */
+static short newy2 = 23;
 
 /* Saved color and posistions */
-static short savex = 0, savey = 0, saveattr = XA_NORMAL, savecol = 112;
+static short savex, savey, saveattr = XA_NORMAL, savecol = 112;
 
 #if TRANSLATE
 static short savecharset;
@@ -233,12 +227,8 @@ void vt_init(int type, int fg, int bg, int wrap, int add)
   vt_trans[0] = savetrans[0] = vt_map[0];
   vt_trans[1] = savetrans[1] = vt_map[1];
 #endif
-#if OLD
-  ptr = -2;
-#else
   ptr = 0;
   memset(escparms, 0, sizeof(escparms));
-#endif
   esc_s = 0;
 
   if (vt_keyb)
@@ -426,36 +416,21 @@ static void state2(int c)
 
   /* See if a number follows */
   if (c >= '0' && c <= '9') {
-#if OLD
-    if (ptr < 0)
-      ptr = 0;
-#endif
     escparms[ptr] = 10*escparms[ptr] + c - '0';
     return;
   }
   /* Separation between numbers ? */
   if (c == ';') {
-#if OLD
-    if (ptr < 0)
-      ptr = 0; /* keithr@primenet.com */
-    if (ptr >= 0 && ptr < 15)
-      ptr++;
-#else
     if (ptr < 15)
       ptr++;
-#endif
     return;
   }
   /* ESC [ ? sequence */
-#if OLD
-  if (ptr < 0 && c == '?')
-#else
   if (escparms[0] == 0 && ptr == 0 && c == '?')
-#endif
-  {
-    esc_s = 3;
-    return;
-  }
+    {
+      esc_s = 3;
+      return;
+    }
 
   /* Process functions with zero, one, two or more arguments */
   switch (c) {
@@ -485,7 +460,7 @@ static void state2(int c)
           y = 0;
         if (y <= newy1 - 1)
           y = newy1;
-      }	
+      }
       mc_wlocate(vt_win, x, y);
       break;
     case 'X': /* Character erasing (ECH) */
@@ -602,11 +577,6 @@ static void state2(int c)
           vt_tabs[x] = 0;
       break;
     case 'm': /* Set attributes */
-#if OLD
-      /* Without argument, esc-parms[0] is 0 */
-      if (ptr < 0)
-        ptr = 0;
-#endif
       attr = mc_wgetattr((vt_win));
       for (f = 0; f <= ptr; f++) {
         if (escparms[f] >= 30 && escparms[f] <= 37)
@@ -706,12 +676,8 @@ static void state2(int c)
   }
   /* Ok, our escape sequence is all done */
   esc_s = 0;
-#if OLD
-  ptr = -2;
-#else
   ptr = 0;
   memset(escparms, 0, sizeof(escparms));
-#endif
   return;
 }
 
@@ -754,20 +720,9 @@ static void state3(int c)
 {
   /* See if a number follows */
   if (c >= '0' && c <= '9') {
-#if OLD
-    if (ptr < 0)
-      ptr = 0;
-#endif
     escparms[ptr] = 10*escparms[ptr] + c - '0';
     return;
   }
-#if OLD
-  /* ESC [ ? number seen */
-  if (ptr < 0) {
-    esc_s = 0;
-    return;
-  }
-#endif
   switch (c) {
     case 'h':
       dec_mode(1);
@@ -782,12 +737,8 @@ static void state3(int c)
       break;
   }
   esc_s = 0;
-#if OLD
-  ptr = -2;
-#else
   ptr = 0;
   memset(escparms, 0, sizeof(escparms));
-#endif
   return;
 }
 
@@ -923,14 +874,6 @@ void vt_out(int ch)
 
   if (!ch)
     return;
-
-#if OLD
-  if (ptr == -2) { /* Initialize */
-    ptr = -1;
-    for (f = 0; f < 8; f++)
-      escparms[f] = 0;
-  }
-#endif
 
   c = (unsigned char)ch;
 
