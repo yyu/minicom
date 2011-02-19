@@ -1,5 +1,8 @@
 2011-02-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/vt100.c, man/minicom.1: Change timestamp style, prepend every
+	  line. Add in manpage.
+
 	* src/dial.c src/help.c src/ipc.c src/minicom.c src/minicom.h
 	  src/vt100.c src/vt100.h: Addition by Mark Einon
 	  <mark.einon@gmail.com> to add current date/time to each line.

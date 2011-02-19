@@ -173,12 +173,6 @@ static short savecharset;
 static char *savetrans[2];
 #endif
 
-/* timestamp string and time */
-static struct tm tmstmp_tm;
-static time_t    tmstmp_prev;
-static time_t    tmstmp_now;
-static char      tmstmp_str[36];
-
 /*
  * Initialize the emulator once.
  */
@@ -959,19 +953,6 @@ void vt_out(int ch)
         if (vt_docap == 1)
           fputc('\n', capfp);
       }
-      if (vt_timestamp) {
-        time(&tmstmp_now);
-	if(tmstmp_now != tmstmp_prev) {
-	  tmstmp_prev = tmstmp_now;
-          tmstmp_tm = *localtime(&tmstmp_now);
-          strftime(tmstmp_str, sizeof(tmstmp_str), "\n<Timestamp [%F %T]>", &tmstmp_tm);
-          mc_wputs(vt_win, tmstmp_str);
-          mc_wputc(vt_win, '\r');
-          if (vt_docap == 1) {
-            fputs(tmstmp_str, capfp);
-	  }
-        }
-      }
       break;
     case '\t': /* Non - destructive TAB */
       /* Find next tab stop. */
@@ -1014,6 +995,25 @@ void vt_out(int ch)
       esc_s = 2;
       break;
     case '\n':
+      mc_wputc(vt_win, c);
+      if (vt_docap == 1)
+        fputc(c, capfp);
+      if (vt_timestamp)
+        {
+          time_t tmstmp_now;
+          static char tmstmp_str[36];
+          struct tm tmstmp_tm;
+
+          time(&tmstmp_now);
+          if (   localtime_r(&tmstmp_now, &tmstmp_tm)
+              && strftime(tmstmp_str, sizeof(tmstmp_str), "[%F %T] ", &tmstmp_tm))
+            {
+              mc_wputs(vt_win, tmstmp_str);
+              if (vt_docap == 1)
+                fputs(tmstmp_str, capfp);
+            }
+        }
+      break;
     case '\b':
     case 7: /* Bell */
       mc_wputc(vt_win, c);
