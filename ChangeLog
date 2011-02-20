@@ -5,6 +5,8 @@
 	* src/minicom.c, src/minicom.h, src/vt100.c, man/minicom.1: Make
 	  line timestamps three value: every line, every second, and off.
 
+	* man/minicom.1: Wording fix.
+
 2011-02-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/vt100.c: Cleanups: Delete everything that was in OLD blocks.
