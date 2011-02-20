@@ -1,3 +1,7 @@
+2011-02-20  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Code consolidation.
+
 2011-02-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/vt100.c: Cleanups: Delete everything that was in OLD blocks.

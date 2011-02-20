@@ -841,23 +841,16 @@ static void helpthem(void)
     "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"), CONFDIR);
 }
 
-/* Toggle linefeed addition.  Can be called through the menu, or by a macro. */
-void toggle_addlf(void)
-{
-  addlf = !addlf;
-  vt_set(addlf, -1, -1, -1, -1, -1, -1, -1);
-}
-
 static void set_addlf(int val)
 {
   vt_set(val, -1, -1, -1, -1, -1, -1, -1);
 }
 
-/* Toggle local echo.  Can be called through the menu, or by a macro. */
-void toggle_local_echo(void)
+/* Toggle linefeed addition.  Can be called through the menu, or by a macro. */
+void toggle_addlf(void)
 {
-  local_echo = !local_echo;
-  vt_set(-1, -1, -1, -1, local_echo, -1, -1 ,-1);
+  addlf = !addlf;
+  set_addlf(addlf);
 }
 
 static void set_local_echo(int val)
@@ -865,17 +858,25 @@ static void set_local_echo(int val)
   vt_set(-1, -1, -1, -1, val, -1 ,-1, -1);
 }
 
-/* Toggle host timestamping on/off */
-void toggle_timestamp(void)
+/* Toggle local echo.  Can be called through the menu, or by a macro. */
+void toggle_local_echo(void)
 {
-  timestamp = !timestamp;
-  vt_set(-1, -1, -1, -1, -1, -1, -1, timestamp);
+  local_echo = !local_echo;
+  set_local_echo(local_echo);
 }
 
 static void set_timestamp(int val)
 {
   vt_set(-1, -1, -1, -1 ,-1, -1, -1, val);
 }
+
+/* Toggle host timestamping on/off */
+static void toggle_timestamp(void)
+{
+  timestamp = !timestamp;
+  set_timestamp(timestamp);
+}
+
 /* -------------------------------------------- */
 
 static iconv_t iconv_rem2local;
@@ -1529,7 +1530,7 @@ dirty_goto:
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
 	status_set_display(s, 0);
         break;
-      case 'n': /*  Timestamp on-off*/
+      case 'n': /* Timestamp on-off */
 	toggle_timestamp();
         s = timestamp ? _("Timestamp ON") : _("Timestamp OFF");
         status_set_display(s, 0);
