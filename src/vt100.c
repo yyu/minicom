@@ -865,18 +865,25 @@ static void state7(int c)
   buf[pos++] = c;
 }
 
-static void output(const char *s)
+static void output_s(const char *s)
 {
   mc_wputs(vt_win, s);
   if (vt_docap == 1)
     fputs(s, capfp);
 }
 
+static void output_c(const char c)
+{
+  mc_wputc(vt_win, c);
+  if (vt_docap == 1)
+    fputc(c, capfp);
+}
+
 void vt_out(int ch)
 {
+  static unsigned char last_ch;
   int f;
   unsigned char c;
-  static unsigned char last_ch;
   int go_on = 0;
   wchar_t wc;
 
@@ -898,8 +905,8 @@ void vt_out(int ch)
               && strftime(tmstmp_str, sizeof(tmstmp_str),
                           "[%F %T]", &tmstmp_tm))
             {
-              output(tmstmp_str);
-              output(vt_line_timestamp == 2 ? "\r\n" : " ");
+              output_s(tmstmp_str);
+              output_s(vt_line_timestamp == 2 ? "\r\n" : " ");
             }
           tmstmp_last = tmstmp_now;
         }
@@ -922,11 +929,8 @@ void vt_out(int ch)
       break;
     case '\r': /* Carriage return */
       mc_wputc(vt_win, c);
-      if (vt_addlf) {
-        mc_wputc(vt_win, '\n');
-        if (vt_docap == 1)
-          fputc('\n', capfp);
-      }
+      if (vt_addlf)
+        output_c('\n');
       break;
     case '\t': /* Non - destructive TAB */
       /* Find next tab stop. */
@@ -971,9 +975,7 @@ void vt_out(int ch)
     case '\n':
     case '\b':
     case 7: /* Bell */
-      mc_wputc(vt_win, c);
-      if (vt_docap == 1)
-        fputc(c, capfp);
+      output_c(c);
       break;
     default:
       go_on = 1;
@@ -988,10 +990,10 @@ void vt_out(int ch)
       if (vt_docap == 1)
         fputc(P_CONVCAP[0] == 'Y' ? vt_inmap[c] : c, capfp);
       if (!using_iconv()) {
-      c = vt_inmap[c];    /* conversion 04.09.97 / jl */
+        c = vt_inmap[c];    /* conversion 04.09.97 / jl */
 #if TRANSLATE
-      if (vt_type == VT100 && vt_trans[vt_charset] && vt_asis == 0)
-        c = vt_trans[vt_charset][c];
+        if (vt_type == VT100 && vt_trans[vt_charset] && vt_asis == 0)
+          c = vt_trans[vt_charset][c];
 #endif
       }
       /* FIXME: This is wrong, but making it right would require
