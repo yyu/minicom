@@ -142,7 +142,7 @@ static int vt_bg;		/* Standard background color. */
 static int vt_keypad;		/* Keypad mode. */
 static int vt_cursor;		/* cursor key mode. */
 static int vt_asis;		/* 8bit clean mode. */
-static int vt_timestamp;	/* Timestamp each line. */
+static int vt_line_timestamp;	/* Timestamp each line. */
 static int vt_bs = 8;		/* Code that backspace key sends. */
 static int vt_insert;           /* Insert mode */
 static int vt_crlf;		/* Return sends CR/LF */
@@ -256,7 +256,7 @@ void vt_set(int addlf, int wrap, int docap, int bscode,
   if (asis >=0)
     vt_asis = asis;
   if (timestamp >= 0)
-    vt_timestamp = timestamp;
+    vt_line_timestamp = timestamp;
 }
 
 /* Output a string to the modem. */
@@ -865,17 +865,48 @@ static void state7(int c)
   buf[pos++] = c;
 }
 
+static void output(const char *s)
+{
+  mc_wputs(vt_win, s);
+  if (vt_docap == 1)
+    fputs(s, capfp);
+}
+
 void vt_out(int ch)
 {
   int f;
   unsigned char c;
+  static unsigned char last_ch;
   int go_on = 0;
   wchar_t wc;
 
   if (!ch)
     return;
 
+  if (last_ch == '\n' && vt_line_timestamp)
+    {
+      time_t tmstmp_now;
+      static time_t tmstmp_last;
+      char tmstmp_str[36];
+      struct tm tmstmp_tm;
+
+      time(&tmstmp_now);
+      if (vt_line_timestamp == 1
+          || tmstmp_now != tmstmp_last)
+        {
+          if (   localtime_r(&tmstmp_now, &tmstmp_tm)
+              && strftime(tmstmp_str, sizeof(tmstmp_str),
+                          "[%F %T]", &tmstmp_tm))
+            {
+              output(tmstmp_str);
+              output(vt_line_timestamp == 2 ? "\r\n" : " ");
+            }
+          tmstmp_last = tmstmp_now;
+        }
+    }
+
   c = (unsigned char)ch;
+  last_ch = c;
 
   if (vt_docap == 2) /* Literal. */
     fputc(c, capfp);
@@ -938,25 +969,6 @@ void vt_out(int ch)
       esc_s = 2;
       break;
     case '\n':
-      mc_wputc(vt_win, c);
-      if (vt_docap == 1)
-        fputc(c, capfp);
-      if (vt_timestamp)
-        {
-          time_t tmstmp_now;
-          static char tmstmp_str[36];
-          struct tm tmstmp_tm;
-
-          time(&tmstmp_now);
-          if (   localtime_r(&tmstmp_now, &tmstmp_tm)
-              && strftime(tmstmp_str, sizeof(tmstmp_str), "[%F %T] ", &tmstmp_tm))
-            {
-              mc_wputs(vt_win, tmstmp_str);
-              if (vt_docap == 1)
-                fputs(tmstmp_str, capfp);
-            }
-        }
-      break;
     case '\b':
     case 7: /* Bell */
       mc_wputc(vt_win, c);

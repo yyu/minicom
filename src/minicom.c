@@ -59,6 +59,8 @@ static void signore(int sig)
 }
 #endif /*DEBUG*/
 
+static int line_timestamp;
+
 /*
  * Sub - menu's.
  */
@@ -865,16 +867,17 @@ void toggle_local_echo(void)
   set_local_echo(local_echo);
 }
 
-static void set_timestamp(int val)
+static void set_line_timestamp(int val)
 {
   vt_set(-1, -1, -1, -1 ,-1, -1, -1, val);
 }
 
 /* Toggle host timestamping on/off */
-static void toggle_timestamp(void)
+static void toggle_line_timestamp(void)
 {
-  timestamp = !timestamp;
-  set_timestamp(timestamp);
+  ++line_timestamp;
+  line_timestamp %= 3;
+  set_line_timestamp(line_timestamp);
 }
 
 /* -------------------------------------------- */
@@ -1012,7 +1015,7 @@ int main(int argc, char **argv)
   stdattr = XA_NORMAL;
   us = NULL;
   addlf = 0;
-  timestamp = 0;
+  line_timestamp = 0;
   wrapln = 0;
   disable_online_time = 0;
   local_echo = 0;
@@ -1401,7 +1404,7 @@ int main(int argc, char **argv)
 
   set_local_echo(local_echo);
   set_addlf(addlf);
-  set_timestamp(timestamp);
+  set_line_timestamp(line_timestamp);
 
   /* The main loop calls do_terminal and gets a function key back. */
   while (!quit) {
@@ -1530,9 +1533,21 @@ dirty_goto:
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
 	status_set_display(s, 0);
         break;
-      case 'n': /* Timestamp on-off */
-	toggle_timestamp();
-        s = timestamp ? _("Timestamp ON") : _("Timestamp OFF");
+      case 'n': /* Line timestamp */
+	toggle_line_timestamp();
+        switch (line_timestamp)
+          {
+          default:
+          case 0:
+            s = _("Timestamp OFF");
+            break;
+          case 1:
+            s = _("Timestamp every line");
+            break;
+          case 2:
+            s = _("Timestamp lines every second");
+            break;
+          }
         status_set_display(s, 0);
         break;
       case 'o': /* Configure Minicom */
