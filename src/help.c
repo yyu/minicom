@@ -61,7 +61,7 @@ int help(void)
   mc_wputs(w, _(" Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"));
   mc_wputs(w, _(" lineWrap on/off....W"));
   mc_wputs(w, _("  local Echo on/off..E | Help screen........Z\n"));
-  mc_wputs(w, _(" Paste file.........Y  Timestamp on/off...N | scroll Back........B"));
+  mc_wputs(w, _(" Paste file.........Y  Timestamp toggle...N | scroll Back........B"));
 
   mc_wlocate(w, 13, 16 + i);
   mc_wputs(w, _("Written by Miquel van Smoorenburg 1991-1995"));
