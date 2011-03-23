@@ -1,5 +1,8 @@
 2011-03-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/main.c: Increase serial port open timeout, by
+	  Lubomir Rintel
+
 	* src/main.c: Set sensible errno if port open times out,
 	  by Lubomir Rintel
 

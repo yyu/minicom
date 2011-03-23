@@ -231,7 +231,7 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
   if (setjmp(albuf) == 0) {
     portfd = -1;
     signal(SIGALRM, get_alrm);
-    alarm(4);
+    alarm(20);
 #ifdef USE_SOCKET
 #define SOCKET_PREFIX "unix#"
     portfd_is_socket = portfd_is_connected = 0;
