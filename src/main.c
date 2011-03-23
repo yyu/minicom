@@ -112,6 +112,7 @@ char *esc_key(void)
 static void get_alrm(int dummy)
 {
   (void)dummy;
+  errno = ETIME;
   longjmp(albuf, 1);
 }
 

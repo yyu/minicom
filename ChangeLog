@@ -1,3 +1,8 @@
+2011-03-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/main.c: Set sensible errno if port open times out,
+	  by Lubomir Rintel
+
 2011-02-28  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/help.c: Help fix for timestamp toggle by Mark Einon
