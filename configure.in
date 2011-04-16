@@ -116,6 +116,17 @@ dnl Checks for programs.
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.16.1])
 
+dnl This is a hacky workaround as the m4 scripts for iconv seem to set
+dnl LIBICONV to '-liconv' despite that this lib is not available if iconv
+dnl functionality is coming out of libc. But we need -liconv for other
+dnl systems, such as Mac OS. Other projects I looked seem to have their own
+dnl set of iconv m4 macros... why?
+if test "x$gt_use_preinstalled_gnugettext" = "xyes" 
+then
+   LIBICONV=''
+   LTLIBICONV=''
+fi
+
 if test "x$enable_kermit" != xno && test "x$PATH_KERMIT" = x
 then
 AC_PATH_PROG(PATH_KERMIT, kermit, no, $PATH:/bin:/usr/bin:/usr/local/bin:/opt/gnu/bin)

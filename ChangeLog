@@ -1,3 +1,8 @@
+2011-04-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in, src/Makefile.am: Add workaround and then use
+	  libiconv for linking, fixes build issue on Mac OS X.
+
 2011-03-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/main.c: Increase serial port open timeout, by
