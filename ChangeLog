@@ -1,5 +1,8 @@
 2011-04-16  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/config.c: Do not extend tilde to home directory for
+	  non-path arguments. Debian bug #621741
+
 	* configure.in, src/Makefile.am: Add workaround and then use
 	  libiconv for linking, fixes build issue on Mac OS X.
 

@@ -175,14 +175,16 @@ static void mgets(WIN *w, int x, int y, char *s, int len, int maxl)
  * Read in a string, but first check to see if it's
  * allowed to do so.
  */
-static void pgets(WIN *w, int x, int y, char *s, int len, unsigned int maxl)
+static void pgets(WIN *w, int x, int y, char *s, int len, unsigned int maxl,
+                  int extend_tilde)
 {
   struct pars *p = (struct pars *)s;
   char *home = NULL;
 
   mc_wlocate(w, x, y);
   mc_wgets(w, s, len, maxl);
-  if (s[0] == '~' && (s[1] == '/' || s[1] == 0) &&
+  if (extend_tilde &&
+      s[0] == '~' && (s[1] == '/' || s[1] == 0) &&
       (home = getenv("HOME")) && strlen(s) + strlen(home) <= maxl) {
     int i = 0;
     memmove(s + strlen(home), s + 1, strlen(s));
@@ -263,7 +265,7 @@ static void dologopt(void)
         return;
       case 'A':
         pgets(w, mbslen(logfnstr) + 1, 0,
-              P_LOGFNAME, PARS_VAL_LEN, PARS_VAL_LEN);
+              P_LOGFNAME, PARS_VAL_LEN, PARS_VAL_LEN, 1);
         strcpy(logfname,P_LOGFNAME);
         break;
       case 'B':
@@ -321,21 +323,21 @@ static void dopath(void)
         mc_wclose(w, 1);
         return;
       case 'A':
-        pgets(w, mbslen (download_directory) + 1, 0, P_DOWNDIR, 64, 64);
+        pgets(w, mbslen (download_directory) + 1, 0, P_DOWNDIR, 64, 64, 1);
         init_dir('d');
         break;
       case 'B':
-        pgets(w, mbslen (upload_directory) + 1, 1, P_UPDIR, 64, 64);
+        pgets(w, mbslen (upload_directory) + 1, 1, P_UPDIR, 64, 64, 1);
         init_dir('u');
         break;
       case 'C':
-        pgets(w, mbslen (script_directory) + 1, 2, P_SCRIPTDIR, 64, 64);
+        pgets(w, mbslen (script_directory) + 1, 2, P_SCRIPTDIR, 64, 64, 1);
         break;
       case 'D':
-        pgets(w, mbslen (script_program) + 1, 3, P_SCRIPTPROG, 64, 64);
+        pgets(w, mbslen (script_program) + 1, 3, P_SCRIPTPROG, 64, 64, 1);
         break;
       case 'E':
-        pgets(w, mbslen (kermit_program) + 1, 4, P_KERMIT, 64, 64);
+        pgets(w, mbslen (kermit_program) + 1, 4, P_KERMIT, 64, 64, 1);
         break;
 #ifdef LOGFILE
       case 'F':
@@ -373,7 +375,7 @@ static void inputproto(WIN *w, int n)
   }
   mc_wlocate(w, 4, n + 1);
   mc_wgets(w, P_PNAME(n), 10, 64);
-  pgets(w, 15, n+1, P_PPROG(n), 31, 64);
+  pgets(w, 15, n+1, P_PPROG(n), 31, 64, 0);
   do {
     mc_wlocate(w, 47, n + 1);
     mc_wprintf(w, "%c", P_PNN(n));
@@ -561,16 +563,16 @@ static void doserial(void)
         mc_wclose(w, 1);
         return;
       case 'A':
-        pgets(w, mbslen (serial_device) + 1, 0, P_PORT, 64, 64);
+        pgets(w, mbslen (serial_device) + 1, 0, P_PORT, 64, 64, 1);
         break;
       case 'B':
-        pgets(w, mbslen (lockfile_location) + 1, 1, P_LOCK, 64, 64);
+        pgets(w, mbslen (lockfile_location) + 1, 1, P_LOCK, 64, 64, 1);
         break;
       case 'C':
-        pgets(w, mbslen (callin_program) + 1, 2, P_CALLIN, 64, 64);
+        pgets(w, mbslen (callin_program) + 1, 2, P_CALLIN, 64, 64, 1);
         break;
       case 'D':
-        pgets(w, mbslen (callout_program) + 1, 3, P_CALLOUT, 64, 64);
+        pgets(w, mbslen (callout_program) + 1, 3, P_CALLOUT, 64, 64, 1);
         break;
       case 'E':
         get_bbp(P_BAUDRATE, P_BITS, P_PARITY, P_STOPB, 0);
@@ -742,15 +744,15 @@ static void domodem(void)
 
         /* Calculate adress of string tomodify */
         str = P_MINIT + (c - 'A') * sizeof(struct pars);
-        pgets(w, string_size + 1, ypos + (c - 'A'), str, maxl, maxl);
+        pgets(w, string_size + 1, ypos + (c - 'A'), str, maxl, maxl, 0);
         break;
       case 'J':
         string_size = mbslen (no_connect_strings);
         /* Walk through all four */
-        pgets(w, string_size + 1, 10, P_MNOCON1, 20, 64);
-        pgets(w, string_size + 1 + 22, 10, P_MNOCON2, 20, 64);
-        pgets(w, string_size + 1 , 11, P_MNOCON3, 20, 64);
-        pgets(w, string_size + 1 + 22, 11, P_MNOCON4, 20, 64);
+        pgets(w, string_size + 1, 10, P_MNOCON1, 20, 64, 0);
+        pgets(w, string_size + 1 + 22, 10, P_MNOCON2, 20, 64, 0);
+        pgets(w, string_size + 1 , 11, P_MNOCON3, 20, 64, 0);
+        pgets(w, string_size + 1 + 22, 11, P_MNOCON4, 20, 64, 0);
         break;
       case 'Q':
         psets(P_MAUTOBAUD, yesno(P_MAUTOBAUD[0] == 'N'));
@@ -1057,7 +1059,7 @@ static void doscrkeyb(void)
         break;
       case 'K': /* MARK updated 02/17/95 - Config history size */
         pgets(w, mbslen (history_buffer_size) + 1, 11,
-              P_HISTSIZE, 6, 6);
+              P_HISTSIZE, 6, 6, 0);
 
         /* In case gibberish or a value was out of bounds, */
         /* limit history buffer size between 0 to 5000 lines */
@@ -1072,7 +1074,7 @@ static void doscrkeyb(void)
         mc_wprintf(w, "%s     ", P_HISTSIZE);
         break;
       case 'L': /* fmg - get local macros storage file */
-        pgets(w, mbslen (macros_file) + 1, 12, P_MACROS, 64, 64);
+        pgets(w, mbslen (macros_file) + 1, 12, P_MACROS, 64, 64, 1);
 
         /* Try to open the file to read it in. */
         fp = fopen(pfix_home(P_MACROS), "r+");
@@ -1211,7 +1213,7 @@ int dotermmenu(void)
         mc_wprintf(w, "%-4d", vt_nl_delay);
         break;
       case 'E':
-        pgets(w, strlen(msg_answerback) + 1, 5, P_ANSWERBACK, 50, 50);
+        pgets(w, strlen(msg_answerback) + 1, 5, P_ANSWERBACK, 50, 50, 0);
         break;
       default:
         break;
@@ -1718,7 +1720,7 @@ void doconv(void)
         strcpy(buf,P_CONVF);
         prompt=_("Load file: %s");
         mc_wprintf(w, prompt, buf);
-        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64);
+        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
         if (loadconv(P_CONVF) == 0) {
           if (strcmp(P_CONVF,buf))
             markch(P_CONVF);
@@ -1730,7 +1732,7 @@ void doconv(void)
         strcpy(buf,P_CONVF);
         prompt=_("Save as file: %s");
         mc_wprintf(w, prompt, buf);
-        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64);
+        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
         if (saveconv(P_CONVF) == 0) {
           if (strcmp(P_CONVF,buf))
             markch(P_CONVF);
