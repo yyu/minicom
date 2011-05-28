@@ -28,6 +28,7 @@
 #define ANSI	3
 
 extern int vt_nl_delay;		/* Delay after CR key */
+extern int vt_ch_delay;		/* Delay after each character */
 
 /* Prototypes from vt100.c */
 void vt_install(void(*)(const char *, int), void (*)(int, int), WIN *);

@@ -308,17 +308,29 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 static void do_output(const char *s, int len)
 {
   char buf[256];
-  int f;
 
   if (len == 0)
     len = strlen(s);
 
   if (P_PARITY[0] == 'M') {
-    for(f = 0; f < len && f < 256; f++)
+    int f;
+    for (f = 0; f < len && f < (int)sizeof(buf); f++)
       buf[f] = *s++ | 0x80;
-    write(portfd, buf, f);
-  } else
-    write(portfd, s, len);
+    len = f;
+    s = buf;
+  }
+
+  int r;
+  int b = vt_ch_delay ? 1 : len;
+  while (len && (r = write(portfd, s, b)) >= 0)
+    {
+      s   += r;
+      len -= r;
+      if (vt_ch_delay)
+        usleep(vt_ch_delay * 1000);
+      else
+        b = len;
+    }
 }
 
 /* Function to handle keypad mode switches. */

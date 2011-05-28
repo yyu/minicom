@@ -134,6 +134,7 @@ static int vt_charset;          /* Character set. */
 
 static int vt_echo;		/* Local echo on/off. */
 int vt_nl_delay;		/* Delay after CR key */
+int vt_ch_delay;		/* Delay between characters */
 static int vt_type = ANSI;	/* Terminal type. */
 static int vt_wrap;             /* Line wrap on/off */
 static int vt_addlf;            /* Add linefeed on/off */

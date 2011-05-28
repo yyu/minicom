@@ -1136,11 +1136,12 @@ int dotermmenu(void)
   int new_term = -1;
   int old_stat = P_STATLINE[0];
   char buf[8];
-  char *terminal_emulation  = _(" A - Terminal emulation  :");
-  char *backspace_key_sends = _(" B - Backspace key sends :");
-  char *status_line         = _(" C -      Status line is :");
-  char *msg_nl_delay        = _(" D -  Newline delay (ms) :");
-  char *msg_answerback      = _(" E -      ENQ answerback :");
+  char *terminal_emulation  = _(" A -      Terminal emulation :");
+  char *backspace_key_sends = _(" B -     Backspace key sends :");
+  char *status_line         = _(" C -          Status line is :");
+  char *msg_nl_delay        = _(" D -   Newline tx delay (ms) :");
+  char *msg_answerback      = _(" E -          ENQ answerback :");
+  char *msg_ch_delay        = _(" F - Character tx delay (ms) :");
   char *question            = _("Change which setting?");
 
   w = mc_wopen(15, 7, 64, 15, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
@@ -1151,6 +1152,7 @@ int dotermmenu(void)
   mc_wprintf(w, "%s %s\n", status_line, _(P_STATLINE));
   mc_wprintf(w, "%s %d\n", msg_nl_delay, vt_nl_delay);
   mc_wprintf(w, "%s %s\n", msg_answerback, P_ANSWERBACK);
+  mc_wprintf(w, "%s %d\n", msg_ch_delay, vt_ch_delay);
   mc_wlocate(w, 4, 7);
   mc_wputs(w, question);
 
@@ -1206,14 +1208,22 @@ int dotermmenu(void)
         break;
       case 'D':
         sprintf(buf, "%d", vt_nl_delay);
-        mc_wlocate(w, mbslen(msg_nl_delay) +1, 4);
+        mc_wlocate(w, mbslen(msg_nl_delay) + 1, 4);
         mc_wgets(w, buf, 5, 5);
         vt_nl_delay = atoi(buf);
-        mc_wlocate(w, mbslen(msg_nl_delay) +1, 4);
+        mc_wlocate(w, mbslen(msg_nl_delay) + 1, 4);
         mc_wprintf(w, "%-4d", vt_nl_delay);
         break;
       case 'E':
         pgets(w, strlen(msg_answerback) + 1, 5, P_ANSWERBACK, 50, 50, 0);
+        break;
+      case 'F':
+        sprintf(buf, "%d", vt_ch_delay);
+        mc_wlocate(w, mbslen(msg_ch_delay) + 1, 6);
+        mc_wgets(w, buf, 5, 5);
+        vt_ch_delay = atoi(buf);
+        mc_wlocate(w, mbslen(msg_ch_delay) + 1, 6);
+        mc_wprintf(w, "%-4d", vt_ch_delay);
         break;
       default:
         break;
