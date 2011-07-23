@@ -882,6 +882,7 @@ static void toggle_line_timestamp(void)
 
 /* -------------------------------------------- */
 
+#ifdef HAVE_ICONV
 static iconv_t iconv_rem2local;
 static int iconv_enabled;
 
@@ -949,6 +950,28 @@ static void close_iconv(void)
   if (iconv_enabled)
     iconv_close(iconv_rem2local);
 }
+#else
+
+int using_iconv(void)
+{
+  return 0;
+}
+
+static void init_iconv(const char *remote_charset)
+{
+  (void)remote_charset;
+}
+
+void do_iconv(char **inbuf, size_t *inbytesleft,
+              char **outbuf, size_t *outbytesleft)
+{
+  (void)inbuf; (void)outbuf; (void)inbytesleft; (void)outbytesleft;
+}
+
+static void close_iconv(void)
+{
+}
+#endif
 /* -------------------------------------------- */
 
 

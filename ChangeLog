@@ -1,3 +1,7 @@
+2011-07-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Do not use iconv-functions if iconv is not available.
+
 2011-05-28  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c, src/main.c, src/vt100.c, src/vt100.h: Add transmit
