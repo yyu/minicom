@@ -1,5 +1,7 @@
 2011-07-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/script.c: Fix a buffer overflow problem. Thanks Frederic Germain.
+
 	* src/minicom.c: Do not use iconv-functions if iconv is not available.
 
 2011-05-28  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
