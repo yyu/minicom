@@ -1,5 +1,9 @@
 2011-07-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/dial.c: add a dialdir version 6 which does not save the
+	  pointer on disk and should now work on 32 and 64 bit
+	  systems equally.
+
 	* configure.in: Use AM_ICONV_LINK...
 
 	* src/script.c: Fix a buffer overflow problem. Thanks Frederic Germain.
