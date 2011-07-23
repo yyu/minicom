@@ -21,6 +21,7 @@ dnl AC_PROG_LIBTOOL
 AC_PROG_RANLIB
 
 AC_ISC_POSIX
+AM_ICONV_LINK
 
 AC_ARG_ENABLE([music],
 	AS_HELP_STRING([--enable-music],
@@ -121,11 +122,11 @@ dnl LIBICONV to '-liconv' despite that this lib is not available if iconv
 dnl functionality is coming out of libc. But we need -liconv for other
 dnl systems, such as Mac OS. Other projects I looked seem to have their own
 dnl set of iconv m4 macros... why?
-if test "x$gt_use_preinstalled_gnugettext" = "xyes" 
-then
-   LIBICONV=''
-   LTLIBICONV=''
-fi
+dnl if test "x$gt_use_preinstalled_gnugettext" = "xyes" -o "x$USE_NLS" = "no"
+dnl then
+dnl    LIBICONV=''
+dnl    LTLIBICONV=''
+dnl fi
 
 if test "x$enable_kermit" != xno && test "x$PATH_KERMIT" = x
 then
