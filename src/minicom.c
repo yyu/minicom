@@ -1627,8 +1627,7 @@ dirty_goto:
   mc_wclose(st, 0);
   mc_wclose(stdwin, 1);
   keyboard(KUNINSTALL, 0);
-  if (lockfile[0])
-    unlink(lockfile);
+  lockfile_remove();
   close(portfd);
 
   if (quit != NORESET && P_CALLIN[0])

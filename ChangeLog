@@ -1,3 +1,9 @@
+2011-08-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* configure.in, src/Makefile.am, src/main.c, src/minicom.c,
+	  src/minicom.h, src/updown.c: Add lockdev support,
+	  by Ludwig Nussel <ludwig.nussel@suse.de> 
+
 2011-07-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/dial.c: add a dialdir version 6 which does not save the

@@ -165,6 +165,18 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
   int s_errno;
 #endif
 
+#ifdef USE_SOCKET
+#define SOCKET_PREFIX "unix#"
+    portfd_is_socket = portfd_is_connected = 0;
+    if (strncmp(dial_tty, SOCKET_PREFIX, strlen(SOCKET_PREFIX)) == 0) {
+      portfd_is_socket = 1;
+    }
+#endif
+
+  if (portfd_is_socket)
+    goto nolock;
+
+#if !HAVE_LOCKDEV
   /* First see if the lock file directory is present. */
   if (P_LOCK[0] && stat(P_LOCK, &stt) == 0) {
 
@@ -212,10 +224,12 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
       return -1;
     }
   }
+#endif
 
-  if (doinit > 0)
-    lockfile_create();
+  if (doinit > 0 && lockfile_create() != 0)
+	  return -1;
 
+nolock:
   /* Run a special program to disable callin if needed. */
     if (doinit > 0 && P_CALLOUT[0]) {
       if (fastsystem(P_CALLOUT, NULL, NULL, NULL) < 0) {
@@ -233,11 +247,7 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
     signal(SIGALRM, get_alrm);
     alarm(20);
 #ifdef USE_SOCKET
-#define SOCKET_PREFIX "unix#"
-    portfd_is_socket = portfd_is_connected = 0;
-    if (strncmp(dial_tty, SOCKET_PREFIX, strlen(SOCKET_PREFIX)) == 0) {
-      portfd_is_socket = 1;
-
+    if (portfd_is_socket) {
       portfd_sock_addr.sun_family = AF_UNIX;
       strncpy(portfd_sock_addr.sun_path,
               dial_tty + strlen(SOCKET_PREFIX),

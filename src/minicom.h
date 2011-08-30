@@ -35,6 +35,10 @@
 
 #include <time.h>
 
+#if HAVE_LOCKDEV
+#include <ttylock.h>
+#endif
+
 #ifdef USE_SOCKET
 #include <sys/socket.h>
 #include <sys/un.h>
@@ -294,7 +298,7 @@ extern int io_pending, pendingkeys;
 void domacros(void);
 
 
-void lockfile_create(void);
+int lockfile_create(void);
 void lockfile_remove(void);
 
 

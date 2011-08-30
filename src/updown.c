@@ -29,6 +29,8 @@
 #include <config.h>
 #endif
 
+#include <wchar.h>
+
 #include "port.h"
 #include "minicom.h"
 #include "intl.h"
@@ -441,25 +443,34 @@ void updown(int what, int nr)
 
 void lockfile_remove(void)
 {
-  if (lockfile[0])
-    unlink(lockfile);
-}
-
-void lockfile_create(void)
-{
-  int fd, n;
-
-  if (!lockfile[0])
+  if (portfd_is_socket)
     return;
 
+#if !HAVE_LOCKDEV
+  if (lockfile[0])
+    unlink(lockfile);
+#else
+  ttyunlock(dial_tty);
+#endif
+}
+
+int lockfile_create(void)
+{
+  int n;
+
+  if (portfd_is_socket)
+    return 0;
+
+#if !HAVE_LOCKDEV
+  if (!lockfile[0])
+    return 0;
+
+  int fd;
   n = umask(022);
   /* Create lockfile compatible with UUCP-1.2 */
   if ((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0) {
     werror(_("Cannot create lockfile!"));
   } else {
-    // previously used lockfile format:
-    // char buf[81];
-    //snprintf(buf, sizeof(buf),  "%05d minicom %.20s\n", (int)getpid(), username);
     // FHS format:
     char buf[12];
     snprintf(buf, sizeof(buf),  "%10d\n", getpid());
@@ -468,6 +479,16 @@ void lockfile_create(void)
     close(fd);
   }
   umask(n);
+  return 0;
+#else
+  n = ttylock(dial_tty);
+  if (n < 0) {
+    fprintf(stderr, _("Cannot create lockfile for %s: %s\n"), dial_tty, strerror(-n));
+  } else if (n > 0) {
+    fprintf(stderr, _("Device %s is locked.\n"), dial_tty);
+  }
+  return n;
+#endif
 }
 
 /*
