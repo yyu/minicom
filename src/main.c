@@ -42,15 +42,13 @@ static jmp_buf albuf;
 /* Compile SCCS ID into executable. */
 const char *Version = VERSION;
 
-void curs_status(void);
-
 /*
  * Find out name to use for lockfile when locking tty.
  */
-char *mbasename(char *s, char *res, int reslen)
+static char *mbasename(char *s, char *res, int reslen)
 {
   char *p;
-  
+
   if (strncmp(s, "/dev/", 5) == 0) {
     /* In /dev */
     strncpy(res, s + 5, reslen - 1);
@@ -189,7 +187,7 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 #else /* SVR4_LOCKS */
     snprintf(lockfile, sizeof(lockfile),
                        "%s/LCK..%s",
-                       P_LOCK, mbasename(dial_tty, buf.bytes, sizeof(buf)));
+                       P_LOCK, mbasename(dial_tty, buf.bytes, sizeof(buf.bytes)));
 #endif /* SVR4_LOCKS */
 
   }
@@ -348,8 +346,7 @@ static void kb_handler(int a, int b)
 {
   cursormode = b;
   keypadmode = a;
-  if (st)
-    curs_status();
+  curs_status();
 }
 
 /*
@@ -461,15 +458,24 @@ void mode_status(void)
  */
 void time_status(void)
 {
-  if (!st || disable_online_time)
+  if (!st)
     return;
-  mc_wlocate(st, 63, 0);
-  if (online < 0)
-    mc_wprintf(st, " %12.12s ", P_HASDCD[0] == 'Y' ? _("Offline") : _("OFFLINE"));
-  else
-    mc_wprintf(st, " %s %02ld:%02ld", P_HASDCD[0] == 'Y' ? _("Online") : _("ONLINE"),
-               online / 3600, (online / 60) % 60);
 
+  mc_wlocate(st, 63, 0);
+  if (disable_online_time)
+    {
+      char b[20];
+      mc_wprintf(st, " %s", mbasename(P_PORT, b, sizeof(b)));
+    }
+  else
+    {
+      if (online < 0)
+	mc_wprintf(st, " %12.12s ", P_HASDCD[0] == 'Y' ? _("Offline") : _("OFFLINE"));
+      else
+	mc_wprintf(st, " %s %02ld:%02ld", P_HASDCD[0] == 'Y' ? _("Online") : _("ONLINE"),
+	    online / 3600, (online / 60) % 60);
+
+    }
   ret_csr();
 }
 
@@ -478,6 +484,8 @@ void time_status(void)
  */
 void curs_status(void)
 {
+  if (!st)
+    return;
   mc_wlocate(st, 33, 0);
   mc_wprintf(st, cursormode == NORMAL ? "NOR" : "APP");
   ret_csr();

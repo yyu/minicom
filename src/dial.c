@@ -302,8 +302,7 @@ void hangup(void)
   /* If we don't have DCD support fake DCD dropped */
   bogus_dcd = 0;
   mc_wclose(w, 1);
-  if (st)
-    time_status();
+  time_status();
 }
 
 /*

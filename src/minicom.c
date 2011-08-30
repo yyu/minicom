@@ -1591,8 +1591,7 @@ dirty_goto:
       case 'i': /* Re-init, re-open portfd. */
         cursormode = (cursormode == NORMAL) ? APPL : NORMAL;
         keyboard(cursormode == NORMAL ? KCURST : KCURAPP, 0);
-        if (st)
-          curs_status();
+        curs_status();
         break;
       case 'y': /* Paste file */
 	paste_file();

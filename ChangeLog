@@ -1,5 +1,8 @@
 2011-08-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/dial.c, src/minicom.c, src/main.c: Cleanups. Print
+	  basename of current device to statusline if online time is disabled.
+
 	* configure.in, src/Makefile.am, src/main.c, src/minicom.c,
 	  src/minicom.h, src/updown.c: Add lockdev support,
 	  by Ludwig Nussel <ludwig.nussel@suse.de> 
