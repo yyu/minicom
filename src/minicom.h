@@ -316,3 +316,10 @@ void lockfile_remove(void);
 #define FL_TAG		0x80	/* This entry is tagged. */
 #define FL_SAVE		0x0f	/* Which portions of flags to save. */
 
+enum {
+  TIMESTAMP_LINE_OFF,
+  TIMESTAMP_LINE_SIMPLE,
+  TIMESTAMP_LINE_EXTENDED,
+  TIMESTAMP_LINE_PER_SECOND,
+  TIMESTAMP_LINE_NR_OF_OPTIONS, // must be last
+};

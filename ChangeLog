@@ -1,3 +1,8 @@
+2011-09-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c, src/minicom.h, src/vt100.c: Add timestamps with
+	  milliseconds, based on patch by Raphaël Assénat, thanks!
+
 2011-08-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/dial.c, src/minicom.c, src/main.c: Cleanups. Print

@@ -891,25 +891,39 @@ void vt_out(int ch)
   if (!ch)
     return;
 
-  if (last_ch == '\n' && vt_line_timestamp)
+  if (last_ch == '\n'
+      && vt_line_timestamp != TIMESTAMP_LINE_OFF)
     {
-      time_t tmstmp_now;
+      struct timeval tmstmp_now;
       static time_t tmstmp_last;
-      char tmstmp_str[36];
+      char s[36];
       struct tm tmstmp_tm;
 
-      time(&tmstmp_now);
-      if (vt_line_timestamp == 1
-          || tmstmp_now != tmstmp_last)
+      gettimeofday(&tmstmp_now, NULL);
+      if ((   vt_line_timestamp == TIMESTAMP_LINE_PER_SECOND
+           && tmstmp_now.tv_sec != tmstmp_last)
+          || vt_line_timestamp == TIMESTAMP_LINE_SIMPLE
+          || vt_line_timestamp == TIMESTAMP_LINE_EXTENDED)
         {
-          if (   localtime_r(&tmstmp_now, &tmstmp_tm)
-              && strftime(tmstmp_str, sizeof(tmstmp_str),
-                          "[%F %T]", &tmstmp_tm))
+          if (   localtime_r(&tmstmp_now.tv_sec, &tmstmp_tm)
+              && strftime(s, sizeof(s), "[%F %T", &tmstmp_tm))
             {
-              output_s(tmstmp_str);
-              output_s(vt_line_timestamp == 2 ? "\r\n" : " ");
+              output_s(s);
+              switch (vt_line_timestamp)
+                {
+                case TIMESTAMP_LINE_SIMPLE:
+                  output_s("] ");
+                  break;
+                case TIMESTAMP_LINE_EXTENDED:
+                  snprintf(s, sizeof(s), ".%03ld] ", tmstmp_now.tv_usec / 1000);
+                  output_s(s);
+                  break;
+                case TIMESTAMP_LINE_PER_SECOND:
+                  output_s("\r\n");
+                  break;
+                };
             }
-          tmstmp_last = tmstmp_now;
+          tmstmp_last = tmstmp_now.tv_sec;
         }
     }
 

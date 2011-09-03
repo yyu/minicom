@@ -876,7 +876,7 @@ static void set_line_timestamp(int val)
 static void toggle_line_timestamp(void)
 {
   ++line_timestamp;
-  line_timestamp %= 3;
+  line_timestamp %= TIMESTAMP_LINE_NR_OF_OPTIONS;
   set_line_timestamp(line_timestamp);
 }
 
@@ -1561,13 +1561,16 @@ dirty_goto:
         switch (line_timestamp)
           {
           default:
-          case 0:
+          case TIMESTAMP_LINE_OFF:
             s = _("Timestamp OFF");
             break;
-          case 1:
-            s = _("Timestamp every line");
+          case TIMESTAMP_LINE_SIMPLE:
+            s = _("Timestamp every line (simple)");
             break;
-          case 2:
+          case TIMESTAMP_LINE_EXTENDED:
+            s = _("Timestamp every line (extended)");
+            break;
+          case TIMESTAMP_LINE_PER_SECOND:
             s = _("Timestamp lines every second");
             break;
           }
