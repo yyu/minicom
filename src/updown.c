@@ -304,6 +304,8 @@ void updown(int what, int nr)
   } else
     mc_wleave();
 
+  m_flush(portfd);
+
   switch (udpid = fork()) {
     case -1:
       werror(_("Out of memory: could not fork()"));

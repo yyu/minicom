@@ -1,3 +1,8 @@
+2011-09-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/updown.c: Flush before forking helper program,
+	  patch by Domen Puncer, thanks!
+
 2011-09-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.c, src/minicom.h, src/vt100.c: Add timestamps with
