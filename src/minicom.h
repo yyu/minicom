@@ -34,6 +34,7 @@
 #include "libport.h"
 
 #include <time.h>
+#include <stdbool.h>
 
 #if HAVE_LOCKDEV
 #include <ttylock.h>
@@ -224,7 +225,7 @@ int  open_term(int doinit, int show_win_on_error, int no_msgs);
 void init_emul(int type, int do_init);
 void timer_update(void);
 void mode_status(void);
-void time_status(void);
+void time_status(bool);
 void curs_status(void);
 void show_status(void);
 void scriptname(const char *s);

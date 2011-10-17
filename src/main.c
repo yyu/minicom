@@ -31,6 +31,8 @@
 #include <errno.h>
 #endif
 
+#include <stdbool.h>
+
 #ifdef SVR4_LOCKS
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -456,9 +458,12 @@ void mode_status(void)
  * If real dcd is not supported, Online and Offline will be
  * shown in capitals.
  */
-void time_status(void)
+void time_status(bool time_update_only)
 {
   if (!st)
+    return;
+
+  if (time_update_only && disable_online_time)
     return;
 
   mc_wlocate(st, 63, 0);
@@ -553,7 +558,7 @@ static void update_status_time(void)
   old_online = online;
 
   if (!status_message_showing)
-    time_status();
+    time_status(true);
   mc_wflush();
 }
 
@@ -631,7 +636,7 @@ void show_status(void)
           _(" %7.7sZ for help |           |     | Minicom %-6.6s |       | "),
           esc_key(), VERSION);
   mode_status();
-  time_status();
+  time_status(false);
   curs_status();
   mc_wlocate(st, 56, 0);
   switch(terminal) {
