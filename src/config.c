@@ -623,27 +623,33 @@ static void domodem(void)
   WIN *w;
   char *str;
   int c, x, y, ypos, maxl, string_size;
-  char *init_string         = _(" A - Init string .........");
-  char *reset_string        = _(" B - Reset string ........");
-  char *dialing_prefix_1    = _(" C - Dialing prefix #1....");
-  char *dialing_suffix_1    = _(" D - Dialing suffix #1....");
-  char *dialing_prefix_2    = _(" E - Dialing prefix #2....");
-  char *dialing_suffix_2    = _(" F - Dialing suffix #2....");
-  char *dialing_prefix_3    = _(" G - Dialing prefix #3....");
-  char *dialing_suffix_3    = _(" H - Dialing suffix #3....");
-  char *connect_string      = _(" I - Connect string ......");
-  char *no_connect_strings  = _(" J - No connect strings ..");
-  char *hangup_string       = _(" K - Hang-up string ......");
-  char *dial_cancel_string  = _(" L - Dial cancel string ..");
-  char *dial_time           = _(" M - Dial time ...........");
-  char *delay_before_redial = _(" N - Delay before redial .");
-  char *number_of_tries     = _(" O - Number of tries .....");
-  char *dtr_drop_time       = _(" P - DTR drop time (0=no).");
-  char *auto_bps_detect     = _(" Q - Auto bps detect .....");
-  char *modem_has_dcd_line  = _(" R - Modem has DCD line ..");
-  char *shown_speed         = _(" S - Status line shows ...");
-  char *multi_node          = _(" T - Multi-line untag ....");
-  char *question            = _("Change which setting?");
+  const char *init_string         = _(" A - Init string .........");
+  const char *reset_string        = _(" B - Reset string ........");
+  const char *dialing_prefix_1    = _(" C - Dialing prefix #1....");
+  const char *dialing_suffix_1    = _(" D - Dialing suffix #1....");
+  const char *dialing_prefix_2    = _(" E - Dialing prefix #2....");
+  const char *dialing_suffix_2    = _(" F - Dialing suffix #2....");
+  const char *dialing_prefix_3    = _(" G - Dialing prefix #3....");
+  const char *dialing_suffix_3    = _(" H - Dialing suffix #3....");
+  const char *connect_string      = _(" I - Connect string ......");
+  const char *no_connect_strings  = _(" J - No connect strings ..");
+  const char *hangup_string       = _(" K - Hang-up string ......");
+  const char *dial_cancel_string  = _(" L - Dial cancel string ..");
+  const char *dial_time           = _(" M - Dial time ...........");
+  const char *delay_before_redial = _(" N - Delay before redial .");
+  const char *number_of_tries     = _(" O - Number of tries .....");
+  const char *dtr_drop_time       = _(" P - DTR drop time (0=no).");
+  const char *auto_bps_detect     = _(" Q - Auto bps detect .....");
+  const char *modem_has_dcd_line  = _(" R - Modem has DCD line ..");
+  const char *shown_speed         = _(" S - Status line shows ...");
+  const char *multi_node          = _(" T - Multi-line untag ....");
+  const char *question            = _("Change which setting?");
+
+  const char *defaults[] =
+    {
+      "~^M~AT S7=45 S0=0 L1 V1 X4 &c1 E1 Q0^M",
+      "^M~ATZ^M~",
+    };
 
   w = mc_wopen(2, 2, 77, 22, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
 
@@ -681,7 +687,7 @@ static void domodem(void)
   mc_wlocate(w, 1, 20);
   mc_wprintf(w, "%s ", question);
   x = w->curx; y = w->cury;
-  mc_wprintf(w, _("      (Return or Esc to exit)"));
+  mc_wprintf(w, _("    Return or Esc to exit. Edit A+B to get defaults."));
   mc_wredraw(w, 1);
 
   while (1) {
@@ -742,9 +748,27 @@ static void domodem(void)
         if (string_size == 0)
           string_size = mbslen(connect_string);
 
-        /* Calculate adress of string tomodify */
-        str = P_MINIT + (c - 'A') * sizeof(struct pars);
-        pgets(w, string_size + 1, ypos + (c - 'A'), str, maxl, maxl, 0);
+	{
+	  int loc = c - 'A';
+
+	  /* Calculate adress of string to modify */
+	  str = P_MINIT + loc * sizeof(struct pars);
+
+	  /* Nowadays (2011), the modem init and reset strings are seldomly
+	   * used, so we initialize those values to an empty string and
+	   * offer the default value when trying to set those strings from
+	   * an empty value */
+	  if ((loc == 0 || loc == 1) && !*str)
+	    {
+	      strncpy(str, defaults[loc], PARS_VAL_LEN);
+	      str[PARS_VAL_LEN - 1] = 0;
+
+              mc_wlocate(w, string_size + 1, 1 + loc);
+              mc_wprintf(w, "%.48s\n", str);
+	    }
+
+	  pgets(w, string_size + 1, ypos + loc, str, maxl, maxl, 0);
+	}
         break;
       case 'J':
         string_size = mbslen (no_connect_strings);

@@ -1,3 +1,9 @@
+2011-12-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c, src/rwconf.c: Do not set modem init and reset string
+	  anymore, define them empty. Instead, when editing those offer
+	  them as a default.
+
 2011-10-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.h, src/main.c, src/dial.c: only update statusline
