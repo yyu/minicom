@@ -3,8 +3,15 @@ This file lists the most important changes to
 the previous released version. For a full list of changes
 please refer to the ChangeLog file.
 
-New for version 2.5+:
+New for version 2.6:
  - Add possibility to add delay after every character transmission.
+ - Fix build issues on Mac OS X.
+ - Stop providing default modem init and reset strings (still available when
+   editing).
+ - Added possibility for timestamps in output, added by minicom
+ - Added lockdev support.
+ - Added new dialdir format that is supposed to be interoperable between 32
+   and 64 bits archs.
 
 New for version 2.5:
  - Handle device reconnected more smoothly (USB-serial dongles)
