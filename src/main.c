@@ -689,7 +689,6 @@ int do_terminal(void)
 {
   char buf[128];
   int buf_offset = 0;
-  char *ptr;
   int c;
   int x;
   int blen;
@@ -770,9 +769,10 @@ dirty_goto:
 
     /* Data from the modem to the screen. */
     if ((x & 1) == 1) {
+      char obuf[sizeof(buf)];
+      char *ptr;
 
       if (using_iconv()) {
-        char obuf[sizeof(buf)];
         char *otmp = obuf;
         size_t output_len = sizeof(obuf);
         size_t input_len = blen;
