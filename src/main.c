@@ -108,11 +108,10 @@ char *esc_key(void)
   return buf;
 }
 
-/*ARGSUSED*/
 static void get_alrm(int dummy)
 {
   (void)dummy;
-  errno = ETIME;
+  errno = ETIMEDOUT;
   longjmp(albuf, 1);
 }
 

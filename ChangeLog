@@ -1,3 +1,7 @@
+2012-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/main.c: ETIME -> ETIMEDOUT as ETIME is not available on BSDs
+
 2012-01-13  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/main.c: Fix invalid memory used, reported by Larry Baker
