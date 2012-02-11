@@ -779,13 +779,20 @@ dirty_goto:
         ptr = buf;
         do_iconv(&ptr, &input_len, &otmp, &output_len);
 
-        if (input_len) { // something remained, we need to adapt buf accordingly
-          memmove(buf, ptr, input_len);
-          buf_offset = input_len;
-        }
+        // something happened at all?
+        if (output_len < sizeof(obuf))
+          {
+            if (input_len)
+              { // something remained, we need to adapt buf accordingly
+                memmove(buf, ptr, input_len);
+                buf_offset = input_len;
+              }
 
-        blen = sizeof(obuf) - output_len;
-        ptr = obuf;
+            blen = sizeof(obuf) - output_len;
+            ptr = obuf;
+          }
+	else
+	  ptr = buf;
       } else {
         ptr = buf;
       }

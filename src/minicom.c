@@ -882,6 +882,19 @@ static void toggle_line_timestamp(void)
 
 /* -------------------------------------------- */
 
+static void do_iconv_just_copy(char **inbuf, size_t *inbytesleft,
+                               char **outbuf, size_t *outbytesleft)
+{
+  while (*outbytesleft && *inbytesleft)
+    {
+      *(*outbuf) = *(*inbuf);
+      ++(*outbuf);
+      ++(*inbuf);
+      --(*outbytesleft);
+      --(*inbytesleft);
+    }
+}
+
 #ifdef HAVE_ICONV
 static iconv_t iconv_rem2local;
 static int iconv_enabled;
@@ -916,8 +929,11 @@ static void init_iconv(const char *remote_charset)
            "%s//TRANSLIT", tmp);
   local_charset[sizeof(local_charset) - 1] = 0;
 
-  //printf("Remote charset: %s\n", remote_charset);
-  //printf("Local charset: %s\n", local_charset);
+  if (0)
+    {
+      printf("Remote charset: %s\n", remote_charset);
+      printf("Local charset: %s\n", local_charset);
+    }
 
   iconv_rem2local = iconv_open(local_charset, remote_charset);
   if (iconv_rem2local != (iconv_t)-1)
@@ -933,16 +949,15 @@ void do_iconv(char **inbuf, size_t *inbytesleft,
   if (!iconv_enabled
       || iconv(iconv_rem2local,
                inbuf, inbytesleft,
-               outbuf, outbytesleft) == (size_t)-1) {
-    memcpy(*outbuf, *inbuf,
-           *outbytesleft < *inbytesleft ? *outbytesleft : *inbytesleft);
+               outbuf, outbytesleft) == (size_t)-1)
+    {
+      do_iconv_just_copy(inbuf, inbytesleft, outbuf, outbytesleft);
 
-    // in case of error re-init conversion descriptor
-    // (will this work?)
-    if (iconv_enabled)
-      iconv(iconv_rem2local, NULL, NULL, NULL, NULL);
-    return;
-  }
+      // in case of error re-init conversion descriptor
+      // (will this work?)
+      if (iconv_enabled)
+	iconv(iconv_rem2local, NULL, NULL, NULL, NULL);
+    }
 }
 
 static void close_iconv(void)
@@ -965,7 +980,7 @@ static void init_iconv(const char *remote_charset)
 void do_iconv(char **inbuf, size_t *inbytesleft,
               char **outbuf, size_t *outbytesleft)
 {
-  (void)inbuf; (void)outbuf; (void)inbytesleft; (void)outbytesleft;
+  do_iconv_just_copy(inbuf, inbytesleft, outbuf, outbytesleft);
 }
 
 static void close_iconv(void)

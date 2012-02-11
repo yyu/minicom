@@ -1,5 +1,8 @@
 2012-02-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/main.c, src/minicom.c: iconv: Handle the case that iconv
+	  did not convert anything. Reported by Mike Crowe, Debian #659351.
+
 	* src/ipc.c: Formatting cleanup.
 
 2012-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
@@ -42,7 +45,7 @@
 
 	* configure.in, src/Makefile.am, src/main.c, src/minicom.c,
 	  src/minicom.h, src/updown.c: Add lockdev support,
-	  by Ludwig Nussel <ludwig.nussel@suse.de> 
+	  by Ludwig Nussel <ludwig.nussel@suse.de>
 
 2011-07-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
