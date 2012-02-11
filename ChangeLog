@@ -1,5 +1,7 @@
 2012-02-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* configure.in: Set version to 2.6.1.
+
 	* src/main.c, src/minicom.c: iconv: Handle the case that iconv
 	  did not convert anything. Reported by Mike Crowe, Debian #659351.
 
