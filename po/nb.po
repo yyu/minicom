@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2011-12-27 23:41+0100\n"
+"POT-Creation-Date: 2012-02-11 14:32+0100\n"
 "PO-Revision-Date: 2006-03-06 23:11+0100\n"
 "Last-Translator: Pål Drange <po@drange.net>\n"
 "Language-Team: Norway <po@drange.net>\n"
@@ -1178,63 +1178,63 @@ msgstr "i18n av Arnaldo Carvalho de Melo 1998"
 msgid "Select function or press Enter for none."
 msgstr "Velg funksjon eller trykk Enter for ingen."
 
-#: src/main.c:214
+#: src/main.c:213
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "Låsfilen er gammel. Skriver over den..\n"
 
-#: src/main.c:223 src/updown.c:490
+#: src/main.c:222 src/updown.c:490
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "Enhet %s er låst.\n"
 
-#: src/main.c:238
+#: src/main.c:237
 #, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "Kunne ikke klargjøre oppringing.\n"
 
-#: src/main.c:289
+#: src/main.c:288
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "minicom: kan ikke åpne %s: %s\n"
 
-#: src/main.c:292
+#: src/main.c:291
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "minicom: kan ikke åpne %s. Beklager.\n"
 
-#: src/main.c:299 src/main.c:756
+#: src/main.c:298 src/main.c:754
 #, c-format
 msgid "Cannot open %s!"
 msgstr "Kan ikke åpne %s!"
 
-#: src/main.c:478
+#: src/main.c:477
 msgid "Offline"
 msgstr "Offline"
 
-#: src/main.c:478
+#: src/main.c:477
 msgid "OFFLINE"
 msgstr "OFFLINE"
 
-#: src/main.c:480
+#: src/main.c:479
 msgid "Online"
 msgstr "Online"
 
-#: src/main.c:480
+#: src/main.c:479
 msgid "ONLINE"
 msgstr "ONLINE"
 
-#: src/main.c:555
+#: src/main.c:554
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "Gikk offline (%ld:%02ld:%02ld)"
 
-#: src/main.c:636
+#: src/main.c:635
 #, c-format
 msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
 msgstr " %7.7sZ for hjelp |           |     | Minicom %-6.6s |       | "
 
-#: src/main.c:737
+#: src/main.c:735
 msgid "Could not re-initialize window system."
 msgstr "Kunne ikke reinitialisere vindusystem."
 
@@ -1392,17 +1392,17 @@ msgid ""
 "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
 msgstr "Konfigurasjonskatalog for tilgangsfilen og konfigurasjoner\n"
 
-#: src/minicom.c:1127
+#: src/minicom.c:1142
 #, c-format
 msgid "%s version %s"
 msgstr "%s versjon %s"
 
-#: src/minicom.c:1129
+#: src/minicom.c:1144
 #, c-format
 msgid " (compiled %s)"
 msgstr " (kompilert %s)"
 
-#: src/minicom.c:1132
+#: src/minicom.c:1147
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1411,45 +1411,45 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1155
+#: src/minicom.c:1170
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argumentet til -p må være en PTY\n"
 
-#: src/minicom.c:1219 src/minicom.c:1507
+#: src/minicom.c:1234 src/minicom.c:1522
 msgid "Cannot open capture file"
 msgstr "Kan ikke åpne opptaksfil"
 
-#: src/minicom.c:1275
+#: src/minicom.c:1290
 msgid "You don't exist. Go away.\n"
 msgstr "Du eksisterer ikke. Forsvinn.\n"
 
-#: src/minicom.c:1341
+#: src/minicom.c:1356
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Beklager. Skjermen din er for liten.\n"
 
-#: src/minicom.c:1410
+#: src/minicom.c:1425
 msgid "Welcome to minicom"
 msgstr "Velkommen til minicom"
 
-#: src/minicom.c:1411
+#: src/minicom.c:1426
 msgid "OPTIONS"
 msgstr "MULIGHETER"
 
-#: src/minicom.c:1413
+#: src/minicom.c:1428
 msgid "Compiled on"
 msgstr "Kompilert den"
 
-#: src/minicom.c:1415
+#: src/minicom.c:1430
 msgid "Port"
 msgstr ""
 
-#: src/minicom.c:1417
+#: src/minicom.c:1432
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "Tegnkonvertering"
 
-#: src/minicom.c:1418
+#: src/minicom.c:1433
 #, c-format
 msgid ""
 "\n"
@@ -1460,72 +1460,72 @@ msgstr ""
 "Trykk %sZ for hjelp om spesialtaster%c\n"
 "\n"
 
-#: src/minicom.c:1439
+#: src/minicom.c:1454
 msgid "Add linefeed ON"
 msgstr "Legg til linjemating PÅ"
 
-#: src/minicom.c:1439
+#: src/minicom.c:1454
 msgid "Add linefeed OFF"
 msgstr "Legg til linjemating AV"
 
-#: src/minicom.c:1444
+#: src/minicom.c:1459
 msgid "Local echo ON"
 msgstr "Lokalt ekko PÅ"
 
-#: src/minicom.c:1444
+#: src/minicom.c:1459
 msgid "Local echo OFF"
 msgstr "Lokalt ekko AV"
 
-#: src/minicom.c:1463
+#: src/minicom.c:1478
 msgid "You are online. Really initialize?"
 msgstr "Du er tilkoblet. Vil du virkelig initialisere?"
 
-#: src/minicom.c:1470
+#: src/minicom.c:1485
 msgid "Leave without reset?"
 msgstr "Forlate uten nullstilling?"
 
-#: src/minicom.c:1474 src/minicom.c:1492
+#: src/minicom.c:1489 src/minicom.c:1507
 msgid "Save macros?"
 msgstr "Lagre makroer?"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1499
 msgid "Leave Minicom?"
 msgstr "Forlate Minicom?"
 
-#: src/minicom.c:1503
+#: src/minicom.c:1518
 msgid "Capture to which file? "
 msgstr "Ta opp til hvilke fil? "
 
-#: src/minicom.c:1512 src/minicom.c:1521
+#: src/minicom.c:1527 src/minicom.c:1536
 msgid "Capture file"
 msgstr "Opptaksfil"
 
-#: src/minicom.c:1556
+#: src/minicom.c:1571
 msgid "Linewrap ON"
 msgstr "Linjebryting PÅ"
 
-#: src/minicom.c:1556
+#: src/minicom.c:1571
 msgid "Linewrap OFF"
 msgstr "Linjebryting AV"
 
-#: src/minicom.c:1565
+#: src/minicom.c:1580
 #, fuzzy
 msgid "Timestamp OFF"
 msgstr "Linjebryting AV"
 
-#: src/minicom.c:1568
+#: src/minicom.c:1583
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1571
+#: src/minicom.c:1586
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1574
+#: src/minicom.c:1589
 msgid "Timestamp lines every second"
 msgstr ""
 
-#: src/minicom.c:1615
+#: src/minicom.c:1630
 msgid "Quit without reset while online."
 msgstr "Avslutt uten nullstilling mens tilkoblet."
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom-1.83\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2011-12-27 23:41+0100\n"
+"POT-Creation-Date: 2012-02-11 14:32+0100\n"
 "PO-Revision-Date: 2001-01-04 18:21+09:00\n"
 "Last-Translator: Tomohiro KUBOTA <kubota@debian.or.jp>\n"
 "Language-Team:\tJapanese\n"
@@ -1293,70 +1293,70 @@ msgid "Select function or press Enter for none."
 msgstr "機能を選んでください (取消は Enter)。"
 
 # c-format(fprintf)
-#: src/main.c:214
+#: src/main.c:213
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "古いロックファイルがあるので上書きします。\n"
 
 # c-format(have percent)
-#: src/main.c:223 src/updown.c:490
+#: src/main.c:222 src/updown.c:490
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "%s はロックされています。\n"
 
 # c-format(fprintf)
-#: src/main.c:238
+#: src/main.c:237
 #, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "電話の設定ができません。\n"
 
 # c-format(have percent)
-#: src/main.c:289
+#: src/main.c:288
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "minicom: %s をオープンできません : %s\n"
 
 # c-format(have percent)
-#: src/main.c:292
+#: src/main.c:291
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "minicom: %s をオープンできません。\n"
 
 # c-format(have percent)
-#: src/main.c:299 src/main.c:756
+#: src/main.c:298 src/main.c:754
 #, c-format
 msgid "Cannot open %s!"
 msgstr "%s をオープンできない！"
 
-#: src/main.c:478
+#: src/main.c:477
 msgid "Offline"
 msgstr "切断"
 
-#: src/main.c:478
+#: src/main.c:477
 msgid "OFFLINE"
 msgstr "切断"
 
-#: src/main.c:480
+#: src/main.c:479
 msgid "Online"
 msgstr "接続"
 
-#: src/main.c:480
+#: src/main.c:479
 msgid "ONLINE"
 msgstr "接続"
 
 # c-format(have percent)
-#: src/main.c:555
+#: src/main.c:554
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "切断されました。(%ld:%02ld:%02ld)"
 
-#: src/main.c:636
+#: src/main.c:635
 #, c-format
 msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
 msgstr " 説明画面 %7.7sZ |           |     | Minicom %-6.6s |       | "
 
 # leave
-#: src/main.c:737
+#: src/main.c:735
 msgid "Could not re-initialize window system."
 msgstr "ウィンドウシステムを再初期化できませんでした。"
 
@@ -1524,19 +1524,19 @@ msgstr ""
 "  configuration          : 使用する設定ファイル\n"
 "\n"
 
-#: src/minicom.c:1127
+#: src/minicom.c:1142
 #, c-format
 msgid "%s version %s"
 msgstr "%s バージョン %s"
 
 # c-format(have percent)
-#: src/minicom.c:1129
+#: src/minicom.c:1144
 #, c-format
 msgid " (compiled %s)"
 msgstr " (compiled %s)"
 
 # c-format(have percent)
-#: src/minicom.c:1132
+#: src/minicom.c:1147
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1545,48 +1545,48 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1155
+#: src/minicom.c:1170
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argument to -p must be a pty\n"
 
 # c-format(werror)
-#: src/minicom.c:1219 src/minicom.c:1507
+#: src/minicom.c:1234 src/minicom.c:1522
 msgid "Cannot open capture file"
 msgstr "記録ファイルをオープンできません。"
 
-#: src/minicom.c:1275
+#: src/minicom.c:1290
 msgid "You don't exist. Go away.\n"
 msgstr "あなたは存在しません。\n"
 
-#: src/minicom.c:1341
+#: src/minicom.c:1356
 msgid "Sorry. Your screen is too small.\n"
 msgstr "残念ながら、画面が小さすぎます。\n"
 
-#: src/minicom.c:1410
+#: src/minicom.c:1425
 msgid "Welcome to minicom"
 msgstr "minicom へようこそ"
 
-#: src/minicom.c:1411
+#: src/minicom.c:1426
 msgid "OPTIONS"
 msgstr "オプション"
 
-#: src/minicom.c:1413
+#: src/minicom.c:1428
 msgid "Compiled on"
 msgstr "コンパイルされた日時は: "
 
-#: src/minicom.c:1415
+#: src/minicom.c:1430
 msgid "Port"
 msgstr ""
 
 # wtitle
-#: src/minicom.c:1417
+#: src/minicom.c:1432
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "文字変換"
 
 # c-format(have percent)
-#: src/minicom.c:1418
+#: src/minicom.c:1433
 #, c-format
 msgid ""
 "\n"
@@ -1598,85 +1598,85 @@ msgstr ""
 "\n"
 
 # c-format(werror)
-#: src/minicom.c:1439
+#: src/minicom.c:1454
 msgid "Add linefeed ON"
 msgstr "linefeed の追加: ON"
 
 # c-format(werror)
-#: src/minicom.c:1439
+#: src/minicom.c:1454
 msgid "Add linefeed OFF"
 msgstr "linefeed の追加: OFF"
 
 # c-format(werror)
-#: src/minicom.c:1444
+#: src/minicom.c:1459
 msgid "Local echo ON"
 msgstr "ローカルエコー: ON"
 
 # c-format(werror)
-#: src/minicom.c:1444
+#: src/minicom.c:1459
 msgid "Local echo OFF"
 msgstr "ローカルエコー: OFF"
 
 # ask
-#: src/minicom.c:1463
+#: src/minicom.c:1478
 msgid "You are online. Really initialize?"
 msgstr "接続中です。ほんとうに初期化しますか?"
 
 # ask
-#: src/minicom.c:1470
+#: src/minicom.c:1485
 msgid "Leave without reset?"
 msgstr "リセットせずに終了しますか?"
 
 # ask
-#: src/minicom.c:1474 src/minicom.c:1492
+#: src/minicom.c:1489 src/minicom.c:1507
 msgid "Save macros?"
 msgstr "マクロをセーブしますか?"
 
 # ask
-#: src/minicom.c:1484
+#: src/minicom.c:1499
 msgid "Leave Minicom?"
 msgstr "Minicomを終了しますか?"
 
 # input
-#: src/minicom.c:1503
+#: src/minicom.c:1518
 msgid "Capture to which file? "
 msgstr "記録するファイル名は? "
 
 # ask
-#: src/minicom.c:1512 src/minicom.c:1521
+#: src/minicom.c:1527 src/minicom.c:1536
 msgid "Capture file"
 msgstr "記録ファイル"
 
 # c-format(werror)
-#: src/minicom.c:1556
+#: src/minicom.c:1571
 msgid "Linewrap ON"
 msgstr "行末折り返し: ON"
 
 # c-format(werror)
-#: src/minicom.c:1556
+#: src/minicom.c:1571
 msgid "Linewrap OFF"
 msgstr "行末折り返し: OFF"
 
 # c-format(werror)
-#: src/minicom.c:1565
+#: src/minicom.c:1580
 #, fuzzy
 msgid "Timestamp OFF"
 msgstr "行末折り返し: OFF"
 
-#: src/minicom.c:1568
+#: src/minicom.c:1583
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1571
+#: src/minicom.c:1586
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1574
+#: src/minicom.c:1589
 msgid "Timestamp lines every second"
 msgstr ""
 
 # do_log
-#: src/minicom.c:1615
+#: src/minicom.c:1630
 msgid "Quit without reset while online."
 msgstr "接続中ですが、リセットせずに終了します。"
 
