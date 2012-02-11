@@ -1,3 +1,7 @@
+2012-02-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/ipc.c: Formatting cleanup.
+
 2012-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/main.c: ETIME -> ETIMEDOUT as ETIME is not available on BSDs

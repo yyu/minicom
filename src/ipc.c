@@ -45,13 +45,17 @@ int check_io(int fd1, int fd2, int tmout, char *buf,
 
   FD_ZERO(&fds);
   if (fd1 >= 0)
-    FD_SET(fd1, &fds); else fd1 = 0;
+    FD_SET(fd1, &fds);
+  else
+    fd1 = 0;
   if (fd2 >= 0)
-    FD_SET(fd2, &fds); else fd2 = 0;
+    FD_SET(fd2, &fds);
+  else
+    fd2 = 0;
 
   if (fd2 == 0 && io_pending)
     n = 2;
-  else if (select(i+1, &fds, NULL, NULL, &tv) > 0)
+  else if (select(i + 1, &fds, NULL, NULL, &tv) > 0)
     n = 1 * (FD_ISSET(fd1, &fds) > 0) + 2 * (FD_ISSET(fd2, &fds) > 0);
 
   /* If there is data put it in the buffer. */
