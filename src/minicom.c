@@ -828,6 +828,7 @@ static void helpthem(void)
     "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
     "  -C, --capturefile=FILE : start capturing to FILE\n"
     "  -T, --disabletime      : disable display of online time\n"
+    "  -R, --remotecharset    : character set of communication partner\n"
     "  -v, --version          : output version information and exit\n"
     "  configuration          : configuration file to use\n\n"
     "These options can also be specified in the MINICOM environment variable.\n"),
