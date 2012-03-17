@@ -1,3 +1,7 @@
+2012-03-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Add -R command line option to help screen.
+
 2012-02-11  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* configure.in: Set version to 2.6.1.
