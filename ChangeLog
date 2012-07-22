@@ -1,3 +1,8 @@
+2012-07-22  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c, src/configsym.h, src/minicom.c, src/rwconf.c: Add line-wrap config-file option, by Riku Meskanen
+
+
 2012-03-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.c: Add -R command line option to help screen.

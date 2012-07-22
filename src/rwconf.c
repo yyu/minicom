@@ -192,6 +192,7 @@ struct pars mpars[] = {
   /* Terminal behaviour */
   { "No",		0,    "localecho" },
   { "No",		0,    "addlinefeed" },
+  { "No",		0,    "linewrap" },
 
   { "Minicom"VERSION,   0,    "answerback" },
 

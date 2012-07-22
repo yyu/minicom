@@ -841,13 +841,14 @@ static void doscrkeyb(void)
   char *character_conversion  = _(" O - Character conversion   :");
   char *add_linefeed          = _(" P - Add linefeed           :");
   char *local_echo_str        = _(" Q - Local echo             :");
+  char *line_wrap             = _(" R - Line Wrap              :");
   char *question              = _("Change which setting?  (Esc to exit)");
 
   w = mc_wopen(15, miny, 69, maxy, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
 
   mc_wtitle(w, TMID, _("Screen and keyboard"));
 
-  mc_wprintf(w, "\n%s %s\n", command_key, P_ESCAPE);
+  mc_wprintf(w, "%s %s\n", command_key, P_ESCAPE);
   mc_wprintf(w, "%s %s\n", backspace_key, P_BACKSPACE);
   mc_wprintf(w, "%s %s\n", status_line, _(P_STATLINE));
   mc_wprintf(w, "%s %s\n", alarm_sound, _(P_SOUND));
@@ -870,6 +871,7 @@ static void doscrkeyb(void)
 
   mc_wprintf(w, "%s %s\n", add_linefeed, _(P_ADDLINEFEED));
   mc_wprintf(w, "%s %s\n", local_echo_str, _(P_LOCALECHO));
+  mc_wprintf(w, "%s %s\n", line_wrap, _(P_LINEWRAP));
 
   mc_wredraw(w, 1);
 
@@ -957,7 +959,7 @@ static void doscrkeyb(void)
         else
           sprintf(buf, "^%c           ", (c & 0x1f) + 'A' - 1);
         psets(P_ESCAPE, buf);
-        mc_wlocate(w, mbslen (command_key) + 1, 1);
+        mc_wlocate(w, mbslen (command_key) + 1, 0);
         mc_wputs(w, _(buf));
         clr = 1;
         alt_override = 0;
@@ -981,7 +983,7 @@ static void doscrkeyb(void)
           psets(P_BACKSPACE, "BS");
         else
           psets(P_BACKSPACE, "DEL");
-        mc_wlocate(w, mbslen (backspace_key) + 1, 2);
+        mc_wlocate(w, mbslen (backspace_key) + 1, 1);
         mc_wprintf(w, "%s ", P_BACKSPACE);
         keyboard(KSETBS, P_BACKSPACE[0] == 'B' ? 8 : 127);
         break;
@@ -995,12 +997,12 @@ static void doscrkeyb(void)
           if (LINES > 24)
             tempst = 0;
         }
-        mc_wlocate(w, mbslen (status_line) + 1, 3);
+        mc_wlocate(w, mbslen (status_line) + 1, 2);
         mc_wprintf(w, "%s ", _(P_STATLINE));
         break;
       case 'D':
         psets(P_SOUND, yesno(P_SOUND[0] == 'N'));
-        mc_wlocate(w, mbslen (alarm_sound) + 1, 4);
+        mc_wlocate(w, mbslen (alarm_sound) + 1, 3);
         mc_wprintf(w, "%s", _(P_SOUND));
         break;
       case 'E': /* fmg - letters cycle colors */
@@ -1009,7 +1011,7 @@ static void doscrkeyb(void)
         else
           mfcolor++;
         psets(P_MFG, J_col[mfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_menu) + 1, 5);
+        mc_wlocate(w, mbslen (foreground_color_menu) + 1, 4);
         mc_wprintf(w, "%s   ", _(J_col[mfcolor]));
         break;
       case 'F': /* fmg - letters cycle colors */
@@ -1018,7 +1020,7 @@ static void doscrkeyb(void)
         else
           mbcolor++;
         psets(P_MBG, J_col[mbcolor]);
-        mc_wlocate(w, mbslen (background_color_menu) + 1, 6);
+        mc_wlocate(w, mbslen (background_color_menu) + 1, 5);
         mc_wprintf(w, "%s   ", _(J_col[mbcolor]));
         break;
       case 'G': /* fmg - letters cycle colors */
@@ -1027,7 +1029,7 @@ static void doscrkeyb(void)
         else
           tfcolor++;
         psets(P_TFG, J_col[tfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_term) + 1, 7);
+        mc_wlocate(w, mbslen (foreground_color_term) + 1, 6);
         mc_wprintf(w, "%s   ", _(J_col[tfcolor]));
         if (us)
           vt_pinit(us, tfcolor, tbcolor);
@@ -1038,7 +1040,7 @@ static void doscrkeyb(void)
         else
           tbcolor++;
         psets(P_TBG, J_col[tbcolor]);
-        mc_wlocate(w, mbslen (background_color_term) + 1, 8);
+        mc_wlocate(w, mbslen (background_color_term) + 1, 7);
         mc_wprintf(w, "%s   ", _(J_col[tbcolor]));
         if (us)
           vt_pinit(us, tfcolor, tbcolor);
@@ -1059,7 +1061,7 @@ static void doscrkeyb(void)
           show_status();
         }
         psets(P_SFG, J_col[sfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_stat) + 1, 9);
+        mc_wlocate(w, mbslen (foreground_color_stat) + 1, 8);
         mc_wprintf(w, "%s   ", _(J_col[sfcolor]));
         break;
       case 'J': /* fmg - letters cycle colors & redraw stat line */
@@ -1078,11 +1080,11 @@ static void doscrkeyb(void)
           show_status();
         }
         psets(P_SBG, J_col[sbcolor]);
-        mc_wlocate(w, mbslen (background_color_stat) + 1, 10);
+        mc_wlocate(w, mbslen (background_color_stat) + 1, 9);
         mc_wprintf(w, "%s   ", _(J_col[sbcolor]));
         break;
       case 'K': /* MARK updated 02/17/95 - Config history size */
-        pgets(w, mbslen (history_buffer_size) + 1, 11,
+        pgets(w, mbslen (history_buffer_size) + 1, 10,
               P_HISTSIZE, 6, 6, 0);
 
         /* In case gibberish or a value was out of bounds, */
@@ -1094,11 +1096,11 @@ static void doscrkeyb(void)
         else if (atoi(P_HISTSIZE) >= 5000)
           strcpy(P_HISTSIZE,"5000");
 
-        mc_wlocate(w, mbslen (history_buffer_size) + 1, 11);
+        mc_wlocate(w, mbslen (history_buffer_size) + 1, 10);
         mc_wprintf(w, "%s     ", P_HISTSIZE);
         break;
       case 'L': /* fmg - get local macros storage file */
-        pgets(w, mbslen (macros_file) + 1, 12, P_MACROS, 64, 64, 1);
+        pgets(w, mbslen (macros_file) + 1, 11, P_MACROS, 64, 64, 1);
 
         /* Try to open the file to read it in. */
         fp = fopen(pfix_home(P_MACROS), "r+");
@@ -1126,23 +1128,28 @@ static void doscrkeyb(void)
         break;
       case 'N':
         psets(P_MACENAB, yesno(P_MACENAB[0] == 'N'));
-        mc_wlocate(w, mbslen (macros_enabled) + 1, 14);
+        mc_wlocate(w, mbslen (macros_enabled) + 1, 13);
         mc_wprintf(w, "%s", _(P_MACENAB));
         break;
       case 'O': /* Character conversions - jl / 04.09.97 */
         doconv();
-        mc_wlocate(w, mbslen (character_conversion) + 1, 15);
+        mc_wlocate(w, mbslen (character_conversion) + 1, 14);
         mc_wprintf(w, "%-16.16s", _(P_CONVF));
         break;
       case 'P':
         psets(P_ADDLINEFEED, yesno(P_ADDLINEFEED[0] == 'N'));
-        mc_wlocate(w, mbslen (add_linefeed) + 1, 16);
+        mc_wlocate(w, mbslen (add_linefeed) + 1, 15);
         mc_wprintf(w, "%s", _(P_ADDLINEFEED));
         break;
       case 'Q':
         psets(P_LOCALECHO, yesno(P_LOCALECHO[0] == 'N'));
-        mc_wlocate(w, mbslen (local_echo_str) + 1, 17);
+        mc_wlocate(w, mbslen (local_echo_str) + 1, 16);
         mc_wprintf(w, "%s", _(P_LOCALECHO));
+        break;
+      case 'R':
+        psets(P_LINEWRAP, yesno(P_LINEWRAP[0] == 'N'));
+        mc_wlocate(w, mbslen (line_wrap) + 1, 17);
+        mc_wprintf(w, "%s", _(P_LINEWRAP));
         break;
      }
   }

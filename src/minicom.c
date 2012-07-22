@@ -1310,6 +1310,10 @@ int main(int argc, char **argv)
   addlf      = strcasecmp(P_ADDLINEFEED, "yes") == 0;
   local_echo = strcasecmp(P_LOCALECHO,   "yes") == 0;
 
+  /* -w overrides config file */
+  if (!wrapln)
+    wrapln = strcasecmp(P_LINEWRAP, "yes") == 0;
+
   /* After reading in the config via read_parms we can possibly overwrite
    * the baudrate with a value given at the cmdline */
   if (cmdline_baudrate) {

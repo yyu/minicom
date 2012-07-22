@@ -162,8 +162,9 @@ enum config_type {
 /* Terminal behaviour */
 #define P_LOCALECHO	mpars[87].value
 #define P_ADDLINEFEED	mpars[88].value
+#define P_LINEWRAP      mpars[89].value  /* Line wrap */
 
-#define P_ANSWERBACK    mpars[89].value  /* User defined answerback string */
+#define P_ANSWERBACK    mpars[90].value  /* User defined answerback string */
 
 /* fmg - macros struct */
 
