@@ -1,3 +1,7 @@
+2012-07-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/nb.po: Update from translation team.
+
 2012-07-22  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c, src/configsym.h, src/minicom.c, src/rwconf.c: Add line-wrap config-file option, by Riku Meskanen
