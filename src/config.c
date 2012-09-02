@@ -822,7 +822,7 @@ static void doscrkeyb(void)
   int clr = 1;
   int tmp_c;    /* fmg - need it to color keep in sanity checks */
   char buf[16];
-  int miny = 2, maxy = 20;
+  int miny = 2, maxy = 21;
   int old_stat = P_STATLINE[0];
   FILE *fp;
   char *command_key           = _(" A - Command key is         :");
@@ -842,6 +842,7 @@ static void doscrkeyb(void)
   char *add_linefeed          = _(" P - Add linefeed           :");
   char *local_echo_str        = _(" Q - Local echo             :");
   char *line_wrap             = _(" R - Line Wrap              :");
+  char *display_hex_str       = _(" S - Hex Display            :");
   char *question              = _("Change which setting?  (Esc to exit)");
 
   w = mc_wopen(15, miny, 69, maxy, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
@@ -872,6 +873,7 @@ static void doscrkeyb(void)
   mc_wprintf(w, "%s %s\n", add_linefeed, _(P_ADDLINEFEED));
   mc_wprintf(w, "%s %s\n", local_echo_str, _(P_LOCALECHO));
   mc_wprintf(w, "%s %s\n", line_wrap, _(P_LINEWRAP));
+  mc_wprintf(w, "%s %s\n", display_hex_str, _(P_DISPLAYHEX));
 
   mc_wredraw(w, 1);
 
@@ -1151,6 +1153,12 @@ static void doscrkeyb(void)
         mc_wlocate(w, mbslen (line_wrap) + 1, 17);
         mc_wprintf(w, "%s", _(P_LINEWRAP));
         break;
+      case 'S':
+	psets(P_DISPLAYHEX, yesno(P_DISPLAYHEX[0] == 'N'));
+	mc_wlocate(w, mbslen(display_hex_str) + 1, 18);
+	mc_wprintf(w, "%s", _(P_DISPLAYHEX));
+	display_hex = strcasecmp(P_DISPLAYHEX, "yes") == 0;
+	break;
      }
   }
 }

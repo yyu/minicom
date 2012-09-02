@@ -807,7 +807,15 @@ dirty_goto:
         }
         if (P_PARITY[0] == 'M' || P_PARITY[0] == 'S')
           *ptr &= 0x7f;
-        vt_out(*ptr++);
+        if (display_hex) {
+          unsigned char c = *ptr++;
+          unsigned char u = c >> 4;
+          c &= 0xf;
+          vt_out(u > 9 ? 'a' + (u - 10) : '0' + u);
+          vt_out(c > 9 ? 'a' + (c - 10) : '0' + c);
+          vt_out(' ');
+        } else
+          vt_out(*ptr++);
         if (zauto && zsig[zpos] == 0) {
           dirflush = 1;
           keyboard(KSTOP, 0);

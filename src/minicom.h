@@ -83,6 +83,7 @@ EXTERN int docap;	/* Capture data to capture file */
 EXTERN FILE *capfp;	/* File to capture to */
 EXTERN int addlf;	/* Add LF after CR */
 EXTERN int wrapln;	/* Linewrap default */
+EXTERN int display_hex; /* Display in hex */
 EXTERN int tempst;	/* Status line is temporary */
 EXTERN int escape;	/* Escape code. */
 EXTERN int disable_online_time; /* disable online time display */

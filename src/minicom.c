@@ -817,6 +817,7 @@ static void helpthem(void)
     "  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
     "  -L, --iso              : don't assume screen uses ISO8859\n"
     "  -w, --wrap             : Linewrap on\n"
+    "  -H, --displayhex       : display output in hex\n"
     "  -z, --statline         : try to use terminal's status line\n"
     "  -7, --7bit             : force 7bit mode\n"
     "  -8, --8bit             : force 8bit mode\n"
@@ -1033,6 +1034,7 @@ int main(int argc, char **argv)
     { "8bit",          no_argument,       NULL, '8' },
     { "version",       no_argument,       NULL, 'v' },
     { "wrap",          no_argument,       NULL, 'w' },
+    { "displayhex",    no_argument,       NULL, 'H' },
     { "disabletime",   no_argument,       NULL, 'T' },
     { "baudrate",      required_argument, NULL, 'b' },
     { "device",        required_argument, NULL, 'D' },
@@ -1056,6 +1058,7 @@ int main(int argc, char **argv)
   addlf = 0;
   line_timestamp = 0;
   wrapln = 0;
+  display_hex = 0;
   disable_online_time = 0;
   local_echo = 0;
   strcpy(capname, "minicom.cap");
@@ -1136,7 +1139,7 @@ int main(int argc, char **argv)
 
   do {
     /* Process options with getopt */
-    while ((c = getopt_long(argk, args, "v78zhlLsomMb:wTc:a:t:d:p:C:S:D:R:",
+    while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:",
                             long_options, NULL)) != EOF)
       switch(c) {
 	case 'v':
@@ -1250,6 +1253,9 @@ int main(int argc, char **argv)
         case 'w': /* Linewrap on */
           wrapln = 1;
           break;
+        case 'H': /* Display in hex */
+          display_hex = 1;
+          break;
         case 'T': /* disable online time */
           disable_online_time = 1;
           break;
@@ -1313,6 +1319,10 @@ int main(int argc, char **argv)
   /* -w overrides config file */
   if (!wrapln)
     wrapln = strcasecmp(P_LINEWRAP, "yes") == 0;
+
+  /* -H overrides config file */
+  if (!display_hex)
+    display_hex = strcasecmp(P_DISPLAYHEX, "yes") == 0;
 
   /* After reading in the config via read_parms we can possibly overwrite
    * the baudrate with a value given at the cmdline */

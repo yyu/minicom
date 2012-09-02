@@ -193,6 +193,7 @@ struct pars mpars[] = {
   { "No",		0,    "localecho" },
   { "No",		0,    "addlinefeed" },
   { "No",		0,    "linewrap" },
+  { "No",		0,    "displayhex" },
 
   { "Minicom"VERSION,   0,    "answerback" },
 

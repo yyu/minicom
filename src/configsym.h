@@ -163,8 +163,9 @@ enum config_type {
 #define P_LOCALECHO	mpars[87].value
 #define P_ADDLINEFEED	mpars[88].value
 #define P_LINEWRAP      mpars[89].value  /* Line wrap */
+#define P_DISPLAYHEX    mpars[90].value  /* Do output as hex */
 
-#define P_ANSWERBACK    mpars[90].value  /* User defined answerback string */
+#define P_ANSWERBACK    mpars[91].value  /* User defined answerback string */
 
 /* fmg - macros struct */
 

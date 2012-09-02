@@ -1,3 +1,8 @@
+2012-09-02  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c, src/configsym.h, src/main.c, src/minicom.c, src/minicom.h, src/rwconf.c, man/minicom.1: Add option to output as hex, initial patch by Jiao ShuYing,
+	  #313754
+
 2012-07-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/nb.po: Update from translation team.
