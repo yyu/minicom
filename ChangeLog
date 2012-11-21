@@ -1,3 +1,7 @@
+2012-11-21  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Print creation date of serial device file if < 20 hrs
+
 2012-09-02  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* man/minicom.1: Fix date and version.

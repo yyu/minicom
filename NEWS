@@ -5,6 +5,8 @@ please refer to the ChangeLog file.
 
 New for version ...:
  - Alternative hex output (to be improved)
+ - Print creation date of serial device file (if < 20 hrs), useful for
+   identifying just plugged in USB-Serial adapters 
 
 New for version 2.6:
  - Add possibility to add delay after every character transmission.

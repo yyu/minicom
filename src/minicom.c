@@ -1442,7 +1442,22 @@ int main(int argc, char **argv)
 #if defined (__DATE__) && defined (__TIME__)
   mc_wprintf(us, "%s %s, %s.\r\n",_("Compiled on"), __DATE__,__TIME__);
 #endif
-  mc_wprintf(us, "%s %s\r\n", _("Port"), P_PORT);
+  {
+    struct stat st;
+    char port_date[20] = "";
+    if (stat(P_PORT, &st) == 0)
+      {
+	time_t t = time(NULL);
+        struct tm tm;
+        if (   st.st_mtime + 20 * 60 * 60 > t
+            && localtime_r(&st.st_mtime, &tm))
+            {
+              strftime(port_date, sizeof(port_date), ", %T", &tm);
+              port_date[sizeof(port_date) - 1] = 0;
+            }
+      }
+    mc_wprintf(us, "%s %s%s\r\n", _("Port"), P_PORT, port_date);
+  }
   if (using_iconv())
     mc_wprintf(us, "%s\r\n", _("Using character set conversion"));
   mc_wprintf(us, _("\nPress %sZ for help on special keys%c\n\n"),esc_key(),'\r');
