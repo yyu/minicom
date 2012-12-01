@@ -1500,7 +1500,7 @@ dirty_goto:
         break;
       case 'u': /* Add carriage return */
         toggle_addcr();
-        s = addcr ?  _("Add carriagereturn ON") : _("Add carriagereturn OFF");
+        s = addcr ?  _("Add carriage return ON") : _("Add carriage return OFF");
         status_set_display(s, 0);
         break;
       case 'e': /* Local echo on/off. */
