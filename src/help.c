@@ -30,18 +30,22 @@ int help(void)
 {
   WIN *w;
   int c;
-  int i = 1;
   int x1, x2;
+  const char *s;
+  char buf[40];
 
   x1 = (COLS / 2) - 34;
   x2 = (COLS / 2) + 32;
-  w = mc_wopen(x1, 2, x2, 21 + i, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
+  w = mc_wopen(x1, 2, x2, 18, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
 
-  mc_wlocate(w, 21, 0);
-  mc_wputs(w, _("Minicom Command Summary"));
-  mc_wlocate(w, 10, 2);
+  s = _("Minicom Command Summary");
+  mc_wlocate(w, (x2 - x1) / 2 - strlen(s) / 2, 0);
+  mc_wputs(w, s);
 
-  mc_wprintf(w, _("Commands can be called by %s<key>"), esc_key());
+  snprintf(buf, sizeof(buf), _("Commands can be called by %s<key>"), esc_key());
+  buf[sizeof(buf) - 1] = 0;
+  mc_wlocate(w, (x2 - x1) / 2 - strlen(buf) / 2, 2);
+  mc_wprintf(w, buf);
 
   mc_wlocate(w, 15, 4);
   mc_wputs(w, _("Main Functions"));
@@ -64,14 +68,20 @@ int help(void)
   mc_wputs(w, _(" Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"));
   mc_wputs(w, _(" Add Carriage Ret...U"));
 
-  mc_wlocate(w, 13, 17 + i);
-  mc_wputs(w, _("Written by Miquel van Smoorenburg 1991-1995"));
-  mc_wlocate(w, 13, 18 + i);
-  mc_wputs(w, _("Some additions by Jukka Lahtinen 1997-2000"));
-  mc_wlocate(w, 13, 19 + i);
-  mc_wputs(w, _("i18n by Arnaldo Carvalho de Melo 1998"));
-  mc_wlocate(w, 6, 15 + i);
-  mc_wputs(w, _("Select function or press Enter for none."));
+  s = _("Select function or press Enter for none.");
+  mc_wlocate(w, (x2 - x1) / 2 - strlen(s) / 2, 16);
+  mc_wputs(w, s);
+
+  // out of screen space
+  if (0)
+    {
+      mc_wlocate(w, 13, 17);
+      mc_wputs(w, _("Written by Miquel van Smoorenburg 1991-1995"));
+      mc_wlocate(w, 13, 18);
+      mc_wputs(w, _("Some additions by Jukka Lahtinen 1997-2000"));
+      mc_wlocate(w, 13, 19);
+      mc_wputs(w, _("i18n by Arnaldo Carvalho de Melo 1998"));
+    }
   mc_wredraw(w, 1);
 
   c = wxgetch();
