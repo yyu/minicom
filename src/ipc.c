@@ -90,13 +90,13 @@ int keyboard(int cmd, int arg)
       escape = arg;
       break;
     case KSETBS:
-      vt_set(-1, -1, -1, arg, -1, -1, -1, -1);
+      vt_set(-1, -1, -1, arg, -1, -1, -1, -1, -1);
       break;
     case KCURST:
-      vt_set(-1, -1, -1, -1, -1, NORMAL, -1, -1);
+      vt_set(-1, -1, -1, -1, -1, NORMAL, -1, -1, -1);
       break;
     case KCURAPP:
-      vt_set(-1, -1, -1, -1, -1, APPL, -1, -1);
+      vt_set(-1, -1, -1, -1, -1, APPL, -1, -1, -1);
       break;
     default:
       /* The rest is only meaningful if a keyserv runs. */

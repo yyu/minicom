@@ -138,6 +138,7 @@ int vt_ch_delay;		/* Delay between characters */
 static int vt_type = ANSI;	/* Terminal type. */
 static int vt_wrap;             /* Line wrap on/off */
 static int vt_addlf;            /* Add linefeed on/off */
+static int vt_addcr;            /* Add carriagereturn on/off */
 static int vt_fg;		/* Standard foreground color. */
 static int vt_bg;		/* Standard background color. */
 static int vt_keypad;		/* Keypad mode. */
@@ -195,7 +196,7 @@ void vt_pinit(WIN *win, int fg, int bg)
 }
 
 /* Set characteristics of emulator. */
-void vt_init(int type, int fg, int bg, int wrap, int add)
+void vt_init(int type, int fg, int bg, int wrap, int add_lf, int add_cr)
 {
   vt_type = type;
   if (vt_type == ANSI) {
@@ -207,7 +208,8 @@ void vt_init(int type, int fg, int bg, int wrap, int add)
   }
   if (wrap >= 0)
     vt_win->wrap = vt_wrap = wrap;
-  vt_addlf = add;
+  vt_addlf = add_lf;
+  vt_addcr = add_cr;
   vt_insert = 0;
   vt_crlf = 0;
   vt_om = 0;
@@ -240,7 +242,8 @@ void vt_init(int type, int fg, int bg, int wrap, int add)
 
 /* Change some things on the fly. */
 void vt_set(int addlf, int wrap, int docap, int bscode,
-            int echo, int cursor, int asis, int timestamp)
+            int echo, int cursor, int asis, int timestamp,
+            int addcr)
 {
   if (addlf >= 0)
     vt_addlf = addlf;
@@ -258,6 +261,8 @@ void vt_set(int addlf, int wrap, int docap, int bscode,
     vt_asis = asis;
   if (timestamp >= 0)
     vt_line_timestamp = timestamp;
+  if (addcr >= 0)
+    vt_addcr = addcr;
 }
 
 /* Output a string to the modem. */
@@ -371,7 +376,7 @@ static void state1(int c)
       if (vt_wrap != -1)
         vt_win->wrap = vt_wrap;
       vt_crlf = vt_insert = 0;
-      vt_init(vt_type, vt_fg, vt_bg, vt_win->wrap, 0);
+      vt_init(vt_type, vt_fg, vt_bg, vt_win->wrap, 0, 0);
       mc_wlocate(vt_win, 0, 0);
       break;
     case 'H': /* Set tab in current position */
@@ -988,6 +993,10 @@ void vt_out(int ch)
       esc_s = 2;
       break;
     case '\n':
+      if(vt_addcr)
+        mc_wputc(vt_win, '\r');
+      output_c(c);
+	  break;
     case '\b':
     case 7: /* Bell */
       output_c(c);

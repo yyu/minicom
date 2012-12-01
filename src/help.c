@@ -35,7 +35,7 @@ int help(void)
 
   x1 = (COLS / 2) - 34;
   x2 = (COLS / 2) + 32;
-  w = mc_wopen(x1, 2, x2, 20 + i, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
+  w = mc_wopen(x1, 2, x2, 21 + i, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
 
   mc_wlocate(w, 21, 0);
   mc_wputs(w, _("Minicom Command Summary"));
@@ -61,15 +61,16 @@ int help(void)
   mc_wputs(w, _(" Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"));
   mc_wputs(w, _(" lineWrap on/off....W"));
   mc_wputs(w, _("  local Echo on/off..E | Help screen........Z\n"));
-  mc_wputs(w, _(" Paste file.........Y  Timestamp toggle...N | scroll Back........B"));
+  mc_wputs(w, _(" Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"));
+  mc_wputs(w, _(" Add Carriage Ret...U"));
 
-  mc_wlocate(w, 13, 16 + i);
-  mc_wputs(w, _("Written by Miquel van Smoorenburg 1991-1995"));
   mc_wlocate(w, 13, 17 + i);
-  mc_wputs(w, _("Some additions by Jukka Lahtinen 1997-2000"));
+  mc_wputs(w, _("Written by Miquel van Smoorenburg 1991-1995"));
   mc_wlocate(w, 13, 18 + i);
+  mc_wputs(w, _("Some additions by Jukka Lahtinen 1997-2000"));
+  mc_wlocate(w, 13, 19 + i);
   mc_wputs(w, _("i18n by Arnaldo Carvalho de Melo 1998"));
-  mc_wlocate(w, 6, 14 + i);
+  mc_wlocate(w, 6, 15 + i);
   mc_wputs(w, _("Select function or press Enter for none."));
   mc_wredraw(w, 1);
 

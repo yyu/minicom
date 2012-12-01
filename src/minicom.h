@@ -82,6 +82,7 @@ EXTERN int cursormode;	/* Mode of cursor (arrow) keys */
 EXTERN int docap;	/* Capture data to capture file */
 EXTERN FILE *capfp;	/* File to capture to */
 EXTERN int addlf;	/* Add LF after CR */
+EXTERN int addcr;	/* Insert CR before LF */
 EXTERN int wrapln;	/* Linewrap default */
 EXTERN int display_hex; /* Display in hex */
 EXTERN int tempst;	/* Status line is temporary */

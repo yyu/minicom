@@ -194,6 +194,7 @@ struct pars mpars[] = {
   { "No",		0,    "addlinefeed" },
   { "No",		0,    "linewrap" },
   { "No",		0,    "displayhex" },
+  { "No",		0,    "addcarreturn" },
 
   { "Minicom"VERSION,   0,    "answerback" },
 

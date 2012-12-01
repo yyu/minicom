@@ -847,7 +847,7 @@ static void helpthem(void)
 
 static void set_addlf(int val)
 {
-  vt_set(val, -1, -1, -1, -1, -1, -1, -1);
+  vt_set(val, -1, -1, -1, -1, -1, -1, -1, -1);
 }
 
 /* Toggle linefeed addition.  Can be called through the menu, or by a macro. */
@@ -857,9 +857,21 @@ void toggle_addlf(void)
   set_addlf(addlf);
 }
 
+static void set_addcr(int val)
+{
+  vt_set(-1, -1, -1, -1, -1, -1, -1, -1, val);
+}
+
+/* Toggle carriagereturn addition.  Can be called through the menu, or by a macro. */
+void toggle_addcr(void)
+{
+  addcr = !addcr;
+  set_addcr(addcr);
+}
+
 static void set_local_echo(int val)
 {
-  vt_set(-1, -1, -1, -1, val, -1 ,-1, -1);
+  vt_set(-1, -1, -1, -1, val, -1 ,-1, -1, -1);
 }
 
 /* Toggle local echo.  Can be called through the menu, or by a macro. */
@@ -871,7 +883,7 @@ void toggle_local_echo(void)
 
 static void set_line_timestamp(int val)
 {
-  vt_set(-1, -1, -1, -1 ,-1, -1, -1, val);
+  vt_set(-1, -1, -1, -1 ,-1, -1, -1, val, -1);
 }
 
 /* Toggle host timestamping on/off */
@@ -1056,6 +1068,7 @@ int main(int argc, char **argv)
   stdattr = XA_NORMAL;
   us = NULL;
   addlf = 0;
+  addcr = 0;
   line_timestamp = 0;
   wrapln = 0;
   display_hex = 0;
@@ -1239,7 +1252,7 @@ int main(int argc, char **argv)
             exit(1);
           }
           docap = 1;
-          vt_set(addlf, -1, docap, -1, -1, -1, -1, -1);
+          vt_set(addlf, -1, docap, -1, -1, -1, -1, -1, addcr);
           break;
         case 'S': /* start Script */
           strncpy(scr_name, optarg, 33);
@@ -1284,7 +1297,7 @@ int main(int argc, char **argv)
 
   if (screen_iso && screen_ibmpc)
     /* init VT */
-    vt_set(-1, -1, -1, -1, -1, -1, 1, -1);
+    vt_set(-1, -1, -1, -1, -1, -1, 1, -1, -1);
 
   /* Avoid fraude ! */	
   for (s = use_port; *s; s++)
@@ -1315,6 +1328,7 @@ int main(int argc, char **argv)
   /* Set default terminal behaviour */
   addlf      = strcasecmp(P_ADDLINEFEED, "yes") == 0;
   local_echo = strcasecmp(P_LOCALECHO,   "yes") == 0;
+  addcr      = strcasecmp(P_ADDCARRIAGERETURN, "yes") == 0;
 
   /* -w overrides config file */
   if (!wrapln)
@@ -1484,6 +1498,11 @@ dirty_goto:
         s = addlf ?  _("Add linefeed ON") : _("Add linefeed OFF");
         status_set_display(s, 0);
         break;
+      case 'u': /* Add carriage return */
+        toggle_addcr();
+        s = addcr ?  _("Add carriagereturn ON") : _("Add carriagereturn OFF");
+        status_set_display(s, 0);
+        break;
       case 'e': /* Local echo on/off. */
         toggle_local_echo();
         s = local_echo ?  _("Local echo ON") : _("Local echo OFF");
@@ -1572,7 +1591,7 @@ dirty_goto:
           if (c == 1)
             docap = 0;
         }
-        vt_set(addlf, -1, docap, -1, -1, -1, -1, -1);
+        vt_set(addlf, -1, docap, -1, -1, -1, -1, -1, addcr);
         break;
       case 'p': /* Set parameters */
         get_bbp(P_BAUDRATE, P_BITS, P_PARITY, P_STOPB, 0);
@@ -1597,7 +1616,7 @@ dirty_goto:
         break;
       case 'w': /* Line wrap on-off */
         c = !us->wrap;
-        vt_set(addlf, c, docap, -1, -1, -1, -1, -1);
+        vt_set(addlf, c, docap, -1, -1, -1, -1, -1, addcr);
         s = c ? _("Linewrap ON") : _("Linewrap OFF");
 	status_set_display(s, 0);
         break;

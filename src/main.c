@@ -415,7 +415,7 @@ void init_emul(int type, int do_init)
   /* Install and reset the terminal emulator. */
   if (do_init) {
     vt_install(do_output, kb_handler, us);
-    vt_init(type, tfcolor, tbcolor, us->wrap, addlf);
+    vt_init(type, tfcolor, tbcolor, us->wrap, addlf, addcr);
   } else
     vt_pinit(us, -1, -1);
 
