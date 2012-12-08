@@ -1,5 +1,7 @@
 2012-12-08  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* po/pl.po: Update from TP.
+
 	* configure.in: Increase version to 2.6.1.90
 
 2012-11-21  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
