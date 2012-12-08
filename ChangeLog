@@ -6,8 +6,9 @@
 
 	* man/minicom.1: Fix date and version.
 
-	* src/config.c, src/configsym.h, src/main.c, src/minicom.c, src/minicom.h, src/rwconf.c, man/minicom.1: Add option to output as hex, initial patch by Jiao ShuYing,
-	  #313754
+	* src/config.c, src/configsym.h, src/main.c, src/minicom.c,
+	  src/minicom.h, src/rwconf.c, man/minicom.1: Add option to output as
+	  hex, initial patch by Jiao ShuYing, #313754
 
 2012-07-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
@@ -15,7 +16,8 @@
 
 2012-07-22  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
-	* src/config.c, src/configsym.h, src/minicom.c, src/rwconf.c: Add line-wrap config-file option, by Riku Meskanen
+	* src/config.c, src/configsym.h, src/minicom.c, src/rwconf.c: Add
+	  line-wrap config-file option, by Riku Meskanen
 
 
 2012-03-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
