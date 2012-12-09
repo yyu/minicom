@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: minicom 2.3-rc1\n"
+"Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2012-12-01 17:00+0100\n"
-"PO-Revision-Date: 2008-01-11 08:52+0100\n"
+"POT-Creation-Date: 2012-12-01 17:43+0100\n"
+"PO-Revision-Date: 2012-12-09 20:40+0100\n"
 "Last-Translator: Jochen Hein <jochen@jochen.org>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -34,7 +34,7 @@ msgid " C - Log file transfers        :"
 msgstr " C - Dateiübertragungen protokollieren           :"
 
 #: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:646
-#: src/config.c:1184 src/dial.c:1155
+#: src/config.c:1191 src/dial.c:1155
 msgid "Change which setting?"
 msgstr "Welchen Parameter möchten Sie ändern?"
 
@@ -229,9 +229,8 @@ msgid "Modem and dialing parameter setup"
 msgstr "Modem- und Wählparameter"
 
 #: src/config.c:690
-#, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
-msgstr "      (Return oder Esc für Ende)"
+msgstr "      Return oder Esc für Ende. Edit A+B für Standardeinstellungen."
 
 #: src/config.c:828
 msgid " A - Command key is         :"
@@ -291,53 +290,54 @@ msgstr " O - Zeichenkonvertierung   :"
 
 #: src/config.c:842
 msgid " P - Add linefeed           :"
-msgstr " P -  Mit Zeilenvorschub  :"
+msgstr " P -  Mit Zeilenvorschub    :"
 
 #: src/config.c:843
 msgid " Q - Local echo             :"
-msgstr " Q -  Lokales Echo        :"
+msgstr " Q -  Lokales Echo          :"
 
 #: src/config.c:844
-#, fuzzy
 msgid " R - Line Wrap              :"
-msgstr " J -  Zeilenvorschub      :"
+msgstr " R -  Zeilenvorschub        :"
 
 #: src/config.c:845
-#, fuzzy
 msgid " S - Hex Display            :"
-msgstr " E -  Skript              :"
+msgstr " S -  Hex-Anzeige           :"
 
-#: src/config.c:846 src/config.c:1594
+#: src/config.c:846
+msgid " T - Add carriage return    :"
+msgstr " T - Wagenrücklauf          :"
+
+#: src/config.c:847 src/config.c:1601
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Welchen Parameter ändern? (Escape zum Verlassen)"
 
-#: src/config.c:850 src/config.c:1366
+#: src/config.c:851 src/config.c:1373
 msgid "Screen and keyboard"
 msgstr "Bildschirm und Tastatur"
 
-#: src/config.c:869
+#: src/config.c:870
 msgid " M - Edit Macros\n"
 msgstr " M - Makros editieren\n"
 
-#: src/config.c:896
+#: src/config.c:898
 msgid "You can't change colors in black and white mode"
 msgstr "Im Schwarz-Weiß-Modus können die Farben nicht geändert werden"
 
-#: src/config.c:908
+#: src/config.c:910
 msgid "Menu foreground == background color, change!"
 msgstr "Die Vorder- und Hintergrundfarbe im Menü sind identisch. Bitte ändern!"
 
-#: src/config.c:917
+#: src/config.c:919
 msgid "Terminal foreground == background color, change!"
-msgstr ""
-"Die Vorder- und Hintergrundfarbe im Terminal sind identisch. Bitte ändern!"
+msgstr "Die Vorder- und Hintergrundfarbe im Terminal sind identisch. Bitte ändern!"
 
-#: src/config.c:929
+#: src/config.c:931
 msgid "History Buffer Size"
 msgstr "Größe des History-Puffers"
 
 # XXX stimmt hier die Formatierung noch?
-#: src/config.c:930
+#: src/config.c:932
 msgid ""
 "\n"
 "                You have changed the history buffer size.\n"
@@ -353,11 +353,11 @@ msgstr ""
 "\n"
 "  Drücken Sie eine beliebige Taste ... "
 
-#: src/config.c:947
+#: src/config.c:949
 msgid "Program new command key"
 msgstr "Neue Kommandotaste programmieren"
 
-#: src/config.c:949
+#: src/config.c:951
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -379,211 +379,204 @@ msgstr ""
 "\n"
 " Drücken Sie die neue Kommando-Taste: "
 
-#: src/config.c:958
+#: src/config.c:960
 msgid "Meta-8th bit "
 msgstr "Meta-8. Bit "
 
-#: src/config.c:960
+#: src/config.c:962
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
-#: src/config.c:994 src/config.c:1237
+#: src/config.c:996 src/config.c:1244
 msgid "disabled"
 msgstr "deaktiviert"
 
-#: src/config.c:997 src/config.c:1240 src/rwconf.c:146
+#: src/config.c:999 src/config.c:1247 src/rwconf.c:146
 msgid "enabled"
 msgstr "aktiviert"
 
-#: src/config.c:1112
+#: src/config.c:1114
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "Fehler: Sie haben keine Berechtigung die Datei zu erstellen"
 
-#: src/config.c:1118
+#: src/config.c:1120
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "Fehler: Die Makro-Datei »%s« kann nicht geöffnet werden"
 
-#: src/config.c:1124
+#: src/config.c:1126
 msgid "Reading macros"
 msgstr "Einlesen der Makro-Definitionen"
 
-#: src/config.c:1178
-#, fuzzy
+#: src/config.c:1185
 msgid " A -      Terminal emulation :"
-msgstr " A - Terminal-Emulation  :"
+msgstr " A -      Terminal-Emulation :"
 
-#: src/config.c:1179
-#, fuzzy
+#: src/config.c:1186
 msgid " B -     Backspace key sends :"
-msgstr " B - Backspace sendet    :"
-
-#: src/config.c:1180
-#, fuzzy
-msgid " C -          Status line is :"
-msgstr " C - Statuszeile ist     :"
-
-#: src/config.c:1181
-#, fuzzy
-msgid " D -   Newline tx delay (ms) :"
-msgstr " D - Zeit bei Zeilenvorschub (ms) :"
-
-#: src/config.c:1182
-#, fuzzy
-msgid " E -          ENQ answerback :"
-msgstr " E -      ENQ Antwort    :"
-
-#: src/config.c:1183
-#, fuzzy
-msgid " F - Character tx delay (ms) :"
-msgstr " D - Zeit bei Zeilenvorschub (ms) :"
+msgstr " B -        Backspace sendet :"
 
 #: src/config.c:1187
+msgid " C -          Status line is :"
+msgstr " C -         Statuszeile ist :"
+
+#: src/config.c:1188
+msgid " D -   Newline tx delay (ms) :"
+msgstr " D - Verzögerung bei Zeilenvorschub (ms) :"
+
+#: src/config.c:1189
+msgid " E -          ENQ answerback :"
+msgstr " E -             ENQ Antwort :"
+
+#: src/config.c:1190
+msgid " F - Character tx delay (ms) :"
+msgstr " F - Verzögerung bei Zeichen (ms) :"
+
+#: src/config.c:1194
 msgid "Terminal settings"
 msgstr "Terminal-Einstellungen"
 
 # XXX: strerror?
-#: src/config.c:1291
+#: src/config.c:1298
 #, c-format
 msgid "Cannot write to %s"
 msgstr "Fehler beim Schreiben der Konfigurationsdatei »%s«"
 
-#: src/config.c:1298
+#: src/config.c:1305
 msgid "Configuration saved"
 msgstr "Die Konfiguration wurde gespeichert"
 
-#: src/config.c:1313
+#: src/config.c:1320
 msgid "ERROR: Macros have changed but no filename is set!"
-msgstr ""
-"Fehler: Makros wurden verändert, aber kein Dateiname zum Speichern angegeben"
+msgstr "Fehler: Makros wurden verändert, aber kein Dateiname zum Speichern angegeben"
 
-#: src/config.c:1317
+#: src/config.c:1324
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "Kann die Makro-Datei »%s« nicht schreiben"
 
-#: src/config.c:1323
+#: src/config.c:1330
 msgid "Macros saved"
 msgstr "Makros gespeichert"
 
-#: src/config.c:1340
+#: src/config.c:1347
 msgid "Give name to save this configuration?"
 msgstr "Unter welchem Namen soll die Konfiguration gespeichert werden?"
 
-#: src/config.c:1362
+#: src/config.c:1369
 msgid "Filenames and paths"
 msgstr "Dateinamen und Pfade"
 
-#: src/config.c:1363
+#: src/config.c:1370
 msgid "File transfer protocols"
 msgstr "Protokolle zur Dateiübertragung"
 
-#: src/config.c:1364
+#: src/config.c:1371
 msgid "Serial port setup"
 msgstr "Einstellungen zum seriellen Anschluss"
 
-#: src/config.c:1365
+#: src/config.c:1372
 msgid "Modem and dialing"
 msgstr "Modem und Wählverhalten"
 
-#: src/config.c:1368
+#: src/config.c:1375
 msgid "Save setup as.."
 msgstr "Einstellungen speichern als ..."
 
-#: src/config.c:1369
+#: src/config.c:1376
 msgid "Exit"
 msgstr "Verlassen"
 
-#: src/config.c:1370
+#: src/config.c:1377
 msgid "Exit from Minicom"
 msgstr "Minicom beenden"
 
-#: src/config.c:1382
+#: src/config.c:1389
 #, c-format
 msgid "Save setup as %s"
 msgstr "Speichern als »%s«"
 
-#: src/config.c:1388
+#: src/config.c:1395
 msgid "configuration"
 msgstr "Konfiguration"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "BLACK"
 msgstr "Schwarz"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "RED"
 msgstr "Rot"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "GREEN"
 msgstr "Grün"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "YELLOW"
 msgstr "Gelb"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "BLUE"
 msgstr "Blau"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "MAGENTA"
 msgstr "Magenta"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "CYAN"
 msgstr "Cyan"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "WHITE"
 msgstr "Weiß"
 
-#: src/config.c:1428
+#: src/config.c:1435
 msgid "Comm Parameters"
 msgstr "Kommunikationsparameter"
 
-#: src/config.c:1433
+#: src/config.c:1440
 msgid " Speed            Parity      Data\n"
 msgstr " Geschwindigkeit  Parität     Datenbits\n"
 
-#: src/config.c:1434
+#: src/config.c:1441
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: <next>        L: Keine    S: 5\n"
 
-#: src/config.c:1435
+#: src/config.c:1442
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: <prev>        M: Gerade   T: 6\n"
 
-#: src/config.c:1436
+#: src/config.c:1443
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C:   9600        N: Ungerade U: 7\n"
 
-#: src/config.c:1437
+#: src/config.c:1444
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D:   38400       O: Mark     V: 8\n"
 
-#: src/config.c:1438
+#: src/config.c:1445
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: Leerzeichen\n"
 
-#: src/config.c:1440
+#: src/config.c:1447
 msgid " Stopbits\n"
 msgstr " Stopbits\n"
 
-#: src/config.c:1441
+#: src/config.c:1448
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1442
+#: src/config.c:1449
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1444
+#: src/config.c:1451
 msgid " K: Current\n"
 msgstr " K: Aktuelle Einstellungen\n"
 
-#: src/config.c:1447
+#: src/config.c:1454
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -591,55 +584,44 @@ msgstr ""
 "\n"
 " Welche Einstellung? (<Enter> zum Verlassen) "
 
-#: src/config.c:1455
+#: src/config.c:1462
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Aktuelle Einstellung: %5s %s%s%s  "
 
-#: src/config.c:1597
+#: src/config.c:1604
 msgid "F1 to F10 Macros"
 msgstr "F1 bis F10 Makros"
 
-#: src/config.c:1616
+#: src/config.c:1623
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
-msgstr ""
-" (Legende: ^M = Strg-M, ^L = Strg-L, ^G = Strg-G, ^R = Strg-R, ^~ = eine "
-"Sekunde Pause,"
+msgstr " (Legende: ^M = Strg-M, ^L = Strg-L, ^G = Strg-G, ^R = Strg-R, ^~ = eine Sekunde Pause,"
 
-#: src/config.c:1618
+#: src/config.c:1625
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = Benutzername, \\p = Passwort, \\\\ = \\, \\e = Echo an/aus, "
 
-#: src/config.c:1620
-#, fuzzy
-msgid ""
-"  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
-msgstr ""
-"  \\l = Zeilenvorschun an/aus, \\bX1..Xn<sp> = Baud Rate ändern. Beispiel: "
-"\"\\bfq \""
+#: src/config.c:1627
+msgid "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
+msgstr "  \\l = Zeilenvorschub an/aus, \\bX1..Xn<sp> = Baud Rate ändern. Beispiel: \"\\beq \""
 
-#: src/config.c:1622
-#, fuzzy
-msgid ""
-"  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
-msgstr ""
-"  = 19200 8N1. (Siehe das Menü »Kommunikationsparameter« für gültige Werte "
-"für X.))"
+#: src/config.c:1629
+msgid "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
+msgstr "  = 115200 8N1. (Siehe das Menü »Kommunikationsparameter« für gültige Werte für X.))"
 
-#: src/config.c:1637
+#: src/config.c:1644
 msgid "CHANGED"
 msgstr "geändert"
 
-#: src/config.c:1724
+#: src/config.c:1731
 msgid "Character conversion"
 msgstr "Zeichensatz-Konvertierung"
 
-#: src/config.c:1729
+#: src/config.c:1736
 msgid " char    in out    char    in out    char    in out    char    in out\n"
-msgstr ""
-" Zeichen in out    Zeichen in out    Zeichen in out    Zeichen in out\n"
+msgstr " Zeichen in out    Zeichen in out    Zeichen in out    Zeichen in out\n"
 
-#: src/config.c:1751
+#: src/config.c:1758
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -647,12 +629,12 @@ msgstr ""
 "\n"
 " A - Tabelle laden\tB - Tabelle speichern"
 
-#: src/config.c:1753
+#: src/config.c:1760
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tDatei:%s"
 
-#: src/config.c:1754
+#: src/config.c:1761
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -660,45 +642,45 @@ msgstr ""
 "\n"
 " C - Zeichen ändern\tD - nächste Seite\tE - vorherige Seite\n"
 
-#: src/config.c:1755
+#: src/config.c:1762
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - Protokoll konvertieren: %s\n"
 
-#: src/config.c:1770
+#: src/config.c:1777
 #, c-format
 msgid "Load file: %s"
 msgstr "Datei laden: %s"
 
-#: src/config.c:1782
+#: src/config.c:1789
 #, c-format
 msgid "Save as file: %s"
 msgstr "Speichern als Datei: %s"
 
-#: src/config.c:1793
+#: src/config.c:1800
 msgid "Character to be edited: "
 msgstr "Zu änderndes Zeichen: "
 
-#: src/config.c:1801 src/config.c:1813 src/config.c:1825
+#: src/config.c:1808 src/config.c:1820 src/config.c:1832
 msgid "Input character ascii value 0-255"
 msgstr "Geben Sie einen ASCII-Wert (0-255) ein"
 
-#: src/config.c:1807
+#: src/config.c:1814
 #, c-format
 msgid "Change input to: %s"
 msgstr "Eingabe ändern zu: %s"
 
-#: src/config.c:1819
+#: src/config.c:1826
 #, c-format
 msgid "Change output to: %s"
 msgstr "Ausgabe ändern zu: %s"
 
-#: src/config.c:1857
+#: src/config.c:1864
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Kann die Konvertierungstabelle »%s« nicht öffnen"
 
-#: src/config.c:1871
+#: src/config.c:1878
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Kann die Konvertierungstabelle »%s« nicht speichern"
@@ -830,7 +812,7 @@ msgstr "Kein Hauptspeicher mehr beim Lesen des Telefonbuchs"
 #: src/dial.c:1015
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
-msgstr ""
+msgstr "dialdir in das neue Format übersetzt, Sicherheitskopie ist %s.v%hd"
 
 #: src/dial.c:1050
 msgid "Cannot open ~/.dialdir for writing!"
@@ -1017,7 +999,7 @@ msgstr "[Okay]"
 #: src/file.c:322
 #, c-format
 msgid "Could not change to directory %s (%s)"
-msgstr ""
+msgstr "Kann nicht in das Verzeichnis %s wechseln (%s)"
 
 #: src/file.c:346
 msgid "Select one or more files for download"
@@ -1106,78 +1088,82 @@ msgstr "%d Dateien:\n"
 msgid "Minicom Command Summary"
 msgstr "Minicom-Kommandoübersicht"
 
-#: src/help.c:44
+#: src/help.c:45
 #, c-format
 msgid "Commands can be called by %s<key>"
 msgstr "Kommandos werden mit %s <Taste> aufgerufen"
 
-#: src/help.c:47
+#: src/help.c:51
 msgid "Main Functions"
 msgstr "Zentrale Funktionen"
 
-#: src/help.c:49
+#: src/help.c:53
 msgid "Other Functions"
 msgstr "Andere Funktionen"
 
-#: src/help.c:51
+#: src/help.c:55
 msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
 msgstr " Telefonbuch........D  Skript ausführen...G | Bildschirm löschen.C\n"
 
-#: src/help.c:52
+#: src/help.c:56
 msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
 msgstr " Dateien senden.....S  Dateien empfangen..R | Konfiguration......O\n"
 
-#: src/help.c:53
+#: src/help.c:57
 msgid " comm Parameters....P  Add linefeed.......A | "
 msgstr " Kommunikation......P  Zeilenvorschub.....A | "
 
-#: src/help.c:55
+#: src/help.c:59
 msgid "Suspend minicom....J\n"
 msgstr "Minicom unterbr....J\n"
 
-#: src/help.c:57
+#: src/help.c:61
 msgid "Jump to a shell....J\n"
 msgstr "Shell aufrufen.....J\n"
 
-#: src/help.c:59
+#: src/help.c:63
 msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
 msgstr " Protokoll..........L  Auflegen...........H | Ende und Reset.....X\n"
 
-#: src/help.c:60
+#: src/help.c:64
 msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
 msgstr " Break senden.......F  Modem init.........M | Ende ohne Reset....Q\n"
 
-#: src/help.c:61
+#: src/help.c:65
 msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
 msgstr " Terminalparameter..T  Kermit aufrufen....K | Pfeiltastenmodus...I\n"
 
-#: src/help.c:62
+#: src/help.c:66
 msgid " lineWrap on/off....W"
 msgstr " Zeilenumbruch......W"
 
-#: src/help.c:63
+#: src/help.c:67
 msgid "  local Echo on/off..E | Help screen........Z\n"
 msgstr "  lokales Echo ......E | Hilfe..............Z\n"
 
-#: src/help.c:64
-msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B"
-msgstr ""
+#: src/help.c:68
+msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
+msgstr " Datei einfügen.....Y  Zeitstempel an/aus.N | Scroll Back........B\n"
 
-#: src/help.c:67
+#: src/help.c:69
+msgid " Add Carriage Ret...U"
+msgstr " Sende Carriage Ret.U"
+
+#: src/help.c:71
+msgid "Select function or press Enter for none."
+msgstr "Wählen Sie eine Funktion aus oder Enter zum Verlassen."
+
+#: src/help.c:79
 msgid "Written by Miquel van Smoorenburg 1991-1995"
 msgstr "Entwickelt von Miquel van Smoorenburg 1991-1995"
 
-#: src/help.c:69
+#: src/help.c:81
 msgid "Some additions by Jukka Lahtinen 1997-2000"
 msgstr "Verschiedene Ergänzungen von Jukka Lahtinen 1997-2000"
 
-#: src/help.c:71
+#: src/help.c:83
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "i18n von Arnaldo Carvalho de Melo 1998"
-
-#: src/help.c:73
-msgid "Select function or press Enter for none."
-msgstr "Wählen Sie eine Funktion aus oder Enter zum Verlassen."
 
 #: src/main.c:213
 #, c-format
@@ -1280,14 +1266,11 @@ msgstr "Die Umgebungsvariable SHELL ist nicht gesetzt"
 
 #: src/minicom.c:143 src/updown.c:311 src/updown.c:518 src/updown.c:716
 msgid "Out of memory: could not fork()"
-msgstr ""
-"Kein Hauptspeicher mehr verfügbar: Das Erzeugen eines neuen Prozesses ist "
-"nicht möglich"
+msgstr "Kein Hauptspeicher mehr verfügbar: Das Erzeugen eines neuen Prozesses ist nicht möglich"
 
 #: src/minicom.c:153
 msgid "Shelled out. Type \"exit\" to return.\n"
-msgstr ""
-"Shell aufgerufen. Geben Sie »exit« ein, um zu minicom zurückzukehren.\n"
+msgstr "Shell aufgerufen. Geben Sie »exit« ein, um zu minicom zurückzukehren.\n"
 
 #: src/minicom.c:266
 msgid "SEARCH FOR (ESC=Exit)"
@@ -1298,11 +1281,8 @@ msgid "Search Wrapping Around to Start!"
 msgstr "Suche wird am Anfang fortgesetzt"
 
 #: src/minicom.c:462
-msgid ""
-"HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
-msgstr ""
-"History: U=Hoch D=Runter F=BildHoch B=BildRunter s=Suche S=Grkl N=Nächste "
-"C=Cite ESC=Verlassen "
+msgid "HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
+msgstr "History: U=Hoch D=Runter F=BildHoch B=BildRunter s=Suche S=Grkl N=Nächste C=Cite ESC=Verlassen "
 
 #: src/minicom.c:501
 msgid "History buffer Disabled!"
@@ -1321,17 +1301,12 @@ msgstr ""
 "  Bitte verwenden Sie zunächst »s« oder »S«!"
 
 #: src/minicom.c:721 src/minicom.c:764
-msgid ""
-"  CITATION: ENTER=select start line ESC=exit                               "
-msgstr ""
-"  Selektion: ENTER=Startzeile auswählen  "
-"ESC=Verlassen                          "
+msgid "  CITATION: ENTER=select start line ESC=exit                               "
+msgstr "  Selektion: ENTER=Startzeile auswählen  ESC=Verlassen                          "
 
 #: src/minicom.c:738
-msgid ""
-"  CITATION: ENTER=select end line ESC=exit                                 "
-msgstr ""
-"  Selektion: ENTER=Endezeile auswählen   ESC=Verlassen                      "
+msgid "  CITATION: ENTER=select end line ESC=exit                                 "
+msgstr "  Selektion: ENTER=Endezeile auswählen   ESC=Verlassen                      "
 
 #: src/minicom.c:798
 #, c-format
@@ -1344,7 +1319,7 @@ msgid "Type \"minicom %s\" for help.\n"
 msgstr "Gehen Sie »minicom %s« ein für Hilfe.\n"
 
 #: src/minicom.c:809
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... [configuration]\n"
 "A terminal program for Linux and other unix-like systems.\n"
@@ -1355,8 +1330,7 @@ msgid ""
 "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
 "  -m, --metakey          : use meta or alt key for commands\n"
 "  -M, --metakey8         : use 8bit meta key for commands\n"
-"  -l, --ansi             : literal; assume screen uses non IBM-PC character "
-"set\n"
+"  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
 "  -L, --iso              : don't assume screen uses ISO8859\n"
 "  -w, --wrap             : Linewrap on\n"
 "  -H, --displayhex       : display output in hex\n"
@@ -1380,18 +1354,18 @@ msgstr ""
 "Syntax: %s [Option]... [Konfiguration]\n"
 "Ein Terminalprogramm für Linux und andere Unix-artige Systeme.\n"
 "\n"
-"  -s, --setup            : Konfigurationsmodus starten (nur für »root«)\n"
-"  -o, --noinit           : Modem und Lockdatei beim Start nicht "
-"initialisieren\n"
+"  -b, --baudrate         : Setze Baudrate (ignoriere den Wert aus der Konfiguration)\n"
+"  -D, --device           : Setze den Gerätename (ignoriere den Wert aus der Konfiguration)\n"
+"  -s, --setup            : Konfigurationsmodus starten\n"
+"  -o, --noinit           : Modem und Lockdatei beim Start nicht initialisieren\n"
 "  -m, --metakey          : Verwende Meta oder Alt als Kommando-Taste\n"
 "  -M, --metakey8         : Verwende 8bit-Meta als Kommando-Taste\n"
-"  -l, --ansi             : literal; Das Terminal verwendet nicht den IBM-"
-"PC \n"
+"  -l, --ansi             : literal; Das Terminal verwendet nicht den IBM-PC \n"
 "                           Zeichensatz\n"
 "  -L, --iso              : Terminal verwendet nicht den ISO8859 Zeichensatz\n"
 "  -w, --wrap             : Automatischer Zeilenumbruch an\n"
-"  -z, --statline         : Versuche die Statuszeile des Terminals zu "
-"verwenden\n"
+"  -H, --displayhex       : display output in hex\n"
+"  -z, --statline         : Versuche die Statuszeile des Terminals zu verwenden\n"
 "  -7, --7bit             : 7bit Modus verwenden\n"
 "  -8, --8bit             : 8bit Modus verwenden\n"
 "  -c, --color=on/off     : ANSI Farben verwenden an/aus\n"
@@ -1402,11 +1376,11 @@ msgstr ""
 "  -p, --ptty=TTYP        : Verbinde mit dem Pseudo-Terminal\n"
 "  -C, --capturefile=FILE : Protokoll in der Datei FILE speichern\n"
 "  -T, --disabletime      : Online-Zeit nicht anzeigen\n"
+"  -R, --remotecharset    : Zeichensatz des Kommunikationspartners\n"
 "  -v, --version          : Gebe die Versionsinformationen aus und beende\n"
 "  configuration          : Name der Konfigurationsdatei\n"
 "\n"
-"Diese Optionen können außerdem in der Umgebungsvariablen MINICOM angegeben "
-"werden.\n"
+"Diese Optionen können außerdem in der Umgebungsvariablen MINICOM angegeben werden.\n"
 
 #: src/minicom.c:838
 #, c-format
@@ -1429,20 +1403,19 @@ msgstr ""
 "Das Verzeichnis mit der Konfiguration und der Zugriffskontrolle\n"
 "ist »%s«.\n"
 "\n"
-"Melden Sie Fehler (auf Englisch, mit LC_ALL=C) an »minicom-devel@lists."
-"alioth.debian.org«.\n"
+"Melden Sie Fehler (auf Englisch, mit LC_ALL=C) an »minicom-devel@lists.alioth.debian.org«.\n"
 
-#: src/minicom.c:1146
+#: src/minicom.c:1159
 #, c-format
 msgid "%s version %s"
 msgstr "%s Version %s"
 
-#: src/minicom.c:1148
+#: src/minicom.c:1161
 #, c-format
 msgid " (compiled %s)"
 msgstr " (kompiliert am %s)"
 
-#: src/minicom.c:1151
+#: src/minicom.c:1164
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1451,47 +1424,44 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1174
+#: src/minicom.c:1187
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: Das Argument zur Option »-p« muss ein Pseudo-TTY sein\n"
 
-#: src/minicom.c:1238 src/minicom.c:1552
+#: src/minicom.c:1251 src/minicom.c:1571
 msgid "Cannot open capture file"
 msgstr "Die Capture-Datei kann nicht geöffnet werden"
 
-#: src/minicom.c:1297
+#: src/minicom.c:1310
 msgid "You don't exist. Go away.\n"
-msgstr ""
-"Ihre Benutzerkennung ist nicht in der Benutzerdatenbank (/etc/passwd) "
-"enthalten. Gehen Sie weg!\n"
+msgstr "Ihre Benutzerkennung ist nicht in der Benutzerdatenbank (/etc/passwd) enthalten. Gehen Sie weg!\n"
 
-#: src/minicom.c:1371
+#: src/minicom.c:1385
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Der Bildschirm ist zu klein - tut mir leid.\n"
 
-#: src/minicom.c:1440
+#: src/minicom.c:1454
 msgid "Welcome to minicom"
 msgstr "Willkommen zu minicom"
 
-#: src/minicom.c:1441
+#: src/minicom.c:1455
 msgid "OPTIONS"
 msgstr "Optionen"
 
-#: src/minicom.c:1443
+#: src/minicom.c:1457
 msgid "Compiled on"
 msgstr "Übersetzt am"
 
-#: src/minicom.c:1459
+#: src/minicom.c:1473
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
-#: src/minicom.c:1462
-#, fuzzy
+#: src/minicom.c:1476
 msgid "Using character set conversion"
-msgstr "Zeichensatz-Konvertierung"
+msgstr "Verwende Zeichensatz-Konvertierung"
 
-#: src/minicom.c:1463
+#: src/minicom.c:1477
 #, c-format
 msgid ""
 "\n"
@@ -1501,72 +1471,79 @@ msgstr ""
 "\n"
 "Drücken Sie %s Z für Hilfe zu speziellen Tasten%c\n"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed ON"
 msgstr "automatischer Zeilenvorschub AN"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed OFF"
 msgstr "automatischer Zeilenvorschub AUS"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1503
+msgid "Add carriage return ON"
+msgstr "Sende Wagenrücklauf AN"
+
+#: src/minicom.c:1503
+msgid "Add carriage return OFF"
+msgstr "Sende Wagenrücklauf AUS"
+
+#: src/minicom.c:1508
 msgid "Local echo ON"
 msgstr "Lokales Echo EIN"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1508
 msgid "Local echo OFF"
 msgstr "Lokales Echo AUS"
 
-#: src/minicom.c:1508
+#: src/minicom.c:1527
 msgid "You are online. Really initialize?"
 msgstr "Eine Verbindung besteht. Wirklich initialisieren?"
 
-#: src/minicom.c:1515
+#: src/minicom.c:1534
 msgid "Leave without reset?"
 msgstr "Minicom ohne Reset verlassen?"
 
-#: src/minicom.c:1519 src/minicom.c:1537
+#: src/minicom.c:1538 src/minicom.c:1556
 msgid "Save macros?"
 msgstr "Makros speichern?"
 
-#: src/minicom.c:1529
+#: src/minicom.c:1548
 msgid "Leave Minicom?"
 msgstr "Minicom verlassen?"
 
-#: src/minicom.c:1548
+#: src/minicom.c:1567
 msgid "Capture to which file? "
 msgstr "Protokoll in welche Datei schreiben? "
 
-#: src/minicom.c:1557 src/minicom.c:1566
+#: src/minicom.c:1576 src/minicom.c:1585
 msgid "Capture file"
 msgstr "Protokoll-Datei"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap ON"
 msgstr "Zeilenumbruch AN"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap OFF"
 msgstr "Zeilenumbruch AUS"
 
-#: src/minicom.c:1610
-#, fuzzy
+#: src/minicom.c:1629
 msgid "Timestamp OFF"
-msgstr "Zeilenumbruch AUS"
+msgstr "Zeitstempel AUS"
 
-#: src/minicom.c:1613
+#: src/minicom.c:1632
 msgid "Timestamp every line (simple)"
-msgstr ""
+msgstr "Zeitstempel in jeder Zeile (einfach)"
 
-#: src/minicom.c:1616
+#: src/minicom.c:1635
 msgid "Timestamp every line (extended)"
-msgstr ""
+msgstr "Zeitstempel in jeder Zeile (erweitert)"
 
-#: src/minicom.c:1619
+#: src/minicom.c:1638
 msgid "Timestamp lines every second"
-msgstr ""
+msgstr "Zeitstempel Zeilen für jede Sekunde"
 
-#: src/minicom.c:1660
+#: src/minicom.c:1679
 msgid "Quit without reset while online."
 msgstr "Verlassen ohne Reset solange eine Verbindung besteht"
 
@@ -1574,35 +1551,34 @@ msgstr "Verlassen ohne Reset solange eine Verbindung besteht"
 msgid "No"
 msgstr "Nein"
 
-#: src/rwconf.c:225
+#: src/rwconf.c:226
 #, c-format
 msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 msgstr "# Machinell erzeugte Datei - Verwenden Sie \"minicom -s\" zum Ändern\n"
 
-#: src/rwconf.c:227
+#: src/rwconf.c:228
 #, c-format
-msgid ""
-"# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgid "# Machine-generated file - use setup menu in minicom to change parameters.\n"
 msgstr ""
 "# Diese Datei ist maschinell erzeugt. Bitte verwenden Sie das\n"
 "# Einstellungs-Menü im minicom-Programm, um die Einstellungen\n"
 "# zu ändern.\n"
 
-#: src/rwconf.c:252
+#: src/rwconf.c:253
 #, c-format
 msgid "Memory allocation failed.\n"
 msgstr "Speicheranforderung fehlgeschlagen.\n"
 
-#: src/rwconf.c:321
+#: src/rwconf.c:322
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
 msgstr "** Die Zeile %d in der Konfigurationsdatei »%s« ist nicht korrekt.\n"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "global"
 msgstr "global"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "personal"
 msgstr "persönlich"
 
@@ -1743,11 +1719,8 @@ msgid "Please enter file names"
 msgstr "Bitte geben Sie die Dateinamen ein"
 
 #: src/updown.c:288
-#, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
-msgstr ""
-"Kein Hauptspeicher mehr verfügbar: Das Erzeugen eines neuen Prozesses ist "
-"nicht möglich"
+msgstr "Kein Hauptspeicher für die Kommandozeile verfügbar"
 
 #: src/updown.c:300
 #, c-format
@@ -1771,14 +1744,13 @@ msgstr ""
 " Fertig: Drücken Sie eine beliebige Taste zum Fortfahren ..."
 
 #: src/updown.c:474
-#, fuzzy
 msgid "Cannot create lockfile!"
-msgstr "Kann die Lock-Datei nicht erneut anlegen"
+msgstr "Kann die Lock-Datei nicht  anlegen"
 
 #: src/updown.c:488
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot create lockfile for %s: %s\n"
-msgstr "Die Lock-Datei kann nicht angelegt werden.\n"
+msgstr "Die Lock-Datei für %s kann nicht angelegt werden: %s\n"
 
 # XXX
 #: src/updown.c:635
@@ -1823,9 +1795,7 @@ msgstr "Es ist keine termcap-Datenbank vorhanden\n"
 #: src/window.c:1955
 #, c-format
 msgid "No cursor motion capability (cm)\n"
-msgstr ""
-"In der Terminal-Beschreibung ist die Fähigkeit den Cursor zu bewegen (cm) "
-"nicht enthalten\n"
+msgstr "In der Terminal-Beschreibung ist die Fähigkeit den Cursor zu bewegen (cm) nicht enthalten\n"
 
 #: src/window.c:1964
 #, c-format
@@ -1836,57 +1806,3 @@ msgstr "Die Zeilenzahl des Terminals ist unbekannt\n"
 #, c-format
 msgid "Number of terminal columns unknown\n"
 msgstr "Die Spaltenzahl des Terminals ist unbekannt\n"
-
-#~ msgid "Old dialdir copied as %s.%hd"
-#~ msgstr "Das alte Telefonbuch wurde als »%s.%hd« kopiert"
-
-#~ msgid " Paste file.........Y"
-#~ msgstr " Datei einfügen.....Y"
-
-#~ msgid "| scroll Back........B"
-#~ msgstr "| zurückblättern.....B"
-
-#~ msgid "Resize not supported, screen may be messed up!"
-#~ msgstr ""
-#~ "Größenanpassung nicht unterstützt - der Bildaufbau kann fehlerhaft sein"
-
-#~ msgid "minicom: there is no global configuration file %s\n"
-#~ msgstr "minicom: Die globale Konfigurationsdatei »%s« existiert nicht\n"
-
-#~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
-#~ msgstr ""
-#~ "Bitten Sie Ihren Systemverwalter mittels »minicom -s« eine "
-#~ "Konfigurationsdatei zu erstellen.\n"
-
-#~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
-#~ msgstr ""
-#~ "minicom: WARNUNG: Keine Konfigurationsdatei gefunden, verwende die "
-#~ "Standardeinstellungen\n"
-
-#~ msgid "You are not allowed to create a configuration"
-#~ msgstr "Sie dürfen keine neue Konfiguration erstellen"
-
-#~ msgid "minicom: -s switch needs root privilige\n"
-#~ msgstr "minicom: Die Option »-s« muss mit root-Rechten aufgerufen werden\n"
-
-#~ msgid ""
-#~ "minicom: WARNING: please don't run minicom as root when not maintaining\n"
-#~ "                  it (with the -s switch) since all changes to the\n"
-#~ "                  configuration will be GLOBAL !.\n"
-#~ msgstr ""
-#~ "minicom: WARNUNG: Bitte verwenden Sie minicom nicht als root-Benutzer,\n"
-#~ "                  wenn Sie nicht die Konfiguration (mit der Option -s)\n"
-#~ "                  ändern. Alle Änderungen, die Sie als root an der\n"
-#~ "                  Konfiguration vornehmen, sind GLOBAL!\n"
-
-#~ msgid "Sorry %s. You are not allowed to use configuration %s.\n"
-#~ msgstr ""
-#~ "Entschuldigung, %s: Sie dürfen die Konfiguration »%s« nicht ändern.\n"
-
-#~ msgid "Ask your sysadmin to add your name to %s\n"
-#~ msgstr ""
-#~ "Bitte Sie Ihren Systemverwalter Ihren Namen in die Datei »%s« "
-#~ "aufzunehmen.\n"
-
-#~ msgid "Minicom: Device disappeared, aborting!\n"
-#~ msgstr "Minicom: Gerät ist verschwunden - Abbruch!\n"
