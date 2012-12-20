@@ -1,79 +1,83 @@
 # Japanese translation of Minicom.
-# Copyright (C) 1998-2000 Tomohiro KUBOTA
-# FIRST AUTHOR <kubota@debian.or.jp>, 1998.
+# Copyright (C) 1998, 1999, 2000 Tomohiro KUBOTA, 2012 Takeshi Hamasaki
+# This file is distributed under the same license as the minicom package.
+# Tomohiro KUBOTA <kubota@debian.or.jp>, 1998.
+# Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: minicom-1.83\n"
+"Project-Id-Version: minicom-2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2012-12-01 17:00+0100\n"
-"PO-Revision-Date: 2001-01-04 18:21+09:00\n"
-"Last-Translator: Tomohiro KUBOTA <kubota@debian.or.jp>\n"
-"Language-Team:\tJapanese\n"
-"Language: \n"
+"POT-Creation-Date: 2012-12-01 17:43+0100\n"
+"PO-Revision-Date: 2012-12-20 23:51+0900\n"
+"Last-Translator: Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>\n"
+"Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=euc-jp\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: /factory/ja-po/minicom/minicom-2.6.1.90\n"
 
 # c-format(have percent)
 #: src/config.c:75
 #, c-format
 msgid "minicom: cannot open macro file %s\n"
-msgstr "minicom: ¥Ş¥¯¥í¥Õ¥¡¥¤¥ë %s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó¡£\n"
+msgstr "minicom: ãƒã‚¯ãƒ­ãƒ•ã‚¡ã‚¤ãƒ« %s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ã€‚\n"
 
 #: src/config.c:245
 msgid " A - File name (empty=disable) :"
-msgstr " A - ¥Õ¥¡¥¤¥ëÌ¾ (¶õ=¥í¥°¤ò¤È¤é¤Ê¤¤) :"
+msgstr " A - ãƒ•ã‚¡ã‚¤ãƒ«å (ç©º=ãƒ­ã‚°ã‚’ã¨ã‚‰ãªã„) :"
 
 #: src/config.c:246
 msgid " B - Log connects and hangups  :"
-msgstr " B - ÀÜÂ³/ÀÚÃÇ¤òµ­Ï¿¤¹¤ë            :"
+msgstr " B - æ¥ç¶š/åˆ‡æ–­ã‚’è¨˜éŒ²ã™ã‚‹            :"
 
 #: src/config.c:247
 msgid " C - Log file transfers        :"
-msgstr " C - ¥Õ¥¡¥¤¥ëÅ¾Á÷¤òµ­Ï¿¤¹¤ë         :"
+msgstr " C - ãƒ•ã‚¡ã‚¤ãƒ«è»¢é€ã‚’è¨˜éŒ²ã™ã‚‹         :"
 
 # wputs
 #: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:646
-#: src/config.c:1184 src/dial.c:1155
+#: src/config.c:1191 src/dial.c:1155
 msgid "Change which setting?"
-msgstr "¤É¤ÎÀßÄê¤òÊÑ¹¹¤·¤Ş¤¹¤«?"
+msgstr "ã©ã®è¨­å®šã‚’å¤‰æ›´ã—ã¾ã™ã‹?"
 
 #: src/config.c:252
 msgid "Logging options"
-msgstr "¥í¥°(µ­Ï¿)¥ª¥×¥·¥ç¥ó"
+msgstr "ãƒ­ã‚°(è¨˜éŒ²)ã‚ªãƒ—ã‚·ãƒ§ãƒ³"
 
 #: src/config.c:294
 msgid " A - Download directory :"
-msgstr " A - ¥À¥¦¥ó¥í¡¼¥ÉÀè¥Ç¥£¥ì¥¯¥È¥ê :"
+msgstr " A - ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª :"
 
 #: src/config.c:295
 msgid " B - Upload directory   :"
-msgstr " B - ¥¢¥Ã¥×¥í¡¼¥É¸µ¥Ç¥£¥ì¥¯¥È¥ê :"
+msgstr " B - ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰å…ƒãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª :"
 
 #: src/config.c:296
 msgid " C - Script directory   :"
-msgstr " C - ¥¹¥¯¥ê¥×¥È¥Ç¥£¥ì¥¯¥È¥ê     :"
+msgstr " C - ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª     :"
 
 #: src/config.c:297
 msgid " D - Script program     :"
-msgstr " D - ¥¹¥¯¥ê¥×¥È¥×¥í¥°¥é¥à       :"
+msgstr " D - ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ—ãƒ­ã‚°ãƒ©ãƒ        :"
 
 #: src/config.c:298
 msgid " E - Kermit program     :"
-msgstr " E - Kermit ¥×¥í¥°¥é¥à          :"
+msgstr " E - Kermit ãƒ—ãƒ­ã‚°ãƒ©ãƒ           :"
 
 #: src/config.c:300
 msgid " F - Logging options"
-msgstr " F - ¥í¥°(µ­Ï¿)¥ª¥×¥·¥ç¥ó"
+msgstr " F - ãƒ­ã‚°(è¨˜éŒ²)ã‚ªãƒ—ã‚·ãƒ§ãƒ³"
 
 #: src/config.c:355 src/rwconf.c:114 src/rwconf.c:147 src/rwconf.c:148
 msgid "Yes"
-msgstr "¤Ï¤¤  "
+msgstr "ã¯ã„  "
 
 #: src/config.c:355
 msgid "No "
-msgstr "¤¤¤¤¤¨"
+msgstr "ã„ã„ãˆ"
 
 #: src/config.c:430
 msgid "M  Zmodem download string activates..."
@@ -81,20 +85,20 @@ msgstr "M  Zmodem download string activates..."
 
 #: src/config.c:431
 msgid "N  Use filename selection window......"
-msgstr "N  ¥Õ¥¡¥¤¥ëÌ¾ÁªÂò¥¦¥£¥ó¥É¥¦¤ò»È¤¦¤«..."
+msgstr "N  ãƒ•ã‚¡ã‚¤ãƒ«åé¸æŠã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’ä½¿ã†ã‹..."
 
 #: src/config.c:432
 msgid "O  Prompt for download directory......"
-msgstr "O  ¥À¥¦¥ó¥í¡¼¥É¥Ç¥£¥ì¥¯¥È¥ê¤ò¿Ò¤Í¤ë..."
+msgstr "O  ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å°‹ã­ã‚‹..."
 
 #: src/config.c:433
 msgid "Change which setting? (SPACE to delete)"
-msgstr "¤É¤ÎÀßÄê¤òÊÑ¹¹¤·¤Ş¤¹¤«? (SPACE ¤Çºï½ü)"
+msgstr "ã©ã®è¨­å®šã‚’å¤‰æ›´ã—ã¾ã™ã‹? (SPACE ã§å‰Šé™¤)"
 
 # wputs
 #: src/config.c:436
 msgid "     Name             Program"
-msgstr "     Ì¾Á°          ¥×¥í¥°¥é¥à"
+msgstr "     åå‰          ãƒ—ãƒ­ã‚°ãƒ©ãƒ "
 
 #. TRANSLATORS:
 #. * Name: Protocol sends filename internally
@@ -104,20 +108,20 @@ msgstr "     Ì¾Á°          ¥×¥í¥°¥é¥à"
 #. * Multi: Protocol can transfer multiple files at once
 #: src/config.c:445
 msgid "Name U/D FullScr IO-Red. Multi"
-msgstr "Name U/D Á´²èÌÌ  IO-Red. Ê£¿ô "
+msgstr "Name U/D å…¨ç”»é¢  IO-Red. è¤‡æ•° "
 
 # wputs
 #: src/config.c:476
 msgid "Delete which protocol? "
-msgstr "¤É¤Î¥×¥í¥È¥³¥ë¤òºï½ü¤·¤Ş¤¹¤«?"
+msgstr "ã©ã®ãƒ—ãƒ­ãƒˆã‚³ãƒ«ã‚’å‰Šé™¤ã—ã¾ã™ã‹?"
 
 #: src/config.c:537
 msgid " A -    Serial Device      :"
-msgstr " A -    ¥·¥ê¥¢¥ë¥Ç¥Ğ¥¤¥¹   :"
+msgstr " A -    ã‚·ãƒªã‚¢ãƒ«ãƒ‡ãƒã‚¤ã‚¹   :"
 
 #: src/config.c:538
 msgid " B - Lockfile Location     :"
-msgstr " B - ¥í¥Ã¥¯¥Õ¥¡¥¤¥ë¤Î°ÌÃÖ  :"
+msgstr " B - ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ã®ä½ç½®  :"
 
 #: src/config.c:539
 msgid " C -   Callin Program      :"
@@ -129,91 +133,91 @@ msgstr " D -  Callout Program      :"
 
 #: src/config.c:541
 msgid " E -    Bps/Par/Bits       :"
-msgstr " E - Â®ÅÙ/¥Ñ¥ê¥Æ¥£/¥Ó¥Ã¥È  :"
+msgstr " E - é€Ÿåº¦/ãƒ‘ãƒªãƒ†ã‚£/ãƒ“ãƒƒãƒˆ  :"
 
 #: src/config.c:542
 msgid " F - Hardware Flow Control :"
-msgstr " F - ¥Ï¡¼¥É¥¦¥§¥¢Î®¤ìÀ©¸æ  :"
+msgstr " F - ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢æµã‚Œåˆ¶å¾¡  :"
 
 #: src/config.c:543
 msgid " G - Software Flow Control :"
-msgstr " G - ¥½¥Õ¥È¥¦¥§¥¢Î®¤ìÀ©¸æ  :"
+msgstr " G - ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢æµã‚Œåˆ¶å¾¡  :"
 
 #: src/config.c:616
 msgid "DTE speed "
-msgstr "DTE Â®ÅÙ  "
+msgstr "DTE é€Ÿåº¦  "
 
 #: src/config.c:618
 msgid "line speed"
-msgstr "¥é¥¤¥óÂ®ÅÙ"
+msgstr "ãƒ©ã‚¤ãƒ³é€Ÿåº¦"
 
 #: src/config.c:626
 msgid " A - Init string ........."
-msgstr " A - ½é´ü²½Ê¸»úÎó........."
+msgstr " A - åˆæœŸåŒ–æ–‡å­—åˆ—........."
 
 #: src/config.c:627
 msgid " B - Reset string ........"
-msgstr " B - ¥ê¥»¥Ã¥ÈÊ¸»úÎó......."
+msgstr " B - ãƒªã‚»ãƒƒãƒˆæ–‡å­—åˆ—......."
 
 #: src/config.c:628
 msgid " C - Dialing prefix #1...."
-msgstr " C - ¥À¥¤¥ä¥ëÁ°ÃÖÊ¸»úÎó1.."
+msgstr " C - ãƒ€ã‚¤ãƒ¤ãƒ«å‰ç½®æ–‡å­—åˆ—1.."
 
 #: src/config.c:629
 msgid " D - Dialing suffix #1...."
-msgstr " D - ¥À¥¤¥ä¥ë¸åÃÖÊ¸»úÎó1.."
+msgstr " D - ãƒ€ã‚¤ãƒ¤ãƒ«å¾Œç½®æ–‡å­—åˆ—1.."
 
 #: src/config.c:630
 msgid " E - Dialing prefix #2...."
-msgstr " E - ¥À¥¤¥ä¥ëÁ°ÃÖÊ¸»úÎó2.."
+msgstr " E - ãƒ€ã‚¤ãƒ¤ãƒ«å‰ç½®æ–‡å­—åˆ—2.."
 
 #: src/config.c:631
 msgid " F - Dialing suffix #2...."
-msgstr " F - ¥À¥¤¥ä¥ë¸åÃÖÊ¸»úÎó2.."
+msgstr " F - ãƒ€ã‚¤ãƒ¤ãƒ«å¾Œç½®æ–‡å­—åˆ—2.."
 
 #: src/config.c:632
 msgid " G - Dialing prefix #3...."
-msgstr " G - ¥À¥¤¥ä¥ëÁ°ÃÖÊ¸»úÎó3.."
+msgstr " G - ãƒ€ã‚¤ãƒ¤ãƒ«å‰ç½®æ–‡å­—åˆ—3.."
 
 #: src/config.c:633
 msgid " H - Dialing suffix #3...."
-msgstr " H - ¥À¥¤¥ä¥ë¸åÃÖÊ¸»úÎó3.."
+msgstr " H - ãƒ€ã‚¤ãƒ¤ãƒ«å¾Œç½®æ–‡å­—åˆ—3.."
 
 #: src/config.c:634
 msgid " I - Connect string ......"
-msgstr " I - ÀÜÂ³»ş¤ÎÊ¸»úÎó......."
+msgstr " I - æ¥ç¶šæ™‚ã®æ–‡å­—åˆ—......."
 
 #: src/config.c:635
 msgid " J - No connect strings .."
-msgstr " J - ÈóÀÜÂ³»ş¤ÎÊ¸»úÎó....."
+msgstr " J - éæ¥ç¶šæ™‚ã®æ–‡å­—åˆ—....."
 
 #: src/config.c:636
 msgid " K - Hang-up string ......"
-msgstr " K - ¥Ï¥ó¥°¥¢¥Ã¥×Ê¸»úÎó..."
+msgstr " K - ãƒãƒ³ã‚°ã‚¢ãƒƒãƒ—æ–‡å­—åˆ—..."
 
 #: src/config.c:637
 msgid " L - Dial cancel string .."
-msgstr " L - ¥À¥¤¥ä¥ëÃæ»ßÊ¸»úÎó..."
+msgstr " L - ãƒ€ã‚¤ãƒ¤ãƒ«ä¸­æ­¢æ–‡å­—åˆ—..."
 
 #: src/config.c:638
 msgid " M - Dial time ..........."
-msgstr " M - ¥À¥¤¥ä¥ë»ş´Ö........."
+msgstr " M - ãƒ€ã‚¤ãƒ¤ãƒ«æ™‚é–“........."
 
 #: src/config.c:639
 msgid " N - Delay before redial ."
-msgstr " N - ¥ê¥À¥¤¥ä¥ëÂÔ¤Á»ş´Ö..."
+msgstr " N - ãƒªãƒ€ã‚¤ãƒ¤ãƒ«å¾…ã¡æ™‚é–“..."
 
 #: src/config.c:640
 msgid " O - Number of tries ....."
-msgstr " O - ¥ê¥À¥¤¥ä¥ë²ó¿ô......."
+msgstr " O - ãƒªãƒ€ã‚¤ãƒ¤ãƒ«å›æ•°......."
 
 #: src/config.c:641
 msgid " P - DTR drop time (0=no)."
-msgstr " P - DTR drop »ş´Ö (0=no)."
+msgstr " P - DTR drop æ™‚é–“ (0=no)."
 
 #: src/config.c:642
 msgid " Q - Auto bps detect ....."
-msgstr " Q - ¼«Æ° bps ¸¡½Ğ........"
+msgstr " Q - è‡ªå‹• bps æ¤œå‡º........"
 
 #: src/config.c:643
 msgid " R - Modem has DCD line .."
@@ -221,7 +225,7 @@ msgstr " R - Modem has DCD line .."
 
 #: src/config.c:644
 msgid " S - Status line shows ..."
-msgstr " S - ¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥óÉ½¼¨."
+msgstr " S - ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³è¡¨ç¤º."
 
 #: src/config.c:645
 msgid " T - Multi-line untag ...."
@@ -230,126 +234,127 @@ msgstr " T - Multi-line untag ...."
 # wtitle
 #: src/config.c:657
 msgid "Modem and dialing parameter setup"
-msgstr "¥â¥Ç¥à¤È¥À¥¤¥ä¥ë¤ÎÀßÄê"
+msgstr "ãƒ¢ãƒ‡ãƒ ã¨ãƒ€ã‚¤ãƒ¤ãƒ«ã®è¨­å®š"
 
 # c-format(wprintf)
 #: src/config.c:690
 #, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
-msgstr "      (Return ¤« Esc ¤Ç½ªÎ»)"
+msgstr "      (Return ã‹ Esc ã§çµ‚äº†)"
 
 #: src/config.c:828
 msgid " A - Command key is         :"
-msgstr " A - ¥³¥Ş¥ó¥É¤Î¤¿¤á¤Î¥­¡¼   :"
+msgstr " A - ã‚³ãƒãƒ³ãƒ‰ã®ãŸã‚ã®ã‚­ãƒ¼   :"
 
 #: src/config.c:829
 msgid " B - Backspace key sends    :"
-msgstr " B - BS ¥­¡¼¤¬Á÷¤ë¥³¡¼¥É    :"
+msgstr " B - BS ã‚­ãƒ¼ãŒé€ã‚‹ã‚³ãƒ¼ãƒ‰    :"
 
 #: src/config.c:830
 msgid " C - Status line is         :"
-msgstr " C - ¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥óÉ½¼¨   :"
+msgstr " C - ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³è¡¨ç¤º   :"
 
 #: src/config.c:831
 msgid " D - Alarm sound            :"
-msgstr " D - ·Ù¹ğ²»                 :"
+msgstr " D - è­¦å‘ŠéŸ³                 :"
 
 #: src/config.c:832
 msgid " E - Foreground Color (menu):"
-msgstr " E - Á°·Ê¿§ (¥á¥Ë¥å¡¼)      :"
+msgstr " E - å‰æ™¯è‰² (ãƒ¡ãƒ‹ãƒ¥ãƒ¼)      :"
 
 #: src/config.c:833
 msgid " F - Background Color (menu):"
-msgstr " F - ÇØ·Ê¿§ (¥á¥Ë¥å¡¼)      :"
+msgstr " F - èƒŒæ™¯è‰² (ãƒ¡ãƒ‹ãƒ¥ãƒ¼)      :"
 
 #: src/config.c:834
 msgid " G - Foreground Color (term):"
-msgstr " G - Á°·Ê¿§ (¥¿¡¼¥ß¥Ê¥ë)    :"
+msgstr " G - å‰æ™¯è‰² (ã‚¿ãƒ¼ãƒŸãƒŠãƒ«)    :"
 
 #: src/config.c:835
 msgid " H - Background Color (term):"
-msgstr " H - ÇØ·Ê¿§ (¥¿¡¼¥ß¥Ê¥ë)    :"
+msgstr " H - èƒŒæ™¯è‰² (ã‚¿ãƒ¼ãƒŸãƒŠãƒ«)    :"
 
 #: src/config.c:836
 msgid " I - Foreground Color (stat):"
-msgstr " I - Á°·Ê¿§ (¾õÂÖ)          :"
+msgstr " I - å‰æ™¯è‰² (çŠ¶æ…‹)          :"
 
 #: src/config.c:837
 msgid " J - Background Color (stat):"
-msgstr " J - ÇØ·Ê¿§ (¾õÂÖ)          :"
+msgstr " J - èƒŒæ™¯è‰² (çŠ¶æ…‹)          :"
 
 #: src/config.c:838
 msgid " K - History Buffer Size    :"
-msgstr " K - ¥Ò¥¹¥È¥êÎÎ°è¥µ¥¤¥º     :"
+msgstr " K - ãƒ’ã‚¹ãƒˆãƒªé ˜åŸŸã‚µã‚¤ã‚º     :"
 
 #: src/config.c:839
 msgid " L - Macros file            :"
-msgstr " L - ¥Ş¥¯¥í¥Õ¥¡¥¤¥ë         :"
+msgstr " L - ãƒã‚¯ãƒ­ãƒ•ã‚¡ã‚¤ãƒ«         :"
 
 #: src/config.c:840
 msgid " N - Macros enabled         :"
-msgstr " N - ¥Ş¥¯¥í¤ò»È¤¦¤«         :"
+msgstr " N - ãƒã‚¯ãƒ­ã‚’ä½¿ã†ã‹         :"
 
 #: src/config.c:841
 msgid " O - Character conversion   :"
-msgstr " O - Ê¸»úÊÑ´¹               :"
+msgstr " O - æ–‡å­—å¤‰æ›               :"
 
 #: src/config.c:842
 #, fuzzy
 msgid " P - Add linefeed           :"
-msgstr " J -  ¹ÔËöÀŞ¤êÊÖ¤·        :"
+msgstr " J -  è¡Œæœ«æŠ˜ã‚Šè¿”ã—        :"
 
 #: src/config.c:843
-#, fuzzy
 msgid " Q - Local echo             :"
-msgstr " D -  ¥í¡¼¥«¥ë¥¨¥³¡¼      :"
+msgstr " Q -  ãƒ­ãƒ¼ã‚«ãƒ«ã‚¨ã‚³ãƒ¼      :"
 
 #: src/config.c:844
-#, fuzzy
 msgid " R - Line Wrap              :"
-msgstr " J -  ¹ÔËöÀŞ¤êÊÖ¤·        :"
+msgstr " R -  è¡Œæœ«æŠ˜ã‚Šè¿”ã—        :"
 
 #: src/config.c:845
-#, fuzzy
 msgid " S - Hex Display            :"
-msgstr " E -  ¥¹¥¯¥ê¥×¥È          :"
+msgstr " S - 16é€²è¡¨ç¤º                :"
 
-#: src/config.c:846 src/config.c:1594
+#: src/config.c:846
+msgid " T - Add carriage return    :"
+msgstr ""
+
+#: src/config.c:847 src/config.c:1601
 msgid "Change which setting?  (Esc to exit)"
-msgstr "¤É¤ÎÀßÄê¤òÊÑ¹¹¤·¤Ş¤¹¤« (Esc ¤Ç½ªÎ»)"
+msgstr "ã©ã®è¨­å®šã‚’å¤‰æ›´ã—ã¾ã™ã‹ (Esc ã§çµ‚äº†)"
 
 # wtitle, wselect
-#: src/config.c:850 src/config.c:1366
+#: src/config.c:851 src/config.c:1373
 msgid "Screen and keyboard"
-msgstr "²èÌÌ¤È¥­¡¼¥Ü¡¼¥É"
+msgstr "ç”»é¢ã¨ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰"
 
 # c-format(wprintf)
-#: src/config.c:869
+#: src/config.c:870
 msgid " M - Edit Macros\n"
-msgstr " M - ¥Ş¥¯¥íÊÔ½¸\n"
+msgstr " M - ãƒã‚¯ãƒ­ç·¨é›†\n"
 
 # c-format(werror)
-#: src/config.c:896
+#: src/config.c:898
 msgid "You can't change colors in black and white mode"
-msgstr "Çò¹õ¥â¡¼¥É»ş¤Ë¤Ï¿§¤òÊÑ¤¨¤ë¤³¤È¤Ï¤Ç¤­¤Ş¤»¤ó"
+msgstr "ç™½é»’ãƒ¢ãƒ¼ãƒ‰æ™‚ã«ã¯è‰²ã‚’å¤‰ãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“"
 
 # c-format(werror)
-#: src/config.c:908
+#: src/config.c:910
 msgid "Menu foreground == background color, change!"
-msgstr "¥á¥Ë¥å¡¼¤ÎÁ°·Ê¿§¤ÈÇØ·Ê¿§¤¬Æ±¤¸¤Ç¤¹¡£"
+msgstr "ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®å‰æ™¯è‰²ã¨èƒŒæ™¯è‰²ãŒåŒã˜ã§ã™ã€‚"
 
 # c-format(werror)
-#: src/config.c:917
+#: src/config.c:919
 msgid "Terminal foreground == background color, change!"
-msgstr "¥¿¡¼¥ß¥Ê¥ë¤ÎÁ°·Ê¿§¤ÈÇØ·Ê¿§¤¬Æ±¤¸¤Ç¤¹¡£"
+msgstr "ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®å‰æ™¯è‰²ã¨èƒŒæ™¯è‰²ãŒåŒã˜ã§ã™ã€‚"
 
 # wtitle
-#: src/config.c:929
+#: src/config.c:931
 msgid "History Buffer Size"
-msgstr "¥Ò¥¹¥È¥êÎÎ°è¤Î¥µ¥¤¥º"
+msgstr "ãƒ’ã‚¹ãƒˆãƒªé ˜åŸŸã®ã‚µã‚¤ã‚º"
 
 # wputs
-#: src/config.c:930
+#: src/config.c:932
 #, fuzzy
 msgid ""
 "\n"
@@ -360,18 +365,18 @@ msgid ""
 "                Hit a key to Continue... "
 msgstr ""
 "\n"
-"  ¥Ò¥¹¥È¥êÎÎ°è¤Î¥µ¥¤¥º¤¬ÊÑ¹¹¤µ¤ì¤Ş¤·¤¿¡£\n"
-"  ÀßÄê¥Õ¥¡¥¤¥ë¤òÊİÂ¸¤·¤Æ¡¢minicom ¤òºÆµ¯Æ°¤¹¤ë¤È\n"
-"  ÊÑ¹¹¤¬Í­¸ú¤Ë¤Ê¤ê¤Ş¤¹¡£\n"
+"  ãƒ’ã‚¹ãƒˆãƒªé ˜åŸŸã®ã‚µã‚¤ã‚ºãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸã€‚\n"
+"  è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿å­˜ã—ã¦ã€minicom ã‚’å†èµ·å‹•ã™ã‚‹ã¨\n"
+"  å¤‰æ›´ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã™ã€‚\n"
 "\n"
-"  ²¿¤«¥­¡¼¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤..."
+"  ä½•ã‹ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ãã ã•ã„..."
 
 # wtitle
-#: src/config.c:947
-msgid "Program new command key"
-msgstr "¥³¥Ş¥ó¥Éµ¯Æ°¥­¡¼¤ÎÀßÄê"
-
 #: src/config.c:949
+msgid "Program new command key"
+msgstr "ã‚³ãƒãƒ³ãƒ‰èµ·å‹•ã‚­ãƒ¼ã®è¨­å®š"
+
+#: src/config.c:951
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -384,466 +389,448 @@ msgid ""
 " Press new command key: "
 msgstr ""
 
-#: src/config.c:958
-msgid "Meta-8th bit "
-msgstr "META (Âè£¸¥Ó¥Ã¥È)"
-
 #: src/config.c:960
+msgid "Meta-8th bit "
+msgstr "META (ç¬¬ï¼˜ãƒ“ãƒƒãƒˆ)"
+
+#: src/config.c:962
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
 # P_STATLINE
-#: src/config.c:994 src/config.c:1237
+#: src/config.c:996 src/config.c:1244
 msgid "disabled"
-msgstr "¶Ø»ß"
+msgstr "ç¦æ­¢"
 
 # P_STATLINE, mpars
-#: src/config.c:997 src/config.c:1240 src/rwconf.c:146
+#: src/config.c:999 src/config.c:1247 src/rwconf.c:146
 msgid "enabled"
-msgstr "µö²Ä"
+msgstr "è¨±å¯"
 
 # c-format(werror)
-#: src/config.c:1112
+#: src/config.c:1114
 msgid "ERROR: you do not have permission to create a file there!"
-msgstr "¥¨¥é¡¼: ¤½¤³¤Ë¥Õ¥¡¥¤¥ë¤òºî¤ë¤³¤È¤Ïµö²Ä¤µ¤ì¤Æ¤¤¤Ş¤»¤ó¡£"
+msgstr "ã‚¨ãƒ©ãƒ¼: ãã“ã«ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œã‚‹ã“ã¨ã¯è¨±å¯ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚"
 
 # c-format(have percent)
-#: src/config.c:1118
+#: src/config.c:1120
 #, c-format
 msgid "ERROR: cannot open macro file %s"
-msgstr "¥¨¥é¡¼: ¥Ş¥¯¥í¥Õ¥¡¥¤¥ë %s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó¡£"
+msgstr "ã‚¨ãƒ©ãƒ¼: ãƒã‚¯ãƒ­ãƒ•ã‚¡ã‚¤ãƒ« %s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ã€‚"
 
 # c-format(werror)
-#: src/config.c:1124
+#: src/config.c:1126
 msgid "Reading macros"
-msgstr "¥Ş¥¯¥í¤òÆÉ¤ß¹ş¤ß¤Ş¤¹"
+msgstr "ãƒã‚¯ãƒ­ã‚’èª­ã¿è¾¼ã¿ã¾ã™"
 
-#: src/config.c:1178
+#: src/config.c:1185
 #, fuzzy
 msgid " A -      Terminal emulation :"
-msgstr " A - ¥¿¡¼¥ß¥Ê¥ë¤Î¼ïÎà    :"
+msgstr " A - ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®ç¨®é¡    :"
 
-#: src/config.c:1179
+#: src/config.c:1186
 #, fuzzy
 msgid " B -     Backspace key sends :"
-msgstr " B - BS ¥­¡¼¤¬Á÷¤ë¥³¡¼¥É :"
+msgstr " B - BS ã‚­ãƒ¼ãŒé€ã‚‹ã‚³ãƒ¼ãƒ‰ :"
 
-#: src/config.c:1180
+#: src/config.c:1187
 #, fuzzy
 msgid " C -          Status line is :"
-msgstr " C - ¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥ó    :"
+msgstr " C - ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³    :"
 
-#: src/config.c:1181
-#, fuzzy
+#: src/config.c:1188
 msgid " D -   Newline tx delay (ms) :"
-msgstr " D -  ²ş¹Ô¤ÎÃÙ±ä(¥ß¥êÉÃ) :"
+msgstr " D -  æ”¹è¡Œã®é€ä¿¡é…å»¶(ãƒŸãƒªç§’) :"
 
-#: src/config.c:1182
+#: src/config.c:1189
 msgid " E -          ENQ answerback :"
 msgstr ""
 
-#: src/config.c:1183
-#, fuzzy
+#: src/config.c:1190
 msgid " F - Character tx delay (ms) :"
-msgstr " D -  ²ş¹Ô¤ÎÃÙ±ä(¥ß¥êÉÃ) :"
+msgstr " F - æ–‡å­—ã®é€ä¿¡é…å»¶(ãƒŸãƒªç§’)  :"
 
 # wtitle
-#: src/config.c:1187
+#: src/config.c:1194
 msgid "Terminal settings"
-msgstr "¥¿¡¼¥ß¥Ê¥ë¤ÎÀßÄê"
+msgstr "ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®è¨­å®š"
 
 # c-format(have percent)
-#: src/config.c:1291
+#: src/config.c:1298
 #, c-format
 msgid "Cannot write to %s"
-msgstr "%s ¤Ë½ñ¤­¹ş¤á¤Ş¤»¤ó¡£"
+msgstr "%s ã«æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã€‚"
 
 # c-format(werror)
-#: src/config.c:1298
+#: src/config.c:1305
 msgid "Configuration saved"
-msgstr "ÀßÄê¤òÊİÂ¸¤·¤Ş¤·¤¿¡£"
+msgstr "è¨­å®šã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚"
 
 # c-format(werror)
-#: src/config.c:1313
+#: src/config.c:1320
 msgid "ERROR: Macros have changed but no filename is set!"
-msgstr "¥¨¥é¡¼: ¥Ş¥¯¥í¤¬ÊÑ¹¹¤µ¤ì¤Ş¤·¤¿¤¬¥Õ¥¡¥¤¥ëÌ¾¤¬¤¢¤ê¤Ş¤»¤ó¡£"
+msgstr "ã‚¨ãƒ©ãƒ¼: ãƒã‚¯ãƒ­ãŒå¤‰æ›´ã•ã‚Œã¾ã—ãŸãŒãƒ•ã‚¡ã‚¤ãƒ«åãŒã‚ã‚Šã¾ã›ã‚“ã€‚"
 
 # c-format(have percent)
-#: src/config.c:1317
+#: src/config.c:1324
 #, c-format
 msgid "Cannot write macros file %s"
-msgstr "¥Ş¥¯¥í¥Õ¥¡¥¤¥ë %s ¤Ë½ñ¤­¹ş¤á¤Ş¤»¤ó¡£"
+msgstr "ãƒã‚¯ãƒ­ãƒ•ã‚¡ã‚¤ãƒ« %s ã«æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã€‚"
 
 # c-format(werror)
-#: src/config.c:1323
+#: src/config.c:1330
 msgid "Macros saved"
-msgstr "¥Ş¥¯¥í¤òÊİÂ¸¤·¤Ş¤·¤¿¡£"
+msgstr "ãƒã‚¯ãƒ­ã‚’ä¿å­˜ã—ã¾ã—ãŸã€‚"
 
 # input
-#: src/config.c:1340
+#: src/config.c:1347
 msgid "Give name to save this configuration?"
-msgstr "¤³¤ÎÀßÄê¤òÊİÂ¸¤¹¤ë¥Õ¥¡¥¤¥ëÌ¾"
-
-# wselect
-#: src/config.c:1362
-msgid "Filenames and paths"
-msgstr "¥Õ¥¡¥¤¥ëÌ¾¤È¥Ñ¥¹Ì¾"
-
-# wselect
-#: src/config.c:1363
-msgid "File transfer protocols"
-msgstr "¥Õ¥¡¥¤¥ëÅ¾Á÷¥×¥í¥È¥³¥ë"
-
-# wselect
-#: src/config.c:1364
-msgid "Serial port setup"
-msgstr "¥·¥ê¥¢¥ë¥İ¡¼¥È"
-
-# wselect
-#: src/config.c:1365
-msgid "Modem and dialing"
-msgstr "¥â¥Ç¥à¤È¥À¥¤¥ä¥ë"
-
-# wselect
-#: src/config.c:1368
-msgid "Save setup as.."
-msgstr "¿·µ¬¤ËÀßÄê¤òÊİÂ¸"
+msgstr "ã“ã®è¨­å®šã‚’ä¿å­˜ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«å"
 
 # wselect
 #: src/config.c:1369
-msgid "Exit"
-msgstr "½ªÎ»"
+msgid "Filenames and paths"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«åã¨ãƒ‘ã‚¹å"
 
 # wselect
 #: src/config.c:1370
+msgid "File transfer protocols"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«è»¢é€ãƒ—ãƒ­ãƒˆã‚³ãƒ«"
+
+# wselect
+#: src/config.c:1371
+msgid "Serial port setup"
+msgstr "ã‚·ãƒªã‚¢ãƒ«ãƒãƒ¼ãƒˆ"
+
+# wselect
+#: src/config.c:1372
+msgid "Modem and dialing"
+msgstr "ãƒ¢ãƒ‡ãƒ ã¨ãƒ€ã‚¤ãƒ¤ãƒ«"
+
+# wselect
+#: src/config.c:1375
+msgid "Save setup as.."
+msgstr "æ–°è¦ã«è¨­å®šã‚’ä¿å­˜"
+
+# wselect
+#: src/config.c:1376
+msgid "Exit"
+msgstr "çµ‚äº†"
+
+# wselect
+#: src/config.c:1377
 msgid "Exit from Minicom"
-msgstr "Minicom ¤ò½ªÎ»"
+msgstr "Minicom ã‚’çµ‚äº†"
 
 # c-format(have percent)
-#: src/config.c:1382
+#: src/config.c:1389
 #, c-format
 msgid "Save setup as %s"
-msgstr "\"%s\" ¤ËÀßÄê¤òÊİÂ¸"
+msgstr "\"%s\" ã«è¨­å®šã‚’ä¿å­˜"
 
 # wselect(wtitle)
-#: src/config.c:1388
+#: src/config.c:1395
 msgid "configuration"
-msgstr "ÀßÄê"
+msgstr "è¨­å®š"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "BLACK"
-msgstr "¹õ"
+msgstr "é»’"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "RED"
-msgstr "ÀÖ"
+msgstr "èµ¤"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "GREEN"
-msgstr "ÎĞ"
+msgstr "ç·‘"
 
-#: src/config.c:1397
+#: src/config.c:1404
 msgid "YELLOW"
-msgstr "²«¿§"
+msgstr "é»„è‰²"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "BLUE"
-msgstr "ÀÄ"
+msgstr "é’"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "MAGENTA"
-msgstr "»ç"
+msgstr "ç´«"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "CYAN"
-msgstr "¿å¿§"
+msgstr "æ°´è‰²"
 
-#: src/config.c:1398
+#: src/config.c:1405
 msgid "WHITE"
-msgstr "Çò"
+msgstr "ç™½"
 
 # wtitle
-#: src/config.c:1428
-msgid "Comm Parameters"
-msgstr "ÄÌ¿®¥Ñ¥é¥á¡¼¥¿"
-
-# wputs
-#: src/config.c:1433
-#, fuzzy
-msgid " Speed            Parity      Data\n"
-msgstr ""
-"   Â®ÅÙ          ¥Ñ¥ê¥Æ¥£       ¥Ç¡¼¥¿\n"
-"\n"
-
-# wputs
-#: src/config.c:1434
-#, fuzzy
-msgid " A: <next>        L: None     S: 5\n"
-msgstr " A: 300           L: ¤Ê¤·(N)      S: 5\n"
-
-# wputs
 #: src/config.c:1435
-#, fuzzy
-msgid " B: <prev>        M: Even     T: 6\n"
-msgstr " B: 1200          M: ¶ö¿ô(E)      T: 6\n"
+msgid "Comm Parameters"
+msgstr "é€šä¿¡ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿"
 
 # wputs
-#: src/config.c:1436
-#, fuzzy
-msgid " C:   9600        N: Odd      U: 7\n"
-msgstr " C: 2400          N: ´ñ¿ô(O)      U: 7\n"
-
-# wputs
-#: src/config.c:1437
-#, fuzzy
-msgid " D:  38400        O: Mark     V: 8\n"
-msgstr " D: 4800          O: ¥Ş¡¼¥¯       V: 8\n"
-
-#: src/config.c:1438
-#, fuzzy
-msgid " E: 115200        P: Space\n"
-msgstr " E: 9600          P: ¥¹¥Ú¡¼¥¹\n"
-
 #: src/config.c:1440
-msgid " Stopbits\n"
-msgstr ""
+msgid " Speed            Parity      Data\n"
+msgstr " é€Ÿåº¦           ãƒ‘ãƒªãƒ†ã‚£       ãƒ‡ãƒ¼ã‚¿\n"
 
+# wputs
 #: src/config.c:1441
 #, fuzzy
-msgid " W: 1             Q: 8-N-1\n"
-msgstr "                  Q: 8-N-1\n"
-
-#: src/config.c:1442
-#, fuzzy
-msgid " X: 2             R: 7-E-1\n"
-msgstr "                  R: 7-E-1\n"
-
-#: src/config.c:1444
-msgid " K: Current\n"
-msgstr " K: ¸½ºß\n"
+msgid " A: <next>        L: None     S: 5\n"
+msgstr " A: 300           L: ãªã—(N)      S: 5\n"
 
 # wputs
+#: src/config.c:1442
+#, fuzzy
+msgid " B: <prev>        M: Even     T: 6\n"
+msgstr " B: 1200          M: å¶æ•°(E)      T: 6\n"
+
+# wputs
+#: src/config.c:1443
+msgid " C:   9600        N: Odd      U: 7\n"
+msgstr " C: 9600          N: å¥‡æ•°(O)      U: 7\n"
+
+# wputs
+#: src/config.c:1444
+msgid " D:  38400        O: Mark     V: 8\n"
+msgstr " D: 38400         O: ãƒãƒ¼ã‚¯       V: 8\n"
+
+#: src/config.c:1445
+msgid " E: 115200        P: Space\n"
+msgstr " E: 115200        P: ã‚¹ãƒšãƒ¼ã‚¹\n"
+
 #: src/config.c:1447
+msgid " Stopbits\n"
+msgstr " ã‚¹ãƒˆãƒƒãƒ—ãƒ“ãƒƒãƒˆ\n"
+
+#: src/config.c:1448
+msgid " W: 1             Q: 8-N-1\n"
+msgstr " W: 1             Q: 8-N-1\n"
+
+#: src/config.c:1449
+msgid " X: 2             R: 7-E-1\n"
+msgstr " X: 2             R: 7-E-1\n"
+
+#: src/config.c:1451
+msgid " K: Current\n"
+msgstr " K: ç¾åœ¨\n"
+
+# wputs
+#: src/config.c:1454
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
 msgstr ""
 "\n"
-" Áª¤ó¤Ç²¼¤µ¤¤¡£<Enter> ¤Ç½ªÎ»¡£"
+" é¸ã‚“ã§ä¸‹ã•ã„ã€‚<Enter> ã§çµ‚äº†ã€‚"
 
 # c-format(have percent)
-#: src/config.c:1455
+#: src/config.c:1462
 #, c-format
 msgid "Current: %5s %s%s%s  "
-msgstr "¸½ÀßÄê: %5s %s%s%s  "
+msgstr "ç¾è¨­å®š: %5s %s%s%s  "
 
 # wtitle
-#: src/config.c:1597
+#: src/config.c:1604
 msgid "F1 to F10 Macros"
-msgstr "F1 ¤«¤é F10 ¤Î¥Ş¥¯¥í"
+msgstr "F1 ã‹ã‚‰ F10 ã®ãƒã‚¯ãƒ­"
 
 # wputs
-#: src/config.c:1616
+#: src/config.c:1623
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
-msgstr " (ËŞÎã: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = 1ÉÃÄä»ß, "
+msgstr " (å‡¡ä¾‹: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = 1ç§’åœæ­¢, "
 
-#: src/config.c:1618
-#, fuzzy
+#: src/config.c:1625
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
-msgstr "  \\u = ¥æ¡¼¥¶¡¼Ì¾, \\p = ¥Ñ¥¹¥ï¡¼¥É, \\\\ = \\)"
+msgstr "  \\u = ãƒ¦ãƒ¼ã‚¶ãƒ¼å, \\p = ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰, \\\\ = \\, \\e = ã‚¨ã‚³ãƒ¼åˆ‡æ›¿ãˆ, "
 
-#: src/config.c:1620
-msgid ""
-"  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
+#: src/config.c:1627
+msgid "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 
-#: src/config.c:1622
-msgid ""
-"  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
+#: src/config.c:1629
+msgid "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 
 # P_MACCHG
-#: src/config.c:1637
+#: src/config.c:1644
 msgid "CHANGED"
-msgstr "ÊÑ¹¹¤·¤Ş¤·¤¿"
+msgstr "å¤‰æ›´ã—ã¾ã—ãŸ"
 
 # wtitle
-#: src/config.c:1724
+#: src/config.c:1731
 msgid "Character conversion"
-msgstr "Ê¸»úÊÑ´¹"
+msgstr "æ–‡å­—å¤‰æ›"
 
 # c-format(wprintf)
-#: src/config.c:1729
+#: src/config.c:1736
 msgid " char    in out    char    in out    char    in out    char    in out\n"
-msgstr ""
-" Ê¸»ú    in out    Ê¸»ú    in out    Ê¸»ú    in out    Ê¸»ú    in out\n"
+msgstr " æ–‡å­—    in out    æ–‡å­—    in out    æ–‡å­—    in out    æ–‡å­—    in out\n"
 
 # c-format(wprintf)
-#: src/config.c:1751
+#: src/config.c:1758
 msgid ""
 "\n"
 " A - load table\tB - save table"
 msgstr ""
 "\n"
-" A - ¥í¡¼¥É    \tB - ¥»¡¼¥Ö"
+" A - ãƒ­ãƒ¼ãƒ‰    \tB - ã‚»ãƒ¼ãƒ–"
 
 # c-format(have percent)
-#: src/config.c:1753
+#: src/config.c:1760
 #, c-format
 msgid "\tfile:%s"
-msgstr "\t¥Õ¥¡¥¤¥ë:%s"
+msgstr "\tãƒ•ã‚¡ã‚¤ãƒ«:%s"
 
 # c-format(wprintf)
-#: src/config.c:1754
+#: src/config.c:1761
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
 msgstr ""
 "\n"
-" C - Ê¸»úÊÔ½¸ \tD - ¼¡²èÌÌ     \tE - Á°²èÌÌ     \n"
+" C - æ–‡å­—ç·¨é›† \tD - æ¬¡ç”»é¢     \tE - å‰ç”»é¢     \n"
 
 # c-format(have percent)
-#: src/config.c:1755
+#: src/config.c:1762
 #, c-format
 msgid " F - convert capture: %s\n"
-msgstr " F - µ­Ï¿ (¥­¥ã¥×¥Á¥ã) ¤âÊÑ´¹: %s\n"
+msgstr " F - è¨˜éŒ² (ã‚­ãƒ£ãƒ—ãƒãƒ£) ã‚‚å¤‰æ›: %s\n"
 
 # c-format(have percent)
-#: src/config.c:1770
+#: src/config.c:1777
 #, c-format
 msgid "Load file: %s"
-msgstr "¥í¡¼¥É¥Õ¥¡¥¤¥ëÌ¾: %s"
+msgstr "ãƒ­ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«å: %s"
 
 # c-format(have percent)
-#: src/config.c:1782
+#: src/config.c:1789
 #, c-format
 msgid "Save as file: %s"
-msgstr "¥»¡¼¥Ö¥Õ¥¡¥¤¥ëÌ¾: %s"
+msgstr "ã‚»ãƒ¼ãƒ–ãƒ•ã‚¡ã‚¤ãƒ«å: %s"
 
 # c-format(wprintf)
-#: src/config.c:1793
+#: src/config.c:1800
 msgid "Character to be edited: "
-msgstr "ÊÔ½¸¤¹¤ëÊ¸»ú: "
+msgstr "ç·¨é›†ã™ã‚‹æ–‡å­—: "
 
 # c-format(wprintf)
-#: src/config.c:1801 src/config.c:1813 src/config.c:1825
+#: src/config.c:1808 src/config.c:1820 src/config.c:1832
 msgid "Input character ascii value 0-255"
-msgstr "0-255¤ÎÈÖ¹æ¤òÆşÎÏ¤·¤Æ²¼¤µ¤¤"
+msgstr "0-255ã®ç•ªå·ã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„"
 
 # c-format(have percent)
-#: src/config.c:1807
+#: src/config.c:1814
 #, c-format
 msgid "Change input to: %s"
-msgstr "ÆşÎÏ: %s"
+msgstr "å…¥åŠ›: %s"
 
 # c-format(have percent)
-#: src/config.c:1819
+#: src/config.c:1826
 #, c-format
 msgid "Change output to: %s"
-msgstr "½ĞÎÏ: %s"
+msgstr "å‡ºåŠ›: %s"
 
 # c-format(have percent)
-#: src/config.c:1857
+#: src/config.c:1864
 #, c-format
 msgid "Cannot open conversion table %s"
-msgstr "ÊÑ´¹É½ %s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó"
+msgstr "å¤‰æ›è¡¨ %s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“"
 
 # c-format(have percent)
-#: src/config.c:1871
+#: src/config.c:1878
 #, c-format
 msgid "Cannot write conversion table %s"
-msgstr "ÊÑ´¹É½¤ò %s ¤Ë½ñ¤­¹ş¤ß¤Ç¤­¤Ş¤»¤ó"
+msgstr "å¤‰æ›è¡¨ã‚’ %s ã«æ›¸ãè¾¼ã¿ã§ãã¾ã›ã‚“"
 
 # c-format(mc_tell)
 #: src/dial.c:250
 msgid "Initializing Modem"
-msgstr "¥â¥Ç¥à¤ò½é´ü²½¤·¤Æ¤¤¤Ş¤¹"
+msgstr "ãƒ¢ãƒ‡ãƒ ã‚’åˆæœŸåŒ–ã—ã¦ã„ã¾ã™"
 
 # c-format(mc_tell)
 #: src/dial.c:266
 msgid "Resetting Modem"
-msgstr "¥â¥Ç¥à¤ò¥ê¥»¥Ã¥È¤·¤Æ¤¤¤Ş¤¹"
+msgstr "ãƒ¢ãƒ‡ãƒ ã‚’ãƒªã‚»ãƒƒãƒˆã—ã¦ã„ã¾ã™"
 
 # c-format(mc_tell)
 #: src/dial.c:280
 msgid "Hanging up"
-msgstr "²óÀş¤òÀÚÃÇ¤·¤Æ¤¤¤Ş¤¹"
+msgstr "å›ç·šã‚’åˆ‡æ–­ã—ã¦ã„ã¾ã™"
 
 # do_log
 # c-format(have percent)
 #: src/dial.c:284
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
-msgstr "²óÀşÀÚÃÇ (%ld:%02ld:%02ld)"
+msgstr "å›ç·šåˆ‡æ–­ (%ld:%02ld:%02ld)"
 
 # c-format(mc_tell)
 #: src/dial.c:316
 msgid "Sending BREAK"
-msgstr "BREAK ¤òÁ÷¿®Ãæ"
+msgstr "BREAK ã‚’é€ä¿¡ä¸­"
 
 # c-format(have percent)
 #: src/dial.c:382
 #, c-format
 msgid "    No connection: %s.      \n"
-msgstr "    ÀÜÂ³¤·¤Ş¤»¤ó¤Ç¤·¤¿: %s  \n"
+msgstr "    æ¥ç¶šã—ã¾ã›ã‚“ã§ã—ãŸ: %s  \n"
 
 # c-format(wprintf)
 #: src/dial.c:384
 msgid "   Press any key to continue..    "
-msgstr "   ²¿¤«¥­¡¼¤ò²¡¤·¤Æ¤¯¤À¤µ¤¤¡£     "
+msgstr "   ä½•ã‹ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ãã ã•ã„ã€‚     "
 
 # c-format(have percent)
 #: src/dial.c:389 src/dial.c:401
 #, c-format
 msgid "     Retry in %2d seconds             "
-msgstr "         %2d ÉÃ¤ÇºÆÀÜÂ³               "
+msgstr "         %2d ç§’ã§å†æ¥ç¶š               "
 
 # dialfailed
 #: src/dial.c:427
 msgid "Max retries"
-msgstr "ºÇÂçºÆÀÜÂ³²ó¿ô"
+msgstr "æœ€å¤§å†æ¥ç¶šå›æ•°"
 
 # c-format(werror)
 #: src/dial.c:437
 msgid "You are already online! Hang up first."
-msgstr "¤¹¤Ç¤ËÀÜÂ³¤·¤Æ¤¤¤Ş¤¹¡£¤Ş¤ºÀÚÃÇ¤·¤Æ²¼¤µ¤¤"
+msgstr "ã™ã§ã«æ¥ç¶šã—ã¦ã„ã¾ã™ã€‚ã¾ãšåˆ‡æ–­ã—ã¦ä¸‹ã•ã„"
 
 # wtitle
 #: src/dial.c:442
 msgid "Autodial"
-msgstr "¼«Æ°¥À¥¤¥ä¥ë"
+msgstr "è‡ªå‹•ãƒ€ã‚¤ãƒ¤ãƒ«"
 
 #: src/dial.c:446 src/dial.c:476
 msgid "Dialing"
-msgstr "ÀÜÂ³Àè "
+msgstr "æ¥ç¶šå…ˆ "
 
 # c-format(have percent)
 #: src/dial.c:447 src/dial.c:479
-#, fuzzy, c-format
+#, c-format
 msgid "      At : %s"
-msgstr ""
-"\n"
-"ÅÅÏÃÈÖ¹æ : %s"
+msgstr "      é›»è©±ç•ªå· : %s"
 
 # c-format(have percent)
 #: src/dial.c:450 src/dial.c:483
 #, fuzzy, c-format
 msgid " Last on : %s at %s"
-msgstr ""
-"\n"
-"    Á°²ó : %s at %s"
+msgstr " å‰å› : %s at %s"
 
 # c-format(have percent)
 #: src/dial.c:498
 #, c-format
 msgid "    Time : %-3d"
-msgstr "    »ş´Ö : %-3d"
+msgstr "    æ™‚é–“ : %-3d"
 
 # c-format(have percent)
 #: src/dial.c:500
 #, c-format
 msgid "     Attempt #%d"
-msgstr "       %d²óÌÜ   "
+msgstr "       %då›ç›®   "
 
 # wputs
 #: src/dial.c:501
@@ -856,57 +843,57 @@ msgstr ""
 "\n"
 "\n"
 "\n"
-" Escape ¤ÇÃæ»ß¡¢space ¤ÇºÆÀÜÂ³    "
+" Escape ã§ä¸­æ­¢ã€space ã§å†æ¥ç¶š    "
 
 # dialfailed
 #: src/dial.c:542
 msgid "Cancelled"
-msgstr "Ãæ»ß¤·¤Ş¤·¤¿"
+msgstr "ä¸­æ­¢ã—ã¾ã—ãŸ"
 
 # wputs
 #: src/dial.c:598
 msgid "Connected. Press any key to continue"
-msgstr "ÀÜÂ³¤·¤Ş¤·¤¿¡£¤Ê¤Ë¤«¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤"
+msgstr "æ¥ç¶šã—ã¾ã—ãŸã€‚ãªã«ã‹ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„"
 
 # dialfailed
 #: src/dial.c:678
 msgid "Timeout"
-msgstr "»ş´ÖÀÚ¤ì"
+msgstr "æ™‚é–“åˆ‡ã‚Œ"
 
 #: src/dial.c:858
 msgid "Manually entered number"
-msgstr "¼êÆ°¤ÇÆşÎÏ¤·¤¿¾ì¹æ"
+msgstr "æ‰‹å‹•ã§å…¥åŠ›ã—ãŸå ´å·"
 
 # c-format(werror)
 #: src/dial.c:867
 msgid "Cannot open ~/.dialdir: permission denied"
-msgstr "~/.dialdir ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó: µö²Ä¤µ¤ì¤Ş¤»¤ó"
+msgstr "~/.dialdir ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“: è¨±å¯ã•ã‚Œã¾ã›ã‚“"
 
 # c-format(werror)
 #: src/dial.c:919
 msgid "Phonelist garbled (unknown version?)"
-msgstr "ÅÅÏÃÄ¢¤¬½ñ¤­Ä¾¤µ¤ì¤Æ¤¤¤ë (ÉÔÌÀ¤Ê¥Ğ¡¼¥¸¥ç¥ó?)"
+msgstr "é›»è©±å¸³ãŒæ›¸ãç›´ã•ã‚Œã¦ã„ã‚‹ (ä¸æ˜ãªãƒãƒ¼ã‚¸ãƒ§ãƒ³?)"
 
 # c-format(werror)
 #: src/dial.c:926 src/dial.c:934
 #, fuzzy
 msgid "Phonelist corrupted"
-msgstr "ÅÅÏÃÄ¢¤¬½ñ¤­Ä¾¤µ¤ì¤Æ¤¤¤ë (?)"
+msgstr "é›»è©±å¸³ãŒæ›¸ãç›´ã•ã‚Œã¦ã„ã‚‹ (?)"
 
 # c-format(werror)
 #: src/dial.c:939
 msgid "Unknown dialing directory version"
-msgstr "ÅÅÏÃÄ¢¤Î¥Ğ¡¼¥¸¥ç¥ó¤¬ÉÔÌÀ¤Ç¤¹"
+msgstr "é›»è©±å¸³ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒä¸æ˜ã§ã™"
 
 # c-format(werror)
 #: src/dial.c:946
 msgid "Phonelist garbled (?)"
-msgstr "ÅÅÏÃÄ¢¤¬½ñ¤­Ä¾¤µ¤ì¤Æ¤¤¤ë (?)"
+msgstr "é›»è©±å¸³ãŒæ›¸ãç›´ã•ã‚Œã¦ã„ã‚‹ (?)"
 
 # c-format(werror)
 #: src/dial.c:968
 msgid "Out of memory while reading dialing directory"
-msgstr "ÅÅÏÃÄ¢ÆÉ¤ß¹ş¤ßÃæ¤Ë¥á¥â¥ê¤¬Â­¤ê¤Ê¤¯¤Ê¤ê¤Ş¤·¤¿"
+msgstr "é›»è©±å¸³èª­ã¿è¾¼ã¿ä¸­ã«ãƒ¡ãƒ¢ãƒªãŒè¶³ã‚Šãªããªã‚Šã¾ã—ãŸ"
 
 #: src/dial.c:1015
 #, c-format
@@ -917,61 +904,61 @@ msgstr ""
 #: src/dial.c:1050
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
-msgstr "~/.dialdir ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó: µö²Ä¤µ¤ì¤Ş¤»¤ó"
+msgstr "~/.dialdir ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“: è¨±å¯ã•ã‚Œã¾ã›ã‚“"
 
 # c-format(werror)
 #: src/dial.c:1066 src/dial.c:1078
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
-msgstr "~/.dialdir ½ñ¤­¹ş¤ßÃæ¤Ë¥¨¥é¡¼È¯À¸"
+msgstr "~/.dialdir æ›¸ãè¾¼ã¿ä¸­ã«ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿ"
 
 #: src/dial.c:1143
 msgid " A -  Name                :"
-msgstr " A -  Ì¾Á°                :"
+msgstr " A -  åå‰                :"
 
 #: src/dial.c:1144
 msgid " B -  Number              :"
-msgstr " B -  ÅÅÏÃÈÖ¹æ            :"
+msgstr " B -  é›»è©±ç•ªå·            :"
 
 #: src/dial.c:1145
 msgid " C -  Dial string #       :"
-msgstr " C -  ¥À¥¤¥ä¥ëÊ¸»úÎóÈÖ¹æ  :"
+msgstr " C -  ãƒ€ã‚¤ãƒ¤ãƒ«æ–‡å­—åˆ—ç•ªå·  :"
 
 #: src/dial.c:1146
 msgid " D -  Local echo          :"
-msgstr " D -  ¥í¡¼¥«¥ë¥¨¥³¡¼      :"
+msgstr " D -  ãƒ­ãƒ¼ã‚«ãƒ«ã‚¨ã‚³ãƒ¼      :"
 
 #: src/dial.c:1147
 msgid " E -  Script              :"
-msgstr " E -  ¥¹¥¯¥ê¥×¥È          :"
+msgstr " E -  ã‚¹ã‚¯ãƒªãƒ—ãƒˆ          :"
 
 #: src/dial.c:1148
 msgid " F -  Username            :"
-msgstr " F -  ¥æ¡¼¥¶¡¼Ì¾          :"
+msgstr " F -  ãƒ¦ãƒ¼ã‚¶ãƒ¼å          :"
 
 #: src/dial.c:1149
 msgid " G -  Password            :"
-msgstr " G -  ¥Ñ¥¹¥ï¡¼¥É          :"
+msgstr " G -  ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰          :"
 
 #: src/dial.c:1150
 msgid " H -  Terminal Emulation  :"
-msgstr " H -  ¥¿¡¼¥ß¥Ê¥ë¤Î¼ïÎà    :"
+msgstr " H -  ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®ç¨®é¡    :"
 
 #: src/dial.c:1151
 msgid " I -  Backspace key sends :"
-msgstr " I -  BS¥­¡¼¤¬Á÷¤ëÊ¸»ú    :"
+msgstr " I -  BSã‚­ãƒ¼ãŒé€ã‚‹æ–‡å­—    :"
 
 #: src/dial.c:1152
 msgid " J -  Linewrap            :"
-msgstr " J -  ¹ÔËöÀŞ¤êÊÖ¤·        :"
+msgstr " J -  è¡Œæœ«æŠ˜ã‚Šè¿”ã—        :"
 
 #: src/dial.c:1153
 msgid " K -  Line Settings       :"
-msgstr " K -  ²óÀş¤ÎÀßÄê          :"
+msgstr " K -  å›ç·šã®è¨­å®š          :"
 
 #: src/dial.c:1154
 msgid " L -  Conversion table    :"
-msgstr " L -  Ê¸»úÊÑ´¹É½          :"
+msgstr " L -  æ–‡å­—å¤‰æ›è¡¨          :"
 
 #: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
 msgid "Delete"
@@ -983,17 +970,17 @@ msgstr "Backspace"
 
 #: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
 msgid "On"
-msgstr "¥ª¥ó"
+msgstr "ã‚ªãƒ³"
 
 #: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
 msgid "Off"
-msgstr "¥ª¥Õ"
+msgstr "ã‚ªãƒ•"
 
 # c-format(have percent)
 #: src/dial.c:1173
 #, c-format
 msgid "      Last dialed         : %s %s\n"
-msgstr "      Á°²ó¤ÎÀÜÂ³          : %s %s\n"
+msgstr "      å‰å›ã®æ¥ç¶š          : %s %s\n"
 
 # c-format(have percent)
 #: src/dial.c:1174
@@ -1007,7 +994,7 @@ msgstr "      Times on            : %d"
 #: src/dial.c:1275
 #, fuzzy
 msgid "Dial"
-msgstr "ÀÜÂ³Àè "
+msgstr "æ¥ç¶šå…ˆ "
 
 #: src/dial.c:1275
 msgid "Find"
@@ -1019,15 +1006,14 @@ msgstr ""
 
 # wselect
 #: src/dial.c:1275
-#, fuzzy
 msgid "Edit"
-msgstr "½ªÎ»"
+msgstr "ç·¨é›†"
 
 # ask
 #: src/dial.c:1275
 #, fuzzy
 msgid "Remove"
-msgstr "ºï½ü¤·¤Ş¤¹¤«?"
+msgstr "å‰Šé™¤ã—ã¾ã™ã‹?"
 
 #: src/dial.c:1275
 msgid "moVe"
@@ -1039,49 +1025,49 @@ msgstr ""
 
 #: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
-msgstr "  ¤Ï¤¤  "
+msgstr "  ã¯ã„  "
 
 #: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   No   "
-msgstr " ¤¤¤¤¤¨ "
+msgstr " ã„ã„ãˆ "
 
 # c-format(have percent)
 #: src/dial.c:1515
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
-msgstr "\"%s\" ¤¬¤¢¤ê¤Ş¤»¤ó¡£dialdir ¤Ë¹Ô¤­¤Ş¤¹¤«?"
+msgstr "\"%s\" ãŒã‚ã‚Šã¾ã›ã‚“ã€‚dialdir ã«è¡Œãã¾ã™ã‹?"
 
 # wputs
 #: src/dial.c:1545 src/file.c:429
 msgid "( Escape to exit, Space to tag )"
-msgstr "( Escape ¤Ç½ªÎ»¡¢ Space ¤Ç¥¿¥° )"
+msgstr "( Escape ã§çµ‚äº†ã€ Space ã§ã‚¿ã‚° )"
 
 #: src/dial.c:1546
 msgid " Move entry up/down, Escape to exit"
-msgstr "¾å²¼¤ÇÁª¤ó¤Ç¤¯¤À¤µ¤¤¡£Escape ¤Ç½ªÎ»"
+msgstr "ä¸Šä¸‹ã§é¸ã‚“ã§ãã ã•ã„ã€‚Escape ã§çµ‚äº†"
 
 # wtitle
 #: src/dial.c:1566
 msgid "Dialing Directory"
-msgstr "ÅÅÏÃÄ¢"
+msgstr "é›»è©±å¸³"
 
 # wputs
 #: src/dial.c:1568
 msgid "     Name            Number            Last on      Times Script\n"
-msgstr "     Ì¾Á°           ÅÅÏÃÈÖ¹æ         Á°²ó¤ÎÀÜÂ³     Times Script\n"
+msgstr "     åå‰           é›»è©±ç•ªå·         å‰å›ã®æ¥ç¶š     Times Script\n"
 
 #: src/dial.c:1742
 msgid "Find an entry"
-msgstr "¸¡º÷"
+msgstr "æ¤œç´¢"
 
 # ask
 #: src/dial.c:1803
 msgid "Remove entry?"
-msgstr "ºï½ü¤·¤Ş¤¹¤«?"
+msgstr "å‰Šé™¤ã—ã¾ã™ã‹?"
 
 #: src/dial.c:1847
 msgid "Enter number"
-msgstr "ÅÅÏÃÈÖ¹æ"
+msgstr "é›»è©±ç•ªå·"
 
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
@@ -1118,12 +1104,12 @@ msgstr ""
 #: src/file.c:346
 #, fuzzy
 msgid "Select one or more files for download"
-msgstr "¤Ò¤È¤Ä¤«Ê£¿ô¤Î¥Õ¥¡¥¤¥ë"
+msgstr "ã²ã¨ã¤ã‹è¤‡æ•°ã®ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #: src/file.c:348
 #, fuzzy
 msgid "Select a file for download"
-msgstr "¥Õ¥¡¥¤¥ë¤òÁª¤ó¤Ç²¼¤µ¤¤"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸ã‚“ã§ä¸‹ã•ã„"
 
 #: src/file.c:350
 msgid "Select a directory for download"
@@ -1132,17 +1118,17 @@ msgstr ""
 #: src/file.c:353
 #, fuzzy
 msgid "Select one or more files for upload"
-msgstr "¤Ò¤È¤Ä¤«Ê£¿ô¤Î¥Õ¥¡¥¤¥ë"
+msgstr "ã²ã¨ã¤ã‹è¤‡æ•°ã®ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #: src/file.c:355
 #, fuzzy
 msgid "Select a file for upload"
-msgstr "¥Õ¥¡¥¤¥ë¤òÁª¤ó¤Ç²¼¤µ¤¤"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸ã‚“ã§ä¸‹ã•ã„"
 
 #: src/file.c:357
 #, fuzzy
 msgid "Select a directory for upload"
-msgstr "¥Õ¥¡¥¤¥ë¤òÁª¤ó¤Ç²¼¤µ¤¤"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸ã‚“ã§ä¸‹ã•ã„"
 
 # c-format(have percent)
 #: src/file.c:366
@@ -1157,294 +1143,295 @@ msgstr "Can't back up!"
 # c-format(file_tell)
 #: src/file.c:552 src/file.c:565
 msgid "Too many files tagged - buffer would overflow"
-msgstr "ÁªÂò¥Õ¥¡¥¤¥ë¤¬Â¿¤¹¤®¤Æ¡¢¥Ğ¥Ã¥Õ¥¡¤¬¤¢¤Õ¤ì¤Ş¤¹"
+msgstr "é¸æŠãƒ•ã‚¡ã‚¤ãƒ«ãŒå¤šã™ãã¦ã€ãƒãƒƒãƒ•ã‚¡ãŒã‚ãµã‚Œã¾ã™"
 
 # c-format(file_tell)
 #: src/file.c:669 src/file.c:796
 msgid "Can select only one!"
-msgstr "Ê£¿ô¤ÏÁªÂò¤Ç¤­¤Ş¤»¤ó!"
+msgstr "è¤‡æ•°ã¯é¸æŠã§ãã¾ã›ã‚“!"
 
 # input
 #: src/file.c:771
 msgid "Goto directory:"
-msgstr "°ÜÆ°Àè¥Ç¥£¥ì¥¯¥È¥ê:"
+msgstr "ç§»å‹•å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª:"
 
 # input
 #: src/file.c:785
 msgid "Filename pattern:"
-msgstr "¥Õ¥¡¥¤¥ëÌ¾¥Ñ¥¿¡¼¥ó:"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«åãƒ‘ã‚¿ãƒ¼ãƒ³:"
 
 # input
 #: src/file.c:802
 msgid "Tag pattern:"
-msgstr "ÁªÂò¤Î¥Ñ¥¿¡¼¥ó:"
+msgstr "é¸æŠã®ãƒ‘ã‚¿ãƒ¼ãƒ³:"
 
 # c-format(file_tell)
 #: src/file.c:806
 msgid "No file(s) tagged"
-msgstr "¤Ò¤È¤Ä¤âÁªÂò¤µ¤ì¤Ş¤»¤ó"
+msgstr "ã²ã¨ã¤ã‚‚é¸æŠã•ã‚Œã¾ã›ã‚“"
 
 # input
 #: src/file.c:823
 msgid "Untag pattern:"
-msgstr "ÁªÂò²ò½ü¤Î¥Ñ¥¿¡¼¥ó:"
+msgstr "é¸æŠè§£é™¤ã®ãƒ‘ã‚¿ãƒ¼ãƒ³:"
 
 # c-format(file_tell)
 #: src/file.c:827
 msgid "No file(s) untagged"
-msgstr "¤Ò¤È¤Ä¤âÁªÂò²ò½ü¤µ¤ì¤Ş¤»¤ó"
+msgstr "ã²ã¨ã¤ã‚‚é¸æŠè§£é™¤ã•ã‚Œã¾ã›ã‚“"
 
 # input
 #: src/file.c:843
 msgid "No file selected - enter filename:"
-msgstr "ÁªÂò¤µ¤ì¤Æ¤¤¤Ş¤»¤ó¡£¥Õ¥¡¥¤¥ëÌ¾¤òÆşÎÏ:"
+msgstr "é¸æŠã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å…¥åŠ›:"
 
 # c-format(have percent)
 #: src/file.c:853
 #, fuzzy, c-format
 msgid "File: \"%s\" exists! Overwrite?"
-msgstr "\"%s\" ¤¬Â¸ºß¤·¤Ş¤¹¡£¾å½ñ¤­¤·¤Ş¤¹¤«?"
+msgstr "\"%s\" ãŒå­˜åœ¨ã—ã¾ã™ã€‚ä¸Šæ›¸ãã—ã¾ã™ã‹?"
 
 # c-format(file_tell)
 #: src/file.c:864
 msgid "no such file!"
-msgstr "¥Õ¥¡¥¤¥ë¤¬Â¸ºß¤·¤Ş¤»¤ó"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã—ã¾ã›ã‚“"
 
 # c-format(have percent)
 #: src/getsdir.c:315
 #, c-format
 msgid "%d files:\n"
-msgstr "%d ¸Ä¤Î¥Õ¥¡¥¤¥ë:\n"
+msgstr "%d å€‹ã®ãƒ•ã‚¡ã‚¤ãƒ«:\n"
 
 # wputs
 #: src/help.c:41
 msgid "Minicom Command Summary"
-msgstr "Minicom ¤Î¥³¥Ş¥ó¥É°ìÍ÷"
+msgstr "Minicom ã®ã‚³ãƒãƒ³ãƒ‰ä¸€è¦§"
 
 # c-format(have percent)
-#: src/help.c:44
+#: src/help.c:45
 #, c-format
 msgid "Commands can be called by %s<key>"
-msgstr "¥³¥Ş¥ó¥É¤ò¼Â¹Ô¤¹¤ë¤Ë¤Ï %s<¥­¡¼>¤ÈÆşÎÏ¤·¤Æ¤¯¤À¤µ¤¤"
+msgstr "ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã™ã‚‹ã«ã¯ %s<ã‚­ãƒ¼>ã¨å…¥åŠ›ã—ã¦ãã ã•ã„"
 
 # wputs
-#: src/help.c:47
-msgid "Main Functions"
-msgstr "¼ç¤Êµ¡Ç½"
-
-# wputs
-#: src/help.c:49
-msgid "Other Functions"
-msgstr "Â¾¤Îµ¡Ç½"
-
 #: src/help.c:51
-msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
-msgstr " ¥À¥¤¥ä¥ë...........D  ¥¹¥¯¥ê¥×¥È¼Â¹Ô.....G | ²èÌÌ¤Î¾Ãµî.........C\n"
+msgid "Main Functions"
+msgstr "ä¸»ãªæ©Ÿèƒ½"
 
-#: src/help.c:52
-msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
-msgstr " ¥Õ¥¡¥¤¥ëÁ÷¿®.......S  ¥Õ¥¡¥¤¥ë¼õ¿®.......R | ÀßÄê...............O\n"
-
+# wputs
 #: src/help.c:53
-msgid " comm Parameters....P  Add linefeed.......A | "
-msgstr " ÄÌ¿®¥Ñ¥é¥á¡¼¥¿.....P  linefeed ¤òÄÉ²Ã....A | "
+msgid "Other Functions"
+msgstr "ä»–ã®æ©Ÿèƒ½"
 
-# wputs
 #: src/help.c:55
-msgid "Suspend minicom....J\n"
-msgstr "¥µ¥¹¥Ú¥ó¥É.........J\n"
+msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
+msgstr " ãƒ€ã‚¤ãƒ¤ãƒ«...........D  ã‚¹ã‚¯ãƒªãƒ—ãƒˆå®Ÿè¡Œ.....G | ç”»é¢ã®æ¶ˆå».........C\n"
 
-# wputs
+#: src/help.c:56
+msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
+msgstr " ãƒ•ã‚¡ã‚¤ãƒ«é€ä¿¡.......S  ãƒ•ã‚¡ã‚¤ãƒ«å—ä¿¡.......R | è¨­å®š...............O\n"
+
 #: src/help.c:57
-msgid "Jump to a shell....J\n"
-msgstr "¥·¥§¥ë¤ò¸Æ¤Ó½Ğ¤·...J\n"
-
-#: src/help.c:59
-msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
-msgstr " µ­Ï¿(¥­¥ã¥×¥Á¥ã)...L  ²óÀşÀÚÃÇ...........H | ¥ê¥»¥Ã¥È¤·¤Æ½ªÎ»...X\n"
-
-#: src/help.c:60
-msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
-msgstr " break¤òÁ÷¿®........F  ¥â¥Ç¥à¤Î½é´ü²½.....M | ¥ê¥»¥Ã¥È¤»¤º¤Ë½ªÎ».Q\n"
-
-#: src/help.c:61
-msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
-msgstr " ¥¿¡¼¥ß¥Ê¥ë¤ÎÀßÄê...T  Kermit ¤ò¼Â¹Ô......K | ¥«¡¼¥½¥ë¥­¡¼¥â¡¼¥É.I\n"
+msgid " comm Parameters....P  Add linefeed.......A | "
+msgstr " é€šä¿¡ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿.....P  linefeed ã‚’è¿½åŠ ....A | "
 
 # wputs
-#: src/help.c:62
-msgid " lineWrap on/off....W"
-msgstr " ¹ÔËöÀŞ¤êÊÖ¤·.......W"
+#: src/help.c:59
+msgid "Suspend minicom....J\n"
+msgstr "ã‚µã‚¹ãƒšãƒ³ãƒ‰.........J\n"
+
+# wputs
+#: src/help.c:61
+msgid "Jump to a shell....J\n"
+msgstr "ã‚·ã‚§ãƒ«ã‚’å‘¼ã³å‡ºã—...J\n"
 
 #: src/help.c:63
-#, fuzzy
-msgid "  local Echo on/off..E | Help screen........Z\n"
-msgstr "  ¥í¡¼¥«¥ë¥¨¥³¡¼.....E | ÀâÌÀ²èÌÌ...........Z"
+msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
+msgstr " è¨˜éŒ²(ã‚­ãƒ£ãƒ—ãƒãƒ£)...L  å›ç·šåˆ‡æ–­...........H | ãƒªã‚»ãƒƒãƒˆã—ã¦çµ‚äº†...X\n"
 
 #: src/help.c:64
-msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B"
-msgstr ""
+msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
+msgstr " breakã‚’é€ä¿¡........F  ãƒ¢ãƒ‡ãƒ ã®åˆæœŸåŒ–.....M | ãƒªã‚»ãƒƒãƒˆã›ãšã«çµ‚äº†.Q\n"
+
+#: src/help.c:65
+msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
+msgstr " ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®è¨­å®š...T  Kermit ã‚’å®Ÿè¡Œ......K | ã‚«ãƒ¼ã‚½ãƒ«ã‚­ãƒ¼ãƒ¢ãƒ¼ãƒ‰.I\n"
+
+# wputs
+#: src/help.c:66
+msgid " lineWrap on/off....W"
+msgstr " è¡Œæœ«æŠ˜ã‚Šè¿”ã—.......W"
 
 #: src/help.c:67
+msgid "  local Echo on/off..E | Help screen........Z\n"
+msgstr "  ãƒ­ãƒ¼ã‚«ãƒ«ã‚¨ã‚³ãƒ¼.....E | èª¬æ˜ç”»é¢...........Z\n"
+
+#: src/help.c:68
+msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
+msgstr " ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è²¼ã‚Šä»˜ã‘.Y  ã‚¿ã‚¤ãƒ ã‚¹ã‚¿ãƒ³ãƒ—åˆ‡æ›¿.N | é€†ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«.......B\n"
+
+#: src/help.c:69
+msgid " Add Carriage Ret...U"
+msgstr " Carriage Retã‚’è¿½åŠ .U"
+
+# wputs
+#: src/help.c:71
+msgid "Select function or press Enter for none."
+msgstr "æ©Ÿèƒ½ã‚’é¸ã‚“ã§ãã ã•ã„ (å–æ¶ˆã¯ Enter)ã€‚"
+
+#: src/help.c:79
 msgid "Written by Miquel van Smoorenburg 1991-1995"
 msgstr "Written by Miquel van Smoorenburg 1991-1995"
 
-#: src/help.c:69
+#: src/help.c:81
 msgid "Some additions by Jukka Lahtinen 1997-2000"
 msgstr "Some additions by Jukka Lahtinen 1997-2000"
 
-#: src/help.c:71
+#: src/help.c:83
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "i18n by Arnaldo Carvalho de Melo 1998"
-
-# wputs
-#: src/help.c:73
-msgid "Select function or press Enter for none."
-msgstr "µ¡Ç½¤òÁª¤ó¤Ç¤¯¤À¤µ¤¤ (¼è¾Ã¤Ï Enter)¡£"
 
 # c-format(fprintf)
 #: src/main.c:213
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
-msgstr "¸Å¤¤¥í¥Ã¥¯¥Õ¥¡¥¤¥ë¤¬¤¢¤ë¤Î¤Ç¾å½ñ¤­¤·¤Ş¤¹¡£\n"
+msgstr "å¤ã„ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ãŒã‚ã‚‹ã®ã§ä¸Šæ›¸ãã—ã¾ã™ã€‚\n"
 
 # c-format(have percent)
 #: src/main.c:222 src/updown.c:490
 #, c-format
 msgid "Device %s is locked.\n"
-msgstr "%s ¤Ï¥í¥Ã¥¯¤µ¤ì¤Æ¤¤¤Ş¤¹¡£\n"
+msgstr "%s ã¯ãƒ­ãƒƒã‚¯ã•ã‚Œã¦ã„ã¾ã™ã€‚\n"
 
 # c-format(fprintf)
 #: src/main.c:237
 #, c-format
 msgid "Could not setup for dial out.\n"
-msgstr "ÅÅÏÃ¤ÎÀßÄê¤¬¤Ç¤­¤Ş¤»¤ó¡£\n"
+msgstr "é›»è©±ã®è¨­å®šãŒã§ãã¾ã›ã‚“ã€‚\n"
 
 # c-format(have percent)
 #: src/main.c:288
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
-msgstr "minicom: %s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó : %s\n"
+msgstr "minicom: %s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ : %s\n"
 
 # c-format(have percent)
 #: src/main.c:291
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
-msgstr "minicom: %s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó¡£\n"
+msgstr "minicom: %s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ã€‚\n"
 
 # c-format(have percent)
 #: src/main.c:298 src/main.c:754
 #, c-format
 msgid "Cannot open %s!"
-msgstr "%s ¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ê¤¤¡ª"
+msgstr "%s ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ããªã„ï¼"
 
 #: src/main.c:477
 msgid "Offline"
-msgstr "ÀÚÃÇ"
+msgstr "åˆ‡æ–­"
 
 #: src/main.c:477
 msgid "OFFLINE"
-msgstr "ÀÚÃÇ"
+msgstr "åˆ‡æ–­"
 
 #: src/main.c:479
 msgid "Online"
-msgstr "ÀÜÂ³"
+msgstr "æ¥ç¶š"
 
 #: src/main.c:479
 msgid "ONLINE"
-msgstr "ÀÜÂ³"
+msgstr "æ¥ç¶š"
 
 # c-format(have percent)
 #: src/main.c:554
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
-msgstr "ÀÚÃÇ¤µ¤ì¤Ş¤·¤¿¡£(%ld:%02ld:%02ld)"
+msgstr "åˆ‡æ–­ã•ã‚Œã¾ã—ãŸã€‚(%ld:%02ld:%02ld)"
 
 #: src/main.c:635
 #, c-format
 msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
-msgstr " ÀâÌÀ²èÌÌ %7.7sZ |           |     | Minicom %-6.6s |       | "
+msgstr " èª¬æ˜ç”»é¢ %7.7sZ |           |     | Minicom %-6.6s |       | "
 
 # leave
 #: src/main.c:735
 msgid "Could not re-initialize window system."
-msgstr "¥¦¥£¥ó¥É¥¦¥·¥¹¥Æ¥à¤òºÆ½é´ü²½¤Ç¤­¤Ş¤»¤ó¤Ç¤·¤¿¡£"
+msgstr "ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚·ã‚¹ãƒ†ãƒ ã‚’å†åˆæœŸåŒ–ã§ãã¾ã›ã‚“ã§ã—ãŸã€‚"
 
 # c-format(have percent)
 #: src/minicom.c:56 src/minicom.c:58
 #, c-format
 msgid "Got signal %d"
-msgstr "¥·¥°¥Ê¥ë %d ¤ò¼õ¿®¤·¤Ş¤·¤¿"
+msgstr "ã‚·ã‚°ãƒŠãƒ« %d ã‚’å—ä¿¡ã—ã¾ã—ãŸ"
 
 #: src/minicom.c:69 src/minicom.c:70
 msgid "  Close "
-msgstr "¥¯¥í¡¼¥º"
+msgstr "ã‚¯ãƒ­ãƒ¼ã‚º"
 
 #: src/minicom.c:69
 msgid " Pause  "
-msgstr "°ì»şÄä»ß "
+msgstr "ä¸€æ™‚åœæ­¢ "
 
 #: src/minicom.c:69 src/minicom.c:70
 msgid "  Exit  "
-msgstr "  ½ªÎ»  "
+msgstr "  çµ‚äº†  "
 
 #: src/minicom.c:70
 msgid " Unpause"
-msgstr "  ºÆ³«  "
+msgstr "  å†é–‹  "
 
 # ask
 #: src/minicom.c:85
 msgid "Hang-up line?"
-msgstr "²óÀş¤òÀÚÃÇ¤·¤Ş¤¹¤«¡© "
+msgstr "å›ç·šã‚’åˆ‡æ–­ã—ã¾ã™ã‹ï¼Ÿ "
 
 # c-format(have percent)
 #: src/minicom.c:96
 #, c-format
 msgid "Killed by signal %d !\n"
-msgstr "¥·¥°¥Ê¥ë %d ¤Î¤¿¤á¤Ë½ªÎ»¤·¤Ş¤¹¡£\n"
+msgstr "ã‚·ã‚°ãƒŠãƒ« %d ã®ãŸã‚ã«çµ‚äº†ã—ã¾ã™ã€‚\n"
 
 #: src/minicom.c:120
 msgid "Suspended. Type \"fg\" to resume.\n"
-msgstr "°ì»şÄä»ß¤·¤Ş¤¹¡£\"fg\" ¤ÈÆşÎÏ¤¹¤ë¤ÈºÆ³«¤·¤Ş¤¹¡£\n"
+msgstr "ä¸€æ™‚åœæ­¢ã—ã¾ã™ã€‚\"fg\" ã¨å…¥åŠ›ã™ã‚‹ã¨å†é–‹ã—ã¾ã™ã€‚\n"
 
 # c-format(werror)
 #: src/minicom.c:139
 msgid "SHELL variable not set"
-msgstr "¥·¥§¥ëÊÑ¿ô¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤»¤ó"
+msgstr "ã‚·ã‚§ãƒ«å¤‰æ•°ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 # c-format(werror)
 #: src/minicom.c:143 src/updown.c:311 src/updown.c:518 src/updown.c:716
 msgid "Out of memory: could not fork()"
-msgstr "¥á¥â¥êÉÔÂ­¤Ç¤¹¡£fork() ¤Ç¤­¤Ş¤»¤ó¡£"
+msgstr "ãƒ¡ãƒ¢ãƒªä¸è¶³ã§ã™ã€‚fork() ã§ãã¾ã›ã‚“ã€‚"
 
 #: src/minicom.c:153
 msgid "Shelled out. Type \"exit\" to return.\n"
-msgstr "¥·¥§¥ë¤òµ¯Æ°¤·¤Ş¤¹¡£\"exit\" ¤ÈÆşÎÏ¤¹¤ë¤ÈÌá¤ê¤Ş¤¹¡£\n"
+msgstr "ã‚·ã‚§ãƒ«ã‚’èµ·å‹•ã—ã¾ã™ã€‚\"exit\" ã¨å…¥åŠ›ã™ã‚‹ã¨æˆ»ã‚Šã¾ã™ã€‚\n"
 
 #: src/minicom.c:266
 msgid "SEARCH FOR (ESC=Exit)"
-msgstr "¸¡º÷ (ESC=½ªÎ»)"
+msgstr "æ¤œç´¢ (ESC=çµ‚äº†)"
 
 # c-format(werror)
 #: src/minicom.c:316 src/minicom.c:337
 msgid "Search Wrapping Around to Start!"
-msgstr "ÀèÆ¬¤«¤é¸¡º÷¤·¤Ê¤ª¤·¤Ş¤¹¡£"
+msgstr "å…ˆé ­ã‹ã‚‰æ¤œç´¢ã—ãªãŠã—ã¾ã™ã€‚"
 
 #: src/minicom.c:462
-msgid ""
-"HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
-msgstr ""
-"¥Ò¥¹¥È¥ê: U=¾å D=²¼ F=ÊÇ¾å B=ÊÇ²¼ s=¸¡º÷ S=CaseLess N=¼¡ C=°úÍÑ ESC=½ªÎ»    "
+msgid "HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
+msgstr "ãƒ’ã‚¹ãƒˆãƒª: U=ä¸Š D=ä¸‹ F=é ä¸Š B=é ä¸‹ s=æ¤œç´¢ S=CaseLess N=æ¬¡ C=å¼•ç”¨ ESC=çµ‚äº†    "
 
 # c-format(werror)
 #: src/minicom.c:501
 msgid "History buffer Disabled!"
-msgstr "¥Ò¥¹¥È¥êÎÎ°è¤¬ÍøÍÑ¤Ç¤­¤Ş¤»¤ó!"
+msgstr "ãƒ’ã‚¹ãƒˆãƒªé ˜åŸŸãŒåˆ©ç”¨ã§ãã¾ã›ã‚“!"
 
 # c-format(werror)
 #: src/minicom.c:506
 msgid "History buffer empty!"
-msgstr "¥Ò¥¹¥È¥êÎÎ°è¤¬¶õ¤Ç¤¹!"
+msgstr "ãƒ’ã‚¹ãƒˆãƒªé ˜åŸŸãŒç©ºã§ã™!"
 
 # c-format(werror)
 #: src/minicom.c:564
@@ -1452,31 +1439,27 @@ msgid ""
 "No previous search!\n"
 "  Please 's' or 'S' first!"
 msgstr ""
-"Á°²ó¤Î¸¡º÷¤Ï¤¢¤ê¤Ş¤»¤ó¡£\n"
-"  ¤Ş¤º 's' ¤« 'S' ¤ò¹Ô¤Ã¤Æ¤¯¤À¤µ¤¤!"
+"å‰å›ã®æ¤œç´¢ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚\n"
+"  ã¾ãš 's' ã‹ 'S' ã‚’è¡Œã£ã¦ãã ã•ã„!"
 
 #: src/minicom.c:721 src/minicom.c:764
-msgid ""
-"  CITATION: ENTER=select start line ESC=exit                               "
-msgstr ""
-"  °úÍÑ: ENTER=³«»Ï¹Ô¤ò»ØÄê ESC=½ªÎ»                                        "
+msgid "  CITATION: ENTER=select start line ESC=exit                               "
+msgstr "  å¼•ç”¨: ENTER=é–‹å§‹è¡Œã‚’æŒ‡å®š ESC=çµ‚äº†                                        "
 
 #: src/minicom.c:738
-msgid ""
-"  CITATION: ENTER=select end line ESC=exit                                 "
-msgstr ""
-"  °úÍÑ: ENTER=½ªÎ»¹Ô¤ò»ØÄê ESC=½ªÎ»                                        "
+msgid "  CITATION: ENTER=select end line ESC=exit                                 "
+msgstr "  å¼•ç”¨: ENTER=çµ‚äº†è¡Œã‚’æŒ‡å®š ESC=çµ‚äº†                                        "
 
 # c-format(have percent)
 #: src/minicom.c:798
 #, c-format
 msgid "Wrong option in environment MINICOM=\"%s\"\n"
-msgstr "´Ä¶­ÊÑ¿ô MINICOM=\"%s\" ¤Ë¸í¤ê¤¬¤¢¤ê¤Ş¤¹¡£\n"
+msgstr "ç’°å¢ƒå¤‰æ•° MINICOM=\"%s\" ã«èª¤ã‚ŠãŒã‚ã‚Šã¾ã™ã€‚\n"
 
 #: src/minicom.c:799
 #, c-format
 msgid "Type \"minicom %s\" for help.\n"
-msgstr "ÀâÌÀ¤òÆÉ¤à¤Ë¤Ï \"minicom %s\" ¤ÈÆşÎÏ¤·¤Æ¤¯¤À¤µ¤¤¡£\n"
+msgstr "èª¬æ˜ã‚’èª­ã‚€ã«ã¯ \"minicom %s\" ã¨å…¥åŠ›ã—ã¦ãã ã•ã„ã€‚\n"
 
 #: src/minicom.c:809
 #, c-format
@@ -1490,8 +1473,7 @@ msgid ""
 "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
 "  -m, --metakey          : use meta or alt key for commands\n"
 "  -M, --metakey8         : use 8bit meta key for commands\n"
-"  -l, --ansi             : literal; assume screen uses non IBM-PC character "
-"set\n"
+"  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
 "  -L, --iso              : don't assume screen uses ISO8859\n"
 "  -w, --wrap             : Linewrap on\n"
 "  -H, --displayhex       : display output in hex\n"
@@ -1517,13 +1499,13 @@ msgstr ""
 #: src/minicom.c:838
 #, fuzzy, c-format
 msgid "This variable is currently set to \"%s\".\n"
-msgstr "¤³¤ÎÊÑ¿ô¤Ï¸½ºß¡¢%s%s¡£\n"
+msgstr "ã“ã®å¤‰æ•°ã¯ç¾åœ¨ã€%s%sã€‚\n"
 
 # c-format(have percent)
 #: src/minicom.c:840
 #, fuzzy, c-format
 msgid "This variable is currently unset.\n"
-msgstr "¤³¤ÎÊÑ¿ô¤Ï¸½ºß¡¢%s%s¡£\n"
+msgstr "ã“ã®å¤‰æ•°ã¯ç¾åœ¨ã€%s%sã€‚\n"
 
 #: src/minicom.c:843
 #, fuzzy, c-format
@@ -1533,22 +1515,22 @@ msgid ""
 "\n"
 "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
 msgstr ""
-"  configuration          : »ÈÍÑ¤¹¤ëÀßÄê¥Õ¥¡¥¤¥ë\n"
+"  configuration          : ä½¿ç”¨ã™ã‚‹è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«\n"
 "\n"
 
-#: src/minicom.c:1146
+#: src/minicom.c:1159
 #, c-format
 msgid "%s version %s"
-msgstr "%s ¥Ğ¡¼¥¸¥ç¥ó %s"
+msgstr "%s ãƒãƒ¼ã‚¸ãƒ§ãƒ³ %s"
 
 # c-format(have percent)
-#: src/minicom.c:1148
+#: src/minicom.c:1161
 #, c-format
 msgid " (compiled %s)"
 msgstr " (compiled %s)"
 
 # c-format(have percent)
-#: src/minicom.c:1151
+#: src/minicom.c:1164
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1557,48 +1539,48 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1174
+#: src/minicom.c:1187
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argument to -p must be a pty\n"
 
 # c-format(werror)
-#: src/minicom.c:1238 src/minicom.c:1552
+#: src/minicom.c:1251 src/minicom.c:1571
 msgid "Cannot open capture file"
-msgstr "µ­Ï¿¥Õ¥¡¥¤¥ë¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó¡£"
+msgstr "è¨˜éŒ²ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ã€‚"
 
-#: src/minicom.c:1297
+#: src/minicom.c:1310
 msgid "You don't exist. Go away.\n"
-msgstr "¤¢¤Ê¤¿¤ÏÂ¸ºß¤·¤Ş¤»¤ó¡£\n"
+msgstr "ã‚ãªãŸã¯å­˜åœ¨ã—ã¾ã›ã‚“ã€‚\n"
 
-#: src/minicom.c:1371
+#: src/minicom.c:1385
 msgid "Sorry. Your screen is too small.\n"
-msgstr "»ÄÇ°¤Ê¤¬¤é¡¢²èÌÌ¤¬¾®¤µ¤¹¤®¤Ş¤¹¡£\n"
+msgstr "æ®‹å¿µãªãŒã‚‰ã€ç”»é¢ãŒå°ã•ã™ãã¾ã™ã€‚\n"
 
-#: src/minicom.c:1440
+#: src/minicom.c:1454
 msgid "Welcome to minicom"
-msgstr "minicom ¤Ø¤è¤¦¤³¤½"
+msgstr "minicom ã¸ã‚ˆã†ã“ã"
 
-#: src/minicom.c:1441
+#: src/minicom.c:1455
 msgid "OPTIONS"
-msgstr "¥ª¥×¥·¥ç¥ó"
+msgstr "ã‚ªãƒ—ã‚·ãƒ§ãƒ³"
 
-#: src/minicom.c:1443
+#: src/minicom.c:1457
 msgid "Compiled on"
-msgstr "¥³¥ó¥Ñ¥¤¥ë¤µ¤ì¤¿Æü»ş¤Ï: "
+msgstr "ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã•ã‚ŒãŸæ—¥æ™‚ã¯: "
 
-#: src/minicom.c:1459
+#: src/minicom.c:1473
 msgid "Port"
 msgstr ""
 
 # wtitle
-#: src/minicom.c:1462
+#: src/minicom.c:1476
 #, fuzzy
 msgid "Using character set conversion"
-msgstr "Ê¸»úÊÑ´¹"
+msgstr "æ–‡å­—å¤‰æ›"
 
 # c-format(have percent)
-#: src/minicom.c:1463
+#: src/minicom.c:1477
 #, c-format
 msgid ""
 "\n"
@@ -1606,234 +1588,240 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"%sZ ¤ò²¡¤¹¤È¡¢ÀâÌÀ²èÌÌ¤Ë¤Ê¤ê¤Ş¤¹¡£%c\n"
+"%sZ ã‚’æŠ¼ã™ã¨ã€èª¬æ˜ç”»é¢ã«ãªã‚Šã¾ã™ã€‚%c\n"
 "\n"
 
 # c-format(werror)
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed ON"
-msgstr "linefeed ¤ÎÄÉ²Ã: ON"
+msgstr "linefeed ã®è¿½åŠ : ON"
 
 # c-format(werror)
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed OFF"
-msgstr "linefeed ¤ÎÄÉ²Ã: OFF"
+msgstr "linefeed ã®è¿½åŠ : OFF"
+
+#: src/minicom.c:1503
+msgid "Add carriage return ON"
+msgstr ""
+
+#: src/minicom.c:1503
+msgid "Add carriage return OFF"
+msgstr ""
 
 # c-format(werror)
-#: src/minicom.c:1489
-msgid "Local echo ON"
-msgstr "¥í¡¼¥«¥ë¥¨¥³¡¼: ON"
-
-# c-format(werror)
-#: src/minicom.c:1489
-msgid "Local echo OFF"
-msgstr "¥í¡¼¥«¥ë¥¨¥³¡¼: OFF"
-
-# ask
 #: src/minicom.c:1508
+msgid "Local echo ON"
+msgstr "ãƒ­ãƒ¼ã‚«ãƒ«ã‚¨ã‚³ãƒ¼: ON"
+
+# c-format(werror)
+#: src/minicom.c:1508
+msgid "Local echo OFF"
+msgstr "ãƒ­ãƒ¼ã‚«ãƒ«ã‚¨ã‚³ãƒ¼: OFF"
+
+# ask
+#: src/minicom.c:1527
 msgid "You are online. Really initialize?"
-msgstr "ÀÜÂ³Ãæ¤Ç¤¹¡£¤Û¤ó¤È¤¦¤Ë½é´ü²½¤·¤Ş¤¹¤«?"
+msgstr "æ¥ç¶šä¸­ã§ã™ã€‚ã»ã‚“ã¨ã†ã«åˆæœŸåŒ–ã—ã¾ã™ã‹?"
 
 # ask
-#: src/minicom.c:1515
+#: src/minicom.c:1534
 msgid "Leave without reset?"
-msgstr "¥ê¥»¥Ã¥È¤»¤º¤Ë½ªÎ»¤·¤Ş¤¹¤«?"
+msgstr "ãƒªã‚»ãƒƒãƒˆã›ãšã«çµ‚äº†ã—ã¾ã™ã‹?"
 
 # ask
-#: src/minicom.c:1519 src/minicom.c:1537
+#: src/minicom.c:1538 src/minicom.c:1556
 msgid "Save macros?"
-msgstr "¥Ş¥¯¥í¤ò¥»¡¼¥Ö¤·¤Ş¤¹¤«?"
+msgstr "ãƒã‚¯ãƒ­ã‚’ã‚»ãƒ¼ãƒ–ã—ã¾ã™ã‹?"
 
 # ask
-#: src/minicom.c:1529
+#: src/minicom.c:1548
 msgid "Leave Minicom?"
-msgstr "Minicom¤ò½ªÎ»¤·¤Ş¤¹¤«?"
+msgstr "Minicomã‚’çµ‚äº†ã—ã¾ã™ã‹?"
 
 # input
-#: src/minicom.c:1548
+#: src/minicom.c:1567
 msgid "Capture to which file? "
-msgstr "µ­Ï¿¤¹¤ë¥Õ¥¡¥¤¥ëÌ¾¤Ï? "
+msgstr "è¨˜éŒ²ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«åã¯? "
 
 # ask
-#: src/minicom.c:1557 src/minicom.c:1566
+#: src/minicom.c:1576 src/minicom.c:1585
 msgid "Capture file"
-msgstr "µ­Ï¿¥Õ¥¡¥¤¥ë"
+msgstr "è¨˜éŒ²ãƒ•ã‚¡ã‚¤ãƒ«"
 
 # c-format(werror)
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap ON"
-msgstr "¹ÔËöÀŞ¤êÊÖ¤·: ON"
+msgstr "è¡Œæœ«æŠ˜ã‚Šè¿”ã—: ON"
 
 # c-format(werror)
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap OFF"
-msgstr "¹ÔËöÀŞ¤êÊÖ¤·: OFF"
+msgstr "è¡Œæœ«æŠ˜ã‚Šè¿”ã—: OFF"
 
 # c-format(werror)
-#: src/minicom.c:1610
+#: src/minicom.c:1629
 #, fuzzy
 msgid "Timestamp OFF"
-msgstr "¹ÔËöÀŞ¤êÊÖ¤·: OFF"
+msgstr "è¡Œæœ«æŠ˜ã‚Šè¿”ã—: OFF"
 
-#: src/minicom.c:1613
+#: src/minicom.c:1632
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1616
+#: src/minicom.c:1635
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1619
+#: src/minicom.c:1638
 msgid "Timestamp lines every second"
 msgstr ""
 
 # do_log
-#: src/minicom.c:1660
+#: src/minicom.c:1679
 msgid "Quit without reset while online."
-msgstr "ÀÜÂ³Ãæ¤Ç¤¹¤¬¡¢¥ê¥»¥Ã¥È¤»¤º¤Ë½ªÎ»¤·¤Ş¤¹¡£"
+msgstr "æ¥ç¶šä¸­ã§ã™ãŒã€ãƒªã‚»ãƒƒãƒˆã›ãšã«çµ‚äº†ã—ã¾ã™ã€‚"
 
 # mpars
 #: src/rwconf.c:115 src/rwconf.c:149
 msgid "No"
-msgstr "¤¤¤¤¤¨"
+msgstr "ã„ã„ãˆ"
 
-#: src/rwconf.c:225
+#: src/rwconf.c:226
 #, c-format
 msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 msgstr "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 
-#: src/rwconf.c:227
+#: src/rwconf.c:228
 #, c-format
-msgid ""
-"# Machine-generated file - use setup menu in minicom to change parameters.\n"
-msgstr ""
-"# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgid "# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgstr "# Machine-generated file - use setup menu in minicom to change parameters.\n"
 
-#: src/rwconf.c:252
+#: src/rwconf.c:253
 #, c-format
 msgid "Memory allocation failed.\n"
-msgstr ""
+msgstr "ãƒ¡ãƒ¢ãƒªã®å‰²ã‚Šå½“ã¦ã«å¤±æ•—ã—ã¾ã—ãŸã€‚\n"
 
-#: src/rwconf.c:321
+#: src/rwconf.c:322
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
 msgstr ""
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "global"
-msgstr "Á´ÂÎ¤Î"
+msgstr "å…¨ä½“ã®"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "personal"
-msgstr "¸Ä¿ÍÍÑ¤Î"
+msgstr "å€‹äººç”¨ã®"
 
 #: src/script.c:127
 #, c-format
 msgid "script \"%s\": syntax error in line %d %s%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\": %d ¹ÔÌÜ¤ËÊ¸Ë¡¾å¤Î¸í¤ê¤¬¤¢¤ê¤Ş¤¹¡£%s%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\": %d è¡Œç›®ã«æ–‡æ³•ä¸Šã®èª¤ã‚ŠãŒã‚ã‚Šã¾ã™ã€‚%s%s\n"
 
 #: src/script.c:151
 #, c-format
 msgid "script \"%s\": global timeout%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\": ¥°¥í¡¼¥Ğ¥ë¥¿¥¤¥à¥¢¥¦¥È%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\": ã‚°ãƒ­ãƒ¼ãƒãƒ«ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆ%s\n"
 
 #: src/script.c:290
 msgid "(word contains ESC or quote)"
-msgstr "(Ã±¸ì¤¬ESC¤«°úÍÑÉä¤ò´Ş¤ó¤Ç¤¤¤Ş¤¹)"
+msgstr "(å˜èªãŒESCã‹å¼•ç”¨ç¬¦ã‚’å«ã‚“ã§ã„ã¾ã™)"
 
 #: src/script.c:343
 #, fuzzy, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
-msgstr "runscript: %s¤ò¥ª¡¼¥×¥ó¤Ç¤­¤Ş¤»¤ó¡£%s\n"
+msgstr "runscript: %sã‚’ã‚ªãƒ¼ãƒ—ãƒ³ã§ãã¾ã›ã‚“ã€‚%s\n"
 
 #: src/script.c:364 src/script.c:476
 #, c-format
 msgid "script \"%s\": out of memory%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\": ¥á¥â¥êÉÔÂ­¤Ç¤¹¡£%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\": ãƒ¡ãƒ¢ãƒªä¸è¶³ã§ã™ã€‚%s\n"
 
 #: src/script.c:470
 #, c-format
 msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: \"%s\" ¤ÏÌ¤ÃÎ¤ÊÊÑ¿ô¤Ç¤¹%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: \"%s\" ã¯æœªçŸ¥ãªå¤‰æ•°ã§ã™%s\n"
 
 #: src/script.c:515
 #, c-format
 msgid "script \"%s\": unexpected end of file%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\": ÉÔÀµ¤Ê¥Õ¥¡¥¤¥ë¤Î½ª¤ï¤ê%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\": ä¸æ­£ãªãƒ•ã‚¡ã‚¤ãƒ«ã®çµ‚ã‚ã‚Š%s\n"
 
 #: src/script.c:523
 msgid "(garbage after })"
-msgstr "( } ¤Î¸å¤Ë¥´¥ß¤¬¤¢¤ê¤Ş¤¹)"
+msgstr "( } ã®å¾Œã«ã‚´ãƒŸãŒã‚ã‚Šã¾ã™)"
 
 #: src/script.c:531
 msgid "(too many arguments)"
-msgstr "(°ú¿ô¤¬Â¿¤¹¤®¤Ş¤¹)"
+msgstr "(å¼•æ•°ãŒå¤šã™ãã¾ã™)"
 
 #: src/script.c:550
 #, c-format
 msgid "script \"%s\" line %d: nested expect%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: nested expect%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: nested expect%s\n"
 
 #: src/script.c:560
 msgid "(garbage after {)"
-msgstr "( { ¤Î¸å¤Ë¥´¥ß¤¬¤¢¤ê¤Ş¤¹)"
+msgstr "( { ã®å¾Œã«ã‚´ãƒŸãŒã‚ã‚Šã¾ã™)"
 
 #: src/script.c:581 src/script.c:846 src/script.c:914
 msgid "(argument expected)"
-msgstr "(°ú¿ô¤¬É¬Í×¤Ç¤¹)"
+msgstr "(å¼•æ•°ãŒå¿…è¦ã§ã™)"
 
 #: src/script.c:584 src/script.c:848
 msgid "(invalid argument)"
-msgstr "(ÉÔÀµ¤Ê°ú¿ô¤Ç¤¹)"
+msgstr "(ä¸æ­£ãªå¼•æ•°ã§ã™)"
 
 #: src/script.c:679
 msgid "(in goto/gosub label)"
-msgstr "(goto/gosub ¥é¥Ù¥ë¤ÎÆâÉô)"
+msgstr "(goto/gosub ãƒ©ãƒ™ãƒ«ã®å†…éƒ¨)"
 
 #: src/script.c:686
 #, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: ¥é¥Ù¥ë \"%s\" ¤¬¸«¤Ä¤«¤ê¤Ş¤»¤ó¡£%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: ãƒ©ãƒ™ãƒ« \"%s\" ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚%s\n"
 
 #: src/script.c:708
 #, c-format
 msgid "script \"%s\": no return from gosub%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\": gosub ¤«¤é¤Î return ¤¬¤¢¤ê¤Ş¤»¤ó¡£%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\": gosub ã‹ã‚‰ã® return ãŒã‚ã‚Šã¾ã›ã‚“ã€‚%s\n"
 
 #: src/script.c:751
 msgid "(missing var name)"
-msgstr "(ÊÑ¿ôÌ¾¤¬¤¢¤ê¤Ş¤»¤ó)"
+msgstr "(å¤‰æ•°åãŒã‚ã‚Šã¾ã›ã‚“)"
 
 #: src/script.c:768 src/script.c:784
 msgid "(expected variable)"
-msgstr "(ÊÑ¿ô¤¬É¬Í×¤Ç¤¹)"
+msgstr "(å¤‰æ•°ãŒå¿…è¦ã§ã™)"
 
 #: src/script.c:816
 msgid "(expected command after if)"
-msgstr "(if¤Î¸å¤Ë¥³¥Ş¥ó¥É¤¬É¬Í×¤Ç¤¹)"
+msgstr "(ifã®å¾Œã«ã‚³ãƒãƒ³ãƒ‰ãŒå¿…è¦ã§ã™)"
 
 #: src/script.c:831
 msgid "(unknown operator)"
-msgstr "(Ì¤ÃÎ¤Î±é»»»Ò)"
+msgstr "(æœªçŸ¥ã®æ¼”ç®—å­)"
 
 #: src/script.c:870
 msgid "(unexpected argument)"
-msgstr "(Í½´ü¤·¤Ê¤¤°ú¿ô)"
+msgstr "(äºˆæœŸã—ãªã„å¼•æ•°)"
 
 #: src/script.c:897
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: expect ³°¤Ç¤Î break¡£%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: expect å¤–ã§ã® breakã€‚%s\n"
 
 #: src/script.c:917
 #, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: expect ÆâÉô¤«¤é¤Î call¡£%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: expect å†…éƒ¨ã‹ã‚‰ã® callã€‚%s\n"
 
 #: src/script.c:985
 #, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
-msgstr "¥¹¥¯¥ê¥×¥È \"%s\" ¤Î %d ¹ÔÌÜ: Ì¤ÃÎ¤Î¥³¥Ş¥ó¥É \"%s\"%s\n"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ \"%s\" ã® %d è¡Œç›®: æœªçŸ¥ã®ã‚³ãƒãƒ³ãƒ‰ \"%s\"%s\n"
 
 #: src/script.c:1026
 #, c-format
@@ -1843,50 +1831,48 @@ msgstr ""
 #: src/script.c:1031
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
-msgstr ""
-"»È¤¤Êı: runscript <¥¹¥¯¥ê¥×¥È¥Õ¥¡¥¤¥ë> [¥í¥°¥Õ¥¡¥¤¥ë [¥Û¡¼¥à¥Ç¥£¥ì¥¯¥È"
-"¥ê]]%s\n"
+msgstr "ä½¿ã„æ–¹: runscript <ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ•ã‚¡ã‚¤ãƒ«> [ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ« [ãƒ›ãƒ¼ãƒ ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª]]%s\n"
 
 # c-format(have percent)
 #: src/updown.c:71
 #, c-format
 msgid "Cannot chdir to %.30s"
-msgstr "%.30s ¤Ë¥Ç¥£¥ì¥¯¥È¥êÊÑ¹¹¤Ç¤­¤Ş¤»¤ó"
+msgstr "%.30s ã«ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªå¤‰æ›´ã§ãã¾ã›ã‚“"
 
 # wselect(wtitle)
 #: src/updown.c:223
 msgid "Upload"
-msgstr "¥¢¥Ã¥×¥í¡¼¥É"
+msgstr "ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰"
 
 # wselect(wtitle)
 #: src/updown.c:223
 msgid "Download"
-msgstr "¥À¥¦¥ó¥í¡¼¥É"
+msgstr "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰"
 
 # input
 #: src/updown.c:279
 msgid "Please enter file names"
-msgstr "¥Õ¥¡¥¤¥ëÌ¾¤òÆşÎÏ¤·¤Æ²¼¤µ¤¤"
+msgstr "ãƒ•ã‚¡ã‚¤ãƒ«åã‚’å…¥åŠ›ã—ã¦ä¸‹ã•ã„"
 
 # c-format(werror)
 #: src/updown.c:288
 #, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
-msgstr "¥á¥â¥êÉÔÂ­¤Ç¤¹¡£fork() ¤Ç¤­¤Ş¤»¤ó¡£"
+msgstr "ãƒ¡ãƒ¢ãƒªä¸è¶³ã§ã™ã€‚fork() ã§ãã¾ã›ã‚“ã€‚"
 
 # c-format(have percent)
 #: src/updown.c:300
 #, c-format
 msgid "%.30s %s - Press CTRL-C to quit"
-msgstr "%.30s %s - CTRL-C ¤Ç½ªÎ»¤·¤Ş¤¹"
+msgstr "%.30s %s - CTRL-C ã§çµ‚äº†ã—ã¾ã™"
 
 #: src/updown.c:301
 msgid "upload"
-msgstr "¥¢¥Ã¥×¥í¡¼¥É"
+msgstr "ã‚¢ãƒƒãƒ—ãƒ­ãƒ¼ãƒ‰"
 
 #: src/updown.c:301
 msgid "download"
-msgstr "¥À¥¦¥ó¥í¡¼¥É"
+msgstr "ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰"
 
 # c-format(wprintf)
 #: src/updown.c:430
@@ -1895,19 +1881,19 @@ msgid ""
 " READY: press any key to continue..."
 msgstr ""
 "\n"
-" ½ªÎ»¤·¤Ş¤·¤¿¡£²¿¤«¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤..."
+" çµ‚äº†ã—ã¾ã—ãŸã€‚ä½•ã‹ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„..."
 
 # c-format(werror)
 #: src/updown.c:474
 #, fuzzy
 msgid "Cannot create lockfile!"
-msgstr "¥í¥Ã¥¯¥Õ¥¡¥¤¥ë¤òºÆºîÀ®¤Ç¤­¤Ş¤»¤ó¡£"
+msgstr "ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å†ä½œæˆã§ãã¾ã›ã‚“ã€‚"
 
 # c-format(fprintf)
 #: src/updown.c:488
 #, fuzzy, c-format
 msgid "Cannot create lockfile for %s: %s\n"
-msgstr "¥í¥Ã¥¯¥Õ¥¡¥¤¥ë¤òºî¤ì¤Ş¤»¤ó¡£\n"
+msgstr "ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œã‚Œã¾ã›ã‚“ã€‚\n"
 
 # c-format(have percent)
 #: src/updown.c:635
@@ -1916,110 +1902,109 @@ msgstr "Same as last"
 
 #: src/updown.c:636
 msgid " A -   Username        :"
-msgstr " A -   ¥æ¡¼¥¶¡¼Ì¾      :"
+msgstr " A -   ãƒ¦ãƒ¼ã‚¶ãƒ¼å      :"
 
 #: src/updown.c:637
 msgid " B -   Password        :"
-msgstr " B -   ¥Ñ¥¹¥ï¡¼¥É      :"
+msgstr " B -   ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰      :"
 
 #: src/updown.c:638
 msgid " C -   Name of script  :"
-msgstr " C -   ¥¹¥¯¥ê¥×¥ÈÌ¾    :"
+msgstr " C -   ã‚¹ã‚¯ãƒªãƒ—ãƒˆå    :"
 
 # wputs
 #: src/updown.c:639
 msgid "Change which setting?     (Return to run, ESC to stop)"
-msgstr "¤É¤ÎÀßÄê¤òÊÑ¹¹¤·¤Ş¤¹¤«?   (Return ¤Ç¼Â¹Ô¡¢ESC ¤ÇÃæ»ß)"
+msgstr "ã©ã®è¨­å®šã‚’å¤‰æ›´ã—ã¾ã™ã‹?   (Return ã§å®Ÿè¡Œã€ESC ã§ä¸­æ­¢)"
 
 # wtitle
 #: src/updown.c:644
 msgid "Run a script"
-msgstr "¥¹¥¯¥ê¥×¥È¤Î¼Â¹Ô"
+msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œ"
 
 # c-format(werror)
 #: src/window.c:1938
 #, c-format
 msgid "Environment variable TERM not set\n"
-msgstr "´Ä¶­ÊÑ¿ô TERM ¤¬ÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤»¤ó\n"
+msgstr "ç’°å¢ƒå¤‰æ•° TERM ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“\n"
 
 #: src/window.c:1944
 #, c-format
 msgid "No termcap entry for %s\n"
-msgstr "termcap ¥¨¥ó¥È¥ê %s ¤¬¤¢¤ê¤Ş¤»¤ó¡£\n"
+msgstr "termcap ã‚¨ãƒ³ãƒˆãƒª %s ãŒã‚ã‚Šã¾ã›ã‚“ã€‚\n"
 
 #: src/window.c:1947
 #, c-format
 msgid "No termcap database present!\n"
-msgstr "termcap ¥Ç¡¼¥¿¥Ù¡¼¥¹¤¬¤¢¤ê¤Ş¤»¤ó!\n"
+msgstr "termcap ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ãŒã‚ã‚Šã¾ã›ã‚“!\n"
 
 #: src/window.c:1955
 #, c-format
 msgid "No cursor motion capability (cm)\n"
-msgstr "¥«¡¼¥½¥ë°ÜÆ°µ¡Ç½ (cm) ¤¬¤¢¤ê¤Ş¤»¤ó¡£\n"
+msgstr "ã‚«ãƒ¼ã‚½ãƒ«ç§»å‹•æ©Ÿèƒ½ (cm) ãŒã‚ã‚Šã¾ã›ã‚“ã€‚\n"
 
 #: src/window.c:1964
 #, c-format
 msgid "Number of terminal lines unknown\n"
-msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î¹Ô¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
+msgstr "ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®è¡Œæ•°ãŒä¸æ˜ã§ã™ã€‚\n"
 
 #: src/window.c:1968
 #, c-format
 msgid "Number of terminal columns unknown\n"
-msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
+msgstr "ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®æ¡æ•°ãŒä¸æ˜ã§ã™ã€‚\n"
 
 # c-format(have percent)
 #~ msgid "Old dialdir copied as %s.%hd"
-#~ msgstr "¸Å¤¤ÅÅÏÃÄ¢¤ò %s.%hd ¤Ë¥³¥Ô¡¼¤·¤Ş¤·¤¿"
+#~ msgstr "å¤ã„é›»è©±å¸³ã‚’ %s.%hd ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã—ãŸ"
 
 #~ msgid "| scroll Back........B"
-#~ msgstr "| µÕ¥¹¥¯¥í¡¼¥ë.......B"
+#~ msgstr "| é€†ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«.......B"
 
 # c-format(werror)
 #~ msgid "Resize not supported, screen may be messed up!"
-#~ msgstr "²èÌÌ¤Î¥µ¥¤¥ºÊÑ¹¹¤Ï¤Ç¤­¤Ş¤»¤ó¡£"
+#~ msgstr "ç”»é¢ã®ã‚µã‚¤ã‚ºå¤‰æ›´ã¯ã§ãã¾ã›ã‚“ã€‚"
 
 # c-format(have percent)
 #~ msgid "minicom: there is no global configuration file %s\n"
-#~ msgstr "minicom: ¶¦ÄÌ¤ÎÀßÄê¥Õ¥¡¥¤¥ë %s ¤¬¤¢¤ê¤Ş¤»¤ó¡£\n"
+#~ msgstr "minicom: å…±é€šã®è¨­å®šãƒ•ã‚¡ã‚¤ãƒ« %s ãŒã‚ã‚Šã¾ã›ã‚“ã€‚\n"
 
 # fputs
 #, fuzzy
 #~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
-#~ msgstr "´ÉÍı¼Ô¤ËÍê¤ó¤Ç¡¢ºî¤Ã¤Æ¤â¤é¤Ã¤Æ¤¯¤À¤µ¤¤ (minicom -s ¤ò»È¤¦)¡£\n"
+#~ msgstr "ç®¡ç†è€…ã«é ¼ã‚“ã§ã€ä½œã£ã¦ã‚‚ã‚‰ã£ã¦ãã ã•ã„ (minicom -s ã‚’ä½¿ã†)ã€‚\n"
 
 # fputs
 #~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
-#~ msgstr ""
-#~ "minicom: ·Ù¹ğ: ÀßÄê¥Õ¥¡¥¤¥ë¤¬¤Ê¤¤¤Î¤Ç¡¢¥Ç¥Õ¥©¥ë¥È¤ÎÀßÄê¤ò»È¤¤¤Ş¤¹¡£\n"
+#~ msgstr "minicom: è­¦å‘Š: è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ãŒãªã„ã®ã§ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®è¨­å®šã‚’ä½¿ã„ã¾ã™ã€‚\n"
 
 # c-format(werror)
 #~ msgid "You are not allowed to create a configuration"
-#~ msgstr "¤¢¤Ê¤¿¤ÏÀßÄê¤òºî¤ë¤³¤È¤¬¤Ç¤­¤Ş¤»¤ó¡£"
+#~ msgstr "ã‚ãªãŸã¯è¨­å®šã‚’ä½œã‚‹ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚"
 
 #~ msgid "minicom: -s switch needs root privilige\n"
-#~ msgstr "minicom: -s ¤ò»ÈÍÑ¤Ç¤­¤ë¤Î¤Ï root ¤À¤±¤Ç¤¹¡£\n"
+#~ msgstr "minicom: -s ã‚’ä½¿ç”¨ã§ãã‚‹ã®ã¯ root ã ã‘ã§ã™ã€‚\n"
 
 #~ msgid ""
 #~ "minicom: WARNING: please don't run minicom as root when not maintaining\n"
 #~ "                  it (with the -s switch) since all changes to the\n"
 #~ "                  configuration will be GLOBAL !.\n"
 #~ msgstr ""
-#~ "minicom: ·Ù¹ğ: ÀßÄê¤ÎÊÑ¹¹¤¬¤¹¤Ù¤Æ¥°¥í¡¼¥Ğ¥ë¤Ê¤â¤Î¤È¤Ê¤Ã¤Æ¤·¤Ş¤¦¤Î¤Ç¡¢\n"
-#~ "               ¥á¥ó¥Æ¥Ê¥ó¥¹¤¬ÌÜÅª¤Ç¤¢¤ë (-s ¥ª¥×¥·¥ç¥ó¤ò¤Ä¤±¤Æ) ¤È¤­\n"
-#~ "               °Ê³°¤Ï¡¢root ¤Ç minicom ¤ò¼Â¹Ô¤·¤Ê¤¤¤Ç¤¯¤À¤µ¤¤¡£\n"
+#~ "minicom: è­¦å‘Š: è¨­å®šã®å¤‰æ›´ãŒã™ã¹ã¦ã‚°ãƒ­ãƒ¼ãƒãƒ«ãªã‚‚ã®ã¨ãªã£ã¦ã—ã¾ã†ã®ã§ã€\n"
+#~ "               ãƒ¡ãƒ³ãƒ†ãƒŠãƒ³ã‚¹ãŒç›®çš„ã§ã‚ã‚‹ (-s ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã¤ã‘ã¦) ã¨ã\n"
+#~ "               ä»¥å¤–ã¯ã€root ã§ minicom ã‚’å®Ÿè¡Œã—ãªã„ã§ãã ã•ã„ã€‚\n"
 
 # c-format(have percent)
 #~ msgid "Sorry %s. You are not allowed to use configuration %s.\n"
-#~ msgstr "%s¡£ÀßÄê %s ¤ò»È¤¦¤³¤È¤¬¤Ç¤­¤Ş¤»¤ó¡£\n"
+#~ msgstr "%sã€‚è¨­å®š %s ã‚’ä½¿ã†ã“ã¨ãŒã§ãã¾ã›ã‚“ã€‚\n"
 
 # c-format(have percent)
 #, fuzzy
 #~ msgid "Ask your sysadmin to add your name to %s\n"
-#~ msgstr "´ÉÍı¼Ô¤ËÍê¤ó¤Ç¡¢%s ¤Ë¤¢¤Ê¤¿¤ÎÌ¾Á°¤ò²Ã¤¨¤Æ¤â¤é¤Ã¤Æ¤¯¤À¤µ¤¤¡£\n"
+#~ msgstr "ç®¡ç†è€…ã«é ¼ã‚“ã§ã€%s ã«ã‚ãªãŸã®åå‰ã‚’åŠ ãˆã¦ã‚‚ã‚‰ã£ã¦ãã ã•ã„ã€‚\n"
 
 # wputs
 #~ msgid " F: 19200                      Stopbits\n"
-#~ msgstr " F: 19200                ¥¹¥È¥Ã¥×¥Ó¥Ã¥È\n"
+#~ msgstr " F: 19200                ã‚¹ãƒˆãƒƒãƒ—ãƒ“ãƒƒãƒˆ\n"
 
 # wputs
 #~ msgid " G: 38400                         W: 1\n"
@@ -2040,43 +2025,38 @@ msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
 #~ msgstr " J: 230400        R: 7-E-1\n"
 
 #~ msgid "DBUG: initial readdir() failed (errno == %d)\n"
-#~ msgstr "DBUG: ºÇ½é¤Î readdir() ¼ºÇÔ (errno == %d)\n"
+#~ msgstr "DBUG: æœ€åˆã® readdir() å¤±æ•— (errno == %d)\n"
 
 # c-format(werror)
 #~ msgid "You are not allowed to change this parameter"
-#~ msgstr "¤¢¤Ê¤¿¤Ï¤³¤Î¥Ñ¥é¥á¡¼¥¿¤òÊÑ¹¹¤Ç¤­¤Ş¤»¤ó¡£"
+#~ msgstr "ã‚ãªãŸã¯ã“ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’å¤‰æ›´ã§ãã¾ã›ã‚“ã€‚"
 
 # c-format(werror)
 #~ msgid "This system does not support history"
-#~ msgstr "¤³¤Î¥·¥¹¥Æ¥à¤Ï¥Ò¥¹¥È¥ê¤ò¥µ¥İ¡¼¥È¤·¤Æ¤Ş¤»¤ó¡£"
+#~ msgstr "ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ãƒ’ã‚¹ãƒˆãƒªã‚’ã‚µãƒãƒ¼ãƒˆã—ã¦ã¾ã›ã‚“ã€‚"
 
 #, fuzzy
 #~ msgid "                       | Help screen........Z\n"
-#~ msgstr "                       | ÀâÌÀ²èÌÌ...........Z"
+#~ msgstr "                       | èª¬æ˜ç”»é¢...........Z"
 
 #~ msgid "sigack: unexpected ACK signal &^%%$!! (pardon my French)%c\n"
-#~ msgstr "sigack: Í½´ü¤·¤Ê¤¤ ACK ¥·¥°¥Ê¥ë!!%c\n"
+#~ msgstr "sigack: äºˆæœŸã—ãªã„ ACK ã‚·ã‚°ãƒŠãƒ«!!%c\n"
 
 #~ msgid "minicom: out of file descriptors\n"
-#~ msgstr "minicom: ¥Õ¥¡¥¤¥ë¥Ç¥¹¥¯¥ê¥×¥¿¤ÎÉÔÂ­\n"
+#~ msgstr "minicom: ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ã‚¹ã‚¯ãƒªãƒ—ã‚¿ã®ä¸è¶³\n"
 
 #~ msgid "minicom: could not fork.\n"
-#~ msgstr "minicom: fork¤Ç¤­¤Ş¤»¤ó¡£\n"
+#~ msgstr "minicom: forkã§ãã¾ã›ã‚“ã€‚\n"
 
 #~ msgid "minicom: could not exec keyserv\n"
-#~ msgstr "minicom: kerserv ¤ò¼Â¹Ô¤Ç¤­¤Ş¤»¤ó¡£\n"
+#~ msgstr "minicom: kerserv ã‚’å®Ÿè¡Œã§ãã¾ã›ã‚“ã€‚\n"
 
-#~ msgid ""
-#~ "  SCROLL MODE    U=up D=down F=page-forward B=page-backward C=Cite "
-#~ "ESC=exit "
-#~ msgstr ""
-#~ "  ¥¹¥¯¥í¡¼¥ë¥â¡¼¥É: U=¾å D=²¼ F=ÊÇ¾å B=ÊÇ²¼ C=°úÍÑ ESC=½ª"
-#~ "Î»                 "
+#~ msgid "  SCROLL MODE    U=up D=down F=page-forward B=page-backward C=Cite ESC=exit "
+#~ msgstr "  ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒ¢ãƒ¼ãƒ‰: U=ä¸Š D=ä¸‹ F=é ä¸Š B=é ä¸‹ C=å¼•ç”¨ ESC=çµ‚äº†                 "
 
 # c-format(have percent)
 #~ msgid "** Parameter %s is %s, but is marked %s in %s config file\n"
-#~ msgstr ""
-#~ "¥Ñ¥é¥á¡¼¥¿ %s ¤Ï %s ¤Ê¤Î¤Ë¡¢%s ¤È%sÀßÄê¥Õ¥¡¥¤¥ëÃæ¤ÇÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤¹\n"
+#~ msgstr "ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ %s ã¯ %s ãªã®ã«ã€%s ã¨%sè¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ä¸­ã§è¨­å®šã•ã‚Œã¦ã„ã¾ã™\n"
 
 #~ msgid "private"
 #~ msgstr "private"
@@ -2086,110 +2066,94 @@ msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
 
 # c-format(have percent)
 #~ msgid "== Attempt to change private parameter %s - denied.\n"
-#~ msgstr "== ¥×¥é¥¤¥Ù¡¼¥È¤Ê¥Ñ¥é¥á¡¼¥¿ %s ¤òÊÑ¤¨¤ë¤³¤È¤Ï¤Ç¤­¤Ş¤»¤ó¡£\n"
+#~ msgstr "== ãƒ—ãƒ©ã‚¤ãƒ™ãƒ¼ãƒˆãªãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ %s ã‚’å¤‰ãˆã‚‹ã“ã¨ã¯ã§ãã¾ã›ã‚“ã€‚\n"
 
 #~ msgid "  Dial    Find    Add     Edit   Remove   moVe   Manual "
-#~ msgstr "  DÀÜÂ³   F¸¡º÷   AÄÉ²Ã   EÊÔ½¸   Rºï½ü   V°ÜÆ°   M¼êÆ° "
+#~ msgstr "  Dæ¥ç¶š   Fæ¤œç´¢   Aè¿½åŠ    Eç·¨é›†   Rå‰Šé™¤   Vç§»å‹•   Mæ‰‹å‹• "
 
 #~ msgid " [Goto]  [Prev]  [Show]  [Tag]  [Untag]  [Okay] "
-#~ msgstr " [°ÜÆ°(G)]  [Ìá¤ë(P)]  [É½¼¨(S)]  [ÁªÂò(T)]  [²ò½ü(U)]  [·èÄê(O)] "
+#~ msgstr " [ç§»å‹•(G)]  [æˆ»ã‚‹(P)]  [è¡¨ç¤º(S)]  [é¸æŠ(T)]  [è§£é™¤(U)]  [æ±ºå®š(O)] "
 
 #~ msgid "script %s: out of memory%s\n"
-#~ msgstr "¥¹¥¯¥ê¥×¥È %s: ¥á¥â¥êÉÔÂ­¤Ç¤¹¡£%s\n"
+#~ msgstr "ã‚¹ã‚¯ãƒªãƒ—ãƒˆ %s: ãƒ¡ãƒ¢ãƒªä¸è¶³ã§ã™ã€‚%s\n"
 
 #~ msgid "Usage: %s [OPTION]... [configuration]\n"
-#~ msgstr "»È¤¤Êı: %s [¥ª¥×¥·¥ç¥ó]... [configuration]\n"
+#~ msgstr "ä½¿ã„æ–¹: %s [ã‚ªãƒ—ã‚·ãƒ§ãƒ³]... [configuration]\n"
 
 #~ msgid ""
 #~ "A terminal program for Linux and other unix-like systems.\n"
 #~ "\n"
 #~ msgstr ""
-#~ "Linux ¤ä¤½¤ÎÂ¾¤Î unix ¥é¥¤¥¯¤Ê¥·¥¹¥Æ¥à¤Î¤¿¤á¤Î¥¿¡¼¥ß¥Ê¥ë¥×¥í¥°¥é¥à\n"
+#~ "Linux ã‚„ãã®ä»–ã® unix ãƒ©ã‚¤ã‚¯ãªã‚·ã‚¹ãƒ†ãƒ ã®ãŸã‚ã®ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ \n"
 #~ "\n"
 
 #~ msgid "  -s, --setup            : enter setup mode (only as root)\n"
-#~ msgstr "  -s, --setup            : ¥»¥Ã¥È¥¢¥Ã¥×¥â¡¼¥É (root ¤Î¤ß»ÈÍÑ²Ä)\n"
+#~ msgstr "  -s, --setup            : ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ãƒ¢ãƒ¼ãƒ‰ (root ã®ã¿ä½¿ç”¨å¯)\n"
 
-#~ msgid ""
-#~ "  -o, --noinit           : do not initialize modem & lockfiles at "
-#~ "startup\n"
-#~ msgstr ""
-#~ "  -o, --noinit           : ºÇ½é¤Ë¥â¥Ç¥à¤È¥í¥Ã¥¯¥Õ¥¡¥¤¥ë¤ò½é´ü²½¤·¤Ê¤¤\n"
+#~ msgid "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
+#~ msgstr "  -o, --noinit           : æœ€åˆã«ãƒ¢ãƒ‡ãƒ ã¨ãƒ­ãƒƒã‚¯ãƒ•ã‚¡ã‚¤ãƒ«ã‚’åˆæœŸåŒ–ã—ãªã„\n"
 
 #~ msgid "  -m, --metakey          : use meta or alt key for commands\n"
-#~ msgstr "  -m, --metakey          : ¥³¥Ş¥ó¥É¤Ë meta ¥­¡¼¤« alt ¥­¡¼¤ò»È¤¦\n"
+#~ msgstr "  -m, --metakey          : ã‚³ãƒãƒ³ãƒ‰ã« meta ã‚­ãƒ¼ã‹ alt ã‚­ãƒ¼ã‚’ä½¿ã†\n"
 
 #~ msgid "  -M, --metakey8         : use 8bit meta key for commands\n"
-#~ msgstr "  -M, --metakey8         : ¥³¥Ş¥ó¥É¤Ë 8 ¥Ó¥Ã¥È¤Î meta ¥­¡¼¤ò»È¤¦\n"
+#~ msgstr "  -M, --metakey8         : ã‚³ãƒãƒ³ãƒ‰ã« 8 ãƒ“ãƒƒãƒˆã® meta ã‚­ãƒ¼ã‚’ä½¿ã†\n"
 
 #, fuzzy
-#~ msgid ""
-#~ "  -l, --ansi             : literal; assume screen uses non IBM-PC "
-#~ "character set\n"
-#~ msgstr ""
-#~ "  -l, --ansi             : Ê¸»úÄÌ¤ê ; ²èÌÌ¤¬ IBM-PC ¤ÎÊ¸»ú½¸¹ç¤ò»È¤¦¤È²¾"
-#~ "Äê\n"
+#~ msgid "  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
+#~ msgstr "  -l, --ansi             : æ–‡å­—é€šã‚Š ; ç”»é¢ãŒ IBM-PC ã®æ–‡å­—é›†åˆã‚’ä½¿ã†ã¨ä»®å®š\n"
 
 #, fuzzy
 #~ msgid "  -L, --iso              : don't assume screen uses ISO8859\n"
-#~ msgstr ""
-#~ "  -L, --iso              : -l ¤ÈÆ±ÍÍ¡£¤¿¤À¤·¡¢²èÌÌ¤¬ ISO8859 ¤ò»È¤¦¤È²¾"
-#~ "Äê\n"
+#~ msgstr "  -L, --iso              : -l ã¨åŒæ§˜ã€‚ãŸã ã—ã€ç”»é¢ãŒ ISO8859 ã‚’ä½¿ã†ã¨ä»®å®š\n"
 
 #~ msgid "  -w, --wrap             : Linewrap on\n"
-#~ msgstr "  -w, --wrap             : ¹ÔËöÀŞ¤êÊÖ¤·¤¹¤ë\n"
+#~ msgstr "  -w, --wrap             : è¡Œæœ«æŠ˜ã‚Šè¿”ã—ã™ã‚‹\n"
 
 #~ msgid "  -z, --statline         : try to use terminal's status line\n"
-#~ msgstr "  -z, --statline         : ¥¿¡¼¥ß¥Ê¥ë¤Î¥¹¥Æ¡¼¥¿¥¹¥é¥¤¥ó¤ò»È¤¦\n"
+#~ msgstr "  -z, --statline         : ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã‚’ä½¿ã†\n"
 
 #, fuzzy
 #~ msgid "  -7, --7bit             : fall back to 7bit mode\n"
-#~ msgstr "  -8, --8bit             : 8¥Ó¥Ã¥ÈÆ©²á¥â¡¼¥É (ÆüËÜ¸ì¤Ê¤É)\n"
+#~ msgstr "  -8, --8bit             : 8ãƒ“ãƒƒãƒˆé€éãƒ¢ãƒ¼ãƒ‰ (æ—¥æœ¬èªãªã©)\n"
 
 #~ msgid "  -c, --color=on/off     : ANSI style color usage on or off\n"
-#~ msgstr "  -c, --color=on/off     : ¿§ (ANSI ¥¹¥¿¥¤¥ë) ¤ò»È¤¦\n"
+#~ msgstr "  -c, --color=on/off     : è‰² (ANSI ã‚¹ã‚¿ã‚¤ãƒ«) ã‚’ä½¿ã†\n"
 
-#~ msgid ""
-#~ "  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
-#~ msgstr "  -a, --attrib=on/off    : È¿Å¾¤ä¶¯Ä´É½¼¨¤ò»È¤¦\n"
+#~ msgid "  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
+#~ msgstr "  -a, --attrib=on/off    : åè»¢ã‚„å¼·èª¿è¡¨ç¤ºã‚’ä½¿ã†\n"
 
 #~ msgid "  -t, --term=TERM        : override TERM environment variable\n"
-#~ msgstr ""
-#~ "  -t, --term=TERM        : TERM ´Ä¶­ÊÑ¿ô¤ÎÂå¤ï¤ê¤Ë»ØÄê TERM ¤ò»È¤¦\n"
+#~ msgstr "  -t, --term=TERM        : TERM ç’°å¢ƒå¤‰æ•°ã®ä»£ã‚ã‚Šã«æŒ‡å®š TERM ã‚’ä½¿ã†\n"
 
 #~ msgid "  -S, --script=SCRIPT    : run SCRIPT at startup\n"
-#~ msgstr "  -S, --script=SCRIPT    : »ØÄê¤·¤¿¥¹¥¯¥ê¥×¥È¤òºÇ½é¤Ë¼Â¹Ô¤¹¤ë\n"
+#~ msgstr "  -S, --script=SCRIPT    : æŒ‡å®šã—ãŸã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’æœ€åˆã«å®Ÿè¡Œã™ã‚‹\n"
 
 #~ msgid "  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
-#~ msgstr ""
-#~ "  -d, --dial=ENTRY       : ¥À¥¤¥¢¥ë°ìÍ÷¤Î¤Ê¤«¤Î¡ÖENTRY¡×¤Ë¥À¥¤¥ä¥ë¤¹¤ë\n"
+#~ msgstr "  -d, --dial=ENTRY       : ãƒ€ã‚¤ã‚¢ãƒ«ä¸€è¦§ã®ãªã‹ã®ã€ŒENTRYã€ã«ãƒ€ã‚¤ãƒ¤ãƒ«ã™ã‚‹\n"
 
 #~ msgid "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
-#~ msgstr "  -p, --ptty=TTYP        : µ¿»÷¥¿¡¼¥ß¥Ê¥ë¤ËÀÜÂ³¤¹¤ë\n"
+#~ msgstr "  -p, --ptty=TTYP        : ç–‘ä¼¼ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã«æ¥ç¶šã™ã‚‹\n"
 
 #~ msgid "  -C, --capturefile=FILE : start capturing to FILE\n"
-#~ msgstr ""
-#~ "  -C, --capturefile=FILE : »ØÄê¥Õ¥¡¥¤¥ë¥Í¡¼¥à¤Ëµ­Ï¿ (¥­¥ã¥×¥Á¥ã) ¤ò¤È¤ë\n"
+#~ msgstr "  -C, --capturefile=FILE : æŒ‡å®šãƒ•ã‚¡ã‚¤ãƒ«ãƒãƒ¼ãƒ ã«è¨˜éŒ² (ã‚­ãƒ£ãƒ—ãƒãƒ£) ã‚’ã¨ã‚‹\n"
 
 #~ msgid "  -v, --version          : output version information and exit\n"
-#~ msgstr "  -v, --version          : ¥Ğ¡¼¥¸¥ç¥ó¾ğÊó¤òÉ½¼¨¤·¤Æ½ªÎ»\n"
+#~ msgstr "  -v, --version          : ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ã‚’è¡¨ç¤ºã—ã¦çµ‚äº†\n"
 
 #~ msgid ""
 #~ "  configuration          : configuration file to use\n"
 #~ "\n"
 #~ msgstr ""
-#~ "  configuration          : »ÈÍÑ¤¹¤ëÀßÄê¥Õ¥¡¥¤¥ë\n"
+#~ "  configuration          : ä½¿ç”¨ã™ã‚‹è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«\n"
 #~ "\n"
 
-#~ msgid ""
-#~ "These options can also be specified in the MINICOM environment variable.\n"
-#~ msgstr ""
-#~ "¤³¤ì¤é¤Î¥ª¥×¥·¥ç¥ó¤Ï¡¢MINICOM ´Ä¶­ÊÑ¿ô¤Ç¤â»ØÄê¤¹¤ë¤³¤È¤¬¤Ç¤­¤Ş¤¹¡£\n"
+#~ msgid "These options can also be specified in the MINICOM environment variable.\n"
+#~ msgstr "ã“ã‚Œã‚‰ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ã€MINICOM ç’°å¢ƒå¤‰æ•°ã§ã‚‚æŒ‡å®šã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚\n"
 
 #, fuzzy
 #~ msgid "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
-#~ msgstr ""
-#~ "¥Ğ¥°¤Ï <minicom-devel@bazar.conectiva.com.br> ¤ËÊó¹ğ¤·¤Æ¤¯¤À¤µ¤¤¡£\n"
+#~ msgstr "ãƒã‚°ã¯ <minicom-devel@bazar.conectiva.com.br> ã«å ±å‘Šã—ã¦ãã ã•ã„ã€‚\n"
 
 # c-format(have percent)
 #, fuzzy
@@ -2200,22 +2164,22 @@ msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
 
 # c-format(have percent)
 #~ msgid "Select %s for %s"
-#~ msgstr "%s¤ò%sÍÑ¤ËÁªÂò¤·¤Æ¤¯¤À¤µ¤¤"
+#~ msgstr "%sã‚’%sç”¨ã«é¸æŠã—ã¦ãã ã•ã„"
 
 #~ msgid "one or more files"
-#~ msgstr "¤Ò¤È¤Ä¤«Ê£¿ô¤Î¥Õ¥¡¥¤¥ë"
+#~ msgstr "ã²ã¨ã¤ã‹è¤‡æ•°ã®ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "a file"
-#~ msgstr "¤Ò¤È¤Ä¤Î¥Õ¥¡¥¤¥ë"
+#~ msgstr "ã²ã¨ã¤ã®ãƒ•ã‚¡ã‚¤ãƒ«"
 
 #~ msgid "a directory"
-#~ msgstr "¤Ò¤È¤Ä¤Î¥Ç¥£¥ì¥¯¥È¥ê"
+#~ msgstr "ã²ã¨ã¤ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª"
 
 #~ msgid "Delete   "
 #~ msgstr "Delete   "
 
 #~ msgid "On "
-#~ msgstr "¥ª¥ó"
+#~ msgstr "ã‚ªãƒ³"
 
 # wputs
 #~ msgid ""
@@ -2223,21 +2187,21 @@ msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
 #~ " Press the new command key. If you want to use\n"
 #~ msgstr ""
 #~ "\n"
-#~ " ¿·µ¬¤Î¥³¥Ş¥ó¥Éµ¯Æ°¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤¡£\n"
+#~ " æ–°è¦ã®ã‚³ãƒãƒ³ãƒ‰èµ·å‹•ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„ã€‚\n"
 
 # wputs
 #~ msgid ""
 #~ " the META or ALT key enter:\n"
 #~ "\n"
-#~ msgstr " META ¤« ALT ¤ò»È¤¤¤¿¤¤¾ì¹ç¤Ë¤Ï:\n"
+#~ msgstr " META ã‹ ALT ã‚’ä½¿ã„ãŸã„å ´åˆã«ã¯:\n"
 
 # wputs
 #~ msgid "  o SPACE if your meta key sets the 8th bit high\n"
-#~ msgstr "  o SPACE   META ¤¬Âè£¸¥Ó¥Ã¥È¤òÎ©¤Æ¤ë¾ì¹ç\n"
+#~ msgstr "  o SPACE   META ãŒç¬¬ï¼˜ãƒ“ãƒƒãƒˆã‚’ç«‹ã¦ã‚‹å ´åˆ\n"
 
 # wputs
 #~ msgid "  o ESC   if your meta key sends the ESCAPE prefix (standard)\n"
-#~ msgstr "  o ESC     META ¤¬ ESCAPE ¥×¥ì¥Õ¥£¥Ã¥¯¥¹¤òÁ÷¤ë¾ì¹ç (É¸½à)\n"
+#~ msgstr "  o ESC     META ãŒ ESCAPE ãƒ—ãƒ¬ãƒ•ã‚£ãƒƒã‚¯ã‚¹ã‚’é€ã‚‹å ´åˆ (æ¨™æº–)\n"
 
 # wputs
 #~ msgid ""
@@ -2247,39 +2211,30 @@ msgstr "¥¿¡¼¥ß¥Ê¥ë¤Î·å¿ô¤¬ÉÔÌÀ¤Ç¤¹¡£\n"
 #~ msgstr ""
 #~ "\n"
 #~ "\n"
-#~ " ¿·µ¬¤Î¥³¥Ş¥ó¥É¥­¡¼¤ò²¡¤·¤Æ²¼¤µ¤¤: "
+#~ " æ–°è¦ã®ã‚³ãƒãƒ³ãƒ‰ã‚­ãƒ¼ã‚’æŠ¼ã—ã¦ä¸‹ã•ã„: "
 
 # c-format(have percent)
 #~ msgid "      At : %s\n"
-#~ msgstr "ÅÅÏÃÈÖ¹æ : %s\n"
+#~ msgstr "é›»è©±ç•ªå· : %s\n"
 
 # c-format(have percent)
 #~ msgid " Last on : %s at %s\n"
-#~ msgstr "    Á°²ó : %s at %s\n"
+#~ msgstr "    å‰å› : %s at %s\n"
 
 # c-format(have percent)
 #~ msgid " Dialing : %s"
-#~ msgstr " ÀÜÂ³Àè  : %s"
+#~ msgstr " æ¥ç¶šå…ˆ  : %s"
 
 # c-format(werror)
 #~ msgid "Can't write to ~/.dialdir"
-#~ msgstr "~/.dialdir ¤Ë½ñ¤­¹ş¤á¤Ş¤»¤ó¡£"
+#~ msgstr "~/.dialdir ã«æ›¸ãè¾¼ã‚ã¾ã›ã‚“ã€‚"
 
 #~ msgid "set to "
-#~ msgstr "¼¡¤Î¤è¤¦¤ËÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤¹: "
+#~ msgstr "æ¬¡ã®ã‚ˆã†ã«è¨­å®šã•ã‚Œã¦ã„ã¾ã™: "
 
 #, fuzzy
 #~ msgid "unset.\n"
-#~ msgstr "ÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤»¤ó"
+#~ msgstr "è¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“"
 
 #~ msgid "The LIBDIR to find the configuration files and the access file\n"
-#~ msgstr ""
-#~ "ÀßÄê¥Õ¥¡¥¤¥ë¤È¥¢¥¯¥»¥¹¥Õ¥¡¥¤¥ë minicom.users ¤òÃÖ¤¯¤Ù¤­¥Ç¥£¥ì¥¯¥È¥ê¤ò\n"
-
-# c-format(have percent)
-#~ msgid ""
-#~ "minicom.users is compiled as %s.\n"
-#~ "\n"
-#~ msgstr ""
-#~ "»ØÄê¤¹¤ë¥³¥ó¥Ñ¥¤¥ë¥ª¥×¥·¥ç¥ó LIBDIR ¤Ï¡¢%s ¤ËÀßÄê¤µ¤ì¤Æ¤¤¤Ş¤¹¡£\n"
-#~ "\n"
+#~ msgstr "è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã¨ã‚¢ã‚¯ã‚»ã‚¹ãƒ•ã‚¡ã‚¤ãƒ« minicom.users ã‚’ç½®ãã¹ããƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’\n"
