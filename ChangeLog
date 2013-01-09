@@ -1,3 +1,9 @@
+2013-01-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/util.c: Do not treat : as a device path delimiter, thus now
+	  supporting path with colon in them, like
+	  /dev/serial/by-path/.... Debian 697624
+
 2012-12-21  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/nb.po: Update from TP.

@@ -175,7 +175,7 @@ int fastsystem(char *cmd, char *in, char *out, char *err)
 }
 
 /*
- * Get next port from a space-, comma-, colon-, or semi-colon-separated
+ * Get next port from a space-, comma-, or semi-colon-separated
  * list (we're easy :-)) in a PARS_VAL_LEN length string.
  *
  * Returns NULL pointer on end-of-list.
@@ -197,10 +197,10 @@ char * get_port(char *port_list)
     strncpy(loc_port_list, port_list, PARS_VAL_LEN);
     loc_port_list[PARS_VAL_LEN - 1] = 0;
     ep = &loc_port_list[strlen(loc_port_list)];
-    sp = strtok(loc_port_list, ":;, ");
+    sp = strtok(loc_port_list, ";, ");
   }
   else if (*sp != 0)
-    sp = strtok(sp, ":;, ");
+    sp = strtok(sp, ";, ");
   else
     sp = NULL;
 
