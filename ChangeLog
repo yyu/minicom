@@ -1,3 +1,7 @@
+2013-01-10  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/fi.po: Update from Translation Project.
+
 2013-01-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/util.c: Do not treat : as a device path delimiter, thus now
