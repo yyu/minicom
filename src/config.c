@@ -1864,8 +1864,12 @@ int loadconv(char *buf)
     werror(_("Cannot open conversion table %s"), pfix_home(buf));
     return 1;
   }
-  fread(vt_inmap, sizeof(vt_inmap), (size_t)1, fp);
-  fread(vt_outmap, sizeof(vt_outmap), (size_t)1, fp);
+  if (   fread(vt_inmap, sizeof(vt_inmap), (size_t)1, fp) != 1
+      || fread(vt_outmap, sizeof(vt_outmap), (size_t)1, fp) != 1)
+    {
+      werror(_("Cannot read conversion table %s"), pfix_home(buf));
+      return 1;
+    }
   fclose(fp);
   return 0;
 }

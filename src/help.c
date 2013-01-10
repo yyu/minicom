@@ -45,7 +45,7 @@ int help(void)
   snprintf(buf, sizeof(buf), _("Commands can be called by %s<key>"), esc_key());
   buf[sizeof(buf) - 1] = 0;
   mc_wlocate(w, (x2 - x1) / 2 - strlen(buf) / 2, 2);
-  mc_wprintf(w, buf);
+  mc_wprintf(w, "%s", buf);
 
   mc_wlocate(w, 15, 4);
   mc_wputs(w, _("Main Functions"));

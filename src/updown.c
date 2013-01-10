@@ -54,10 +54,12 @@ static int mcd(char *dir)
     if (*dir == 0)
       return 0;
     init = 1;
-    getcwd(odir, 255);
+    if (getcwd(odir, sizeof(odir)) == NULL)
+      return -1;
   }
   if (*dir == 0) {
-    chdir(odir);
+    if (chdir(odir) == -1)
+      return -1;
     return 0;
   }
 
@@ -300,7 +302,8 @@ void updown(int what, int nr)
     snprintf(title, sizeof(title), _("%.30s %s - Press CTRL-C to quit"), P_PNAME(g),
              what == 'U' ? _("upload") : _("download"));
     mc_wtitle(win, TMID, title);
-    pipe(pipefd);
+    if (pipe(pipefd) == -1)
+      werror("pipe() call failed");
   } else
     mc_wleave();
 
@@ -477,7 +480,8 @@ int lockfile_create(void)
     char buf[12];
     snprintf(buf, sizeof(buf),  "%10d\n", getpid());
     buf[sizeof(buf) - 1] = 0;
-    write(fd, buf, strlen(buf));
+    if (write(fd, buf, strlen(buf)) < (ssize_t)strlen(buf))
+      fprintf(stderr, _("Failed to write lockfile %s\n"), lockfile);
     close(fd);
   }
   umask(n);
@@ -703,7 +707,8 @@ void runscript(int ask, const char *s, const char *l, const char *p)
   }
   scriptname(scr_name);
 
-  pipe(pipefd);
+  if (pipe(pipefd) < 0)
+    return;
 
   if (mcd(P_SCRIPTDIR) < 0)
     return;

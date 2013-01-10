@@ -111,16 +111,16 @@ static void _initkeys(void)
   if (_tptr == NULL) {
     if ((tbuf = (char *)malloc(512)) == NULL ||
         (cbuf = (char *)malloc(2048)) == NULL) {
-      write(2, _("Out of memory.\n"), 15);
+      fprintf(stderr, _("Out of memory.\n"));
       exit(1);
     }
     term = getenv("TERM");
     switch (tgetent(cbuf, term)) {
       case 0:
-        write(2, _("No termcap entry.\n"), 18);
+        fprintf(stderr, _("No termcap entry.\n"));
         exit(1);
       case -1:
-        write(2, _("No /etc/termcap present!\n"), 25);
+        fprintf(stderr, _("No /etc/termcap present!\n"));
         exit(1);
       default:
         break;

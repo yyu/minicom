@@ -232,7 +232,8 @@ void mputs(const char *s, int how)
     if (how == 0 && c == '~')
       sleep(1);
     else
-      write(portfd, &c, 1);
+      if (write(portfd, &c, 1) != 1)
+        break;
     s++;
   }
 }
@@ -740,26 +741,31 @@ static void convert_to_host_order(struct dialent *dst, const struct dialent *src
 }
 
 /* Read version 5 of the dialing directory. */
-void v5_read(FILE *fp, struct dialent *d)
+static int v5_read(FILE *fp, struct dialent *d)
 {
   struct dialent dent_n;
-  fread(&dent_n, sizeof(dent_n), 1, fp);
+  if (fread(&dent_n, sizeof(dent_n), 1, fp) != 1)
+    return 1;
   convert_to_host_order(d, &dent_n);
+  return 0;
 }
 
-void v6_read(FILE *fp, struct dialent *d)
+static int v6_read(FILE *fp, struct dialent *d)
 {
   struct dialent dent_n;
-  fread(&dent_n, sizeof(dent_n) - sizeof(void *), 1, fp);
+  if (fread(&dent_n, sizeof(dent_n) - sizeof(void *), 1, fp) != 1)
+    return 1;
   convert_to_host_order(d, &dent_n);
+  return 0;
 }
 
 /* Read version 4 of the dialing directory. */
-void v4_read(FILE *fp, struct dialent *d, struct dver *dv)
+static int v4_read(FILE *fp, struct dialent *d, struct dver *dv)
 {
   struct v4_dialent v4;
 
-  fread(&v4, dv->size, 1, fp);
+  if (fread(&v4, dv->size, 1, fp) != 1)
+    return 1;
 
   if (dv->size < sizeof(struct dialent)) {
     if (dv->size < offsetof(struct dialent, count) + sizeof(struct dialent *)) {
@@ -771,14 +777,18 @@ void v4_read(FILE *fp, struct dialent *d, struct dver *dv)
       d->convfile[0] = 0;
     strcpy(d->stopb, "1");
   }
+
+  return 0;
 }
 
 /* Read version 3 of the dialing directory. */
-void v3_read(FILE *fp, struct dialent *d)
+static int v3_read(FILE *fp, struct dialent *d)
 {
   struct v3_dialent v3;   /* jl 22.06.97 */
 
-  fread(&v3, sizeof(v3), 1, fp);
+  if (fread(&v3, sizeof(v3), 1, fp) != 1)
+    return 1;
+
   memcpy(d, &v3, offsetof(struct v3_dialent, next));
 
   d->lastdate[0] = 0;
@@ -786,14 +796,18 @@ void v3_read(FILE *fp, struct dialent *d)
   d->count = 0;
   d->convfile[0] = 0;
   strcpy(d->stopb, "1");
+
+  return 0;
 }
 
 /* Read version 2 of the dialing directory. */
-void v2_read(FILE *fp, struct dialent *d)
+static int v2_read(FILE *fp, struct dialent *d)
 {
   struct v3_dialent v3;   /* jl 22.06.97 */
 
-  fread((char *)&v3, sizeof(v3), 1, fp);
+  if (fread((char *)&v3, sizeof(v3), 1, fp) != 1)
+    return 1;
+
   memcpy(d, &v3, offsetof(struct v3_dialent, next));
   if (d->flags & FL_ANSI)
     d->flags |= FL_WRAP;
@@ -802,14 +816,18 @@ void v2_read(FILE *fp, struct dialent *d)
   d->count = 0;
   d->convfile[0] = 0;
   strcpy(d->stopb, "1");
+
+  return 0;
 }
 
 /* Read version 1 of the dialing directory. */
-void v1_read(FILE *fp, struct dialent *d)
+static int v1_read(FILE *fp, struct dialent *d)
 {
   struct v1_dialent v1;
 
-  fread((char *)&v1, sizeof(v1), (size_t)1, fp);
+  if (fread((char *)&v1, sizeof(v1), (size_t)1, fp) != 1)
+    return 1;
+
   memcpy(d->username, v1.username, sizeof(v1) - offsetof(struct v1_dialent, username));
   strncpy(d->name, v1.name, sizeof(d->name));
   strncpy(d->number, v1.number, sizeof(d->number));
@@ -819,14 +837,19 @@ void v1_read(FILE *fp, struct dialent *d)
   d->count=0;
   d->convfile[0]=0;
   strcpy(d->stopb, "1");
+
+  return 0;
 }
 
 /* Read version 0 of the dialing directory. */
-void v0_read(FILE *fp, struct dialent *d)
+static int v0_read(FILE *fp, struct dialent *d)
 {
-  v1_read(fp, d);
+  if (v1_read(fp, d))
+    return 1;
   d->dialtype = 0;
   d->flags = 0;
+
+  return 0;
 }
 
 /*
@@ -884,7 +907,11 @@ int readdialdir(void)
 
   /* Get version of the dialing directory */
   fseek(fp, 0L, SEEK_SET);
-  fread(&dial_ver, sizeof(dial_ver), 1, fp);
+  if (fread(&dial_ver, sizeof(dial_ver), 1, fp) != 1)
+    {
+      werror(_("Failed to read dialing directory\n"));
+      return -1;
+    }
   if (dial_ver.magic != DIALMAGIC) {
     /* First version without version info. */
     dial_ver.version = 0;
@@ -969,29 +996,34 @@ int readdialdir(void)
       fclose(fp);
       return -1;
     }
+    int r = 0;
     switch (dial_ver.version) {
       case 0:
-        v0_read(fp, d);
+        r = v0_read(fp, d);
         break;
       case 1:
-        v1_read(fp, d);
+        r = v1_read(fp, d);
         break;
       case 2:
-        v2_read(fp, d);
+        r = v2_read(fp, d);
         break;
       case 3:
-        v3_read(fp, d);
+        r = v3_read(fp, d);
         break;
       case 4:
-        v4_read(fp, d, &dial_ver);
+        r = v4_read(fp, d, &dial_ver);
         break;
       case 5:
-	v5_read(fp, d);
+	r = v5_read(fp, d);
 	break;
       case 6:
-	v6_read(fp, d);
+	r = v6_read(fp, d);
 	break;
     }
+
+    if (r)
+      werror("Failed to read phonelist\n");
+
     /* MINIX terminal type is obsolete */
     if (d->term == 2)
       d->term = 1;

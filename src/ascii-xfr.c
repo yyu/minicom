@@ -126,7 +126,8 @@ void check_answer(void)
   tv.tv_usec = 0;
   while (select (STDIN_FILENO + 1, &rfds, NULL, NULL, &tv) > 0) {
     n = read (STDIN_FILENO, line, sizeof(line));
-    (void)write(STDERR_FILENO, line, n);
+    if (write(STDERR_FILENO, line, n) == -1)
+      break;
     FD_ZERO(&rfds);
     FD_SET(STDIN_FILENO, &rfds);
     tv.tv_sec = 0;
