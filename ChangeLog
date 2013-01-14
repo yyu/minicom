@@ -1,3 +1,7 @@
+2013-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/ja.po: Update from TP.
+
 2013-01-10  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/ascii-xfr.c, src/config.c, src/dial.c, src/help.c, src/updown.c, src/wkeys.c: Fix warnings with more modern warning options ("hardening").

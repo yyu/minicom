@@ -2,14 +2,14 @@
 # Copyright (C) 1998, 1999, 2000 Tomohiro KUBOTA, 2012 Takeshi Hamasaki
 # This file is distributed under the same license as the minicom package.
 # Tomohiro KUBOTA <kubota@debian.or.jp>, 1998.
-# Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2012.
+# Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom-2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2012-12-01 17:43+0100\n"
-"PO-Revision-Date: 2012-12-20 23:51+0900\n"
+"PO-Revision-Date: 2013-01-14 21:46+0900\n"
 "Last-Translator: Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -238,9 +238,8 @@ msgstr "モデムとダイヤルの設定"
 
 # c-format(wprintf)
 #: src/config.c:690
-#, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
-msgstr "      (Return か Esc で終了)"
+msgstr "    Return か Esc で終了。AとBの文字列は編集すると表示します。"
 
 #: src/config.c:828
 msgid " A - Command key is         :"
@@ -299,9 +298,8 @@ msgid " O - Character conversion   :"
 msgstr " O - 文字変換               :"
 
 #: src/config.c:842
-#, fuzzy
 msgid " P - Add linefeed           :"
-msgstr " J -  行末折り返し        :"
+msgstr " P - linefeedを追加         :"
 
 #: src/config.c:843
 msgid " Q - Local echo             :"
@@ -317,7 +315,7 @@ msgstr " S - 16進表示                :"
 
 #: src/config.c:846
 msgid " T - Add carriage return    :"
-msgstr ""
+msgstr " T - Carriage Returnの追加  :"
 
 #: src/config.c:847 src/config.c:1601
 msgid "Change which setting?  (Esc to exit)"
@@ -444,7 +442,7 @@ msgstr " D -  改行の送信遅延(ミリ秒) :"
 
 #: src/config.c:1189
 msgid " E -          ENQ answerback :"
-msgstr ""
+msgstr " E -          ENQ 応答       :"
 
 #: src/config.c:1190
 msgid " F - Character tx delay (ms) :"
@@ -862,12 +860,12 @@ msgstr "時間切れ"
 
 #: src/dial.c:858
 msgid "Manually entered number"
-msgstr "手動で入力した場号"
+msgstr "手入力した番号"
 
 # c-format(werror)
 #: src/dial.c:867
 msgid "Cannot open ~/.dialdir: permission denied"
-msgstr "~/.dialdir をオープンできません: 許可されません"
+msgstr "~/.dialdir をオープンできません: 許可がありません"
 
 # c-format(werror)
 #: src/dial.c:919
@@ -876,9 +874,8 @@ msgstr "電話帳が書き直されている (不明なバージョン?)"
 
 # c-format(werror)
 #: src/dial.c:926 src/dial.c:934
-#, fuzzy
 msgid "Phonelist corrupted"
-msgstr "電話帳が書き直されている (?)"
+msgstr "電話帳が破損しています"
 
 # c-format(werror)
 #: src/dial.c:939
@@ -902,9 +899,8 @@ msgstr ""
 
 # c-format(werror)
 #: src/dial.c:1050
-#, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
-msgstr "~/.dialdir をオープンできません: 許可されません"
+msgstr "~/.dialdir を書き込みのためにオープンできません"
 
 # c-format(werror)
 #: src/dial.c:1066 src/dial.c:1078
@@ -998,7 +994,7 @@ msgstr "接続先 "
 
 #: src/dial.c:1275
 msgid "Find"
-msgstr ""
+msgstr "検索"
 
 #: src/dial.c:1275
 msgid "Add"
@@ -1011,17 +1007,16 @@ msgstr "編集"
 
 # ask
 #: src/dial.c:1275
-#, fuzzy
 msgid "Remove"
-msgstr "削除しますか?"
+msgstr "削除"
 
 #: src/dial.c:1275
 msgid "moVe"
-msgstr ""
+msgstr "移動(V)"
 
 #: src/dial.c:1276
 msgid "Manual"
-msgstr ""
+msgstr "手入力"
 
 #: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
@@ -1058,7 +1053,7 @@ msgstr "     名前           電話番号         前回の接続     Times Scr
 
 #: src/dial.c:1742
 msgid "Find an entry"
-msgstr "検索"
+msgstr "登録項目を検索"
 
 # ask
 #: src/dial.c:1803
@@ -1107,13 +1102,12 @@ msgid "Select one or more files for download"
 msgstr "ひとつか複数のファイル"
 
 #: src/file.c:348
-#, fuzzy
 msgid "Select a file for download"
-msgstr "ファイルを選んで下さい"
+msgstr "ダウンロードするファイルを選んで下さい"
 
 #: src/file.c:350
 msgid "Select a directory for download"
-msgstr ""
+msgstr "ダウンロードするディレクトリを選んで下さい"
 
 #: src/file.c:353
 #, fuzzy
@@ -1121,14 +1115,12 @@ msgid "Select one or more files for upload"
 msgstr "ひとつか複数のファイル"
 
 #: src/file.c:355
-#, fuzzy
 msgid "Select a file for upload"
-msgstr "ファイルを選んで下さい"
+msgstr "アップロードするファイルを選んで下さい"
 
 #: src/file.c:357
-#, fuzzy
 msgid "Select a directory for upload"
-msgstr "ファイルを選んで下さい"
+msgstr "アップロードするディレクトリを選んで下さい"
 
 # c-format(have percent)
 #: src/file.c:366
@@ -1187,9 +1179,9 @@ msgstr "選択されていません。ファイル名を入力:"
 
 # c-format(have percent)
 #: src/file.c:853
-#, fuzzy, c-format
+#, c-format
 msgid "File: \"%s\" exists! Overwrite?"
-msgstr "\"%s\" が存在します。上書きしますか?"
+msgstr "ファイル \"%s\" が存在します!上書きしますか?"
 
 # c-format(file_tell)
 #: src/file.c:864
@@ -1325,7 +1317,7 @@ msgstr "minicom: %s をオープンできません。\n"
 #: src/main.c:298 src/main.c:754
 #, c-format
 msgid "Cannot open %s!"
-msgstr "%s をオープンできない！"
+msgstr "%s をオープンできません！"
 
 #: src/main.c:477
 msgid "Offline"
@@ -1462,7 +1454,7 @@ msgid "Type \"minicom %s\" for help.\n"
 msgstr "説明を読むには \"minicom %s\" と入力してください。\n"
 
 #: src/minicom.c:809
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... [configuration]\n"
 "A terminal program for Linux and other unix-like systems.\n"
@@ -1494,6 +1486,35 @@ msgid ""
 "\n"
 "These options can also be specified in the MINICOM environment variable.\n"
 msgstr ""
+"使用法: %s [OPTION]... [configuration]\n"
+"A terminal program for Linux and other unix-like systems.\n"
+"\n"
+"  -b, --baudrate         : set baudrate (ignore the value from config)\n"
+"  -D, --device           : set device name (ignore the value from config)\n"
+"  -s, --setup            : enter setup mode\n"
+"  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
+"  -m, --metakey          : use meta or alt key for commands\n"
+"  -M, --metakey8         : use 8bit meta key for commands\n"
+"  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
+"  -L, --iso              : don't assume screen uses ISO8859\n"
+"  -w, --wrap             : Linewrap on\n"
+"  -H, --displayhex       : display output in hex\n"
+"  -z, --statline         : try to use terminal's status line\n"
+"  -7, --7bit             : force 7bit mode\n"
+"  -8, --8bit             : force 8bit mode\n"
+"  -c, --color=on/off     : ANSI style color usage on or off\n"
+"  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
+"  -t, --term=TERM        : override TERM environment variable\n"
+"  -S, --script=SCRIPT    : run SCRIPT at startup\n"
+"  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
+"  -p, --ptty=TTYP        : connect to pseudo terminal\n"
+"  -C, --capturefile=FILE : start capturing to FILE\n"
+"  -T, --disabletime      : disable display of online time\n"
+"  -R, --remotecharset    : character set of communication partner\n"
+"  -v, --version          : output version information and exit\n"
+"  configuration          : configuration file to use\n"
+"\n"
+"These options can also be specified in the MINICOM environment variable.\n"
 
 # c-format(have percent)
 #: src/minicom.c:838
@@ -1571,13 +1592,12 @@ msgstr "コンパイルされた日時は: "
 
 #: src/minicom.c:1473
 msgid "Port"
-msgstr ""
+msgstr "ポート"
 
 # wtitle
 #: src/minicom.c:1476
-#, fuzzy
 msgid "Using character set conversion"
-msgstr "文字変換"
+msgstr "文字コード変換を使用中"
 
 # c-format(have percent)
 #: src/minicom.c:1477
@@ -1603,11 +1623,11 @@ msgstr "linefeed の追加: OFF"
 
 #: src/minicom.c:1503
 msgid "Add carriage return ON"
-msgstr ""
+msgstr "Carriage Returnの追加 ON"
 
 #: src/minicom.c:1503
 msgid "Add carriage return OFF"
-msgstr ""
+msgstr "Carriage Returnの追加 OFF"
 
 # c-format(werror)
 #: src/minicom.c:1508
@@ -1730,9 +1750,9 @@ msgid "(word contains ESC or quote)"
 msgstr "(単語がESCか引用符を含んでいます)"
 
 #: src/script.c:343
-#, fuzzy, c-format
+#, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
-msgstr "runscript: %sをオープンできません。%s\n"
+msgstr "runscript: \"%s\" をオープンできません。%s\n"
 
 #: src/script.c:364 src/script.c:476
 #, c-format
@@ -1826,7 +1846,7 @@ msgstr "スクリプト \"%s\" の %d 行目: 未知のコマンド \"%s\"%s\n"
 #: src/script.c:1026
 #, c-format
 msgid "runscript, part of minicom version %s\n"
-msgstr ""
+msgstr "runscript は minicom version %s の一部です\n"
 
 #: src/script.c:1031
 #, c-format
@@ -1885,15 +1905,14 @@ msgstr ""
 
 # c-format(werror)
 #: src/updown.c:474
-#, fuzzy
 msgid "Cannot create lockfile!"
-msgstr "ロックファイルを再作成できません。"
+msgstr "ロックファイルを作成できません!"
 
 # c-format(fprintf)
 #: src/updown.c:488
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot create lockfile for %s: %s\n"
-msgstr "ロックファイルを作れません。\n"
+msgstr "%s のロックファイルを作れません: %s\n"
 
 # c-format(have percent)
 #: src/updown.c:635
