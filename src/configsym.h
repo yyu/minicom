@@ -35,7 +35,7 @@
  * jl  10.02.2000 parameter P_STOPB
  */
 
-#define PARS_VAL_LEN 64
+#define PARS_VAL_LEN 128
 
 struct pars {
   /* value is first, so that (char *)mpars[0] == mpars[0].value */

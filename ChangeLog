@@ -1,5 +1,8 @@
 2013-01-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/configsym.h: Increase config value size to be able to
+	  store longer file names.
+
 	* src/minicom.c: Comment spelling fix.
 
 2013-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
