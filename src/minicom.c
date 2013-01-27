@@ -1348,7 +1348,7 @@ int main(int argc, char **argv)
     }
   }
 
-  /* New we can also overwrite the device name, if one was given */
+  /* Now we can also overwrite the device name, if one was given */
   if (cmdline_device) {
     strncpy(P_PORT, cmdline_device, sizeof(P_PORT));
     P_PORT[sizeof(P_PORT) - 1] = 0;

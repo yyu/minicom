@@ -1,3 +1,7 @@
+2013-01-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.c: Comment spelling fix.
+
 2013-01-14  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/ja.po: Update from TP.
