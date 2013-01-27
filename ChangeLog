@@ -1,5 +1,8 @@
 2013-01-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/config.c: Do not allow setting of lock file path when
+	  built with lockdev. Patch by Jaromir Capik. Redhat #754235
+
 	* src/configsym.h: Increase config value size to be able to
 	  store longer file names.
 

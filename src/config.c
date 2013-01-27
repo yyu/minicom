@@ -545,7 +545,11 @@ static void doserial(void)
 
   w = mc_wopen(5, 4, 75, 12, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
   mc_wprintf(w, "%s %.41s\n", serial_device, P_PORT);
+#if !HAVE_LOCKDEV
   mc_wprintf(w, "%s %.41s\n", lockfile_location, P_LOCK);
+#else
+  mc_wprintf(w, "\n");
+#endif
   mc_wprintf(w, "%s %.41s\n", callin_program, P_CALLIN);
   mc_wprintf(w, "%s %.41s\n", callout_program, P_CALLOUT);
   mc_wprintf(w, "%s %s %s%s%s\n",
@@ -565,9 +569,11 @@ static void doserial(void)
       case 'A':
         pgets(w, mbslen (serial_device) + 1, 0, P_PORT, 64, 64, 1);
         break;
+#if !HAVE_LOCKDEV
       case 'B':
         pgets(w, mbslen (lockfile_location) + 1, 1, P_LOCK, 64, 64, 1);
         break;
+#endif
       case 'C':
         pgets(w, mbslen (callin_program) + 1, 2, P_CALLIN, 64, 64, 1);
         break;
