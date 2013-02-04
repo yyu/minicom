@@ -1,3 +1,7 @@
+2013-02-04  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/zh_TW.po: Update from Translation Project.
+
 2013-01-27  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c: Do not allow setting of lock file path when
