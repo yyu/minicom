@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2012-12-01 17:00+0100\n"
+"POT-Creation-Date: 2013-02-06 18:21+0100\n"
 "PO-Revision-Date: 2003-09-14 08:41+0300\n"
 "Last-Translator: Eugen Hoanca <eugenh@urban-grafx.ro>\n"
 "Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
@@ -32,8 +32,8 @@ msgstr " B - Înregistreazã(Log) conexiunile ºi se deconecteazã  :"
 msgid " C - Log file transfers        :"
 msgstr " C - Înregistreazã(Log) transferele de fiºiere        :"
 
-#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:646
-#: src/config.c:1184 src/dial.c:1155
+#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:652
+#: src/config.c:1197 src/dial.c:1187
 msgid "Change which setting?"
 msgstr "Schimbã care setare?"
 
@@ -135,208 +135,212 @@ msgstr " F - Hardware Flow Control :"
 msgid " G - Software Flow Control :"
 msgstr " G - Software Flow Control :"
 
-#: src/config.c:616
+#: src/config.c:622
 msgid "DTE speed "
 msgstr "Vitezã DTE"
 
-#: src/config.c:618
+#: src/config.c:624
 msgid "line speed"
 msgstr "vitezã linie"
 
-#: src/config.c:626
+#: src/config.c:632
 msgid " A - Init string ........."
 msgstr " A - ºir de iniþializare ........."
 
-#: src/config.c:627
+#: src/config.c:633
 msgid " B - Reset string ........"
 msgstr " B - ªir de resetare ........"
 
-#: src/config.c:628
+#: src/config.c:634
 msgid " C - Dialing prefix #1...."
 msgstr " C - Prefix #1 pentru apelare...."
 
-#: src/config.c:629
+#: src/config.c:635
 msgid " D - Dialing suffix #1...."
 msgstr " D - Sufix #1 pentru apelare...."
 
-#: src/config.c:630
+#: src/config.c:636
 msgid " E - Dialing prefix #2...."
 msgstr " E - Prefix #2 pentru apelare...."
 
-#: src/config.c:631
+#: src/config.c:637
 msgid " F - Dialing suffix #2...."
 msgstr " F - Sufix #2 pentru apelare...."
 
-#: src/config.c:632
+#: src/config.c:638
 msgid " G - Dialing prefix #3...."
 msgstr " G - Prefix #3 pentru apelare...."
 
-#: src/config.c:633
+#: src/config.c:639
 msgid " H - Dialing suffix #3...."
 msgstr " H - Sufix #3 pentru apelare...."
 
-#: src/config.c:634
+#: src/config.c:640
 msgid " I - Connect string ......"
 msgstr " I - ªir de conectare ......"
 
-#: src/config.c:635
+#: src/config.c:641
 msgid " J - No connect strings .."
 msgstr " J - Nici un ºir de conectare .."
 
-#: src/config.c:636
+#: src/config.c:642
 msgid " K - Hang-up string ......"
 msgstr " K - ªir de deconectare ......"
 
-#: src/config.c:637
+#: src/config.c:643
 msgid " L - Dial cancel string .."
 msgstr " L - ªir de renunþare apel .."
 
-#: src/config.c:638
+#: src/config.c:644
 msgid " M - Dial time ..........."
 msgstr " M - Duratã apelare ..........."
 
-#: src/config.c:639
+#: src/config.c:645
 msgid " N - Delay before redial ."
 msgstr " N - Întârziere înainte de reapelare ."
 
-#: src/config.c:640
+#: src/config.c:646
 msgid " O - Number of tries ....."
 msgstr " O - Numãr de încercãri ....."
 
-#: src/config.c:641
+#: src/config.c:647
 msgid " P - DTR drop time (0=no)."
 msgstr " P - duratã renunþare la DTR (0=fãrã)."
 
-#: src/config.c:642
+#: src/config.c:648
 msgid " Q - Auto bps detect ....."
 msgstr " Q - Autodetectare bps ....."
 
-#: src/config.c:643
+#: src/config.c:649
 msgid " R - Modem has DCD line .."
 msgstr " R - Modemul are linie DCD .."
 
-#: src/config.c:644
+#: src/config.c:650
 msgid " S - Status line shows ..."
 msgstr " S - Linia de stare afiºeazã ..."
 
-#: src/config.c:645
+#: src/config.c:651
 msgid " T - Multi-line untag ...."
 msgstr " T - Multi-linie untag ...."
 
-#: src/config.c:657
+#: src/config.c:663
 msgid "Modem and dialing parameter setup"
 msgstr "Setare modem ºi parametri de apelare"
 
-#: src/config.c:690
+#: src/config.c:696
 #, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "      (Return sau Esc pentru ieºire)"
 
-#: src/config.c:828
+#: src/config.c:834
 msgid " A - Command key is         :"
 msgstr " A - Tasta de comandã este         :"
 
-#: src/config.c:829
+#: src/config.c:835
 msgid " B - Backspace key sends    :"
 msgstr " B - Tasta Backspace trimite    :"
 
-#: src/config.c:830
+#: src/config.c:836
 msgid " C - Status line is         :"
 msgstr " C - Linia de stare este         :"
 
-#: src/config.c:831
+#: src/config.c:837
 msgid " D - Alarm sound            :"
 msgstr " D - Sunet alarmã            :"
 
-#: src/config.c:832
+#: src/config.c:838
 msgid " E - Foreground Color (menu):"
 msgstr " E - Culoare PrimPlan (meniu):"
 
-#: src/config.c:833
+#: src/config.c:839
 msgid " F - Background Color (menu):"
 msgstr " F - Culoare Fundal (menu):"
 
-#: src/config.c:834
+#: src/config.c:840
 msgid " G - Foreground Color (term):"
 msgstr " G - Culoare PrimPlan (term):"
 
-#: src/config.c:835
+#: src/config.c:841
 msgid " H - Background Color (term):"
 msgstr " H - Culoare Fundal (term):"
 
-#: src/config.c:836
+#: src/config.c:842
 msgid " I - Foreground Color (stat):"
 msgstr " I - Culoare PrimPlan (stat):"
 
-#: src/config.c:837
+#: src/config.c:843
 msgid " J - Background Color (stat):"
 msgstr " J - Culoare Fundal (stat):"
 
-#: src/config.c:838
+#: src/config.c:844
 msgid " K - History Buffer Size    :"
 msgstr " K - Mãrime Buffer Istoric    :"
 
-#: src/config.c:839
+#: src/config.c:845
 msgid " L - Macros file            :"
 msgstr " L - Fiºier de macrouri            :"
 
-#: src/config.c:840
+#: src/config.c:846
 msgid " N - Macros enabled         :"
 msgstr " N - Macrouri activate         :"
 
-#: src/config.c:841
+#: src/config.c:847
 msgid " O - Character conversion   :"
 msgstr " O - Conversie caracter   :"
 
-#: src/config.c:842
+#: src/config.c:848
 #, fuzzy
 msgid " P - Add linefeed           :"
 msgstr " J -  Aranjare(wrap) linii            :"
 
-#: src/config.c:843
+#: src/config.c:849
 #, fuzzy
 msgid " Q - Local echo             :"
 msgstr " D -  Echo local          :"
 
-#: src/config.c:844
+#: src/config.c:850
 #, fuzzy
 msgid " R - Line Wrap              :"
 msgstr " J -  Aranjare(wrap) linii            :"
 
-#: src/config.c:845
+#: src/config.c:851
 #, fuzzy
 msgid " S - Hex Display            :"
 msgstr " E -  Script              :"
 
-#: src/config.c:846 src/config.c:1594
+#: src/config.c:852
+msgid " T - Add carriage return    :"
+msgstr ""
+
+#: src/config.c:853 src/config.c:1607
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Schimbã care setare?  (Esc pentru ieºire)"
 
-#: src/config.c:850 src/config.c:1366
+#: src/config.c:857 src/config.c:1379
 msgid "Screen and keyboard"
 msgstr "Ecran ºi tastaturã"
 
-#: src/config.c:869
+#: src/config.c:876
 msgid " M - Edit Macros\n"
 msgstr " M - Editare Macrouri\n"
 
-#: src/config.c:896
+#: src/config.c:904
 msgid "You can't change colors in black and white mode"
 msgstr "Nu se pot schimba culorile in modul alb-negru"
 
-#: src/config.c:908
+#: src/config.c:916
 msgid "Menu foreground == background color, change!"
 msgstr "Prim-planul de la meniu == culoarea de fundal, schimbaþi!"
 
-#: src/config.c:917
+#: src/config.c:925
 msgid "Terminal foreground == background color, change!"
 msgstr "Prim-planul de la terminal == culoarea de fundal, schimbaþi!"
 
-#: src/config.c:929
+#: src/config.c:937
 msgid "History Buffer Size"
 msgstr "Mãrime Buffer Istoric"
 
-#: src/config.c:930
+#: src/config.c:938
 #, fuzzy
 msgid ""
 "\n"
@@ -353,11 +357,11 @@ msgstr ""
 "\n"
 "  Apãsaþi o tastã pentru Continuare... "
 
-#: src/config.c:947
+#: src/config.c:955
 msgid "Program new command key"
 msgstr "Programare tastã nouã de comandã"
 
-#: src/config.c:949
+#: src/config.c:957
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -370,219 +374,219 @@ msgid ""
 " Press new command key: "
 msgstr ""
 
-#: src/config.c:958
+#: src/config.c:966
 msgid "Meta-8th bit "
 msgstr "Al 8-ulea meta bit "
 
-#: src/config.c:960
+#: src/config.c:968
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
-#: src/config.c:994 src/config.c:1237
+#: src/config.c:1002 src/config.c:1250
 msgid "disabled"
 msgstr "dezactivat"
 
-#: src/config.c:997 src/config.c:1240 src/rwconf.c:146
+#: src/config.c:1005 src/config.c:1253 src/rwconf.c:146
 msgid "enabled"
 msgstr "activat"
 
-#: src/config.c:1112
+#: src/config.c:1120
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "EROARE: nu aveþi permisiunea sã creaþi un fiºier acolo!"
 
-#: src/config.c:1118
+#: src/config.c:1126
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "EROARE: nu se poate deschide fiºierul de macro %s"
 
-#: src/config.c:1124
+#: src/config.c:1132
 msgid "Reading macros"
 msgstr "Citire macro-uri"
 
-#: src/config.c:1178
+#: src/config.c:1191
 #, fuzzy
 msgid " A -      Terminal emulation :"
 msgstr " A - Emulare terminal  :"
 
-#: src/config.c:1179
+#: src/config.c:1192
 #, fuzzy
 msgid " B -     Backspace key sends :"
 msgstr " B - Tasta Backspace trimite :"
 
-#: src/config.c:1180
+#: src/config.c:1193
 #, fuzzy
 msgid " C -          Status line is :"
 msgstr " C -      Linia de stare este :"
 
-#: src/config.c:1181
+#: src/config.c:1194
 #, fuzzy
 msgid " D -   Newline tx delay (ms) :"
 msgstr " D -  Întârziere linie nouã (ms) :"
 
-#: src/config.c:1182
+#: src/config.c:1195
 msgid " E -          ENQ answerback :"
 msgstr ""
 
-#: src/config.c:1183
+#: src/config.c:1196
 #, fuzzy
 msgid " F - Character tx delay (ms) :"
 msgstr " D -  Întârziere linie nouã (ms) :"
 
-#: src/config.c:1187
+#: src/config.c:1200
 msgid "Terminal settings"
 msgstr "Setãri terminal"
 
-#: src/config.c:1291
+#: src/config.c:1304
 #, c-format
 msgid "Cannot write to %s"
 msgstr "Nu am putut scrie în %s"
 
-#: src/config.c:1298
+#: src/config.c:1311
 msgid "Configuration saved"
 msgstr "Configuraþie salvatã"
 
-#: src/config.c:1313
+#: src/config.c:1326
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr ""
 "EROARE: Macrourile s-au schimbat dar nu a fost setat nici un nume de fiºier!"
 
-#: src/config.c:1317
+#: src/config.c:1330
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "Nu am putut scrie fiºierul de macrouri %s"
 
-#: src/config.c:1323
+#: src/config.c:1336
 msgid "Macros saved"
 msgstr "Macrouri salvate"
 
-#: src/config.c:1340
+#: src/config.c:1353
 msgid "Give name to save this configuration?"
 msgstr "Daþi nume pentru a salva aceastã configuraþie?"
 
-#: src/config.c:1362
+#: src/config.c:1375
 msgid "Filenames and paths"
 msgstr "NumeFiºiere ºi cãi"
 
-#: src/config.c:1363
+#: src/config.c:1376
 msgid "File transfer protocols"
 msgstr "Protocoale transfer fiºiere"
 
-#: src/config.c:1364
+#: src/config.c:1377
 msgid "Serial port setup"
 msgstr "Setare port serial"
 
-#: src/config.c:1365
+#: src/config.c:1378
 msgid "Modem and dialing"
 msgstr "Modem ºi apelare"
 
-#: src/config.c:1368
+#: src/config.c:1381
 msgid "Save setup as.."
 msgstr "Salveazã setãrile ca..."
 
-#: src/config.c:1369
+#: src/config.c:1382
 msgid "Exit"
 msgstr "Ieºire"
 
-#: src/config.c:1370
+#: src/config.c:1383
 msgid "Exit from Minicom"
 msgstr "Ieºire din Minicom"
 
-#: src/config.c:1382
+#: src/config.c:1395
 #, c-format
 msgid "Save setup as %s"
 msgstr "Salveazã setãrile ca %s"
 
-#: src/config.c:1388
+#: src/config.c:1401
 msgid "configuration"
 msgstr "configuraþie"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "BLACK"
 msgstr "NEGRU"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "RED"
 msgstr "ROªU"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "GREEN"
 msgstr "VERDE"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "YELLOW"
 msgstr "GALBEN"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "BLUE"
 msgstr "ALBASTRU"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "MAGENTA"
 msgstr "VIOLET"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "CYAN"
 msgstr "BLEU"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "WHITE"
 msgstr "ALB"
 
-#: src/config.c:1428
+#: src/config.c:1441
 msgid "Comm Parameters"
 msgstr "Parametri Comunicaþie"
 
-#: src/config.c:1433
+#: src/config.c:1446
 #, fuzzy
 msgid " Speed            Parity      Data\n"
 msgstr ""
 "   Vitezã          Paritate          Date\n"
 "\n"
 
-#: src/config.c:1434
+#: src/config.c:1447
 #, fuzzy
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: 300           L: Nici una         S: 5\n"
 
-#: src/config.c:1435
+#: src/config.c:1448
 #, fuzzy
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: 1200          M: Par         T: 6\n"
 
-#: src/config.c:1436
+#: src/config.c:1449
 #, fuzzy
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C: 2400          N: Impar          U: 7\n"
 
-#: src/config.c:1437
+#: src/config.c:1450
 #, fuzzy
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D: 4800          O: Mark         V: 8\n"
 
-#: src/config.c:1438
+#: src/config.c:1451
 #, fuzzy
 msgid " E: 115200        P: Space\n"
 msgstr " E: 9600          P: Spaþiu\n"
 
-#: src/config.c:1440
+#: src/config.c:1453
 msgid " Stopbits\n"
 msgstr ""
 
-#: src/config.c:1441
+#: src/config.c:1454
 #, fuzzy
 msgid " W: 1             Q: 8-N-1\n"
 msgstr "                  Q: 8-N-1\n"
 
-#: src/config.c:1442
+#: src/config.c:1455
 #, fuzzy
 msgid " X: 2             R: 7-E-1\n"
 msgstr "                  R: 7-E-1\n"
 
-#: src/config.c:1444
+#: src/config.c:1457
 msgid " K: Current\n"
 msgstr " K: Curent\n"
 
-#: src/config.c:1447
+#: src/config.c:1460
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -590,49 +594,49 @@ msgstr ""
 "\n"
 " Se alege sau <Enter>  pentru ieºire? "
 
-#: src/config.c:1455
+#: src/config.c:1468
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Curent: %5s %s%s%s  "
 
-#: src/config.c:1597
+#: src/config.c:1610
 msgid "F1 to F10 Macros"
 msgstr "D la F1 la F10 Macrouri"
 
-#: src/config.c:1616
+#: src/config.c:1629
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
 " (LEGENDA: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pauzã 1 secundã,"
 
-#: src/config.c:1618
+#: src/config.c:1631
 #, fuzzy
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = nume utilizator, \\p = parolã, \\\\ = \\)"
 
-#: src/config.c:1620
+#: src/config.c:1633
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 
-#: src/config.c:1622
+#: src/config.c:1635
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 
-#: src/config.c:1637
+#: src/config.c:1650
 msgid "CHANGED"
 msgstr "SCHIMBAT"
 
-#: src/config.c:1724
+#: src/config.c:1737
 msgid "Character conversion"
 msgstr "Conversie caracter"
 
-#: src/config.c:1729
+#: src/config.c:1742
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr ""
 " char    in out    char    in out    char    in out    char    in out\n"
 
-#: src/config.c:1751
+#: src/config.c:1764
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -640,12 +644,12 @@ msgstr ""
 "\n"
 " A - încãrcare tabel\tB - salvare tabel"
 
-#: src/config.c:1753
+#: src/config.c:1766
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tfiºier:%s"
 
-#: src/config.c:1754
+#: src/config.c:1767
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -653,125 +657,130 @@ msgstr ""
 "\n"
 " C - editare caracter\tD - urmãtorul ecran\tE - ecranul anterior\n"
 
-#: src/config.c:1755
+#: src/config.c:1768
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - capturã conversie: %s\n"
 
-#: src/config.c:1770
+#: src/config.c:1783
 #, c-format
 msgid "Load file: %s"
 msgstr "Încarcã fiºier: %s"
 
-#: src/config.c:1782
+#: src/config.c:1795
 #, c-format
 msgid "Save as file: %s"
 msgstr "Salveazã ca fiºier: %s"
 
-#: src/config.c:1793
+#: src/config.c:1806
 msgid "Character to be edited: "
 msgstr "Caractere ce vor fi editate:"
 
-#: src/config.c:1801 src/config.c:1813 src/config.c:1825
+#: src/config.c:1814 src/config.c:1826 src/config.c:1838
 msgid "Input character ascii value 0-255"
 msgstr "Valoare ascii a caracterului de intrare între 0 ºi 255"
 
-#: src/config.c:1807
+#: src/config.c:1820
 #, c-format
 msgid "Change input to: %s"
 msgstr "Schimbare input în: %s"
 
-#: src/config.c:1819
+#: src/config.c:1832
 #, c-format
 msgid "Change output to: %s"
 msgstr "Schimbare output în: %s"
 
-#: src/config.c:1857
+#: src/config.c:1870
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Nu s-a putut deschide tabela de conversie %s"
 
-#: src/config.c:1871
+#: src/config.c:1876
+#, fuzzy, c-format
+msgid "Cannot read conversion table %s"
+msgstr "Nu s-a putut scrie tabela de conversie %s"
+
+#: src/config.c:1888
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Nu s-a putut scrie tabela de conversie %s"
 
-#: src/dial.c:250
+#: src/dial.c:251
 msgid "Initializing Modem"
 msgstr "Iniþializare Modem"
 
-#: src/dial.c:266
+#: src/dial.c:267
 msgid "Resetting Modem"
 msgstr "Resetare Modem"
 
-#: src/dial.c:280
+#: src/dial.c:281
 msgid "Hanging up"
 msgstr "Deconectare"
 
-#: src/dial.c:284
+#: src/dial.c:285
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
 msgstr "Deconectare (%ld:%02ld:%02ld)"
 
-#: src/dial.c:316
+#: src/dial.c:317
 msgid "Sending BREAK"
 msgstr "Trimitere BREAK"
 
-#: src/dial.c:382
+#: src/dial.c:383
 #, c-format
 msgid "    No connection: %s.      \n"
 msgstr "    Nici o conexiune: %s.      \n"
 
-#: src/dial.c:384
+#: src/dial.c:385
 msgid "   Press any key to continue..    "
 msgstr "   Apãsaþi o tastã poentru continuare..    "
 
-#: src/dial.c:389 src/dial.c:401
+#: src/dial.c:390 src/dial.c:402
 #, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "     Reîncearcã în %2d secunde             "
 
-#: src/dial.c:427
+#: src/dial.c:428
 msgid "Max retries"
 msgstr "Maximum de încercãri"
 
-#: src/dial.c:437
+#: src/dial.c:438
 msgid "You are already online! Hang up first."
 msgstr "Sunteþi deja conectat! Prima datã deconectaþi-vã."
 
-#: src/dial.c:442
+#: src/dial.c:443
 msgid "Autodial"
 msgstr "Autoapelare"
 
-#: src/dial.c:446 src/dial.c:476
+#: src/dial.c:447 src/dial.c:477
 msgid "Dialing"
 msgstr "Apelare"
 
-#: src/dial.c:447 src/dial.c:479
+#: src/dial.c:448 src/dial.c:480
 #, fuzzy, c-format
 msgid "      At : %s"
 msgstr ""
 "\n"
 "      La : %s"
 
-#: src/dial.c:450 src/dial.c:483
+#: src/dial.c:451 src/dial.c:484
 #, fuzzy, c-format
 msgid " Last on : %s at %s"
 msgstr ""
 "\n"
 " Ultima datã pe : %s la %s"
 
-#: src/dial.c:498
+#: src/dial.c:499
 #, c-format
 msgid "    Time : %-3d"
 msgstr "    Duratã : %-3d"
 
-#: src/dial.c:500
+#: src/dial.c:501
 #, c-format
 msgid "     Attempt #%d"
 msgstr "     Încercare #%d"
 
-#: src/dial.c:501
+#: src/dial.c:502
 msgid ""
 "\n"
 "\n"
@@ -783,132 +792,137 @@ msgstr ""
 "\n"
 " Escape pentru renunþarel, spaþiu pentru a reîncerca."
 
-#: src/dial.c:542
+#: src/dial.c:543
 msgid "Cancelled"
 msgstr "Anulat"
 
-#: src/dial.c:598
+#: src/dial.c:599
 msgid "Connected. Press any key to continue"
 msgstr "Conectat. Apãsaþi o tastã pentru continuare"
 
-#: src/dial.c:678
+#: src/dial.c:679
 msgid "Timeout"
 msgstr "Timeout"
 
-#: src/dial.c:858
+#: src/dial.c:881
 msgid "Manually entered number"
 msgstr "Numãr introdus manual"
 
-#: src/dial.c:867
+#: src/dial.c:890
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Nu pot deschide ~/.dialdir: permisiune respinsã"
 
-#: src/dial.c:919
+#: src/dial.c:912
+#, fuzzy
+msgid "Failed to read dialing directory\n"
+msgstr "Memorie plinã în timpul citirii directorului de apelare"
+
+#: src/dial.c:946
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Lista de telefoane e zãpãcitã (versiune necunoscutã?)"
 
-#: src/dial.c:926 src/dial.c:934
+#: src/dial.c:953 src/dial.c:961
 #, fuzzy
 msgid "Phonelist corrupted"
 msgstr "Listã de telefoane zãpãcitã (?)"
 
-#: src/dial.c:939
+#: src/dial.c:966
 msgid "Unknown dialing directory version"
 msgstr "Versiune necunoscutã a directorului de apelare"
 
-#: src/dial.c:946
+#: src/dial.c:973
 msgid "Phonelist garbled (?)"
 msgstr "Listã de telefoane zãpãcitã (?)"
 
-#: src/dial.c:968
+#: src/dial.c:995
 msgid "Out of memory while reading dialing directory"
 msgstr "Memorie plinã în timpul citirii directorului de apelare"
 
-#: src/dial.c:1015
+#: src/dial.c:1047
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
 msgstr ""
 
-#: src/dial.c:1050
+#: src/dial.c:1082
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Nu pot deschide ~/.dialdir: permisiune respinsã"
 
-#: src/dial.c:1066 src/dial.c:1078
+#: src/dial.c:1098 src/dial.c:1110
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Eroare în scrierea ~/.dialdir!"
 
-#: src/dial.c:1143
+#: src/dial.c:1175
 msgid " A -  Name                :"
 msgstr " A -  Nume                :"
 
-#: src/dial.c:1144
+#: src/dial.c:1176
 msgid " B -  Number              :"
 msgstr " B -  Numãr              :"
 
-#: src/dial.c:1145
+#: src/dial.c:1177
 msgid " C -  Dial string #       :"
 msgstr " C -  ªir apelare #       :"
 
-#: src/dial.c:1146
+#: src/dial.c:1178
 msgid " D -  Local echo          :"
 msgstr " D -  Echo local          :"
 
-#: src/dial.c:1147
+#: src/dial.c:1179
 msgid " E -  Script              :"
 msgstr " E -  Script              :"
 
-#: src/dial.c:1148
+#: src/dial.c:1180
 msgid " F -  Username            :"
 msgstr " F -  Nume utilizator            :"
 
-#: src/dial.c:1149
+#: src/dial.c:1181
 msgid " G -  Password            :"
 msgstr " G -  Parolã            :"
 
-#: src/dial.c:1150
+#: src/dial.c:1182
 msgid " H -  Terminal Emulation  :"
 msgstr " H -  Emulare terminal  :"
 
-#: src/dial.c:1151
+#: src/dial.c:1183
 msgid " I -  Backspace key sends :"
 msgstr " I -  Tasta Backspace trimite :"
 
-#: src/dial.c:1152
+#: src/dial.c:1184
 msgid " J -  Linewrap            :"
 msgstr " J -  Aranjare(wrap) linii            :"
 
-#: src/dial.c:1153
+#: src/dial.c:1185
 msgid " K -  Line Settings       :"
 msgstr " K -  Setãri linie       :"
 
-#: src/dial.c:1154
+#: src/dial.c:1186
 msgid " L -  Conversion table    :"
 msgstr " L -  Tabelã de conversie    :"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Delete"
 msgstr "ªterge"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "On"
 msgstr "Activat"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "Off"
 msgstr "Dezactivat"
 
-#: src/dial.c:1173
+#: src/dial.c:1205
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Ultima datã apelat         : %s %s\n"
 
-#: src/dial.c:1174
+#: src/dial.c:1206
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      De câte ori a fost            : %d"
@@ -916,76 +930,76 @@ msgstr "      De câte ori a fost            : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1275
+#: src/dial.c:1307
 #, fuzzy
 msgid "Dial"
 msgstr "Apelare"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 #, fuzzy
 msgid "Edit"
 msgstr "Ieºire"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 #, fuzzy
 msgid "Remove"
 msgstr "ªterge intrarea?"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1276
+#: src/dial.c:1308
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
 msgstr "   Da "
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   No   "
 msgstr "   Nu   "
 
-#: src/dial.c:1515
+#: src/dial.c:1547
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Intrarea \"%s\" nu a fost gãsitã. Introduceþi dialdir?"
 
-#: src/dial.c:1545 src/file.c:429
+#: src/dial.c:1577 src/file.c:429
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Escape pentru ieºire, Spaþiu pentru selecþie )"
 
-#: src/dial.c:1546
+#: src/dial.c:1578
 msgid " Move entry up/down, Escape to exit"
 msgstr " Mutã intrarea sus/jos, Escape pentru ieºire"
 
-#: src/dial.c:1566
+#: src/dial.c:1598
 msgid "Dialing Directory"
 msgstr "Director de Apelare"
 
-#: src/dial.c:1568
+#: src/dial.c:1600
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr ""
 "     Nume            Numãr            Ultima datã pe      De câte ori\n"
 
-#: src/dial.c:1742
+#: src/dial.c:1774
 msgid "Find an entry"
 msgstr "Gãseºte o intrare"
 
-#: src/dial.c:1803
+#: src/dial.c:1835
 msgid "Remove entry?"
 msgstr "ªterge intrarea?"
 
-#: src/dial.c:1847
+#: src/dial.c:1879
 msgid "Enter number"
 msgstr "Introduceþi numãrul"
 
@@ -1113,86 +1127,90 @@ msgstr "%d fiºiere:\n"
 msgid "Minicom Command Summary"
 msgstr "Cuprins Comenzi Minicom"
 
-#: src/help.c:44
+#: src/help.c:45
 #, c-format
 msgid "Commands can be called by %s<key>"
 msgstr "Comenzile pot fi apelate prin <tasta>%s"
 
-#: src/help.c:47
+#: src/help.c:51
 msgid "Main Functions"
 msgstr "Funcþii Principale"
 
-#: src/help.c:49
+#: src/help.c:53
 msgid "Other Functions"
 msgstr "Alte Funcþii"
 
-#: src/help.c:51
+#: src/help.c:55
 msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
 msgstr " Director apelare..D ruleazã script (Go).G | ªterge Ecran.....C\n"
 
-#: src/help.c:52
+#: src/help.c:56
 msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
 msgstr " Trimitere fiºiere...S  Recepþie fiºier...R | cOnfig. Minicom....O\n"
 
-#: src/help.c:53
+#: src/help.c:57
 msgid " comm Parameters....P  Add linefeed.......A | "
 msgstr " Param. config....P  Adãugare linefeed....A | "
 
-#: src/help.c:55
+#: src/help.c:59
 msgid "Suspend minicom....J\n"
 msgstr "Suspend. minicom...J\n"
 
-#: src/help.c:57
+#: src/help.c:61
 msgid "Jump to a shell....J\n"
 msgstr "Salt la shell....J\n"
 
-#: src/help.c:59
+#: src/help.c:63
 msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
 msgstr " Capturã act/dez..L  Deconectare..........H | Ieºire cu reset....X\n"
 
-#: src/help.c:60
+#: src/help.c:64
 msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
 msgstr " trimitere break....F  iniþializare Modem...M | Ieºire fãrã reset Q\n"
 
-#: src/help.c:61
+#: src/help.c:65
 msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
 msgstr " Setãri terminal..T  rulare Kermit.........K | mod tastã cursor..I\n"
 
-#: src/help.c:62
+#: src/help.c:66
 msgid " lineWrap on/off....W"
 msgstr " Wraplinii act/dez..W"
 
-#: src/help.c:63
+#: src/help.c:67
 #, fuzzy
 msgid "  local Echo on/off..E | Help screen........Z\n"
 msgstr "  Echo local act/dez..E | Ecran ajutor......Z"
 
-#: src/help.c:64
-msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B"
+#: src/help.c:68
+msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
 msgstr ""
 
-#: src/help.c:67
+#: src/help.c:69
+msgid " Add Carriage Ret...U"
+msgstr ""
+
+#: src/help.c:71
+msgid "Select function or press Enter for none."
+msgstr "Selectaþi funcþia sau apãsaþi Enter pentru nici una."
+
+#: src/help.c:79
 msgid "Written by Miquel van Smoorenburg 1991-1995"
 msgstr "Scris de Miquel van Smoorenburg 1991-1995"
 
-#: src/help.c:69
+#: src/help.c:81
 msgid "Some additions by Jukka Lahtinen 1997-2000"
 msgstr "Unele adãugiri de Jukka Lahtinen 1997-2000"
 
-#: src/help.c:71
+#: src/help.c:83
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "i18n de Arnaldo Carvalho de Melo 1998"
-
-#: src/help.c:73
-msgid "Select function or press Enter for none."
-msgstr "Selectaþi funcþia sau apãsaþi Enter pentru nici una."
 
 #: src/main.c:213
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "Fiºierul lock este blocat. Se suprascrie..\n"
 
-#: src/main.c:222 src/updown.c:490
+#: src/main.c:222 src/updown.c:494
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "Dispozitivul %s este blocat.\n"
@@ -1285,7 +1303,7 @@ msgstr "Suspendat. Tastaþi \"fg\" pentru refacere.\n"
 msgid "SHELL variable not set"
 msgstr "Variabila SHELL nu este setatã"
 
-#: src/minicom.c:143 src/updown.c:311 src/updown.c:518 src/updown.c:716
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:522 src/updown.c:721
 msgid "Out of memory: could not fork()"
 msgstr "Memorie plinã: nu s-a putut face fork()"
 
@@ -1400,17 +1418,17 @@ msgid ""
 "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
 msgstr "Directorul de configurare pentru fiºierele de acces ºi configuraþii\n"
 
-#: src/minicom.c:1146
+#: src/minicom.c:1159
 #, c-format
 msgid "%s version %s"
 msgstr "%s versiunea %s"
 
-#: src/minicom.c:1148
+#: src/minicom.c:1161
 #, c-format
 msgid " (compiled %s)"
 msgstr " (compilat %s)"
 
-#: src/minicom.c:1151
+#: src/minicom.c:1164
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1419,45 +1437,45 @@ msgstr ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1174
+#: src/minicom.c:1187
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argumentul lui -p trebuie sã fie un pty\n"
 
-#: src/minicom.c:1238 src/minicom.c:1552
+#: src/minicom.c:1251 src/minicom.c:1571
 msgid "Cannot open capture file"
 msgstr "Nu se poate deschide fiºierul de capturã"
 
-#: src/minicom.c:1297
+#: src/minicom.c:1310
 msgid "You don't exist. Go away.\n"
 msgstr "Nu existaþi. Plecaþi.\n"
 
-#: src/minicom.c:1371
+#: src/minicom.c:1385
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Îmi pare rãu. Ecranul dumneavoastrã este prea mic.\n"
 
-#: src/minicom.c:1440
+#: src/minicom.c:1454
 msgid "Welcome to minicom"
 msgstr "Bine aþi venit în minicom"
 
-#: src/minicom.c:1441
+#: src/minicom.c:1455
 msgid "OPTIONS"
 msgstr "OPÞIUNI"
 
-#: src/minicom.c:1443
+#: src/minicom.c:1457
 msgid "Compiled on"
 msgstr "Compilat pe"
 
-#: src/minicom.c:1459
+#: src/minicom.c:1473
 msgid "Port"
 msgstr ""
 
-#: src/minicom.c:1462
+#: src/minicom.c:1476
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "Conversie caracter"
 
-#: src/minicom.c:1463
+#: src/minicom.c:1477
 #, c-format
 msgid ""
 "\n"
@@ -1468,72 +1486,80 @@ msgstr ""
 "Tastaþi %sZ pentru ajutor în tastele speciale%c\n"
 "\n"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed ON"
 msgstr "Adãugare linefeed ACTIVATÃ"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed OFF"
 msgstr "Adãugare linefeed DEZACTIVATÃ"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1503
+msgid "Add carriage return ON"
+msgstr ""
+
+#: src/minicom.c:1503
+msgid "Add carriage return OFF"
+msgstr ""
+
+#: src/minicom.c:1508
 msgid "Local echo ON"
 msgstr "Echo local ACTIVAT"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1508
 msgid "Local echo OFF"
 msgstr "Echo local DEZACTIVAT"
 
-#: src/minicom.c:1508
+#: src/minicom.c:1527
 msgid "You are online. Really initialize?"
 msgstr "Sunteþi conectat. Sigur reiniþializaþi?"
 
-#: src/minicom.c:1515
+#: src/minicom.c:1534
 msgid "Leave without reset?"
 msgstr "Pãrãsire fãrã reset?"
 
-#: src/minicom.c:1519 src/minicom.c:1537
+#: src/minicom.c:1538 src/minicom.c:1556
 msgid "Save macros?"
 msgstr "Salvare macro-uri?"
 
-#: src/minicom.c:1529
+#: src/minicom.c:1548
 msgid "Leave Minicom?"
 msgstr "Pãrãsire Minicom?"
 
-#: src/minicom.c:1548
+#: src/minicom.c:1567
 msgid "Capture to which file? "
 msgstr "Captureazã în ce fiºier? "
 
-#: src/minicom.c:1557 src/minicom.c:1566
+#: src/minicom.c:1576 src/minicom.c:1585
 msgid "Capture file"
 msgstr "Fiºier de capturã"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap ON"
 msgstr "WrapLinii ACTIVAT"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap OFF"
 msgstr "WrapLinii DEZACTIVAT"
 
-#: src/minicom.c:1610
+#: src/minicom.c:1629
 #, fuzzy
 msgid "Timestamp OFF"
 msgstr "WrapLinii DEZACTIVAT"
 
-#: src/minicom.c:1613
+#: src/minicom.c:1632
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1616
+#: src/minicom.c:1635
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1619
+#: src/minicom.c:1638
 msgid "Timestamp lines every second"
 msgstr ""
 
-#: src/minicom.c:1660
+#: src/minicom.c:1679
 msgid "Quit without reset while online."
 msgstr "Pãrãsire fãrã reset în timpul conectãrii"
 
@@ -1541,14 +1567,14 @@ msgstr "Pãrãsire fãrã reset în timpul conectãrii"
 msgid "No"
 msgstr "Nu"
 
-#: src/rwconf.c:225
+#: src/rwconf.c:226
 #, c-format
 msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 msgstr ""
 "# Fiºier generat de maºinã - folosiþi \"minicom -s\" pentru a schimba "
 "parametrii.\n"
 
-#: src/rwconf.c:227
+#: src/rwconf.c:228
 #, c-format
 msgid ""
 "# Machine-generated file - use setup menu in minicom to change parameters.\n"
@@ -1556,22 +1582,22 @@ msgstr ""
 "# Fiºier generat de maºinã - folosiþi meniul de setãri pentru a schimba "
 "parametrii.\n"
 
-#: src/rwconf.c:252
+#: src/rwconf.c:253
 #, c-format
 msgid "Memory allocation failed.\n"
 msgstr ""
 
-#: src/rwconf.c:321
+#: src/rwconf.c:322
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
 msgstr ""
 "** Linia %d din fiºierul de configurare %s nu este analizabilã(parsable).\n"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "global"
 msgstr "global"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "personal"
 msgstr "personal"
 
@@ -1693,42 +1719,42 @@ msgstr ""
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr "Folosire: runscript <fiºierscript> [fiºierlog [homedir]]%s\n"
 
-#: src/updown.c:71
+#: src/updown.c:73
 #, c-format
 msgid "Cannot chdir to %.30s"
 msgstr "Nu se poate schimba directorul în %.30s"
 
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Upload"
 msgstr "Upload"
 
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Download"
 msgstr "Download"
 
-#: src/updown.c:279
+#: src/updown.c:281
 msgid "Please enter file names"
 msgstr "Vã rugãm introduceþi numele de fiºiere"
 
-#: src/updown.c:288
+#: src/updown.c:290
 #, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
 msgstr "Memorie plinã: nu s-a putut face fork()"
 
-#: src/updown.c:300
+#: src/updown.c:302
 #, c-format
 msgid "%.30s %s - Press CTRL-C to quit"
 msgstr "%.30s %s - Apãsaþi CTRL-C pentru ieºire"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "upload"
 msgstr "upload"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "download"
 msgstr "download"
 
-#: src/updown.c:430
+#: src/updown.c:433
 msgid ""
 "\n"
 " READY: press any key to continue..."
@@ -1736,37 +1762,42 @@ msgstr ""
 "\n"
 " PREGÃTIT: apãsaþi o tastã pentru continuare..."
 
-#: src/updown.c:474
+#: src/updown.c:477
 #, fuzzy
 msgid "Cannot create lockfile!"
 msgstr "Nu se poate recrea fiºierul de lock!"
 
-#: src/updown.c:488
+#: src/updown.c:484
+#, fuzzy, c-format
+msgid "Failed to write lockfile %s\n"
+msgstr "Nu am putut scrie fiºierul de macrouri %s"
+
+#: src/updown.c:492
 #, fuzzy, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "Nu se poate crea fiºierul lock. Ne pare rãu.\n"
 
-#: src/updown.c:635
+#: src/updown.c:639
 msgid "Same as last"
 msgstr "La fel ca ultima"
 
-#: src/updown.c:636
+#: src/updown.c:640
 msgid " A -   Username        :"
 msgstr " A -  Nume utilizator :"
 
-#: src/updown.c:637
+#: src/updown.c:641
 msgid " B -   Password        :"
 msgstr " B -   Parolã            :"
 
-#: src/updown.c:638
+#: src/updown.c:642
 msgid " C -   Name of script  :"
 msgstr " C -   Nume script     :"
 
-#: src/updown.c:639
+#: src/updown.c:643
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Schimbã care setare?     (Return pentru rulare, ESC pentru oprire)"
 
-#: src/updown.c:644
+#: src/updown.c:648
 msgid "Run a script"
 msgstr "Ruleazã un script"
 

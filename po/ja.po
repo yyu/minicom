@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom-2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2012-12-01 17:43+0100\n"
+"POT-Creation-Date: 2013-02-06 18:21+0100\n"
 "PO-Revision-Date: 2013-01-14 21:46+0900\n"
 "Last-Translator: Takeshi Hamasaki <hmatrjp@users.sourceforge.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -38,8 +38,8 @@ msgid " C - Log file transfers        :"
 msgstr " C - ファイル転送を記録する         :"
 
 # wputs
-#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:646
-#: src/config.c:1191 src/dial.c:1155
+#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:652
+#: src/config.c:1197 src/dial.c:1187
 msgid "Change which setting?"
 msgstr "どの設定を変更しますか?"
 
@@ -143,216 +143,216 @@ msgstr " F - ハードウェア流れ制御  :"
 msgid " G - Software Flow Control :"
 msgstr " G - ソフトウェア流れ制御  :"
 
-#: src/config.c:616
+#: src/config.c:622
 msgid "DTE speed "
 msgstr "DTE 速度  "
 
-#: src/config.c:618
+#: src/config.c:624
 msgid "line speed"
 msgstr "ライン速度"
 
-#: src/config.c:626
+#: src/config.c:632
 msgid " A - Init string ........."
 msgstr " A - 初期化文字列........."
 
-#: src/config.c:627
+#: src/config.c:633
 msgid " B - Reset string ........"
 msgstr " B - リセット文字列......."
 
-#: src/config.c:628
+#: src/config.c:634
 msgid " C - Dialing prefix #1...."
 msgstr " C - ダイヤル前置文字列1.."
 
-#: src/config.c:629
+#: src/config.c:635
 msgid " D - Dialing suffix #1...."
 msgstr " D - ダイヤル後置文字列1.."
 
-#: src/config.c:630
+#: src/config.c:636
 msgid " E - Dialing prefix #2...."
 msgstr " E - ダイヤル前置文字列2.."
 
-#: src/config.c:631
+#: src/config.c:637
 msgid " F - Dialing suffix #2...."
 msgstr " F - ダイヤル後置文字列2.."
 
-#: src/config.c:632
+#: src/config.c:638
 msgid " G - Dialing prefix #3...."
 msgstr " G - ダイヤル前置文字列3.."
 
-#: src/config.c:633
+#: src/config.c:639
 msgid " H - Dialing suffix #3...."
 msgstr " H - ダイヤル後置文字列3.."
 
-#: src/config.c:634
+#: src/config.c:640
 msgid " I - Connect string ......"
 msgstr " I - 接続時の文字列......."
 
-#: src/config.c:635
+#: src/config.c:641
 msgid " J - No connect strings .."
 msgstr " J - 非接続時の文字列....."
 
-#: src/config.c:636
+#: src/config.c:642
 msgid " K - Hang-up string ......"
 msgstr " K - ハングアップ文字列..."
 
-#: src/config.c:637
+#: src/config.c:643
 msgid " L - Dial cancel string .."
 msgstr " L - ダイヤル中止文字列..."
 
-#: src/config.c:638
+#: src/config.c:644
 msgid " M - Dial time ..........."
 msgstr " M - ダイヤル時間........."
 
-#: src/config.c:639
+#: src/config.c:645
 msgid " N - Delay before redial ."
 msgstr " N - リダイヤル待ち時間..."
 
-#: src/config.c:640
+#: src/config.c:646
 msgid " O - Number of tries ....."
 msgstr " O - リダイヤル回数......."
 
-#: src/config.c:641
+#: src/config.c:647
 msgid " P - DTR drop time (0=no)."
 msgstr " P - DTR drop 時間 (0=no)."
 
-#: src/config.c:642
+#: src/config.c:648
 msgid " Q - Auto bps detect ....."
 msgstr " Q - 自動 bps 検出........"
 
-#: src/config.c:643
+#: src/config.c:649
 msgid " R - Modem has DCD line .."
 msgstr " R - Modem has DCD line .."
 
-#: src/config.c:644
+#: src/config.c:650
 msgid " S - Status line shows ..."
 msgstr " S - ステータスライン表示."
 
-#: src/config.c:645
+#: src/config.c:651
 msgid " T - Multi-line untag ...."
 msgstr " T - Multi-line untag ...."
 
 # wtitle
-#: src/config.c:657
+#: src/config.c:663
 msgid "Modem and dialing parameter setup"
 msgstr "モデムとダイヤルの設定"
 
 # c-format(wprintf)
-#: src/config.c:690
+#: src/config.c:696
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "    Return か Esc で終了。AとBの文字列は編集すると表示します。"
 
-#: src/config.c:828
+#: src/config.c:834
 msgid " A - Command key is         :"
 msgstr " A - コマンドのためのキー   :"
 
-#: src/config.c:829
+#: src/config.c:835
 msgid " B - Backspace key sends    :"
 msgstr " B - BS キーが送るコード    :"
 
-#: src/config.c:830
+#: src/config.c:836
 msgid " C - Status line is         :"
 msgstr " C - ステータスライン表示   :"
 
-#: src/config.c:831
+#: src/config.c:837
 msgid " D - Alarm sound            :"
 msgstr " D - 警告音                 :"
 
-#: src/config.c:832
+#: src/config.c:838
 msgid " E - Foreground Color (menu):"
 msgstr " E - 前景色 (メニュー)      :"
 
-#: src/config.c:833
+#: src/config.c:839
 msgid " F - Background Color (menu):"
 msgstr " F - 背景色 (メニュー)      :"
 
-#: src/config.c:834
+#: src/config.c:840
 msgid " G - Foreground Color (term):"
 msgstr " G - 前景色 (ターミナル)    :"
 
-#: src/config.c:835
+#: src/config.c:841
 msgid " H - Background Color (term):"
 msgstr " H - 背景色 (ターミナル)    :"
 
-#: src/config.c:836
+#: src/config.c:842
 msgid " I - Foreground Color (stat):"
 msgstr " I - 前景色 (状態)          :"
 
-#: src/config.c:837
+#: src/config.c:843
 msgid " J - Background Color (stat):"
 msgstr " J - 背景色 (状態)          :"
 
-#: src/config.c:838
+#: src/config.c:844
 msgid " K - History Buffer Size    :"
 msgstr " K - ヒストリ領域サイズ     :"
 
-#: src/config.c:839
+#: src/config.c:845
 msgid " L - Macros file            :"
 msgstr " L - マクロファイル         :"
 
-#: src/config.c:840
+#: src/config.c:846
 msgid " N - Macros enabled         :"
 msgstr " N - マクロを使うか         :"
 
-#: src/config.c:841
+#: src/config.c:847
 msgid " O - Character conversion   :"
 msgstr " O - 文字変換               :"
 
-#: src/config.c:842
+#: src/config.c:848
 msgid " P - Add linefeed           :"
 msgstr " P - linefeedを追加         :"
 
-#: src/config.c:843
+#: src/config.c:849
 msgid " Q - Local echo             :"
 msgstr " Q -  ローカルエコー      :"
 
-#: src/config.c:844
+#: src/config.c:850
 msgid " R - Line Wrap              :"
 msgstr " R -  行末折り返し        :"
 
-#: src/config.c:845
+#: src/config.c:851
 msgid " S - Hex Display            :"
 msgstr " S - 16進表示                :"
 
-#: src/config.c:846
+#: src/config.c:852
 msgid " T - Add carriage return    :"
 msgstr " T - Carriage Returnの追加  :"
 
-#: src/config.c:847 src/config.c:1601
+#: src/config.c:853 src/config.c:1607
 msgid "Change which setting?  (Esc to exit)"
 msgstr "どの設定を変更しますか (Esc で終了)"
 
 # wtitle, wselect
-#: src/config.c:851 src/config.c:1373
+#: src/config.c:857 src/config.c:1379
 msgid "Screen and keyboard"
 msgstr "画面とキーボード"
 
 # c-format(wprintf)
-#: src/config.c:870
+#: src/config.c:876
 msgid " M - Edit Macros\n"
 msgstr " M - マクロ編集\n"
 
 # c-format(werror)
-#: src/config.c:898
+#: src/config.c:904
 msgid "You can't change colors in black and white mode"
 msgstr "白黒モード時には色を変えることはできません"
 
 # c-format(werror)
-#: src/config.c:910
+#: src/config.c:916
 msgid "Menu foreground == background color, change!"
 msgstr "メニューの前景色と背景色が同じです。"
 
 # c-format(werror)
-#: src/config.c:919
+#: src/config.c:925
 msgid "Terminal foreground == background color, change!"
 msgstr "ターミナルの前景色と背景色が同じです。"
 
 # wtitle
-#: src/config.c:931
+#: src/config.c:937
 msgid "History Buffer Size"
 msgstr "ヒストリ領域のサイズ"
 
 # wputs
-#: src/config.c:932
+#: src/config.c:938
 #, fuzzy
 msgid ""
 "\n"
@@ -370,11 +370,11 @@ msgstr ""
 "  何かキーを押してください..."
 
 # wtitle
-#: src/config.c:949
+#: src/config.c:955
 msgid "Program new command key"
 msgstr "コマンド起動キーの設定"
 
-#: src/config.c:951
+#: src/config.c:957
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -387,236 +387,236 @@ msgid ""
 " Press new command key: "
 msgstr ""
 
-#: src/config.c:960
+#: src/config.c:966
 msgid "Meta-8th bit "
 msgstr "META (第８ビット)"
 
-#: src/config.c:962
+#: src/config.c:968
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
 # P_STATLINE
-#: src/config.c:996 src/config.c:1244
+#: src/config.c:1002 src/config.c:1250
 msgid "disabled"
 msgstr "禁止"
 
 # P_STATLINE, mpars
-#: src/config.c:999 src/config.c:1247 src/rwconf.c:146
+#: src/config.c:1005 src/config.c:1253 src/rwconf.c:146
 msgid "enabled"
 msgstr "許可"
 
 # c-format(werror)
-#: src/config.c:1114
+#: src/config.c:1120
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "エラー: そこにファイルを作ることは許可されていません。"
 
 # c-format(have percent)
-#: src/config.c:1120
+#: src/config.c:1126
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "エラー: マクロファイル %s をオープンできません。"
 
 # c-format(werror)
-#: src/config.c:1126
+#: src/config.c:1132
 msgid "Reading macros"
 msgstr "マクロを読み込みます"
 
-#: src/config.c:1185
+#: src/config.c:1191
 #, fuzzy
 msgid " A -      Terminal emulation :"
 msgstr " A - ターミナルの種類    :"
 
-#: src/config.c:1186
+#: src/config.c:1192
 #, fuzzy
 msgid " B -     Backspace key sends :"
 msgstr " B - BS キーが送るコード :"
 
-#: src/config.c:1187
+#: src/config.c:1193
 #, fuzzy
 msgid " C -          Status line is :"
 msgstr " C - ステータスライン    :"
 
-#: src/config.c:1188
+#: src/config.c:1194
 msgid " D -   Newline tx delay (ms) :"
 msgstr " D -  改行の送信遅延(ミリ秒) :"
 
-#: src/config.c:1189
+#: src/config.c:1195
 msgid " E -          ENQ answerback :"
 msgstr " E -          ENQ 応答       :"
 
-#: src/config.c:1190
+#: src/config.c:1196
 msgid " F - Character tx delay (ms) :"
 msgstr " F - 文字の送信遅延(ミリ秒)  :"
 
 # wtitle
-#: src/config.c:1194
+#: src/config.c:1200
 msgid "Terminal settings"
 msgstr "ターミナルの設定"
 
 # c-format(have percent)
-#: src/config.c:1298
+#: src/config.c:1304
 #, c-format
 msgid "Cannot write to %s"
 msgstr "%s に書き込めません。"
 
 # c-format(werror)
-#: src/config.c:1305
+#: src/config.c:1311
 msgid "Configuration saved"
 msgstr "設定を保存しました。"
 
 # c-format(werror)
-#: src/config.c:1320
+#: src/config.c:1326
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr "エラー: マクロが変更されましたがファイル名がありません。"
 
 # c-format(have percent)
-#: src/config.c:1324
+#: src/config.c:1330
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "マクロファイル %s に書き込めません。"
 
 # c-format(werror)
-#: src/config.c:1330
+#: src/config.c:1336
 msgid "Macros saved"
 msgstr "マクロを保存しました。"
 
 # input
-#: src/config.c:1347
+#: src/config.c:1353
 msgid "Give name to save this configuration?"
 msgstr "この設定を保存するファイル名"
 
 # wselect
-#: src/config.c:1369
+#: src/config.c:1375
 msgid "Filenames and paths"
 msgstr "ファイル名とパス名"
 
 # wselect
-#: src/config.c:1370
+#: src/config.c:1376
 msgid "File transfer protocols"
 msgstr "ファイル転送プロトコル"
 
 # wselect
-#: src/config.c:1371
+#: src/config.c:1377
 msgid "Serial port setup"
 msgstr "シリアルポート"
 
 # wselect
-#: src/config.c:1372
+#: src/config.c:1378
 msgid "Modem and dialing"
 msgstr "モデムとダイヤル"
 
 # wselect
-#: src/config.c:1375
+#: src/config.c:1381
 msgid "Save setup as.."
 msgstr "新規に設定を保存"
 
 # wselect
-#: src/config.c:1376
+#: src/config.c:1382
 msgid "Exit"
 msgstr "終了"
 
 # wselect
-#: src/config.c:1377
+#: src/config.c:1383
 msgid "Exit from Minicom"
 msgstr "Minicom を終了"
 
 # c-format(have percent)
-#: src/config.c:1389
+#: src/config.c:1395
 #, c-format
 msgid "Save setup as %s"
 msgstr "\"%s\" に設定を保存"
 
 # wselect(wtitle)
-#: src/config.c:1395
+#: src/config.c:1401
 msgid "configuration"
 msgstr "設定"
 
-#: src/config.c:1404
+#: src/config.c:1410
 msgid "BLACK"
 msgstr "黒"
 
-#: src/config.c:1404
+#: src/config.c:1410
 msgid "RED"
 msgstr "赤"
 
-#: src/config.c:1404
+#: src/config.c:1410
 msgid "GREEN"
 msgstr "緑"
 
-#: src/config.c:1404
+#: src/config.c:1410
 msgid "YELLOW"
 msgstr "黄色"
 
-#: src/config.c:1405
+#: src/config.c:1411
 msgid "BLUE"
 msgstr "青"
 
-#: src/config.c:1405
+#: src/config.c:1411
 msgid "MAGENTA"
 msgstr "紫"
 
-#: src/config.c:1405
+#: src/config.c:1411
 msgid "CYAN"
 msgstr "水色"
 
-#: src/config.c:1405
+#: src/config.c:1411
 msgid "WHITE"
 msgstr "白"
 
 # wtitle
-#: src/config.c:1435
+#: src/config.c:1441
 msgid "Comm Parameters"
 msgstr "通信パラメータ"
 
 # wputs
-#: src/config.c:1440
+#: src/config.c:1446
 msgid " Speed            Parity      Data\n"
 msgstr " 速度           パリティ       データ\n"
 
 # wputs
-#: src/config.c:1441
+#: src/config.c:1447
 #, fuzzy
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: 300           L: なし(N)      S: 5\n"
 
 # wputs
-#: src/config.c:1442
+#: src/config.c:1448
 #, fuzzy
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: 1200          M: 偶数(E)      T: 6\n"
 
 # wputs
-#: src/config.c:1443
+#: src/config.c:1449
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C: 9600          N: 奇数(O)      U: 7\n"
 
 # wputs
-#: src/config.c:1444
+#: src/config.c:1450
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D: 38400         O: マーク       V: 8\n"
 
-#: src/config.c:1445
+#: src/config.c:1451
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: スペース\n"
 
-#: src/config.c:1447
+#: src/config.c:1453
 msgid " Stopbits\n"
 msgstr " ストップビット\n"
 
-#: src/config.c:1448
+#: src/config.c:1454
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1449
+#: src/config.c:1455
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1451
+#: src/config.c:1457
 msgid " K: Current\n"
 msgstr " K: 現在\n"
 
 # wputs
-#: src/config.c:1454
+#: src/config.c:1460
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -625,50 +625,53 @@ msgstr ""
 " 選んで下さい。<Enter> で終了。"
 
 # c-format(have percent)
-#: src/config.c:1462
+#: src/config.c:1468
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "現設定: %5s %s%s%s  "
 
 # wtitle
-#: src/config.c:1604
+#: src/config.c:1610
 msgid "F1 to F10 Macros"
 msgstr "F1 から F10 のマクロ"
 
 # wputs
-#: src/config.c:1623
+#: src/config.c:1629
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr " (凡例: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = 1秒停止, "
 
-#: src/config.c:1625
+#: src/config.c:1631
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = ユーザー名, \\p = パスワード, \\\\ = \\, \\e = エコー切替え, "
 
-#: src/config.c:1627
-msgid "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
+#: src/config.c:1633
+msgid ""
+"  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 
-#: src/config.c:1629
-msgid "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
+#: src/config.c:1635
+msgid ""
+"  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 
 # P_MACCHG
-#: src/config.c:1644
+#: src/config.c:1650
 msgid "CHANGED"
 msgstr "変更しました"
 
 # wtitle
-#: src/config.c:1731
+#: src/config.c:1737
 msgid "Character conversion"
 msgstr "文字変換"
 
 # c-format(wprintf)
-#: src/config.c:1736
+#: src/config.c:1742
 msgid " char    in out    char    in out    char    in out    char    in out\n"
-msgstr " 文字    in out    文字    in out    文字    in out    文字    in out\n"
+msgstr ""
+" 文字    in out    文字    in out    文字    in out    文字    in out\n"
 
 # c-format(wprintf)
-#: src/config.c:1758
+#: src/config.c:1764
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -677,13 +680,13 @@ msgstr ""
 " A - ロード    \tB - セーブ"
 
 # c-format(have percent)
-#: src/config.c:1760
+#: src/config.c:1766
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tファイル:%s"
 
 # c-format(wprintf)
-#: src/config.c:1761
+#: src/config.c:1767
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -692,146 +695,152 @@ msgstr ""
 " C - 文字編集 \tD - 次画面     \tE - 前画面     \n"
 
 # c-format(have percent)
-#: src/config.c:1762
+#: src/config.c:1768
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - 記録 (キャプチャ) も変換: %s\n"
 
 # c-format(have percent)
-#: src/config.c:1777
+#: src/config.c:1783
 #, c-format
 msgid "Load file: %s"
 msgstr "ロードファイル名: %s"
 
 # c-format(have percent)
-#: src/config.c:1789
+#: src/config.c:1795
 #, c-format
 msgid "Save as file: %s"
 msgstr "セーブファイル名: %s"
 
 # c-format(wprintf)
-#: src/config.c:1800
+#: src/config.c:1806
 msgid "Character to be edited: "
 msgstr "編集する文字: "
 
 # c-format(wprintf)
-#: src/config.c:1808 src/config.c:1820 src/config.c:1832
+#: src/config.c:1814 src/config.c:1826 src/config.c:1838
 msgid "Input character ascii value 0-255"
 msgstr "0-255の番号を入力して下さい"
 
 # c-format(have percent)
-#: src/config.c:1814
+#: src/config.c:1820
 #, c-format
 msgid "Change input to: %s"
 msgstr "入力: %s"
 
 # c-format(have percent)
-#: src/config.c:1826
+#: src/config.c:1832
 #, c-format
 msgid "Change output to: %s"
 msgstr "出力: %s"
 
 # c-format(have percent)
-#: src/config.c:1864
+#: src/config.c:1870
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "変換表 %s をオープンできません"
 
 # c-format(have percent)
-#: src/config.c:1878
+#: src/config.c:1876
+#, fuzzy, c-format
+msgid "Cannot read conversion table %s"
+msgstr "変換表を %s に書き込みできません"
+
+# c-format(have percent)
+#: src/config.c:1888
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "変換表を %s に書き込みできません"
 
 # c-format(mc_tell)
-#: src/dial.c:250
+#: src/dial.c:251
 msgid "Initializing Modem"
 msgstr "モデムを初期化しています"
 
 # c-format(mc_tell)
-#: src/dial.c:266
+#: src/dial.c:267
 msgid "Resetting Modem"
 msgstr "モデムをリセットしています"
 
 # c-format(mc_tell)
-#: src/dial.c:280
+#: src/dial.c:281
 msgid "Hanging up"
 msgstr "回線を切断しています"
 
 # do_log
 # c-format(have percent)
-#: src/dial.c:284
+#: src/dial.c:285
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
 msgstr "回線切断 (%ld:%02ld:%02ld)"
 
 # c-format(mc_tell)
-#: src/dial.c:316
+#: src/dial.c:317
 msgid "Sending BREAK"
 msgstr "BREAK を送信中"
 
 # c-format(have percent)
-#: src/dial.c:382
+#: src/dial.c:383
 #, c-format
 msgid "    No connection: %s.      \n"
 msgstr "    接続しませんでした: %s  \n"
 
 # c-format(wprintf)
-#: src/dial.c:384
+#: src/dial.c:385
 msgid "   Press any key to continue..    "
 msgstr "   何かキーを押してください。     "
 
 # c-format(have percent)
-#: src/dial.c:389 src/dial.c:401
+#: src/dial.c:390 src/dial.c:402
 #, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "         %2d 秒で再接続               "
 
 # dialfailed
-#: src/dial.c:427
+#: src/dial.c:428
 msgid "Max retries"
 msgstr "最大再接続回数"
 
 # c-format(werror)
-#: src/dial.c:437
+#: src/dial.c:438
 msgid "You are already online! Hang up first."
 msgstr "すでに接続しています。まず切断して下さい"
 
 # wtitle
-#: src/dial.c:442
+#: src/dial.c:443
 msgid "Autodial"
 msgstr "自動ダイヤル"
 
-#: src/dial.c:446 src/dial.c:476
+#: src/dial.c:447 src/dial.c:477
 msgid "Dialing"
 msgstr "接続先 "
 
 # c-format(have percent)
-#: src/dial.c:447 src/dial.c:479
+#: src/dial.c:448 src/dial.c:480
 #, c-format
 msgid "      At : %s"
 msgstr "      電話番号 : %s"
 
 # c-format(have percent)
-#: src/dial.c:450 src/dial.c:483
+#: src/dial.c:451 src/dial.c:484
 #, fuzzy, c-format
 msgid " Last on : %s at %s"
 msgstr " 前回 : %s at %s"
 
 # c-format(have percent)
-#: src/dial.c:498
+#: src/dial.c:499
 #, c-format
 msgid "    Time : %-3d"
 msgstr "    時間 : %-3d"
 
 # c-format(have percent)
-#: src/dial.c:500
+#: src/dial.c:501
 #, c-format
 msgid "     Attempt #%d"
 msgstr "       %d回目   "
 
 # wputs
-#: src/dial.c:501
+#: src/dial.c:502
 msgid ""
 "\n"
 "\n"
@@ -844,142 +853,148 @@ msgstr ""
 " Escape で中止、space で再接続    "
 
 # dialfailed
-#: src/dial.c:542
+#: src/dial.c:543
 msgid "Cancelled"
 msgstr "中止しました"
 
 # wputs
-#: src/dial.c:598
+#: src/dial.c:599
 msgid "Connected. Press any key to continue"
 msgstr "接続しました。なにかキーを押して下さい"
 
 # dialfailed
-#: src/dial.c:678
+#: src/dial.c:679
 msgid "Timeout"
 msgstr "時間切れ"
 
-#: src/dial.c:858
+#: src/dial.c:881
 msgid "Manually entered number"
 msgstr "手入力した番号"
 
 # c-format(werror)
-#: src/dial.c:867
+#: src/dial.c:890
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "~/.dialdir をオープンできません: 許可がありません"
 
 # c-format(werror)
-#: src/dial.c:919
+#: src/dial.c:912
+#, fuzzy
+msgid "Failed to read dialing directory\n"
+msgstr "電話帳読み込み中にメモリが足りなくなりました"
+
+# c-format(werror)
+#: src/dial.c:946
 msgid "Phonelist garbled (unknown version?)"
 msgstr "電話帳が書き直されている (不明なバージョン?)"
 
 # c-format(werror)
-#: src/dial.c:926 src/dial.c:934
+#: src/dial.c:953 src/dial.c:961
 msgid "Phonelist corrupted"
 msgstr "電話帳が破損しています"
 
 # c-format(werror)
-#: src/dial.c:939
+#: src/dial.c:966
 msgid "Unknown dialing directory version"
 msgstr "電話帳のバージョンが不明です"
 
 # c-format(werror)
-#: src/dial.c:946
+#: src/dial.c:973
 msgid "Phonelist garbled (?)"
 msgstr "電話帳が書き直されている (?)"
 
 # c-format(werror)
-#: src/dial.c:968
+#: src/dial.c:995
 msgid "Out of memory while reading dialing directory"
 msgstr "電話帳読み込み中にメモリが足りなくなりました"
 
-#: src/dial.c:1015
+#: src/dial.c:1047
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
 msgstr ""
 
 # c-format(werror)
-#: src/dial.c:1050
+#: src/dial.c:1082
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "~/.dialdir を書き込みのためにオープンできません"
 
 # c-format(werror)
-#: src/dial.c:1066 src/dial.c:1078
+#: src/dial.c:1098 src/dial.c:1110
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "~/.dialdir 書き込み中にエラー発生"
 
-#: src/dial.c:1143
+#: src/dial.c:1175
 msgid " A -  Name                :"
 msgstr " A -  名前                :"
 
-#: src/dial.c:1144
+#: src/dial.c:1176
 msgid " B -  Number              :"
 msgstr " B -  電話番号            :"
 
-#: src/dial.c:1145
+#: src/dial.c:1177
 msgid " C -  Dial string #       :"
 msgstr " C -  ダイヤル文字列番号  :"
 
-#: src/dial.c:1146
+#: src/dial.c:1178
 msgid " D -  Local echo          :"
 msgstr " D -  ローカルエコー      :"
 
-#: src/dial.c:1147
+#: src/dial.c:1179
 msgid " E -  Script              :"
 msgstr " E -  スクリプト          :"
 
-#: src/dial.c:1148
+#: src/dial.c:1180
 msgid " F -  Username            :"
 msgstr " F -  ユーザー名          :"
 
-#: src/dial.c:1149
+#: src/dial.c:1181
 msgid " G -  Password            :"
 msgstr " G -  パスワード          :"
 
-#: src/dial.c:1150
+#: src/dial.c:1182
 msgid " H -  Terminal Emulation  :"
 msgstr " H -  ターミナルの種類    :"
 
-#: src/dial.c:1151
+#: src/dial.c:1183
 msgid " I -  Backspace key sends :"
 msgstr " I -  BSキーが送る文字    :"
 
-#: src/dial.c:1152
+#: src/dial.c:1184
 msgid " J -  Linewrap            :"
 msgstr " J -  行末折り返し        :"
 
-#: src/dial.c:1153
+#: src/dial.c:1185
 msgid " K -  Line Settings       :"
 msgstr " K -  回線の設定          :"
 
-#: src/dial.c:1154
+#: src/dial.c:1186
 msgid " L -  Conversion table    :"
 msgstr " L -  文字変換表          :"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Delete"
 msgstr "Delete"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "On"
 msgstr "オン"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "Off"
 msgstr "オフ"
 
 # c-format(have percent)
-#: src/dial.c:1173
+#: src/dial.c:1205
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      前回の接続          : %s %s\n"
 
 # c-format(have percent)
-#: src/dial.c:1174
+#: src/dial.c:1206
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Times on            : %d"
@@ -987,80 +1002,80 @@ msgstr "      Times on            : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1275
+#: src/dial.c:1307
 #, fuzzy
 msgid "Dial"
 msgstr "接続先 "
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Find"
 msgstr "検索"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Add"
 msgstr ""
 
 # wselect
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Edit"
 msgstr "編集"
 
 # ask
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Remove"
 msgstr "削除"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "moVe"
 msgstr "移動(V)"
 
-#: src/dial.c:1276
+#: src/dial.c:1308
 msgid "Manual"
 msgstr "手入力"
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
 msgstr "  はい  "
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   No   "
 msgstr " いいえ "
 
 # c-format(have percent)
-#: src/dial.c:1515
+#: src/dial.c:1547
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "\"%s\" がありません。dialdir に行きますか?"
 
 # wputs
-#: src/dial.c:1545 src/file.c:429
+#: src/dial.c:1577 src/file.c:429
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Escape で終了、 Space でタグ )"
 
-#: src/dial.c:1546
+#: src/dial.c:1578
 msgid " Move entry up/down, Escape to exit"
 msgstr "上下で選んでください。Escape で終了"
 
 # wtitle
-#: src/dial.c:1566
+#: src/dial.c:1598
 msgid "Dialing Directory"
 msgstr "電話帳"
 
 # wputs
-#: src/dial.c:1568
+#: src/dial.c:1600
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     名前           電話番号         前回の接続     Times Script\n"
 
-#: src/dial.c:1742
+#: src/dial.c:1774
 msgid "Find an entry"
 msgstr "登録項目を検索"
 
 # ask
-#: src/dial.c:1803
+#: src/dial.c:1835
 msgid "Remove entry?"
 msgstr "削除しますか?"
 
-#: src/dial.c:1847
+#: src/dial.c:1879
 msgid "Enter number"
 msgstr "電話番号"
 
@@ -1290,7 +1305,7 @@ msgid "Lockfile is stale. Overriding it..\n"
 msgstr "古いロックファイルがあるので上書きします。\n"
 
 # c-format(have percent)
-#: src/main.c:222 src/updown.c:490
+#: src/main.c:222 src/updown.c:494
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "%s はロックされています。\n"
@@ -1394,7 +1409,7 @@ msgid "SHELL variable not set"
 msgstr "シェル変数が設定されていません"
 
 # c-format(werror)
-#: src/minicom.c:143 src/updown.c:311 src/updown.c:518 src/updown.c:716
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:522 src/updown.c:721
 msgid "Out of memory: could not fork()"
 msgstr "メモリ不足です。fork() できません。"
 
@@ -1412,8 +1427,10 @@ msgid "Search Wrapping Around to Start!"
 msgstr "先頭から検索しなおします。"
 
 #: src/minicom.c:462
-msgid "HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
-msgstr "ヒストリ: U=上 D=下 F=頁上 B=頁下 s=検索 S=CaseLess N=次 C=引用 ESC=終了    "
+msgid ""
+"HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
+msgstr ""
+"ヒストリ: U=上 D=下 F=頁上 B=頁下 s=検索 S=CaseLess N=次 C=引用 ESC=終了    "
 
 # c-format(werror)
 #: src/minicom.c:501
@@ -1435,12 +1452,16 @@ msgstr ""
 "  まず 's' か 'S' を行ってください!"
 
 #: src/minicom.c:721 src/minicom.c:764
-msgid "  CITATION: ENTER=select start line ESC=exit                               "
-msgstr "  引用: ENTER=開始行を指定 ESC=終了                                        "
+msgid ""
+"  CITATION: ENTER=select start line ESC=exit                               "
+msgstr ""
+"  引用: ENTER=開始行を指定 ESC=終了                                        "
 
 #: src/minicom.c:738
-msgid "  CITATION: ENTER=select end line ESC=exit                                 "
-msgstr "  引用: ENTER=終了行を指定 ESC=終了                                        "
+msgid ""
+"  CITATION: ENTER=select end line ESC=exit                                 "
+msgstr ""
+"  引用: ENTER=終了行を指定 ESC=終了                                        "
 
 # c-format(have percent)
 #: src/minicom.c:798
@@ -1465,7 +1486,8 @@ msgid ""
 "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
 "  -m, --metakey          : use meta or alt key for commands\n"
 "  -M, --metakey8         : use 8bit meta key for commands\n"
-"  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
+"  -l, --ansi             : literal; assume screen uses non IBM-PC character "
+"set\n"
 "  -L, --iso              : don't assume screen uses ISO8859\n"
 "  -w, --wrap             : Linewrap on\n"
 "  -H, --displayhex       : display output in hex\n"
@@ -1495,7 +1517,8 @@ msgstr ""
 "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
 "  -m, --metakey          : use meta or alt key for commands\n"
 "  -M, --metakey8         : use 8bit meta key for commands\n"
-"  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
+"  -l, --ansi             : literal; assume screen uses non IBM-PC character "
+"set\n"
 "  -L, --iso              : don't assume screen uses ISO8859\n"
 "  -w, --wrap             : Linewrap on\n"
 "  -H, --displayhex       : display output in hex\n"
@@ -1714,8 +1737,10 @@ msgstr "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 
 #: src/rwconf.c:228
 #, c-format
-msgid "# Machine-generated file - use setup menu in minicom to change parameters.\n"
-msgstr "# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgid ""
+"# Machine-generated file - use setup menu in minicom to change parameters.\n"
+msgstr ""
+"# Machine-generated file - use setup menu in minicom to change parameters.\n"
 
 #: src/rwconf.c:253
 #, c-format
@@ -1851,51 +1876,53 @@ msgstr "runscript は minicom version %s の一部です\n"
 #: src/script.c:1031
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
-msgstr "使い方: runscript <スクリプトファイル> [ログファイル [ホームディレクトリ]]%s\n"
+msgstr ""
+"使い方: runscript <スクリプトファイル> [ログファイル [ホームディレクト"
+"リ]]%s\n"
 
 # c-format(have percent)
-#: src/updown.c:71
+#: src/updown.c:73
 #, c-format
 msgid "Cannot chdir to %.30s"
 msgstr "%.30s にディレクトリ変更できません"
 
 # wselect(wtitle)
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Upload"
 msgstr "アップロード"
 
 # wselect(wtitle)
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Download"
 msgstr "ダウンロード"
 
 # input
-#: src/updown.c:279
+#: src/updown.c:281
 msgid "Please enter file names"
 msgstr "ファイル名を入力して下さい"
 
 # c-format(werror)
-#: src/updown.c:288
+#: src/updown.c:290
 #, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
 msgstr "メモリ不足です。fork() できません。"
 
 # c-format(have percent)
-#: src/updown.c:300
+#: src/updown.c:302
 #, c-format
 msgid "%.30s %s - Press CTRL-C to quit"
 msgstr "%.30s %s - CTRL-C で終了します"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "upload"
 msgstr "アップロード"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "download"
 msgstr "ダウンロード"
 
 # c-format(wprintf)
-#: src/updown.c:430
+#: src/updown.c:433
 msgid ""
 "\n"
 " READY: press any key to continue..."
@@ -1904,40 +1931,46 @@ msgstr ""
 " 終了しました。何かキーを押して下さい..."
 
 # c-format(werror)
-#: src/updown.c:474
+#: src/updown.c:477
 msgid "Cannot create lockfile!"
 msgstr "ロックファイルを作成できません!"
 
+# c-format(have percent)
+#: src/updown.c:484
+#, fuzzy, c-format
+msgid "Failed to write lockfile %s\n"
+msgstr "マクロファイル %s に書き込めません。"
+
 # c-format(fprintf)
-#: src/updown.c:488
+#: src/updown.c:492
 #, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "%s のロックファイルを作れません: %s\n"
 
 # c-format(have percent)
-#: src/updown.c:635
+#: src/updown.c:639
 msgid "Same as last"
 msgstr "Same as last"
 
-#: src/updown.c:636
+#: src/updown.c:640
 msgid " A -   Username        :"
 msgstr " A -   ユーザー名      :"
 
-#: src/updown.c:637
+#: src/updown.c:641
 msgid " B -   Password        :"
 msgstr " B -   パスワード      :"
 
-#: src/updown.c:638
+#: src/updown.c:642
 msgid " C -   Name of script  :"
 msgstr " C -   スクリプト名    :"
 
 # wputs
-#: src/updown.c:639
+#: src/updown.c:643
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "どの設定を変更しますか?   (Return で実行、ESC で中止)"
 
 # wtitle
-#: src/updown.c:644
+#: src/updown.c:648
 msgid "Run a script"
 msgstr "スクリプトの実行"
 
@@ -1994,7 +2027,8 @@ msgstr "ターミナルの桁数が不明です。\n"
 
 # fputs
 #~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
-#~ msgstr "minicom: 警告: 設定ファイルがないので、デフォルトの設定を使います。\n"
+#~ msgstr ""
+#~ "minicom: 警告: 設定ファイルがないので、デフォルトの設定を使います。\n"
 
 # c-format(werror)
 #~ msgid "You are not allowed to create a configuration"
@@ -2070,12 +2104,17 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ msgid "minicom: could not exec keyserv\n"
 #~ msgstr "minicom: kerserv を実行できません。\n"
 
-#~ msgid "  SCROLL MODE    U=up D=down F=page-forward B=page-backward C=Cite ESC=exit "
-#~ msgstr "  スクロールモード: U=上 D=下 F=頁上 B=頁下 C=引用 ESC=終了                 "
+#~ msgid ""
+#~ "  SCROLL MODE    U=up D=down F=page-forward B=page-backward C=Cite "
+#~ "ESC=exit "
+#~ msgstr ""
+#~ "  スクロールモード: U=上 D=下 F=頁上 B=頁下 C=引用 ESC=終"
+#~ "了                 "
 
 # c-format(have percent)
 #~ msgid "** Parameter %s is %s, but is marked %s in %s config file\n"
-#~ msgstr "パラメータ %s は %s なのに、%s と%s設定ファイル中で設定されています\n"
+#~ msgstr ""
+#~ "パラメータ %s は %s なのに、%s と%s設定ファイル中で設定されています\n"
 
 #~ msgid "private"
 #~ msgstr "private"
@@ -2109,8 +2148,11 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ msgid "  -s, --setup            : enter setup mode (only as root)\n"
 #~ msgstr "  -s, --setup            : セットアップモード (root のみ使用可)\n"
 
-#~ msgid "  -o, --noinit           : do not initialize modem & lockfiles at startup\n"
-#~ msgstr "  -o, --noinit           : 最初にモデムとロックファイルを初期化しない\n"
+#~ msgid ""
+#~ "  -o, --noinit           : do not initialize modem & lockfiles at "
+#~ "startup\n"
+#~ msgstr ""
+#~ "  -o, --noinit           : 最初にモデムとロックファイルを初期化しない\n"
 
 #~ msgid "  -m, --metakey          : use meta or alt key for commands\n"
 #~ msgstr "  -m, --metakey          : コマンドに meta キーか alt キーを使う\n"
@@ -2119,12 +2161,18 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ msgstr "  -M, --metakey8         : コマンドに 8 ビットの meta キーを使う\n"
 
 #, fuzzy
-#~ msgid "  -l, --ansi             : literal; assume screen uses non IBM-PC character set\n"
-#~ msgstr "  -l, --ansi             : 文字通り ; 画面が IBM-PC の文字集合を使うと仮定\n"
+#~ msgid ""
+#~ "  -l, --ansi             : literal; assume screen uses non IBM-PC "
+#~ "character set\n"
+#~ msgstr ""
+#~ "  -l, --ansi             : 文字通り ; 画面が IBM-PC の文字集合を使うと仮"
+#~ "定\n"
 
 #, fuzzy
 #~ msgid "  -L, --iso              : don't assume screen uses ISO8859\n"
-#~ msgstr "  -L, --iso              : -l と同様。ただし、画面が ISO8859 を使うと仮定\n"
+#~ msgstr ""
+#~ "  -L, --iso              : -l と同様。ただし、画面が ISO8859 を使うと仮"
+#~ "定\n"
 
 #~ msgid "  -w, --wrap             : Linewrap on\n"
 #~ msgstr "  -w, --wrap             : 行末折り返しする\n"
@@ -2139,23 +2187,27 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ msgid "  -c, --color=on/off     : ANSI style color usage on or off\n"
 #~ msgstr "  -c, --color=on/off     : 色 (ANSI スタイル) を使う\n"
 
-#~ msgid "  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
+#~ msgid ""
+#~ "  -a, --attrib=on/off    : use reverse or highlight attributes on or off\n"
 #~ msgstr "  -a, --attrib=on/off    : 反転や強調表示を使う\n"
 
 #~ msgid "  -t, --term=TERM        : override TERM environment variable\n"
-#~ msgstr "  -t, --term=TERM        : TERM 環境変数の代わりに指定 TERM を使う\n"
+#~ msgstr ""
+#~ "  -t, --term=TERM        : TERM 環境変数の代わりに指定 TERM を使う\n"
 
 #~ msgid "  -S, --script=SCRIPT    : run SCRIPT at startup\n"
 #~ msgstr "  -S, --script=SCRIPT    : 指定したスクリプトを最初に実行する\n"
 
 #~ msgid "  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
-#~ msgstr "  -d, --dial=ENTRY       : ダイアル一覧のなかの「ENTRY」にダイヤルする\n"
+#~ msgstr ""
+#~ "  -d, --dial=ENTRY       : ダイアル一覧のなかの「ENTRY」にダイヤルする\n"
 
 #~ msgid "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
 #~ msgstr "  -p, --ptty=TTYP        : 疑似ターミナルに接続する\n"
 
 #~ msgid "  -C, --capturefile=FILE : start capturing to FILE\n"
-#~ msgstr "  -C, --capturefile=FILE : 指定ファイルネームに記録 (キャプチャ) をとる\n"
+#~ msgstr ""
+#~ "  -C, --capturefile=FILE : 指定ファイルネームに記録 (キャプチャ) をとる\n"
 
 #~ msgid "  -v, --version          : output version information and exit\n"
 #~ msgstr "  -v, --version          : バージョン情報を表示して終了\n"
@@ -2167,12 +2219,15 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ "  configuration          : 使用する設定ファイル\n"
 #~ "\n"
 
-#~ msgid "These options can also be specified in the MINICOM environment variable.\n"
-#~ msgstr "これらのオプションは、MINICOM 環境変数でも指定することができます。\n"
+#~ msgid ""
+#~ "These options can also be specified in the MINICOM environment variable.\n"
+#~ msgstr ""
+#~ "これらのオプションは、MINICOM 環境変数でも指定することができます。\n"
 
 #, fuzzy
 #~ msgid "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
-#~ msgstr "バグは <minicom-devel@bazar.conectiva.com.br> に報告してください。\n"
+#~ msgstr ""
+#~ "バグは <minicom-devel@bazar.conectiva.com.br> に報告してください。\n"
 
 # c-format(have percent)
 #, fuzzy
@@ -2256,4 +2311,5 @@ msgstr "ターミナルの桁数が不明です。\n"
 #~ msgstr "設定されていません"
 
 #~ msgid "The LIBDIR to find the configuration files and the access file\n"
-#~ msgstr "設定ファイルとアクセスファイル minicom.users を置くべきディレクトリを\n"
+#~ msgstr ""
+#~ "設定ファイルとアクセスファイル minicom.users を置くべきディレクトリを\n"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2012-12-01 17:00+0100\n"
+"POT-Creation-Date: 2013-02-06 18:21+0100\n"
 "PO-Revision-Date: 2008-11-15 23:45+0700\n"
 "Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
@@ -33,8 +33,8 @@ msgstr " B - Catat koneksi dan hangups :"
 msgid " C - Log file transfers        :"
 msgstr " C - Catat berkas transfer     :"
 
-#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:646
-#: src/config.c:1184 src/dial.c:1155
+#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:652
+#: src/config.c:1197 src/dial.c:1187
 msgid "Change which setting?"
 msgstr "Ganti konfigurasi mana?"
 
@@ -136,206 +136,210 @@ msgstr " F - Hardware Flow Control :"
 msgid " G - Software Flow Control :"
 msgstr " G - Software Flow Control :"
 
-#: src/config.c:616
+#: src/config.c:622
 msgid "DTE speed "
 msgstr "Kecepatan DTE"
 
-#: src/config.c:618
+#: src/config.c:624
 msgid "line speed"
 msgstr "kecepatan sambungan"
 
-#: src/config.c:626
+#: src/config.c:632
 msgid " A - Init string ........."
 msgstr " A - String inisialisasi ."
 
-#: src/config.c:627
+#: src/config.c:633
 msgid " B - Reset string ........"
 msgstr " B - Reset string ........"
 
-#: src/config.c:628
+#: src/config.c:634
 msgid " C - Dialing prefix #1...."
 msgstr " C - Awalan dialing #1...."
 
-#: src/config.c:629
+#: src/config.c:635
 msgid " D - Dialing suffix #1...."
 msgstr " D - Akhiran dialing #1..."
 
-#: src/config.c:630
+#: src/config.c:636
 msgid " E - Dialing prefix #2...."
 msgstr " E - Awalan dialing #2...."
 
-#: src/config.c:631
+#: src/config.c:637
 msgid " F - Dialing suffix #2...."
 msgstr " F - Akhiran dialing #2..."
 
-#: src/config.c:632
+#: src/config.c:638
 msgid " G - Dialing prefix #3...."
 msgstr " G - Awalan dialing #3...."
 
-#: src/config.c:633
+#: src/config.c:639
 msgid " H - Dialing suffix #3...."
 msgstr " H - Akhiran dialing #3..."
 
-#: src/config.c:634
+#: src/config.c:640
 msgid " I - Connect string ......"
 msgstr " I - String koneksi ......"
 
-#: src/config.c:635
+#: src/config.c:641
 msgid " J - No connect strings .."
 msgstr " J - No connect strings .."
 
-#: src/config.c:636
+#: src/config.c:642
 msgid " K - Hang-up string ......"
 msgstr " K - String pemutus ......"
 
-#: src/config.c:637
+#: src/config.c:643
 msgid " L - Dial cancel string .."
 msgstr " L - Dial cancel string .."
 
-#: src/config.c:638
+#: src/config.c:644
 msgid " M - Dial time ..........."
 msgstr " M - Waktu panggil ......."
 
-#: src/config.c:639
+#: src/config.c:645
 msgid " N - Delay before redial ."
 msgstr " N - Delay before redial ."
 
-#: src/config.c:640
+#: src/config.c:646
 msgid " O - Number of tries ....."
 msgstr " O - Jumlah percobaan ...."
 
-#: src/config.c:641
+#: src/config.c:647
 msgid " P - DTR drop time (0=no)."
 msgstr " P - DTR waktu drop (0=tidak)."
 
-#: src/config.c:642
+#: src/config.c:648
 msgid " Q - Auto bps detect ....."
 msgstr " Q - Deteksi otomatis ...."
 
-#: src/config.c:643
+#: src/config.c:649
 msgid " R - Modem has DCD line .."
 msgstr " R - Modem memiliki DCD .."
 
-#: src/config.c:644
+#: src/config.c:650
 msgid " S - Status line shows ..."
 msgstr " S - Status line shows ..."
 
-#: src/config.c:645
+#: src/config.c:651
 msgid " T - Multi-line untag ...."
 msgstr " T - Multi-line untag ...."
 
-#: src/config.c:657
+#: src/config.c:663
 msgid "Modem and dialing parameter setup"
 msgstr "Parameter setup modem dan pemanggilan"
 
-#: src/config.c:690
+#: src/config.c:696
 #, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "      (Kembali atau esc untuk keluar)"
 
-#: src/config.c:828
+#: src/config.c:834
 msgid " A - Command key is         :"
 msgstr " A - Kunci perintah adalah  :"
 
-#: src/config.c:829
+#: src/config.c:835
 msgid " B - Backspace key sends    :"
 msgstr " B - Kunci backspace dikirim:"
 
-#: src/config.c:830
+#: src/config.c:836
 msgid " C - Status line is         :"
 msgstr " C - Baris status adalah    :"
 
-#: src/config.c:831
+#: src/config.c:837
 msgid " D - Alarm sound            :"
 msgstr " D - Suara Alarm            :"
 
-#: src/config.c:832
+#: src/config.c:838
 msgid " E - Foreground Color (menu):"
 msgstr " E - Warna depan (menu)     :"
 
-#: src/config.c:833
+#: src/config.c:839
 msgid " F - Background Color (menu):"
 msgstr " F - Warna belakang (menu)  :"
 
-#: src/config.c:834
+#: src/config.c:840
 msgid " G - Foreground Color (term):"
 msgstr " G - Warna depan (terminal) :"
 
-#: src/config.c:835
+#: src/config.c:841
 msgid " H - Background Color (term):"
 msgstr " H - Warna belakang (term)  :"
 
-#: src/config.c:836
+#: src/config.c:842
 msgid " I - Foreground Color (stat):"
 msgstr " I - Warna depan (stat)     :"
 
-#: src/config.c:837
+#: src/config.c:843
 msgid " J - Background Color (stat):"
 msgstr " J - Warna belakang (stat)  :"
 
-#: src/config.c:838
+#: src/config.c:844
 msgid " K - History Buffer Size    :"
 msgstr " K - Ukuran buffer sejarah  :"
 
-#: src/config.c:839
+#: src/config.c:845
 msgid " L - Macros file            :"
 msgstr " L - Berkas makro           :"
 
-#: src/config.c:840
+#: src/config.c:846
 msgid " N - Macros enabled         :"
 msgstr " N - Makro aktif            :"
 
-#: src/config.c:841
+#: src/config.c:847
 msgid " O - Character conversion   :"
 msgstr " O - Pengubah karakter      :"
 
-#: src/config.c:842
+#: src/config.c:848
 msgid " P - Add linefeed           :"
 msgstr " P - Tambahkan linefeed     :"
 
-#: src/config.c:843
+#: src/config.c:849
 msgid " Q - Local echo             :"
 msgstr " Q - Lokal echo             :"
 
-#: src/config.c:844
+#: src/config.c:850
 #, fuzzy
 msgid " R - Line Wrap              :"
 msgstr " J - Linewrap             :"
 
-#: src/config.c:845
+#: src/config.c:851
 #, fuzzy
 msgid " S - Hex Display            :"
 msgstr " E - Skrip                :"
 
-#: src/config.c:846 src/config.c:1594
+#: src/config.c:852
+msgid " T - Add carriage return    :"
+msgstr ""
+
+#: src/config.c:853 src/config.c:1607
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Konfigurasi mana yang diubah? (esc untuk keluar)"
 
-#: src/config.c:850 src/config.c:1366
+#: src/config.c:857 src/config.c:1379
 msgid "Screen and keyboard"
 msgstr "Layar dan keyboard"
 
-#: src/config.c:869
+#: src/config.c:876
 msgid " M - Edit Macros\n"
 msgstr " M - Ubah Makro\n"
 
-#: src/config.c:896
+#: src/config.c:904
 msgid "You can't change colors in black and white mode"
 msgstr "Anda tidak dapat mengubah warna dalam mode hitam dan putih"
 
-#: src/config.c:908
+#: src/config.c:916
 msgid "Menu foreground == background color, change!"
 msgstr "Warna menu depan == warna belakang, ubah!"
 
-#: src/config.c:917
+#: src/config.c:925
 msgid "Terminal foreground == background color, change!"
 msgstr "Warna terminal depan == warna belakang, ubah!"
 
-#: src/config.c:929
+#: src/config.c:937
 msgid "History Buffer Size"
 msgstr "Ukuran Sejarah Penyangga"
 
-#: src/config.c:930
+#: src/config.c:938
 msgid ""
 "\n"
 "                You have changed the history buffer size.\n"
@@ -351,11 +355,11 @@ msgstr ""
 "\n"
 "                Tekan sebuah tombol untuk Melanjutkan... "
 
-#: src/config.c:947
+#: src/config.c:955
 msgid "Program new command key"
 msgstr "Program kunci perintah baru"
 
-#: src/config.c:949
+#: src/config.c:957
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -377,209 +381,209 @@ msgstr ""
 "\n"
 " Tekan sebuah kunci perintah baru: "
 
-#: src/config.c:958
+#: src/config.c:966
 msgid "Meta-8th bit "
 msgstr "Meta-8th bit"
 
-#: src/config.c:960
+#: src/config.c:968
 msgid "Escape (Meta)"
 msgstr "Escape (Meta)"
 
-#: src/config.c:994 src/config.c:1237
+#: src/config.c:1002 src/config.c:1250
 msgid "disabled"
 msgstr "non-aktif"
 
-#: src/config.c:997 src/config.c:1240 src/rwconf.c:146
+#: src/config.c:1005 src/config.c:1253 src/rwconf.c:146
 msgid "enabled"
 msgstr "aktif"
 
-#: src/config.c:1112
+#: src/config.c:1120
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "ERROR: anda tidak memiliki ijin untuk membuat berkas disana!"
 
-#: src/config.c:1118
+#: src/config.c:1126
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "ERROR: tidak dapat membuka berkas makro %s"
 
-#: src/config.c:1124
+#: src/config.c:1132
 msgid "Reading macros"
 msgstr "Membaca makro"
 
-#: src/config.c:1178
+#: src/config.c:1191
 #, fuzzy
 msgid " A -      Terminal emulation :"
 msgstr " A - Emulasi terminal            :"
 
-#: src/config.c:1179
+#: src/config.c:1192
 #, fuzzy
 msgid " B -     Backspace key sends :"
 msgstr " B - Kunci backspace dikirim     :"
 
-#: src/config.c:1180
+#: src/config.c:1193
 #, fuzzy
 msgid " C -          Status line is :"
 msgstr " C - Baris status adalah         :"
 
-#: src/config.c:1181
+#: src/config.c:1194
 #, fuzzy
 msgid " D -   Newline tx delay (ms) :"
 msgstr " D - Waktu tunda baris baru (ms) :"
 
-#: src/config.c:1182
+#: src/config.c:1195
 #, fuzzy
 msgid " E -          ENQ answerback :"
 msgstr " E - ENQ answerback              :"
 
-#: src/config.c:1183
+#: src/config.c:1196
 #, fuzzy
 msgid " F - Character tx delay (ms) :"
 msgstr " D - Waktu tunda baris baru (ms) :"
 
-#: src/config.c:1187
+#: src/config.c:1200
 msgid "Terminal settings"
 msgstr "Konfigurasi terminal"
 
-#: src/config.c:1291
+#: src/config.c:1304
 #, c-format
 msgid "Cannot write to %s"
 msgstr "Tidak dapat menulis ke %s"
 
-#: src/config.c:1298
+#: src/config.c:1311
 msgid "Configuration saved"
 msgstr "Konfigurasi disimpan"
 
-#: src/config.c:1313
+#: src/config.c:1326
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr "ERROR: Makro telah berubah tetapi tidak ada nama berkas yang diset!"
 
-#: src/config.c:1317
+#: src/config.c:1330
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "Tidak dapat menulis berkas makro %s"
 
-#: src/config.c:1323
+#: src/config.c:1336
 msgid "Macros saved"
 msgstr "Makro disimpan"
 
-#: src/config.c:1340
+#: src/config.c:1353
 msgid "Give name to save this configuration?"
 msgstr "Berikan nama untuk menyimpan konfigurasi ini?"
 
-#: src/config.c:1362
+#: src/config.c:1375
 msgid "Filenames and paths"
 msgstr "Nama berkas dan jalur"
 
-#: src/config.c:1363
+#: src/config.c:1376
 msgid "File transfer protocols"
 msgstr "Protokol pengiriman berkas"
 
-#: src/config.c:1364
+#: src/config.c:1377
 msgid "Serial port setup"
 msgstr "Konfigurasi Port Serial"
 
-#: src/config.c:1365
+#: src/config.c:1378
 msgid "Modem and dialing"
 msgstr "Modem dan pemanggilan"
 
-#: src/config.c:1368
+#: src/config.c:1381
 msgid "Save setup as.."
 msgstr "Simpan konfigurasi sebagai.."
 
-#: src/config.c:1369
+#: src/config.c:1382
 msgid "Exit"
 msgstr "Keluar"
 
-#: src/config.c:1370
+#: src/config.c:1383
 msgid "Exit from Minicom"
 msgstr "Keluar dari Minicom"
 
-#: src/config.c:1382
+#: src/config.c:1395
 #, c-format
 msgid "Save setup as %s"
 msgstr "Simpan konfigurasi sebagai %s"
 
-#: src/config.c:1388
+#: src/config.c:1401
 msgid "configuration"
 msgstr "konfigurasi"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "BLACK"
 msgstr "HITAM"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "RED"
 msgstr "MERAH"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "GREEN"
 msgstr "HIJAU"
 
-#: src/config.c:1397
+#: src/config.c:1410
 msgid "YELLOW"
 msgstr "KUNING"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "BLUE"
 msgstr "BIRU"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "MAGENTA"
 msgstr "MAGENTA"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "CYAN"
 msgstr "CYAN"
 
-#: src/config.c:1398
+#: src/config.c:1411
 msgid "WHITE"
 msgstr "PUTIH"
 
-#: src/config.c:1428
+#: src/config.c:1441
 msgid "Comm Parameters"
 msgstr "Parameter Komunikasi"
 
-#: src/config.c:1433
+#: src/config.c:1446
 msgid " Speed            Parity      Data\n"
 msgstr " Kecepatan        Parity      Data\n"
 
-#: src/config.c:1434
+#: src/config.c:1447
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: <selanjutnya> L: Kosong   S: 5\n"
 
-#: src/config.c:1435
+#: src/config.c:1448
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: <sebelumnya>  M: Genap    T: 6\n"
 
-#: src/config.c:1436
+#: src/config.c:1449
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C:   9600        N: Ganjil   U: 7\n"
 
-#: src/config.c:1437
+#: src/config.c:1450
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D:  38400        O: Tanda    V: 8\n"
 
-#: src/config.c:1438
+#: src/config.c:1451
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: Spasi\n"
 
-#: src/config.c:1440
+#: src/config.c:1453
 msgid " Stopbits\n"
 msgstr " BitHenti\n"
 
-#: src/config.c:1441
+#: src/config.c:1454
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1442
+#: src/config.c:1455
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1444
+#: src/config.c:1457
 msgid " K: Current\n"
 msgstr " K: Sekarang\n"
 
-#: src/config.c:1447
+#: src/config.c:1460
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -587,32 +591,32 @@ msgstr ""
 "\n"
 " Pilih, atau <Enter> untuk keluar? "
 
-#: src/config.c:1455
+#: src/config.c:1468
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Sekarang: %5s %s%s%s  "
 
-#: src/config.c:1597
+#: src/config.c:1610
 msgid "F1 to F10 Macros"
 msgstr "F1 ke F10 Makro"
 
-#: src/config.c:1616
+#: src/config.c:1629
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
 " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = berhenti 1 detik,"
 
-#: src/config.c:1618
+#: src/config.c:1631
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = nama pengguna, \\p = kata kunci, \\\\ = \\, \\e = ubah echo, "
 
-#: src/config.c:1620
+#: src/config.c:1633
 #, fuzzy
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 "  \\l = ubah LF, \\bX1..Xn<sp> = ubah kecepatan baud. Contoh: \"\\bfq \""
 
-#: src/config.c:1622
+#: src/config.c:1635
 #, fuzzy
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
@@ -620,21 +624,21 @@ msgstr ""
 "  = 19200 8N1. (Lihat \"Parameter Komunikasi\" menu untuk nilai valid dari "
 "X.))"
 
-#: src/config.c:1637
+#: src/config.c:1650
 msgid "CHANGED"
 msgstr "BERUBAH"
 
-#: src/config.c:1724
+#: src/config.c:1737
 msgid "Character conversion"
 msgstr "Pengubah karakter"
 
-#: src/config.c:1729
+#: src/config.c:1742
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr ""
 " karakter masuk keluar karakter masuk keluar karakter masuk keluar karakter "
 "masuk keluar\n"
 
-#: src/config.c:1751
+#: src/config.c:1764
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -642,12 +646,12 @@ msgstr ""
 "\n"
 " A - load tabel\tB - simpan tabel"
 
-#: src/config.c:1753
+#: src/config.c:1766
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tberkas:%s"
 
-#: src/config.c:1754
+#: src/config.c:1767
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -655,121 +659,126 @@ msgstr ""
 "\n"
 " C - edit kar\tD - layar selanjutnya\tE - layar sebelumnya\n"
 
-#: src/config.c:1755
+#: src/config.c:1768
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - ubah capture: %s\n"
 
-#: src/config.c:1770
+#: src/config.c:1783
 #, c-format
 msgid "Load file: %s"
 msgstr "Load berkas: %s"
 
-#: src/config.c:1782
+#: src/config.c:1795
 #, c-format
 msgid "Save as file: %s"
 msgstr "Simpan sebagai berkas: %s"
 
-#: src/config.c:1793
+#: src/config.c:1806
 msgid "Character to be edited: "
 msgstr "Karakter yang akan diubah: "
 
-#: src/config.c:1801 src/config.c:1813 src/config.c:1825
+#: src/config.c:1814 src/config.c:1826 src/config.c:1838
 msgid "Input character ascii value 0-255"
 msgstr "Nilai ascii karakter masukan 0-255"
 
-#: src/config.c:1807
+#: src/config.c:1820
 #, c-format
 msgid "Change input to: %s"
 msgstr "Ubah masukan ke: %s"
 
-#: src/config.c:1819
+#: src/config.c:1832
 #, c-format
 msgid "Change output to: %s"
 msgstr "Ubah keluaran ke: %s"
 
-#: src/config.c:1857
+#: src/config.c:1870
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Tidak dapat membuka tabel pengubahan %s"
 
-#: src/config.c:1871
+#: src/config.c:1876
+#, fuzzy, c-format
+msgid "Cannot read conversion table %s"
+msgstr "Tidak dapat menulis tabel pengubahan %s"
+
+#: src/config.c:1888
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Tidak dapat menulis tabel pengubahan %s"
 
-#: src/dial.c:250
+#: src/dial.c:251
 msgid "Initializing Modem"
 msgstr "Menginisialisasi Modem"
 
-#: src/dial.c:266
+#: src/dial.c:267
 msgid "Resetting Modem"
 msgstr "Mereset modem"
 
-#: src/dial.c:280
+#: src/dial.c:281
 msgid "Hanging up"
 msgstr "Memutus sambungan"
 
-#: src/dial.c:284
+#: src/dial.c:285
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
 msgstr "Terputus (%ld:%02ld:%02ld)"
 
-#: src/dial.c:316
+#: src/dial.c:317
 msgid "Sending BREAK"
 msgstr "Mengirim BREAK"
 
-#: src/dial.c:382
+#: src/dial.c:383
 #, c-format
 msgid "    No connection: %s.      \n"
 msgstr "    Tidak ada koneksi: %s.   \n"
 
-#: src/dial.c:384
+#: src/dial.c:385
 msgid "   Press any key to continue..    "
 msgstr "   Tekan tombol apapun untuk melanjutkan..   "
 
-#: src/dial.c:389 src/dial.c:401
+#: src/dial.c:390 src/dial.c:402
 #, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "     Mencoba lagi dalam %2d detik      "
 
-#: src/dial.c:427
+#: src/dial.c:428
 msgid "Max retries"
 msgstr "Maksimal pencobaan"
 
-#: src/dial.c:437
+#: src/dial.c:438
 msgid "You are already online! Hang up first."
 msgstr "Apakah anda sudah tersambung! putuskan terlebih dahulu."
 
-#: src/dial.c:442
+#: src/dial.c:443
 msgid "Autodial"
 msgstr "Otomatis panggil"
 
-#: src/dial.c:446 src/dial.c:476
+#: src/dial.c:447 src/dial.c:477
 msgid "Dialing"
 msgstr "Memanggil"
 
-#: src/dial.c:447 src/dial.c:479
+#: src/dial.c:448 src/dial.c:480
 #, c-format
 msgid "      At : %s"
 msgstr "      Di : %s"
 
-#: src/dial.c:450 src/dial.c:483
+#: src/dial.c:451 src/dial.c:484
 #, c-format
 msgid " Last on : %s at %s"
 msgstr " Terakhir di : %s di %s"
 
-#: src/dial.c:498
+#: src/dial.c:499
 #, c-format
 msgid "    Time : %-3d"
 msgstr "    Waktu : %-3d"
 
-#: src/dial.c:500
+#: src/dial.c:501
 #, c-format
 msgid "     Attempt #%d"
 msgstr "     Mencoba #%d"
 
-#: src/dial.c:501
+#: src/dial.c:502
 msgid ""
 "\n"
 "\n"
@@ -781,129 +790,134 @@ msgstr ""
 "\n"
 " Escape untuk membatalkan, spasi untuk mencoba."
 
-#: src/dial.c:542
+#: src/dial.c:543
 msgid "Cancelled"
 msgstr "Dibatalkan"
 
-#: src/dial.c:598
+#: src/dial.c:599
 msgid "Connected. Press any key to continue"
 msgstr "Terhubung. Tekan tombol apapun untuk melanjutkan"
 
-#: src/dial.c:678
+#: src/dial.c:679
 msgid "Timeout"
 msgstr "Kehabisan waktu"
 
-#: src/dial.c:858
+#: src/dial.c:881
 msgid "Manually entered number"
 msgstr "Memasukan nomor secara manual"
 
-#: src/dial.c:867
+#: src/dial.c:890
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Tidak dapat membuka ~/.dialdir: ijin ditolak"
 
-#: src/dial.c:919
+#: src/dial.c:912
+#, fuzzy
+msgid "Failed to read dialing directory\n"
+msgstr "Kehabisan memori ketika membaca direktori telepon"
+
+#: src/dial.c:946
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Daftar telepon garbled (versi tidak dikenal?)"
 
-#: src/dial.c:926 src/dial.c:934
+#: src/dial.c:953 src/dial.c:961
 msgid "Phonelist corrupted"
 msgstr "Daftar telepon terkorupsi"
 
-#: src/dial.c:939
+#: src/dial.c:966
 msgid "Unknown dialing directory version"
 msgstr "Versi direktori pemanggilan tidak dikenal"
 
-#: src/dial.c:946
+#: src/dial.c:973
 msgid "Phonelist garbled (?)"
 msgstr "Daftar telepon garbled (?)"
 
-#: src/dial.c:968
+#: src/dial.c:995
 msgid "Out of memory while reading dialing directory"
 msgstr "Kehabisan memori ketika membaca direktori telepon"
 
-#: src/dial.c:1015
+#: src/dial.c:1047
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
 msgstr ""
 
-#: src/dial.c:1050
+#: src/dial.c:1082
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Tidak dapat membuka ~/.dialdir untuk menulis!"
 
-#: src/dial.c:1066 src/dial.c:1078
+#: src/dial.c:1098 src/dial.c:1110
 msgid "Error writing to ~/.dialdir!"
 msgstr "Error menulis ke ~/.dialdir!"
 
-#: src/dial.c:1143
+#: src/dial.c:1175
 msgid " A -  Name                :"
 msgstr " A -  Nama                :"
 
-#: src/dial.c:1144
+#: src/dial.c:1176
 msgid " B -  Number              :"
 msgstr " B -  Nomor               :"
 
-#: src/dial.c:1145
+#: src/dial.c:1177
 msgid " C -  Dial string #       :"
 msgstr " C -  Dial string #       :"
 
-#: src/dial.c:1146
+#: src/dial.c:1178
 msgid " D -  Local echo          :"
 msgstr " D -  Lokal echo          :"
 
-#: src/dial.c:1147
+#: src/dial.c:1179
 msgid " E -  Script              :"
 msgstr " E - Skrip                :"
 
-#: src/dial.c:1148
+#: src/dial.c:1180
 msgid " F -  Username            :"
 msgstr " F -  Nama pengguna       :"
 
-#: src/dial.c:1149
+#: src/dial.c:1181
 msgid " G -  Password            :"
 msgstr " G -  Kata kunci          :"
 
-#: src/dial.c:1150
+#: src/dial.c:1182
 msgid " H -  Terminal Emulation  :"
 msgstr " H -  Emulasi Terminal    :"
 
-#: src/dial.c:1151
+#: src/dial.c:1183
 msgid " I -  Backspace key sends :"
 msgstr " I -  Kunci backspace dikirim :"
 
-#: src/dial.c:1152
+#: src/dial.c:1184
 msgid " J -  Linewrap            :"
 msgstr " J - Linewrap             :"
 
-#: src/dial.c:1153
+#: src/dial.c:1185
 msgid " K -  Line Settings       :"
 msgstr " K -  Konfigurasi sambungan:"
 
-#: src/dial.c:1154
+#: src/dial.c:1186
 msgid " L -  Conversion table    :"
 msgstr " L -  Tabel konversi      :"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/dial.c:1167 src/dial.c:1239 src/dial.c:1246
+#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
 msgid "Backspace"
 msgstr "Backspace"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "On"
 msgstr "Nyala"
 
-#: src/dial.c:1169 src/dial.c:1241 src/dial.c:1251
+#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
 msgid "Off"
 msgstr "Mati"
 
-#: src/dial.c:1173
+#: src/dial.c:1205
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Terakhir dipanggil  : %s %s\n"
 
-#: src/dial.c:1174
+#: src/dial.c:1206
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Waktu nyala         : %d"
@@ -911,72 +925,72 @@ msgstr "      Waktu nyala         : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Dial"
 msgstr "Panggil"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Find"
 msgstr "Temukan"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Add"
 msgstr "Tambahkan"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Edit"
 msgstr "Ubah"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "Remove"
 msgstr "Hapus"
 
-#: src/dial.c:1275
+#: src/dial.c:1307
 msgid "moVe"
 msgstr "Pindah"
 
-#: src/dial.c:1276
+#: src/dial.c:1308
 msgid "Manual"
 msgstr "Manual"
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
 msgstr "   Ya   "
 
-#: src/dial.c:1422 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   No   "
 msgstr " Tidak  "
 
-#: src/dial.c:1515
+#: src/dial.c:1547
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Masukan \"%s\" tidak ditemukan. Masukan dialdir?"
 
-#: src/dial.c:1545 src/file.c:429
+#: src/dial.c:1577 src/file.c:429
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Escape ke keluar, Spasi untuk tag )"
 
-#: src/dial.c:1546
+#: src/dial.c:1578
 msgid " Move entry up/down, Escape to exit"
 msgstr " Pindahkan masukan naik/turun, Escape untuk keluar"
 
-#: src/dial.c:1566
+#: src/dial.c:1598
 msgid "Dialing Directory"
 msgstr "Direktori pemanggilan"
 
-#: src/dial.c:1568
+#: src/dial.c:1600
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     Nama            Nomor             Terakhir di  Waktu Skrip\n"
 
-#: src/dial.c:1742
+#: src/dial.c:1774
 msgid "Find an entry"
 msgstr "Mencari sebuah masukan"
 
-#: src/dial.c:1803
+#: src/dial.c:1835
 msgid "Remove entry?"
 msgstr "Menghapus masukan?"
 
-#: src/dial.c:1847
+#: src/dial.c:1879
 msgid "Enter number"
 msgstr "Masukan nomor"
 
@@ -1099,85 +1113,89 @@ msgstr "%d berkas:\n"
 msgid "Minicom Command Summary"
 msgstr "Ringkasan Perintah Minicom"
 
-#: src/help.c:44
+#: src/help.c:45
 #, c-format
 msgid "Commands can be called by %s<key>"
 msgstr "Perintah dapat dibatalkan dengan <tombol>%s"
 
-#: src/help.c:47
+#: src/help.c:51
 msgid "Main Functions"
 msgstr "Fungsi Utama"
 
-#: src/help.c:49
+#: src/help.c:53
 msgid "Other Functions"
 msgstr "Fungsi Lain"
 
-#: src/help.c:51
+#: src/help.c:55
 msgid " Dialing directory..D  run script (Go)....G | Clear Screen.......C\n"
 msgstr " Direktori panggil..D  jalankan script ...G | Hapus Layar........C\n"
 
-#: src/help.c:52
+#: src/help.c:56
 msgid " Send files.........S  Receive files......R | cOnfigure Minicom..O\n"
 msgstr " Kirim berkas.......S  Terima berkas......R | cOnfigure Minicom..O\n"
 
-#: src/help.c:53
+#: src/help.c:57
 msgid " comm Parameters....P  Add linefeed.......A | "
 msgstr " comm Parameters....P  Tambahkan linefeed.A | "
 
-#: src/help.c:55
+#: src/help.c:59
 msgid "Suspend minicom....J\n"
 msgstr "Hentikan minicom...J\n"
 
-#: src/help.c:57
+#: src/help.c:61
 msgid "Jump to a shell....J\n"
 msgstr "Pindah ke shell....J\n"
 
-#: src/help.c:59
+#: src/help.c:63
 msgid " Capture on/off.....L  Hangup.............H | eXit and reset.....X\n"
 msgstr " Capture on/off.....L  Putuskan...........H | Keluar dan reset...X\n"
 
-#: src/help.c:60
+#: src/help.c:64
 msgid " send break.........F  initialize Modem...M | Quit with no reset.Q\n"
 msgstr " kirim break........F  inisialisasi Modem.M | Berhenti no reset..Q\n"
 
-#: src/help.c:61
+#: src/help.c:65
 msgid " Terminal settings..T  run Kermit.........K | Cursor key mode....I\n"
 msgstr " Terminal settings..T  jalankan Kermit....K | Kunci mode cursor..I\n"
 
-#: src/help.c:62
+#: src/help.c:66
 msgid " lineWrap on/off....W"
 msgstr " lineWrap on/off....W"
 
-#: src/help.c:63
+#: src/help.c:67
 msgid "  local Echo on/off..E | Help screen........Z\n"
 msgstr "  lokal echo on/off..E | Layar bantuan......Z\n"
 
-#: src/help.c:64
-msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B"
+#: src/help.c:68
+msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
 msgstr ""
 
-#: src/help.c:67
+#: src/help.c:69
+msgid " Add Carriage Ret...U"
+msgstr ""
+
+#: src/help.c:71
+msgid "Select function or press Enter for none."
+msgstr "Pilih fungsi atau tekan Enter untuk kosong."
+
+#: src/help.c:79
 msgid "Written by Miquel van Smoorenburg 1991-1995"
 msgstr "Ditulis oleh Miquel van Smoorenburg 1991-1995"
 
-#: src/help.c:69
+#: src/help.c:81
 msgid "Some additions by Jukka Lahtinen 1997-2000"
 msgstr "Dengan beberapa tambahan oleh Jukka Lahtinen 1997-2000"
 
-#: src/help.c:71
+#: src/help.c:83
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "i18n oleh Arnaldo Carvalho de Melo 1998"
-
-#: src/help.c:73
-msgid "Select function or press Enter for none."
-msgstr "Pilih fungsi atau tekan Enter untuk kosong."
 
 #: src/main.c:213
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "Lockfile stale. Overriding ..\n"
 
-#: src/main.c:222 src/updown.c:490
+#: src/main.c:222 src/updown.c:494
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "Perangkat %s terkunci.\n"
@@ -1270,7 +1288,7 @@ msgstr "Terhenti. Ketik \"fg\" untuk melanjutkan.\n"
 msgid "SHELL variable not set"
 msgstr "Variabel SHELL belum diset"
 
-#: src/minicom.c:143 src/updown.c:311 src/updown.c:518 src/updown.c:716
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:522 src/updown.c:721
 msgid "Out of memory: could not fork()"
 msgstr "Kehabisan memori: tidak dapat fork()"
 
@@ -1417,17 +1435,17 @@ msgstr ""
 "\n"
 "Laporkan bugs ke <minicom-devel@lists.alioth.debian.org>.\n"
 
-#: src/minicom.c:1146
+#: src/minicom.c:1159
 #, c-format
 msgid "%s version %s"
 msgstr "%s versi %s"
 
-#: src/minicom.c:1148
+#: src/minicom.c:1161
 #, c-format
 msgid " (compiled %s)"
 msgstr " (dikompile %s)"
 
-#: src/minicom.c:1151
+#: src/minicom.c:1164
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1436,45 +1454,45 @@ msgstr ""
 "Hak Cipta (C) Miquel van Smoorenburg.\n"
 "\n"
 
-#: src/minicom.c:1174
+#: src/minicom.c:1187
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argumen ke -p harus berupa sebuah pty\n"
 
-#: src/minicom.c:1238 src/minicom.c:1552
+#: src/minicom.c:1251 src/minicom.c:1571
 msgid "Cannot open capture file"
 msgstr "Tidak dapat membuka berkas penangkap"
 
-#: src/minicom.c:1297
+#: src/minicom.c:1310
 msgid "You don't exist. Go away.\n"
 msgstr "Anda tidak ada. Pergi.\n"
 
-#: src/minicom.c:1371
+#: src/minicom.c:1385
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Maaf. Layar anda terlalu kecil.\n"
 
-#: src/minicom.c:1440
+#: src/minicom.c:1454
 msgid "Welcome to minicom"
 msgstr "Selamat datang ke minicom"
 
-#: src/minicom.c:1441
+#: src/minicom.c:1455
 msgid "OPTIONS"
 msgstr "OPSI"
 
-#: src/minicom.c:1443
+#: src/minicom.c:1457
 msgid "Compiled on"
 msgstr "Dikompile di"
 
-#: src/minicom.c:1459
+#: src/minicom.c:1473
 msgid "Port"
 msgstr ""
 
-#: src/minicom.c:1462
+#: src/minicom.c:1476
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "Pengubah karakter"
 
-#: src/minicom.c:1463
+#: src/minicom.c:1477
 #, c-format
 msgid ""
 "\n"
@@ -1485,72 +1503,80 @@ msgstr ""
 "Tekan %sZ untuk bantuan dengan kunci spesial%c\n"
 "\n"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed ON"
 msgstr "Penambahan linefeed ON"
 
-#: src/minicom.c:1484
+#: src/minicom.c:1498
 msgid "Add linefeed OFF"
 msgstr "Penambahan linefeed OFF"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1503
+msgid "Add carriage return ON"
+msgstr ""
+
+#: src/minicom.c:1503
+msgid "Add carriage return OFF"
+msgstr ""
+
+#: src/minicom.c:1508
 msgid "Local echo ON"
 msgstr "Lokal echo ON"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1508
 msgid "Local echo OFF"
 msgstr "Lokal echo OFF"
 
-#: src/minicom.c:1508
+#: src/minicom.c:1527
 msgid "You are online. Really initialize?"
 msgstr "Anda online. Benar benar menginisialisasi?"
 
-#: src/minicom.c:1515
+#: src/minicom.c:1534
 msgid "Leave without reset?"
 msgstr "Pergi tanpa reset?"
 
-#: src/minicom.c:1519 src/minicom.c:1537
+#: src/minicom.c:1538 src/minicom.c:1556
 msgid "Save macros?"
 msgstr "Simpan makro?"
 
-#: src/minicom.c:1529
+#: src/minicom.c:1548
 msgid "Leave Minicom?"
 msgstr "Tinggalkan Minicom"
 
-#: src/minicom.c:1548
+#: src/minicom.c:1567
 msgid "Capture to which file? "
 msgstr "Tangkap ke berkas mana? "
 
-#: src/minicom.c:1557 src/minicom.c:1566
+#: src/minicom.c:1576 src/minicom.c:1585
 msgid "Capture file"
 msgstr "Berkas penangkap"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap ON"
 msgstr "Linewrap ON"
 
-#: src/minicom.c:1601
+#: src/minicom.c:1620
 msgid "Linewrap OFF"
 msgstr "Linewrap OFF"
 
-#: src/minicom.c:1610
+#: src/minicom.c:1629
 #, fuzzy
 msgid "Timestamp OFF"
 msgstr "Linewrap OFF"
 
-#: src/minicom.c:1613
+#: src/minicom.c:1632
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1616
+#: src/minicom.c:1635
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1619
+#: src/minicom.c:1638
 msgid "Timestamp lines every second"
 msgstr ""
 
-#: src/minicom.c:1660
+#: src/minicom.c:1679
 msgid "Quit without reset while online."
 msgstr "Berhenti tanpa reset ketika sedang tersambung."
 
@@ -1558,14 +1584,14 @@ msgstr "Berhenti tanpa reset ketika sedang tersambung."
 msgid "No"
 msgstr "Tidak"
 
-#: src/rwconf.c:225
+#: src/rwconf.c:226
 #, c-format
 msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 msgstr ""
 "# Berkas dihasilkan oleh aplikasi - gunakan \"minicom -s\" untuk mengubah "
 "parameter.\n"
 
-#: src/rwconf.c:227
+#: src/rwconf.c:228
 #, c-format
 msgid ""
 "# Machine-generated file - use setup menu in minicom to change parameters.\n"
@@ -1573,21 +1599,21 @@ msgstr ""
 "# Berkas dihasilkan oleh aplikasi - gunakan menu konfigurasi dalam minicom "
 "untuk mengubah parameter.\n"
 
-#: src/rwconf.c:252
+#: src/rwconf.c:253
 #, c-format
 msgid "Memory allocation failed.\n"
 msgstr "Alokasi memori gagal.\n"
 
-#: src/rwconf.c:321
+#: src/rwconf.c:322
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
 msgstr "** Baris %d dari %s berkas konfigurasi tidak dapat diparse.\n"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "global"
 msgstr "global"
 
-#: src/rwconf.c:322
+#: src/rwconf.c:323
 msgid "personal"
 msgstr "personal"
 
@@ -1710,42 +1736,42 @@ msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr ""
 "Penggunaan: runscript <berkas-script> [berkas-kunci [direktori-rumah]]%s\n"
 
-#: src/updown.c:71
+#: src/updown.c:73
 #, c-format
 msgid "Cannot chdir to %.30s"
 msgstr "Tidak dapat berpindah direktori ke %.30s"
 
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Upload"
 msgstr "Aplod"
 
-#: src/updown.c:223
+#: src/updown.c:225
 msgid "Download"
 msgstr "Donlod"
 
-#: src/updown.c:279
+#: src/updown.c:281
 msgid "Please enter file names"
 msgstr "Tolong masukan nama berkas"
 
-#: src/updown.c:288
+#: src/updown.c:290
 #, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
 msgstr "Kehabisan memori: tidak dapat fork()"
 
-#: src/updown.c:300
+#: src/updown.c:302
 #, c-format
 msgid "%.30s %s - Press CTRL-C to quit"
 msgstr "%.30s %s - Tekan CTRL-C untuk berhenti"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "upload"
 msgstr "aplod"
 
-#: src/updown.c:301
+#: src/updown.c:303
 msgid "download"
 msgstr "donlod"
 
-#: src/updown.c:430
+#: src/updown.c:433
 msgid ""
 "\n"
 " READY: press any key to continue..."
@@ -1753,38 +1779,43 @@ msgstr ""
 "\n"
 " SIAP: tekan tombol apapun untuk melanjutkan.."
 
-#: src/updown.c:474
+#: src/updown.c:477
 #, fuzzy
 msgid "Cannot create lockfile!"
 msgstr "Tidak dapat membuat berkas-kunci!"
 
-#: src/updown.c:488
+#: src/updown.c:484
+#, fuzzy, c-format
+msgid "Failed to write lockfile %s\n"
+msgstr "Tidak dapat menulis berkas makro %s"
+
+#: src/updown.c:492
 #, fuzzy, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "Tidak dapat membuat berkas-kunci. Maaf.\n"
 
-#: src/updown.c:635
+#: src/updown.c:639
 msgid "Same as last"
 msgstr "Sama seperti terakhir"
 
-#: src/updown.c:636
+#: src/updown.c:640
 msgid " A -   Username        :"
 msgstr " A -   Nama pengguna   :"
 
-#: src/updown.c:637
+#: src/updown.c:641
 msgid " B -   Password        :"
 msgstr " B -   Kata kunci      :"
 
-#: src/updown.c:638
+#: src/updown.c:642
 msgid " C -   Name of script  :"
 msgstr " C -   Nama dari script :"
 
-#: src/updown.c:639
+#: src/updown.c:643
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr ""
 "Konfigurasi mana yang diubah? (Enter untuk menjalankan, ESC untuk berhenti"
 
-#: src/updown.c:644
+#: src/updown.c:648
 msgid "Run a script"
 msgstr "Jalankan sebuah script"
 
