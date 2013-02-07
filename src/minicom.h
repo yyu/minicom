@@ -301,7 +301,7 @@ extern int io_pending, pendingkeys;
 void domacros(void);
 
 
-int lockfile_create(void);
+int lockfile_create(int no_msgs);
 void lockfile_remove(void);
 
 

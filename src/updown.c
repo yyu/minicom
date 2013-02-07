@@ -413,7 +413,7 @@ void updown(int what, int nr)
   if (win == (WIN *)0)
     mc_wreturn();
 
-  lockfile_create();
+  lockfile_create(0);
 
   /* MARK updated 02/17/94 - Flush modem port before displaying READY msg */
   /* because a BBS often displays menu text right after a download, and we */
@@ -459,7 +459,7 @@ void lockfile_remove(void)
 #endif
 }
 
-int lockfile_create(void)
+int lockfile_create(int no_msgs)
 {
   int n;
 
@@ -474,25 +474,29 @@ int lockfile_create(void)
   n = umask(022);
   /* Create lockfile compatible with UUCP-1.2 */
   if ((fd = open(lockfile, O_WRONLY | O_CREAT | O_EXCL, 0666)) < 0) {
-    werror(_("Cannot create lockfile!"));
+    if (!no_msgs)
+      werror(_("Cannot create lockfile!"));
   } else {
     // FHS format:
     char buf[12];
     snprintf(buf, sizeof(buf),  "%10d\n", getpid());
     buf[sizeof(buf) - 1] = 0;
     if (write(fd, buf, strlen(buf)) < (ssize_t)strlen(buf))
-      fprintf(stderr, _("Failed to write lockfile %s\n"), lockfile);
+      if (!no_msgs)
+        fprintf(stderr, _("Failed to write lockfile %s\n"), lockfile);
     close(fd);
   }
   umask(n);
   return 0;
 #else
   n = ttylock(dial_tty);
-  if (n < 0) {
-    fprintf(stderr, _("Cannot create lockfile for %s: %s\n"), dial_tty, strerror(-n));
-  } else if (n > 0) {
-    fprintf(stderr, _("Device %s is locked.\n"), dial_tty);
-  }
+  if (!no_msgs)
+    {
+      if (n < 0)
+        fprintf(stderr, _("Cannot create lockfile for %s: %s\n"), dial_tty, strerror(-n));
+      else if (n > 0)
+        fprintf(stderr, _("Device %s is locked.\n"), dial_tty);
+    }
   return n;
 #endif
 }
@@ -546,7 +550,7 @@ void kermit(void)
   mc_wreturn();
 
   /* Re-create lockfile */
-  lockfile_create();
+  lockfile_create(0);
 
   m_flush(portfd);
   port_init();

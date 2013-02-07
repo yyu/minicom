@@ -225,7 +225,7 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
   }
 #endif
 
-  if (doinit > 0 && lockfile_create() != 0)
+  if (doinit > 0 && lockfile_create(no_msgs) != 0)
 	  return -1;
 
 nolock:
