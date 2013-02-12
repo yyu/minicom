@@ -1,3 +1,7 @@
+2013-02-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/zh_TW.po: Update from Translation team.
+
 2013-02-07  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/main.c, src/minicom.h, src/updown.c:

@@ -1,4 +1,4 @@
-# Traditional Chinese Messages for minicom
+# Traditional Chinese Messages for minicom.
 # Copyright (C) 2006 Free Software Foundation, Inc.
 # This file is distributed under the same license as the minicom package.
 # OLS3 <ols3@lxer.idv.tw>, 2005.
@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2013-02-06 18:21+0100\n"
-"PO-Revision-Date: 2013-01-26 16:37+0800\n"
+"POT-Creation-Date: 2013-02-12 16:34+0100\n"
+"PO-Revision-Date: 2013-02-12 23:37+0800\n"
 "Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
@@ -1181,7 +1181,7 @@ msgstr "多國語言 Arnaldo Carvalho de Melo 1998"
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "鎖定檔已失去時效。要覆寫它..\n"
 
-#: src/main.c:222 src/updown.c:494
+#: src/main.c:222 src/updown.c:498
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "設備 %s 已鎖定。\n"
@@ -1274,7 +1274,7 @@ msgstr "已懸置。輸入「fg」以再續。\n"
 msgid "SHELL variable not set"
 msgstr "SHELL 環境變數沒有設定"
 
-#: src/minicom.c:143 src/updown.c:314 src/updown.c:522 src/updown.c:721
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:526 src/updown.c:725
 msgid "Out of memory: could not fork()"
 msgstr "記憶體耗盡: 無法 fork()"
 
@@ -1757,41 +1757,41 @@ msgstr ""
 "\n"
 " 就緒: 按任意鍵繼續…"
 
-#: src/updown.c:477
+#: src/updown.c:478
 msgid "Cannot create lockfile!"
 msgstr "無法重新建立鎖定檔！"
 
-#: src/updown.c:484
+#: src/updown.c:486
 #, fuzzy, c-format
 msgid "Failed to write lockfile %s\n"
 msgstr "無法寫入巨集檔案 %s"
 
-#: src/updown.c:492
+#: src/updown.c:496
 #, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "無法建立鎖定檔用於 %s: %s\n"
 
-#: src/updown.c:639
+#: src/updown.c:643
 msgid "Same as last"
 msgstr "與上一次相同"
 
-#: src/updown.c:640
+#: src/updown.c:644
 msgid " A -   Username        :"
 msgstr " A -   帳號            :"
 
-#: src/updown.c:641
+#: src/updown.c:645
 msgid " B -   Password        :"
 msgstr " B -   密碼            :"
 
-#: src/updown.c:642
+#: src/updown.c:646
 msgid " C -   Name of script  :"
 msgstr " C -   指令稿名稱      :"
 
-#: src/updown.c:643
+#: src/updown.c:647
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "變更哪一項設定？            (Enter鍵 執行, ESC鍵 停止)"
 
-#: src/updown.c:648
+#: src/updown.c:652
 msgid "Run a script"
 msgstr "執行一份指令稿"
 
