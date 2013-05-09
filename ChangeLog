@@ -1,3 +1,7 @@
+2013-05-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* man/minicom.1: Update docs for -T option.
+
 2013-02-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/zh_TW.po: Update from Translation team.
