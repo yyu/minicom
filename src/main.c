@@ -47,7 +47,7 @@ const char *Version = VERSION;
 /*
  * Find out name to use for lockfile when locking tty.
  */
-static char *mbasename(char *s, char *res, int reslen)
+static char *mdevlockname(char *s, char *res, int reslen)
 {
   char *p;
 
@@ -69,6 +69,34 @@ static char *mbasename(char *s, char *res, int reslen)
   }
 
   return res;
+}
+
+static char *shortened_devpath(char *buf, int buflen, char *devpath)
+{
+  char *cutoff[] = {
+    "/dev/serial/by-id/",
+    "/dev/serial/by-path/",
+    "/dev/serial/",
+    "/dev/",
+  };
+  enum { SZ = sizeof(cutoff) / sizeof(cutoff[0]) };
+
+  for (int i = 0; i < SZ; ++i)
+    if (!strncmp(devpath, cutoff[i], strlen(cutoff[i])))
+      {
+        devpath += strlen(cutoff[i]);
+        break;
+      }
+
+  int l = strlen(devpath);
+
+  if (l > buflen - 1)
+    devpath += l - buflen + 1;
+
+  strncpy(buf, devpath, buflen);
+  buf[buflen - 1] = 0;
+
+  return buf;
 }
 
 /*
@@ -188,7 +216,7 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 #else /* SVR4_LOCKS */
     snprintf(lockfile, sizeof(lockfile),
                        "%s/LCK..%s",
-                       P_LOCK, mbasename(dial_tty, buf.bytes, sizeof(buf.bytes)));
+                       P_LOCK, mdevlockname(dial_tty, buf.bytes, sizeof(buf.bytes)));
 #endif /* SVR4_LOCKS */
 
   }
@@ -455,7 +483,7 @@ void mode_status(void)
 /*
  * Show offline or online time.
  * If real dcd is not supported, Online and Offline will be
- * shown in capitals.
+ * shown in capitals. Alternatively, show shortened device name.
  */
 void time_status(bool time_update_only)
 {
@@ -465,11 +493,15 @@ void time_status(bool time_update_only)
   if (time_update_only && disable_online_time)
     return;
 
-  mc_wlocate(st, 63, 0);
+  int startcol = 63;
+  mc_wlocate(st, startcol, 0);
   if (disable_online_time)
     {
-      char b[20];
-      mc_wprintf(st, " %s", mbasename(P_PORT, b, sizeof(b)));
+      if (COLS > startcol + 1)
+        {
+          char b[COLS - startcol - 1];
+          mc_wprintf(st, " %s", shortened_devpath(b, sizeof(b), P_PORT));
+        }
     }
   else
     {
@@ -477,7 +509,7 @@ void time_status(bool time_update_only)
 	mc_wprintf(st, " %12.12s ", P_HASDCD[0] == 'Y' ? _("Offline") : _("OFFLINE"));
       else
 	mc_wprintf(st, " %s %02ld:%02ld", P_HASDCD[0] == 'Y' ? _("Online") : _("ONLINE"),
-	    online / 3600, (online / 60) % 60);
+                   online / 3600, (online / 60) % 60);
 
     }
   ret_csr();

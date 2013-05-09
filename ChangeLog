@@ -1,5 +1,7 @@
 2013-05-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/main.c: Improve display of device path with -T option.
+
 	* man/minicom.1: Update docs for -T option.
 
 2013-02-12  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
