@@ -828,7 +828,7 @@ static void helpthem(void)
     "  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
     "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
     "  -C, --capturefile=FILE : start capturing to FILE\n"
-    "  -T, --disabletime      : disable display of online time\n"
+    "  -F, --statlinefmt      : format of status line\n"
     "  -R, --remotecharset    : character set of communication partner\n"
     "  -v, --version          : output version information and exit\n"
     "  configuration          : configuration file to use\n\n"
@@ -1047,10 +1047,11 @@ int main(int argc, char **argv)
     { "version",       no_argument,       NULL, 'v' },
     { "wrap",          no_argument,       NULL, 'w' },
     { "displayhex",    no_argument,       NULL, 'H' },
-    { "disabletime",   no_argument,       NULL, 'T' },
+    { "disabletime",   no_argument,       NULL, 'T' }, // obsolete
     { "baudrate",      required_argument, NULL, 'b' },
     { "device",        required_argument, NULL, 'D' },
     { "remotecharset", required_argument, NULL, 'R' },
+    { "statlinefmt",   required_argument, NULL, 'F' },
     { NULL, 0, NULL, 0 }
   };
 
@@ -1072,7 +1073,7 @@ int main(int argc, char **argv)
   line_timestamp = 0;
   wrapln = 0;
   display_hex = 0;
-  disable_online_time = 0;
+  option_T_used = 0;
   local_echo = 0;
   strcpy(capname, "minicom.cap");
   lockfile[0] = 0;
@@ -1152,7 +1153,7 @@ int main(int argc, char **argv)
 
   do {
     /* Process options with getopt */
-    while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:",
+    while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:F:",
                             long_options, NULL)) != EOF)
       switch(c) {
 	case 'v':
@@ -1269,8 +1270,11 @@ int main(int argc, char **argv)
         case 'H': /* Display in hex */
           display_hex = 1;
           break;
-        case 'T': /* disable online time */
-          disable_online_time = 1;
+        case 'T':
+          option_T_used = 1;
+          break;
+        case 'F': /* format of status line */
+          set_status_line_format(optarg);
           break;
 	case 'b':
 	  cmdline_baudrate = optarg;
@@ -1451,6 +1455,9 @@ int main(int argc, char **argv)
   if (doinit)
     modeminit();
 
+  if (option_T_used)
+    mc_wprintf(us, "WARNING: Option -T ignored, use -F now\n\n");
+
   mc_wprintf(us, "\n%s %s\r\n", _("Welcome to minicom"), VERSION);
   mc_wprintf(us, "\n%s: %s\r\n", _("OPTIONS"), option_string);
 #if defined (__DATE__) && defined (__TIME__)
@@ -1596,8 +1603,7 @@ dirty_goto:
       case 'p': /* Set parameters */
         get_bbp(P_BAUDRATE, P_BITS, P_PARITY, P_STOPB, 0);
         port_init();
-        if (st)
-          mode_status();
+        show_status();
         quit = 0;
         break;
       case 'k': /* Run kermit */
@@ -1658,7 +1664,7 @@ dirty_goto:
       case 'i': /* Re-init, re-open portfd. */
         cursormode = (cursormode == NORMAL) ? APPL : NORMAL;
         keyboard(cursormode == NORMAL ? KCURST : KCURAPP, 0);
-        curs_status();
+        show_status();
         break;
       case 'y': /* Paste file */
 	paste_file();

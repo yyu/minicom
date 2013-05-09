@@ -163,8 +163,7 @@ const char* change_baud(const char *s)
   // reinitialise the port and update the status line
   if (portfd >= 0)
     port_init();
-  if (st)
-    mode_status();
+  show_status();
 
   return s;
 }
@@ -303,7 +302,7 @@ void hangup(void)
   /* If we don't have DCD support fake DCD dropped */
   bogus_dcd = 0;
   mc_wclose(w, 1);
-  time_status(false);
+  show_status();
 }
 
 /*
@@ -1466,7 +1465,7 @@ static void dial_entry(struct dialent *d)
     strcpy(P_BITS, d->bits);
     strcpy(P_STOPB, d->stopb);
     port_init();
-    mode_status();
+    show_status();
   }
   newtype = d->term;
   vt_set(-1, d->flags & FL_WRAP, -1, -1, d->flags & FL_ECHO, -1, -1, -1, -1);
@@ -1489,9 +1488,9 @@ static void dial_entry(struct dialent *d)
   if (P_MAUTOBAUD[0] == 'Y' && nb) {
     sprintf(P_BAUDRATE, "%ld", nb);
     port_init();
-    mode_status();
+    show_status();
   } else if (P_SHOWSPD[0] == 'l')
-    mode_status();
+    show_status();
 
   /* Make sure the last date is updated   / jl 22.06.97 */
   writedialdir();
@@ -1886,7 +1885,7 @@ again:
       strncpy(d_man->number, manual, sizeof(d_man->number));
       dial(d_man, (struct dialent**)NULL);
       if (P_SHOWSPD[0] == 'l')
-        mode_status();
+        show_status();
       return;
     }
   }

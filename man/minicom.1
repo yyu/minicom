@@ -129,9 +129,18 @@ the form (/dev/)tty[p-z/][0-f], (/dev/)pts[p-z/][0-f] or
 .BR filename .
 Open capture file at startup.
 .TP 0.5i
-.B \-T
-Disable the display of the online time in the status bar, and display the
-device name instead.
+.B \-F
+Format for the status line. The following format specifier are available:
+   %H  Escape key for help screen.
+   %V  Version string of minicom.
+   %b  Information on connection, such as baud rate.
+   %T  Terminal type.
+   %C  Cursor mode.
+   %D  Device path, possibly shorted to remaining available space.
+   %t  Online time.
+   %%  % character.
+
+Example: "%H for help | %b | Minicom %V | %T | %C | %t"
 .TP 0.5i
 .B \-b
 Specify the baud rate, overriding the value given in the configuration

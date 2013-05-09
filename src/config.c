@@ -585,10 +585,8 @@ static void doserial(void)
         if (portfd >= 0)
           port_init();
         mc_wlocate(w, mbslen (bps_par_bits) + 1, 4);
-        mc_wprintf(w, "%s %s%s%s  \n",
-                P_BAUDRATE, P_BITS, P_PARITY, P_STOPB);
-        if (st)
-          mode_status();
+        mc_wprintf(w, "%s %s%s%s  \n", P_BAUDRATE, P_BITS, P_PARITY, P_STOPB);
+        show_status();
         markch(P_BAUDRATE);
         markch(P_BITS);
         markch(P_PARITY);
@@ -798,7 +796,7 @@ static void domodem(void)
         psets(P_SHOWSPD, P_SHOWSPD[0] == 'd' ? "l": "d");
         mc_wlocate(w, 35 + mbslen (shown_speed), 17);
         mc_wputs(w, sspd(P_SHOWSPD));
-        mode_status();
+        show_status();
         break;
       case 'T': /* Update for multi-node */
         psets(P_MULTILINE, yesno(P_MULTILINE[0] == 'N' ));
@@ -985,8 +983,7 @@ static void doscrkeyb(void)
             break;
         }
         keyboard(KSETESC, c);
-        if (st)
-          show_status();
+        show_status();
         break;
       case 'B':
         if (P_BACKSPACE[0] == 'D')

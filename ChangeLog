@@ -1,5 +1,8 @@
 2013-05-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/config.c, src/dial.c, src/main.c, src/minicom.c,
+	  src/minicom.h: make statusline configurable, remove -T option.
+
 	* src/main.c: Improve display of device path with -T option.
 
 	* man/minicom.1: Update docs for -T option.

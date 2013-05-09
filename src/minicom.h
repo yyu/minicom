@@ -87,7 +87,7 @@ EXTERN int wrapln;	/* Linewrap default */
 EXTERN int display_hex; /* Display in hex */
 EXTERN int tempst;	/* Status line is temporary */
 EXTERN int escape;	/* Escape code. */
-EXTERN int disable_online_time; /* disable online time display */
+EXTERN int option_T_used; /* option -T has been supplied, obsolete, print warning */
 
 EXTERN char lockfile[128]; /* UUCP lock file of terminal */
 EXTERN char homedir[256];  /* Home directory of user */
@@ -226,10 +226,8 @@ void term_socket_close(void);
 int  open_term(int doinit, int show_win_on_error, int no_msgs);
 void init_emul(int type, int do_init);
 void timer_update(void);
-void mode_status(void);
-void time_status(bool);
-void curs_status(void);
 void show_status(void);
+void set_status_line_format(const char *s);
 void scriptname(const char *s);
 int  do_terminal(void);
 void status_set_display(const char *text, int duration_s);
