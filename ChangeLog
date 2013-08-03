@@ -1,3 +1,8 @@
+2013-08-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* man/minicom.1, src/minicom.c: Improve manpage, and --help
+	  to option output. By Jaromir Capik, #314342
+
 2013-05-09  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c, src/dial.c, src/main.c, src/minicom.c,

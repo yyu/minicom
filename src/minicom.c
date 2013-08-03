@@ -831,6 +831,7 @@ static void helpthem(void)
     "  -F, --statlinefmt      : format of status line\n"
     "  -R, --remotecharset    : character set of communication partner\n"
     "  -v, --version          : output version information and exit\n"
+    "  -h, --help             : show help\n"
     "  configuration          : configuration file to use\n\n"
     "These options can also be specified in the MINICOM environment variable.\n"),
     PACKAGE);
