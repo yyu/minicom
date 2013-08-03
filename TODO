@@ -3,7 +3,8 @@ minicom TODO list
 
 important:
 
-* update/complete existing translations, see also [1]
+* update/complete existing translations, see also
+  http://www.iro.umontreal.ca/contrib/po/HTML/matrix.html
 * fix documentation for new -7 switch and the new semantics of
   -l and -L
 
@@ -11,7 +12,6 @@ normal:
 
 * sync AUTHORS with man/minicom.1
 * merge ChangeLog with */ChangeLog*
-* update to gettext 0.11
 * fix Debian BTS bugs
 * documentation cleanup
 * minicom homepage
@@ -27,4 +27,8 @@ wishlist:
 
 * src/rwconf.c: detect paths to [sr][zbx],kermit via configuration
 
-[1] http://www.iro.umontreal.ca/contrib/po/HTML/matrix.html
+* enhanced protocol between target and minicom
+  * compressed transmit
+  * transmit speed in statusline
+  * multi-channel
+  * optionally more status lines
