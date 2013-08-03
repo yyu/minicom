@@ -1,5 +1,7 @@
 2013-08-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* autogen.sh: Update to 1.13
+
 	* man/minicom.1, src/minicom.c: Improve manpage, and --help
 	  to option output. By Jaromir Capik, #314342
 
