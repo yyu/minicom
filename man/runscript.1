@@ -15,15 +15,15 @@ is a simple script interpreter that can be called from within the minicom
 communications program to automate tasks like logging in to a Unix system
 or your favorite BBS.
 .SH INVOCATION
-The program expects a script name and optionally a filename and the 
-user's home directory as arguments, and it expects that it's input and 
-output are connected to the \^"remote end\^", the system you are 
-connecting to. All messages from \fBrunscript\fP meant for the local screen 
-are directed to the \fBstderr\fP output. All this is automatically taken 
+The program expects a script name and optionally a filename and the
+user's home directory as arguments, and it expects that it's input and
+output are connected to the \^"remote end\^", the system you are
+connecting to. All messages from \fBrunscript\fP meant for the local screen
+are directed to the \fBstderr\fP output. All this is automatically taken
 care of if you run it from \fBminicom\fP.
-The logfile and home directory parameters are only used to tell the log 
-command the name of the logfile and where to write it. If the homedir is 
-omitted, runscript uses the directory found in the $HOME environment 
+The logfile and home directory parameters are only used to tell the log
+command the name of the logfile and where to write it. If the homedir is
+omitted, runscript uses the directory found in the $HOME environment
 variable. If also the logfile name is omitted, the log commands are ignored.
 .SH KEYWORDS
 .TP 0.5i
@@ -32,9 +32,9 @@ Runscript recognizes the following commands:
 .RS
 .nf
 
-expect   send     goto     gosub    return   \^!
-exit     print    set      inc      dec      if
-timeout  verbose  sleep    break    call     log
+expect   send     goto     gosub    return   \^!<   \^!
+exit     print    set      inc      dec      if   timeout
+verbose  sleep    break    call     log
 
 .fi
 .RE
@@ -57,14 +57,18 @@ timeout  verbose  sleep    break    call     log
     \\o - send character \fBo\fP (\fBo\fP is an octal number)
 
 .br
-Control characters can be used in the string with the ^ prefix 
+Control characters can be used in the string with the ^ prefix
 (^A to ^Z, ^[, ^\, ^], ^^ and ^_). If you need to send the ^ character,
 you must prefix it with the \\ escape character.
+.br
+Octal characters are either four-digit or delemited by a non-digit
+character, e.g. the null character may be sent with \\0000 and 'send
+1234' is equivalent to 'send \\0061234'.
 .br
 Also $(environment_variable) can be used, for example $(TERM).
 Minicom passes three special environment variables: $(LOGIN),
 which is the username, $(PASS), which is the password, as
-defined in the proper entry of the dialing directory, and 
+defined in the proper entry of the dialing directory, and
 $(TERMLIN) which is the number of actual terminal lines on your
 screen (that is, the statusline excluded).
 .TP 0.5i
@@ -91,6 +95,12 @@ Return from a gosub.
 Runs a shell for you in which 'command' is executed. On return,
 the variable '$?' is set to the exit status of this command,
 so you can subsequently test it using 'if'.
+.TP 0.5i
+.BR "!< <command>"
+Runs a shell for you in which 'command' is executed. The stdout
+output of the command execution will be sent to the modem. On
+return, the variable '$?' is set to the exit status of this
+command, so you can subsequently test it using 'if'.
 .TP 0.5i
 .B "exit [value]"
 Exit from \^"runscript\^" with an optional exit status. (default 1)
@@ -155,7 +165,7 @@ finishes without errors, the original script will continue.
 Write text to the logfile.
 .SH NOTES
 If you want to make your script to exit minicom (for example when
-you use minicom to dial up your ISP, and then start a PPP or SLIP 
+you use minicom to dial up your ISP, and then start a PPP or SLIP
 session from a script), try the command "! killall \-9 minicom" as
 the last script command. The \-9 option should prevent minicom from
 hanging up the line and resetting the modem before exiting.

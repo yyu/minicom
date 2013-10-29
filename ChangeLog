@@ -1,3 +1,8 @@
+2013-10-29  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/script.c, man/runscript.1: Add binary transmission feature
+	  by Tobias Schlager.
+
 2013-08-03  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* autogen.sh: Update to 1.13

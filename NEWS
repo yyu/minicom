@@ -7,6 +7,7 @@ For for version 2.6.2.90:
  - Configurable status line via -F option, see manpage for a listing
    of format specifier.
  - Improve display of device name in status line.
+ - Script: Binary transmission feature via "!<"
  - Fixes.
 
 New for version 2.6.2:
