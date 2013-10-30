@@ -1,3 +1,9 @@
+2013-10-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* autogen.sh: Use version 1.14
+
+	* configure.in: Add AM_PROG_AR, Gentoo bug #489734
+
 2013-10-29  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/script.c, man/runscript.1: Add binary transmission feature
