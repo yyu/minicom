@@ -1,3 +1,8 @@
+2013-12-08  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.src, src/minicom.h, src/updown.c: Enlarge scr_name
+	  variable. By Krzysztof Sywula.
+
 2013-10-30  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* autogen.sh: Use version 1.14

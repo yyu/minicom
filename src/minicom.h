@@ -100,7 +100,7 @@ EXTERN int alt_override;/* -m option */
 EXTERN char parfile[256]; /* Global parameter file */
 EXTERN char pparfile[256]; /* Personal parameter file */
 
-EXTERN char scr_name[33];   /* Name of last script */
+EXTERN char scr_name[256];  /* Name of last script */
 EXTERN char scr_user[33];   /* Login name to use with script */
 EXTERN char scr_passwd[33]; /* Password to use with script */
 

@@ -690,7 +690,7 @@ void runscript(int ask, const char *s, const char *l, const char *p)
           break;
         case 'C':
           mc_wlocate(w, mbslen (name_of_script) + 1, 3);
-          mc_wgets(w, scr_name, 32, 32);
+          mc_wgets(w, scr_name, 32, sizeof(scr_name) - 1);
           break;
         default:
           break;

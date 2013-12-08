@@ -1257,7 +1257,8 @@ int main(int argc, char **argv)
           vt_set(addlf, -1, docap, -1, -1, -1, -1, -1, addcr);
           break;
         case 'S': /* start Script */
-          strncpy(scr_name, optarg, 33);
+          strncpy(scr_name, optarg, sizeof(scr_name) - 1);
+          scr_name[sizeof(scr_name) - 1] = 0;
           break;
         case '7': /* 7bit fallback mode */
 	  screen_ibmpc = screen_iso = 0;
