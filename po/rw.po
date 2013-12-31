@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.1\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2013-02-06 18:21+0100\n"
+"POT-Creation-Date: 2013-12-31 16:15+0100\n"
 "PO-Revision-Date: 2005-04-04 10:55-0700\n"
 "Last-Translator: Steven Michael Murphy <murf@e-tools.com>\n"
 "Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
@@ -44,8 +44,8 @@ msgstr "Na"
 msgid " C - Log file transfers        :"
 msgstr "C IDOSIYE"
 
-#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:652
-#: src/config.c:1197 src/dial.c:1187
+#: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:650
+#: src/config.c:1194 src/dial.c:1186
 #, fuzzy
 msgid "Change which setting?"
 msgstr "Igenamiterere"
@@ -165,244 +165,244 @@ msgstr ""
 msgid " G - Software Flow Control :"
 msgstr ""
 
-#: src/config.c:622
+#: src/config.c:620
 #, fuzzy
 msgid "DTE speed "
 msgstr "Umuvuduko"
 
-#: src/config.c:624
+#: src/config.c:622
 #, fuzzy
 msgid "line speed"
 msgstr "Umurongo Umuvuduko"
 
-#: src/config.c:632
+#: src/config.c:630
 #, fuzzy
 msgid " A - Init string ........."
 msgstr "A Ikurikiranyanyuguti"
 
-#: src/config.c:633
+#: src/config.c:631
 msgid " B - Reset string ........"
 msgstr ""
 
-#: src/config.c:634
+#: src/config.c:632
 #, fuzzy
 msgid " C - Dialing prefix #1...."
 msgstr "C Imbanziriza 1."
 
-#: src/config.c:635
+#: src/config.c:633
 #, fuzzy
 msgid " D - Dialing suffix #1...."
 msgstr "Ingereka 1."
 
-#: src/config.c:636
+#: src/config.c:634
 #, fuzzy
 msgid " E - Dialing prefix #2...."
 msgstr "E Imbanziriza 2."
 
-#: src/config.c:637
+#: src/config.c:635
 #, fuzzy
 msgid " F - Dialing suffix #2...."
 msgstr "Ingereka 2."
 
-#: src/config.c:638
+#: src/config.c:636
 #, fuzzy
 msgid " G - Dialing prefix #3...."
 msgstr "Imbanziriza 3."
 
-#: src/config.c:639
+#: src/config.c:637
 #, fuzzy
 msgid " H - Dialing suffix #3...."
 msgstr "H Ingereka 3."
 
-#: src/config.c:640
+#: src/config.c:638
 #, fuzzy
 msgid " I - Connect string ......"
 msgstr "Ikurikiranyanyuguti"
 
-#: src/config.c:641
+#: src/config.c:639
 msgid " J - No connect strings .."
 msgstr ""
 
-#: src/config.c:642
+#: src/config.c:640
 #, fuzzy
 msgid " K - Hang-up string ......"
 msgstr "Hejuru Ikurikiranyanyuguti"
 
-#: src/config.c:643
+#: src/config.c:641
 msgid " L - Dial cancel string .."
 msgstr ""
 
-#: src/config.c:644
+#: src/config.c:642
 msgid " M - Dial time ..........."
 msgstr ""
 
-#: src/config.c:645
+#: src/config.c:643
 #, fuzzy
 msgid " N - Delay before redial ."
 msgstr "Mbere"
 
-#: src/config.c:646
+#: src/config.c:644
 msgid " O - Number of tries ....."
 msgstr ""
 
-#: src/config.c:647
+#: src/config.c:645
 #, fuzzy
 msgid " P - DTR drop time (0=no)."
 msgstr "Igihe 0 Oya"
 
-#: src/config.c:648
+#: src/config.c:646
 msgid " Q - Auto bps detect ....."
 msgstr ""
 
-#: src/config.c:649
+#: src/config.c:647
 msgid " R - Modem has DCD line .."
 msgstr ""
 
-#: src/config.c:650
+#: src/config.c:648
 #, fuzzy
 msgid " S - Status line shows ..."
 msgstr "Umurongo"
 
-#: src/config.c:651
+#: src/config.c:649
 #, fuzzy
 msgid " T - Multi-line untag ...."
 msgstr "Umurongo"
 
-#: src/config.c:663
+#: src/config.c:661
 #, fuzzy
 msgid "Modem and dialing parameter setup"
 msgstr "Na Imikorere"
 
-#: src/config.c:696
+#: src/config.c:694
 #, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "(Cyangwa Kuri Gusohoka"
 
-#: src/config.c:834
+#: src/config.c:832
 #, fuzzy
 msgid " A - Command key is         :"
 msgstr "A Urufunguzo ni"
 
-#: src/config.c:835
+#: src/config.c:833
 #, fuzzy
 msgid " B - Backspace key sends    :"
 msgstr "Urufunguzo"
 
-#: src/config.c:836
+#: src/config.c:834
 #, fuzzy
 msgid " C - Status line is         :"
 msgstr "C Umurongo ni"
 
-#: src/config.c:837
+#: src/config.c:835
 #, fuzzy
 msgid " D - Alarm sound            :"
 msgstr "Ijwi"
 
-#: src/config.c:838
+#: src/config.c:836
 #, fuzzy
 msgid " E - Foreground Color (menu):"
 msgstr "E Ibikubiyemo"
 
-#: src/config.c:839
+#: src/config.c:837
 #, fuzzy
 msgid " F - Background Color (menu):"
 msgstr "Ibikubiyemo"
 
-#: src/config.c:840
+#: src/config.c:838
 #, fuzzy
 msgid " G - Foreground Color (term):"
 msgstr "Ijambo"
 
-#: src/config.c:841
+#: src/config.c:839
 #, fuzzy
 msgid " H - Background Color (term):"
 msgstr "H Ijambo"
 
-#: src/config.c:842
+#: src/config.c:840
 msgid " I - Foreground Color (stat):"
 msgstr ""
 
-#: src/config.c:843
+#: src/config.c:841
 msgid " J - Background Color (stat):"
 msgstr ""
 
-#: src/config.c:844
+#: src/config.c:842
 msgid " K - History Buffer Size    :"
 msgstr ""
 
-#: src/config.c:845
+#: src/config.c:843
 #, fuzzy
 msgid " L - Macros file            :"
 msgstr "IDOSIYE"
 
-#: src/config.c:846
+#: src/config.c:844
 #, fuzzy
 msgid " N - Macros enabled         :"
 msgstr "Bikora"
 
-#: src/config.c:847
+#: src/config.c:845
 #, fuzzy
 msgid " O - Character conversion   :"
 msgstr "Ihindurangero"
 
-#: src/config.c:848
+#: src/config.c:846
 #, fuzzy
 msgid " P - Add linefeed           :"
 msgstr "C Umurongo ni"
 
-#: src/config.c:849
+#: src/config.c:847
 #, fuzzy
 msgid " Q - Local echo             :"
 msgstr "IDOSIYE"
 
-#: src/config.c:850
+#: src/config.c:848
 #, fuzzy
 msgid " R - Line Wrap              :"
 msgstr "E"
 
-#: src/config.c:851
+#: src/config.c:849
 #, fuzzy
 msgid " S - Hex Display            :"
 msgstr "E"
 
-#: src/config.c:852
+#: src/config.c:850
 msgid " T - Add carriage return    :"
 msgstr ""
 
-#: src/config.c:853 src/config.c:1607
+#: src/config.c:851 src/config.c:1604
 #, fuzzy
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Igenamiterere Kuri Gusohoka"
 
-#: src/config.c:857 src/config.c:1379
+#: src/config.c:855 src/config.c:1376
 #, fuzzy
 msgid "Screen and keyboard"
 msgstr "Na Mwandikisho"
 
-#: src/config.c:876
+#: src/config.c:874
 msgid " M - Edit Macros\n"
 msgstr ""
 
-#: src/config.c:904
+#: src/config.c:902
 #, fuzzy
 msgid "You can't change colors in black and white mode"
 msgstr "Guhindura>> Amabara in umukara Na Umweru Ubwoko"
 
-#: src/config.c:916
+#: src/config.c:914
 #, fuzzy
 msgid "Menu foreground == background color, change!"
 msgstr "Mbuganyuma Ibara Guhindura>>"
 
-#: src/config.c:925
+#: src/config.c:923
 #, fuzzy
 msgid "Terminal foreground == background color, change!"
 msgstr "Mbuganyuma Ibara Guhindura>>"
 
-#: src/config.c:937
+#: src/config.c:935
 msgid "History Buffer Size"
 msgstr ""
 
-#: src/config.c:938
+#: src/config.c:936
 #, fuzzy
 msgid ""
 "\n"
@@ -415,12 +415,12 @@ msgstr ""
 "Byahinduwe i Urutonde Ingano Kuri Kubika i Iboneza IDOSIYE Ongera utangire "
 "kugirango i Guhindura>> Kuri INGARUKA a Urufunguzo Kuri Dukomeza"
 
-#: src/config.c:955
+#: src/config.c:953
 #, fuzzy
 msgid "Program new command key"
 msgstr "Gishya Komandi: Urufunguzo"
 
-#: src/config.c:957
+#: src/config.c:955
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -433,135 +433,135 @@ msgid ""
 " Press new command key: "
 msgstr ""
 
-#: src/config.c:966
+#: src/config.c:964
 msgid "Meta-8th bit "
 msgstr ""
 
-#: src/config.c:968
+#: src/config.c:966
 msgid "Escape (Meta)"
 msgstr ""
 
-#: src/config.c:1002 src/config.c:1250
+#: src/config.c:999 src/config.c:1247
 #, fuzzy
 msgid "disabled"
 msgstr "Yahagaritswe"
 
-#: src/config.c:1005 src/config.c:1253 src/rwconf.c:146
+#: src/config.c:1002 src/config.c:1250 src/rwconf.c:146
 #, fuzzy
 msgid "enabled"
 msgstr "Bikora"
 
-#: src/config.c:1120
+#: src/config.c:1117
 #, fuzzy
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "OYA Kuri Kurema a IDOSIYE"
 
-#: src/config.c:1126
+#: src/config.c:1123
 #, fuzzy, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "Gufungura Makoro IDOSIYE"
 
-#: src/config.c:1132
+#: src/config.c:1129
 #, fuzzy
 msgid "Reading macros"
 msgstr "Makoro"
 
-#: src/config.c:1191
+#: src/config.c:1188
 #, fuzzy
 msgid " A -      Terminal emulation :"
 msgstr "A"
 
-#: src/config.c:1192
+#: src/config.c:1189
 #, fuzzy
 msgid " B -     Backspace key sends :"
 msgstr "Urufunguzo"
 
-#: src/config.c:1193
+#: src/config.c:1190
 #, fuzzy
 msgid " C -          Status line is :"
 msgstr "C Umurongo ni"
 
-#: src/config.c:1194
+#: src/config.c:1191
 #, fuzzy
 msgid " D -   Newline tx delay (ms) :"
 msgstr "Gutinda"
 
-#: src/config.c:1195
+#: src/config.c:1192
 msgid " E -          ENQ answerback :"
 msgstr ""
 
-#: src/config.c:1196
+#: src/config.c:1193
 #, fuzzy
 msgid " F - Character tx delay (ms) :"
 msgstr "Gutinda"
 
-#: src/config.c:1200
+#: src/config.c:1197
 #, fuzzy
 msgid "Terminal settings"
 msgstr "Amagenamiterere"
 
-#: src/config.c:1304
+#: src/config.c:1301
 #, fuzzy, c-format
 msgid "Cannot write to %s"
 msgstr "Kwandika Kuri"
 
-#: src/config.c:1311
+#: src/config.c:1308
 msgid "Configuration saved"
 msgstr ""
 
-#: src/config.c:1326
+#: src/config.c:1323
 #, fuzzy
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr "Byahinduwe Oya Izina ry'idosiye: ni Gushyiraho"
 
-#: src/config.c:1330
+#: src/config.c:1327
 #, fuzzy, c-format
 msgid "Cannot write macros file %s"
 msgstr "Kwandika Makoro IDOSIYE"
 
-#: src/config.c:1336
+#: src/config.c:1333
 msgid "Macros saved"
 msgstr ""
 
-#: src/config.c:1353
+#: src/config.c:1350
 #, fuzzy
 msgid "Give name to save this configuration?"
 msgstr "Izina: Kuri Kubika iyi Iboneza"
 
-#: src/config.c:1375
+#: src/config.c:1372
 #, fuzzy
 msgid "Filenames and paths"
 msgstr "Na Inzira"
 
-#: src/config.c:1376
+#: src/config.c:1373
 #, fuzzy
 msgid "File transfer protocols"
 msgstr "Idosiye"
 
-#: src/config.c:1377
+#: src/config.c:1374
 #, fuzzy
 msgid "Serial port setup"
 msgstr "Umuyoboro Imikorere"
 
-#: src/config.c:1378
+#: src/config.c:1375
 #, fuzzy
 msgid "Modem and dialing"
 msgstr "Na"
 
-#: src/config.c:1381
+#: src/config.c:1378
 msgid "Save setup as.."
 msgstr ""
 
-#: src/config.c:1382
+#: src/config.c:1379
 msgid "Exit"
 msgstr "Gusohoka"
 
-#: src/config.c:1383
+#: src/config.c:1380
 #, fuzzy
 msgid "Exit from Minicom"
 msgstr "Bivuye"
 
-#: src/config.c:1395
+#: src/config.c:1392
 #, fuzzy, c-format
 msgid "Save setup as %s"
 msgstr "Kubika Imikorere Nka"
@@ -574,108 +574,108 @@ msgstr "Kubika Imikorere Nka"
 # sfx2/source\dialog\cfg.src:DLG_CONFIG.text
 # #-#-#-#-#  sfx2.pot (PACKAGE VERSION)  #-#-#-#-#
 # sfx2/source\doc\doc.src:STR_CONFIG.text
-#: src/config.c:1401
+#: src/config.c:1398
 #, fuzzy
 msgid "configuration"
 msgstr "Iboneza"
 
 # officecfg/registry\schema\org\openoffice\Office\Math.xcs:....FontFormat.Weight..10.text
-#: src/config.c:1410
+#: src/config.c:1407
 #, fuzzy
 msgid "BLACK"
 msgstr "umukara"
 
 # officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Image.Color.RGB.Red.text
-#: src/config.c:1410
+#: src/config.c:1407
 #, fuzzy
 msgid "RED"
 msgstr "Umutuku"
 
 # officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Image.Color.RGB.Green.text
-#: src/config.c:1410
+#: src/config.c:1407
 #, fuzzy
 msgid "GREEN"
 msgstr "Icyatsi"
 
-#: src/config.c:1410
+#: src/config.c:1407
 #, fuzzy
 msgid "YELLOW"
 msgstr "Umuhondo"
 
 # officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Image.Color.RGB.Blue.text
-#: src/config.c:1411
+#: src/config.c:1408
 #, fuzzy
 msgid "BLUE"
 msgstr "Ubururu"
 
-#: src/config.c:1411
+#: src/config.c:1408
 #, fuzzy
 msgid "MAGENTA"
 msgstr "Umutuku werurutse"
 
-#: src/config.c:1411
+#: src/config.c:1408
 #, fuzzy
 msgid "CYAN"
 msgstr "Ubururu bukeye"
 
-#: src/config.c:1411
+#: src/config.c:1408
 #, fuzzy
 msgid "WHITE"
 msgstr "Umweru"
 
-#: src/config.c:1441
+#: src/config.c:1438
 msgid "Comm Parameters"
 msgstr ""
 
-#: src/config.c:1446
+#: src/config.c:1443
 #, fuzzy
 msgid " Speed            Parity      Data\n"
 msgstr "8"
 
-#: src/config.c:1447
+#: src/config.c:1444
 #, fuzzy
 msgid " A: <next>        L: None     S: 5\n"
 msgstr "A 300"
 
-#: src/config.c:1448
+#: src/config.c:1445
 #, fuzzy
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr "8"
 
-#: src/config.c:1449
+#: src/config.c:1446
 #, fuzzy
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr "C U"
 
-#: src/config.c:1450
+#: src/config.c:1447
 #, fuzzy
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr "V"
 
-#: src/config.c:1451
+#: src/config.c:1448
 #, fuzzy
 msgid " E: 115200        P: Space\n"
 msgstr "E"
 
-#: src/config.c:1453
+#: src/config.c:1450
 msgid " Stopbits\n"
 msgstr ""
 
-#: src/config.c:1454
+#: src/config.c:1451
 #, fuzzy
 msgid " W: 1             Q: 8-N-1\n"
 msgstr "8"
 
-#: src/config.c:1455
+#: src/config.c:1452
 #, fuzzy
 msgid " X: 2             R: 7-E-1\n"
 msgstr "7 E"
 
-#: src/config.c:1457
+#: src/config.c:1454
 msgid " K: Current\n"
 msgstr ""
 
-#: src/config.c:1460
+#: src/config.c:1457
 #, fuzzy
 msgid ""
 "\n"
@@ -683,52 +683,52 @@ msgid ""
 msgstr "Cyangwa Kuri Gusohoka"
 
 # sc/source\core\src\compiler.src:RID_SC_FUNCTION_NAMES.SC_OPCODE_CURRENT.text
-#: src/config.c:1468
+#: src/config.c:1465
 #, fuzzy, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "KIGEZWEHO"
 
-#: src/config.c:1610
+#: src/config.c:1607
 #, fuzzy
 msgid "F1 to F10 Macros"
 msgstr "Kuri"
 
-#: src/config.c:1629
+#: src/config.c:1626
 #, fuzzy
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr "(C C C C Akaruhuko... 1. ISEGONDA"
 
-#: src/config.c:1631
+#: src/config.c:1628
 #, fuzzy
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "\\u=Izina ry'ukoresha Ijambobanga..."
 
-#: src/config.c:1633
+#: src/config.c:1630
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 
-#: src/config.c:1635
+#: src/config.c:1632
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 
-#: src/config.c:1650
+#: src/config.c:1647
 #, fuzzy
 msgid "CHANGED"
 msgstr "Byahinduwe"
 
-#: src/config.c:1737
+#: src/config.c:1734
 #, fuzzy
 msgid "Character conversion"
 msgstr "Ihindurangero"
 
-#: src/config.c:1742
+#: src/config.c:1739
 #, fuzzy
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr "INYUGUTI in Inyuma INYUGUTI in Inyuma INYUGUTI in Inyuma INYUGUTI in"
 
-#: src/config.c:1764
+#: src/config.c:1761
 #, fuzzy
 msgid ""
 "\n"
@@ -736,143 +736,143 @@ msgid ""
 msgstr "A Ibirimo Kubika imbonerahamwe#"
 
 # sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
-#: src/config.c:1766
+#: src/config.c:1763
 #, fuzzy, c-format
 msgid "\tfile:%s"
 msgstr "IDOSIYE"
 
-#: src/config.c:1767
+#: src/config.c:1764
 #, fuzzy
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
 msgstr "C Guhindura Komeza>>"
 
-#: src/config.c:1768
+#: src/config.c:1765
 #, fuzzy, c-format
 msgid " F - convert capture: %s\n"
 msgstr "GUHINDURA"
 
-#: src/config.c:1783
+#: src/config.c:1780
 #, fuzzy, c-format
 msgid "Load file: %s"
 msgstr "IDOSIYE"
 
-#: src/config.c:1795
+#: src/config.c:1792
 #, fuzzy, c-format
 msgid "Save as file: %s"
 msgstr "Kubika Nka IDOSIYE"
 
-#: src/config.c:1806
+#: src/config.c:1803
 #, fuzzy
 msgid "Character to be edited: "
 msgstr "Kuri"
 
-#: src/config.c:1814 src/config.c:1826 src/config.c:1838
+#: src/config.c:1811 src/config.c:1823 src/config.c:1835
 #, fuzzy
 msgid "Input character ascii value 0-255"
 msgstr "Inyuguti ASCII Agaciro 0"
 
-#: src/config.c:1820
+#: src/config.c:1817
 #, fuzzy, c-format
 msgid "Change input to: %s"
 msgstr "Iyinjiza Kuri"
 
-#: src/config.c:1832
+#: src/config.c:1829
 #, fuzzy, c-format
 msgid "Change output to: %s"
 msgstr "Ibisohoka Kuri"
 
-#: src/config.c:1870
+#: src/config.c:1867
 #, fuzzy, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Gufungura Ihindurangero imbonerahamwe#"
 
-#: src/config.c:1876
+#: src/config.c:1873
 #, fuzzy, c-format
 msgid "Cannot read conversion table %s"
 msgstr "Kwandika Ihindurangero imbonerahamwe#"
 
-#: src/config.c:1888
+#: src/config.c:1885
 #, fuzzy, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Kwandika Ihindurangero imbonerahamwe#"
 
-#: src/dial.c:251
+#: src/dial.c:250
 msgid "Initializing Modem"
 msgstr ""
 
-#: src/dial.c:267
+#: src/dial.c:266
 msgid "Resetting Modem"
 msgstr ""
 
-#: src/dial.c:281
+#: src/dial.c:280
 #, fuzzy
 msgid "Hanging up"
 msgstr "Hejuru"
 
-#: src/dial.c:285
+#: src/dial.c:284
 #, c-format
 msgid "Hangup (%ld:%02ld:%02ld)"
 msgstr ""
 
-#: src/dial.c:317
+#: src/dial.c:316
 msgid "Sending BREAK"
 msgstr ""
 
-#: src/dial.c:383
+#: src/dial.c:382
 #, fuzzy, c-format
 msgid "    No connection: %s.      \n"
 msgstr "Nta Kwihuza"
 
-#: src/dial.c:385
+#: src/dial.c:384
 msgid "   Press any key to continue..    "
 msgstr ""
 
-#: src/dial.c:390 src/dial.c:402
+#: src/dial.c:389 src/dial.c:401
 #, fuzzy, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "Wongereugerageze in amasogonda"
 
-#: src/dial.c:428
+#: src/dial.c:427
 msgid "Max retries"
 msgstr ""
 
-#: src/dial.c:438
+#: src/dial.c:437
 #, fuzzy
 msgid "You are already online! Hang up first."
 msgstr "kiri kuri interineti Hejuru Itangira"
 
-#: src/dial.c:443
+#: src/dial.c:442
 msgid "Autodial"
 msgstr ""
 
-#: src/dial.c:447 src/dial.c:477
+#: src/dial.c:446 src/dial.c:476
 msgid "Dialing"
 msgstr ""
 
 # 345
-#: src/dial.c:448 src/dial.c:480
+#: src/dial.c:447 src/dial.c:479
 #, fuzzy, c-format
 msgid "      At : %s"
 msgstr "ku"
 
-#: src/dial.c:451 src/dial.c:484
+#: src/dial.c:450 src/dial.c:483
 #, fuzzy, c-format
 msgid " Last on : %s at %s"
 msgstr "ku ku"
 
-#: src/dial.c:499
+#: src/dial.c:498
 #, fuzzy, c-format
 msgid "    Time : %-3d"
 msgstr "Igihe"
 
-#: src/dial.c:501
+#: src/dial.c:500
 #, c-format
 msgid "     Attempt #%d"
 msgstr ""
 
-#: src/dial.c:502
+#: src/dial.c:501
 #, fuzzy
 msgid ""
 "\n"
@@ -881,149 +881,149 @@ msgid ""
 " Escape to cancel, space to retry."
 msgstr "Kuri Kureka Umwanya Kuri Ongera ugerageze"
 
-#: src/dial.c:543
+#: src/dial.c:542
 msgid "Cancelled"
 msgstr "Kureka"
 
-#: src/dial.c:599
+#: src/dial.c:598
 #, fuzzy
 msgid "Connected. Press any key to continue"
 msgstr "Urufunguzo Kuri urifuzagukomeza"
 
 # offmgr/source\offapp\dialog\connpooloptions.src:RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.text
-#: src/dial.c:679
+#: src/dial.c:678
 msgid "Timeout"
 msgstr "Igihe cyarenze"
 
-#: src/dial.c:881
+#: src/dial.c:880
 #, fuzzy
 msgid "Manually entered number"
 msgstr "Umubare"
 
-#: src/dial.c:890
+#: src/dial.c:889
 #, fuzzy
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Gufungura"
 
-#: src/dial.c:912
+#: src/dial.c:911
 #, fuzzy
 msgid "Failed to read dialing directory\n"
 msgstr "Bya Ububiko bushyinguro"
 
-#: src/dial.c:946
+#: src/dial.c:945
 #, fuzzy
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Kitazwi Verisiyo"
 
-#: src/dial.c:953 src/dial.c:961
+#: src/dial.c:952 src/dial.c:960
 msgid "Phonelist corrupted"
 msgstr ""
 
-#: src/dial.c:966
+#: src/dial.c:965
 #, fuzzy
 msgid "Unknown dialing directory version"
 msgstr "bushyinguro Verisiyo"
 
-#: src/dial.c:973
+#: src/dial.c:972
 msgid "Phonelist garbled (?)"
 msgstr ""
 
-#: src/dial.c:995
+#: src/dial.c:994
 #, fuzzy
 msgid "Out of memory while reading dialing directory"
 msgstr "Bya Ububiko bushyinguro"
 
-#: src/dial.c:1047
+#: src/dial.c:1046
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
 msgstr ""
 
-#: src/dial.c:1082
+#: src/dial.c:1081
 #, fuzzy
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Gufungura"
 
-#: src/dial.c:1098 src/dial.c:1110
+#: src/dial.c:1097 src/dial.c:1109
 #, fuzzy
 msgid "Error writing to ~/.dialdir!"
 msgstr "Kwandika Kuri"
 
-#: src/dial.c:1175
+#: src/dial.c:1174
 #, fuzzy
 msgid " A -  Name                :"
 msgstr "A"
 
-#: src/dial.c:1176
+#: src/dial.c:1175
 msgid " B -  Number              :"
 msgstr ""
 
-#: src/dial.c:1177
+#: src/dial.c:1176
 #, fuzzy
 msgid " C -  Dial string #       :"
 msgstr "C Ikurikiranyanyuguti"
 
-#: src/dial.c:1178
+#: src/dial.c:1177
 msgid " D -  Local echo          :"
 msgstr ""
 
-#: src/dial.c:1179
+#: src/dial.c:1178
 #, fuzzy
 msgid " E -  Script              :"
 msgstr "E"
 
-#: src/dial.c:1180
+#: src/dial.c:1179
 msgid " F -  Username            :"
 msgstr ""
 
-#: src/dial.c:1181
+#: src/dial.c:1180
 msgid " G -  Password            :"
 msgstr ""
 
-#: src/dial.c:1182
+#: src/dial.c:1181
 #, fuzzy
 msgid " H -  Terminal Emulation  :"
 msgstr "H"
 
-#: src/dial.c:1183
+#: src/dial.c:1182
 #, fuzzy
 msgid " I -  Backspace key sends :"
 msgstr "Urufunguzo"
 
-#: src/dial.c:1184
+#: src/dial.c:1183
 msgid " J -  Linewrap            :"
 msgstr ""
 
-#: src/dial.c:1185
+#: src/dial.c:1184
 msgid " K -  Line Settings       :"
 msgstr ""
 
-#: src/dial.c:1186
+#: src/dial.c:1185
 #, fuzzy
 msgid " L -  Conversion table    :"
 msgstr "imbonerahamwe#"
 
-#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
+#: src/dial.c:1198 src/dial.c:1270 src/dial.c:1277
 msgid "Delete"
 msgstr "Gusiba"
 
-#: src/dial.c:1199 src/dial.c:1271 src/dial.c:1278
+#: src/dial.c:1198 src/dial.c:1270 src/dial.c:1277
 msgid "Backspace"
 msgstr "Gusiba usubira inyuma"
 
-#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
+#: src/dial.c:1200 src/dial.c:1272 src/dial.c:1282
 msgid "On"
 msgstr "Kuri"
 
-#: src/dial.c:1201 src/dial.c:1273 src/dial.c:1283
+#: src/dial.c:1200 src/dial.c:1272 src/dial.c:1282
 msgid "Off"
 msgstr "ki/birafunze"
 
-#: src/dial.c:1205
+#: src/dial.c:1204
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr ""
 
-#: src/dial.c:1206
+#: src/dial.c:1205
 #, fuzzy, c-format
 msgid "      Times on            : %d"
 msgstr "ku"
@@ -1031,83 +1031,83 @@ msgstr "ku"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1307
+#: src/dial.c:1306
 msgid "Dial"
 msgstr ""
 
-#: src/dial.c:1307
+#: src/dial.c:1306
 msgid "Find"
 msgstr ""
 
-#: src/dial.c:1307
+#: src/dial.c:1306
 msgid "Add"
 msgstr ""
 
-#: src/dial.c:1307
+#: src/dial.c:1306
 #, fuzzy
 msgid "Edit"
 msgstr "Gusohoka"
 
 # 5063
-#: src/dial.c:1307
+#: src/dial.c:1306
 #, fuzzy
 msgid "Remove"
 msgstr "Vanaho Umwinjizo"
 
-#: src/dial.c:1307
+#: src/dial.c:1306
 msgid "moVe"
 msgstr ""
 
-#: src/dial.c:1308
+#: src/dial.c:1307
 msgid "Manual"
 msgstr ""
 
-#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1453 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 #, fuzzy
 msgid "   Yes  "
 msgstr "Yego"
 
-#: src/dial.c:1454 src/file.c:71 src/minicom.c:68 src/minicom.c:71
+#: src/dial.c:1453 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 #, fuzzy
 msgid "   No   "
 msgstr "Oya"
 
-#: src/dial.c:1547
+#: src/dial.c:1546
 #, fuzzy, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "OYA Byabonetse"
 
-#: src/dial.c:1577 src/file.c:429
+#: src/dial.c:1576 src/file.c:429
 #, fuzzy
 msgid "( Escape to exit, Space to tag )"
 msgstr "(Kuri Gusohoka Kuri Itagi:"
 
-#: src/dial.c:1578
+#: src/dial.c:1577
 #, fuzzy
 msgid " Move entry up/down, Escape to exit"
 msgstr "Icyinjijwe Hejuru Hasi Kuri Gusohoka"
 
-#: src/dial.c:1598
+#: src/dial.c:1597
 msgid "Dialing Directory"
 msgstr ""
 
-#: src/dial.c:1600
+#: src/dial.c:1599
 #, fuzzy
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "ku"
 
-#: src/dial.c:1774
+#: src/dial.c:1773
 #, fuzzy
 msgid "Find an entry"
 msgstr "Icyinjijwe"
 
 # 5063
-#: src/dial.c:1835
+#: src/dial.c:1834
 #, fuzzy
 msgid "Remove entry?"
 msgstr "Vanaho Umwinjizo"
 
-#: src/dial.c:1879
+#: src/dial.c:1878
 #, fuzzy
 msgid "Enter number"
 msgstr "Umubare"
@@ -1337,75 +1337,62 @@ msgstr "ku"
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "ku"
 
-#: src/main.c:213
+#: src/main.c:241
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr ""
 
-#: src/main.c:222 src/updown.c:494
+#: src/main.c:250 src/updown.c:498
 #, fuzzy, c-format
 msgid "Device %s is locked.\n"
 msgstr "ni Gifunze"
 
-#: src/main.c:237
+#: src/main.c:265
 #, fuzzy, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "OYA Imikorere kugirango Inyuma"
 
-#: src/main.c:288
+#: src/main.c:316
 #, fuzzy, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "Gufungura"
 
-#: src/main.c:291
+#: src/main.c:319
 #, fuzzy, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "Gufungura"
 
-#: src/main.c:298 src/main.c:754
+#: src/main.c:326 src/main.c:804
 #, fuzzy, c-format
 msgid "Cannot open %s!"
 msgstr "Gufungura"
 
-#: src/main.c:477
+#: src/main.c:554
 msgid "Offline"
 msgstr "Hanze ya interineti"
 
 # svtools/source\dialogs\prnsetup.src:STR_SVT_PRNDLG_OFFLINE.text
-#: src/main.c:477
+#: src/main.c:554
 #, fuzzy
 msgid "OFFLINE"
 msgstr "Ntibicometse kuri interineti"
 
-#: src/main.c:479
+#: src/main.c:557
 msgid "Online"
 msgstr "kiri kuri interineti"
 
 # 4409
-#: src/main.c:479
+#: src/main.c:557
 #, fuzzy
 msgid "ONLINE"
 msgstr "kiri kuri interineti"
 
-#: src/main.c:554
+#: src/main.c:627
 #, fuzzy, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "Ntibicometse kuri interineti"
 
-#: src/main.c:635
-#, fuzzy, c-format
-msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
-msgstr ""
-"%7.Project- Id- Version: basctl\n"
-"POT- Creation- Date: 2003- 12- 07 17: 13+ 02\n"
-"PO- Revision- Date: 2004- 11- 04 10: 13- 0700\n"
-"Last- Translator: Language- Team:< en@ li. org> MIME- Version: 1. 0\n"
-"Content- Type: text/ plain; charset= UTF- 8\n"
-"Content- Transfer- Encoding: 8bit\n"
-"X- Generator: KBabel 1. 0\n"
-"."
-
-#: src/main.c:735
+#: src/main.c:785
 #, fuzzy
 msgid "Could not re-initialize window system."
 msgstr "OYA gutangiza Idirishya Sisitemu"
@@ -1467,7 +1454,7 @@ msgstr "Kuri Gusubiramo"
 msgid "SHELL variable not set"
 msgstr "IMPINDURAGACIRO OYA Gushyiraho"
 
-#: src/minicom.c:143 src/updown.c:314 src/updown.c:522 src/updown.c:721
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:526 src/updown.c:725
 #, fuzzy
 msgid "Out of memory: could not fork()"
 msgstr "Bya Ububiko OYA"
@@ -1557,25 +1544,26 @@ msgid ""
 "  -d, --dial=ENTRY       : dial ENTRY from the dialing directory\n"
 "  -p, --ptty=TTYP        : connect to pseudo terminal\n"
 "  -C, --capturefile=FILE : start capturing to FILE\n"
-"  -T, --disabletime      : disable display of online time\n"
+"  -F, --statlinefmt      : format of status line\n"
 "  -R, --remotecharset    : character set of communication partner\n"
 "  -v, --version          : output version information and exit\n"
+"  -h, --help             : show help\n"
 "  configuration          : configuration file to use\n"
 "\n"
 "These options can also be specified in the MINICOM environment variable.\n"
 msgstr ""
 
-#: src/minicom.c:838
+#: src/minicom.c:839
 #, fuzzy, c-format
 msgid "This variable is currently set to \"%s\".\n"
 msgstr "IMPINDURAGACIRO ni"
 
-#: src/minicom.c:840
+#: src/minicom.c:841
 #, fuzzy, c-format
 msgid "This variable is currently unset.\n"
 msgstr "IMPINDURAGACIRO ni"
 
-#: src/minicom.c:843
+#: src/minicom.c:844
 #, fuzzy, c-format
 msgid ""
 "The configuration directory for the access file and the configurations\n"
@@ -1584,68 +1572,68 @@ msgid ""
 "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
 msgstr "Iboneza bushyinguro kugirango i IDOSIYE Na i"
 
-#: src/minicom.c:1159
+#: src/minicom.c:1161
 #, fuzzy, c-format
 msgid "%s version %s"
 msgstr "%sVerisiyo"
 
-#: src/minicom.c:1161
+#: src/minicom.c:1163
 #, c-format
 msgid " (compiled %s)"
 msgstr ""
 
-#: src/minicom.c:1164
+#: src/minicom.c:1166
 #, fuzzy, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
 "\n"
 msgstr "C"
 
-#: src/minicom.c:1187
+#: src/minicom.c:1189
 #, fuzzy, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "Kuri P a"
 
-#: src/minicom.c:1251 src/minicom.c:1571
+#: src/minicom.c:1253 src/minicom.c:1580
 #, fuzzy
 msgid "Cannot open capture file"
 msgstr "Gufungura IDOSIYE"
 
-#: src/minicom.c:1310
+#: src/minicom.c:1316
 msgid "You don't exist. Go away.\n"
 msgstr ""
 
-#: src/minicom.c:1385
+#: src/minicom.c:1391
 #, fuzzy
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Mugaragaza ni Gitoya"
 
-#: src/minicom.c:1454
+#: src/minicom.c:1463
 #, fuzzy
 msgid "Welcome to minicom"
 msgstr "Kuri"
 
 # basctl/source\basicide\moduldlg.src:RID_DLG_LIBS.RID_FL_OPTIONS.text
-#: src/minicom.c:1455
+#: src/minicom.c:1464
 #, fuzzy
 msgid "OPTIONS"
 msgstr "Amahitamo"
 
-#: src/minicom.c:1457
+#: src/minicom.c:1466
 #, fuzzy
 msgid "Compiled on"
 msgstr "ku"
 
-#: src/minicom.c:1473
+#: src/minicom.c:1482
 msgid "Port"
 msgstr ""
 
-#: src/minicom.c:1476
+#: src/minicom.c:1485
 #, fuzzy
 msgid "Using character set conversion"
 msgstr "Ihindurangero"
 
-#: src/minicom.c:1477
+#: src/minicom.c:1486
 #, fuzzy, c-format
 msgid ""
 "\n"
@@ -1653,84 +1641,84 @@ msgid ""
 "\n"
 msgstr "kugirango Ifashayobora ku Bidasanzwe Utubuto"
 
-#: src/minicom.c:1498
+#: src/minicom.c:1507
 msgid "Add linefeed ON"
 msgstr ""
 
-#: src/minicom.c:1498
+#: src/minicom.c:1507
 msgid "Add linefeed OFF"
 msgstr ""
 
-#: src/minicom.c:1503
+#: src/minicom.c:1512
 msgid "Add carriage return ON"
 msgstr ""
 
-#: src/minicom.c:1503
+#: src/minicom.c:1512
 msgid "Add carriage return OFF"
 msgstr ""
 
-#: src/minicom.c:1508
+#: src/minicom.c:1517
 msgid "Local echo ON"
 msgstr ""
 
-#: src/minicom.c:1508
+#: src/minicom.c:1517
 msgid "Local echo OFF"
 msgstr ""
 
-#: src/minicom.c:1527
+#: src/minicom.c:1536
 #, fuzzy
 msgid "You are online. Really initialize?"
 msgstr "kiri kuri interineti gutangiza"
 
-#: src/minicom.c:1534
+#: src/minicom.c:1543
 #, fuzzy
 msgid "Leave without reset?"
 msgstr "Kugarura"
 
-#: src/minicom.c:1538 src/minicom.c:1556
+#: src/minicom.c:1547 src/minicom.c:1565
 #, fuzzy
 msgid "Save macros?"
 msgstr "Kubika Makoro"
 
-#: src/minicom.c:1548
+#: src/minicom.c:1557
 msgid "Leave Minicom?"
 msgstr ""
 
-#: src/minicom.c:1567
+#: src/minicom.c:1576
 #, fuzzy
 msgid "Capture to which file? "
 msgstr "Kuri IDOSIYE"
 
-#: src/minicom.c:1576 src/minicom.c:1585
+#: src/minicom.c:1585 src/minicom.c:1594
 #, fuzzy
 msgid "Capture file"
 msgstr "IDOSIYE"
 
-#: src/minicom.c:1620
+#: src/minicom.c:1628
 msgid "Linewrap ON"
 msgstr ""
 
-#: src/minicom.c:1620
+#: src/minicom.c:1628
 msgid "Linewrap OFF"
 msgstr ""
 
-#: src/minicom.c:1629
+#: src/minicom.c:1637
 msgid "Timestamp OFF"
 msgstr ""
 
-#: src/minicom.c:1632
+#: src/minicom.c:1640
 msgid "Timestamp every line (simple)"
 msgstr ""
 
-#: src/minicom.c:1635
+#: src/minicom.c:1643
 msgid "Timestamp every line (extended)"
 msgstr ""
 
-#: src/minicom.c:1638
+#: src/minicom.c:1646
 msgid "Timestamp lines every second"
 msgstr ""
 
-#: src/minicom.c:1679
+#: src/minicom.c:1687
 #, fuzzy
 msgid "Quit without reset while online."
 msgstr "Kugarura kiri kuri interineti"
@@ -1770,131 +1758,131 @@ msgstr ""
 msgid "personal"
 msgstr "Bwite"
 
-#: src/script.c:127
+#: src/script.c:134
 #, fuzzy, c-format
 msgid "script \"%s\": syntax error in line %d %s%s\n"
 msgstr "IYANDIKA Ikosa in Umurongo"
 
-#: src/script.c:151
+#: src/script.c:158
 #, fuzzy, c-format
 msgid "script \"%s\": global timeout%s\n"
 msgstr "IYANDIKA Igihe cyarenze:"
 
-#: src/script.c:290
+#: src/script.c:297
 #, fuzzy
 msgid "(word contains ESC or quote)"
 msgstr "(ijambo Kirimo Cyangwa Gushyiraho akugarizo"
 
-#: src/script.c:343
+#: src/script.c:350
 #, fuzzy, c-format
 msgid "runscript: couldn't open \"%s\"%s\n"
 msgstr "Gufungura"
 
-#: src/script.c:364 src/script.c:476
+#: src/script.c:371 src/script.c:485
 #, fuzzy, c-format
 msgid "script \"%s\": out of memory%s\n"
 msgstr "IYANDIKA Inyuma Bya Ububiko"
 
-#: src/script.c:470
+#: src/script.c:479
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: unknown variable \"%s\"%s\n"
 msgstr "IYANDIKA Umurongo Kitazwi IMPINDURAGACIRO"
 
-#: src/script.c:515
+#: src/script.c:524
 #, fuzzy, c-format
 msgid "script \"%s\": unexpected end of file%s\n"
 msgstr "IYANDIKA Impera Bya IDOSIYE"
 
-#: src/script.c:523
+#: src/script.c:532
 #, fuzzy
 msgid "(garbage after })"
 msgstr "(Nyuma"
 
-#: src/script.c:531
+#: src/script.c:540
 #, fuzzy
 msgid "(too many arguments)"
 msgstr "(ingingo"
 
-#: src/script.c:550
+#: src/script.c:559
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: nested expect%s\n"
 msgstr "IYANDIKA Umurongo"
 
-#: src/script.c:560
+#: src/script.c:569
 #, fuzzy
 msgid "(garbage after {)"
 msgstr "(Nyuma"
 
-#: src/script.c:581 src/script.c:846 src/script.c:914
+#: src/script.c:590 src/script.c:891 src/script.c:959
 #, fuzzy
 msgid "(argument expected)"
 msgstr "(Ikitezwe:"
 
-#: src/script.c:584 src/script.c:848
+#: src/script.c:593 src/script.c:893
 #, fuzzy
 msgid "(invalid argument)"
 msgstr "(Sibyo"
 
-#: src/script.c:679
+#: src/script.c:724
 #, fuzzy
 msgid "(in goto/gosub label)"
 msgstr "(in Akarango"
 
-#: src/script.c:686
+#: src/script.c:731
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
 msgstr "IYANDIKA Umurongo Akarango OYA Byabonetse"
 
-#: src/script.c:708
+#: src/script.c:753
 #, fuzzy, c-format
 msgid "script \"%s\": no return from gosub%s\n"
 msgstr "IYANDIKA Oya Garuka Bivuye"
 
-#: src/script.c:751
+#: src/script.c:796
 #, fuzzy
 msgid "(missing var name)"
 msgstr "(Ibuze VAR Izina:"
 
-#: src/script.c:768 src/script.c:784
+#: src/script.c:813 src/script.c:829
 #, fuzzy
 msgid "(expected variable)"
 msgstr "(Ikitezwe: IMPINDURAGACIRO"
 
-#: src/script.c:816
+#: src/script.c:861
 #, fuzzy
 msgid "(expected command after if)"
 msgstr "(Ikitezwe: Komandi: Nyuma NIBA"
 
-#: src/script.c:831
+#: src/script.c:876
 #, fuzzy
 msgid "(unknown operator)"
 msgstr "(Kitazwi Mukoresha"
 
-#: src/script.c:870
+#: src/script.c:915
 msgid "(unexpected argument)"
 msgstr ""
 
-#: src/script.c:897
+#: src/script.c:942
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
 msgstr "IYANDIKA Umurongo itandukanya Hanze Bya"
 
-#: src/script.c:917
+#: src/script.c:962
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
 msgstr "IYANDIKA Umurongo Mo Imbere"
 
-#: src/script.c:985
+#: src/script.c:1031
 #, fuzzy, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
 msgstr "IYANDIKA Umurongo Kitazwi Komandi:"
 
-#: src/script.c:1026
+#: src/script.c:1072
 #, c-format
 msgid "runscript, part of minicom version %s\n"
 msgstr ""
 
-#: src/script.c:1031
+#: src/script.c:1077
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr ""
@@ -1952,46 +1940,46 @@ msgid ""
 " READY: press any key to continue..."
 msgstr "Kanda Urufunguzo Kuri urifuzagukomeza"
 
-#: src/updown.c:477
+#: src/updown.c:478
 #, fuzzy
 msgid "Cannot create lockfile!"
 msgstr "Kurema"
 
-#: src/updown.c:484
+#: src/updown.c:486
 #, fuzzy, c-format
 msgid "Failed to write lockfile %s\n"
 msgstr "Kwandika Makoro IDOSIYE"
 
-#: src/updown.c:492
+#: src/updown.c:496
 #, fuzzy, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "Kurema"
 
-#: src/updown.c:639
+#: src/updown.c:643
 #, fuzzy
 msgid "Same as last"
 msgstr "Nka Iheruka"
 
-#: src/updown.c:640
+#: src/updown.c:644
 #, fuzzy
 msgid " A -   Username        :"
 msgstr "A"
 
-#: src/updown.c:641
+#: src/updown.c:645
 msgid " B -   Password        :"
 msgstr ""
 
-#: src/updown.c:642
+#: src/updown.c:646
 #, fuzzy
 msgid " C -   Name of script  :"
 msgstr "C Bya IYANDIKA"
 
-#: src/updown.c:643
+#: src/updown.c:647
 #, fuzzy
 msgid "Change which setting?     (Return to run, ESC to stop)"
 msgstr "Igenamiterere Kuri Gukoresha Kuri Guhagarara"
 
-#: src/updown.c:648
+#: src/updown.c:652
 #, fuzzy
 msgid "Run a script"
 msgstr "a IYANDIKA"
@@ -2025,6 +2013,18 @@ msgstr "Bya Imirongo"
 #, fuzzy, c-format
 msgid "Number of terminal columns unknown\n"
 msgstr "Bya Inkingi"
+
+#, fuzzy
+#~ msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
+#~ msgstr ""
+#~ "%7.Project- Id- Version: basctl\n"
+#~ "POT- Creation- Date: 2003- 12- 07 17: 13+ 02\n"
+#~ "PO- Revision- Date: 2004- 11- 04 10: 13- 0700\n"
+#~ "Last- Translator: Language- Team:< en@ li. org> MIME- Version: 1. 0\n"
+#~ "Content- Type: text/ plain; charset= UTF- 8\n"
+#~ "Content- Transfer- Encoding: 8bit\n"
+#~ "X- Generator: KBabel 1. 0\n"
+#~ "."
 
 #, fuzzy
 #~ msgid "Old dialdir copied as %s.%hd"

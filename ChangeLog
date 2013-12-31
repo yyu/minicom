@@ -1,3 +1,9 @@
+2013-12-31  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* NEWS: Updates for 2.7
+
+	* configure.in: Set version to 2.7
+
 2013-12-08  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/minicom.src, src/minicom.h, src/updown.c: Enlarge scr_name

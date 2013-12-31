@@ -3,7 +3,7 @@ This file lists the most important changes to
 the previous released version. For a full list of changes
 please refer to the ChangeLog file.
 
-For for version 2.6.2.90:
+For for version 2.7:
  - Configurable status line via -F option, see manpage for a listing
    of format specifier.
  - Improve display of device name in status line.
