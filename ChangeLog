@@ -1,3 +1,8 @@
+2014-01-01  Martin A. Godisch  <martin@godisch.de>
+
+	* config.c: Fixed text width in history buffer message box
+	  (Debian #470582).
+
 2013-12-31  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* NEWS: Updates for 2.7
