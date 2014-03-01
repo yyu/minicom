@@ -1,5 +1,7 @@
 2014-03-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* configure.ac: Rename from configure.in
+
 	* configure.in: Set version to 2.7.90
 
 2014-01-01  Martin A. Godisch  <martin@godisch.de>
