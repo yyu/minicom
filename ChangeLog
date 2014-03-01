@@ -1,5 +1,8 @@
 2014-03-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* srv/vt100.c, src/minicom.c, src/minicom.h, man/minicom.1, NEWS:
+	  Add delta timestamp mode.
+
 	* configure.ac: Rename from configure.in
 
 	* configure.in: Set version to 2.7.90

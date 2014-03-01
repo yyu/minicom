@@ -28,6 +28,7 @@
 #endif
 
 #include <time.h>
+#include <stdint.h>
 #include "port.h"
 #include "minicom.h"
 #include "vt100.h"
@@ -900,13 +901,13 @@ void vt_out(int ch)
       && vt_line_timestamp != TIMESTAMP_LINE_OFF)
     {
       struct timeval tmstmp_now;
-      static time_t tmstmp_last;
+      static struct timeval tmstmp_last;
       char s[36];
       struct tm tmstmp_tm;
 
       gettimeofday(&tmstmp_now, NULL);
       if ((   vt_line_timestamp == TIMESTAMP_LINE_PER_SECOND
-           && tmstmp_now.tv_sec != tmstmp_last)
+           && tmstmp_now.tv_sec != tmstmp_last.tv_sec)
           || vt_line_timestamp == TIMESTAMP_LINE_SIMPLE
           || vt_line_timestamp == TIMESTAMP_LINE_EXTENDED)
         {
@@ -928,7 +929,17 @@ void vt_out(int ch)
                   break;
                 };
             }
-          tmstmp_last = tmstmp_now.tv_sec;
+          tmstmp_last = tmstmp_now;
+        }
+      else if (vt_line_timestamp == TIMESTAMP_LINE_DELTA)
+        {
+          uint64_t d = (tmstmp_now.tv_sec * 1000000 + tmstmp_now.tv_usec)
+                       - (tmstmp_last.tv_sec * 1000000 + tmstmp_last.tv_usec);
+          snprintf(s, sizeof(s), "[%lld.%03lld] ",
+                   d / 1000000, (d % 1000000) / 1000);
+          s[sizeof(s) - 1] = 0;
+          output_s(s);
+          tmstmp_last = tmstmp_now;
         }
     }
 

@@ -1645,6 +1645,9 @@ dirty_goto:
           case TIMESTAMP_LINE_PER_SECOND:
             s = _("Timestamp lines every second");
             break;
+	  case TIMESTAMP_LINE_DELTA:
+	    s = _("Timestamp delta between lines");
+	    break;
           }
         status_set_display(s, 0);
         break;
