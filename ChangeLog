@@ -1,5 +1,8 @@
 2014-03-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
+	* src/minicom.c, src/script.c: Unmask SIGALRM, #314618, Patch
+	  by David Dominguez Bonini.
+
 	* srv/vt100.c, src/minicom.c, src/minicom.h, man/minicom.1, NEWS:
 	  Add delta timestamp mode.
 

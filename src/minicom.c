@@ -1428,6 +1428,9 @@ int main(int argc, char **argv)
   }
 #endif
 
+  /* On some Linux systems SIGALRM is masked by default. Unmask it */  
+  sigrelse(SIGALRM);
+
   keyboard(KINSTALL, 0);
 
   if (strcmp(P_BACKSPACE, "BS") != 0)

@@ -1085,6 +1085,8 @@ int main(int argc, char **argv)
 #if 0 /* Shouldn't need this.. */
   signal(SIGHUP, SIG_IGN);
 #endif
+  /* On some Linux systems SIGALRM is masked by default. Unmask it */  
+  sigrelse(SIGALRM);  
 
   /* initialize locale support */
   setlocale(LC_ALL, "");
