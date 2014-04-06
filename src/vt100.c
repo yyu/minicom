@@ -572,6 +572,12 @@ static void state2(int c)
         y += newy1;
       mc_wlocate(vt_win, x - 1, y - 1);
       break;
+    case 'G': /* HPA: Cursor to column x */
+    case '`':
+      if ((x = escparms[1]) == 0)
+        x = 1;
+      mc_wlocate(vt_win, x - 1, vt_win->cury);
+      break;
     case 'g': /* Clear tab stop(s) */
       if (escparms[0] == 0) {
         x = vt_win->curx;
