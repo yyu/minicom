@@ -685,6 +685,10 @@ static void state2(int c)
     case 'y': /* Self test modes */
     default:
       /* IGNORED */
+      if (0)
+        {
+          printf("minicom-debug: Unknown ESC sequence '%c'\n", c);
+        }
       break;
   }
   /* Ok, our escape sequence is all done */
