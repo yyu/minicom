@@ -1,3 +1,10 @@
+2014-07-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c, src/minicom.h: Fix name suffix for non-global
+	configuration savings. By Henner Zeller.
+
+	* man/minicom.1: Add 'U' key shortcut. By Henner Zeller.
+
 2014-04-06  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/vt100.c: Implement HPA ESC sequence.

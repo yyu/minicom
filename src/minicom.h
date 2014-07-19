@@ -63,7 +63,7 @@ EXTERN int LINES;
 EXTERN int COLS;
 #endif
 
-EXTERN int dosetup;
+EXTERN int dosetup;     /* In setup mode (-s) */
 
 EXTERN char stdattr;	/* Standard attribute */
 

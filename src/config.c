@@ -1344,12 +1344,16 @@ int domacsave(void)
 static void donamsave(void)
 {
   char ifile[128];
-  char *s;
+  const char *s;
 
   ifile[0] = 0;
   s = input(_("Give name to save this configuration?"), ifile);
   if (s != (char *)0 && *s != 0) {
-    snprintf(parfile, sizeof(parfile), "%s/minirc.%s", CONFDIR, s);
+    if (dosetup) {
+      snprintf(parfile, sizeof(parfile), "%s/minirc.%s", CONFDIR, s);
+    } else {
+      snprintf(pparfile, sizeof(pparfile), "%s/.minirc.%s", homedir, s);
+    }
     dodflsave();
   }
 }
@@ -1366,7 +1370,7 @@ static void (*funcs1[])(void) = {
   NULL
 };
 
-char some_string[64];
+char save_setup_as_menu[64];
 
 static char const *menu1[] = {
   N_("Filenames and paths"),
@@ -1374,7 +1378,7 @@ static char const *menu1[] = {
   N_("Serial port setup"),
   N_("Modem and dialing"),
   N_("Screen and keyboard"),
-  some_string,
+  save_setup_as_menu,
   N_("Save setup as.."),
   N_("Exit"),
   N_("Exit from Minicom"),
@@ -1385,12 +1389,16 @@ static char const *menu1[] = {
 int config(int setup)
 {
   int c;
-  char *s;
+  const char *s;
 
   /* Find out extension of parameter file */
-  s = parfile + strlen(CONFDIR) + 8;
-  snprintf(some_string, sizeof(some_string), _("Save setup as %s"), s);
-  some_string[sizeof(some_string) - 1] = 0;
+  if (dosetup)
+    s = parfile + strlen(CONFDIR) + 8;
+  else
+    s = pparfile + strlen(homedir) + 9;
+  snprintf(save_setup_as_menu, sizeof(save_setup_as_menu),
+           _("Save setup as %s"), s);
+  save_setup_as_menu[sizeof(save_setup_as_menu) - 1] = 0;
 
   if (!setup)
     menu1[8] = NULL;
