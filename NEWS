@@ -7,6 +7,7 @@ New:
  - New timestamp mode: Delta to previous line.
  - Add HPA ESC sequence
  - Fix file name of non-global configuration settings.
+ - Update translations: indonesian
 
 New for for version 2.7:
  - Configurable status line via -F option, see manpage for a listing

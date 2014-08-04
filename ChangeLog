@@ -1,3 +1,7 @@
+2014-08-04  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/id.po: Update by translation team.
+
 2014-07-19  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c, src/minicom.h: Fix name suffix for non-global

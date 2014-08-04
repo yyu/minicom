@@ -1,14 +1,14 @@
 # Pesan Bahasa Indonesia untuk minicomm
 # Copyright (C) 2008 Free Software Foundation, Inc.
 # This file is distributed under the same license as the minicom package.
-# Arif E. Nugroho <arif_endro@yahoo.com>, 2008.
+# Arif E. Nugroho <arif_endro@yahoo.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: minicom 2.3-rc1\n"
+"Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2013-12-31 16:15+0100\n"
-"PO-Revision-Date: 2008-11-15 23:45+0700\n"
+"POT-Creation-Date: 2014-08-04 08:23+0200\n"
+"PO-Revision-Date: 2014-08-03 11:45+0700\n"
 "Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -229,7 +229,6 @@ msgid "Modem and dialing parameter setup"
 msgstr "Parameter setup modem dan pemanggilan"
 
 #: src/config.c:694
-#, fuzzy
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "      (Kembali atau esc untuk keluar)"
 
@@ -298,24 +297,22 @@ msgid " Q - Local echo             :"
 msgstr " Q - Lokal echo             :"
 
 #: src/config.c:848
-#, fuzzy
 msgid " R - Line Wrap              :"
-msgstr " J - Linewrap             :"
+msgstr " R - Line Wrap             :"
 
 #: src/config.c:849
-#, fuzzy
 msgid " S - Hex Display            :"
-msgstr " E - Skrip                :"
+msgstr " S - Hex Display                :"
 
 #: src/config.c:850
 msgid " T - Add carriage return    :"
-msgstr ""
+msgstr " T - Add carriage return    :"
 
-#: src/config.c:851 src/config.c:1604
+#: src/config.c:851 src/config.c:1612
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Konfigurasi mana yang diubah? (esc untuk keluar)"
 
-#: src/config.c:855 src/config.c:1376
+#: src/config.c:855 src/config.c:1380
 msgid "Screen and keyboard"
 msgstr "Layar dan keyboard"
 
@@ -339,14 +336,15 @@ msgstr "Warna terminal depan == warna belakang, ubah!"
 msgid "History Buffer Size"
 msgstr "Ukuran Sejarah Penyangga"
 
-#: src/config.c:936
+#: src/config.c:937
+#, fuzzy
 msgid ""
 "\n"
-"                You have changed the history buffer size.\n"
-"                You will need to save the configuration file and\n"
-"                restart minicom for the change to take effect.\n"
+" You have changed the history buffer size.\n"
+" You will need to save the configuration file and\n"
+" restart minicom for the change to take effect.\n"
 "\n"
-"                Hit a key to Continue... "
+" Hit a key to Continue... "
 msgstr ""
 "\n"
 "                Anda telah mengubah ukuran sejarah penyangga.\n"
@@ -411,32 +409,26 @@ msgid "Reading macros"
 msgstr "Membaca makro"
 
 #: src/config.c:1188
-#, fuzzy
 msgid " A -      Terminal emulation :"
 msgstr " A - Emulasi terminal            :"
 
 #: src/config.c:1189
-#, fuzzy
 msgid " B -     Backspace key sends :"
 msgstr " B - Kunci backspace dikirim     :"
 
 #: src/config.c:1190
-#, fuzzy
 msgid " C -          Status line is :"
 msgstr " C - Baris status adalah         :"
 
 #: src/config.c:1191
-#, fuzzy
 msgid " D -   Newline tx delay (ms) :"
 msgstr " D - Waktu tunda baris baru (ms) :"
 
 #: src/config.c:1192
-#, fuzzy
 msgid " E -          ENQ answerback :"
 msgstr " E - ENQ answerback              :"
 
 #: src/config.c:1193
-#, fuzzy
 msgid " F - Character tx delay (ms) :"
 msgstr " D - Waktu tunda baris baru (ms) :"
 
@@ -470,120 +462,120 @@ msgstr "Makro disimpan"
 msgid "Give name to save this configuration?"
 msgstr "Berikan nama untuk menyimpan konfigurasi ini?"
 
-#: src/config.c:1372
+#: src/config.c:1376
 msgid "Filenames and paths"
 msgstr "Nama berkas dan jalur"
 
-#: src/config.c:1373
+#: src/config.c:1377
 msgid "File transfer protocols"
 msgstr "Protokol pengiriman berkas"
 
-#: src/config.c:1374
+#: src/config.c:1378
 msgid "Serial port setup"
 msgstr "Konfigurasi Port Serial"
 
-#: src/config.c:1375
+#: src/config.c:1379
 msgid "Modem and dialing"
 msgstr "Modem dan pemanggilan"
 
-#: src/config.c:1378
+#: src/config.c:1382
 msgid "Save setup as.."
 msgstr "Simpan konfigurasi sebagai.."
 
-#: src/config.c:1379
+#: src/config.c:1383
 msgid "Exit"
 msgstr "Keluar"
 
-#: src/config.c:1380
+#: src/config.c:1384
 msgid "Exit from Minicom"
 msgstr "Keluar dari Minicom"
 
-#: src/config.c:1392
+#: src/config.c:1400
 #, c-format
 msgid "Save setup as %s"
 msgstr "Simpan konfigurasi sebagai %s"
 
-#: src/config.c:1398
+#: src/config.c:1406
 msgid "configuration"
 msgstr "konfigurasi"
 
-#: src/config.c:1407
+#: src/config.c:1415
 msgid "BLACK"
 msgstr "HITAM"
 
-#: src/config.c:1407
+#: src/config.c:1415
 msgid "RED"
 msgstr "MERAH"
 
-#: src/config.c:1407
+#: src/config.c:1415
 msgid "GREEN"
 msgstr "HIJAU"
 
-#: src/config.c:1407
+#: src/config.c:1415
 msgid "YELLOW"
 msgstr "KUNING"
 
-#: src/config.c:1408
+#: src/config.c:1416
 msgid "BLUE"
 msgstr "BIRU"
 
-#: src/config.c:1408
+#: src/config.c:1416
 msgid "MAGENTA"
 msgstr "MAGENTA"
 
-#: src/config.c:1408
+#: src/config.c:1416
 msgid "CYAN"
 msgstr "CYAN"
 
-#: src/config.c:1408
+#: src/config.c:1416
 msgid "WHITE"
 msgstr "PUTIH"
 
-#: src/config.c:1438
+#: src/config.c:1446
 msgid "Comm Parameters"
 msgstr "Parameter Komunikasi"
 
-#: src/config.c:1443
+#: src/config.c:1451
 msgid " Speed            Parity      Data\n"
 msgstr " Kecepatan        Parity      Data\n"
 
-#: src/config.c:1444
+#: src/config.c:1452
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: <selanjutnya> L: Kosong   S: 5\n"
 
-#: src/config.c:1445
+#: src/config.c:1453
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: <sebelumnya>  M: Genap    T: 6\n"
 
-#: src/config.c:1446
+#: src/config.c:1454
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C:   9600        N: Ganjil   U: 7\n"
 
-#: src/config.c:1447
+#: src/config.c:1455
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D:  38400        O: Tanda    V: 8\n"
 
-#: src/config.c:1448
+#: src/config.c:1456
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: Spasi\n"
 
-#: src/config.c:1450
+#: src/config.c:1458
 msgid " Stopbits\n"
 msgstr " BitHenti\n"
 
-#: src/config.c:1451
+#: src/config.c:1459
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1452
+#: src/config.c:1460
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1454
+#: src/config.c:1462
 msgid " K: Current\n"
 msgstr " K: Sekarang\n"
 
-#: src/config.c:1457
+#: src/config.c:1465
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -591,54 +583,52 @@ msgstr ""
 "\n"
 " Pilih, atau <Enter> untuk keluar? "
 
-#: src/config.c:1465
+#: src/config.c:1473
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Sekarang: %5s %s%s%s  "
 
-#: src/config.c:1607
+#: src/config.c:1615
 msgid "F1 to F10 Macros"
 msgstr "F1 ke F10 Makro"
 
-#: src/config.c:1626
+#: src/config.c:1634
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
 " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = berhenti 1 detik,"
 
-#: src/config.c:1628
+#: src/config.c:1636
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = nama pengguna, \\p = kata kunci, \\\\ = \\, \\e = ubah echo, "
 
-#: src/config.c:1630
-#, fuzzy
+#: src/config.c:1638
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
-"  \\l = ubah LF, \\bX1..Xn<sp> = ubah kecepatan baud. Contoh: \"\\bfq \""
+"  \\l = ubah LF, \\bX1..Xn<sp> = ubah kecepatan baud. Contoh: \"\\beq \""
 
-#: src/config.c:1632
-#, fuzzy
+#: src/config.c:1640
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
-"  = 19200 8N1. (Lihat \"Parameter Komunikasi\" menu untuk nilai valid dari "
+"  = 115200 8N1. (Lihat \"Parameter Komunikasi\" menu untuk nilai valid dari "
 "X.))"
 
-#: src/config.c:1647
+#: src/config.c:1655
 msgid "CHANGED"
 msgstr "BERUBAH"
 
-#: src/config.c:1734
+#: src/config.c:1742
 msgid "Character conversion"
 msgstr "Pengubah karakter"
 
-#: src/config.c:1739
+#: src/config.c:1747
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr ""
 " karakter masuk keluar karakter masuk keluar karakter masuk keluar karakter "
 "masuk keluar\n"
 
-#: src/config.c:1761
+#: src/config.c:1769
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -646,12 +636,12 @@ msgstr ""
 "\n"
 " A - load tabel\tB - simpan tabel"
 
-#: src/config.c:1763
+#: src/config.c:1771
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tberkas:%s"
 
-#: src/config.c:1764
+#: src/config.c:1772
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -659,50 +649,50 @@ msgstr ""
 "\n"
 " C - edit kar\tD - layar selanjutnya\tE - layar sebelumnya\n"
 
-#: src/config.c:1765
+#: src/config.c:1773
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - ubah capture: %s\n"
 
-#: src/config.c:1780
+#: src/config.c:1788
 #, c-format
 msgid "Load file: %s"
 msgstr "Load berkas: %s"
 
-#: src/config.c:1792
+#: src/config.c:1800
 #, c-format
 msgid "Save as file: %s"
 msgstr "Simpan sebagai berkas: %s"
 
-#: src/config.c:1803
+#: src/config.c:1811
 msgid "Character to be edited: "
 msgstr "Karakter yang akan diubah: "
 
-#: src/config.c:1811 src/config.c:1823 src/config.c:1835
+#: src/config.c:1819 src/config.c:1831 src/config.c:1843
 msgid "Input character ascii value 0-255"
 msgstr "Nilai ascii karakter masukan 0-255"
 
-#: src/config.c:1817
+#: src/config.c:1825
 #, c-format
 msgid "Change input to: %s"
 msgstr "Ubah masukan ke: %s"
 
-#: src/config.c:1829
+#: src/config.c:1837
 #, c-format
 msgid "Change output to: %s"
 msgstr "Ubah keluaran ke: %s"
 
-#: src/config.c:1867
+#: src/config.c:1875
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Tidak dapat membuka tabel pengubahan %s"
 
-#: src/config.c:1873
+#: src/config.c:1881
 #, fuzzy, c-format
 msgid "Cannot read conversion table %s"
 msgstr "Tidak dapat menulis tabel pengubahan %s"
 
-#: src/config.c:1885
+#: src/config.c:1893
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Tidak dapat menulis tabel pengubahan %s"
@@ -838,7 +828,7 @@ msgstr "Kehabisan memori ketika membaca direktori telepon"
 #: src/dial.c:1046
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
-msgstr ""
+msgstr "Converted dialdir to new format, old saved as %s.v%hd"
 
 #: src/dial.c:1081
 msgid "Cannot open ~/.dialdir for writing!"
@@ -1024,7 +1014,7 @@ msgstr "[Okay]"
 #: src/file.c:322
 #, c-format
 msgid "Could not change to directory %s (%s)"
-msgstr ""
+msgstr "Could not change to directory %s (%s)"
 
 #: src/file.c:346
 msgid "Select one or more files for download"
@@ -1168,11 +1158,11 @@ msgstr "  lokal echo on/off..E | Layar bantuan......Z\n"
 
 #: src/help.c:68
 msgid " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
-msgstr ""
+msgstr " Paste file.........Y  Timestamp toggle...N | scroll Back........B\n"
 
 #: src/help.c:69
 msgid " Add Carriage Ret...U"
-msgstr ""
+msgstr " Add Carriage Ret...U"
 
 #: src/help.c:71
 msgid "Select function or press Enter for none."
@@ -1382,6 +1372,8 @@ msgstr ""
 "Penggunaan: %s [OPSI]... [konfigurasi]\n"
 "Sebuah aplikasi terminal untuk Linux dan sistem seperti Unix lainnya.\n"
 "\n"
+"  -b, --baudrate         : set baudrate (ignore the value from config)\n"
+"  -D, --device           : set device name (ignore the value from config)\n"
 "  -s, --setup            : masuk ke mode konfigurasi (hanya sebagai root)\n"
 "  -o, --noinit           : jangan inisialisasi modem dan berkas-kunci di "
 "startup\n"
@@ -1391,6 +1383,7 @@ msgstr ""
 "                           karakter IBM-PC\n"
 "  -L, --iso              : jangan asumsikan layar menggunakan ISO-8859\n"
 "  -w, --wrap             : Linewrap aktif\n"
+"  -H, --displayhex       : display output in hex\n"
 "  -z, --statline         : coba gunakan baris status terminal\n"
 "  -7, --7bit             : paksa menggunakan mode 7bit\n"
 "  -8, --8bit             : paksa menggunakan kode 8bit\n"
@@ -1403,6 +1396,7 @@ msgstr ""
 "  -p, --ptty=TTYP        : hubungkan ke pseudo terminal\n"
 "  -C, --capturefile=FILE : jalankan penangkapan ke BERKAS\n"
 "  -T, --disabletime      : non-aktifkan tampilan dari waktu online\n"
+"  -R, --remotecharset    : character set of communication partner\n"
 "  -v, --version          : keluarkan informasi versi dan keluar\n"
 "  konfigurasi            : berkas konfigurasi yang akan digunakan\n"
 "\n"
@@ -1455,7 +1449,7 @@ msgstr ""
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argumen ke -p harus berupa sebuah pty\n"
 
-#: src/minicom.c:1253 src/minicom.c:1580
+#: src/minicom.c:1253 src/minicom.c:1583
 msgid "Cannot open capture file"
 msgstr "Tidak dapat membuka berkas penangkap"
 
@@ -1467,28 +1461,27 @@ msgstr "Anda tidak ada. Pergi.\n"
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Maaf. Layar anda terlalu kecil.\n"
 
-#: src/minicom.c:1463
+#: src/minicom.c:1466
 msgid "Welcome to minicom"
 msgstr "Selamat datang ke minicom"
 
-#: src/minicom.c:1464
+#: src/minicom.c:1467
 msgid "OPTIONS"
 msgstr "OPSI"
 
-#: src/minicom.c:1466
+#: src/minicom.c:1469
 msgid "Compiled on"
 msgstr "Dikompile di"
 
-#: src/minicom.c:1482
-msgid "Port"
-msgstr ""
-
 #: src/minicom.c:1485
-#, fuzzy
+msgid "Port"
+msgstr "Port"
+
+#: src/minicom.c:1488
 msgid "Using character set conversion"
 msgstr "Pengubah karakter"
 
-#: src/minicom.c:1486
+#: src/minicom.c:1489
 #, c-format
 msgid ""
 "\n"
@@ -1499,80 +1492,84 @@ msgstr ""
 "Tekan %sZ untuk bantuan dengan kunci spesial%c\n"
 "\n"
 
-#: src/minicom.c:1507
+#: src/minicom.c:1510
 msgid "Add linefeed ON"
 msgstr "Penambahan linefeed ON"
 
-#: src/minicom.c:1507
+#: src/minicom.c:1510
 msgid "Add linefeed OFF"
 msgstr "Penambahan linefeed OFF"
 
-#: src/minicom.c:1512
+#: src/minicom.c:1515
 msgid "Add carriage return ON"
-msgstr ""
+msgstr "Add carriage return ON"
 
-#: src/minicom.c:1512
+#: src/minicom.c:1515
 msgid "Add carriage return OFF"
-msgstr ""
+msgstr "Add carriage return OFF"
 
-#: src/minicom.c:1517
+#: src/minicom.c:1520
 msgid "Local echo ON"
 msgstr "Lokal echo ON"
 
-#: src/minicom.c:1517
+#: src/minicom.c:1520
 msgid "Local echo OFF"
 msgstr "Lokal echo OFF"
 
-#: src/minicom.c:1536
+#: src/minicom.c:1539
 msgid "You are online. Really initialize?"
 msgstr "Anda online. Benar benar menginisialisasi?"
 
-#: src/minicom.c:1543
+#: src/minicom.c:1546
 msgid "Leave without reset?"
 msgstr "Pergi tanpa reset?"
 
-#: src/minicom.c:1547 src/minicom.c:1565
+#: src/minicom.c:1550 src/minicom.c:1568
 msgid "Save macros?"
 msgstr "Simpan makro?"
 
-#: src/minicom.c:1557
+#: src/minicom.c:1560
 msgid "Leave Minicom?"
 msgstr "Tinggalkan Minicom"
 
-#: src/minicom.c:1576
+#: src/minicom.c:1579
 msgid "Capture to which file? "
 msgstr "Tangkap ke berkas mana? "
 
-#: src/minicom.c:1585 src/minicom.c:1594
+#: src/minicom.c:1588 src/minicom.c:1597
 msgid "Capture file"
 msgstr "Berkas penangkap"
 
-#: src/minicom.c:1628
+#: src/minicom.c:1631
 msgid "Linewrap ON"
 msgstr "Linewrap ON"
 
-#: src/minicom.c:1628
+#: src/minicom.c:1631
 msgid "Linewrap OFF"
 msgstr "Linewrap OFF"
 
-#: src/minicom.c:1637
-#, fuzzy
-msgid "Timestamp OFF"
-msgstr "Linewrap OFF"
-
 #: src/minicom.c:1640
-msgid "Timestamp every line (simple)"
-msgstr ""
+msgid "Timestamp OFF"
+msgstr "Timestamp OFF"
 
 #: src/minicom.c:1643
-msgid "Timestamp every line (extended)"
-msgstr ""
+msgid "Timestamp every line (simple)"
+msgstr "Timestamp every line (simple)"
 
 #: src/minicom.c:1646
-msgid "Timestamp lines every second"
-msgstr ""
+msgid "Timestamp every line (extended)"
+msgstr "Timestamp every line (extended)"
 
-#: src/minicom.c:1687
+#: src/minicom.c:1649
+msgid "Timestamp lines every second"
+msgstr "Timestamp lines every second"
+
+#: src/minicom.c:1652
+#, fuzzy
+msgid "Timestamp delta between lines"
+msgstr "Timestamp every line (simple)"
+
+#: src/minicom.c:1693
 msgid "Quit without reset while online."
 msgstr "Berhenti tanpa reset ketika sedang tersambung."
 
@@ -1750,7 +1747,6 @@ msgid "Please enter file names"
 msgstr "Tolong masukan nama berkas"
 
 #: src/updown.c:290
-#, fuzzy
 msgid "Out of memory: could allocate buffer for command line"
 msgstr "Kehabisan memori: tidak dapat fork()"
 
@@ -1776,7 +1772,6 @@ msgstr ""
 " SIAP: tekan tombol apapun untuk melanjutkan.."
 
 #: src/updown.c:478
-#, fuzzy
 msgid "Cannot create lockfile!"
 msgstr "Tidak dapat membuat berkas-kunci!"
 
@@ -1786,9 +1781,9 @@ msgid "Failed to write lockfile %s\n"
 msgstr "Tidak dapat menulis berkas makro %s"
 
 #: src/updown.c:496
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot create lockfile for %s: %s\n"
-msgstr "Tidak dapat membuat berkas-kunci. Maaf.\n"
+msgstr "Tidak dapat membuat berkas-kunci. Maaf. %s:%s\n"
 
 #: src/updown.c:643
 msgid "Same as last"
@@ -1848,6 +1843,22 @@ msgstr "Jumlah dari kolom terminal tidak diketahui\n"
 #~ msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
 #~ msgstr " %7.7sZ untuk bantuan |      |     | Minicom %-6.6s |       | "
 
+#~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
+#~ msgstr ""
+#~ "minicom: PERINGATAN: berkas konfigurasi tidak ditemukan, menggunakan "
+#~ "konfigurasi baku\n"
+
+#~ msgid "minicom: there is no global configuration file %s\n"
+#~ msgstr "minicom: tidak ada berkas konfigurasi global %s\n"
+
+#~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
+#~ msgstr ""
+#~ "Tanya sistem administrasi anda untuk membuatkan satu (dengan minicom -"
+#~ "s).\n"
+
+#~ msgid "You are not allowed to create a configuration"
+#~ msgstr "Anda tidak diperbolehkan membuat sebuah konfigurasi"
+
 #~ msgid "Old dialdir copied as %s.%hd"
 #~ msgstr "Dialdir lama disalin sebagai %s.%hd"
 
@@ -1859,22 +1870,6 @@ msgstr "Jumlah dari kolom terminal tidak diketahui\n"
 
 #~ msgid "Resize not supported, screen may be messed up!"
 #~ msgstr "Mengubah ukuran tidak didukung, layar mungkin akan kacau!"
-
-#~ msgid "minicom: there is no global configuration file %s\n"
-#~ msgstr "minicom: tidak ada berkas konfigurasi global %s\n"
-
-#~ msgid "Ask your sysadmin to create one (with minicom -s).\n"
-#~ msgstr ""
-#~ "Tanya sistem administrasi anda untuk membuatkan satu (dengan minicom -"
-#~ "s).\n"
-
-#~ msgid "minicom: WARNING: configuration file not found, using defaults\n"
-#~ msgstr ""
-#~ "minicom: PERINGATAN: berkas konfigurasi tidak ditemukan, menggunakan "
-#~ "konfigurasi baku\n"
-
-#~ msgid "You are not allowed to create a configuration"
-#~ msgstr "Anda tidak diperbolehkan membuat sebuah konfigurasi"
 
 #~ msgid "Minicom: Device disappeared, aborting!\n"
 #~ msgstr "Minicom: Perangkat menghilang, membatalkan!\n"
