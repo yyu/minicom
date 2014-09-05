@@ -562,7 +562,7 @@ static void show_status_fmt(const char *fmt)
                 {
                   char b[COLS - bufi];
                   bufi += snprintf(buf + bufi, COLS - bufi, "%s",
-                                   shortened_devpath(b, sizeof(b), P_PORT));
+                                   shortened_devpath(b, sizeof(b), dial_tty));
                 }
               break;
 

@@ -1,3 +1,7 @@
+2014-09-05  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/main.c: Use dial_tty for status line, by Steven Jian.
+
 2014-08-31  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/fr.po: Update by translation team.
