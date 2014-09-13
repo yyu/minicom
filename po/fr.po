@@ -236,7 +236,7 @@ msgstr "    Entrée ou Échap pour sortir. Éditez A+B pour les valeurs par déf
 
 #: src/config.c:828
 msgid " A - Command key is         :"
-msgstr " A - La touche de commande est :"
+msgstr " A - La touche de commande est:"
 
 #: src/config.c:829
 msgid " B - Backspace key sends    :"
@@ -538,7 +538,7 @@ msgstr "Paramètres de communication"
 
 #: src/config.c:1440
 msgid " Speed            Parity      Data\n"
-msgstr " Vitesse          Parité      Données\n"
+msgstr " Vitesse          Parité     Données\n"
 
 #: src/config.c:1441
 msgid " A: <next>        L: None     S: 5\n"
@@ -587,7 +587,7 @@ msgstr ""
 #: src/config.c:1462
 #, c-format
 msgid "Current: %5s %s%s%s  "
-msgstr "Actuellement: %5s %s%s%s  "
+msgstr "Actuelle: %5s %s%s%s  "
 
 #: src/config.c:1604
 msgid "F1 to F10 Macros"
@@ -984,13 +984,12 @@ msgstr "[aFfic]"
 
 #: src/file.c:59
 msgid "[Tag]"
-msgstr "[Marq]"
+msgstr "[+Marq]"
 
 # Supprimer la marque en cinq lettres !
 #: src/file.c:59
-#, fuzzy
 msgid "[Untag]"
-msgstr "[Su.ma]"
+msgstr "[-maRq]"
 
 #: src/file.c:60
 msgid "[Okay]"
