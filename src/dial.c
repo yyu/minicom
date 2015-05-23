@@ -39,7 +39,7 @@
 #include "intl.h"
 
 #ifdef VC_MUSIC
-#  if defined(__GLIBC__)
+#  if defined(__linux__) || defined(__GLIBC__)
 #    include <sys/ioctl.h>
 #    include <sys/kd.h>
 #    include <sys/time.h>
