@@ -32,3 +32,11 @@ wishlist:
   * transmit speed in statusline
   * multi-channel
   * optionally more status lines
+
+* add remote control interface
+  * would allow to inject text/command sequences via minicom-ctrl (or
+    similar), e.g. make someimage && minicom-ctrl --xyz thisone "tftpboot ..."
+
+* embed lua
+  * eventually replace script language?
+  * add filter/trigger/whatever via plugged-in lua scriptlets
