@@ -23,9 +23,10 @@
  */
 
 #include <dirent.h>
+#include <limits.h>
 
 typedef struct dirEntry {		/* structure of data item */
-  char fname[MAXNAMLEN + 1];		/* filename + terminating null */
+  char fname[NAME_MAX + 1];		/* filename + terminating null */
   time_t time;				/* last modification date */
   mode_t mode;				/* file mode (dir? etc.) */
   ushort cflags;			/* caller field for convenience */

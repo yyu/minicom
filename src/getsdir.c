@@ -145,7 +145,7 @@ static int timecmpr(GETSDIR_ENTRY *d1, GETSDIR_ENTRY *d2)
  *
  *			    The data will be in the form:
  *				typedef struct dirEntry {
- *				    char fname[MAXNAMLEN + 1];
+ *				    char fname[NAME_MAX + 1];
  *				    time_t time;
  *				    mode_t mode;
  *				} GETSDIR_ENTRY;
@@ -232,7 +232,7 @@ int getsdir(const char *dirpath, const char *pattern, int sortflags,
             }
 
           /* copy the filename */
-          strncpy((*datptr)[cnt].fname, dp->d_name, MAXNAMLEN);
+          strncpy((*datptr)[cnt].fname, dp->d_name, NAME_MAX);
 
           /* get information about the directory entry */
           snprintf(fpath, sizeof(fpath), "%s/%s", dirpath, dp->d_name);
