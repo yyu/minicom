@@ -1,3 +1,13 @@
+2015-05-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/minicom.h, src/vt100.c, src/window.c, src/window.h: Add
+	  alternate screen support. Initial change by
+	  陈愚人 <yurencheng@gmail.com>.
+
+	* src/dial.c: musl-libc compile fix. By Felix Janda.
+
+	* src/getsdir, src/getsdir.h: Use POSIX NAME_MAX. By Felix Janda.
+
 2014-09-13  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/fr.po: Update by translation team.

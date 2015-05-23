@@ -723,6 +723,41 @@ static void dec_mode(int on_off)
       case 67: /* Backspace key sends. (FIXME: vt420) */
         /* setbackspace(on_off ? 8 : 127); */
         break;
+
+      case 47: /* Alternate screen */
+      case 1047:
+      case 1049:
+
+        if ((us_alternate && on_off) || !on_off)
+          {
+            vt_win = us;
+
+            mc_clear_window_simple(us_alternate);
+            mc_wclose(us_alternate, 1);
+            us_alternate = NULL;
+          }
+
+        if (on_off)
+          {
+            us_alternate = mc_wopen(0, 0, COLS - 1, us->y2, BNONE, XA_NORMAL,
+                                    tfcolor, tbcolor,  1, 0, 0);
+            vt_win = us_alternate;
+          }
+
+          {
+            char b[10];
+
+            snprintf(b, sizeof(b),
+                     "\e[?%d%c", escparms[i], on_off ? 'h' : 'l');
+            b[sizeof(b) - 1] = 0;
+
+            mc_wputs(stdwin, b);
+          }
+
+        if (on_off)
+          mc_clear_window_simple(us_alternate);
+
+        break;
       default: /* Mostly set up functions */
         /* IGNORED */
         break;

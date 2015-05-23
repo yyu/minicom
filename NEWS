@@ -6,6 +6,7 @@ please refer to the ChangeLog file.
 New:
  - New timestamp mode: Delta to previous line.
  - Add HPA ESC sequence
+ - Add alternative window support (ti/te)
  - Fix file name of non-global configuration settings.
  - Update translations: indonesian, french
 

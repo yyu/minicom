@@ -68,6 +68,7 @@ EXTERN int dosetup;     /* In setup mode (-s) */
 EXTERN char stdattr;	/* Standard attribute */
 
 EXTERN WIN *us;		/* User screen */
+EXTERN WIN *us_alternate; /* Alternate user screen */
 EXTERN WIN *st;		/* Status Line */
 
 EXTERN short terminal;	/* terminal type */

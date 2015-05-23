@@ -1543,6 +1543,17 @@ void mc_winclr(WIN *w)
     mc_wflush();
 }
 
+void mc_clear_window_simple(WIN *w)
+{
+  int x = 0, y = 0;
+  _colson(us->color);
+  _gotoxy(0, 0);
+  for (; y <= w->ys; ++y)
+    for (; x <= w->xs; ++x)
+      _write(' ', 1, x, y, XA_NORMAL, us->color);
+  _gotoxy(0, 0);
+}
+
 /* ==== Insert / Delete functions ==== */
 
 void mc_winsline(WIN *w)
