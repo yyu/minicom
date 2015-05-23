@@ -102,16 +102,6 @@ static int _mv_standout = 0;
 static ELM oldc;
 static int sflag = 0;
 
-/*
- * Smooth is only defined for slow machines running Minicom.
- * With this defined, Minicom will buffer only per-line
- * and the output will look much less 'jerky'. (I hope :-)
- */
-#ifdef SMOOTH
-static WIN *curwin = NULL;
-WIN *us;
-#endif
-
 int useattr = 1;
 int dirflush = 1;
 int LINES, COLS;
@@ -181,10 +171,6 @@ static int outchar(int c)
   *_bufpos++ = c;
   if (_bufpos >= _buffend)
     mc_wflush();
-#if defined(SMOOTH)
-  if (curwin == us && (c == '\n' || c == '\r'))
-    mc_wflush();
-#endif
   return 0;
 }
 
@@ -480,9 +466,6 @@ WIN *mc_wopen(int x1, int y1, int x2, int y2, int border, int attr,
   int color;
   int offs;
   int xattr;
-#ifdef SMOOTH
-  curwin = NULL;
-#endif
 
   if ((w = malloc(sizeof(WIN))) == NULL)
     return w;
@@ -611,10 +594,6 @@ void mc_wclose(WIN *win, int replace)
   ELM *e;
   int x, y;
 
-#ifdef SMOOTH
-  curwin = NULL;
-#endif
-
   if (!win)
     return;
 
@@ -693,10 +672,6 @@ void mc_wreturn(void)
   int x, y;
   ELM *e;
 
-#ifdef SMOOTH
-  curwin = NULL;
-#endif
-
   curattr = -1;
   curcolor = -1;
 
@@ -773,9 +748,6 @@ static int _wclreol(WIN *w)
   int doit = 1;
   int y;
 
-#ifdef SMOOTH
-  curwin = w;
-#endif
   y = w->cury + w->y1;
 
   if (w->direct && (w->x2 == COLS - 1) && CE) {
@@ -801,10 +773,6 @@ void mc_wscroll(WIN *win, int dir)
   int doit = 1;
   int ocurx, fs = 0, len;
   int phys_scr = 0;
-
-#ifdef SMOOTH
-  curwin = win;
-#endif
 
   /*
    * If the window *is* the physical screen, we can scroll very simple.
@@ -1001,10 +969,6 @@ void mc_wputc(WIN *win, wchar_t c)
 {
   int mv = 0;
 
-#ifdef SMOOTH
-  curwin = win;
-#endif
-
   switch(c) {
     case '\r':
       win->curx = 0;
@@ -1188,10 +1152,6 @@ void mc_wtitle(WIN *w, int pos, const char *s)
 {
   int x = 0;
 
-#ifdef SMOOTH
-  curwin = NULL;
-#endif
-
   if (w->border == BNONE)
     return;
 
@@ -1232,10 +1192,6 @@ void mc_wcurbar(WIN *w, int y, int attr)
 {
   ELM *e;
   int x;
-
-#ifdef SMOOTH
-  curwin = w;
-#endif
 
   y += w->y1;
 
@@ -1360,10 +1316,6 @@ void mc_wclrch(WIN *w, int n)
 {
   int x, y, x_end;
 
-#ifdef SMOOTH
-  curwin = w;
-#endif
-
   y = w->cury + w->y1;
   x = x_end = w->curx + w->x1;
   x_end += n - 1;
@@ -1411,10 +1363,6 @@ void mc_wclreol(WIN *w)
 void mc_wclrbol(WIN *w)
 {
   int x, y, n;
-
-#ifdef SMOOTH
-  curwin = w;
-#endif
 
   y = w->cury + w->y1;
 
@@ -1612,10 +1560,6 @@ void mc_winschar2(WIN *w, wchar_t c, int move)
   int len, odir;
   int oldx;
 
-#ifdef SMOOTH
-  curwin = w;
-#endif
-
   /* See if we need to insert. */
   if (c == 0 || wcschr(L"\r\n\t\b\007", c) || w->curx >= w->xs - 1) {
     mc_wputc(w, c);
@@ -1677,10 +1621,6 @@ void mc_wdelchar(WIN *w)
   int x, y;
   int doit = 1;
   ELM *e;
-
-#ifdef SMOOTH
-  curwin = w;
-#endif
 
   x = w->x1 + w->curx;
   y = w->y1 + w->cury;
