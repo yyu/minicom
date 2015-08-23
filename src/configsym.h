@@ -179,5 +179,7 @@ enum config_type {
 #define P_MAC7          mmacs[6].value
 #define P_MAC8          mmacs[7].value
 #define P_MAC9          mmacs[8].value
-#define P_MAC10          mmacs[9].value
+#define P_MAC10         mmacs[9].value
+#define P_MAC11         mmacs[10].value
+#define P_MAC12         mmacs[11].value
 

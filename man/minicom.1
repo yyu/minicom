@@ -686,7 +686,7 @@ The number of lines to keep in the history buffer (for backscrolling).
 .B L - Macros file
 is the full path to the file that holds
 macros. Macros allow you to define a string to be sent when you press
-a certain key. In minicom, you may define F1 through F10 to send
+a certain key. In minicom, you may define F1 through F12 to send
 up to 256 characters [this is set at compile time]. The filename you
 specify is verified as soon as you hit ENTER. If you do not have permissions
 to create the specified file, an error message will so indicate and you
@@ -697,10 +697,10 @@ If the file does not exist, the filename is accepted.
 .TP 0.5i
 .B M - Edit Macros
 opens up a new window 
-which allows you to edit the F1 through F10 macros. 
+which allows you to edit the F1 through F12 macros. 
 .TP 0.5i
 .B N - Macros enabled
-- Yes or No. If macros are disabled, the F1-F10
+- Yes or No. If macros are disabled, the F1-F12
 keys will just send the VT100/VT220 function key escape sequences.
 .TP 0.5i
 .B O - Character conversion
@@ -711,7 +711,7 @@ table edit menu.
 .PD 1
 .TP 0.25i
 .B "Edit Macros"
-Here, the macros for F1 through F10 are defined. The bottom of the
+Here, the macros for F1 through F12 are defined. The bottom of the
 window shows a legend of character combinations that have special meaning.
 They allow you to enter special control characters with plain text by
 prefixing them with a '^', in which '^^' means '^' itself. You can
@@ -720,7 +720,7 @@ trying to login after ftp'ing or telnet'ing somewhere.
 You can also include your current username and password from the phone 
 directory in the macros with '\\u' and '\\p', respectively. If you need
 the backslash character in the macro, write it doubled as '\\\\'.
-To edit a macro, press the number (or letter for F10) and you will be 
+To edit a macro, press the shown number or letter and you will be 
 moved to the end of the macro. When editing the line, you may use the 
 left & right arrows, Home & End keys, Delete & BackSpace, and ESC and 
 RETURN.  ESC cancels any changes made while ENTER accepts the changes.

@@ -43,7 +43,7 @@
 #include "intl.h"
 
 /* fmg macros stuff */
-#define MAX_MACS        10       /* fmg - header files? what's that... */
+#define MAX_MACS        12       /* fmg - header files? what's that... */
 struct macs mmacs[] = {
   { "",       0,   "pmac1" },
   { "",       0,   "pmac2" },
@@ -55,6 +55,8 @@ struct macs mmacs[] = {
   { "",       0,   "pmac8" },
   { "",       0,   "pmac9" },
   { "",       0,   "pmac10" },
+  { "",       0,   "pmac11" },
+  { "",       0,   "pmac12" },
 
   /* That's all folks */
 

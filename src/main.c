@@ -924,7 +924,8 @@ dirty_goto:
       }
 
       /* No, just a key to be sent. */
-      if (c >= K_F1 && c <= K_F10 && P_MACENAB[0] == 'Y') {
+      if (((c >= K_F1 && c <= K_F10) || c == K_F11 || c == K_F12)
+	  && P_MACENAB[0] == 'Y') {
         s = "";
         switch(c) {
           case K_F1: s = P_MAC1; break;
@@ -937,6 +938,8 @@ dirty_goto:
           case K_F8: s = P_MAC8; break;
           case K_F9: s = P_MAC9; break;
           case K_F10: s = P_MAC10; break;
+          case K_F11: s = P_MAC11; break;
+          case K_F12: s = P_MAC12; break;
         }
         if (*s)
           mputs(s, 1);

@@ -1611,8 +1611,8 @@ void domacros(void)
   int   Jch = '1', Jm = 0; /* fmg - ok, so I was lazy.. */
   char* question = _("Change which setting?  (Esc to exit)");
 
-  w = mc_wopen(3, 6, 75, 24, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
-  mc_wtitle(w, TMID, _("F1 to F10 Macros"));
+  w = mc_wopen(3, 2, 75, 21, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
+  mc_wtitle(w, TMID, _("F1 to F12 Macros"));
 
   mc_wprintf(w, "\n");
   out_mac(w,mmacs[Jm++].value, Jch++);
@@ -1626,25 +1626,27 @@ void domacros(void)
   out_mac(w,mmacs[Jm++].value, Jch++);
   Jch = 'A'; /* fmg - ran out of single digits... */
   out_mac(w,mmacs[Jm++].value, Jch++);
+  out_mac(w,mmacs[Jm++].value, Jch++);
+  out_mac(w,mmacs[Jm++].value, Jch++);
 
   mc_wredraw(w, 1);
 
   while(1) {
-    mc_wlocate(w, 1, 14);
-    mc_wputs(w, _(" (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"));
-    mc_wlocate(w, 1, 15);
-    mc_wputs(w, _("  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "));
     mc_wlocate(w, 1, 16);
-    mc_wputs(w, _("  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""));
+    mc_wputs(w, _(" (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"));
     mc_wlocate(w, 1, 17);
+    mc_wputs(w, _("  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "));
+    mc_wlocate(w, 1, 18);
+    mc_wputs(w, _("  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""));
+    mc_wlocate(w, 1, 19);
     mc_wputs(w, _("  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"));
     if (clr) {
-      mc_wlocate(w, 1, 12);
+      mc_wlocate(w, 1, 14);
       mc_wprintf(w, "%s ", question);
       mc_wclreol(w);
       clr = 0;
     } else
-      mc_wlocate(w, mbslen (question) + 2, 12);
+      mc_wlocate(w, mbslen (question) + 2, 14);
 
     switch (rwxgetch()) {
       case '\n':
@@ -1709,6 +1711,18 @@ void domacros(void)
         strcpy(P_MACCHG,"CHANGED"); /* fmg - ... [sigh] */
         mc_wlocate(w, 0, 10);
         out_mac(w,P_MAC10, 'A');
+        break;
+      case 'B':
+        mgets(w, 5, 11, P_MAC11, 72, MAC_LEN);
+        strcpy(P_MACCHG,"CHANGED"); /* fmg - ... [sigh] */
+        mc_wlocate(w, 0, 11);
+        out_mac(w,P_MAC11, 'B');
+        break;
+      case 'C':
+        mgets(w, 5, 12, P_MAC12, 72, MAC_LEN);
+        strcpy(P_MACCHG,"CHANGED");
+        mc_wlocate(w, 0, 12);
+        out_mac(w,P_MAC12, 'C');
         break;
     }
   }
