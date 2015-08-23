@@ -303,6 +303,7 @@ void domacros(void);
 int lockfile_create(int no_msgs);
 void lockfile_remove(void);
 
+#define ARRAY_SIZE(a) (sizeof(a) / sizeof(a[0]))
 
 
 /* We want the ANSI offsetof macro to do some dirty stuff. */
