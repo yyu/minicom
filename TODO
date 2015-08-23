@@ -20,6 +20,8 @@ normal:
                        it without headaches
 * when showing errors also consider showing errno if available/appropriate
 
+* move .minirc* and .macros to .config/minicom/...
+
 wishlist:
 
 * incorporate outstanding patches from debian/patches
