@@ -52,6 +52,21 @@ static NCURSES_CONST char *func_key[] = {
   "", "k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8", "k9", "k0",
   "kh", "kP", "ku", "kl", "kr", "kd", "kH", "kN", "kI", "kD",
   "F1", "F2", NULL };
+
+static char *func_key_defs_default[] = {
+    "",
+    "\033OP",
+    "\033OQ",
+    "\033OR",
+    "\033OS",
+    "\033[15~",
+    "\033[17~",
+    "\033[18~",
+    "\033[19~",
+    "\033[20~",
+    "\033[21~",
+};
+
 #if KEY_KLUDGE
 /*
  * A VERY DIRTY HACK FOLLOWS:
@@ -104,7 +119,7 @@ static int cread(char *c)
 
 static void _initkeys(void)
 {
-  int i;
+  unsigned i;
   static char *cbuf, *tbuf;
   char *term;
 
@@ -129,8 +144,12 @@ static void _initkeys(void)
   }
   /* Initialize codes for special keys */
   for (i = 0; func_key[i]; i++) {
-    if ((_keys[i].cap = tgetstr(func_key[i], &_tptr)) == NULL)
-      _keys[i].cap = "";
+    if ((_keys[i].cap = tgetstr(func_key[i], &_tptr)) == NULL) {
+      if (i < ARRAY_SIZE(func_key_defs_default))
+	_keys[i].cap = func_key_defs_default[i];
+      else
+	_keys[i].cap = "";
+    }
     _keys[i].len = strlen(_keys[i].cap);
   }
 #if KEY_KLUDGE

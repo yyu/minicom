@@ -1,3 +1,8 @@
+2015-08-24  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/wkeys.c: Add default for F10 key in case termcap does not
+	  deliver one.
+
 2015-05-23  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/window.c: Remove SMOOTH code blocks.
