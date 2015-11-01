@@ -1,4 +1,11 @@
+2015-11-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* po/nb.po: Update from Translation team.
+
 2015-08-24  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c, src/configsym.h, src/main.c, src/rwconf.c,
+	  man/minicom.1, NEWS: Add F11 and F12 for use in macros.
 
 	* src/wkeys.c: Add default for F10 key in case termcap does not
 	  deliver one.
