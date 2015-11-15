@@ -635,7 +635,13 @@ int expect(char *text)
  */
 int shell(char *text)
 {
-  laststatus = system(text);
+  int status = system(text);
+  if (WIFEXITED(status))
+    laststatus = WEXITSTATUS(status);
+  else if (WIFSIGNALED(status))
+    laststatus = WTERMSIG(status);
+  else
+    laststatus = status;
   return OK;
 }
 

@@ -1,3 +1,7 @@
+2015-11-15  Eyal Birger <eyal.birger@gmail.com>
+
+	* src/script.c: Proper shell exit status handling.
+
 2015-11-01  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* po/nb.po: Update from Translation team.
