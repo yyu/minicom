@@ -1,6 +1,10 @@
 minicom TODO list
 -----------------
 
+fixes:
+* if both sides use utf8, and no -R utf8 is used, minicom
+  outputs additional invalid characters, that should be fixed.
+
 important:
 
 * update/complete existing translations, see also
