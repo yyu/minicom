@@ -41,6 +41,10 @@
 
 static jmp_buf albuf;
 
+#ifdef USE_SOCKET
+static const char SOCKET_PREFIX[] = "unix#";
+#endif
+
 /* Compile SCCS ID into executable. */
 const char *Version = VERSION;
 
@@ -193,11 +197,9 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 #endif
 
 #ifdef USE_SOCKET
-#define SOCKET_PREFIX "unix#"
-    portfd_is_socket = portfd_is_connected = 0;
-    if (strncmp(dial_tty, SOCKET_PREFIX, strlen(SOCKET_PREFIX)) == 0) {
-      portfd_is_socket = 1;
-    }
+  portfd_is_socket = portfd_is_connected = 0;
+  if (strncmp(dial_tty, SOCKET_PREFIX, strlen(SOCKET_PREFIX)) == 0)
+    portfd_is_socket = 1;
 #endif
 
   if (portfd_is_socket)
@@ -278,8 +280,8 @@ nolock:
       portfd_sock_addr.sun_family = AF_UNIX;
       strncpy(portfd_sock_addr.sun_path,
               dial_tty + strlen(SOCKET_PREFIX),
-              sizeof(portfd_sock_addr.sun_path)-1);
-      portfd_sock_addr.sun_path[sizeof(portfd_sock_addr.sun_path)-1] = 0;
+              sizeof(portfd_sock_addr.sun_path) - 1);
+      portfd_sock_addr.sun_path[sizeof(portfd_sock_addr.sun_path) - 1] = 0;
       term_socket_connect();
     }
 #endif /* USE_SOCKET */
@@ -791,7 +793,7 @@ dirty_goto:
     timer_update();
 
     /* check if device is ok, if not, try to open it */
-    if (!get_device_status(portfd_connected)) {
+    if (!get_device_status(portfd_connected())) {
       /* Ok, it's gone, most probably someone unplugged the USB-serial, we
        * need to free the FD so that a replug can get the same device
        * filename, open it again and be back */
@@ -811,7 +813,7 @@ dirty_goto:
     }
 
     /* Check for I/O or timer. */
-    x = check_io(portfd_connected, 0, 1000,
+    x = check_io(portfd_connected(), 0, 1000,
                  buf + buf_offset, sizeof(buf) - buf_offset, &blen);
     blen += buf_offset;
     buf_offset = 0;

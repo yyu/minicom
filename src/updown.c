@@ -819,7 +819,7 @@ int paste_file(void)
 
   while (fgets(line, sizeof(line), fp)) {
     /* Check for I/O or timer. */
-    x = check_io(portfd_connected, 0, 1000, buf, sizeof(buf), &bytes_read);
+    x = check_io(portfd_connected(), 0, 1000, buf, sizeof(buf), &bytes_read);
 
     /*  Send data from the modem to the screen. */
     if ((x & 1)) {

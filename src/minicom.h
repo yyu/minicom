@@ -117,12 +117,17 @@ EXTERN char *dial_pass;     /* Our password */
 EXTERN int portfd_is_socket;	/* File descriptor is a unix socket */
 EXTERN int portfd_is_connected;	/* 1 if the socket is connected */
 EXTERN struct sockaddr_un portfd_sock_addr;	/* the unix socket address */
-#define portfd_connected ((portfd_is_socket && !portfd_is_connected) \
-                           ? -1 : portfd)
+static inline int portfd_connected(void)
+{
+  return (portfd_is_socket && !portfd_is_connected) ? -1 : portfd;
+}
 #else
-#define portfd_connected portfd
 #define portfd_is_socket 0
 #define portfd_is_connected 0
+static inline int portfd_connected(void)
+{
+  return portfd;
+}
 #endif /* USE_SOCKET */
 
 /*
