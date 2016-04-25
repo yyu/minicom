@@ -93,7 +93,13 @@ void m_dtrtoggle(int fd, int sec)
       sleep(sec);
       ioctl(fd, TIOCSDTR, 0);
     }
-
+#elif defined (TIOCMBIS) && defined (TIOCMBIC) && defined (TIOCM_DTR)
+    int modembits = TIOCM_DTR;
+    ioctl(fd, TIOCMBIC, &modembits);
+    if (sec > 0) {
+      sleep (sec);
+      ioctl(fd, TIOCMBIS, &modembits);
+    }
 #else /* TIOCSDTR */
 #  if defined (POSIX_TERMIOS)
 

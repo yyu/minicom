@@ -1,3 +1,8 @@
+2016-04-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/sysdep1.c: Implement DTR toggle via TIOCMBIC+TIOCMBIS. Old
+	change by R.L. Horn.
+
 2016-04-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/config.c: Add missing fclose, found be David Binderman.
