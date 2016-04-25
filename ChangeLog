@@ -1,3 +1,12 @@
+2016-04-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/config.c: Add missing fclose, found be David Binderman.
+
+2016-04-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/dial.c, src/main.c, src/minicom.h, src/updown.c: Improvement
+	to socket handling code.
+
 2015-11-15  Eyal Birger <eyal.birger@gmail.com>
 
 	* src/script.c: Proper shell exit status handling.
