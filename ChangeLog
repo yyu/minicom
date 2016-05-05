@@ -1,7 +1,13 @@
+2016-05-05  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
+
+	* src/sysdep1.c: remove conditional DTR toggle enable, pointed out
+	  by Marcin Szewczyk. All callers use sec>0, and with sec==0 it
+	  would not toggle.
+
 2016-04-26  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/sysdep1.c: Implement DTR toggle via TIOCMBIC+TIOCMBIS. Old
-	change by R.L. Horn.
+	  change by R.L. Horn.
 
 2016-04-25  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
@@ -10,7 +16,7 @@
 2016-04-17  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/dial.c, src/main.c, src/minicom.h, src/updown.c: Improvement
-	to socket handling code.
+	  to socket handling code.
 
 2015-11-15  Eyal Birger <eyal.birger@gmail.com>
 

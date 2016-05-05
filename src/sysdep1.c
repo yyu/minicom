@@ -89,17 +89,13 @@ void m_dtrtoggle(int fd, int sec)
 #ifdef TIOCSDTR
     /* Use the ioctls meant for this type of thing. */
     ioctl(fd, TIOCCDTR, 0);
-    if (sec>0) {
-      sleep(sec);
-      ioctl(fd, TIOCSDTR, 0);
-    }
+    sleep(sec);
+    ioctl(fd, TIOCSDTR, 0);
 #elif defined (TIOCMBIS) && defined (TIOCMBIC) && defined (TIOCM_DTR)
     int modembits = TIOCM_DTR;
     ioctl(fd, TIOCMBIC, &modembits);
-    if (sec > 0) {
-      sleep (sec);
-      ioctl(fd, TIOCMBIS, &modembits);
-    }
+    sleep (sec);
+    ioctl(fd, TIOCMBIS, &modembits);
 #else /* TIOCSDTR */
 #  if defined (POSIX_TERMIOS)
 
@@ -111,10 +107,8 @@ void m_dtrtoggle(int fd, int sec)
     cfsetospeed(&tty, B0);
     cfsetispeed(&tty, B0);
     tcsetattr(fd, TCSANOW, &tty);
-    if (sec > 0) {
-      sleep(sec);
-      tcsetattr(fd, TCSANOW, &old);
-    }
+    sleep(sec);
+    tcsetattr(fd, TCSANOW, &old);
 
 #  else /* POSIX */
 #    ifdef _V7
@@ -127,10 +121,8 @@ void m_dtrtoggle(int fd, int sec)
 
     ng.sg_ispeed = ng.sg_ospeed = 0;
     ioctl(fd, TIOCSETP, &ng);
-    if (sec > 0) {
-      sleep(sec);
-      ioctl(fd, TIOCSETP, &sg);
-    }
+    sleep(sec);
+    ioctl(fd, TIOCSETP, &sg);
 
 #    endif /* _V7 */
 #  endif /* POSIX */
