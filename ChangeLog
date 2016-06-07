@@ -1,3 +1,8 @@
+
+Discontinued as of June 2016. Use repostory meta info which shall
+contain the same info.
+
+
 2016-05-05  Adam Lackorzynski  <adam@os.inf.tu-dresden.de>
 
 	* src/sysdep1.c: remove conditional DTR toggle enable, pointed out
