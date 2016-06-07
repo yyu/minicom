@@ -8,7 +8,7 @@ New:
  - Add HPA ESC sequence
  - Add alternative window support (ti/te)
  - Fix file name of non-global configuration settings.
- - Update translations: indonesian, french
+ - Update translations: indonesian, french, swedish
  - Fix F10 macro key used in current setups
  - Add F11 and F12 for macro use
  - Fixed DTR for recent systems
