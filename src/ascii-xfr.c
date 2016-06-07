@@ -23,10 +23,13 @@
 #include <unistd.h>
 #include <sys/time.h>
 #include <sys/types.h>
+#include <getopt.h>
 
 #ifdef HAVE_TERMIOS_H
 #include <termios.h>
 #endif
+
+#include "intl.h"
 
 /*
  *	Externals.
