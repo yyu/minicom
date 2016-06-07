@@ -62,7 +62,7 @@ typedef struct _win {
  * Stdwin is the whole screen
  */
 extern WIN *stdwin;	/* Whole screen */
-extern int LINES, COLS; /* Size of sreen */
+extern int LINES, COLS; /* Size of screen */
 extern int usecolor;	/* Use ansi color escape sequences */
 extern int useattr;	/* Use attributes (reverse, bold etc. ) */
 extern int dirflush;	/* Direct flush after write */
@@ -202,7 +202,7 @@ void mc_clear_window_simple(WIN *w);
 #define mc_wresetam(w) ( (w)->wrap = 0 )
 
 /*
- * Allright, now the macro's for our keyboard routines.
+ * Alright, now the macro's for our keyboard routines.
  */
 
 #define K_BS		8

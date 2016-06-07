@@ -61,7 +61,7 @@ Control characters can be used in the string with the ^ prefix
 (^A to ^Z, ^[, ^\, ^], ^^ and ^_). If you need to send the ^ character,
 you must prefix it with the \\ escape character.
 .br
-Octal characters are either four-digit or delemited by a non-digit
+Octal characters are either four-digit or delimited by a non-digit
 character, e.g. the null character may be sent with \\0000 and 'send
 1234' is equivalent to 'send \\0061234'.
 .br
@@ -158,7 +158,7 @@ as argument to 'timeout' within an expect, because the default
 action of timeout is to exit immediately.
 .TP 0.5i
 .B "call <scriptname>"
-Transfers control to another scriptfile. When that scriptfile
+Transfers control to another script file. When that script file
 finishes without errors, the original script will continue.
 .TP 0.5i
 .B "log <text>"

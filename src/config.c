@@ -62,7 +62,7 @@ void read_parms(void)
     fclose(fp);
   }
 
-  /* fmg - set colors from readin values (Jcolor Xlates name to #) */
+  /* fmg - set colors from read values (Jcolor Xlates name to #) */
   mfcolor = Jcolor(P_MFG); mbcolor = Jcolor(P_MBG);
   tfcolor = Jcolor(P_TFG); tbcolor = Jcolor(P_TBG);
   sfcolor = Jcolor(P_SFG); sbcolor = Jcolor(P_SBG);
@@ -755,7 +755,7 @@ static void domodem(void)
 	{
 	  int loc = c - 'A';
 
-	  /* Calculate adress of string to modify */
+	  /* Calculate address of string to modify */
 	  str = P_MINIT + loc * sizeof(struct pars);
 
 	  /* Nowadays (2011), the modem init and reset strings are seldomly

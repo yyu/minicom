@@ -155,14 +155,14 @@ static int vt_docap;		/* Capture on/off. */
 static void (*vt_keyb)(int, int);/* Gets called for NORMAL/APPL switch. */
 static void (*termout)(const char *, int);/* Gets called to output a string. */
 
-static int escparms[8];		/* Cumulated escape sequence. */
+static int escparms[8];		/* Accumulated escape sequence. */
 static int ptr;                 /* Index into escparms array. */
 static long vt_tabs[5];		/* Tab stops for max. 32*5 = 160 columns. */
 
 static short newy1 = 0;		/* Current size of scrolling region. */
 static short newy2 = 23;
 
-/* Saved color and posistions */
+/* Saved color and positions */
 static short savex, savey, saveattr = XA_NORMAL, savecol = 112;
 
 #if TRANSLATE
@@ -878,7 +878,7 @@ static void state6(int c)
 static void state7(int c)
 {
   /*
-   * Device dependant control strings. The Minix virtual console package
+   * Device dependent control strings. The Minix virtual console package
    * uses these sequences. We can only turn cursor on or off, because
    * that's the only one supported in termcap. The rest is ignored.
    */

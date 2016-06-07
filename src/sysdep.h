@@ -1,5 +1,5 @@
 /*
- * sysdep.h	Header file for the really system dependant routines
+ * sysdep.h	Header file for the really system dependent routines
  *		in sysdep1.c and sysdep2.c. Because of this, the
  *		header file "port.h" is not used when "sysdep.h" is
  *		included. This file is only included from sysdep[12].c

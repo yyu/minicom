@@ -1,6 +1,6 @@
 /*
- * sysdep1_s.c	system dependant routines.
- * 		sysdep1.c has a dependeny to function not needed
+ * sysdep1_s.c	system dependent routines.
+ * 		sysdep1.c has a dependency to function not needed
  * 		for runscript so put m_flush (the only needed sysdep
  * 		function by runscript) into a separate object.
  *

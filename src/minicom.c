@@ -343,7 +343,7 @@ int find_next(WIN *w, WIN *w_hist,
 
 /*
  * fmg 8/22/97
- * Needed this for the case-less conparison... and Linux libc
+ * Needed this for the case-less comparison... and Linux libc
  * doesn't seem to have a strnstr function... so we fudge.. ;-)
  */
 const wchar_t *upcase(wchar_t *dest, wchar_t *src)
@@ -358,7 +358,7 @@ const wchar_t *upcase(wchar_t *dest, wchar_t *src)
 
 /*
  * fmg 8/22/97
- * Needed this for the case-less conparison... and Linux libc
+ * Needed this for the case-less comparison... and Linux libc
  * doesn't seem to have a strnstr function... so we fudge.. ;-)
  */
 wchar_t *StrStr(wchar_t *str1, wchar_t *str2, int case_matters)
@@ -590,7 +590,7 @@ static void scrollback(void)
          * fmg 8/20/97
          * This is needed so that the movement in window will HIGHLIGHT
          * the lines that have the pattern we wanted... it's just nice.
-         * This almost beggs for a function :-)
+         * This almost begs for a function :-)
          */
         if (citemode) {
           inverse = (y+cite_y >= cite_ystart && y+cite_y <= cite_yend);
@@ -638,7 +638,7 @@ static void scrollback(void)
          * fmg 8/20/97
          * This is needed so that the movement in window will HIGHLIGHT
          * the lines that have the pattern we wanted... it's just nice.
-         * This almost beggs for a function :-)
+         * This almost begs for a function :-)
          */
         if (citemode) {
           inverse = (y+cite_y >= cite_ystart && y+cite_y <= cite_yend);
@@ -1101,7 +1101,7 @@ int main(int argc, char **argv)
   cmd_dial = NULL;
 
   /* fmg 1/11/94 colors (set defaults) */
-  /* MARK updated 02/17/95 to be more similiar to TELIX */
+  /* MARK updated 02/17/95 to be more similar to TELIX */
   mfcolor = YELLOW;
   mbcolor = BLUE;
   tfcolor = WHITE;
@@ -1305,7 +1305,7 @@ int main(int argc, char **argv)
     /* init VT */
     vt_set(-1, -1, -1, -1, -1, -1, 1, -1, -1);
 
-  /* Avoid fraude ! */	
+  /* Avoid fraud ! */	
   for (s = use_port; *s; s++)
     if (*s == '/')
       *s = '_';

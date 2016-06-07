@@ -106,14 +106,14 @@ int fastexec(char *cmd)
   char *p;
 
   /* This is potentially security relevant (e.g. user selects a file
-   * with embedded shellcode for upload), so disable it for now and
+   * with embedded shell code for upload), so disable it for now and
    * see if someone complains.     27. 09. 2003 */
 #if 0
   if (anys(cmd, "~`$&*()=|{};?><"))
     return execl("/bin/sh", "sh", "-c", cmd, NULL);
 #endif
 
-  /* Delete escape-characters ment for the shell */
+  /* Delete escape-characters meant for the shell */
   p = cmd;
   while ((p = strchr(p, '\\')) && *(p+1) != ' ')
     memmove(p, p + 1, strlen(p+1));
@@ -125,7 +125,7 @@ int fastexec(char *cmd)
 }
 
 /*
- * Fork, then redirect I/O if neccesary.
+ * Fork, then redirect I/O if necessary.
  * in    : new stdin
  * out   : new stdout
  * err   : new stderr

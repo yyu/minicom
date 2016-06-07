@@ -564,7 +564,7 @@ MainLoop:
         /* Only look when we got a whole line. */
         if (modidx == 0 &&
             !strncmp(modbuf, P_MCONNECT, strlen(P_MCONNECT))) {
-          timer_update(); /* the login scipt may take long.. */
+          timer_update(); /* the login script may take long.. */
           retst = 0;
           /* Try to do auto-bauding */
           if (sscanf(modbuf + strlen(P_MCONNECT), "%ld", &nb) == 1)
@@ -920,7 +920,7 @@ int readdialdir(void)
     size -= sizeof(dial_ver);
   }
 
-  /* See if the size of the file is allright. */
+  /* See if the size of the file is alright. */
   switch (dial_ver.version) {
     case 0:
     case 1:
@@ -1585,7 +1585,7 @@ void dialdir(void)
   if (strlen(_(tag_exit)) > tagmvlen)
     tagmvlen = strlen(_(tag_exit));
 
-  /* Allright, draw the dialing directory! */
+  /* Alright, draw the dialing directory! */
 
   dirflush = 0;
   x1 = (COLS / 2) - 37;
@@ -1756,7 +1756,7 @@ again:
           d = d1;
           break;
         }
-      /* ..and if none of them was tagged, check from the begining. */
+      /* ..and if none of them was tagged, check from the beginning. */
       if (!d1)
         for (d1 = dialents; d1 && d1!=d; d1 = d1->next)
           if (d1->flags & FL_TAG) {

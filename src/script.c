@@ -604,7 +604,7 @@ int expect(char *text)
     return f;
   }
 
-  /* Allright. Now do the expect. */
+  /* Alright. Now do the expect. */
   c = OK;
   while (!found) {
     action = NULL;
@@ -1042,7 +1042,7 @@ int s_exec(char *text)
 }
 
 /*
- * Run the script by continously executing "thisline".
+ * Run the script by continuously executing "thisline".
  */
 int execscript(const char *s)
 {

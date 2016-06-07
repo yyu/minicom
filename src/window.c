@@ -118,7 +118,7 @@ int screen_iso = 0;
 int w_init = 0;
 int use_status = 0; /* Turned on in main() */
 
-/* Standard vt100 map (ac cpability) */
+/* Standard vt100 map (ac capability) */
 static const char *def_ac = "+\273,\253aaffggjjkkllmmnnooqqssttuuvvwwxx";
 
 #ifdef DEBUG
@@ -866,7 +866,7 @@ void mc_wscroll(WIN *win, int dir)
     /* Copy line from screen to history buffer */
     memcpy((char *)f, (char *)e, win->xs * sizeof(ELM));
 
-    /* Postion the next line in the history buffer */
+    /* Position the next line in the history buffer */
     win->histline++;
     if (win->histline >= win->histlines)
       win->histline = 0;
@@ -1106,7 +1106,7 @@ void mc_wputs(WIN *win, const char *s)
 
 /*
  * Print a formatted string in a window.
- * Should return stringlength - but who cares.
+ * Should return string length - but who cares.
  */
 int mc_wprintf(WIN *win, const char *fmt, ...)
 {
@@ -1644,7 +1644,7 @@ void mc_wdelchar(WIN *w)
 
 /* ============= Support: edit a line on the screen. ============ */
 
-/* Redraw the line we are editting. */
+/* Redraw the line we are editing. */
 static void lredraw(WIN *w, int x, int y, wchar_t *s, int len)
 {
   int i, f;

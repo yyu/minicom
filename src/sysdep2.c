@@ -1,5 +1,5 @@
 /*
- * sysdep2.c	System dependant routines
+ * sysdep2.c	System dependent routines
  *
  *		getrowcols	- get number of columns and rows.
  *		setcbreak	- set tty mode to raw, cbreak or normal.

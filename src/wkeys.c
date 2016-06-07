@@ -72,7 +72,7 @@ static char *func_key_defs_default[] = {
  * A VERY DIRTY HACK FOLLOWS:
  * This routine figures out if the tty we're using is a serial
  * device OR an IBM PC console. If we're using a console, we can
- * easily reckognize single escape-keys since escape sequences
+ * easily recognize single escape-keys since escape sequences
  * always return > 1 characters from a read()
  */
 static int isconsole;
@@ -230,7 +230,7 @@ int wxgetch(void)
         return K_ERA;
     }
 #if KEY_KLUDGE
-    /* Return single characters immideately */
+    /* Return single characters immediately */
     if (isconsole && nfound == 1 && len == 1)
       return c;
 

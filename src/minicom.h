@@ -25,7 +25,7 @@
  *    for new "get_port()" function in util.c.
  */
 
-/* First include all other application-dependant include files. */
+/* First include all other application-dependent include files. */
 #include "config.h"
 #include "configsym.h"
 #include "window.h"
@@ -108,7 +108,7 @@ EXTERN char scr_passwd[33]; /* Password to use with script */
 EXTERN char termtype[32];  /* Value of getenv("TERM"); */
 EXTERN char *dial_tty;     /* tty to use. */
 
-EXTERN char *dial_name;	    /* System we're conneced to */
+EXTERN char *dial_name;	    /* System we're connected to */
 EXTERN char *dial_number;   /* Number we've dialed. */
 EXTERN char *dial_user;     /* Our username there */
 EXTERN char *dial_pass;     /* Our password */
@@ -157,7 +157,7 @@ EXTERN int num_hist_lines;  /* History buffer size */
 int Jcolor(char *);
 
 EXTERN int size_changed;     /* Window size has changed */
-extern const char *Version;  /* Minicom verson */
+extern const char *Version;  /* Minicom version */
 
 EXTERN int local_echo;      /* Local echo on/off. */
 

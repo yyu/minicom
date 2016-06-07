@@ -1,6 +1,6 @@
 /*
  * functions.c	This file contains the functions that talk to the modem
- *		and the serial port. It seperates the user interface
+ *		and the serial port. It separates the user interface
  *		from the low-level functions. The script language also
  *		uses these functions.
  *

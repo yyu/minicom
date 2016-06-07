@@ -174,7 +174,7 @@ static char *translate(char *s)
 }
 
 /*
- * Trim the leading & trailing whitespaces from the string
+ * Trim leading & trailing whitespace from the string
  * jl 15.09.97
  */
 char *trim(char *outstring, char *instring, int n)

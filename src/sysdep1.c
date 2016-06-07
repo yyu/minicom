@@ -1,7 +1,7 @@
 /*
- * sysdep1.c	system dependant routines.
+ * sysdep1.c	system dependent routines.
  *
- *		m_dtrtoggle	- dropt dtr and raise it again
+ *		m_dtrtoggle	- drop dtr and raise it again
  *		m_break		- send BREAK signal
  *		m_getdcd	- get modem dcd status
  *		m_setdcd	- set modem dcd status
@@ -414,7 +414,7 @@ void m_setparms(int fd, char *baudr, char *par, char *bits, char *stopb,
 #endif /* POSIX_TERMIOS */
 
 
-  /* We generate mark and space parity ourself. */
+  /* We generate mark and space parity ourselves. */
   if (bit == '7' && (par[0] == 'M' || par[0] == 'S'))
     bit = '8';
 

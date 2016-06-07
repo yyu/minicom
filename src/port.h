@@ -1,7 +1,7 @@
 /*
- * port.h	General include file that includes all nessecary files
+ * port.h	General include file that includes all necessary files
  *		for the configured system. This is a general file,
- *		not application dependant. It maybe a bit of overhead
+ *		not application dependent. It maybe a bit of overhead
  *		but simplifies porting greatly.
  *
  *		$Id: port.h,v 1.10 2009-06-06 18:50:42 al-guest Exp $

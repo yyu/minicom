@@ -328,7 +328,7 @@ static int new_filedir(GETSDIR_ENTRY *dirdat, int flushit)
     work_dir = set_work_dir(new_prev_dir, strlen(new_prev_dir));
   }
 
-  /* All right, draw the file directory! */
+  /* Alright, draw the file directory! */
 
   if (flushit) {
     dirflush = 0;
