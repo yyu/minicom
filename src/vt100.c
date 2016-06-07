@@ -978,8 +978,9 @@ void vt_out(int ch)
         }
       else if (vt_line_timestamp == TIMESTAMP_LINE_DELTA)
         {
-          uint64_t d = (tmstmp_now.tv_sec * 1000000 + tmstmp_now.tv_usec)
-                       - (tmstmp_last.tv_sec * 1000000 + tmstmp_last.tv_usec);
+          unsigned long long d;
+	  d =   (tmstmp_now.tv_sec * 1000000 + tmstmp_now.tv_usec)
+              - (tmstmp_last.tv_sec * 1000000 + tmstmp_last.tv_usec);
           snprintf(s, sizeof(s), "[%lld.%03lld] ",
                    d / 1000000, (d % 1000000) / 1000);
           s[sizeof(s) - 1] = 0;
