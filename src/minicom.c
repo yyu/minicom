@@ -954,7 +954,7 @@ static void init_iconv(const char *remote_charset)
   if (iconv_rem2local != (iconv_t)-1)
     iconv_enabled = 1;
   else
-    printf("Activating iconv failed with: %s(%d)\n",
+    printf(_("Activating iconv failed with: %s(%d)\n"),
            strerror(errno), errno);
 }
 
@@ -1164,10 +1164,10 @@ int main(int argc, char **argv)
 #endif
 	  printf("\n");
 	  printf(_("Copyright (C) Miquel van Smoorenburg.\n\n"));
-	  printf("This program is free software; you can redistribute it and/or\n"
+	  printf(_("This program is free software; you can redistribute it and/or\n"
 	         "modify it under the terms of the GNU General Public License\n"
                  "as published by the Free Software Foundation; either version\n"
-                 "2 of the License, or (at your option) any later version.\n\n");
+                 "2 of the License, or (at your option) any later version.\n\n"));
           exit(1);
           break;
         case 's': /* setup mode */

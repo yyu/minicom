@@ -1021,7 +1021,7 @@ int readdialdir(void)
     }
 
     if (r)
-      werror("Failed to read phonelist\n");
+      werror(_("Failed to read phonelist\n"));
 
     /* MINIX terminal type is obsolete */
     if (d->term == 2)

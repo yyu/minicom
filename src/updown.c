@@ -135,7 +135,7 @@ static char *translate(char *s)
 
   translation = malloc(translation_length + 1);
   if (translation == NULL) {
-    do_log("out of memory");
+    do_log(_("out of memory"));
     return NULL;
   }
 
@@ -303,7 +303,7 @@ void updown(int what, int nr)
              what == 'U' ? _("upload") : _("download"));
     mc_wtitle(win, TMID, title);
     if (pipe(pipefd) == -1)
-      werror("pipe() call failed");
+      werror(_("pipe() call failed"));
   } else
     mc_wleave();
 
@@ -513,7 +513,7 @@ void kermit(void)
   char *kermit_path = P_KERMIT;
 
   if (!kermit_path || !*kermit_path) {
-    werror("No kermit path defined!");
+    werror(_("No kermit path defined!"));
     return;
   }
 

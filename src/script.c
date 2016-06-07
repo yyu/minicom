@@ -359,7 +359,7 @@ static int readscript(const char *s)
        * big and triggered nice errors for too long input lines, now
        * we just enlarge the buffer and add a sanity check. This code
        * needs to allocate memory dynamically... */
-      fprintf(stderr, "Input line %u too long, aborting (and fix me!)!\n",
+      fprintf(stderr, _("Input line %u too long, aborting (and fix me!)!\n"),
 	      lineno);
       exit(1);
     }
@@ -419,7 +419,7 @@ int expfound(const char *word)
   int len;
 
   if (word == NULL) {
-    fprintf(stderr, "NULL paramenter to %s!", __func__);
+    fprintf(stderr, _("NULL paramenter to %s!"), __func__);
     exit(1);
   }
 

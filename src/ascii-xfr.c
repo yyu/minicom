@@ -70,7 +70,7 @@ static void lineout(char const *line, int len)
     do {
       ret = write(STDOUT_FILENO, line, len);
       if (ret < 0) {
-	fprintf(stderr, "Error while writing (errno = %d)\n", errno);
+	fprintf(stderr, _("Error while writing (errno = %d)\n"), errno);
 	return;
       }
       len -= ret;
@@ -81,7 +81,7 @@ static void lineout(char const *line, int len)
     while (*line) {
       ret = write(STDOUT_FILENO, line, 1);
       if (ret < 0) {
-	fprintf(stderr, "Error while writing (errno = %d)\n", errno);
+	fprintf(stderr, _("Error while writing (errno = %d)\n"), errno);
 	return;
       }
       if (ret == 1)
@@ -111,7 +111,7 @@ void stats(int force)
     dif = 1;
   last = now;
 
-  fprintf(stderr, "\r%.1f Kbytes transferred at %d CPS",
+  fprintf(stderr, _("\r%.1f Kbytes transferred at %d CPS"),
           (float)bdone / 1024, (int)(bdone / dif));
   fflush(stderr);
 }
@@ -230,7 +230,7 @@ int arecv(char *file)
 
 void usage(void)
 {
-  fprintf(stderr, "\
+  fprintf(stderr, _("\
 Usage: ascii-xfr -s|-r [-dvn] [-l linedelay] [-c character delay] filename\n\
        -s:  send\n\
        -r:  receive\n\
@@ -238,7 +238,7 @@ Usage: ascii-xfr -s|-r [-dvn] [-l linedelay] [-c character delay] filename\n\
        -d:  set End Of File character to Control-D (instead of Control-Z)\n\
        -v:  verbose (statistics on stderr output)\n\
        -n:  do not translate CRLF <--> LF\n\
-       Delays are in milliseconds.\n");
+       Delays are in milliseconds.\n"));
   exit(1);
 }
 
@@ -286,21 +286,21 @@ int main(int argc, char **argv)
   last = start;
 
   if (what == 's') {
-    fprintf(stderr, "ASCII upload of \"%s\"\n", file);
+    fprintf(stderr, _("ASCII upload of \"%s\"\n"), file);
     if (cdelay || ldelay)
-      fprintf(stderr, "Line delay: %d ms, character delay %d ms\n",
+      fprintf(stderr, _("Line delay: %d ms, character delay %d ms\n"),
               ldelay, cdelay);
     fprintf(stderr, "\n");
     fflush(stderr);
     ret = asend(file);
   } else {
-    fprintf(stderr, "ASCII download of \"%s\"\n\n", file);
+    fprintf(stderr, _("ASCII download of \"%s\"\n\n"), file);
     fflush(stderr);
     ret = arecv(file);
   }
   if (verbose) {
     stats(1);
-    fprintf(stderr, "... Done.\n");
+    fprintf(stderr, _("... Done.\n"));
     fflush(stdout);
   }
 

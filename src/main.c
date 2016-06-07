@@ -484,7 +484,7 @@ static char status_message[80];
 static int  status_display_msg_until;
 static int  status_message_showing;
 
-static const char default_statusline_format[] = "%H for help | %b | %C | Minicom %V | %T | %t | %D";
+static const char default_statusline_format[] = N_("%H for help | %b | %C | Minicom %V | %T | %t | %D");
 
 static const char *statusline_format = default_statusline_format;
 
@@ -597,7 +597,7 @@ static void show_status_fmt(const char *fmt)
 
 void show_status()
 {
-  show_status_fmt(statusline_format);
+  show_status_fmt(gettext(statusline_format));
 }
 
 time_t old_online = -2;

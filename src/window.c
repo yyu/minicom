@@ -2054,7 +2054,7 @@ int win_init(int fg, int bg, int attr)
 
   /* Memory for global map */
   if ((gmap = malloc(sizeof(ELM) * (LINES + 1) * COLS)) == NULL) {
-    fprintf(stderr, "Not enough memory\n");
+    fprintf(stderr, _("Not enough memory\n"));
     return -1;
   };
   _buffend = _bufstart + BUFFERSIZE;
