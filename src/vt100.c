@@ -188,9 +188,9 @@ void vt_pinit(WIN *win, int fg, int bg)
   newy1 = 0;
   newy2 = vt_win->ys - 1;
   mc_wresetregion(vt_win);
-  if (fg > 0)
+  if (fg >= 0)
     vt_fg = fg;
-  if (bg > 0)
+  if (bg >= 0)
     vt_bg = bg;
   mc_wsetfgcol(vt_win, vt_fg);
   mc_wsetbgcol(vt_win, vt_bg);
