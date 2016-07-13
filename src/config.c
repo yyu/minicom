@@ -824,7 +824,6 @@ static void doscrkeyb(void)
   int c;
   int once = 0;
   int clr = 1;
-  int tmp_c;    /* fmg - need it to color keep in sanity checks */
   char buf[16];
   int miny = 2, maxy = 22;
   int old_stat = P_STATLINE[0];
@@ -908,7 +907,7 @@ static void doscrkeyb(void)
         /* fmg - sanity checks... "we found the enemy and he is us" :-) */
 
         if (mfcolor == mbcolor) {  /* oops... */
-          tmp_c = mfcolor;      /* save color (same for both, right?) */
+          int tmp_c = mfcolor;  /* save color (same for both, right?) */
           mfcolor = WHITE;      /* make sure they can see error :-) */
           mbcolor = BLACK;
           werror(_("Menu foreground == background color, change!"));
@@ -917,12 +916,7 @@ static void doscrkeyb(void)
           break;
         }
         if (tfcolor == tbcolor) {  /* oops... */
-          tmp_c = mfcolor;      /* save color (same for both, right?) */
-          mfcolor = WHITE;      /* make sure they can see error :-) */
-          mbcolor = BLACK;
           werror(_("Terminal foreground == background color, change!"));
-          mfcolor = tmp_c;      /* restore colors */
-          mbcolor = tmp_c;
           break;
         }
         /* fmg - I'll let them change sfcolor=sbcolor because it's just
