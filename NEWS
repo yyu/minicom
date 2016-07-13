@@ -12,6 +12,7 @@ New:
  - Fix F10 macro key used in current setups
  - Add F11 and F12 for macro use
  - Fixed DTR for recent systems
+ - Bug fixes
 
 New for for version 2.7:
  - Configurable status line via -F option, see manpage for a listing
