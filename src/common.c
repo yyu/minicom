@@ -33,6 +33,8 @@
 #include "port.h"
 #include "minicom.h"
 #include <stdarg.h>
+#include <wchar.h>
+#include <assert.h>
 
 /* Prefix a non-absolute file with the home directory. */
 char *pfix_home(char *s)
@@ -111,18 +113,29 @@ one_wctomb(char *s, wchar_t wchar)
   return len;
 }
 
-/* Number of characters in S */
+/* Return number of required columns on display for the given string.
+ * Asian character sets may require two columns to show a single character */
 size_t
-mbslen(const char *s)
+mbswidth(const char *s)
 {
-  size_t len;
+  size_t _ml = mbstowcs(NULL, s, 0);
+  if (_ml == (size_t)-1)
+    return 0;
 
-  len = 0;
-  while (*s != 0) {
-    wchar_t wc;
+  wchar_t *wcs = calloc(_ml + 1, sizeof(wchar_t));
+  assert(wcs);
+  assert(mbstowcs(wcs, s, _ml + 1) != (size_t)-1);
 
-    s += one_mbtowc(&wc, s, MB_LEN_MAX);
-    len++;
-  }
-  return len;
+  size_t r = 0;
+  size_t l = wcslen(wcs);
+  for (size_t i = 0; i < l; ++i)
+    {
+      int a = wcwidth(*wcs);
+      if (a == -1)
+        ++r;
+      else
+        r += a;
+      wcs++;
+    }
+  return r;
 }

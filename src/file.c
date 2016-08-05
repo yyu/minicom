@@ -365,8 +365,8 @@ static int new_filedir(GETSDIR_ENTRY *dirdat, int flushit)
     snprintf(cwd_str_fmt, sizeof(cwd_str_fmt),
              _("Directory: %%-%ds"), (int)dp_len);
   }
-  new_dp_len = mbslen (work_dir);
-  if (new_dp_len + (fmt_len = mbslen(cwd_str_fmt)) > 75) {
+  new_dp_len = mbswidth(work_dir);
+  if (new_dp_len + (fmt_len = mbswidth(cwd_str_fmt)) > 75) {
     size_t i;
     char *tmp_dir = work_dir;
 

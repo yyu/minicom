@@ -1158,9 +1158,9 @@ void mc_wtitle(WIN *w, int pos, const char *s)
   if (pos == TLEFT)
     x = w->x1;
   if (pos == TRIGHT)
-    x = w->x2 - mbslen(s) - 1;
+    x = w->x2 - mbswidth(s) - 1;
   if (pos == TMID)
-    x = w->x1 + (w->xs - mbslen(s)) / 2 - 1;
+    x = w->x1 + (w->xs - mbswidth(s)) / 2 - 1;
   if (x < w->x1)
     x = w->x1;
 
@@ -1238,12 +1238,12 @@ int mc_wselect(int x, int y, const char *const *choices,
 
   while (*a != NULL) {
     count++;
-    if (mbslen(_(*a)) > len)
-      len = mbslen(_(*a));
+    if (mbswidth(_(*a)) > len)
+      len = mbswidth(_(*a));
     a++;
   }
-  if (title != NULL && mbslen(title) + 2 > len)
-    len = mbslen(title) + 2;
+  if (title != NULL && mbswidth(title) + 2 > len)
+    len = mbswidth(title) + 2;
   if (attr & XA_REVERSE) {
     high_on = attr & ~XA_REVERSE;
     high_off = attr;

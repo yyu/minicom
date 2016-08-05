@@ -659,7 +659,7 @@ void runscript(int ask, const char *s, const char *l, const char *p)
     mc_wredraw(w, 1);
 
     while (!done) {
-      mc_wlocate(w, mbslen (question) + 5, 5);
+      mc_wlocate(w, mbswidth(question) + 5, 5);
       n = wxgetch();
       if (islower(n))
         n = toupper(n);
@@ -677,19 +677,19 @@ void runscript(int ask, const char *s, const char *l, const char *p)
           mc_wclose(w, 1);
           return;
         case 'A':
-          mc_wlocate(w, mbslen (username) + 1, 1);
+          mc_wlocate(w, mbswidth(username) + 1, 1);
           mc_wclreol(w);
           scr_user[0] = 0;
           mc_wgets(w, scr_user, 32, 32);
           break;
         case 'B':
-          mc_wlocate(w, mbslen (password) + 1, 2);
+          mc_wlocate(w, mbswidth(password) + 1, 2);
           mc_wclreol(w);
           scr_passwd[0] = 0;
           mc_wgets(w, scr_passwd, 32, 32);
           break;
         case 'C':
-          mc_wlocate(w, mbslen (name_of_script) + 1, 3);
+          mc_wlocate(w, mbswidth(name_of_script) + 1, 3);
           mc_wgets(w, scr_name, 32, sizeof(scr_name) - 1);
           break;
         default:

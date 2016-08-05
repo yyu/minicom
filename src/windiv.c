@@ -47,8 +47,8 @@ static WIN *vmc_tell(const char *fmt, va_list va)
 
   vsnprintf(buf, sizeof(buf), fmt, va);
 
-  w = mc_wopen((COLS / 2) - 2 - mbslen(buf) / 2, 8,
-	    (COLS / 2) + 2 + mbslen(buf) / 2, 10,
+  w = mc_wopen((COLS / 2) - 2 - mbswidth(buf) / 2, 8,
+	    (COLS / 2) + 2 + mbswidth(buf) / 2, 10,
 	     BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
   mc_wcursor(w, CNONE);
   mc_wlocate(w, 2, 1);
@@ -99,8 +99,8 @@ int ask(const char *what, const char **s)
 
   size = 5 * num;
   offs = 0;
-  if (mbslen(what) > 2 * size + 4) {
-    size = mbslen(what) / 2 + 2;
+  if (mbswidth(what) > 2 * size + 4) {
+    size = mbswidth(what) / 2 + 2;
     offs = size - 5*num;
   }
   w = mc_wopen((COLS / 2) - size , 8, (COLS / 2) + 1 + size, 9,
@@ -109,7 +109,7 @@ int ask(const char *what, const char **s)
   dirflush = 0;
 
   mc_wcursor(w, CNONE);
-  mc_wlocate(w, 1 + size - (mbslen(what) / 2), 0);
+  mc_wlocate(w, 1 + size - (mbswidth(what) / 2), 0);
   mc_wputs(w, what);
 
   for (f = 1; f < num; f++) {

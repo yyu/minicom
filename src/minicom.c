@@ -33,6 +33,7 @@
 #include <wctype.h>
 #include <iconv.h>
 #include <limits.h>
+#include <assert.h>
 
 #define EXTERN
 #include "port.h"
@@ -268,10 +269,10 @@ void searchhist(WIN *w_hist, wchar_t *str)
   mc_wredraw(w_new, 1);
   mc_wflush();
 
-  mc_wlocate(w_new, mbslen(hline)+6, 0);
+  mc_wlocate(w_new, mbswidth(hline) + 6, 0);
   for (i = 0; str[i] != 0; i++)
     mc_wputc(w_new, str[i]);
-  mc_wlocate(w_new, mbslen(hline)+6, 0);
+  mc_wlocate(w_new, mbswidth(hline) + 6, 0);
   mc_wgetwcs(w_new, str, MAX_SEARCH, MAX_SEARCH);
 #if 0
   if (!str[0]) { /* then unchanged... must have pressed ESC... get out */
@@ -1004,6 +1005,30 @@ static void close_iconv(void)
 #endif
 /* -------------------------------------------- */
 
+static void test_mbswidth(void)
+{
+  struct entry {
+    size_t _mbswidth;
+    char *s;
+  };
+  struct entry e[] = {
+    { 14, "要修改哪个选项", },
+    { 15, "要修改哪	个选项", },
+    { 30, "指令稿「%s」: 未預期結束的檔案" },
+    { 24, "Répertoire des scripts :" },
+    { 25, "Contrôle de flux matériel" },
+    { 14, "リセット文字列" },
+    {  5, "😂😀😄😏😒" },
+    { 10, "1234567890" },
+  };
+
+  for (unsigned i = 0; i < sizeof(e) / sizeof(e[0]); ++i)
+    {
+      if (0)
+        printf("%d: mbswidth=%zd\n", i, mbswidth(e[i].s));
+      assert(mbswidth(e[i].s) == e[i]._mbswidth);
+    }
+}
 
 int main(int argc, char **argv)
 {
@@ -1120,6 +1145,7 @@ int main(int argc, char **argv)
       screen_ibmpc = screen_iso = 0;
   }
 
+  test_mbswidth();
 
   /* MARK updated 02/17/95 default history buffer size */
   num_hist_lines = 256;

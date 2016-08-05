@@ -257,26 +257,26 @@ static void dologopt(void)
   mc_wputs(w, question);
   mc_wredraw(w, 1);
   while(1) {
-    mc_wlocate(w, mbslen(question) + 5, 5);
+    mc_wlocate(w, mbswidth(question) + 5, 5);
     c = rwxgetch();
     switch(c) {
       case '\n':
         mc_wclose(w, 1);
         return;
       case 'A':
-        pgets(w, mbslen(logfnstr) + 1, 0,
+        pgets(w, mbswidth(logfnstr) + 1, 0,
               P_LOGFNAME, PARS_VAL_LEN, PARS_VAL_LEN, 1);
         strcpy(logfname,P_LOGFNAME);
         break;
       case 'B':
         strcpy(P_LOGCONN, yesno(P_LOGCONN[0] == 'N'));
-        mc_wlocate(w, mbslen(logconn) + 1, 1);
+        mc_wlocate(w, mbswidth(logconn) + 1, 1);
         mc_wprintf(w, "%s  ", _(P_LOGCONN));
         markch(P_LOGCONN);
         break;
       case 'C':
         strcpy(P_LOGXFER, yesno(P_LOGXFER[0] == 'N'));
-        mc_wlocate(w, mbslen(logxfer) + 1, 2);
+        mc_wlocate(w, mbswidth(logxfer) + 1, 2);
         mc_wprintf(w, "%s  ", _(P_LOGXFER));
         markch(P_LOGXFER);
         break;
@@ -316,28 +316,28 @@ static void dopath(void)
   mc_wredraw(w, 1);
 
   while(1) {
-    mc_wlocate(w, mbslen (question) + 5, 8);
+    mc_wlocate(w, mbswidth(question) + 5, 8);
     c = rwxgetch();
     switch(c) {
       case '\n':
         mc_wclose(w, 1);
         return;
       case 'A':
-        pgets(w, mbslen (download_directory) + 1, 0, P_DOWNDIR, 64, 64, 1);
+        pgets(w, mbswidth(download_directory) + 1, 0, P_DOWNDIR, 64, 64, 1);
         init_dir('d');
         break;
       case 'B':
-        pgets(w, mbslen (upload_directory) + 1, 1, P_UPDIR, 64, 64, 1);
+        pgets(w, mbswidth(upload_directory) + 1, 1, P_UPDIR, 64, 64, 1);
         init_dir('u');
         break;
       case 'C':
-        pgets(w, mbslen (script_directory) + 1, 2, P_SCRIPTDIR, 64, 64, 1);
+        pgets(w, mbswidth(script_directory) + 1, 2, P_SCRIPTDIR, 64, 64, 1);
         break;
       case 'D':
-        pgets(w, mbslen (script_program) + 1, 3, P_SCRIPTPROG, 64, 64, 1);
+        pgets(w, mbswidth(script_program) + 1, 3, P_SCRIPTPROG, 64, 64, 1);
         break;
       case 'E':
-        pgets(w, mbslen (kermit_program) + 1, 4, P_KERMIT, 64, 64, 1);
+        pgets(w, mbswidth(kermit_program) + 1, 4, P_KERMIT, 64, 64, 1);
         break;
 #ifdef LOGFILE
       case 'F':
@@ -467,7 +467,7 @@ static void doproto(void)
   mc_wredraw(w, 1);
 
   do {
-    mc_wlocate(w, mbslen (question) + 4, 17);
+    mc_wlocate(w, mbswidth(question) + 4, 17);
     c = rwxgetch();
     if (c >= 'A' && c <= 'L')
       inputproto(w, c - 'A');
@@ -488,7 +488,7 @@ static void doproto(void)
       c = ' ';
     }
     else if (c == 'M') {
-      mc_wlocate(w, mbslen (zmodem_download) + 2, 13);
+      mc_wlocate(w, mbswidth(zmodem_download) + 2, 13);
       mc_wprintf(w, " \b");
       c = rwxgetch();
       if (c >= 'A' && c <= 'L') {
@@ -507,11 +507,11 @@ static void doproto(void)
       strcpy(P_FSELW, yesno(P_FSELW[0] == 'N'));
       if (P_FSELW[0] == 'N') {
         strcpy(P_ASKDNDIR, "No ");
-        mc_wlocate(w, mbslen (prompt_downdir) + 2, 15);
+        mc_wlocate(w, mbswidth(prompt_downdir) + 2, 15);
         mc_wprintf(w, "%s ", _(P_ASKDNDIR));
         markch(P_ASKDNDIR);
       }
-      mc_wlocate(w, mbslen (use_filename_selection) + 2, 14);
+      mc_wlocate(w, mbswidth(use_filename_selection) + 2, 14);
       mc_wprintf(w, "%s ", _(P_FSELW));
       markch(P_FSELW);
     }
@@ -519,11 +519,11 @@ static void doproto(void)
       strcpy(P_ASKDNDIR, yesno(P_ASKDNDIR[0] == 'N'));
       if (P_ASKDNDIR[0] == 'Y') {
         strcpy(P_FSELW, "Yes");
-        mc_wlocate(w, mbslen (use_filename_selection) + 2, 14);
+        mc_wlocate(w, mbswidth(use_filename_selection) + 2, 14);
         mc_wprintf(w, "%s ", _(P_FSELW));
         markch(P_FSELW);
       }
-      mc_wlocate(w, mbslen (prompt_downdir) + 2, 15);
+      mc_wlocate(w, mbswidth(prompt_downdir) + 2, 15);
       mc_wprintf(w, "%s ", _(P_ASKDNDIR));
       markch(P_ASKDNDIR);
     }
@@ -561,30 +561,30 @@ static void doserial(void)
   mc_wredraw(w, 1);
 
   while(1) {
-    mc_wlocate(w, mbslen (question) + 5, 8);
+    mc_wlocate(w, mbswidth(question) + 5, 8);
     switch (rwxgetch()) {
       case '\n':
         mc_wclose(w, 1);
         return;
       case 'A':
-        pgets(w, mbslen (serial_device) + 1, 0, P_PORT, 64, 64, 1);
+        pgets(w, mbswidth(serial_device) + 1, 0, P_PORT, 64, 64, 1);
         break;
 #if !HAVE_LOCKDEV
       case 'B':
-        pgets(w, mbslen (lockfile_location) + 1, 1, P_LOCK, 64, 64, 1);
+        pgets(w, mbswidth(lockfile_location) + 1, 1, P_LOCK, 64, 64, 1);
         break;
 #endif
       case 'C':
-        pgets(w, mbslen (callin_program) + 1, 2, P_CALLIN, 64, 64, 1);
+        pgets(w, mbswidth(callin_program) + 1, 2, P_CALLIN, 64, 64, 1);
         break;
       case 'D':
-        pgets(w, mbslen (callout_program) + 1, 3, P_CALLOUT, 64, 64, 1);
+        pgets(w, mbswidth(callout_program) + 1, 3, P_CALLOUT, 64, 64, 1);
         break;
       case 'E':
         get_bbp(P_BAUDRATE, P_BITS, P_PARITY, P_STOPB, 0);
         if (portfd >= 0)
           port_init();
-        mc_wlocate(w, mbslen (bps_par_bits) + 1, 4);
+        mc_wlocate(w, mbswidth(bps_par_bits) + 1, 4);
         mc_wprintf(w, "%s %s%s%s  \n", P_BAUDRATE, P_BITS, P_PARITY, P_STOPB);
         show_status();
         markch(P_BAUDRATE);
@@ -594,7 +594,7 @@ static void doserial(void)
         break;
       case 'F':
         strcpy(P_HASRTS, yesno(P_HASRTS[0] == 'N'));
-        mc_wlocate(w, mbslen (hardware_flow_control) + 1, 5);
+        mc_wlocate(w, mbswidth(hardware_flow_control) + 1, 5);
         mc_wprintf(w, "%s ", _(P_HASRTS));
         if (portfd >= 0)
           port_init();
@@ -602,7 +602,7 @@ static void doserial(void)
         break;
       case 'G':
         strcpy(P_HASXON, yesno(P_HASXON[0] == 'N'));
-        mc_wlocate(w, mbslen (software_flow_control) + 1, 6);
+        mc_wlocate(w, mbswidth(software_flow_control) + 1, 6);
         mc_wprintf(w, "%s ", _(P_HASXON));
         if (portfd >= 0)
           port_init();
@@ -670,7 +670,7 @@ static void domodem(void)
   mc_wprintf(w, "%s %.48s\n", dialing_suffix_3, P_MDIALSUF3);
   mc_wprintf(w, "%s %.48s\n", connect_string, P_MCONNECT);
   mc_wprintf(w, "%s %-20.20s  %.20s\n", no_connect_strings, P_MNOCON1, P_MNOCON2);
-  mc_wlocate(w, mbslen (no_connect_strings) + 1, 11);
+  mc_wlocate(w, mbswidth(no_connect_strings) + 1, 11);
   mc_wprintf(w, "%-20.20s  %.20s\n", P_MNOCON3, P_MNOCON4);
   mc_wprintf(w, "%s %.48s\n", hangup_string, P_MHANGUP);
   mc_wprintf(w, "%s %.48s\n", dial_cancel_string, P_MDIALCAN);
@@ -704,53 +704,53 @@ static void domodem(void)
     switch(c) {
       case 'M':
         if (string_size == 0)
-          string_size = mbslen(dial_time);
+          string_size = mbswidth(dial_time);
       case 'N':
         if (string_size == 0)
-          string_size = mbslen(delay_before_redial);
+          string_size = mbswidth(delay_before_redial);
       case 'O':
         if (string_size == 0)
-          string_size = mbslen(number_of_tries);
+          string_size = mbswidth(number_of_tries);
       case 'P':
         if (string_size == 0)
-          string_size = mbslen(dtr_drop_time);
+          string_size = mbswidth(dtr_drop_time);
         ypos++;
         maxl = 4;
       case 'K':
         if (string_size == 0)
-          string_size = mbslen(hangup_string);
+          string_size = mbswidth(hangup_string);
       case 'L':
         if (string_size == 0)
-          string_size = mbslen(dial_cancel_string);
+          string_size = mbswidth(dial_cancel_string);
         ypos -= 2;
         c += 3;
       case 'A':
         if (string_size == 0)
-          string_size = mbslen(init_string);
+          string_size = mbswidth(init_string);
       case 'B':
         if (string_size == 0)
-          string_size = mbslen(reset_string);
+          string_size = mbswidth(reset_string);
       case 'C':
         if (string_size == 0)
-          string_size = mbslen(dialing_prefix_1);
+          string_size = mbswidth(dialing_prefix_1);
       case 'D':
         if (string_size == 0)
-          string_size = mbslen(dialing_suffix_1);
+          string_size = mbswidth(dialing_suffix_1);
       case 'E':
         if (string_size == 0)
-          string_size = mbslen(dialing_prefix_2);
+          string_size = mbswidth(dialing_prefix_2);
       case 'F':
         if (string_size == 0)
-          string_size = mbslen(dialing_suffix_2);
+          string_size = mbswidth(dialing_suffix_2);
       case 'G':
         if (string_size == 0)
-          string_size = mbslen(dialing_prefix_3);
+          string_size = mbswidth(dialing_prefix_3);
       case 'H':
         if (string_size == 0)
-          string_size = mbslen(dialing_suffix_3);
+          string_size = mbswidth(dialing_suffix_3);
       case 'I':
         if (string_size == 0)
-          string_size = mbslen(connect_string);
+          string_size = mbswidth(connect_string);
 
 	{
 	  int loc = c - 'A';
@@ -775,7 +775,7 @@ static void domodem(void)
 	}
         break;
       case 'J':
-        string_size = mbslen (no_connect_strings);
+        string_size = mbswidth (no_connect_strings);
         /* Walk through all four */
         pgets(w, string_size + 1, 10, P_MNOCON1, 20, 64, 0);
         pgets(w, string_size + 1 + 22, 10, P_MNOCON2, 20, 64, 0);
@@ -784,23 +784,23 @@ static void domodem(void)
         break;
       case 'Q':
         psets(P_MAUTOBAUD, yesno(P_MAUTOBAUD[0] == 'N'));
-        mc_wlocate(w, 35 + mbslen (auto_bps_detect), 15);
+        mc_wlocate(w, 35 + mbswidth (auto_bps_detect), 15);
         mc_wputs(w, _(P_MAUTOBAUD));
         break;
       case 'R':
         psets(P_HASDCD, yesno(P_HASDCD[0] == 'N'));
-        mc_wlocate(w, 35 + mbslen (modem_has_dcd_line), 16);
+        mc_wlocate(w, 35 + mbswidth (modem_has_dcd_line), 16);
         mc_wputs(w, _(P_HASDCD));
         break;
       case 'S':
         psets(P_SHOWSPD, P_SHOWSPD[0] == 'd' ? "l": "d");
-        mc_wlocate(w, 35 + mbslen (shown_speed), 17);
+        mc_wlocate(w, 35 + mbswidth (shown_speed), 17);
         mc_wputs(w, sspd(P_SHOWSPD));
         show_status();
         break;
       case 'T': /* Update for multi-node */
         psets(P_MULTILINE, yesno(P_MULTILINE[0] == 'N' ));
-        mc_wlocate(w, 35 + mbslen(multi_node), 18);
+        mc_wlocate(w, 35 + mbswidth(multi_node), 18);
         mc_wputs(w, _(P_MULTILINE));
         break;
         /* er 18-Apr-99 */
@@ -889,7 +889,7 @@ static void doscrkeyb(void)
       mc_wclreol(w);
       clr = 0;
     } else
-      mc_wlocate(w, mbslen (question) + 3, maxy - miny);
+      mc_wlocate(w, mbswidth(question) + 3, maxy - miny);
 
     if (once) {	/* fmg - allow to force looping */
       c = once;
@@ -961,7 +961,7 @@ static void doscrkeyb(void)
         else
           sprintf(buf, "^%c           ", (c & 0x1f) + 'A' - 1);
         psets(P_ESCAPE, buf);
-        mc_wlocate(w, mbslen (command_key) + 1, 0);
+        mc_wlocate(w, mbswidth(command_key) + 1, 0);
         mc_wputs(w, _(buf));
         clr = 1;
         alt_override = 0;
@@ -984,7 +984,7 @@ static void doscrkeyb(void)
           psets(P_BACKSPACE, "BS");
         else
           psets(P_BACKSPACE, "DEL");
-        mc_wlocate(w, mbslen (backspace_key) + 1, 1);
+        mc_wlocate(w, mbswidth(backspace_key) + 1, 1);
         mc_wprintf(w, "%s ", P_BACKSPACE);
         keyboard(KSETBS, P_BACKSPACE[0] == 'B' ? 8 : 127);
         break;
@@ -998,12 +998,12 @@ static void doscrkeyb(void)
           if (LINES > 24)
             tempst = 0;
         }
-        mc_wlocate(w, mbslen (status_line) + 1, 2);
+        mc_wlocate(w, mbswidth(status_line) + 1, 2);
         mc_wprintf(w, "%s ", _(P_STATLINE));
         break;
       case 'D':
         psets(P_SOUND, yesno(P_SOUND[0] == 'N'));
-        mc_wlocate(w, mbslen (alarm_sound) + 1, 3);
+        mc_wlocate(w, mbswidth(alarm_sound) + 1, 3);
         mc_wprintf(w, "%s", _(P_SOUND));
         break;
       case 'E': /* fmg - letters cycle colors */
@@ -1012,7 +1012,7 @@ static void doscrkeyb(void)
         else
           mfcolor++;
         psets(P_MFG, J_col[mfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_menu) + 1, 4);
+        mc_wlocate(w, mbswidth(foreground_color_menu) + 1, 4);
         mc_wprintf(w, "%s   ", _(J_col[mfcolor]));
         break;
       case 'F': /* fmg - letters cycle colors */
@@ -1021,7 +1021,7 @@ static void doscrkeyb(void)
         else
           mbcolor++;
         psets(P_MBG, J_col[mbcolor]);
-        mc_wlocate(w, mbslen (background_color_menu) + 1, 5);
+        mc_wlocate(w, mbswidth(background_color_menu) + 1, 5);
         mc_wprintf(w, "%s   ", _(J_col[mbcolor]));
         break;
       case 'G': /* fmg - letters cycle colors */
@@ -1030,7 +1030,7 @@ static void doscrkeyb(void)
         else
           tfcolor++;
         psets(P_TFG, J_col[tfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_term) + 1, 6);
+        mc_wlocate(w, mbswidth(foreground_color_term) + 1, 6);
         mc_wprintf(w, "%s   ", _(J_col[tfcolor]));
         if (us)
           vt_pinit(us, tfcolor, tbcolor);
@@ -1041,7 +1041,7 @@ static void doscrkeyb(void)
         else
           tbcolor++;
         psets(P_TBG, J_col[tbcolor]);
-        mc_wlocate(w, mbslen (background_color_term) + 1, 7);
+        mc_wlocate(w, mbswidth(background_color_term) + 1, 7);
         mc_wprintf(w, "%s   ", _(J_col[tbcolor]));
         if (us)
           vt_pinit(us, tfcolor, tbcolor);
@@ -1062,7 +1062,7 @@ static void doscrkeyb(void)
           show_status();
         }
         psets(P_SFG, J_col[sfcolor]);
-        mc_wlocate(w, mbslen (foreground_color_stat) + 1, 8);
+        mc_wlocate(w, mbswidth(foreground_color_stat) + 1, 8);
         mc_wprintf(w, "%s   ", _(J_col[sfcolor]));
         break;
       case 'J': /* fmg - letters cycle colors & redraw stat line */
@@ -1081,11 +1081,11 @@ static void doscrkeyb(void)
           show_status();
         }
         psets(P_SBG, J_col[sbcolor]);
-        mc_wlocate(w, mbslen (background_color_stat) + 1, 9);
+        mc_wlocate(w, mbswidth(background_color_stat) + 1, 9);
         mc_wprintf(w, "%s   ", _(J_col[sbcolor]));
         break;
       case 'K': /* MARK updated 02/17/95 - Config history size */
-        pgets(w, mbslen (history_buffer_size) + 1, 10,
+        pgets(w, mbswidth(history_buffer_size) + 1, 10,
               P_HISTSIZE, 6, 6, 0);
 
         /* In case gibberish or a value was out of bounds, */
@@ -1097,11 +1097,11 @@ static void doscrkeyb(void)
         else if (atoi(P_HISTSIZE) >= 5000)
           strcpy(P_HISTSIZE,"5000");
 
-        mc_wlocate(w, mbslen (history_buffer_size) + 1, 10);
+        mc_wlocate(w, mbswidth(history_buffer_size) + 1, 10);
         mc_wprintf(w, "%s     ", P_HISTSIZE);
         break;
       case 'L': /* fmg - get local macros storage file */
-        pgets(w, mbslen (macros_file) + 1, 11, P_MACROS, 64, 64, 1);
+        pgets(w, mbswidth(macros_file) + 1, 11, P_MACROS, 64, 64, 1);
 
         /* Try to open the file to read it in. */
         fp = fopen(pfix_home(P_MACROS), "r+");
@@ -1129,38 +1129,38 @@ static void doscrkeyb(void)
         break;
       case 'N':
         psets(P_MACENAB, yesno(P_MACENAB[0] == 'N'));
-        mc_wlocate(w, mbslen (macros_enabled) + 1, 13);
+        mc_wlocate(w, mbswidth(macros_enabled) + 1, 13);
         mc_wprintf(w, "%s", _(P_MACENAB));
         break;
       case 'O': /* Character conversions - jl / 04.09.97 */
         doconv();
-        mc_wlocate(w, mbslen (character_conversion) + 1, 14);
+        mc_wlocate(w, mbswidth(character_conversion) + 1, 14);
         mc_wprintf(w, "%-16.16s", _(P_CONVF));
         break;
       case 'P':
         psets(P_ADDLINEFEED, yesno(P_ADDLINEFEED[0] == 'N'));
-        mc_wlocate(w, mbslen (add_linefeed) + 1, 15);
+        mc_wlocate(w, mbswidth(add_linefeed) + 1, 15);
         mc_wprintf(w, "%s", _(P_ADDLINEFEED));
         break;
       case 'Q':
         psets(P_LOCALECHO, yesno(P_LOCALECHO[0] == 'N'));
-        mc_wlocate(w, mbslen (local_echo_str) + 1, 16);
+        mc_wlocate(w, mbswidth(local_echo_str) + 1, 16);
         mc_wprintf(w, "%s", _(P_LOCALECHO));
         break;
       case 'R':
         psets(P_LINEWRAP, yesno(P_LINEWRAP[0] == 'N'));
-        mc_wlocate(w, mbslen (line_wrap) + 1, 17);
+        mc_wlocate(w, mbswidth(line_wrap) + 1, 17);
         mc_wprintf(w, "%s", _(P_LINEWRAP));
         break;
       case 'S':
 	psets(P_DISPLAYHEX, yesno(P_DISPLAYHEX[0] == 'N'));
-	mc_wlocate(w, mbslen(display_hex_str) + 1, 18);
+	mc_wlocate(w, mbswidth(display_hex_str) + 1, 18);
 	mc_wprintf(w, "%s", _(P_DISPLAYHEX));
 	display_hex = strcasecmp(P_DISPLAYHEX, "yes") == 0;
 	break;
       case 'T':
         psets(P_ADDCARRIAGERETURN, yesno(P_ADDCARRIAGERETURN[0] == 'N'));
-        mc_wlocate(w, mbslen (add_carriagereturn) + 1, 19);
+        mc_wlocate(w, mbswidth(add_carriagereturn) + 1, 19);
         mc_wprintf(w, "%s", _(P_ADDCARRIAGERETURN));
         break;
      }
@@ -1202,7 +1202,7 @@ int dotermmenu(void)
   mc_wredraw(w, 1);
 
   while (1) {
-    mc_wlocate(w, mbslen (question) + 5, 7);
+    mc_wlocate(w, mbswidth(question) + 5, 7);
     c = rwxgetch();
     switch(c) {
       case '\n':
@@ -1221,9 +1221,9 @@ int dotermmenu(void)
           new_term = VT100;
           psets(P_BACKSPACE, "DEL");
         }
-        mc_wlocate(w, mbslen (terminal_emulation) + 1, 1);
+        mc_wlocate(w, mbswidth(terminal_emulation) + 1, 1);
         mc_wprintf(w, "%s ", new_term == VT100 ? "VT102" : "ANSI");
-        mc_wlocate(w, mbslen (backspace_key_sends) + 1, 2);
+        mc_wlocate(w, mbswidth(backspace_key_sends) + 1, 2);
         mc_wprintf(w, "%s ", P_BACKSPACE);
         keyboard(KSETBS, P_BACKSPACE[0] == 'B' ? 8 : 127);
         break;
@@ -1232,7 +1232,7 @@ int dotermmenu(void)
           psets(P_BACKSPACE, "BS");
         else
           psets(P_BACKSPACE, "DEL");
-        mc_wlocate(w, mbslen (backspace_key_sends) + 1, 2);
+        mc_wlocate(w, mbswidth(backspace_key_sends) + 1, 2);
         mc_wprintf(w, "%s ", P_BACKSPACE);
         keyboard(KSETBS, P_BACKSPACE[0] == 'B' ? 8 : 127);
         break;
@@ -1246,15 +1246,15 @@ int dotermmenu(void)
           if (LINES > 24 || use_status)
             tempst = 0;
         }
-        mc_wlocate(w, mbslen (status_line) + 1, 3);
+        mc_wlocate(w, mbswidth(status_line) + 1, 3);
         mc_wprintf(w, "%s ", _(P_STATLINE));
         break;
       case 'D':
         sprintf(buf, "%d", vt_nl_delay);
-        mc_wlocate(w, mbslen(msg_nl_delay) + 1, 4);
+        mc_wlocate(w, mbswidth(msg_nl_delay) + 1, 4);
         mc_wgets(w, buf, 5, 5);
         vt_nl_delay = atoi(buf);
-        mc_wlocate(w, mbslen(msg_nl_delay) + 1, 4);
+        mc_wlocate(w, mbswidth(msg_nl_delay) + 1, 4);
         mc_wprintf(w, "%-4d", vt_nl_delay);
         break;
       case 'E':
@@ -1262,10 +1262,10 @@ int dotermmenu(void)
         break;
       case 'F':
         sprintf(buf, "%d", vt_ch_delay);
-        mc_wlocate(w, mbslen(msg_ch_delay) + 1, 6);
+        mc_wlocate(w, mbswidth(msg_ch_delay) + 1, 6);
         mc_wgets(w, buf, 5, 5);
         vt_ch_delay = atoi(buf);
-        mc_wlocate(w, mbslen(msg_ch_delay) + 1, 6);
+        mc_wlocate(w, mbswidth(msg_ch_delay) + 1, 6);
         mc_wprintf(w, "%-4d", vt_ch_delay);
         break;
       default:
@@ -1640,7 +1640,7 @@ void domacros(void)
       mc_wclreol(w);
       clr = 0;
     } else
-      mc_wlocate(w, mbslen (question) + 2, 14);
+      mc_wlocate(w, mbswidth(question) + 2, 14);
 
     switch (rwxgetch()) {
       case '\n':
@@ -1795,7 +1795,7 @@ void doconv(void)
         strcpy(buf,P_CONVF);
         prompt=_("Load file: %s");
         mc_wprintf(w, prompt, buf);
-        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
+        pgets(w, mbswidth(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
         if (loadconv(P_CONVF) == 0) {
           if (strcmp(P_CONVF,buf))
             markch(P_CONVF);
@@ -1807,7 +1807,7 @@ void doconv(void)
         strcpy(buf,P_CONVF);
         prompt=_("Save as file: %s");
         mc_wprintf(w, prompt, buf);
-        pgets(w, mbslen(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
+        pgets(w, mbswidth(prompt) - 1, ymax - 1, P_CONVF, 64, 64, 1);
         if (saveconv(P_CONVF) == 0) {
           if (strcmp(P_CONVF,buf))
             markch(P_CONVF);
@@ -1820,7 +1820,7 @@ void doconv(void)
         mc_wprintf(w, "%s", prompt);
         buf[0] = 0;
         i = -1;
-        mc_wlocate(w, mbslen(prompt), ymax - 1);
+        mc_wlocate(w, mbswidth(prompt), ymax - 1);
         mc_wgets(w, buf, 7, 7);
         sscanf(buf, "%d", &i);
         if (i > 255 || i < 0) {
@@ -1832,7 +1832,7 @@ void doconv(void)
         mc_wlocate(w, 30, ymax - 1);
         prompt=_("Change input to: %s");
         mc_wprintf(w, prompt,buf);
-        mc_wlocate(w, mbslen(prompt) + 28, ymax - 1);
+        mc_wlocate(w, mbswidth(prompt) + 28, ymax - 1);
         mc_wgets(w, buf, 7, 7);
         sscanf(buf, "%d", &j);
         if (j > 255 || j < 0) {
@@ -1844,7 +1844,7 @@ void doconv(void)
         mc_wlocate(w, 54, ymax - 1);
         prompt = _("Change output to: %s");
         mc_wprintf(w, prompt, buf);
-        mc_wlocate(w, mbslen(prompt) + 52, ymax - 1);
+        mc_wlocate(w, mbswidth(prompt) + 52, ymax - 1);
         mc_wgets(w, buf, 7, 7);
         sscanf(buf, "%d", &j);
         if (j > 255 || j < 0) {

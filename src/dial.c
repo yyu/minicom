@@ -1146,8 +1146,8 @@ static const char *te[] = { "VT102", "MINIX", "ANSI " };
 static void dedit_toggle_entry(WIN *w, int x, int y, int toggle,
                                char *toggle_true, char *toggle_false)
 {
-  int lt = mbslen(toggle_true);
-  int lf = mbslen(toggle_false);
+  int lt = mbswidth(toggle_true);
+  int lf = mbswidth(toggle_false);
   int l = ((lt > lf) ? lt : lf) + 1;
   char *buf, *s = toggle ? toggle_true : toggle_false;
   int i;
@@ -1156,7 +1156,7 @@ static void dedit_toggle_entry(WIN *w, int x, int y, int toggle,
     return;
 
   strncpy(buf, s, l);
-  for (i = mbslen(s); i < l - 1; i++)
+  for (i = mbswidth(s); i < l - 1; i++)
     buf[i] = ' ';
   buf[l - 1] = 0;
 
@@ -1208,7 +1208,7 @@ static void dedit(struct dialent *d)
   mc_wredraw(w, 1);
 
   while (1) {
-    mc_wlocate(w, mbslen (question) + 5, 15);
+    mc_wlocate(w, mbswidth(question) + 5, 15);
     c = wxgetch();
     if (c >= 'a')
       c -= 32;
@@ -1219,35 +1219,35 @@ static void dedit(struct dialent *d)
         mc_wclose(w, 1);
         return;
       case 'A':
-        mc_wlocate(w, mbslen (name) + 1, 0);
+        mc_wlocate(w, mbswidth(name) + 1, 0);
         mc_wgets(w, d->name, 31, 32);
         break;
       case 'B':
-        mc_wlocate(w, mbslen (number) + 1, 1);
+        mc_wlocate(w, mbswidth(number) + 1, 1);
         mc_wgets(w, d->number, 31, 32);
         break;
       case 'C':
         d->dialtype = (d->dialtype + 1) % 3;
-        mc_wlocate(w, mbslen (dial_string) + 1, 2);
+        mc_wlocate(w, mbswidth(dial_string) + 1, 2);
         mc_wprintf(w, "%d", d->dialtype + 1);
         mc_wflush();
         break;
       case 'D':
         d->flags ^= FL_ECHO;
-        mc_wlocate(w, mbslen (local_echo_str) + 1, 3);
+        mc_wlocate(w, mbswidth(local_echo_str) + 1, 3);
         mc_wprintf(w, "%s", _(yesno(d->flags & FL_ECHO)));
         mc_wflush();
         break;
       case 'E':
-        mc_wlocate(w, mbslen (script) + 1, 4);
+        mc_wlocate(w, mbswidth(script) + 1, 4);
         mc_wgets(w, d->script, 31, 32);
         break;
       case 'F':
-        mc_wlocate(w, mbslen (username) + 1, 5);
+        mc_wlocate(w, mbswidth(username) + 1, 5);
         mc_wgets(w, d->username, 31, 32);
         break;
       case 'G':
-        mc_wlocate(w, mbslen (password) + 1, 6);
+        mc_wlocate(w, mbswidth(password) + 1, 6);
         mc_wgets(w, d->password, 31, 32);
         break;
       case 'H':
@@ -1255,7 +1255,7 @@ static void dedit(struct dialent *d)
         /* MINIX == 2 is obsolete. */
         if (d->term == 2)
           d->term = 3;
-        mc_wlocate(w, mbslen (terminal_emulation) + 1, 7);
+        mc_wlocate(w, mbswidth(terminal_emulation) + 1, 7);
         mc_wputs(w, te[d->term - 1]);
 
         /* Also set backspace key. */
@@ -1266,29 +1266,29 @@ static void dedit(struct dialent *d)
           d->flags |= FL_DEL;
           d->flags &= ~FL_WRAP;
         }
-	dedit_toggle_entry(w, mbslen(backspace_key_sends) + 1, 8,
+	dedit_toggle_entry(w, mbswidth(backspace_key_sends) + 1, 8,
 	                   d->flags & FL_DEL, _("Delete"), _("Backspace"));
-	dedit_toggle_entry(w, mbslen(linewrap) + 1, 9,
+	dedit_toggle_entry(w, mbswidth(linewrap) + 1, 9,
 	                   d->flags & FL_WRAP, _("On"), _("Off"));
         break;
       case 'I':
         d->flags ^= FL_DEL;
-	dedit_toggle_entry(w, mbslen(backspace_key_sends) + 1, 8,
+	dedit_toggle_entry(w, mbswidth(backspace_key_sends) + 1, 8,
 	                   d->flags & FL_DEL, _("Delete"), _("Backspace"));
         break;
       case 'J':
         d->flags ^= FL_WRAP;
-	dedit_toggle_entry(w, mbslen(linewrap) + 1, 9,
+	dedit_toggle_entry(w, mbswidth(linewrap) + 1, 9,
 	                   d->flags & FL_WRAP, _("On"), _("Off"));
         break;
       case 'K':
         get_bbp(d->baud, d->bits, d->parity, d->stopb, 1);
-        mc_wlocate(w, mbslen (line_settings) + 1, 10);
+        mc_wlocate(w, mbswidth(line_settings) + 1, 10);
         mc_wprintf(w, "%s %s%s%s  ",
                 d->baud, d->bits, d->parity, d->stopb);
         break;
       case 'L':	/* jl 21.09.97 */
-        mc_wlocate(w, mbslen (conversion_table) + 1, 11);
+        mc_wlocate(w, mbswidth(conversion_table) + 1, 11);
         mc_wgets(w, d->convfile, 15, 16);
         break;
       default:

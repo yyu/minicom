@@ -187,7 +187,7 @@ char *pfix_home( char *s);
 void do_log(const char *line, ...);
 size_t one_mbtowc (wchar_t *pwc, const char *s, size_t n);
 size_t one_wctomb (char *s, wchar_t wchar);
-size_t mbslen (const char *s);
+size_t mbswidth(const char *s);
 
 /* Prototypes from file: dial.c */
 #if VC_MUSIC
