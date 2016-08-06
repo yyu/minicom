@@ -217,6 +217,7 @@ int help(void);
 
 /* Prototypes from file: ipc.c */
 int check_io(int fd1, int fd2, int tmout, char *buf, int buf_size, int *bytes_red);
+int check_io_input(int timeout_ms);
 int keyboard(int cmd, int arg);
 
 /* Prototypes from file: keyserv.c */

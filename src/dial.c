@@ -352,8 +352,8 @@ void music(void)
     ioctl(consolefd, KIOCSOUND, k);
 
     /* Check keypress with timeout 160 ms */
-    x = check_io(-1, 0, 160, NULL, 0, NULL);
-    if (x & 2)
+    x = check_io_input(160);
+    if (x)
       break;
   }
   ioctl(consolefd, KIOCSOUND, 0);
@@ -361,8 +361,8 @@ void music(void)
     close(consolefd);
 
   /* Wait for keypress and absorb it */
-  while ((x & 2) == 0) {
-    x = check_io(-1, 0, 10000, NULL, 0, NULL);
+  while (!x) {
+    x = check_io_input(10000);
     timer_update();
   }
   keyboard(KGETKEY, 0);
@@ -375,24 +375,23 @@ void music(void)
  */
 static int dialfailed(char *s, int rtime)
 {
-  int f, x;
+  int f;
   int ret = 0;
 
   mc_wlocate(dialwin, 1, 5);
   mc_wprintf(dialwin, _("    No connection: %s.      \n"), s);
   if (rtime < 0) {
     mc_wprintf(dialwin, _("   Press any key to continue..    "));
-    if (check_io(-1, 0, 10000, NULL, 0, NULL) & 2)
+    if (check_io_input(10000))
       keyboard(KGETKEY, 0);
     return 0;
   }
   mc_wprintf(dialwin, _("     Retry in %2d seconds             "), rtime);
 
   for (f = rtime - 1; f >= 0; f--) {
-    x = check_io(-1, 0, 1000, NULL, 0, NULL);
-    if (x & 2) {
+    if (check_io_input(1000)) {
       /* Key pressed - absorb it. */
-      x = keyboard(KGETKEY, 0);
+      int x = keyboard(KGETKEY, 0);
       if (x != ' ')
         ret = -1;
       break;
@@ -599,19 +598,15 @@ MainLoop:
 #ifdef VC_MUSIC
             if (P_SOUND[0] == 'Y')
               music();
-            else {
-              x = check_io(-1, 0, 0, NULL, 0, NULL);
-              if ((x & 2) == 2)
-                keyboard(KGETKEY, 0);
-            }
+            else if (check_io_input(0))
+              keyboard(KGETKEY, 0);
 #else
             /* MARK updated 02/17/94 - If VC_MUSIC is not */
             /* defined, then at least make some beeps! */
             if (P_SOUND[0] == 'Y')
               mc_wputs(dialwin,"\007\007\007");
 #endif
-            x = check_io(-1, 0, 0, NULL, 0, NULL);
-            if ((x & 2) == 2)
+            if (check_io_input(0))
               keyboard(KGETKEY, 0);
           }
           keyboard(KSTOP, 0);

@@ -76,6 +76,11 @@ int check_io(int fd1, int fd2, int tmout, char *buf,
   return n;
 }
 
+int check_io_input(int timeout_ms)
+{
+  return check_io(-1, 0, timeout_ms, NULL, 0, NULL) & 2;
+}
+
 int keyboard(int cmd, int arg)
 {
   switch (cmd) {
