@@ -64,8 +64,10 @@ int check_io(int fd1, int fd2, int tmout, char *buf,
     if ((n & 1) == 1) {
       i = read(fd1, buf, bufsize - 1);
 #ifdef USE_SOCKET
-      if (!i && portfd_is_socket && portfd == fd1)
+      if (i < 1 && portfd_is_socket && portfd == fd1) {
         term_socket_close();
+	i = 0;
+      }
 #endif /* USE_SOCKET */
     }
     buf[i > 0 ? i : 0] = 0;
