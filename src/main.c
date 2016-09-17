@@ -32,6 +32,7 @@
 #endif
 
 #include <stdbool.h>
+#include <assert.h>
 
 #ifdef SVR4_LOCKS
 #include <sys/types.h>
@@ -483,6 +484,7 @@ static int get_device_status(int fd)
 static char status_message[80];
 static int  status_display_msg_until;
 static int  status_message_showing;
+static char *current_status_line;
 
 static const char default_statusline_format[] = N_("%H for help | %b | %C | Minicom %V | %T | %t | %D");
 
@@ -588,11 +590,17 @@ static void show_status_fmt(const char *fmt)
     memset(buf + bufi, ' ', COLS - bufi);
   buf[COLS - 1] = 0;
 
-  st->direct = 0;
-  mc_wlocate(st, 0, 0);
-  mc_wprintf(st, "%s", buf);
-  mc_wredraw(st, 1);
-  ret_csr();
+  if (!current_status_line || strcmp(buf, current_status_line))
+    {
+      st->direct = 0;
+      mc_wlocate(st, 0, 0);
+      mc_wprintf(st, "%s", buf);
+      mc_wredraw(st, 1);
+      ret_csr();
+      current_status_line = realloc(current_status_line, COLS);
+      assert(current_status_line);
+      strcpy(current_status_line, buf);
+    }
 }
 
 void show_status()
@@ -621,9 +629,6 @@ static void update_status_time(void)
       else
         show_status_fmt("%$");
     }
-
-  if (old_online == online || online <= (old_online + 59))
-    return;
 
   if (P_LOGCONN[0] == 'Y' && old_online >= 0 && online < 0)
     do_log(_("Gone offline (%ld:%02ld:%02ld)"),
@@ -658,7 +663,7 @@ void status_set_display(const char *text, int duration_s)
 void timer_update(void)
 {
   static time_t t1, start;
-  int dcd_support = P_HASDCD[0] == 'Y';
+  int dcd_support = portfd_is_socket || P_HASDCD[0] == 'Y';
 
   /* See if we're online. */
   if ((!dcd_support && bogus_dcd)
