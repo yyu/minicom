@@ -855,24 +855,25 @@ dirty_goto:
       }
 
       while (blen-- > 0) {
+	int c = *ptr++;
         /* Auto zmodem detect */
         if (zauto) {
-          if (zsig[zpos] == *ptr)
+          if (zsig[zpos] == c)
             zpos++;
           else
             zpos = 0;
         }
         if (P_PARITY[0] == 'M' || P_PARITY[0] == 'S')
-          *ptr &= 0x7f;
+          c &= 0x7f;
         if (display_hex) {
-          unsigned char c = *ptr++;
-          unsigned char u = c >> 4;
-          c &= 0xf;
+          unsigned char l = c;
+          unsigned char u = l >> 4;
+          l &= 0xf;
           vt_out(u > 9 ? 'a' + (u - 10) : '0' + u);
-          vt_out(c > 9 ? 'a' + (c - 10) : '0' + c);
+          vt_out(l > 9 ? 'a' + (l - 10) : '0' + l);
           vt_out(' ');
         } else
-          vt_out(*ptr++);
+          vt_out(c);
         if (zauto && zsig[zpos] == 0) {
           dirflush = 1;
           keyboard(KSTOP, 0);
