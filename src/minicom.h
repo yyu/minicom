@@ -41,8 +41,10 @@
 #endif
 
 #ifdef USE_SOCKET
+#include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/un.h>
+#include <arpa/inet.h>
 #endif
 
 /*
@@ -114,9 +116,13 @@ EXTERN char *dial_user;     /* Our username there */
 EXTERN char *dial_pass;     /* Our password */
 
 #ifdef USE_SOCKET
-EXTERN int portfd_is_socket;	/* File descriptor is a unix socket */
+enum Socket_type {
+  Socket_type_no_socket = 0,
+  Socket_type_unix = 1,
+  Socket_type_tcp = 2,
+};
+EXTERN enum Socket_type portfd_is_socket;	/* File descriptor is a unix socket */
 EXTERN int portfd_is_connected;	/* 1 if the socket is connected */
-EXTERN struct sockaddr_un portfd_sock_addr;	/* the unix socket address */
 static inline int portfd_connected(void)
 {
   return (portfd_is_socket && !portfd_is_connected) ? -1 : portfd;

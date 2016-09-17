@@ -42,7 +42,12 @@
 static jmp_buf albuf;
 
 #ifdef USE_SOCKET
-static const char SOCKET_PREFIX[] = "unix#";
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
+static const char SOCKET_PREFIX_UNIX[] = "unix:";
+static const char SOCKET_PREFIX_UNIX_LEGACY[] = "unix#";
+static const char SOCKET_PREFIX_TCP[] = "tcp:";
 #endif
 
 /* Compile SCCS ID into executable. */
@@ -150,23 +155,87 @@ static void get_alrm(int dummy)
 }
 
 #ifdef USE_SOCKET
+static void term_socket_connect_unix(void)
+{
+  struct sockaddr_un sa_un;
+  sa_un.sun_family = AF_UNIX;
+  strncpy(sa_un.sun_path,
+	  dial_tty + strlen(SOCKET_PREFIX_UNIX),
+	  sizeof(sa_un.sun_path) - 1);
+  sa_un.sun_path[sizeof(sa_un.sun_path) - 1] = 0;
+
+  if ((portfd = socket(AF_UNIX, SOCK_STREAM, 0)) == -1)
+    return;
+
+  if (connect(portfd, (struct sockaddr *)&sa_un, sizeof(sa_un)) == -1)
+    term_socket_close();
+  else
+    portfd_is_connected = 1;
+}
+
+static void term_socket_connect_tcp(void)
+{
+  struct addrinfo hints;
+
+  memset(&hints, 0, sizeof(hints));
+  hints.ai_family   = AF_UNSPEC;
+  hints.ai_socktype = SOCK_STREAM;
+
+  char *s = strdup(dial_tty);
+  if (!s)
+    return;
+
+  char *s_addr = s + strlen(SOCKET_PREFIX_TCP);
+  char *s_port = strchr(s_addr, ':');
+  if (!s_port) {
+    fprintf(stderr, "No port given\n");
+    return;
+  }
+  *s_port = 0;
+  s_port++;
+
+  if (strlen(s_addr) == 0)
+    s_addr = "localhost";
+
+  struct addrinfo *result;
+  int r = getaddrinfo(s_addr, s_port, &hints, &result);
+  if (r) {
+    fprintf(stderr, "Name resolution failed: %s\n", gai_strerror(r));
+    return;
+  }
+
+  free(s);
+
+  struct addrinfo *rp;
+  for (rp = result; rp; rp = rp->ai_next) {
+    portfd = socket(rp->ai_family, rp->ai_socktype, rp->ai_protocol);
+    if (portfd == -1)
+      continue;
+
+    if (connect(portfd, rp->ai_addr, rp->ai_addrlen) != -1) {
+      portfd_is_connected = 1;
+      break;
+    }
+
+    term_socket_close();
+  }
+
+  if (rp)
+    freeaddrinfo(result);
+}
+
 /*
  * If portfd is a socket, we try to (re)connect
  */
 void term_socket_connect(void)
 {
-
-  if (!portfd_is_socket || portfd_is_connected)
+  if (portfd_is_socket == Socket_type_no_socket || portfd_is_connected)
     return;
 
-  if ((portfd = socket(AF_UNIX, SOCK_STREAM, 0)) == -1)
-    return;
-
-  if (connect(portfd, (struct sockaddr *)&portfd_sock_addr,
-              sizeof(portfd_sock_addr)) == -1)
-    term_socket_close();
-  else
-    portfd_is_connected = 1;
+  if (portfd_is_socket == Socket_type_unix)
+    term_socket_connect_unix();
+  else if (portfd_is_socket == Socket_type_tcp)
+    term_socket_connect_tcp();
 }
 
 /*
@@ -200,8 +269,14 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 
 #ifdef USE_SOCKET
   portfd_is_socket = portfd_is_connected = 0;
-  if (strncmp(dial_tty, SOCKET_PREFIX, strlen(SOCKET_PREFIX)) == 0)
-    portfd_is_socket = 1;
+  int ulen = strlen(SOCKET_PREFIX_UNIX);
+  assert(ulen == strlen(SOCKET_PREFIX_UNIX_LEGACY));
+  if (!strncmp(dial_tty, SOCKET_PREFIX_UNIX, ulen))
+    portfd_is_socket = Socket_type_unix;
+  else if (!strncmp(dial_tty, SOCKET_PREFIX_UNIX_LEGACY, ulen))
+    portfd_is_socket = Socket_type_unix;
+  else if (!strncmp(dial_tty, SOCKET_PREFIX_TCP, strlen(SOCKET_PREFIX_TCP)))
+    portfd_is_socket = Socket_type_tcp;
 #endif
 
   if (portfd_is_socket)
@@ -280,11 +355,6 @@ nolock:
     alarm(20);
 #ifdef USE_SOCKET
     if (portfd_is_socket) {
-      portfd_sock_addr.sun_family = AF_UNIX;
-      strncpy(portfd_sock_addr.sun_path,
-              dial_tty + strlen(SOCKET_PREFIX),
-              sizeof(portfd_sock_addr.sun_path) - 1);
-      portfd_sock_addr.sun_path[sizeof(portfd_sock_addr.sun_path) - 1] = 0;
       term_socket_connect();
     }
 #endif /* USE_SOCKET */
@@ -312,7 +382,7 @@ nolock:
 #endif
   alarm(0);
   signal(SIGALRM, SIG_IGN);
-  if (portfd < 0 && !portfd_is_socket) {
+  if (portfd < 0 && portfd_is_socket == Socket_type_no_socket) {
     if (!no_msgs) {
       if (doinit > 0) {
 	if (stdwin)
@@ -527,8 +597,10 @@ static void show_status_fmt(const char *fmt)
               bufi += snprintf(buf + bufi, COLS - bufi, "%s", VERSION);
               break;
             case 'b':
-              if (portfd_is_socket)
+              if (portfd_is_socket == Socket_type_unix)
                 bufi += snprintf(buf + bufi, COLS - bufi, "unix-socket");
+	      else if (portfd_is_socket == Socket_type_tcp)
+                bufi += snprintf(buf + bufi, COLS - bufi, "TCP");
               else
                 {
                   if (P_SHOWSPD[0] == 'l')
@@ -554,7 +626,7 @@ static void show_status_fmt(const char *fmt)
               bufi += snprintf(buf + bufi, COLS - bufi, cursormode == NORMAL ? "NOR" : "APP");
               break;
 
-            case 't':
+	    case 't':
               if (online < 0)
                 bufi += snprintf(buf + bufi, COLS - bufi, "%s",
                                  P_HASDCD[0] == 'Y' ? _("Offline") : _("OFFLINE"));

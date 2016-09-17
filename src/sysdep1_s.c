@@ -28,9 +28,8 @@
 #include "minicom.h"
 
 #ifdef USE_SOCKET
-int portfd_is_socket;
+enum Socket_type portfd_is_socket;
 int portfd_is_connected;
-struct sockaddr_un portfd_sock_addr;
 #endif
 
 /*
