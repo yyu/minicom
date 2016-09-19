@@ -892,8 +892,7 @@ dirty_goto:
     }
 
     /* Check for I/O or timer. */
-    x = check_io(portfd_connected(), 0, 1000,
-                 buf + buf_offset, sizeof(buf) - buf_offset, &blen);
+    x = check_io_frontend(buf + buf_offset, sizeof(buf) - buf_offset, &blen);
     blen += buf_offset;
     buf_offset = 0;
 

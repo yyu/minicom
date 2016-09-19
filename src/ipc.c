@@ -28,9 +28,25 @@
 #include "minicom.h"
 #include "intl.h"
 
+int read_buf(int fd, char *buf, int bufsize)
+{
+  int i = read(fd, buf, bufsize - 1);
+
+#ifdef USE_SOCKET
+  if (i < 1 && portfd_is_socket && portfd == fd) {
+    term_socket_close();
+    i = 0;
+  }
+#endif /* USE_SOCKET */
+
+  buf[i > 0 ? i : 0] = 0;
+
+  return i;
+}
+
 /* Check if there is IO pending. */
-int check_io(int fd1, int fd2, int tmout, char *buf,
-             int bufsize, int *bytes_read)
+static int check_io(int fd1, int fd2, int tmout, char *buf,
+                    int bufsize, int *bytes_read)
 {
   int n = 0, i;
   struct timeval tv;
@@ -60,22 +76,21 @@ int check_io(int fd1, int fd2, int tmout, char *buf,
 
   /* If there is data put it in the buffer. */
   if (buf) {
-    i = 0;
-    if ((n & 1) == 1) {
-      i = read(fd1, buf, bufsize - 1);
-#ifdef USE_SOCKET
-      if (i < 1 && portfd_is_socket && portfd == fd1) {
-        term_socket_close();
-	i = 0;
-      }
-#endif /* USE_SOCKET */
-    }
-    buf[i > 0 ? i : 0] = 0;
+    if ((n & 1) == 1)
+      i = read_buf(fd1, buf, bufsize);
+    else
+      i = 0;
+
     if (bytes_read)
       *bytes_read = i;
   }
 
   return n;
+}
+
+int check_io_frontend(char *buf, int buf_size, int *bytes_read)
+{
+  return check_io(portfd_connected(), 0, 1000, buf, buf_size, bytes_read);
 }
 
 int check_io_input(int timeout_ms)

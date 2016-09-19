@@ -525,7 +525,7 @@ MainLoop:
     buf[0] = 0;
     while (dialtime > 0) {
       if (*s == 0) {
-        x = check_io(portfd_connected(), 0, 1000, buf, sizeof(buf), NULL);
+        x = check_io_frontend(buf, sizeof(buf), NULL);
         s = buf;
       }
       if (x & 2) {
