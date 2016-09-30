@@ -224,7 +224,7 @@ int help(void);
 
 /* Prototypes from file: ipc.c */
 int check_io_frontend(char *buf, int buf_size, int *bytes_red);
-int check_io_input(int timeout_ms);
+bool check_io_input(int timeout_ms);
 int read_buf(int fd, char *buf, int bufsize);
 int keyboard(int cmd, int arg);
 

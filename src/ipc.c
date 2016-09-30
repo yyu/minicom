@@ -93,7 +93,7 @@ int check_io_frontend(char *buf, int buf_size, int *bytes_read)
   return check_io(portfd_connected(), 0, 1000, buf, buf_size, bytes_read);
 }
 
-int check_io_input(int timeout_ms)
+bool check_io_input(int timeout_ms)
 {
   return check_io(-1, 0, timeout_ms, NULL, 0, NULL) & 2;
 }
