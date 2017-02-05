@@ -943,9 +943,10 @@ dirty_goto:
           case K_F11: s = P_MAC11; break;
           case K_F12: s = P_MAC12; break;
         }
-        if (*s)
-          mputs(s, 1);
-        else
+        if (*s) {
+	  while (*s)
+	    vt_send(*s++);
+	} else
           vt_send(c);
       } else
         vt_send(c);

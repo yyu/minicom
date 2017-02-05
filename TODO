@@ -1,8 +1,6 @@
 minicom TODO list
 -----------------
 
-* Transmit delay has no influence on macros
-
 fixes:
 * if both sides use utf8, and no -R utf8 is used, minicom
   outputs additional invalid characters, that should be fixed.
