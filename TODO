@@ -27,6 +27,7 @@ normal:
 * when showing errors also consider showing errno if available/appropriate
 
 * move .minirc* and .macros to .config/minicom/...
+  * .macros too
 
 wishlist:
 
