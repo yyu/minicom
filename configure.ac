@@ -119,7 +119,7 @@ else
 fi
 
 dnl Set of available languages.
-ALL_LINGUAS="cs da de es fr fi hu id ja nb pl pt_BR ro ru rw sv vi zh_TW"
+ALL_LINGUAS="cs da de es fr fi hu id ja nb pl pt_BR ro ru rw sr sv vi zh_TW"
 
 dnl Checks for programs.
 AM_GNU_GETTEXT([external])
