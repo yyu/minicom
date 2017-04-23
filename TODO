@@ -14,6 +14,8 @@ important:
 
 normal:
 
+* Make "vt_docap = 2" (1:1 capture) accessible to the user.
+
 * sync AUTHORS with man/minicom.1
 * merge ChangeLog with */ChangeLog*
 * fix Debian BTS bugs
