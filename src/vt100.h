@@ -18,6 +18,7 @@
 #ifndef __MINICOM__SRC__VT100_H__
 #define __MINICOM__SRC__VT100_H__
 #include <stdio.h>
+#include <wchar.h>
 
 /* Keypad and cursor key modes. */
 #define NORMAL	1
@@ -35,7 +36,7 @@ void vt_install(void(*)(const char *, int), void (*)(int, int), WIN *);
 void vt_init(int, int, int, int, int, int);
 void vt_pinit(WIN *, int, int);
 void vt_set(int, int, int, int, int, int, int, int, int);
-void vt_out(int);
+void vt_out(int, wchar_t);
 void vt_send(int ch);
 
 #endif /* ! __MINICOM__SRC__VT100_H__ */

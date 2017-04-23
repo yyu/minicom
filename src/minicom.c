@@ -955,8 +955,11 @@ static void init_iconv(const char *remote_charset)
   if (iconv_rem2local != (iconv_t)-1)
     iconv_enabled = 1;
   else
-    printf(_("Activating iconv failed with: %s(%d)\n"),
-           strerror(errno), errno);
+    {
+      fprintf(stderr, _("Activating iconv failed with: %s (%d)\n"),
+              strerror(errno), errno);
+      exit(1);
+    }
 }
 
 void do_iconv(char **inbuf, size_t *inbytesleft,
@@ -1278,7 +1281,7 @@ int main(int argc, char **argv)
         case 'C': /* Capturing */
           capfp = fopen(optarg, "a");
           if (capfp == NULL) {
-            werror(_("Cannot open capture file"));
+            fprintf(stderr, _("Cannot open capture file\n"));
             exit(1);
           }
           docap = 1;

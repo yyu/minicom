@@ -772,7 +772,7 @@ void runscript(int ask, const char *s, const char *l, const char *p)
           if (i)
             vt_send(*ptr++);
           else
-            vt_out(*ptr++);
+            vt_out(*ptr++, 0);
         timer_update();
         mc_wflush();
       }
@@ -827,7 +827,7 @@ int paste_file(void)
       while (bytes_read-- > 0) {
 	if (P_PARITY[0] == 'M' || P_PARITY[0] == 'S')
 	  *ptr &= 0x7f;
-	vt_out(*ptr++);
+	vt_out(*ptr++, 0);
       }
       mc_wflush();
     }

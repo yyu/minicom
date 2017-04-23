@@ -273,9 +273,9 @@ static void v_termout(const char *s, int len)
 
   if (vt_echo) {
     for (p = s; *p; p++) {
-      vt_out(*p);
+      vt_out(*p, 0);
       if (!vt_addlf && *p == '\r')
-        vt_out('\n');
+        vt_out('\n', 0);
     }
     mc_wflush();
   }
@@ -931,13 +931,12 @@ static void output_c(const char c)
     fputc(c, capfp);
 }
 
-void vt_out(int ch)
+void vt_out(int ch, wchar_t wc)
 {
   static unsigned char last_ch;
   int f;
   unsigned char c;
   int go_on = 0;
-  wchar_t wc;
 
   if (!ch)
     return;
@@ -1077,20 +1076,12 @@ void vt_out(int ch)
           c = vt_trans[vt_charset][c];
 #endif
       }
-      /* FIXME: This is wrong, but making it right would require
-       * removing all the 8-bit mapping features. Assuming the locale
-       * is 8-bit, the character should not be changed by mapping to
-       * wchar and back; if the locale is multibyte, there is no hope
-       * of getting it right anyway. */
-      if (!using_iconv()) {
+      if (wc == 0)
         one_mbtowc (&wc, (char *)&c, 1); /* returns 1 */
-        if (vt_insert)
-          mc_winschar2(vt_win, wc, 1);
-        else
-          mc_wputc(vt_win, wc);
-      } else {
-        mc_wputc(vt_win, c);
-      }
+      if (vt_insert)
+        mc_winschar2(vt_win, wc, 1);
+      else
+        mc_wputc(vt_win, wc);
       break;
     case 1: /* ESC seen */
       state1(c);

@@ -366,15 +366,15 @@ static void _write(wchar_t c, int doit, int x, int y, char attr, char color)
         _setattr(attr, color);
       }
       x0 = x; y0 = y; attr0 = attr; color0 = color; c0 = c;
-      if (using_iconv() || (attr & XA_ALTCHARSET) != 0)
+      if ((attr & XA_ALTCHARSET) != 0)
         outchar((char)c);
       else {
         char buf[MB_LEN_MAX];
         size_t i, len;
 
         len = one_wctomb(buf, c);
-        for (i = 0; i < (size_t)len; i++)
-        outchar(buf[i]);
+        for (i = 0; i < len; i++)
+          outchar(buf[i]);
       }
 
       curx++;

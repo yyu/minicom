@@ -854,8 +854,8 @@ dirty_goto:
         ptr = buf;
       }
 
-      while (blen-- > 0) {
-	int c = *ptr++;
+      while (blen > 0) {
+	int c = *ptr;
         /* Auto zmodem detect */
         if (zauto) {
           if (zsig[zpos] == c)
@@ -869,11 +869,19 @@ dirty_goto:
           unsigned char l = c;
           unsigned char u = l >> 4;
           l &= 0xf;
-          vt_out(u > 9 ? 'a' + (u - 10) : '0' + u);
-          vt_out(l > 9 ? 'a' + (l - 10) : '0' + l);
-          vt_out(' ');
-        } else
-          vt_out(c);
+          vt_out(u > 9 ? 'a' + (u - 10) : '0' + u, 0);
+          vt_out(l > 9 ? 'a' + (l - 10) : '0' + l, 0);
+          vt_out(' ', 0);
+
+          --blen;
+          ++ptr;
+        } else {
+          wchar_t wc;
+          size_t len = one_mbtowc(&wc, ptr, blen);
+          vt_out(c, wc);
+          blen -= len;
+          ptr += len;
+        }
         if (zauto && zsig[zpos] == 0) {
           dirflush = 1;
           keyboard(KSTOP, 0);

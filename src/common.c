@@ -88,9 +88,8 @@ void do_log(const char *line, ...)
  * (wchar_t)*s */
 size_t one_mbtowc(wchar_t *pwc, const char *s, size_t n)
 {
-  int len;
-
-  len = mbtowc(pwc, s, n);
+  mbtowc(NULL, 0, 0); // reset the conversion state
+  int len = mbtowc(pwc, s, n);
   if (len == -1)
     *pwc = *s;
   if (len <= 0)
@@ -103,9 +102,7 @@ size_t one_mbtowc(wchar_t *pwc, const char *s, size_t n)
 size_t
 one_wctomb(char *s, wchar_t wchar)
 {
-  int len;
-
-  len = wctomb(s, wchar);
+  int len = wctomb(s, wchar);
   if (len == -1)
     s[0] = (char)wchar;
   if (len <= 0)
