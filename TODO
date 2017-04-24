@@ -15,6 +15,8 @@ important:
 normal:
 
 * Make "vt_docap = 2" (1:1 capture) accessible to the user.
+* Mention (prominently) that running minicom as root is not
+  necessary and discouraged.
 
 * sync AUTHORS with man/minicom.1
 * merge ChangeLog with */ChangeLog*
