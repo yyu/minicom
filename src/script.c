@@ -32,6 +32,7 @@
 #include <config.h>
 #endif
 
+#include <sys/wait.h>
 #include <stdarg.h>
 
 #include "port.h"
