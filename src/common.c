@@ -128,14 +128,16 @@ mbswidth(const char *s)
 
   size_t r = 0;
   size_t l = wcslen(wcs);
+  wchar_t *w = wcs;
   for (size_t i = 0; i < l; ++i)
     {
-      int a = wcwidth(*wcs);
+      int a = wcwidth(*w);
       if (a == -1)
         ++r;
       else
         r += a;
-      wcs++;
+      w++;
     }
+  free(wcs);
   return r;
 }
