@@ -145,7 +145,6 @@ static int nrents = 1;
 static int newtype;
 /* Access to ".dialdir" denied? */
 static int dendd = 0;
-static char *tagged;
 char *dial_user;
 char *dial_pass;
 
@@ -865,10 +864,6 @@ int readdialdir(void)
     return 0;
   didread = 1;
   nrents = 1;
-  tagged = malloc(1);
-  if (!tagged)
-    return 0;
-  tagged[0] = 0;
 
   /* Make the manual dial entry. */
   d_man = mkstdent();
