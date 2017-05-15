@@ -1886,3 +1886,14 @@ again:
   }
   goto again;
 }
+
+void free_dialents(void)
+{
+  struct dialent *d = dialents;
+
+  while (d) {
+    struct dialent *tmp = d;
+    d = d->next;
+    free(tmp);
+  }
+}

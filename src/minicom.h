@@ -202,6 +202,7 @@ long dial(struct dialent *d , struct dialent **d2);
 int  readdialdir(void);
 void dialone(char *entry);
 void dialdir(void);
+void free_dialents(void);
 
 /* Prototypes from file: file.c */
 char *filedir(int how_many, int downloading);

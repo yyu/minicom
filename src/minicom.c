@@ -1178,6 +1178,8 @@ int main(int argc, char **argv)
     args[argk++] = argv[c];
   args[argk] = NULL;
 
+  atexit(free_dialents);
+
   do {
     /* Process options with getopt */
     while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:F:",
