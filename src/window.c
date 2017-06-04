@@ -1688,7 +1688,7 @@ int mc_wgetwcs(WIN *w, wchar_t *s, int linelen, int maxlen)
   /* We assume the line has already been drawn on the screen. */
   if ((idx = wcslen(s)) > linelen)
     idx = linelen;
-  wcsncpy(buf, s, sizeof(buf) / sizeof(*buf));
+  wcsncpy(buf, s, ARRAY_SIZE(buf));
   mc_wlocate(w, x + idx, y);
   dirflush = 0;
   mc_wflush();
