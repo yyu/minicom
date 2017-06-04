@@ -1727,7 +1727,7 @@ int mc_wgetwcs(WIN *w, wchar_t *s, int linelen, int maxlen)
       case K_END: /* End of line. */
         idx = wcslen(buf);
         r = 0;
-        while (idx - offs > linelen) {
+        while (idx - offs - 3 > linelen) {
           r = 1;
           offs += 4;
         }
