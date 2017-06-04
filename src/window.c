@@ -1823,7 +1823,7 @@ int mc_wgets(WIN *w, char *s, int linelen, int maxlen)
   char *sptr;
 
   sptr = s;
-  for (i = 0; *sptr != 0 && i < sizeof (buf) - 1; i++)
+  for (i = 0; *sptr != 0 && i < ARRAY_SIZE(buf) - 1; i++)
     sptr += one_mbtowc(buf + i, sptr, MB_LEN_MAX);
   buf[i] = 0;
   st = mc_wgetwcs(w, buf, linelen, maxlen);
