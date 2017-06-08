@@ -26,6 +26,7 @@
 
 #include <limits.h>
 
+#include "assert.h"
 #include "port.h"
 #include "minicom.h"
 #include "intl.h"
@@ -485,10 +486,9 @@ static void goto_filedir(char *new_dir, int absolut)
 /*
  * Initialize the file directory.
  */
-static int init_filedir(void)
+static void init_filedir(void)
 {
   int x1, x2;
-  int retstat = -1;
 
   dirflush = 0;
   x1 = (COLS / 2) - 37;
@@ -498,13 +498,15 @@ static int init_filedir(void)
   main_w = mc_wopen(x1, 2, x2, LINES - 6, BSINGLE, stdattr, mfcolor,
                  mbcolor, 0, 0, 1);
 
-  if (ret_buf != NULL ||
-      (retstat = ((ret_buf = (char *)malloc(BUFSIZ)) == NULL)? -1 : 0) == 0) {
-    retstat = new_filedir(NULL, 0);
-    dirflush = 1;
-    mc_wredraw(dsub, 1);
+  if (ret_buf == NULL) {
+    ret_buf = malloc(BUFSIZ);
+    assert(ret_buf);
+    memset(ret_buf, 0, BUFSIZ);
   }
-  return retstat;
+
+  new_filedir(NULL, 0);
+  dirflush = 1;
+  mc_wredraw(dsub, 1);
 }
 
 
