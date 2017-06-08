@@ -1018,7 +1018,7 @@ static void test_mbswidth(void)
     { 24, "Répertoire des scripts :" },
     { 25, "Contrôle de flux matériel" },
     { 14, "リセット文字列" },
-    {  5, "😂😀😄😏😒" },
+    { 10, "😂😀😄😏😒" },
     { 10, "1234567890" },
   };
 
