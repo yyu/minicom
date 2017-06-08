@@ -157,7 +157,7 @@ static void (*termout)(const char *, int);/* Gets called to output a string. */
 
 static int escparms[8];		/* Accumulated escape sequence. */
 static int ptr;                 /* Index into escparms array. */
-static long vt_tabs[5];		/* Tab stops for max. 32*5 = 160 columns. */
+static unsigned vt_tabs[5];	/* Tab stops for max. 32*5 = 160 columns. */
 
 static short newy1 = 0;		/* Current size of scrolling region. */
 static short newy2 = 23;
@@ -1012,7 +1012,7 @@ void vt_out(int ch)
     case '\t': /* Non - destructive TAB */
       /* Find next tab stop. */
       for (f = vt_win->curx + 1; f < 160; f++)
-        if (vt_tabs[f / 32] & (1 << f % 32))
+        if (vt_tabs[f / 32] & (1u << f % 32))
           break;
       if (f >= vt_win->xs)
         f = vt_win->xs - 1;
