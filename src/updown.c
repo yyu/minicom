@@ -364,7 +364,7 @@ void updown(int what, int nr)
 #ifdef LOG_XFER
     xfl=fopen("xfer.log","wb");
 #endif
-    while ((n = read(pipefd[0], buf, sizeof(buf))) > 0) {
+    while ((n = read(pipefd[0], buf, sizeof(buf) - 1)) > 0) {
       buf[n] = '\0';
       mc_wputs(win, buf);
       timer_update();
