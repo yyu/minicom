@@ -590,7 +590,7 @@ static void show_status_fmt(const char *fmt)
     memset(buf + bufi, ' ', COLS - bufi);
   buf[COLS - 1] = 0;
 
-  if (!current_status_line || strcmp(buf, current_status_line))
+  if (size_changed || !current_status_line || strcmp(buf, current_status_line))
     {
       st->direct = 0;
       mc_wlocate(st, 0, 0);
@@ -779,7 +779,6 @@ dirty_goto:
   while (1) {
     /* See if window size changed */
     if (size_changed) {
-      size_changed = 0;
       wrapln = us->wrap;
       /* I got the resize code going again! Yeah! */
       mc_wclose(us, 0);
@@ -793,6 +792,7 @@ dirty_goto:
       /* Set the terminal modes */
       setcbreak(2); /* Raw, no echo */
       init_emul(terminal, 0);
+      size_changed = 0;
     }
     /* Update the timer. */
     timer_update();
