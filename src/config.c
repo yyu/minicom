@@ -705,49 +705,63 @@ static void domodem(void)
       case 'M':
         if (string_size == 0)
           string_size = mbswidth(dial_time);
+	/* FALLTHRU */
       case 'N':
         if (string_size == 0)
           string_size = mbswidth(delay_before_redial);
+	/* FALLTHRU */
       case 'O':
         if (string_size == 0)
           string_size = mbswidth(number_of_tries);
+	/* FALLTHRU */
       case 'P':
         if (string_size == 0)
           string_size = mbswidth(dtr_drop_time);
         ypos++;
         maxl = 4;
+	/* FALLTHRU */
       case 'K':
         if (string_size == 0)
           string_size = mbswidth(hangup_string);
+	/* FALLTHRU */
       case 'L':
         if (string_size == 0)
           string_size = mbswidth(dial_cancel_string);
         ypos -= 2;
         c += 3;
+	/* FALLTHRU */
       case 'A':
         if (string_size == 0)
           string_size = mbswidth(init_string);
+	/* FALLTHRU */
       case 'B':
         if (string_size == 0)
           string_size = mbswidth(reset_string);
+	/* FALLTHRU */
       case 'C':
         if (string_size == 0)
           string_size = mbswidth(dialing_prefix_1);
+	/* FALLTHRU */
       case 'D':
         if (string_size == 0)
           string_size = mbswidth(dialing_suffix_1);
+	/* FALLTHRU */
       case 'E':
         if (string_size == 0)
           string_size = mbswidth(dialing_prefix_2);
+	/* FALLTHRU */
       case 'F':
         if (string_size == 0)
           string_size = mbswidth(dialing_suffix_2);
+	/* FALLTHRU */
       case 'G':
         if (string_size == 0)
           string_size = mbswidth(dialing_prefix_3);
+	/* FALLTHRU */
       case 'H':
         if (string_size == 0)
           string_size = mbswidth(dialing_suffix_3);
+	/* FALLTHRU */
       case 'I':
         if (string_size == 0)
           string_size = mbswidth(connect_string);
@@ -1511,6 +1525,7 @@ int update_bbp_from_char(char c, char *ba, char *bi, char *pa, char *stopb,
   switch(c = toupper(c)) {
     case 'A':
       delta = 1;
+      /* FALLTHRU */
     case 'B':
       speed_idx += delta;
       if (speed_idx < 0)
@@ -1518,6 +1533,7 @@ int update_bbp_from_char(char c, char *ba, char *bi, char *pa, char *stopb,
       else if (speed_idx > (int)NR_SPEEDS - 1
                || max_speed < speeds[speed_idx])
 	speed_idx = 0;
+      /* FALLTHRU */
     case 'C':
     case 'D':
     case 'E':
@@ -1527,6 +1543,7 @@ int update_bbp_from_char(char c, char *ba, char *bi, char *pa, char *stopb,
 	speed_idx = 6;
       else if (c == 'E')
         speed_idx = 8;
+      /* FALLTHRU */
     case 'K':
       if (c == 'K' && !curr_ok)
         break;

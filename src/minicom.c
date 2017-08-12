@@ -495,6 +495,7 @@ static void scrollback(void)
          * fmg 8/22/97
          * Take care of the search key: Exact Match
          */
+	/* FALLTHRU */
       case '/':
       case 's':
         if (!us->histlines) {
