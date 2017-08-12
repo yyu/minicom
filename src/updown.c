@@ -633,8 +633,8 @@ void runscript(int ask, const char *s, const char *l, const char *p)
   int n, i;
   int pipefd[2];
   char buf[81];
-  char scr_lines[5];
-  char cmdline[128];
+  char scr_lines[7];
+  char cmdline[160];
   struct pollfd fds[2];
   char *translated_cmdline;
   char *ptr;
