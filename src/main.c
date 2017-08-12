@@ -220,7 +220,8 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 #else /* SVR4_LOCKS */
     snprintf(lockfile, sizeof(lockfile),
                        "%s/LCK..%s",
-                       P_LOCK, mdevlockname(dial_tty, buf.bytes, sizeof(buf.bytes)));
+                       P_LOCK, mdevlockname(dial_tty, buf.bytes,
+                                            sizeof(buf.bytes)));
 #endif /* SVR4_LOCKS */
 
   }
