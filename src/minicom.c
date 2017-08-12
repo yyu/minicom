@@ -1045,6 +1045,7 @@ int main(int argc, char **argv)
   struct passwd *pwd;		/* To look up user name */
   char *use_port;		/* Name of initialization file */
   char *args[20];		/* New argv pointer */
+  char *args_buffer = NULL;
   int argk = 1;			/* New argc */
   char *mc;			/* For 'MINICOM' env. variable */
   int env_args;			/* Number of args in env. variable */
@@ -1162,13 +1163,12 @@ int main(int argc, char **argv)
    */
   args[0] = "minicom";
   if ((mc = getenv("MINICOM")) != NULL) {
-    char buf[80];
-    strncpy(buf, mc, 80);
-    bufp = buf;
-    buf[79] = 0;
+    args_buffer = strdup(mc);
+    assert(args_buffer);
+    bufp = args_buffer;
     while (isspace(*bufp))
       bufp++;
-    while (*bufp && argk < 19) {
+    while (*bufp && argk < (int)sizeof(args) - 1) {
       for (s = bufp; !isspace(*bufp) && *bufp; bufp++)
 	;
       args[argk++] = s;
@@ -1179,7 +1179,7 @@ int main(int argc, char **argv)
   env_args = argk;
 
   /* Add command - line options */
-  for(c = 1; c < argc && argk < 19; c++)
+  for(c = 1; c < argc && argk < (int)sizeof(args) - 1; c++)
     args[argk++] = argv[c];
   args[argk] = NULL;
 
