@@ -37,7 +37,6 @@
 #ifdef SVR4_LOCKS
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <sys/mkdev.h>
 #endif /* SVR4_LOCKS */
 
 static jmp_buf albuf;
@@ -49,6 +48,7 @@ static const char SOCKET_PREFIX[] = "unix#";
 /* Compile SCCS ID into executable. */
 const char *Version = VERSION;
 
+#ifndef SVR4_LOCKS
 /*
  * Find out name to use for lockfile when locking tty.
  */
@@ -75,6 +75,7 @@ static char *mdevlockname(char *s, char *res, int reslen)
 
   return res;
 }
+#endif
 
 static char *shortened_devpath(char *buf, int buflen, char *devpath)
 {
