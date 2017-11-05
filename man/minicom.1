@@ -146,6 +146,15 @@ file.
 .B \-D, \-\-device
 Specify the device, overriding the value given in the configuration file.
 .TP 0.5i
+.B \-O, \-\-option
+Set an option. The argument can be a single word, or a key=value pair.
+Recognized options:
+
+.SM
+.B timestamp
+with values simple, delta, persecond, and extended. If no value
+is given, 'simple' is selected.
+.TP 0.5i
 .B \-R, \-\-remotecharset
 Specify the character set of the remote system is using and convert it to
 the character set of the local side. Example might be 'latin1'.

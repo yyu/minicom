@@ -1035,6 +1035,43 @@ static void test_mbswidth(void)
     }
 }
 
+static void usage_and_exit_if(bool expr, const char *fmt, ...)
+{
+  if (!expr)
+    return;
+
+  va_list va;
+  va_start(va, fmt);
+  vfprintf(stderr, fmt, va);
+  va_end(va);
+  usage(0, 0, NULL);
+}
+
+static void parse_options(char *option)
+{
+  char *o;
+  while ((o = strsep(&option, ",")))
+    {
+      char *key = strsep(&o, "=");
+
+      if (!strcmp(key, "timestamp"))
+        {
+          if (o == NULL || !strcmp(o, "simple"))
+            line_timestamp = TIMESTAMP_LINE_SIMPLE;
+          else if (!strcmp(o, "delta"))
+            line_timestamp = TIMESTAMP_LINE_DELTA;
+          else if (!strcmp(o, "persecond"))
+            line_timestamp = TIMESTAMP_LINE_PER_SECOND;
+          else if (!strcmp(o, "extended"))
+            line_timestamp = TIMESTAMP_LINE_EXTENDED;
+          else
+            usage_and_exit_if(true, "Unknown timestamp variant '%s'.\n", o);
+        }
+      else
+        usage_and_exit_if(true, "Unknown option '%s'.\n", key);
+    }
+}
+
 int main(int argc, char **argv)
 {
   int c;			/* Command character */
@@ -1083,6 +1120,7 @@ int main(int argc, char **argv)
     { "baudrate",      required_argument, NULL, 'b' },
     { "device",        required_argument, NULL, 'D' },
     { "remotecharset", required_argument, NULL, 'R' },
+    { "option",        required_argument, NULL, 'O' },
     { "statlinefmt",   required_argument, NULL, 'F' },
     { NULL, 0, NULL, 0 }
   };
@@ -1187,7 +1225,7 @@ int main(int argc, char **argv)
 
   do {
     /* Process options with getopt */
-    while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:F:",
+    while ((c = getopt_long(argk, args, "v78zhlLsomMHb:wTc:a:t:d:p:C:S:D:R:F:O:",
                             long_options, NULL)) != EOF)
       switch(c) {
 	case 'v':
@@ -1319,6 +1357,9 @@ int main(int argc, char **argv)
 	  break;
 	case 'R':
 	  remote_charset = optarg;
+	  break;
+	case 'O':
+	  parse_options(optarg);
 	  break;
         default:
           usage(env_args, optind, mc);
