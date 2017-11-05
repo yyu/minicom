@@ -955,7 +955,8 @@ void vt_out(int ch, wchar_t wc)
           || vt_line_timestamp == TIMESTAMP_LINE_SIMPLE
           || vt_line_timestamp == TIMESTAMP_LINE_EXTENDED)
         {
-          if (   localtime_r(&tmstmp_now.tv_sec, &tmstmp_tm)
+          if (   tmstmp_last.tv_sec
+              && localtime_r(&tmstmp_now.tv_sec, &tmstmp_tm)
               && strftime(s, sizeof(s), "[%F %T", &tmstmp_tm))
             {
               output_s(s);
@@ -977,13 +978,16 @@ void vt_out(int ch, wchar_t wc)
         }
       else if (vt_line_timestamp == TIMESTAMP_LINE_DELTA)
         {
-          unsigned long long d;
-	  d =   (tmstmp_now.tv_sec * 1000000 + tmstmp_now.tv_usec)
-              - (tmstmp_last.tv_sec * 1000000 + tmstmp_last.tv_usec);
-          snprintf(s, sizeof(s), "[%lld.%03lld] ",
-                   d / 1000000, (d % 1000000) / 1000);
-          s[sizeof(s) - 1] = 0;
-          output_s(s);
+          if (tmstmp_last.tv_sec)
+            {
+              unsigned long long d;
+              d =   (tmstmp_now.tv_sec * 1000000 + tmstmp_now.tv_usec)
+                  - (tmstmp_last.tv_sec * 1000000 + tmstmp_last.tv_usec);
+              snprintf(s, sizeof(s), "[%lld.%03lld] ",
+                       d / 1000000, (d % 1000000) / 1000);
+              s[sizeof(s) - 1] = 0;
+              output_s(s);
+            }
           tmstmp_last = tmstmp_now;
         }
     }
