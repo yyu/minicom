@@ -138,6 +138,13 @@ void check_answer(void)
   }
 }
 
+static void flush_output(void)
+{
+  fflush(stdout);
+  if (isatty(STDOUT_FILENO))
+    tcdrain(STDOUT_FILENO);
+}
+
 /*
  *	Send a file in ASCII mode.
  */
@@ -178,9 +185,7 @@ int asend(char *file)
     lineout(line, len);
     bdone += len;
     if (ldelay) {
-      fflush(stdout);
-      if (isatty(STDOUT_FILENO))
-        tcdrain(STDOUT_FILENO);
+      flush_output();
       ms_delay(ldelay);
     }
     stats(first);
@@ -189,9 +194,7 @@ int asend(char *file)
   }
   if (useeof) 
     putchar(eofchar);
-  fflush(stdout);
-  if (isatty (STDOUT_FILENO))
-    tcdrain (STDOUT_FILENO);
+  flush_output();
   fclose(fp);
 
   return 0;
