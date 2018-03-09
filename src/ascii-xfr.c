@@ -40,19 +40,19 @@ extern char *optarg;
 /*
  *	Global variables.
  */
-int cdelay = 0;
-int ldelay = 0;
-int dotrans = 1;
-int eofchar = 26;
-int useeof = 0;
-int verbose = 0;
-time_t start, last;
-unsigned long bdone = 0;
+static int cdelay = 0;
+static int ldelay = 0;
+static int dotrans = 1;
+static int eofchar = 26;
+static int useeof = 0;
+static int verbose = 0;
+static time_t start, last;
+static unsigned long bdone = 0;
 
 /*
  *	Millisecond delay.
  */
-void ms_delay(int ms)
+static void ms_delay(int ms)
 {
 #ifdef HAVE_USLEEP
   usleep(1000 * ms);
@@ -94,7 +94,7 @@ static void lineout(char const *line, int len)
 /*
  *	Show the up/download statistics.
  */
-void stats(int force)
+static void stats(int force)
 {
   time_t now;
   time_t dif;
@@ -116,7 +116,7 @@ void stats(int force)
   fflush(stderr);
 }
 
-void check_answer(void)
+static void check_answer(void)
 { /* a patch from Bo Branten <bosse@ing.umu.se> */
   char line[1024];
   int  n;
@@ -148,7 +148,7 @@ static void flush_output(void)
 /*
  *	Send a file in ASCII mode.
  */
-int asend(char *file)
+static int asend(char *file)
 {
   FILE *fp;
   char line[1024];
@@ -192,7 +192,7 @@ int asend(char *file)
     first = 0;
     check_answer();
   }
-  if (useeof) 
+  if (useeof)
     putchar(eofchar);
   flush_output();
   fclose(fp);
@@ -203,7 +203,7 @@ int asend(char *file)
 /*
  *	Receive a file in ASCII mode.
  */
-int arecv(char *file)
+static int arecv(char *file)
 {
   FILE *fp;
   char line[1024];
@@ -235,7 +235,7 @@ int arecv(char *file)
   return 0;
 }
 
-void usage(void)
+static void usage(void)
 {
   fprintf(stderr, _("\
 Usage: ascii-xfr -s|-r [-dvn] [-l linedelay] [-c character delay] filename\n\
@@ -313,4 +313,3 @@ int main(int argc, char **argv)
 
   return ret < 0 ? 1 : 0;
 }
-
