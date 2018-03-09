@@ -177,8 +177,12 @@ int asend(char *file)
     }
     lineout(line, len);
     bdone += len;
-    if (ldelay)
+    if (ldelay) {
+      fflush(stdout);
+      if (isatty(STDOUT_FILENO))
+        tcdrain(STDOUT_FILENO);
       ms_delay(ldelay);
+    }
     stats(first);
     first = 0;
     check_answer();
