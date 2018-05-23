@@ -544,9 +544,16 @@ static void doserial(void)
   char *bps_par_bits          = _(" E -    Bps/Par/Bits       :");
   char *hardware_flow_control = _(" F - Hardware Flow Control :");
   char *software_flow_control = _(" G - Software Flow Control :");
+  char *rs485_enable          = _(" H -     RS485 Enable      :");
+  char *rs485_rts_on_send     = _(" I -   RS485 Rts On Send   :");
+  char *rs485_rts_after_send  = _(" J -  RS485 Rts After Send :");
+  char *rs485_rx_during_tx    = _(" K -  RS485 Rx During Tx   :");
+  char *rs485_terminate_bus   = _(" L -  RS485 Terminate Bus  :");
+  char *rs485_del_rts_bef_snd = _(" M - RS485 Delay Rts Before:");
+  char *rs485_del_rts_aft_snd = _(" N - RS485 Delay Rts After :");
   char *question              = _("Change which setting?");
 
-  w = mc_wopen(5, 4, 75, 12, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
+  w = mc_wopen(5, 4, 75, 19, BDOUBLE, stdattr, mfcolor, mbcolor, 0, 0, 1);
   mc_wprintf(w, "%s %.41s\n", serial_device, P_PORT);
 #if !HAVE_LOCKDEV
   mc_wprintf(w, "%s %.41s\n", lockfile_location, P_LOCK);
@@ -559,12 +566,19 @@ static void doserial(void)
           bps_par_bits, P_BAUDRATE, P_BITS, P_PARITY, P_STOPB);
   mc_wprintf(w, "%s %s\n", hardware_flow_control, _(P_HASRTS));
   mc_wprintf(w, "%s %s\n", software_flow_control, _(P_HASXON));
-  mc_wlocate(w, 4, 8);
+  mc_wprintf(w, "%s %s\n", rs485_enable, P_RS485_EN);
+  mc_wprintf(w, "%s %s\n", rs485_rts_on_send, P_RS485_RTS_ON_SEND);
+  mc_wprintf(w, "%s %s\n", rs485_rts_after_send, P_RS485_RTS_AFTER_SEND);
+  mc_wprintf(w, "%s %s\n", rs485_rx_during_tx, P_RS485_RX_DURING_TX);
+  mc_wprintf(w, "%s %s\n", rs485_terminate_bus, P_RS485_TERMINATE_BUS);
+  mc_wprintf(w, "%s %s\n", rs485_del_rts_bef_snd, P_RS485_DEL_RTS_BEF_SND);
+  mc_wprintf(w, "%s %s\n", rs485_del_rts_aft_snd, P_RS485_DEL_RTS_AFT_SND);
+  mc_wlocate(w, 4, 15);
   mc_wputs(w, question);
   mc_wredraw(w, 1);
 
   while(1) {
-    mc_wlocate(w, mbswidth(question) + 5, 8);
+    mc_wlocate(w, mbswidth(question) + 5, 15);
     switch (rwxgetch()) {
       case '\n':
         mc_wclose(w, 1);
@@ -610,6 +624,58 @@ static void doserial(void)
         if (portfd >= 0)
           port_init();
         markch(P_HASXON);
+        break;
+      case 'H':
+        strcpy(P_RS485_EN, yesno(P_RS485_EN[0] == 'N'));
+        mc_wlocate(w, mbswidth(rs485_enable) + 1, 7);
+        mc_wprintf(w, "%s ", _(P_RS485_EN));
+        if (portfd >= 0)
+          port_init();
+        markch(P_RS485_EN);
+        break;
+      case 'I':
+        strcpy(P_RS485_RTS_ON_SEND, yesno(P_RS485_RTS_ON_SEND[0] == 'N'));
+        mc_wlocate(w, mbswidth(rs485_rts_on_send) + 1, 8);
+        mc_wprintf(w, "%s ", _(P_RS485_RTS_ON_SEND));
+        if (portfd >= 0)
+          port_init();
+        markch(P_RS485_RTS_ON_SEND);
+        break;
+      case 'J':
+        strcpy(P_RS485_RTS_AFTER_SEND, yesno(P_RS485_RTS_AFTER_SEND[0] == 'N'));
+        mc_wlocate(w, mbswidth(rs485_rts_after_send) + 1, 9);
+        mc_wprintf(w, "%s ", _(P_RS485_RTS_AFTER_SEND));
+        if (portfd >= 0)
+          port_init();
+        markch(P_RS485_RTS_AFTER_SEND);
+        break;
+      case 'K':
+        strcpy(P_RS485_RX_DURING_TX, yesno(P_RS485_RX_DURING_TX[0] == 'N'));
+        mc_wlocate(w, mbswidth(rs485_rx_during_tx) + 1, 10);
+        mc_wprintf(w, "%s ", _(P_RS485_RX_DURING_TX));
+        if (portfd >= 0)
+          port_init();
+        markch(P_RS485_RX_DURING_TX);
+        break;
+      case 'L':
+        strcpy(P_RS485_TERMINATE_BUS, yesno(P_RS485_TERMINATE_BUS[0] == 'N'));
+        mc_wlocate(w, mbswidth(rs485_rts_on_send) + 1, 11);
+        mc_wprintf(w, "%s ", _(P_RS485_TERMINATE_BUS));
+        if (portfd >= 0)
+          port_init();
+        markch(P_RS485_TERMINATE_BUS);
+        break;
+      case 'M':
+        pgets(w, mbswidth(rs485_del_rts_bef_snd) + 1, 12,
+              P_RS485_DEL_RTS_BEF_SND, 64, 64, 1);
+        if (portfd >= 0)
+          port_init();
+        break;
+      case 'N':
+        pgets(w, mbswidth(rs485_del_rts_aft_snd) + 1, 13,
+              P_RS485_DEL_RTS_AFT_SND, 64, 64, 1);
+        if (portfd >= 0)
+          port_init();
         break;
       default:
         break;
