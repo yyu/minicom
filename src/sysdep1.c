@@ -33,6 +33,7 @@
 #include <config.h>
 #endif
 
+#include "port.h"
 #include "sysdep.h"
 #include "minicom.h"
 
@@ -590,6 +591,55 @@ void m_setparms(int fd, char *baudr, char *par, char *bits, char *stopb,
 
 #ifndef _DCDFLOW
   m_sethwf(fd, hwf);
+#endif
+}
+
+void m_set485parms(int fd, int en, int rts_on_snd, int rts_aft_snd,
+                   int rx_dur_tx, int term_bus, char *del_rts_bef_snd,
+                   char *del_rts_aft_snd)
+{
+#ifdef SER_RS485_ENABLED
+  struct serial_rs485 rs485conf;
+
+  if (ioctl(fd, TIOCGRS485, &rs485conf))
+	  return;
+
+  if (en)
+    rs485conf.flags |= SER_RS485_ENABLED;
+  else
+    rs485conf.flags &= ~SER_RS485_ENABLED;
+
+  if (rts_on_snd)
+    rs485conf.flags |= SER_RS485_RTS_ON_SEND;
+  else
+    rs485conf.flags &= ~SER_RS485_RTS_ON_SEND;
+
+  if (rts_aft_snd)
+    rs485conf.flags |= SER_RS485_RTS_AFTER_SEND;
+  else
+    rs485conf.flags &= ~SER_RS485_RTS_AFTER_SEND;
+
+  rs485conf.delay_rts_before_send = atoi(del_rts_bef_snd);
+
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 36)
+  rs485conf.delay_rts_after_send = atoi(del_rts_aft_snd);
+#endif
+
+#ifdef SER_RS485_RX_DURING_TX
+  if (rx_dur_tx)
+    rs485conf.flags |= SER_RS485_RX_DURING_TX;
+  else
+    rs485conf.flags &= ~SER_RS485_RX_DURING_TX;
+#endif
+
+#ifdef SER_RS485_TERMINATE_BUS
+  if (term_bus)
+    rs485conf.flags |= SER_RS485_TERMINATE_BUS;
+  else
+    rs485conf.flags &= ~SER_RS485_TERMINATE_BUS;
+#endif
+
+  ioctl(fd, TIOCSRS485, &rs485conf);
 #endif
 }
 
