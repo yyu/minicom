@@ -168,6 +168,14 @@ enum config_type {
 
 #define P_ANSWERBACK    mpars[92].value  /* User defined answerback string */
 
+#define P_RS485_EN              mpars[93].value  /* RS485 Enable */
+#define P_RS485_RTS_ON_SEND     mpars[94].value  /* RS485 Rts on send */
+#define P_RS485_RTS_AFTER_SEND  mpars[95].value  /* RS485 Rts after send */
+#define P_RS485_RX_DURING_TX    mpars[96].value  /* RS485 Rx during tx */
+#define P_RS485_TERMINATE_BUS   mpars[97].value  /* RS485 Terminate bus */
+#define P_RS485_DEL_RTS_BEF_SND mpars[98].value  /* RS485 Delay rts before send */
+#define P_RS485_DEL_RTS_AFT_SND mpars[99].value  /* RS485 Delay rts after send */
+
 /* fmg - macros struct */
 
 #define P_MAC1          mmacs[0].value

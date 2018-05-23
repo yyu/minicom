@@ -188,6 +188,15 @@ struct pars mpars[] = {
 
   { "Minicom"VERSION,   0,    "answerback" },
 
+  /* RS485 parameters */
+  { "No",		0,    "rs485en" },
+  { "No",		0,    "rs485rtsonsnd" },
+  { "No",		0,    "rs485rtsaftsnd" },
+  { "No",		0,    "rs485rxdurtx" },
+  { "No",		0,    "rs485termbus" },
+  { "0",		0,    "rs485delbefsnd" },
+  { "0",		0,    "rs485delaftsnd" },
+
   /* That's all folks */
   { "",                 0,         NULL },
 };
