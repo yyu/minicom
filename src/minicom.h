@@ -282,8 +282,8 @@ void m_hupcl(int fd, int on);
 void m_flush(int fd);
 void m_flush_script( int fd);
 unsigned m_getmaxspd(void);
-void m_setparms(int fd, char *baudr, char *par, char *bits,
-                char *stopb, int hwf, int swf);
+void m_setparms(int fd, char *baudr, char *par, char *bits, char *stopb,
+                int hwf, int swf, int rs485en);
 void m_set485parms(int fd, int en, int rts_on_snd, int rts_aft_snd,
                    int rx_dur_tx, int term_bus, char *del_rts_bef_snd,
                    char *del_rts_aft_snd);

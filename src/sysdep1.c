@@ -391,7 +391,7 @@ unsigned m_getmaxspd(void)
  * Set baudrate, parity and number of bits.
  */
 void m_setparms(int fd, char *baudr, char *par, char *bits, char *stopb,
-                int hwf, int swf)
+                int hwf, int swf, int rs485en)
 {
   int spd = -1;
   int newbaud;
@@ -586,7 +586,8 @@ void m_setparms(int fd, char *baudr, char *par, char *bits, char *stopb,
 
   tcsetattr(fd, TCSANOW, &tty);
 
-  m_setrts(fd);
+  if (!rs485en)
+    m_setrts(fd);
 #endif /* POSIX_TERMIOS */
 
 #ifndef _DCDFLOW
