@@ -96,8 +96,8 @@ static int DoMatch(const char *s, const char *p)
       case '\\':
         /* Literal match with following character. */
         p++;
-        /* FALLTHROUGH */
 
+        /* FALLTHRU */
       default:		/*literal match*/
         if (*s != *p)
           return FALSE;

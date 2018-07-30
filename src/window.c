@@ -991,7 +991,7 @@ void mc_wputc(WIN *win, wchar_t c)
     case '\n':
       if (win->autocr)
         win->curx = 0;
-      /*FALLTHRU*/
+      /* FALLTHRU */
     default:
       /* See if we need to scroll/move. (vt100 behaviour!) */
       if (c == '\n' || (win->curx >= win->xs && win->wrap)) {
@@ -1751,7 +1751,7 @@ int mc_wgetwcs(WIN *w, wchar_t *s, int linelen, int maxlen)
           mc_wflush();
           break;
         }
-        /*FALLTHRU*/
+        /* FALLTHRU */
       case K_DEL: /* Delete character under cursor. */
         if (buf[idx] == 0)
           break;
