@@ -311,7 +311,7 @@ fi
 
 if test "x$ac_cv_prog_gcc" = xyes
 then
-	CFLAGS="$CFLAGS -W -Wall -Wextra -std=gnu99"
+	CFLAGS="$CFLAGS -W -Wall -Wextra -std=gnu99 -Wno-format-truncation"
 fi
 
 # this is a hack, if we need getopt_long we also need getopt
