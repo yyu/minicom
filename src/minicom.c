@@ -1279,6 +1279,7 @@ int main(int argc, char **argv)
           break;
         case 't': /* Terminal type */
           strncpy(termtype, optarg, sizeof(termtype));
+          termtype[sizeof(termtype) - 1] = '\0';
 #ifdef __GLIBC__
           /* Bug in older libc's (< 4.5.26 I think) */
           if ((s = getenv("TERMCAP")) != NULL && *s != '/')
@@ -1396,7 +1397,9 @@ int main(int argc, char **argv)
     strncpy(homedir, pwd->pw_dir, sizeof(homedir));
   else
     strncpy(homedir, s, sizeof(homedir));
+  homedir[sizeof(homedir) - 1] = '\0';
   strncpy(username, pwd->pw_name, sizeof(username));
+  username[sizeof(username) - 1] = '\0';
 
   /* Get personal parameter file */
   snprintf(pparfile, sizeof(pparfile), "%s/.minirc.%s", homedir, use_port);
