@@ -13,6 +13,7 @@ New:
  - Fix F10 macro key used in current setups
  - Add F11 and F12 for macro use
  - Fixed DTR for recent systems
+ - Add support for RS485.
  - Bug fixes
 
 New for for version 2.7:
