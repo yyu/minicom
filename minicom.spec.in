@@ -10,7 +10,7 @@ Release:	1
 Copyright:	GPL
 Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
-URL:		http://alioth.debian.org/projects/minicom/
+URL:		https://salsa.debian.org/minicom-team/minicom
 Packager:	Daniel Tschan <tschan+rpm@devzone.ch>
 Source0:	%{name}-%{version}.tar.gz
 Buildroot:	%{_tmppath}/%{name}-root

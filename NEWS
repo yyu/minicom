@@ -4,6 +4,7 @@ the previous released version. For a full list of changes
 please refer to the ChangeLog file.
 
 New:
+ - Moved project to https://salsa.debian.org/minicom-team/minicom
  - New timestamp mode: Delta to previous line.
  - Add HPA ESC sequence
  - Add alternative window support (ti/te)

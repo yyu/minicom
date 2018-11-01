@@ -23,10 +23,10 @@ For more information, have a look at the other files.
 
 WWW: For information about the newest version, what has changed since the
 previous version, and sometimes possibly the newest beta version (if there
-is one available), look at http://alioth.debian.org/projects/minicom/.
+is one available), look at https://salsa.debian.org/minicom-team/minicom.
 
-HG: Current development version of minicom is in the Alioth HG repository,
-see http://alioth.debian.org/scm/?group_id=30018 for instructions.
+Current development version of minicom can be found here:
+https://salsa.debian.org/minicom-team/minicom
 
 If you want to use minicom with network-modem software, have a look at
 sunsite.unc.edu:/pub/Linux/apps/serialcomm/modem/modem-*.tar.gz by
