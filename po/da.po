@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2015-06-29 21:08+0200\n"
+"POT-Creation-Date: 2013-12-31 16:15+0100\n"
 "PO-Revision-Date: 2015-06-28 16:13+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -317,11 +317,11 @@ msgstr " S - Hex-visning            :"
 msgid " T - Add carriage return    :"
 msgstr " T - Tilføj carriage return :"
 
-#: src/config.c:851 src/config.c:1612
+#: src/config.c:851 src/config.c:1604
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Hvilken indstilling skal ændres? (Escape afslutter)"
 
-#: src/config.c:855 src/config.c:1380
+#: src/config.c:855 src/config.c:1376
 msgid "Screen and keyboard"
 msgstr "Skærm og tastatur"
 
@@ -345,15 +345,15 @@ msgstr "Terminalens forgrundsfarve == baggrundsfarve, ret det!"
 msgid "History Buffer Size"
 msgstr "Størrelse på historikbuffer"
 
-#: src/config.c:937
+#: src/config.c:936
 #, fuzzy
 msgid ""
 "\n"
-" You have changed the history buffer size.\n"
-" You will need to save the configuration file and\n"
-" restart minicom for the change to take effect.\n"
+"                You have changed the history buffer size.\n"
+"                You will need to save the configuration file and\n"
+"                restart minicom for the change to take effect.\n"
 "\n"
-" Hit a key to Continue... "
+"                Hit a key to Continue... "
 msgstr ""
 "\n"
 "                Du har ændret størrelsen på historikbufferen.\n"
@@ -471,120 +471,120 @@ msgstr "Makroer gemt"
 msgid "Give name to save this configuration?"
 msgstr "Gem denne opsætning under et navn?"
 
-#: src/config.c:1376
+#: src/config.c:1372
 msgid "Filenames and paths"
 msgstr "Filnavne og søgestier"
 
-#: src/config.c:1377
+#: src/config.c:1373
 msgid "File transfer protocols"
 msgstr "Filoverførsels-protokoller"
 
-#: src/config.c:1378
+#: src/config.c:1374
 msgid "Serial port setup"
 msgstr "Opsætning af seriel port"
 
-#: src/config.c:1379
+#: src/config.c:1375
 msgid "Modem and dialing"
 msgstr "Modem og opkald"
 
-#: src/config.c:1382
+#: src/config.c:1378
 msgid "Save setup as.."
 msgstr "Gem opsætning som ..."
 
-#: src/config.c:1383
+#: src/config.c:1379
 msgid "Exit"
 msgstr "Afslut"
 
-#: src/config.c:1384
+#: src/config.c:1380
 msgid "Exit from Minicom"
 msgstr "Forlad Minicom"
 
-#: src/config.c:1400
+#: src/config.c:1392
 #, c-format
 msgid "Save setup as %s"
 msgstr "Gem opsætning som %s"
 
-#: src/config.c:1406
+#: src/config.c:1398
 msgid "configuration"
 msgstr "opsætning"
 
-#: src/config.c:1415
+#: src/config.c:1407
 msgid "BLACK"
 msgstr "SORT"
 
-#: src/config.c:1415
+#: src/config.c:1407
 msgid "RED"
 msgstr "RØD"
 
-#: src/config.c:1415
+#: src/config.c:1407
 msgid "GREEN"
 msgstr "GRØN"
 
-#: src/config.c:1415
+#: src/config.c:1407
 msgid "YELLOW"
 msgstr "GUL"
 
-#: src/config.c:1416
+#: src/config.c:1408
 msgid "BLUE"
 msgstr "BLÅ"
 
-#: src/config.c:1416
+#: src/config.c:1408
 msgid "MAGENTA"
 msgstr "LILLA"
 
-#: src/config.c:1416
+#: src/config.c:1408
 msgid "CYAN"
 msgstr "CYAN"
 
-#: src/config.c:1416
+#: src/config.c:1408
 msgid "WHITE"
 msgstr "HVID"
 
-#: src/config.c:1446
+#: src/config.c:1438
 msgid "Comm Parameters"
 msgstr "Kommunikationsparam."
 
-#: src/config.c:1451
+#: src/config.c:1443
 msgid " Speed            Parity      Data\n"
 msgstr " Hastighed        Paritet     Data\n"
 
-#: src/config.c:1452
+#: src/config.c:1444
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: <næste>       L: Ingen    S: 5\n"
 
-#: src/config.c:1453
+#: src/config.c:1445
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: <forrige>     M: Lige     T: 6\n"
 
-#: src/config.c:1454
+#: src/config.c:1446
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C:   9600        N: Ulige    U: 7\n"
 
-#: src/config.c:1455
+#: src/config.c:1447
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D:  38400        O: Mærke    V: 8\n"
 
-#: src/config.c:1456
+#: src/config.c:1448
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: Mellemrum\n"
 
-#: src/config.c:1458
+#: src/config.c:1450
 msgid " Stopbits\n"
 msgstr " Stopbit\n"
 
-#: src/config.c:1459
+#: src/config.c:1451
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1460
+#: src/config.c:1452
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1462
+#: src/config.c:1454
 msgid " K: Current\n"
 msgstr " K: Aktuel\n"
 
-#: src/config.c:1465
+#: src/config.c:1457
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -592,52 +592,52 @@ msgstr ""
 "\n"
 " Vælg, eller <Retur> for at afslutte? "
 
-#: src/config.c:1473
+#: src/config.c:1465
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Aktuelt: %5s %s%s%s  "
 
-#: src/config.c:1615
+#: src/config.c:1607
 msgid "F1 to F10 Macros"
 msgstr "Makroer knyttet til F1-F10"
 
-#: src/config.c:1634
+#: src/config.c:1626
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
 " (UDLÆGNING: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = 1 sekunds pause,"
 
-#: src/config.c:1636
+#: src/config.c:1628
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr ""
 "  \\u = brugernavn, \\p = adgangskode, \\\\ = \\, \\e = slå ekko til/fra, "
 
-#: src/config.c:1638
+#: src/config.c:1630
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr ""
 "  \\l = LF til/fra, \\bX1..Xn<sp> = skift baud-hastighed. Eks.: \"\\beq \""
 
-#: src/config.c:1640
+#: src/config.c:1632
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 "  = 115200 8N1. (Se menuen \"Kommunikationsparam.\" for gyldige værdier af "
 "X.))"
 
-#: src/config.c:1655
+#: src/config.c:1647
 msgid "CHANGED"
 msgstr "ÆNDRET"
 
-#: src/config.c:1742
+#: src/config.c:1734
 msgid "Character conversion"
 msgstr "Tegnkonvertering"
 
-#: src/config.c:1747
+#: src/config.c:1739
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr ""
 " tegn    ind ud    tegn    ind ud    tegn    ind ud    tegn    ind ud\n"
 
-#: src/config.c:1769
+#: src/config.c:1761
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -645,12 +645,12 @@ msgstr ""
 "\n"
 " A - indlæs tabel\tB - gem tabel"
 
-#: src/config.c:1771
+#: src/config.c:1763
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tfil:%s"
 
-#: src/config.c:1772
+#: src/config.c:1764
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -658,50 +658,50 @@ msgstr ""
 "\n"
 " C - redigér tegn\tD - næste skærm\tE - forrige skærm\n"
 
-#: src/config.c:1773
+#: src/config.c:1765
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F - omdan tegn: %s\n"
 
-#: src/config.c:1788
+#: src/config.c:1780
 #, c-format
 msgid "Load file: %s"
 msgstr "Indlæs fil: %s"
 
-#: src/config.c:1800
+#: src/config.c:1792
 #, c-format
 msgid "Save as file: %s"
 msgstr "Gem som fil: %s"
 
-#: src/config.c:1811
+#: src/config.c:1803
 msgid "Character to be edited: "
 msgstr "Tegn der skal redigeres: "
 
-#: src/config.c:1819 src/config.c:1831 src/config.c:1843
+#: src/config.c:1811 src/config.c:1823 src/config.c:1835
 msgid "Input character ascii value 0-255"
 msgstr "Tegn skal have ascii-værdi 0-255"
 
-#: src/config.c:1825
+#: src/config.c:1817
 #, c-format
 msgid "Change input to: %s"
 msgstr "Ændr inddata til: %s"
 
-#: src/config.c:1837
+#: src/config.c:1829
 #, c-format
 msgid "Change output to: %s"
 msgstr "Ændr uddata til: %s"
 
-#: src/config.c:1875
+#: src/config.c:1867
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Kan ikke åbne konverteringstabel %s"
 
-#: src/config.c:1881
+#: src/config.c:1873
 #, fuzzy, c-format
 msgid "Cannot read conversion table %s"
 msgstr "Kan ikke skrive konverteringstabel %s"
 
-#: src/config.c:1893
+#: src/config.c:1885
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Kan ikke skrive konverteringstabel %s"
@@ -1459,7 +1459,7 @@ msgid "minicom: argument to -p must be a pty\n"
 msgstr "minicom: argument til -p skal være en pty\n"
 
 # Ville logfil mon være bedre? -MBJ
-#: src/minicom.c:1253 src/minicom.c:1583
+#: src/minicom.c:1253 src/minicom.c:1580
 msgid "Cannot open capture file"
 msgstr "Kan ikke åbne opfangningsfil"
 
@@ -1471,27 +1471,27 @@ msgstr "Du eksisterer ikke. Forsvind.\n"
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Beklager. Din skærm er for lille.\n"
 
-#: src/minicom.c:1466
+#: src/minicom.c:1463
 msgid "Welcome to minicom"
 msgstr "Velkommen til minicom"
 
-#: src/minicom.c:1467
+#: src/minicom.c:1464
 msgid "OPTIONS"
 msgstr "TILVALG"
 
-#: src/minicom.c:1469
+#: src/minicom.c:1466
 msgid "Compiled on"
 msgstr "Oversat"
 
-#: src/minicom.c:1485
+#: src/minicom.c:1482
 msgid "Port"
 msgstr "Port"
 
-#: src/minicom.c:1488
+#: src/minicom.c:1485
 msgid "Using character set conversion"
 msgstr "Bruger tegnsætkonvertering"
 
-#: src/minicom.c:1489
+#: src/minicom.c:1486
 #, c-format
 msgid ""
 "\n"
@@ -1502,84 +1502,79 @@ msgstr ""
 "Tast %sZ for at få hjælp til specialtaster%c\n"
 "\n"
 
-#: src/minicom.c:1510
+#: src/minicom.c:1507
 msgid "Add linefeed ON"
 msgstr "Tilføj linjeskift TIL"
 
-#: src/minicom.c:1510
+#: src/minicom.c:1507
 msgid "Add linefeed OFF"
 msgstr "Tilføj linjeskift FRA"
 
-#: src/minicom.c:1515
+#: src/minicom.c:1512
 msgid "Add carriage return ON"
 msgstr "Tilføj carriage return TIL"
 
-#: src/minicom.c:1515
+#: src/minicom.c:1512
 msgid "Add carriage return OFF"
 msgstr "Tilføj carriage return FRA"
 
-#: src/minicom.c:1520
+#: src/minicom.c:1517
 msgid "Local echo ON"
 msgstr "Lokalt ekko slået TIL"
 
-#: src/minicom.c:1520
+#: src/minicom.c:1517
 msgid "Local echo OFF"
 msgstr "Lokalt ekko slået FRA"
 
-#: src/minicom.c:1539
+#: src/minicom.c:1536
 msgid "You are online. Really initialize?"
 msgstr "Du er tilsluttet. Vil du virkelig initialisere?"
 
-#: src/minicom.c:1546
+#: src/minicom.c:1543
 msgid "Leave without reset?"
 msgstr "Afslut uden at nulstille?"
 
-#: src/minicom.c:1550 src/minicom.c:1568
+#: src/minicom.c:1547 src/minicom.c:1565
 msgid "Save macros?"
 msgstr "Gem makroer?"
 
-#: src/minicom.c:1560
+#: src/minicom.c:1557
 msgid "Leave Minicom?"
 msgstr "Forlad Minicom?"
 
-#: src/minicom.c:1579
+#: src/minicom.c:1576
 msgid "Capture to which file? "
 msgstr "Opfang i hvilken fil? "
 
-#: src/minicom.c:1588 src/minicom.c:1597
+#: src/minicom.c:1585 src/minicom.c:1594
 msgid "Capture file"
 msgstr "Fil som data skal opfanges i"
 
-#: src/minicom.c:1631
+#: src/minicom.c:1628
 msgid "Linewrap ON"
 msgstr "Linjeombrydning slået TIL"
 
-#: src/minicom.c:1631
+#: src/minicom.c:1628
 msgid "Linewrap OFF"
 msgstr "Linjeombrydning slået FRA"
 
-#: src/minicom.c:1640
+#: src/minicom.c:1637
 msgid "Timestamp OFF"
 msgstr "Tidsstempel FRA"
 
-#: src/minicom.c:1643
+#: src/minicom.c:1640
 msgid "Timestamp every line (simple)"
 msgstr "Tidsstempel hver linje (simpel)"
 
-#: src/minicom.c:1646
+#: src/minicom.c:1643
 msgid "Timestamp every line (extended)"
 msgstr "Tidsstempel hver linje (udvidet)"
 
-#: src/minicom.c:1649
+#: src/minicom.c:1646
 msgid "Timestamp lines every second"
 msgstr "Tidsstempellinjer hvert sekund"
 
-#: src/minicom.c:1652
-#, fuzzy
-msgid "Timestamp delta between lines"
-msgstr "Tidsstempel hver linje (simpel)"
-
-#: src/minicom.c:1693
+#: src/minicom.c:1687
 msgid "Quit without reset while online."
 msgstr "Afslut uden at nulstille ved opkobling."
 
@@ -1816,35 +1811,39 @@ msgstr "Ændr hvilken indstilling? (Retur udfører, ESC afbryder)"
 msgid "Run a script"
 msgstr "Kør et script"
 
-#: src/window.c:1889
+#: src/window.c:1938
 #, c-format
 msgid "Environment variable TERM not set\n"
 msgstr "Miljøvariablen TERM er ikke sat\n"
 
-#: src/window.c:1895
+#: src/window.c:1944
 #, c-format
 msgid "No termcap entry for %s\n"
 msgstr "Ingen termcap-regel til %s\n"
 
-#: src/window.c:1898
+#: src/window.c:1947
 #, c-format
 msgid "No termcap database present!\n"
 msgstr "Termcap-database finde ikke!\n"
 
-#: src/window.c:1906
+#: src/window.c:1955
 #, c-format
 msgid "No cursor motion capability (cm)\n"
 msgstr "Markør har ingen bevægelsesegenskaber (cm)\n"
 
-#: src/window.c:1915
+#: src/window.c:1964
 #, c-format
 msgid "Number of terminal lines unknown\n"
 msgstr "Antal linjer i terminal ukendt\n"
 
-#: src/window.c:1919
+#: src/window.c:1968
 #, c-format
 msgid "Number of terminal columns unknown\n"
 msgstr "Antal kolonner i terminal ukendt\n"
+
+#, fuzzy
+#~ msgid "Timestamp delta between lines"
+#~ msgstr "Tidsstempel hver linje (simpel)"
 
 #~ msgid " %7.7sZ for help |           |     | Minicom %-6.6s |       | "
 #~ msgstr " %7.7sZ for hjælp |          |     | Minicom %-6.6s |       | "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: minicom-2.6.1.90\n"
 "Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2017-02-05 19:36+0100\n"
+"POT-Creation-Date: 2013-12-31 16:15+0100\n"
 "PO-Revision-Date: 2017-01-02 21:51+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
@@ -37,7 +37,7 @@ msgid " C - Log file transfers        :"
 msgstr " C — Бележи преносе датотека           :"
 
 #: src/config.c:248 src/config.c:302 src/config.c:544 src/config.c:650
-#: src/config.c:1188 src/dial.c:1181
+#: src/config.c:1194 src/dial.c:1186
 msgid "Change which setting?"
 msgstr "Које подешавање се мења?"
 
@@ -69,7 +69,7 @@ msgstr " E — Кермит програм          :"
 msgid " F - Logging options"
 msgstr " F — Опције бележења"
 
-#: src/config.c:355 src/rwconf.c:116 src/rwconf.c:149 src/rwconf.c:150
+#: src/config.c:355 src/rwconf.c:114 src/rwconf.c:147 src/rwconf.c:148
 msgid "Yes"
 msgstr "Да"
 
@@ -235,119 +235,119 @@ msgstr "Подешавање параметара модема и бирања"
 msgid "    Return or Esc to exit. Edit A+B to get defaults."
 msgstr "    „Унеси“ или „Есц“ да изађете . Уредите „A+B“ да добијете основно."
 
-#: src/config.c:831
+#: src/config.c:832
 msgid " A - Command key is         :"
 msgstr " A — Тастер наредбе је         :"
 
-#: src/config.c:832
+#: src/config.c:833
 msgid " B - Backspace key sends    :"
 msgstr " B — Тастер повратнице шаље    :"
 
-#: src/config.c:833
+#: src/config.c:834
 msgid " C - Status line is         :"
 msgstr " C — Ред стања је              :"
 
-#: src/config.c:834
+#: src/config.c:835
 msgid " D - Alarm sound            :"
 msgstr " D — Звук аларма               :"
 
-#: src/config.c:835
+#: src/config.c:836
 msgid " E - Foreground Color (menu):"
 msgstr " E — Боја исписа (изборник)    :"
 
-#: src/config.c:836
+#: src/config.c:837
 msgid " F - Background Color (menu):"
 msgstr " F — Боја позадине (изборник)  :"
 
-#: src/config.c:837
+#: src/config.c:838
 msgid " G - Foreground Color (term):"
 msgstr " G — Боја исписа (терминал)    :"
 
-#: src/config.c:838
+#: src/config.c:839
 msgid " H - Background Color (term):"
 msgstr " H — Боја позадине (терминал)  :"
 
-#: src/config.c:839
+#: src/config.c:840
 msgid " I - Foreground Color (stat):"
 msgstr " I — Боја исписа (стање)       :"
 
-#: src/config.c:840
+#: src/config.c:841
 msgid " J - Background Color (stat):"
 msgstr " J — Боја позадине (стање)     :"
 
-#: src/config.c:841
+#: src/config.c:842
 msgid " K - History Buffer Size    :"
 msgstr " K — Величина бафера историјата:"
 
-#: src/config.c:842
+#: src/config.c:843
 msgid " L - Macros file            :"
 msgstr " L — Датотеке макроа           :"
 
-#: src/config.c:843
+#: src/config.c:844
 msgid " N - Macros enabled         :"
 msgstr " N — Укључен макро             :"
 
-#: src/config.c:844
+#: src/config.c:845
 msgid " O - Character conversion   :"
 msgstr " O — Претварање знакова        :"
 
-#: src/config.c:845
+#: src/config.c:846
 msgid " P - Add linefeed           :"
 msgstr " P — Додаје ток реда           :"
 
-#: src/config.c:846
+#: src/config.c:847
 msgid " Q - Local echo             :"
 msgstr " Q — Локални одјек             :"
 
-#: src/config.c:847
+#: src/config.c:848
 msgid " R - Line Wrap              :"
 msgstr " R — Прелом реда               :"
 
-#: src/config.c:848
+#: src/config.c:849
 msgid " S - Hex Display            :"
 msgstr " S — Хексадецимални приказ     :"
 
-#: src/config.c:849
+#: src/config.c:850
 msgid " T - Add carriage return    :"
 msgstr " T — Додаје крајник реда       :"
 
-#: src/config.c:850 src/config.c:1606
+#: src/config.c:851 src/config.c:1604
 msgid "Change which setting?  (Esc to exit)"
 msgstr "Које подешавање се мења? (Есц за излазак)"
 
-#: src/config.c:854 src/config.c:1374
+#: src/config.c:855 src/config.c:1376
 msgid "Screen and keyboard"
 msgstr "Екран и тастатура"
 
-#: src/config.c:873
+#: src/config.c:874
 msgid " M - Edit Macros\n"
 msgstr " M — Уређује макрое\n"
 
-#: src/config.c:901
+#: src/config.c:902
 msgid "You can't change colors in black and white mode"
 msgstr "Не можете да измените боје у режиму црног и белог"
 
-#: src/config.c:913
+#: src/config.c:914
 msgid "Menu foreground == background color, change!"
 msgstr "Испис изборника == боји позадине, промените!"
 
-#: src/config.c:919
+#: src/config.c:923
 msgid "Terminal foreground == background color, change!"
 msgstr "Испис терминала == боји позадине, промените!"
 
-#: src/config.c:929
+#: src/config.c:935
 msgid "History Buffer Size"
 msgstr "Величина бафера историјата"
 
-#: src/config.c:931
+#: src/config.c:936
 #, fuzzy
 msgid ""
 "\n"
-" You have changed the history buffer size.\n"
-" You will need to save the configuration file and\n"
-" restart minicom for the change to take effect.\n"
+"                You have changed the history buffer size.\n"
+"                You will need to save the configuration file and\n"
+"                restart minicom for the change to take effect.\n"
 "\n"
-" Hit a key to Continue... "
+"                Hit a key to Continue... "
 msgstr ""
 "\n"
 "                Изменили сте величину бафера историјата.\n"
@@ -356,11 +356,11 @@ msgstr ""
 "\n"
 "                Притисните неки тастер да наставите... "
 
-#: src/config.c:947
+#: src/config.c:953
 msgid "Program new command key"
 msgstr "Нови тастер наредбе програма"
 
-#: src/config.c:949
+#: src/config.c:955
 msgid ""
 "\n"
 " Press the new command key. If you want to use\n"
@@ -382,203 +382,203 @@ msgstr ""
 "\n"
 " Притисните нови тастер наредбе: "
 
-#: src/config.c:958
+#: src/config.c:964
 msgid "Meta-8th bit "
 msgstr "Мета-8° бит "
 
-#: src/config.c:960
+#: src/config.c:966
 msgid "Escape (Meta)"
 msgstr "Ескејп (Мета)"
 
-#: src/config.c:993 src/config.c:1241
+#: src/config.c:999 src/config.c:1247
 msgid "disabled"
 msgstr "искључено"
 
-#: src/config.c:996 src/config.c:1244 src/rwconf.c:148
+#: src/config.c:1002 src/config.c:1250 src/rwconf.c:146
 msgid "enabled"
 msgstr "укључено"
 
-#: src/config.c:1111
+#: src/config.c:1117
 msgid "ERROR: you do not have permission to create a file there!"
 msgstr "ГРЕШКА: немате овлашћења да ту направите датотеку!"
 
-#: src/config.c:1117
+#: src/config.c:1123
 #, c-format
 msgid "ERROR: cannot open macro file %s"
 msgstr "ГРЕШКА: не могу да отворим макро датотеку „%s“"
 
-#: src/config.c:1123
+#: src/config.c:1129
 msgid "Reading macros"
 msgstr "Читам макрое"
 
-#: src/config.c:1182
+#: src/config.c:1188
 msgid " A -      Terminal emulation :"
 msgstr " A —            Емулација терминала :"
 
-#: src/config.c:1183
+#: src/config.c:1189
 msgid " B -     Backspace key sends :"
 msgstr " B —         Тастер повратнице шаље :"
 
-#: src/config.c:1184
+#: src/config.c:1190
 msgid " C -          Status line is :"
 msgstr " C —                   Ред стања је :"
 
-#: src/config.c:1185
+#: src/config.c:1191
 msgid " D -   Newline tx delay (ms) :"
 msgstr " D —    „tx“ застој новог реда (ms) :"
 
-#: src/config.c:1186
+#: src/config.c:1192
 msgid " E -          ENQ answerback :"
 msgstr " E —          ЕНКу повратни одговор :"
 
-#: src/config.c:1187
+#: src/config.c:1193
 msgid " F - Character tx delay (ms) :"
 msgstr " F —         „tx“ застој знака (ms) :"
 
-#: src/config.c:1191
+#: src/config.c:1197
 msgid "Terminal settings"
 msgstr "Подешавања терминала"
 
-#: src/config.c:1295
+#: src/config.c:1301
 #, c-format
 msgid "Cannot write to %s"
 msgstr "Не могу да пишем у „%s“"
 
-#: src/config.c:1302
+#: src/config.c:1308
 msgid "Configuration saved"
 msgstr "Подешавање је сачувано"
 
-#: src/config.c:1317
+#: src/config.c:1323
 msgid "ERROR: Macros have changed but no filename is set!"
 msgstr "ГРЕШКА: Макрои су измењени али није подешен назив датотеке!"
 
-#: src/config.c:1321
+#: src/config.c:1327
 #, c-format
 msgid "Cannot write macros file %s"
 msgstr "Не могу да упишем датотеку макроа „%s“"
 
-#: src/config.c:1327
+#: src/config.c:1333
 msgid "Macros saved"
 msgstr "Макрои су сачувани"
 
-#: src/config.c:1344
+#: src/config.c:1350
 msgid "Give name to save this configuration?"
 msgstr "Дајте назив да сачувам ово подешавање?"
 
-#: src/config.c:1370
+#: src/config.c:1372
 msgid "Filenames and paths"
 msgstr "Називи датотека и путање"
 
-#: src/config.c:1371
+#: src/config.c:1373
 msgid "File transfer protocols"
 msgstr "Протоколи преноса датотеке"
 
-#: src/config.c:1372
+#: src/config.c:1374
 msgid "Serial port setup"
 msgstr "Подешавање серијског порта"
 
-#: src/config.c:1373
+#: src/config.c:1375
 msgid "Modem and dialing"
 msgstr "Модем и бирање"
 
-#: src/config.c:1376
+#: src/config.c:1378
 msgid "Save setup as.."
 msgstr "Сачувај подешавање као.."
 
-#: src/config.c:1377
+#: src/config.c:1379
 msgid "Exit"
 msgstr "Изађи"
 
-#: src/config.c:1378
+#: src/config.c:1380
 msgid "Exit from Minicom"
 msgstr "Изађите из Миникома"
 
-#: src/config.c:1394
+#: src/config.c:1392
 #, c-format
 msgid "Save setup as %s"
 msgstr "Сачувај подешавање као „%s“"
 
-#: src/config.c:1400
+#: src/config.c:1398
 msgid "configuration"
 msgstr "подешавање"
 
-#: src/config.c:1409
+#: src/config.c:1407
 msgid "BLACK"
 msgstr "ЦРНА"
 
-#: src/config.c:1409
+#: src/config.c:1407
 msgid "RED"
 msgstr "ЦРВЕНА"
 
-#: src/config.c:1409
+#: src/config.c:1407
 msgid "GREEN"
 msgstr "ЗЕЛЕНА"
 
-#: src/config.c:1409
+#: src/config.c:1407
 msgid "YELLOW"
 msgstr "ЖУТА"
 
-#: src/config.c:1410
+#: src/config.c:1408
 msgid "BLUE"
 msgstr "ПЛАВА"
 
-#: src/config.c:1410
+#: src/config.c:1408
 msgid "MAGENTA"
 msgstr "РУЖИЧАСТА"
 
-#: src/config.c:1410
+#: src/config.c:1408
 msgid "CYAN"
 msgstr "ПЛАВИЧАСТА"
 
-#: src/config.c:1410
+#: src/config.c:1408
 msgid "WHITE"
 msgstr "БЕЛА"
 
-#: src/config.c:1440
+#: src/config.c:1438
 msgid "Comm Parameters"
 msgstr "Параметри наредбе"
 
-#: src/config.c:1445
+#: src/config.c:1443
 msgid " Speed            Parity      Data\n"
 msgstr " Брзина           Парност      Подаци\n"
 
-#: src/config.c:1446
+#: src/config.c:1444
 msgid " A: <next>        L: None     S: 5\n"
 msgstr " A: <след>        L: Ништа       S: 5\n"
 
-#: src/config.c:1447
+#: src/config.c:1445
 msgid " B: <prev>        M: Even     T: 6\n"
 msgstr " B: <претх>       M: Парно       T: 6\n"
 
-#: src/config.c:1448
+#: src/config.c:1446
 msgid " C:   9600        N: Odd      U: 7\n"
 msgstr " C:   9600        N: Непарно     U: 7\n"
 
-#: src/config.c:1449
+#: src/config.c:1447
 msgid " D:  38400        O: Mark     V: 8\n"
 msgstr " D:  38400        O: Обележје    V: 8\n"
 
-#: src/config.c:1450
+#: src/config.c:1448
 msgid " E: 115200        P: Space\n"
 msgstr " E: 115200        P: Размак\n"
 
-#: src/config.c:1452
+#: src/config.c:1450
 msgid " Stopbits\n"
 msgstr " Зауставни битови\n"
 
-#: src/config.c:1453
+#: src/config.c:1451
 msgid " W: 1             Q: 8-N-1\n"
 msgstr " W: 1             Q: 8-N-1\n"
 
-#: src/config.c:1454
+#: src/config.c:1452
 msgid " X: 2             R: 7-E-1\n"
 msgstr " X: 2             R: 7-E-1\n"
 
-#: src/config.c:1456
+#: src/config.c:1454
 msgid " K: Current\n"
 msgstr " K: Текуће\n"
 
-#: src/config.c:1459
+#: src/config.c:1457
 msgid ""
 "\n"
 " Choice, or <Enter> to exit? "
@@ -586,50 +586,50 @@ msgstr ""
 "\n"
 " Избор, или <Унеси> за излазак? "
 
-#: src/config.c:1467
+#: src/config.c:1465
 #, c-format
 msgid "Current: %5s %s%s%s  "
 msgstr "Текуће: %5s %s%s%s  "
 
-#: src/config.c:1609
+#: src/config.c:1607
 #, fuzzy
-msgid "F1 to F12 Macros"
+msgid "F1 to F10 Macros"
 msgstr "Макрои од Ф1 до Ф10"
 
-#: src/config.c:1630
+#: src/config.c:1626
 msgid " (LEGEND: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = pause 1 second,"
 msgstr ""
 " (ЛЕГЕНДА: ^M = C-M, ^L = C-L, ^G = C-G, ^R = C-R, ^~ = застаје 1 секунду,"
 
-#: src/config.c:1632
+#: src/config.c:1628
 msgid "  \\u = username, \\p = password, \\\\ = \\, \\e = toggle echo, "
 msgstr "  \\u = корисник, \\p = лозинка, \\\\ = \\, \\e = искључује ехо, "
 
-#: src/config.c:1634
+#: src/config.c:1630
 msgid ""
 "  \\l = toggle LF, \\bX1..Xn<sp> = change baud rate. Example: \"\\beq \""
 msgstr "  \\l = окида ЛФ, \\bX1..Xn<sp> = мења проток бода. Пример: „\\beq “"
 
-#: src/config.c:1636
+#: src/config.c:1632
 msgid ""
 "  = 115200 8N1. (See the \"Comm Parameters\" menu for valid values of X.))"
 msgstr ""
 "  = 115200 8N1. (Видите изборник „Параметри наредбе“ за исправним "
 "вредностима за Икс.))"
 
-#: src/config.c:1651
+#: src/config.c:1647
 msgid "CHANGED"
 msgstr "ИЗМЕЊЕНО"
 
-#: src/config.c:1750
+#: src/config.c:1734
 msgid "Character conversion"
 msgstr "Претварање знакова"
 
-#: src/config.c:1755
+#: src/config.c:1739
 msgid " char    in out    char    in out    char    in out    char    in out\n"
 msgstr " знак    у ван    знак    у ван    знак    у ван    знак    у ван\n"
 
-#: src/config.c:1777
+#: src/config.c:1761
 msgid ""
 "\n"
 " A - load table\tB - save table"
@@ -637,12 +637,12 @@ msgstr ""
 "\n"
 " A — учитава табелу\tB — чува табелу"
 
-#: src/config.c:1779
+#: src/config.c:1763
 #, c-format
 msgid "\tfile:%s"
 msgstr "\tдатотека:%s"
 
-#: src/config.c:1780
+#: src/config.c:1764
 msgid ""
 "\n"
 " C - edit char\tD - next screen\tE - prev screen\n"
@@ -650,50 +650,50 @@ msgstr ""
 "\n"
 " C — уређује знак\tD — следећи екран\tE — претходни екран\n"
 
-#: src/config.c:1781
+#: src/config.c:1765
 #, c-format
 msgid " F - convert capture: %s\n"
 msgstr " F — претвара снимање: %s\n"
 
-#: src/config.c:1796
+#: src/config.c:1780
 #, c-format
 msgid "Load file: %s"
 msgstr "Учитавам датотеку: %s"
 
-#: src/config.c:1808
+#: src/config.c:1792
 #, c-format
 msgid "Save as file: %s"
 msgstr "Чувам као датотеку: %s"
 
-#: src/config.c:1819
+#: src/config.c:1803
 msgid "Character to be edited: "
 msgstr "Знак за уређивање: "
 
-#: src/config.c:1827 src/config.c:1839 src/config.c:1851
+#: src/config.c:1811 src/config.c:1823 src/config.c:1835
 msgid "Input character ascii value 0-255"
 msgstr "Уноси аскри вредност знака 0-255"
 
-#: src/config.c:1833
+#: src/config.c:1817
 #, c-format
 msgid "Change input to: %s"
 msgstr "Мењам улаз на: %s"
 
-#: src/config.c:1845
+#: src/config.c:1829
 #, c-format
 msgid "Change output to: %s"
 msgstr "Мењам излаз на: %s"
 
-#: src/config.c:1884
+#: src/config.c:1867
 #, c-format
 msgid "Cannot open conversion table %s"
 msgstr "Не могу да отворим табелу претварања „%s“"
 
-#: src/config.c:1890
+#: src/config.c:1873
 #, fuzzy, c-format
 msgid "Cannot read conversion table %s"
 msgstr "Не могу да запишем табелу претварања „%s“"
 
-#: src/config.c:1903
+#: src/config.c:1885
 #, c-format
 msgid "Cannot write conversion table %s"
 msgstr "Не могу да запишем табелу претварања „%s“"
@@ -728,48 +728,48 @@ msgstr "    Нема везе: %s.      \n"
 msgid "   Press any key to continue..    "
 msgstr "   Притисните неки тастер да наставите..    "
 
-#: src/dial.c:389 src/dial.c:400
+#: src/dial.c:389 src/dial.c:401
 #, c-format
 msgid "     Retry in %2d seconds             "
 msgstr "     Покушајте поново за %2d секунде             "
 
-#: src/dial.c:426
+#: src/dial.c:427
 msgid "Max retries"
 msgstr "Највише покушаја"
 
-#: src/dial.c:436
+#: src/dial.c:437
 msgid "You are already online! Hang up first."
 msgstr "Већ сте на мрежи! Прекините прво."
 
-#: src/dial.c:441
+#: src/dial.c:442
 msgid "Autodial"
 msgstr "Самобирање"
 
-#: src/dial.c:445 src/dial.c:475
+#: src/dial.c:446 src/dial.c:476
 msgid "Dialing"
 msgstr "Бирање"
 
-#: src/dial.c:446 src/dial.c:478
+#: src/dial.c:447 src/dial.c:479
 #, c-format
 msgid "      At : %s"
 msgstr "      У : %s"
 
-#: src/dial.c:449 src/dial.c:482
+#: src/dial.c:450 src/dial.c:483
 #, c-format
 msgid " Last on : %s at %s"
 msgstr " Последње : %s у %s"
 
-#: src/dial.c:497
+#: src/dial.c:498
 #, c-format
 msgid "    Time : %-3d"
 msgstr "    Време : %-3d"
 
-#: src/dial.c:499
+#: src/dial.c:500
 #, c-format
 msgid "     Attempt #%d"
 msgstr "     Покушај #%d"
 
-#: src/dial.c:500
+#: src/dial.c:501
 msgid ""
 "\n"
 "\n"
@@ -781,139 +781,135 @@ msgstr ""
 "\n"
 " Ескејп да откажете, размак да поново покушате."
 
-#: src/dial.c:541
+#: src/dial.c:542
 msgid "Cancelled"
 msgstr "Отказано"
 
-#: src/dial.c:597
+#: src/dial.c:598
 msgid "Connected. Press any key to continue"
 msgstr "Повезани сте. Притисните неки тастер да наставите"
 
-#: src/dial.c:673
+#: src/dial.c:678
 msgid "Timeout"
 msgstr "Истекло време"
 
-#: src/dial.c:875
+#: src/dial.c:880
 msgid "Manually entered number"
 msgstr "Ручно унесен број"
 
-#: src/dial.c:884
+#: src/dial.c:889
 msgid "Cannot open ~/.dialdir: permission denied"
 msgstr "Не могу да отворим „~/.dialdir“: овлашћење је одбијено"
 
-#: src/dial.c:906
+#: src/dial.c:911
 #, fuzzy
 msgid "Failed to read dialing directory\n"
 msgstr "Нестало је меморије приликом читања директоријума бирања"
 
-#: src/dial.c:940
+#: src/dial.c:945
 msgid "Phonelist garbled (unknown version?)"
 msgstr "Списак телефона је изопачен (непознато издање?)"
 
-#: src/dial.c:947 src/dial.c:955
+#: src/dial.c:952 src/dial.c:960
 msgid "Phonelist corrupted"
 msgstr "Списак телефона је оштећен"
 
-#: src/dial.c:960
+#: src/dial.c:965
 msgid "Unknown dialing directory version"
 msgstr "Непознато издање директоријума бирања"
 
-#: src/dial.c:967
+#: src/dial.c:972
 msgid "Phonelist garbled (?)"
 msgstr "Списак телефона је изопачен (?)"
 
-#: src/dial.c:989
+#: src/dial.c:994
 msgid "Out of memory while reading dialing directory"
 msgstr "Нестало је меморије приликом читања директоријума бирања"
 
-#: src/dial.c:1019
-msgid "Failed to read phonelist\n"
-msgstr ""
-
-#: src/dial.c:1041
+#: src/dial.c:1046
 #, c-format
 msgid "Converted dialdir to new format, old saved as %s.v%hd"
 msgstr ""
 "Директоријум бирања је претворен у нови облик, стари је сачуван као „%s.v%hd“"
 
-#: src/dial.c:1076
+#: src/dial.c:1081
 msgid "Cannot open ~/.dialdir for writing!"
 msgstr "Не могу да отворим „~/.dialdir“ ради уписа!"
 
-#: src/dial.c:1092 src/dial.c:1104
+#: src/dial.c:1097 src/dial.c:1109
 msgid "Error writing to ~/.dialdir!"
 msgstr "Грешка писања у „~/.dialdir“!"
 
-#: src/dial.c:1169
+#: src/dial.c:1174
 msgid " A -  Name                :"
 msgstr " A —  Назив                  :"
 
-#: src/dial.c:1170
+#: src/dial.c:1175
 msgid " B -  Number              :"
 msgstr " B —  Број                   :"
 
-#: src/dial.c:1171
+#: src/dial.c:1176
 msgid " C -  Dial string #       :"
 msgstr " C —  Ниска бирања #         :"
 
-#: src/dial.c:1172
+#: src/dial.c:1177
 msgid " D -  Local echo          :"
 msgstr " D —  Локални одјек          :"
 
-#: src/dial.c:1173
+#: src/dial.c:1178
 msgid " E -  Script              :"
 msgstr " E —  Скрипта                :"
 
-#: src/dial.c:1174
+#: src/dial.c:1179
 msgid " F -  Username            :"
 msgstr " F —  Корисник               :"
 
-#: src/dial.c:1175
+#: src/dial.c:1180
 msgid " G -  Password            :"
 msgstr " G —  Лозинка                :"
 
-#: src/dial.c:1176
+#: src/dial.c:1181
 msgid " H -  Terminal Emulation  :"
 msgstr " H —  Емулација терминала    :"
 
-#: src/dial.c:1177
+#: src/dial.c:1182
 msgid " I -  Backspace key sends :"
 msgstr " I —  Тастер повратнице шаље :"
 
-#: src/dial.c:1178
+#: src/dial.c:1183
 msgid " J -  Linewrap            :"
 msgstr " J —  Прелом реда            :"
 
-#: src/dial.c:1179
+#: src/dial.c:1184
 msgid " K -  Line Settings       :"
 msgstr " K —  Подешавања реда        :"
 
-#: src/dial.c:1180
+#: src/dial.c:1185
 msgid " L -  Conversion table    :"
 msgstr " L —  Табела претварања      :"
 
-#: src/dial.c:1193 src/dial.c:1265 src/dial.c:1272
+#: src/dial.c:1198 src/dial.c:1270 src/dial.c:1277
 msgid "Delete"
 msgstr "Обриши"
 
-#: src/dial.c:1193 src/dial.c:1265 src/dial.c:1272
+#: src/dial.c:1198 src/dial.c:1270 src/dial.c:1277
 msgid "Backspace"
 msgstr "Повратница"
 
-#: src/dial.c:1195 src/dial.c:1267 src/dial.c:1277
+#: src/dial.c:1200 src/dial.c:1272 src/dial.c:1282
 msgid "On"
 msgstr "Укљ"
 
-#: src/dial.c:1195 src/dial.c:1267 src/dial.c:1277
+#: src/dial.c:1200 src/dial.c:1272 src/dial.c:1282
 msgid "Off"
 msgstr "Искљ"
 
-#: src/dial.c:1199
+#: src/dial.c:1204
 #, c-format
 msgid "      Last dialed         : %s %s\n"
 msgstr "      Последњи биран      : %s %s\n"
 
-#: src/dial.c:1200
+#: src/dial.c:1205
 #, c-format
 msgid "      Times on            : %d"
 msgstr "      Времена             : %d"
@@ -921,72 +917,72 @@ msgstr "      Времена             : %d"
 #. TRANSLATORS: Translation of each of these menu items should not be
 #. * longer than 7 characters. The upper-case letter is a shortcut,
 #. * so keep them unique and ASCII; 'h', 'j', 'k', 'l' are reserved
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "Dial"
 msgstr "Бирај"
 
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "Find"
 msgstr "Нађи"
 
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "Add"
 msgstr "Додај"
 
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "Edit"
 msgstr "Уреди"
 
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "Remove"
 msgstr "Уклони"
 
-#: src/dial.c:1301
+#: src/dial.c:1306
 msgid "moVe"
 msgstr "премести"
 
-#: src/dial.c:1302
+#: src/dial.c:1307
 msgid "Manual"
 msgstr "Ручно"
 
-#: src/dial.c:1448 src/file.c:71 src/minicom.c:69 src/minicom.c:72
+#: src/dial.c:1453 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   Yes  "
 msgstr "   Да  "
 
-#: src/dial.c:1448 src/file.c:71 src/minicom.c:69 src/minicom.c:72
+#: src/dial.c:1453 src/file.c:71 src/minicom.c:68 src/minicom.c:71
 msgid "   No   "
 msgstr "   Не   "
 
-#: src/dial.c:1541
+#: src/dial.c:1546
 #, c-format
 msgid "Entry \"%s\" not found. Enter dialdir?"
 msgstr "Нисам нашао унос „%s“. Да унесем директоријум бирања?"
 
-#: src/dial.c:1571 src/file.c:429
+#: src/dial.c:1576 src/file.c:429
 msgid "( Escape to exit, Space to tag )"
 msgstr "( Ескејп да изађете, Размак да означите )"
 
-#: src/dial.c:1572
+#: src/dial.c:1577
 msgid " Move entry up/down, Escape to exit"
 msgstr " Померајте унос горе/доле, Ескејп да изађете"
 
-#: src/dial.c:1592
+#: src/dial.c:1597
 msgid "Dialing Directory"
 msgstr "Директоријум бирања"
 
-#: src/dial.c:1594
+#: src/dial.c:1599
 msgid "     Name            Number            Last on      Times Script\n"
 msgstr "     Назив           Број              Последње     Скрипта времена\n"
 
-#: src/dial.c:1768
+#: src/dial.c:1773
 msgid "Find an entry"
 msgstr "Нађите унос"
 
-#: src/dial.c:1829
+#: src/dial.c:1834
 msgid "Remove entry?"
 msgstr "Да уклоним унос?"
 
-#: src/dial.c:1873
+#: src/dial.c:1878
 msgid "Enter number"
 msgstr "Унеси број"
 
@@ -1196,136 +1192,131 @@ msgstr "Неке допуне је обавио Јука Латинен 1997-200
 msgid "i18n by Arnaldo Carvalho de Melo 1998"
 msgstr "„i18n“ је урадио Арналдо Карвало де Мело 1998"
 
-#: src/main.c:319
+#: src/main.c:241
 #, c-format
 msgid "Lockfile is stale. Overriding it..\n"
 msgstr "Датотека закључавања је устајала. Преписујем је..\n"
 
-#: src/main.c:328 src/updown.c:498
+#: src/main.c:250 src/updown.c:498
 #, c-format
 msgid "Device %s is locked.\n"
 msgstr "Уређај „%s“ је закључан.\n"
 
-#: src/main.c:343
+#: src/main.c:265
 #, c-format
 msgid "Could not setup for dial out.\n"
 msgstr "Не могу да подесим за бирање.\n"
 
-#: src/main.c:389
+#: src/main.c:316
 #, c-format
 msgid "minicom: cannot open %s: %s\n"
 msgstr "миником: не могу да отворим „%s“: %s\n"
 
-#: src/main.c:392
+#: src/main.c:319
 #, c-format
 msgid "minicom: cannot open %s. Sorry.\n"
 msgstr "миником: не могу да отворим „%s“. Извините.\n"
 
-#: src/main.c:399 src/main.c:883
+#: src/main.c:326 src/main.c:804
 #, c-format
 msgid "Cannot open %s!"
 msgstr "Не могу да отворим „%s“!"
 
-#: src/main.c:559
-#, fuzzy
-msgid "%H for help | %b | %C | Minicom %V | %T | %t | %D"
-msgstr " %7.7sZ за помоћ |           |     | Миником %-6.6s |       | "
-
-#: src/main.c:630
+#: src/main.c:554
 msgid "Offline"
 msgstr "Ван мреже"
 
-#: src/main.c:630
+#: src/main.c:554
 msgid "OFFLINE"
 msgstr "ВАН_МРЕЖЕ"
 
-#: src/main.c:633
+#: src/main.c:557
 msgid "Online"
 msgstr "На мрежи"
 
-#: src/main.c:633
+#: src/main.c:557
 msgid "ONLINE"
 msgstr "НА_МРЕЖИ"
 
-#: src/main.c:706
+#: src/main.c:627
 #, c-format
 msgid "Gone offline (%ld:%02ld:%02ld)"
 msgstr "На мрежи је (%ld:%02ld:%02ld)"
 
-#: src/main.c:864
+#: src/main.c:785
 msgid "Could not re-initialize window system."
 msgstr "Не могу поново да покренем систем прозора."
 
-#: src/minicom.c:57 src/minicom.c:59
+#: src/minicom.c:56 src/minicom.c:58
 #, c-format
 msgid "Got signal %d"
 msgstr "Добих сигнал %d"
 
-#: src/minicom.c:70 src/minicom.c:71
+#: src/minicom.c:69 src/minicom.c:70
 msgid "  Close "
 msgstr "  Затвори  "
 
-#: src/minicom.c:70
+#: src/minicom.c:69
 msgid " Pause  "
 msgstr "  Застани  "
 
-#: src/minicom.c:70 src/minicom.c:71
+#: src/minicom.c:69 src/minicom.c:70
 msgid "  Exit  "
 msgstr "   Изађи   "
 
-#: src/minicom.c:71
+#: src/minicom.c:70
 msgid " Unpause"
 msgstr " Отпаузирај"
 
-#: src/minicom.c:86
+#: src/minicom.c:85
 msgid "Hang-up line?"
 msgstr "Да прекинем линију?"
 
-#: src/minicom.c:97
+#: src/minicom.c:96
 #, c-format
 msgid "Killed by signal %d !\n"
 msgstr "Убијено сигналом %d !\n"
 
-#: src/minicom.c:121
+#: src/minicom.c:120
 msgid "Suspended. Type \"fg\" to resume.\n"
 msgstr "Обустављено. Укуцајте „fg“ да наставите.\n"
 
-#: src/minicom.c:140
+#: src/minicom.c:139
 msgid "SHELL variable not set"
 msgstr "Променљива „ЉУСКЕ“ није подешена"
 
-#: src/minicom.c:144 src/updown.c:314 src/updown.c:526 src/updown.c:725
+#: src/minicom.c:143 src/updown.c:314 src/updown.c:526 src/updown.c:725
 msgid "Out of memory: could not fork()"
 msgstr "Нема више меморије: не могу да испелцујем"
 
-#: src/minicom.c:154
+#: src/minicom.c:153
 msgid "Shelled out. Type \"exit\" to return.\n"
 msgstr "У љусци сте. Укуцајте „exit“ да се вратите.\n"
 
-#: src/minicom.c:267
+#: src/minicom.c:266
 msgid "SEARCH FOR (ESC=Exit)"
 msgstr "ПОТРАЖИ (ЕСЦ=Изађите)"
 
-#: src/minicom.c:317 src/minicom.c:338
+#: src/minicom.c:316 src/minicom.c:337
 msgid "Search Wrapping Around to Start!"
 msgstr "Тражим прелом око почетка!"
 
-#: src/minicom.c:463
+#: src/minicom.c:462
 msgid ""
 "HISTORY: U=Up D=Down F=PgDn B=PgUp s=Srch S=CaseLess N=Next C=Cite ESC=Exit "
 msgstr ""
 "ИСТОРИЈАТ: U=Горе D=Доле F=Стр_доле B=Стр_горе s=Тражи S=Мање_слова N=Даље "
 "C=Цитат ESC=Изађи "
 
-#: src/minicom.c:502
+#: src/minicom.c:501
 msgid "History buffer Disabled!"
 msgstr "Бафер историјата је искључен!"
 
-#: src/minicom.c:507
+#: src/minicom.c:506
 msgid "History buffer empty!"
 msgstr "Бафер историјата је празан!"
 
-#: src/minicom.c:565
+#: src/minicom.c:564
 msgid ""
 "No previous search!\n"
 "  Please 's' or 'S' first!"
@@ -1333,29 +1324,29 @@ msgstr ""
 "Нема претходне претраге!\n"
 "  Прво упишите „s“ или „S“!"
 
-#: src/minicom.c:722 src/minicom.c:765
+#: src/minicom.c:721 src/minicom.c:764
 msgid ""
 "  CITATION: ENTER=select start line ESC=exit                               "
 msgstr ""
 "  ЦИТАТ: УНЕСИ=бира почетни ред ЕСЦ=излази                               "
 
-#: src/minicom.c:739
+#: src/minicom.c:738
 msgid ""
 "  CITATION: ENTER=select end line ESC=exit                                 "
 msgstr ""
 "  ЦИТАТ: УНЕСИ=бира крајњи ред ЕСЦ=излази                                 "
 
-#: src/minicom.c:849
+#: src/minicom.c:798
 #, c-format
 msgid "Wrong option in environment MINICOM=\"%s\"\n"
 msgstr "Погрешна опција у окружењу МИНИКОМ=„%s“\n"
 
-#: src/minicom.c:850
+#: src/minicom.c:799
 #, c-format
 msgid "Type \"minicom %s\" for help.\n"
 msgstr "Укуцајте „minicom %s“ за помоћ.\n"
 
-#: src/minicom.c:860
+#: src/minicom.c:809
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [OPTION]... [configuration]\n"
@@ -1426,17 +1417,17 @@ msgstr ""
 "\n"
 "Ове опције такође могу бити наведене у променљивој окружења МИНИКОМ-а.\n"
 
-#: src/minicom.c:890
+#: src/minicom.c:839
 #, c-format
 msgid "This variable is currently set to \"%s\".\n"
 msgstr "Ова променљива је тренутно подешена на „%s“.\n"
 
-#: src/minicom.c:892
+#: src/minicom.c:841
 #, c-format
 msgid "This variable is currently unset.\n"
 msgstr "Ова променљива тренутно није подешена.\n"
 
-#: src/minicom.c:895
+#: src/minicom.c:844
 #, c-format
 msgid ""
 "The configuration directory for the access file and the configurations\n"
@@ -1449,22 +1440,17 @@ msgstr ""
 "\n"
 "Грешке пријавите на <minicom-devel@lists.alioth.debian.org>.\n"
 
-#: src/minicom.c:1008
-#, c-format
-msgid "Activating iconv failed with: %s(%d)\n"
-msgstr ""
-
-#: src/minicom.c:1237
+#: src/minicom.c:1161
 #, c-format
 msgid "%s version %s"
 msgstr "%s издање %s"
 
-#: src/minicom.c:1239
+#: src/minicom.c:1163
 #, c-format
 msgid " (compiled %s)"
 msgstr " (преведено %s)"
 
-#: src/minicom.c:1242
+#: src/minicom.c:1166
 #, c-format
 msgid ""
 "Copyright (C) Miquel van Smoorenburg.\n"
@@ -1473,54 +1459,44 @@ msgstr ""
 "Ауторска права © Мигел ван Смуренбург.\n"
 "\n"
 
-#: src/minicom.c:1243
-#, c-format
-msgid ""
-"This program is free software; you can redistribute it and/or\n"
-"modify it under the terms of the GNU General Public License\n"
-"as published by the Free Software Foundation; either version\n"
-"2 of the License, or (at your option) any later version.\n"
-"\n"
-msgstr ""
-
-#: src/minicom.c:1265
+#: src/minicom.c:1189
 #, c-format
 msgid "minicom: argument to -p must be a pty\n"
 msgstr "мниником: аргумент за „-p“ мора бити „pty“\n"
 
-#: src/minicom.c:1329 src/minicom.c:1661
+#: src/minicom.c:1253 src/minicom.c:1580
 msgid "Cannot open capture file"
 msgstr "Не могу да отворим датотеку снимања"
 
-#: src/minicom.c:1394
+#: src/minicom.c:1316
 msgid "You don't exist. Go away.\n"
 msgstr "Ви не постојите. Бришите одавде.\n"
 
-#: src/minicom.c:1469
+#: src/minicom.c:1391
 msgid "Sorry. Your screen is too small.\n"
 msgstr "Извините. Ваш екран је премали.\n"
 
-#: src/minicom.c:1544
+#: src/minicom.c:1463
 msgid "Welcome to minicom"
 msgstr "Добро дошли у миником"
 
-#: src/minicom.c:1545
+#: src/minicom.c:1464
 msgid "OPTIONS"
 msgstr "ОПЦИЈЕ"
 
-#: src/minicom.c:1547
+#: src/minicom.c:1466
 msgid "Compiled on"
 msgstr "Преведен"
 
-#: src/minicom.c:1563
+#: src/minicom.c:1482
 msgid "Port"
 msgstr "Порт"
 
-#: src/minicom.c:1566
+#: src/minicom.c:1485
 msgid "Using character set conversion"
 msgstr "Користим претварање скупа знакова"
 
-#: src/minicom.c:1567
+#: src/minicom.c:1486
 #, c-format
 msgid ""
 "\n"
@@ -1531,99 +1507,94 @@ msgstr ""
 "Притисните „%sZ“ за помоћ о посебним тастерима%c\n"
 "\n"
 
-#: src/minicom.c:1588
+#: src/minicom.c:1507
 msgid "Add linefeed ON"
 msgstr "Додај довод реда УКЉ"
 
-#: src/minicom.c:1588
+#: src/minicom.c:1507
 msgid "Add linefeed OFF"
 msgstr "Додај довод реда ИСКЉ"
 
-#: src/minicom.c:1593
+#: src/minicom.c:1512
 msgid "Add carriage return ON"
 msgstr "Додај крајник реда УКЉ"
 
-#: src/minicom.c:1593
+#: src/minicom.c:1512
 msgid "Add carriage return OFF"
 msgstr "Додај крајник реда ИСКЉ"
 
-#: src/minicom.c:1598
+#: src/minicom.c:1517
 msgid "Local echo ON"
 msgstr "Локални ехо УКЉ"
 
-#: src/minicom.c:1598
+#: src/minicom.c:1517
 msgid "Local echo OFF"
 msgstr "Локални ехо ИСКЉ"
 
-#: src/minicom.c:1617
+#: src/minicom.c:1536
 msgid "You are online. Really initialize?"
 msgstr "На мрежи сте. Да почнем стварно?"
 
-#: src/minicom.c:1624
+#: src/minicom.c:1543
 msgid "Leave without reset?"
 msgstr "Да напустим без повраћаја?"
 
-#: src/minicom.c:1628 src/minicom.c:1646
+#: src/minicom.c:1547 src/minicom.c:1565
 msgid "Save macros?"
 msgstr "Да сачувам макрое?"
 
-#: src/minicom.c:1638
+#: src/minicom.c:1557
 msgid "Leave Minicom?"
 msgstr "Да напустим Миником?"
 
-#: src/minicom.c:1657
+#: src/minicom.c:1576
 msgid "Capture to which file? "
 msgstr "Да снимим у коју датотеку? "
 
-#: src/minicom.c:1666 src/minicom.c:1675
+#: src/minicom.c:1585 src/minicom.c:1594
 msgid "Capture file"
 msgstr "Сними датотеку"
 
-#: src/minicom.c:1709
+#: src/minicom.c:1628
 msgid "Linewrap ON"
 msgstr "Прелом реда УКЉ"
 
-#: src/minicom.c:1709
+#: src/minicom.c:1628
 msgid "Linewrap OFF"
 msgstr "Прелом реда ИСКЉ"
 
-#: src/minicom.c:1718
+#: src/minicom.c:1637
 msgid "Timestamp OFF"
 msgstr "Временска ознака ИСКЉ"
 
-#: src/minicom.c:1721
+#: src/minicom.c:1640
 msgid "Timestamp every line (simple)"
 msgstr "Временска ознака у сваком реду (једноставно)"
 
-#: src/minicom.c:1724
+#: src/minicom.c:1643
 msgid "Timestamp every line (extended)"
 msgstr "Временска ознака у сваком реду (проширено)"
 
-#: src/minicom.c:1727
+#: src/minicom.c:1646
 msgid "Timestamp lines every second"
 msgstr "Временска ознака редова сваке секунде"
 
-#: src/minicom.c:1730
-#, fuzzy
-msgid "Timestamp delta between lines"
-msgstr "Временска ознака у сваком реду (једноставно)"
-
-#: src/minicom.c:1771
+#: src/minicom.c:1687
 msgid "Quit without reset while online."
 msgstr "Изађите без повраћаја док сте на мрежи."
 
-#: src/rwconf.c:117 src/rwconf.c:151
+#: src/rwconf.c:115 src/rwconf.c:149
 msgid "No"
 msgstr "Не"
 
-#: src/rwconf.c:228
+#: src/rwconf.c:226
 #, c-format
 msgid "# Machine-generated file - use \"minicom -s\" to change parameters.\n"
 msgstr ""
 "# Машински створена датотека — употребите „minicom -s“ да измените "
 "параметре.\n"
 
-#: src/rwconf.c:230
+#: src/rwconf.c:228
 #, c-format
 msgid ""
 "# Machine-generated file - use setup menu in minicom to change parameters.\n"
@@ -1631,21 +1602,21 @@ msgstr ""
 "# Машински створена датотека — користите изборник подешавања у миникому да "
 "измените параметре.\n"
 
-#: src/rwconf.c:255
+#: src/rwconf.c:253
 #, c-format
 msgid "Memory allocation failed.\n"
 msgstr "Додела меморије није успела.\n"
 
-#: src/rwconf.c:324
+#: src/rwconf.c:322
 #, c-format
 msgid "** Line %d of the %s config file is unparsable.\n"
 msgstr "** %d. ред „%s“ датотеке подешавања се не може обрадити.\n"
 
-#: src/rwconf.c:325
+#: src/rwconf.c:323
 msgid "global"
 msgstr "опште"
 
-#: src/rwconf.c:325
+#: src/rwconf.c:323
 msgid "personal"
 msgstr "лично"
 
@@ -1668,20 +1639,10 @@ msgstr "(реч садржи ЕСЦ или наводник)"
 msgid "runscript: couldn't open \"%s\"%s\n"
 msgstr "покрени_скрипту: не могу да отворим „%s“%s\n"
 
-#: src/script.c:362
-#, c-format
-msgid "Input line %u too long, aborting (and fix me!)!\n"
-msgstr ""
-
 #: src/script.c:371 src/script.c:485
 #, c-format
 msgid "script \"%s\": out of memory%s\n"
 msgstr "скрипта „%s“: нема више меморије%s\n"
-
-#: src/script.c:422
-#, c-format
-msgid "NULL paramenter to %s!"
-msgstr ""
 
 #: src/script.c:479
 #, c-format
@@ -1710,69 +1671,69 @@ msgstr "скрипта „%s“ %d. ред: угнеждени је очекив
 msgid "(garbage after {)"
 msgstr "(ђубре након {)"
 
-#: src/script.c:590 src/script.c:897 src/script.c:965
+#: src/script.c:590 src/script.c:891 src/script.c:959
 msgid "(argument expected)"
 msgstr "(очекиван је аргумент)"
 
-#: src/script.c:593 src/script.c:899
+#: src/script.c:593 src/script.c:893
 msgid "(invalid argument)"
 msgstr "(неисправан аргумент)"
 
-#: src/script.c:730
+#: src/script.c:724
 msgid "(in goto/gosub label)"
 msgstr "(у натпису „goto/gosub“)"
 
-#: src/script.c:737
+#: src/script.c:731
 #, c-format
 msgid "script \"%s\" line %d: label \"%s\" not found%s\n"
 msgstr "скрипта „%s“ %d. ред: натпис „%s“ нисам нашао%s\n"
 
-#: src/script.c:759
+#: src/script.c:753
 #, c-format
 msgid "script \"%s\": no return from gosub%s\n"
 msgstr "скрипта „%s“: нема резултата из „gosub“-а%s\n"
 
-#: src/script.c:802
+#: src/script.c:796
 msgid "(missing var name)"
 msgstr "(недостаје назив променљиве)"
 
-#: src/script.c:819 src/script.c:835
+#: src/script.c:813 src/script.c:829
 msgid "(expected variable)"
 msgstr "(очекивана је променљива)"
 
-#: src/script.c:867
+#: src/script.c:861
 msgid "(expected command after if)"
 msgstr "(очекивана је наредба након „if“)"
 
-#: src/script.c:882
+#: src/script.c:876
 msgid "(unknown operator)"
 msgstr "(непознат оператор)"
 
-#: src/script.c:921
+#: src/script.c:915
 msgid "(unexpected argument)"
 msgstr "(неочекивани аргумент)"
 
-#: src/script.c:948
+#: src/script.c:942
 #, c-format
 msgid "script \"%s\" line %d: break outside of expect%s\n"
 msgstr "скрипта „%s“ %d. ред: прекид ван очекиваног%s\n"
 
-#: src/script.c:968
+#: src/script.c:962
 #, c-format
 msgid "script \"%s\" line %d: call inside expect%s\n"
 msgstr "скрипта „%s“ %d. ред: позив унутар очекиваног%s\n"
 
-#: src/script.c:1037
+#: src/script.c:1031
 #, c-format
 msgid "script \"%s\" line %d: unknown command \"%s\"%s\n"
 msgstr "скрипта „%s“ %d. ред: непозната наредба „%s“%s\n"
 
-#: src/script.c:1078
+#: src/script.c:1072
 #, c-format
 msgid "runscript, part of minicom version %s\n"
 msgstr "„runscript“, део миникома издање %s\n"
 
-#: src/script.c:1083
+#: src/script.c:1077
 #, c-format
 msgid "Usage: runscript <scriptfile> [logfile [homedir]]%s\n"
 msgstr ""
@@ -1782,11 +1743,6 @@ msgstr ""
 #, c-format
 msgid "Cannot chdir to %.30s"
 msgstr "Не могу да пређем у директоријум „%.30s“"
-
-#: src/updown.c:138
-#, fuzzy
-msgid "out of memory"
-msgstr "скрипта „%s“: нема више меморије%s\n"
 
 #: src/updown.c:225
 msgid "Upload"
@@ -1817,10 +1773,6 @@ msgstr "пошаљи"
 msgid "download"
 msgstr "преузми"
 
-#: src/updown.c:306
-msgid "pipe() call failed"
-msgstr ""
-
 #: src/updown.c:433
 msgid ""
 "\n"
@@ -1842,10 +1794,6 @@ msgstr "Не могу да упишем датотеку макроа „%s“"
 #, c-format
 msgid "Cannot create lockfile for %s: %s\n"
 msgstr "Не могу да направим датотеку закључавања „%s“: %s\n"
-
-#: src/updown.c:516
-msgid "No kermit path defined!"
-msgstr ""
 
 #: src/updown.c:643
 msgid "Same as last"
@@ -1871,37 +1819,44 @@ msgstr "Које подешавање се мења?    (Унеси да пок�
 msgid "Run a script"
 msgstr "Покрените скрипту"
 
-#: src/window.c:1889
+#: src/window.c:1938
 #, c-format
 msgid "Environment variable TERM not set\n"
 msgstr "Променљиве окружења ТЕРМ није подешена\n"
 
-#: src/window.c:1895
+#: src/window.c:1944
 #, c-format
 msgid "No termcap entry for %s\n"
 msgstr "Нема уноса могућности терминала за „%s“\n"
 
-#: src/window.c:1898
+#: src/window.c:1947
 #, c-format
 msgid "No termcap database present!\n"
 msgstr "Није присутна база података могућности терминала!\n"
 
-#: src/window.c:1906
+#: src/window.c:1955
 #, c-format
 msgid "No cursor motion capability (cm)\n"
 msgstr "Нема могућности кретања курзора (cm)\n"
 
-#: src/window.c:1915
+#: src/window.c:1964
 #, c-format
 msgid "Number of terminal lines unknown\n"
 msgstr "Број редова термианла није познат\n"
 
-#: src/window.c:1919
+#: src/window.c:1968
 #, c-format
 msgid "Number of terminal columns unknown\n"
 msgstr "Број колона термианла није познат\n"
 
-#: src/window.c:2057
-#, c-format
-msgid "Not enough memory\n"
-msgstr ""
+#, fuzzy
+#~ msgid "%H for help | %b | %C | Minicom %V | %T | %t | %D"
+#~ msgstr " %7.7sZ за помоћ |           |     | Миником %-6.6s |       | "
+
+#, fuzzy
+#~ msgid "Timestamp delta between lines"
+#~ msgstr "Временска ознака у сваком реду (једноставно)"
+
+#, fuzzy
+#~ msgid "out of memory"
+#~ msgstr "скрипта „%s“: нема више меморије%s\n"
