@@ -11,3 +11,12 @@ aclocal-$AUTOMAKEVER
 autoheader || exit 1
 automake-$AUTOMAKEVER --add-missing --force --gnu || exit 1
 autoconf || exit 1
+
+echo "
+now do
+\033[1;31m
+./configure
+sed -ibak -E 's/(.*CCLD.*LINK.*ascii_xfr_OBJECTS.*)/\\1 \$(LTLIBINTL)/g' src/Makefile
+make
+\033[0m"
+
